@@ -96,15 +96,15 @@
    u`f1`o2`qfa`uds`us`\[CapitalKappa]ip`p1 -> 
     u`f1`o2`\[CapitalSigma]0`\[CapitalSigma]0`\[Eta]`nosum, 
    d`f1`o2`qfa`dus`du`\[Pi]im`p1 -> 
-    d`f1`o2`\[CapitalSigma]0`\[CapitalSigma]0`\[Eta]`nosum, 
+    d`f1`o2`\[CapitalSigma]0`\[CapitalSigma]0`etas`nosum, 
    d`f1`o2`qfa`dus`dd`\[Eta]`p1 -> 
     d`f1`o2`\[CapitalSigma]0`\[CapitalSigma]0`\[Eta]`nosum/6, 
    d`f1`o2`qfa`dus`dd`etas`p1 -> 
-    d`f1`o2`\[CapitalSigma]0`\[CapitalSigma]0`\[Eta]`nosum/3, 
+    d`f1`o2`\[CapitalSigma]0`\[CapitalSigma]0`etas`nosum/3, 
    d`f1`o2`qfa`dus`dd`\[Pi]i0`p1 -> 
-    d`f1`o2`\[CapitalSigma]0`\[CapitalSigma]0`\[Eta]`nosum/2, 
+    d`f1`o2`\[CapitalSigma]0`\[CapitalLambda]`\[Pi]i0`nosum/2, 
    d`f1`o2`qfa`dus`ds`\[CapitalKappa]i0`p1 -> 
-    d`f1`o2`\[CapitalSigma]0`\[CapitalSigma]0`\[Eta]`nosum, 
+    d`f1`o2`\[CapitalSigma]0`\[CapitalSigma]0`etas`nosum, 
    s`f1`o2`qfa`sdu`su`\[CapitalKappa]im`p1 -> 
     s`f1`o2`\[CapitalSigma]0`\[CapitalSigma]0`\[Eta]`nosum, 
    s`f1`o2`qfa`sdu`sd`\[CapitalKappa]i0b`p1 -> 
@@ -129,20 +129,20 @@
     -u`f1`o2`\[CapitalSigma]0`\[CapitalSigma]0`\[Eta]`nosum + 
      2*u`f1`o2`\[CapitalSigma]0`\[CapitalLambda]`\[Pi]i0, 
    u`f1`o2`qfa`dus`du`\[Pi]im`p2 -> 
-    -d`f1`o2`\[CapitalSigma]0`\[CapitalSigma]0`\[Eta]`nosum + 
-     2*d`f1`o2`\[CapitalSigma]0`\[CapitalLambda]`\[Pi]i0, 
+    3*d`f1`o2`\[CapitalSigma]0`\[CapitalSigma]0`etas - 
+     d`f1`o2`\[CapitalSigma]0`\[CapitalSigma]0`etas`nosum, 
    d`f1`o2`qfa`dus`dd`\[Eta]`p2 -> 
     -d`f1`o2`\[CapitalSigma]0`\[CapitalSigma]0`\[Eta]`nosum/6 + 
-     d`f1`o2`\[CapitalSigma]0`\[CapitalLambda]`\[Pi]i0/3, 
+     d`f1`o2`\[CapitalSigma]0`\[CapitalSigma]0`\[Eta], 
    d`f1`o2`qfa`dus`dd`etas`p2 -> 
-    -d`f1`o2`\[CapitalSigma]0`\[CapitalSigma]0`\[Eta]`nosum/3 + 
-     (2*d`f1`o2`\[CapitalSigma]0`\[CapitalLambda]`\[Pi]i0)/3, 
+    d`f1`o2`\[CapitalSigma]0`\[CapitalSigma]0`etas - 
+     d`f1`o2`\[CapitalSigma]0`\[CapitalSigma]0`etas`nosum/3, 
    d`f1`o2`qfa`dus`dd`\[Pi]i0`p2 -> 
-    -d`f1`o2`\[CapitalSigma]0`\[CapitalSigma]0`\[Eta]`nosum/2 + 
+    -d`f1`o2`\[CapitalSigma]0`\[CapitalLambda]`\[Pi]i0`nosum/2 + 
      d`f1`o2`\[CapitalSigma]0`\[CapitalLambda]`\[Pi]i0, 
    s`f1`o2`qfa`dus`ds`\[CapitalKappa]i0`p2 -> 
-    -d`f1`o2`\[CapitalSigma]0`\[CapitalSigma]0`\[Eta]`nosum + 
-     2*d`f1`o2`\[CapitalSigma]0`\[CapitalLambda]`\[Pi]i0, 
+    3*d`f1`o2`\[CapitalSigma]0`\[CapitalSigma]0`etas - 
+     d`f1`o2`\[CapitalSigma]0`\[CapitalSigma]0`etas`nosum, 
    u`f1`o2`qfa`sdu`su`\[CapitalKappa]im`p2 -> 
     -s`f1`o2`\[CapitalSigma]0`\[CapitalSigma]0`\[Eta]`nosum + 
      (3*s`f1`o2`\[CapitalSigma]0`\[CapitalSigma]0`\[Eta])/2, 
@@ -162,10 +162,10 @@
     -u`f1`o2`\[CapitalSigma]0`\[CapitalSigma]0`\[Eta]`nosum + 
      u`f1`o2`\[CapitalSigma]0`\[CapitalXi]m`\[CapitalKappa]ip, 
    d`f1`o2`qfb`dus`du`\[Pi]im`p1 -> 
-    -d`f1`o2`\[CapitalSigma]0`\[CapitalSigma]0`\[Eta]`nosum + 
+    -d`f1`o2`\[CapitalSigma]0`\[CapitalSigma]0`etas`nosum + 
      d`f1`o2`\[CapitalSigma]0`\[CapitalSigma]p`\[Pi]im, 
    d`f1`o2`qfb`dsu`ds`\[CapitalKappa]i0`p1 -> 
-    -d`f1`o2`\[CapitalSigma]0`\[CapitalSigma]0`\[Eta]`nosum + 
+    -d`f1`o2`\[CapitalSigma]0`\[CapitalSigma]0`etas`nosum + 
      d`f1`o2`\[CapitalSigma]0`\[CapitalXi]0`\[CapitalKappa]i0, 
    s`f1`o2`qfb`sud`su`\[CapitalKappa]im`p1 -> 
     -s`f1`o2`\[CapitalSigma]0`\[CapitalSigma]0`\[Eta]`nosum + 
@@ -182,13 +182,13 @@
      s`f1`o2`\[CapitalSigma]0`\[CapitalXi]m`\[CapitalKappa]ip - 
      2*u`f1`o2`\[CapitalSigma]0`\[CapitalLambda]`\[Pi]i0, 
    u`f1`o2`qfb`dus`du`\[Pi]im`p2 -> 
-    d`f1`o2`\[CapitalSigma]0`\[CapitalSigma]0`\[Eta]`nosum - 
-     2*d`f1`o2`\[CapitalSigma]0`\[CapitalLambda]`\[Pi]i0 + 
+    -3*d`f1`o2`\[CapitalSigma]0`\[CapitalSigma]0`etas + 
+     d`f1`o2`\[CapitalSigma]0`\[CapitalSigma]0`etas`nosum + 
      u`f1`o2`\[CapitalSigma]0`\[CapitalSigma]p`\[Pi]im, 
    s`f1`o2`qfb`dsu`ds`\[CapitalKappa]i0`p2 -> 
-    d`f1`o2`\[CapitalSigma]0`\[CapitalSigma]0`\[Eta]`nosum + 
-     s`f1`o2`\[CapitalSigma]0`\[CapitalXi]0`\[CapitalKappa]i0 - 
-     2*d`f1`o2`\[CapitalSigma]0`\[CapitalLambda]`\[Pi]i0, 
+    -3*d`f1`o2`\[CapitalSigma]0`\[CapitalSigma]0`etas + 
+     d`f1`o2`\[CapitalSigma]0`\[CapitalSigma]0`etas`nosum + 
+     s`f1`o2`\[CapitalSigma]0`\[CapitalXi]0`\[CapitalKappa]i0, 
    u`f1`o2`qfb`sud`su`\[CapitalKappa]im`p2 -> 
     s`f1`o2`\[CapitalSigma]0`\[CapitalSigma]0`\[Eta]`nosum - 
      (3*s`f1`o2`\[CapitalSigma]0`\[CapitalSigma]0`\[Eta])/2 + 
@@ -598,15 +598,15 @@
    u`f1`o8`qfa`uds`us`\[CapitalKappa]ip`p1 -> 
     u`f1`o8`\[CapitalLambda]`\[CapitalSigma]0`\[Pi]i0`nosum, 
    d`f1`o8`qfa`dus`du`\[Pi]im`p1 -> 
-    d`f1`o8`\[CapitalLambda]`\[CapitalSigma]0`\[Pi]i0`nosum, 
+    d`f1`o8`\[CapitalLambda]`\[CapitalLambda]`etas`nosum, 
    d`f1`o8`qfa`dus`dd`\[Pi]i0`p1 -> 
     d`f1`o8`\[CapitalLambda]`\[CapitalSigma]0`\[Pi]i0`nosum/2, 
    d`f1`o8`qfa`dus`dd`\[Eta]`p1 -> 
-    d`f1`o8`\[CapitalLambda]`\[CapitalSigma]0`\[Pi]i0`nosum/6, 
+    d`f1`o8`\[CapitalLambda]`\[CapitalLambda]`\[Eta]`nosum/6, 
    d`f1`o8`qfa`dus`dd`etas`p1 -> 
-    d`f1`o8`\[CapitalLambda]`\[CapitalSigma]0`\[Pi]i0`nosum/3, 
+    d`f1`o8`\[CapitalLambda]`\[CapitalLambda]`etas`nosum/3, 
    d`f1`o8`qfa`dus`ds`\[CapitalKappa]i0`p1 -> 
-    d`f1`o8`\[CapitalLambda]`\[CapitalSigma]0`\[Pi]i0`nosum, 
+    d`f1`o8`\[CapitalLambda]`\[CapitalLambda]`etas`nosum, 
    s`f1`o8`qfa`sdu`su`\[CapitalKappa]im`p1 -> 
     s`f1`o8`\[CapitalLambda]`\[CapitalLambda]`\[Eta]`nosum, 
    s`f1`o8`qfa`sdu`sd`\[CapitalKappa]i0b`p1 -> 
@@ -631,20 +631,20 @@
     -u`f1`o8`\[CapitalLambda]`\[CapitalSigma]0`\[Pi]i0`nosum + 
      2*u`f1`o8`\[CapitalLambda]`\[CapitalSigma]0`\[Pi]i0, 
    u`f1`o8`qfa`dus`du`\[Pi]im`p2 -> 
-    -d`f1`o8`\[CapitalLambda]`\[CapitalSigma]0`\[Pi]i0`nosum + 
-     2*d`f1`o8`\[CapitalLambda]`\[CapitalSigma]0`\[Pi]i0, 
+    3*d`f1`o8`\[CapitalLambda]`\[CapitalLambda]`etas - 
+     d`f1`o8`\[CapitalLambda]`\[CapitalLambda]`etas`nosum, 
    d`f1`o8`qfa`dus`dd`\[Pi]i0`p2 -> 
     -d`f1`o8`\[CapitalLambda]`\[CapitalSigma]0`\[Pi]i0`nosum/2 + 
      d`f1`o8`\[CapitalLambda]`\[CapitalSigma]0`\[Pi]i0, 
    d`f1`o8`qfa`dus`dd`\[Eta]`p2 -> 
-    -d`f1`o8`\[CapitalLambda]`\[CapitalSigma]0`\[Pi]i0`nosum/6 + 
-     d`f1`o8`\[CapitalLambda]`\[CapitalSigma]0`\[Pi]i0/3, 
+    -d`f1`o8`\[CapitalLambda]`\[CapitalLambda]`\[Eta]`nosum/6 + 
+     d`f1`o8`\[CapitalLambda]`\[CapitalLambda]`\[Eta], 
    d`f1`o8`qfa`dus`dd`etas`p2 -> 
-    -d`f1`o8`\[CapitalLambda]`\[CapitalSigma]0`\[Pi]i0`nosum/3 + 
-     (2*d`f1`o8`\[CapitalLambda]`\[CapitalSigma]0`\[Pi]i0)/3, 
+    d`f1`o8`\[CapitalLambda]`\[CapitalLambda]`etas - 
+     d`f1`o8`\[CapitalLambda]`\[CapitalLambda]`etas`nosum/3, 
    s`f1`o8`qfa`dus`ds`\[CapitalKappa]i0`p2 -> 
-    -d`f1`o8`\[CapitalLambda]`\[CapitalSigma]0`\[Pi]i0`nosum + 
-     2*d`f1`o8`\[CapitalLambda]`\[CapitalSigma]0`\[Pi]i0, 
+    3*d`f1`o8`\[CapitalLambda]`\[CapitalLambda]`etas - 
+     d`f1`o8`\[CapitalLambda]`\[CapitalLambda]`etas`nosum, 
    u`f1`o8`qfa`sdu`su`\[CapitalKappa]im`p2 -> 
     -s`f1`o8`\[CapitalLambda]`\[CapitalLambda]`\[Eta]`nosum + 
      (3*s`f1`o8`\[CapitalLambda]`\[CapitalLambda]`\[Eta])/2, 
@@ -664,10 +664,10 @@
     -u`f1`o8`\[CapitalLambda]`\[CapitalSigma]0`\[Pi]i0`nosum + 
      u`f1`o8`\[CapitalLambda]`\[CapitalXi]m`\[CapitalKappa]ip, 
    d`f1`o8`qfb`dus`du`\[Pi]im`p1 -> 
-    -d`f1`o8`\[CapitalLambda]`\[CapitalSigma]0`\[Pi]i0`nosum + 
+    -d`f1`o8`\[CapitalLambda]`\[CapitalLambda]`etas`nosum + 
      d`f1`o8`\[CapitalLambda]`\[CapitalSigma]p`\[Pi]im, 
    d`f1`o8`qfb`dsu`ds`\[CapitalKappa]i0`p1 -> 
-    -d`f1`o8`\[CapitalLambda]`\[CapitalSigma]0`\[Pi]i0`nosum + 
+    -d`f1`o8`\[CapitalLambda]`\[CapitalLambda]`etas`nosum + 
      d`f1`o8`\[CapitalLambda]`\[CapitalXi]0`\[CapitalKappa]i0, 
    s`f1`o8`qfb`sud`su`\[CapitalKappa]im`p1 -> 
     -s`f1`o8`\[CapitalLambda]`\[CapitalLambda]`\[Eta]`nosum + 
@@ -684,13 +684,13 @@
      s`f1`o8`\[CapitalLambda]`\[CapitalXi]m`\[CapitalKappa]ip - 
      2*u`f1`o8`\[CapitalLambda]`\[CapitalSigma]0`\[Pi]i0, 
    u`f1`o8`qfb`dus`du`\[Pi]im`p2 -> 
-    d`f1`o8`\[CapitalLambda]`\[CapitalSigma]0`\[Pi]i0`nosum - 
-     2*d`f1`o8`\[CapitalLambda]`\[CapitalSigma]0`\[Pi]i0 + 
+    -3*d`f1`o8`\[CapitalLambda]`\[CapitalLambda]`etas + 
+     d`f1`o8`\[CapitalLambda]`\[CapitalLambda]`etas`nosum + 
      u`f1`o8`\[CapitalLambda]`\[CapitalSigma]p`\[Pi]im, 
    s`f1`o8`qfb`dsu`ds`\[CapitalKappa]i0`p2 -> 
-    d`f1`o8`\[CapitalLambda]`\[CapitalSigma]0`\[Pi]i0`nosum + 
-     s`f1`o8`\[CapitalLambda]`\[CapitalXi]0`\[CapitalKappa]i0 - 
-     2*d`f1`o8`\[CapitalLambda]`\[CapitalSigma]0`\[Pi]i0, 
+    -3*d`f1`o8`\[CapitalLambda]`\[CapitalLambda]`etas + 
+     d`f1`o8`\[CapitalLambda]`\[CapitalLambda]`etas`nosum + 
+     s`f1`o8`\[CapitalLambda]`\[CapitalXi]0`\[CapitalKappa]i0, 
    u`f1`o8`qfb`sud`su`\[CapitalKappa]im`p2 -> 
     s`f1`o8`\[CapitalLambda]`\[CapitalLambda]`\[Eta]`nosum - 
      (3*s`f1`o8`\[CapitalLambda]`\[CapitalLambda]`\[Eta])/2 + 
@@ -4213,13 +4213,13 @@ m/2, s`f3`o7`qfb`ssu`ss`\[Eta]`p4 ->
    u`f4`o2`qfa`uds`us`\[CapitalKappa]ip`p1 -> 
     u`f4`o2`\[CapitalSigma]0`\[CapitalSigma]s0`\[Eta]`nosum, 
    d`f4`o2`qfa`dus`du`\[Pi]im`p1 -> 
-    d`f4`o2`\[CapitalSigma]0`\[CapitalSigma]s0`\[Eta]`nosum, 
+    d`f4`o2`\[CapitalSigma]0`\[CapitalSigma]s0`etas`nosum, 
    d`f4`o2`qfa`dus`dd`\[Eta]`p1 -> 
     d`f4`o2`\[CapitalSigma]0`\[CapitalSigma]s0`\[Eta]`nosum/6, 
    d`f4`o2`qfa`dus`dd`etas`p1 -> 
-    d`f4`o2`\[CapitalSigma]0`\[CapitalSigma]s0`\[Eta]`nosum/3, 
+    d`f4`o2`\[CapitalSigma]0`\[CapitalSigma]s0`etas`nosum/3, 
    d`f4`o2`qfa`dus`ds`\[CapitalKappa]i0`p1 -> 
-    d`f4`o2`\[CapitalSigma]0`\[CapitalSigma]s0`\[Eta]`nosum, 
+    d`f4`o2`\[CapitalSigma]0`\[CapitalSigma]s0`etas`nosum, 
    s`f4`o2`qfa`sdu`su`\[CapitalKappa]im`p1 -> 
     s`f4`o2`\[CapitalSigma]0`\[CapitalSigma]s0`\[Eta]`nosum, 
    s`f4`o2`qfa`sdu`sd`\[CapitalKappa]i0b`p1 -> 
@@ -4241,17 +4241,17 @@ m/2, s`f3`o7`qfb`ssu`ss`\[Eta]`p4 ->
     -u`f4`o2`\[CapitalSigma]0`\[CapitalSigma]s0`\[Eta]`nosum + 
      6*u`f4`o2`\[CapitalSigma]0`\[CapitalSigma]s0`\[Eta], 
    u`f4`o2`qfa`dus`du`\[Pi]im`p2 -> 
-    -d`f4`o2`\[CapitalSigma]0`\[CapitalSigma]s0`\[Eta]`nosum + 
-     6*d`f4`o2`\[CapitalSigma]0`\[CapitalSigma]s0`\[Eta], 
+    3*d`f4`o2`\[CapitalSigma]0`\[CapitalSigma]s0`etas - 
+     d`f4`o2`\[CapitalSigma]0`\[CapitalSigma]s0`etas`nosum, 
    d`f4`o2`qfa`dus`dd`\[Eta]`p2 -> 
     -d`f4`o2`\[CapitalSigma]0`\[CapitalSigma]s0`\[Eta]`nosum/6 + 
      d`f4`o2`\[CapitalSigma]0`\[CapitalSigma]s0`\[Eta], 
    d`f4`o2`qfa`dus`dd`etas`p2 -> 
-    -d`f4`o2`\[CapitalSigma]0`\[CapitalSigma]s0`\[Eta]`nosum/3 + 
-     2*d`f4`o2`\[CapitalSigma]0`\[CapitalSigma]s0`\[Eta], 
+    d`f4`o2`\[CapitalSigma]0`\[CapitalSigma]s0`etas - 
+     d`f4`o2`\[CapitalSigma]0`\[CapitalSigma]s0`etas`nosum/3, 
    s`f4`o2`qfa`dus`ds`\[CapitalKappa]i0`p2 -> 
-    -d`f4`o2`\[CapitalSigma]0`\[CapitalSigma]s0`\[Eta]`nosum + 
-     6*d`f4`o2`\[CapitalSigma]0`\[CapitalSigma]s0`\[Eta], 
+    3*d`f4`o2`\[CapitalSigma]0`\[CapitalSigma]s0`etas - 
+     d`f4`o2`\[CapitalSigma]0`\[CapitalSigma]s0`etas`nosum, 
    u`f4`o2`qfa`sdu`su`\[CapitalKappa]im`p2 -> 
     -s`f4`o2`\[CapitalSigma]0`\[CapitalSigma]s0`\[Eta]`nosum + 
      (3*s`f4`o2`\[CapitalSigma]0`\[CapitalSigma]s0`\[Eta])/2, 
@@ -4271,10 +4271,10 @@ m/2, s`f3`o7`qfb`ssu`ss`\[Eta]`p4 ->
     -u`f4`o2`\[CapitalSigma]0`\[CapitalSigma]s0`\[Eta]`nosum + 
      u`f4`o2`\[CapitalSigma]0`\[CapitalXi]sm`\[CapitalKappa]ip, 
    d`f4`o2`qfb`dus`du`\[Pi]im`p1 -> 
-    -d`f4`o2`\[CapitalSigma]0`\[CapitalSigma]s0`\[Eta]`nosum + 
+    -d`f4`o2`\[CapitalSigma]0`\[CapitalSigma]s0`etas`nosum + 
      d`f4`o2`\[CapitalSigma]0`\[CapitalSigma]sp`\[Pi]im, 
    d`f4`o2`qfb`dsu`ds`\[CapitalKappa]i0`p1 -> 
-    -d`f4`o2`\[CapitalSigma]0`\[CapitalSigma]s0`\[Eta]`nosum + 
+    -d`f4`o2`\[CapitalSigma]0`\[CapitalSigma]s0`etas`nosum + 
      d`f4`o2`\[CapitalSigma]0`\[CapitalXi]s0`\[CapitalKappa]i0, 
    s`f4`o2`qfb`sud`su`\[CapitalKappa]im`p1 -> 
     -s`f4`o2`\[CapitalSigma]0`\[CapitalSigma]s0`\[Eta]`nosum + 
@@ -4291,12 +4291,12 @@ m/2, s`f3`o7`qfb`ssu`ss`\[Eta]`p4 ->
      6*u`f4`o2`\[CapitalSigma]0`\[CapitalSigma]s0`\[Eta] + 
      s`f4`o2`\[CapitalSigma]0`\[CapitalXi]sm`\[CapitalKappa]ip, 
    u`f4`o2`qfb`dus`du`\[Pi]im`p2 -> 
-    d`f4`o2`\[CapitalSigma]0`\[CapitalSigma]s0`\[Eta]`nosum - 
-     6*d`f4`o2`\[CapitalSigma]0`\[CapitalSigma]s0`\[Eta] + 
+    -3*d`f4`o2`\[CapitalSigma]0`\[CapitalSigma]s0`etas + 
+     d`f4`o2`\[CapitalSigma]0`\[CapitalSigma]s0`etas`nosum + 
      u`f4`o2`\[CapitalSigma]0`\[CapitalSigma]sp`\[Pi]im, 
    s`f4`o2`qfb`dsu`ds`\[CapitalKappa]i0`p2 -> 
-    d`f4`o2`\[CapitalSigma]0`\[CapitalSigma]s0`\[Eta]`nosum - 
-     6*d`f4`o2`\[CapitalSigma]0`\[CapitalSigma]s0`\[Eta] + 
+    -3*d`f4`o2`\[CapitalSigma]0`\[CapitalSigma]s0`etas + 
+     d`f4`o2`\[CapitalSigma]0`\[CapitalSigma]s0`etas`nosum + 
      s`f4`o2`\[CapitalSigma]0`\[CapitalXi]s0`\[CapitalKappa]i0, 
    u`f4`o2`qfb`sud`su`\[CapitalKappa]im`p2 -> 
     s`f4`o2`\[CapitalSigma]0`\[CapitalSigma]s0`\[Eta]`nosum - 

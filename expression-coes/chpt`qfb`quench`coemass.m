@@ -4,15 +4,17 @@
       (6*f^2), {mo -> conmDDD, mm -> conmKi} -> -(di - fi)^2/(2*f^2)|>, 
    <|{mo -> conmDDD, mm -> conmKi} -> (di - fi)^2/(2*f^2), 
     {mo -> conm\[CapitalXi], mm -> conmKi} -> (di^2 + 6*di*fi - 3*fi^2)/
-      (6*f^2)|>}, {<|{mo -> conm\[CapitalSigma], mm -> conm\[Pi]} -> 0, 
+      (6*f^2)|>}, {<|{mo -> conm\[CapitalSigma], mm -> conm\[Pi]} -> 
+     fi^2/f^2 + (di^2 - 3*fi^2)/(3*f^2), 
     {mo -> conm\[CapitalXi], mm -> conmKi} -> (di^2 - 6*di*fi - 3*fi^2)/
       (12*f^2), {mo -> conmN, mm -> conmKi} -> -(di^2 + 6*di*fi - 3*fi^2)/
-      (12*f^2)|>, <|{mo -> conm\[CapitalSigma], mm -> conm\[Pi]} -> 0, 
-    {mo -> conm\[CapitalXi], mm -> conmKi} -> (di^2 - 6*di*fi - 3*fi^2)/
-      (12*f^2), {mo -> conmN, mm -> conmKi} -> -(di^2 + 6*di*fi - 3*fi^2)/
-      (12*f^2)|>, <|{mo -> conmN, mm -> conmKi} -> (di^2 + 6*di*fi - 3*fi^2)/
-      (6*f^2), {mo -> conm\[CapitalXi], mm -> conmKi} -> 
-     -(di^2 - 6*di*fi - 3*fi^2)/(6*f^2)|>}, 
+      (12*f^2)|>, <|{mo -> conm\[CapitalSigma], mm -> conm\[Pi]} -> 
+     -(fi^2/f^2) - (di^2 - 3*fi^2)/(3*f^2), 
+    {mo -> conm\[CapitalXi], mm -> conmKi} -> -(di + fi)^2/(4*f^2), 
+    {mo -> conmN, mm -> conmKi} -> -(di^2 + 6*di*fi - 3*fi^2)/(12*f^2)|>, 
+   <|{mo -> conmN, mm -> conmKi} -> (di^2 + 6*di*fi - 3*fi^2)/(6*f^2), 
+    {mo -> conm\[CapitalXi], mm -> conmKi} -> (di + fi)^2/(4*f^2) - 
+      (di^2 - 6*di*fi - 3*fi^2)/(12*f^2)|>}, 
   {<|{mo -> conm\[CapitalSigma], mm -> conm\[Eta]} -> 
      (5*di^2 - 3*fi^2)/(18*f^2) + (-5*di^2 + 3*fi^2)/(18*f^2), 
     {mo -> conm\[CapitalXi], mm -> conmKi} -> -(di^2 + 6*di*fi - 3*fi^2)/
@@ -43,13 +45,14 @@
      (5*di^2 - 18*di*fi - 3*fi^2)/(36*f^2) + (-5*di^2 + 18*di*fi + 3*fi^2)/
        (36*f^2), {mo -> conmSSS, mm -> conmKi} -> -(di - fi)^2/(2*f^2)|>}, 
   {<|{mo -> conm\[CapitalXi], mm -> conmKi} -> (di^2 + 2*di*fi - 3*fi^2)/
-      (4*f^2), {mo -> conmN, mm -> conmKi} -> -(di^2 - 2*di*fi - 3*fi^2)/
-      (4*f^2)|>, <|{mo -> conm\[CapitalXi], mm -> conmKi} -> 
-     (di^2 + 2*di*fi - 3*fi^2)/(4*f^2), {mo -> conmN, mm -> conmKi} -> 
-     -(di^2 - 2*di*fi - 3*fi^2)/(4*f^2)|>, 
+      (4*f^2), {mo -> conm\[CapitalSigma], mm -> conm\[Pi]} -> di^2/(3*f^2), 
+    {mo -> conmN, mm -> conmKi} -> -(di^2 - 2*di*fi - 3*fi^2)/(4*f^2)|>, 
+   <|{mo -> conm\[CapitalSigma], mm -> conm\[Pi]} -> -di^2/(3*f^2), 
+    {mo -> conm\[CapitalXi], mm -> conmKi} -> -(di - 3*fi)^2/(12*f^2), 
+    {mo -> conmN, mm -> conmKi} -> -(di^2 - 2*di*fi - 3*fi^2)/(4*f^2)|>, 
    <|{mo -> conmN, mm -> conmKi} -> (di^2 - 2*di*fi - 3*fi^2)/(2*f^2), 
-    {mo -> conm\[CapitalXi], mm -> conmKi} -> -(di^2 + 2*di*fi - 3*fi^2)/
-      (2*f^2)|>}}, 
+    {mo -> conm\[CapitalXi], mm -> conmKi} -> (di - 3*fi)^2/(12*f^2) - 
+      (di^2 + 2*di*fi - 3*fi^2)/(4*f^2)|>}}, 
  {{<||>, <|{mo -> conm\[CapitalSigma], mm -> conm\[Eta]} -> 
      -(-18*di*fi*(8*mo^2 + (2 + c1 + c2 + c3)*Q2) + 
         9*fi^2*(12*mo^2 + (3 + 2*c1 + c2 + 2*c3)*Q2) + 
@@ -437,15 +440,17 @@
       (6*f^2), {mo -> conmDDD, mm -> conmKi} -> (di - fi)^2/(2*f^2)|>, 
    <|{mo -> conmDDD, mm -> conmKi} -> -(di - fi)^2/(2*f^2), 
     {mo -> conm\[CapitalXi], mm -> conmKi} -> -(di^2 + 6*di*fi - 3*fi^2)/
-      (6*f^2)|>}, {<|{mo -> conm\[CapitalSigma], mm -> conm\[Pi]} -> 0, 
+      (6*f^2)|>}, {<|{mo -> conm\[CapitalSigma], mm -> conm\[Pi]} -> 
+     -(fi^2/f^2) - (di^2 - 3*fi^2)/(3*f^2), 
     {mo -> conm\[CapitalXi], mm -> conmKi} -> -(di^2 - 6*di*fi - 3*fi^2)/
       (12*f^2), {mo -> conmN, mm -> conmKi} -> (di^2 + 6*di*fi - 3*fi^2)/
-      (12*f^2)|>, <|{mo -> conm\[CapitalSigma], mm -> conm\[Pi]} -> 0, 
-    {mo -> conm\[CapitalXi], mm -> conmKi} -> -(di^2 - 6*di*fi - 3*fi^2)/
-      (12*f^2), {mo -> conmN, mm -> conmKi} -> (di^2 + 6*di*fi - 3*fi^2)/
-      (12*f^2)|>, <|{mo -> conmN, mm -> conmKi} -> -(di^2 + 6*di*fi - 3*fi^2)/
-      (6*f^2), {mo -> conm\[CapitalXi], mm -> conmKi} -> 
-     (di^2 - 6*di*fi - 3*fi^2)/(6*f^2)|>}, 
+      (12*f^2)|>, <|{mo -> conm\[CapitalSigma], mm -> conm\[Pi]} -> 
+     fi^2/f^2 + (di^2 - 3*fi^2)/(3*f^2), 
+    {mo -> conm\[CapitalXi], mm -> conmKi} -> (di + fi)^2/(4*f^2), 
+    {mo -> conmN, mm -> conmKi} -> (di^2 + 6*di*fi - 3*fi^2)/(12*f^2)|>, 
+   <|{mo -> conmN, mm -> conmKi} -> -(di^2 + 6*di*fi - 3*fi^2)/(6*f^2), 
+    {mo -> conm\[CapitalXi], mm -> conmKi} -> -(di + fi)^2/(4*f^2) + 
+      (di^2 - 6*di*fi - 3*fi^2)/(12*f^2)|>}, 
   {<|{mo -> conm\[CapitalSigma], mm -> conm\[Eta]} -> 
      -(5*di^2 - 3*fi^2)/(18*f^2) - (-5*di^2 + 3*fi^2)/(18*f^2), 
     {mo -> conm\[CapitalXi], mm -> conmKi} -> (di^2 + 6*di*fi - 3*fi^2)/
@@ -476,28 +481,31 @@
      -(5*di^2 - 18*di*fi - 3*fi^2)/(36*f^2) - (-5*di^2 + 18*di*fi + 3*fi^2)/
        (36*f^2), {mo -> conmSSS, mm -> conmKi} -> (di - fi)^2/(2*f^2)|>}, 
   {<|{mo -> conm\[CapitalXi], mm -> conmKi} -> -(di^2 + 2*di*fi - 3*fi^2)/
-      (4*f^2), {mo -> conmN, mm -> conmKi} -> (di^2 - 2*di*fi - 3*fi^2)/
-      (4*f^2)|>, <|{mo -> conm\[CapitalXi], mm -> conmKi} -> 
-     -(di^2 + 2*di*fi - 3*fi^2)/(4*f^2), {mo -> conmN, mm -> conmKi} -> 
-     (di^2 - 2*di*fi - 3*fi^2)/(4*f^2)|>, 
+      (4*f^2), {mo -> conm\[CapitalSigma], mm -> conm\[Pi]} -> -di^2/(3*f^2), 
+    {mo -> conmN, mm -> conmKi} -> (di^2 - 2*di*fi - 3*fi^2)/(4*f^2)|>, 
+   <|{mo -> conm\[CapitalSigma], mm -> conm\[Pi]} -> di^2/(3*f^2), 
+    {mo -> conm\[CapitalXi], mm -> conmKi} -> (di - 3*fi)^2/(12*f^2), 
+    {mo -> conmN, mm -> conmKi} -> (di^2 - 2*di*fi - 3*fi^2)/(4*f^2)|>, 
    <|{mo -> conmN, mm -> conmKi} -> -(di^2 - 2*di*fi - 3*fi^2)/(2*f^2), 
-    {mo -> conm\[CapitalXi], mm -> conmKi} -> (di^2 + 2*di*fi - 3*fi^2)/
-      (2*f^2)|>}}, 
+    {mo -> conm\[CapitalXi], mm -> conmKi} -> -(di - 3*fi)^2/(12*f^2) + 
+      (di^2 + 2*di*fi - 3*fi^2)/(4*f^2)|>}}, 
  {{<||>, <|{mo -> conm\[CapitalSigma], mm -> conm\[Eta]} -> 
      -(5*di^2 - 3*fi^2)/(18*f^2) - (-5*di^2 + 3*fi^2)/(18*f^2), 
     {mo -> conm\[CapitalXi], mm -> conmKi} -> (di^2 + 6*di*fi - 3*fi^2)/
       (6*f^2), {mo -> conmDDD, mm -> conmKi} -> (di - fi)^2/(2*f^2)|>, 
    <|{mo -> conmDDD, mm -> conmKi} -> -(di - fi)^2/(2*f^2), 
     {mo -> conm\[CapitalXi], mm -> conmKi} -> -(di^2 + 6*di*fi - 3*fi^2)/
-      (6*f^2)|>}, {<|{mo -> conm\[CapitalSigma], mm -> conm\[Pi]} -> 0, 
+      (6*f^2)|>}, {<|{mo -> conm\[CapitalSigma], mm -> conm\[Pi]} -> 
+     -(fi^2/f^2) - (di^2 - 3*fi^2)/(3*f^2), 
     {mo -> conm\[CapitalXi], mm -> conmKi} -> -(di^2 - 6*di*fi - 3*fi^2)/
       (12*f^2), {mo -> conmN, mm -> conmKi} -> (di^2 + 6*di*fi - 3*fi^2)/
-      (12*f^2)|>, <|{mo -> conm\[CapitalSigma], mm -> conm\[Pi]} -> 0, 
-    {mo -> conm\[CapitalXi], mm -> conmKi} -> -(di^2 - 6*di*fi - 3*fi^2)/
-      (12*f^2), {mo -> conmN, mm -> conmKi} -> (di^2 + 6*di*fi - 3*fi^2)/
-      (12*f^2)|>, <|{mo -> conmN, mm -> conmKi} -> -(di^2 + 6*di*fi - 3*fi^2)/
-      (6*f^2), {mo -> conm\[CapitalXi], mm -> conmKi} -> 
-     (di^2 - 6*di*fi - 3*fi^2)/(6*f^2)|>}, 
+      (12*f^2)|>, <|{mo -> conm\[CapitalSigma], mm -> conm\[Pi]} -> 
+     fi^2/f^2 + (di^2 - 3*fi^2)/(3*f^2), 
+    {mo -> conm\[CapitalXi], mm -> conmKi} -> (di + fi)^2/(4*f^2), 
+    {mo -> conmN, mm -> conmKi} -> (di^2 + 6*di*fi - 3*fi^2)/(12*f^2)|>, 
+   <|{mo -> conmN, mm -> conmKi} -> -(di^2 + 6*di*fi - 3*fi^2)/(6*f^2), 
+    {mo -> conm\[CapitalXi], mm -> conmKi} -> -(di + fi)^2/(4*f^2) + 
+      (di^2 - 6*di*fi - 3*fi^2)/(12*f^2)|>}, 
   {<|{mo -> conm\[CapitalSigma], mm -> conm\[Eta]} -> 
      -(5*di^2 - 3*fi^2)/(18*f^2) - (-5*di^2 + 3*fi^2)/(18*f^2), 
     {mo -> conm\[CapitalXi], mm -> conmKi} -> (di^2 + 6*di*fi - 3*fi^2)/
@@ -528,25 +536,26 @@
      -(5*di^2 - 18*di*fi - 3*fi^2)/(36*f^2) - (-5*di^2 + 18*di*fi + 3*fi^2)/
        (36*f^2), {mo -> conmSSS, mm -> conmKi} -> (di - fi)^2/(2*f^2)|>}, 
   {<|{mo -> conm\[CapitalXi], mm -> conmKi} -> -(di^2 + 2*di*fi - 3*fi^2)/
-      (4*f^2), {mo -> conmN, mm -> conmKi} -> (di^2 - 2*di*fi - 3*fi^2)/
-      (4*f^2)|>, <|{mo -> conm\[CapitalXi], mm -> conmKi} -> 
-     -(di^2 + 2*di*fi - 3*fi^2)/(4*f^2), {mo -> conmN, mm -> conmKi} -> 
-     (di^2 - 2*di*fi - 3*fi^2)/(4*f^2)|>, 
+      (4*f^2), {mo -> conm\[CapitalSigma], mm -> conm\[Pi]} -> -di^2/(3*f^2), 
+    {mo -> conmN, mm -> conmKi} -> (di^2 - 2*di*fi - 3*fi^2)/(4*f^2)|>, 
+   <|{mo -> conm\[CapitalSigma], mm -> conm\[Pi]} -> di^2/(3*f^2), 
+    {mo -> conm\[CapitalXi], mm -> conmKi} -> (di - 3*fi)^2/(12*f^2), 
+    {mo -> conmN, mm -> conmKi} -> (di^2 - 2*di*fi - 3*fi^2)/(4*f^2)|>, 
    <|{mo -> conmN, mm -> conmKi} -> -(di^2 - 2*di*fi - 3*fi^2)/(2*f^2), 
-    {mo -> conm\[CapitalXi], mm -> conmKi} -> (di^2 + 2*di*fi - 3*fi^2)/
-      (2*f^2)|>}}, 
+    {mo -> conm\[CapitalXi], mm -> conmKi} -> -(di - 3*fi)^2/(12*f^2) + 
+      (di^2 + 2*di*fi - 3*fi^2)/(4*f^2)|>}}, 
  {{<||>, <|{md -> conm\[CapitalXi]s, mm -> conmKi} -> -ci^2/(12*f^2), 
     {md -> conm\[CapitalDelta], mm -> conmKi} -> ci^2/(3*f^2)|>, 
    <|{md -> conm\[CapitalDelta], mm -> conmKi} -> -ci^2/(3*f^2), 
     {md -> conm\[CapitalXi]s, mm -> conmKi} -> ci^2/(12*f^2)|>}, 
-  {<|{md -> conm\[CapitalSigma]s, mm -> conm\[Pi]} -> 0, 
+  {<|{md -> conm\[CapitalSigma]s, mm -> conm\[Pi]} -> ci^2/(4*f^2), 
     {md -> conm\[CapitalXi]s, mm -> conmKi} -> ci^2/(6*f^2), 
     {md -> conm\[CapitalDelta], mm -> conmKi} -> ci^2/(12*f^2)|>, 
-   <|{md -> conm\[CapitalSigma]s, mm -> conm\[Pi]} -> 0, 
-    {md -> conm\[CapitalXi]s, mm -> conmKi} -> ci^2/(6*f^2), 
+   <|{md -> conm\[CapitalSigma]s, mm -> conm\[Pi]} -> -ci^2/(4*f^2), 
+    {md -> conm\[CapitalXi]s, mm -> conmKi} -> -ci^2/(12*f^2), 
     {md -> conm\[CapitalDelta], mm -> conmKi} -> ci^2/(12*f^2)|>, 
    <|{md -> conm\[CapitalDelta], mm -> conmKi} -> -ci^2/(6*f^2), 
-    {md -> conm\[CapitalXi]s, mm -> conmKi} -> -ci^2/(3*f^2)|>}, 
+    {md -> conm\[CapitalXi]s, mm -> conmKi} -> -ci^2/(12*f^2)|>}, 
   {<|{md -> conm\[CapitalXi]s, mm -> conmKi} -> -ci^2/(12*f^2), 
     {md -> conm\[CapitalDelta], mm -> conmKi} -> ci^2/(3*f^2)|>, <||>, 
    <|{md -> conm\[CapitalDelta], mm -> conmKi} -> -ci^2/(3*f^2), 
@@ -854,14 +863,14 @@
     {md -> conm\[CapitalDelta], mm -> conmKi} -> ci^2/(3*f^2)|>, 
    <|{md -> conm\[CapitalDelta], mm -> conmKi} -> -ci^2/(3*f^2), 
     {md -> conm\[CapitalXi]s, mm -> conmKi} -> ci^2/(12*f^2)|>}, 
-  {<|{md -> conm\[CapitalSigma]s, mm -> conm\[Pi]} -> 0, 
+  {<|{md -> conm\[CapitalSigma]s, mm -> conm\[Pi]} -> ci^2/(4*f^2), 
     {md -> conm\[CapitalXi]s, mm -> conmKi} -> ci^2/(6*f^2), 
     {md -> conm\[CapitalDelta], mm -> conmKi} -> ci^2/(12*f^2)|>, 
-   <|{md -> conm\[CapitalSigma]s, mm -> conm\[Pi]} -> 0, 
-    {md -> conm\[CapitalXi]s, mm -> conmKi} -> ci^2/(6*f^2), 
+   <|{md -> conm\[CapitalSigma]s, mm -> conm\[Pi]} -> -ci^2/(4*f^2), 
+    {md -> conm\[CapitalXi]s, mm -> conmKi} -> -ci^2/(12*f^2), 
     {md -> conm\[CapitalDelta], mm -> conmKi} -> ci^2/(12*f^2)|>, 
    <|{md -> conm\[CapitalDelta], mm -> conmKi} -> -ci^2/(6*f^2), 
-    {md -> conm\[CapitalXi]s, mm -> conmKi} -> -ci^2/(3*f^2)|>}, 
+    {md -> conm\[CapitalXi]s, mm -> conmKi} -> -ci^2/(12*f^2)|>}, 
   {<|{md -> conm\[CapitalXi]s, mm -> conmKi} -> -ci^2/(12*f^2), 
     {md -> conm\[CapitalDelta], mm -> conmKi} -> ci^2/(3*f^2)|>, <||>, 
    <|{md -> conm\[CapitalDelta], mm -> conmKi} -> -ci^2/(3*f^2), 
@@ -887,14 +896,14 @@
     {md -> conm\[CapitalDelta], mm -> conmKi} -> ci^2/(3*f^2)|>, 
    <|{md -> conm\[CapitalDelta], mm -> conmKi} -> -ci^2/(3*f^2), 
     {md -> conm\[CapitalXi]s, mm -> conmKi} -> ci^2/(12*f^2)|>}, 
-  {<|{md -> conm\[CapitalSigma]s, mm -> conm\[Pi]} -> 0, 
+  {<|{md -> conm\[CapitalSigma]s, mm -> conm\[Pi]} -> ci^2/(4*f^2), 
     {md -> conm\[CapitalXi]s, mm -> conmKi} -> ci^2/(6*f^2), 
     {md -> conm\[CapitalDelta], mm -> conmKi} -> ci^2/(12*f^2)|>, 
-   <|{md -> conm\[CapitalSigma]s, mm -> conm\[Pi]} -> 0, 
-    {md -> conm\[CapitalXi]s, mm -> conmKi} -> ci^2/(6*f^2), 
+   <|{md -> conm\[CapitalSigma]s, mm -> conm\[Pi]} -> -ci^2/(4*f^2), 
+    {md -> conm\[CapitalXi]s, mm -> conmKi} -> -ci^2/(12*f^2), 
     {md -> conm\[CapitalDelta], mm -> conmKi} -> ci^2/(12*f^2)|>, 
    <|{md -> conm\[CapitalDelta], mm -> conmKi} -> -ci^2/(6*f^2), 
-    {md -> conm\[CapitalXi]s, mm -> conmKi} -> -ci^2/(3*f^2)|>}, 
+    {md -> conm\[CapitalXi]s, mm -> conmKi} -> -ci^2/(12*f^2)|>}, 
   {<|{md -> conm\[CapitalXi]s, mm -> conmKi} -> -ci^2/(12*f^2), 
     {md -> conm\[CapitalDelta], mm -> conmKi} -> ci^2/(3*f^2)|>, <||>, 
    <|{md -> conm\[CapitalDelta], mm -> conmKi} -> -ci^2/(3*f^2), 
