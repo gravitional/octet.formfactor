@@ -9,29 +9,29 @@
     s`f1`o1`\[CapitalSigma]m`\[CapitalXi]m`\[CapitalKappa]i0 -> 
      (di^2 + 6*di*fi - 3*fi^2)/(6*f^2)|>}, 
   {<|u`f1`o2`\[CapitalSigma]0`\[CapitalSigma]m`\[Pi]ip -> 
-     (di^2 - 3*fi^2)/(3*f^2), 
+     (2*di^2 - 9*fi^2)/(9*f^2), 
     u`f1`o2`\[CapitalSigma]0`\[CapitalXi]m`\[CapitalKappa]ip -> 
-     (di^2 - 6*di*fi - 3*fi^2)/(12*f^2), 
+     (8*di^2 - 9*(di + fi)^2)/(36*f^2), 
     u`f1`o2`\[CapitalSigma]0`\[CapitalSigma]p`\[Pi]im -> 
-     -(di^2 - 3*fi^2)/(3*f^2), 
+     (-2*di^2 + 9*fi^2)/(9*f^2), 
     u`f1`o2`\[CapitalSigma]0`Np`\[CapitalKappa]im -> 
-     -(di^2 + 6*di*fi - 3*fi^2)/(12*f^2)|>, 
+     (di^2 - 18*di*fi + 9*fi^2)/(36*f^2)|>, 
    <|d`f1`o2`\[CapitalSigma]0`\[CapitalSigma]p`\[Pi]im -> 
-     (di^2 - 3*fi^2)/(3*f^2), 
+     (2*di^2 - 9*fi^2)/(9*f^2), 
     d`f1`o2`\[CapitalSigma]0`\[CapitalXi]0`\[CapitalKappa]i0 -> 
-     (di^2 - 6*di*fi - 3*fi^2)/(12*f^2), 
+     (8*di^2 - 9*(di + fi)^2)/(36*f^2), 
     d`f1`o2`\[CapitalSigma]0`\[CapitalSigma]m`\[Pi]ip -> 
-     -(di^2 - 3*fi^2)/(3*f^2), 
+     (-2*di^2 + 9*fi^2)/(9*f^2), 
     d`f1`o2`\[CapitalSigma]0`Nn`\[CapitalKappa]i0b -> 
-     -(di^2 + 6*di*fi - 3*fi^2)/(12*f^2)|>, 
+     (di^2 - 18*di*fi + 9*fi^2)/(36*f^2)|>, 
    <|s`f1`o2`\[CapitalSigma]0`Np`\[CapitalKappa]im -> 
-     (di^2 + 6*di*fi - 3*fi^2)/(12*f^2), 
+     -(di^2 - 18*di*fi + 9*fi^2)/(36*f^2), 
     s`f1`o2`\[CapitalSigma]0`Nn`\[CapitalKappa]i0b -> 
-     (di^2 + 6*di*fi - 3*fi^2)/(12*f^2), 
+     -(di^2 - 18*di*fi + 9*fi^2)/(36*f^2), 
     s`f1`o2`\[CapitalSigma]0`\[CapitalXi]m`\[CapitalKappa]ip -> 
-     -(di^2 - 6*di*fi - 3*fi^2)/(12*f^2), 
+     (di^2 + 18*di*fi + 9*fi^2)/(36*f^2), 
     s`f1`o2`\[CapitalSigma]0`\[CapitalXi]0`\[CapitalKappa]i0 -> 
-     -(di^2 - 6*di*fi - 3*fi^2)/(12*f^2)|>}, 
+     (di^2 + 18*di*fi + 9*fi^2)/(36*f^2)|>}, 
   {<|u`f1`o3`\[CapitalSigma]p`\[CapitalSigma]p`\[Eta] -> 
      (5*di^2 - 3*fi^2)/(18*f^2) + (-5*di^2 + 3*fi^2)/(18*f^2), 
     u`f1`o3`\[CapitalSigma]p`\[CapitalSigma]p`\[Pi]i0 -> 0, 
@@ -70,26 +70,26 @@
      (5*di^2 - 18*di*fi - 3*fi^2)/(36*f^2) + (-5*di^2 + 18*di*fi + 3*fi^2)/
        (36*f^2), s`f1`o7`\[CapitalXi]0`\[CapitalXi]0`etas -> 0, 
     s`f1`o7`\[CapitalXi]0`sss`\[CapitalKappa]ip -> 0|>}, 
-  {<|u`f1`o8`\[CapitalLambda]`\[CapitalSigma]m`\[Pi]ip -> 0, 
+  {<|u`f1`o8`\[CapitalLambda]`\[CapitalSigma]m`\[Pi]ip -> -di^2/(9*f^2), 
     u`f1`o8`\[CapitalLambda]`\[CapitalXi]m`\[CapitalKappa]ip -> 
-     (di^2 + 2*di*fi - 3*fi^2)/(4*f^2), 
-    u`f1`o8`\[CapitalLambda]`\[CapitalSigma]p`\[Pi]im -> 0, 
+     (5*di^2 + 18*di*fi - 27*fi^2)/(36*f^2), 
+    u`f1`o8`\[CapitalLambda]`\[CapitalSigma]p`\[Pi]im -> di^2/(9*f^2), 
     u`f1`o8`\[CapitalLambda]`Np`\[CapitalKappa]im -> 
-     -(di^2 - 2*di*fi - 3*fi^2)/(4*f^2)|>, 
-   <|d`f1`o8`\[CapitalLambda]`\[CapitalSigma]p`\[Pi]im -> 0, 
+     (-5*di^2 + 18*di*fi + 27*fi^2)/(36*f^2)|>, 
+   <|d`f1`o8`\[CapitalLambda]`\[CapitalSigma]p`\[Pi]im -> -di^2/(9*f^2), 
     d`f1`o8`\[CapitalLambda]`\[CapitalXi]0`\[CapitalKappa]i0 -> 
-     (di^2 + 2*di*fi - 3*fi^2)/(4*f^2), 
-    d`f1`o8`\[CapitalLambda]`\[CapitalSigma]m`\[Pi]ip -> 0, 
+     (5*di^2 + 18*di*fi - 27*fi^2)/(36*f^2), 
+    d`f1`o8`\[CapitalLambda]`\[CapitalSigma]m`\[Pi]ip -> di^2/(9*f^2), 
     d`f1`o8`\[CapitalLambda]`Nn`\[CapitalKappa]i0b -> 
-     -(di^2 - 2*di*fi - 3*fi^2)/(4*f^2)|>, 
+     (-5*di^2 + 18*di*fi + 27*fi^2)/(36*f^2)|>, 
    <|s`f1`o8`\[CapitalLambda]`Np`\[CapitalKappa]im -> 
-     (di^2 - 2*di*fi - 3*fi^2)/(4*f^2), 
+     (5*di^2 - 18*di*fi - 27*fi^2)/(36*f^2), 
     s`f1`o8`\[CapitalLambda]`Nn`\[CapitalKappa]i0b -> 
-     (di^2 - 2*di*fi - 3*fi^2)/(4*f^2), 
+     (5*di^2 - 18*di*fi - 27*fi^2)/(36*f^2), 
     s`f1`o8`\[CapitalLambda]`\[CapitalXi]m`\[CapitalKappa]ip -> 
-     -(di^2 + 2*di*fi - 3*fi^2)/(4*f^2), 
+     -(5*di^2 + 18*di*fi - 27*fi^2)/(36*f^2), 
     s`f1`o8`\[CapitalLambda]`\[CapitalXi]0`\[CapitalKappa]i0 -> 
-     -(di^2 + 2*di*fi - 3*fi^2)/(4*f^2)|>}}, 
+     -(5*di^2 + 18*di*fi - 27*fi^2)/(36*f^2)|>}}, 
  {{<||>, 
    <|d`f2`o1`\[CapitalSigma]m`\[CapitalSigma]m`\[CapitalSigma]m`\[Eta] -> 
      -(-18*di*fi*(8*mo^2 + (2 + c1 + c2 + c3)*Q2) + 
@@ -124,48 +124,44 @@
         di^2*(60*mo^2 + 8*c1*Q2 + 15*(1 + c3)*Q2))/(54*f^2*(4*mo^2 + Q2))|>}, 
   {<|u`f2`o2`\[CapitalSigma]0`\[CapitalSigma]p`\[CapitalSigma]p`\[Pi]im -> 
      -(-9*fi^2*(8*mo^2 + (2 + c1 + c2 + c3)*Q2) + 
-        2*di^2*(12*mo^2 + (3 + c1 + 3*c3)*Q2))/(9*f^2*(4*mo^2 + Q2)), 
+        2*di^2*(8*mo^2 + (2 + c1 + 2*c3)*Q2))/(9*f^2*(4*mo^2 + Q2)), 
     u`f2`o2`\[CapitalSigma]0`Np`Np`\[CapitalKappa]im -> 
-     -(18*di*fi*(8*mo^2 + (2 + c1 + c2 + c3)*Q2) - 
-        9*fi^2*(8*mo^2 + (2 + c1 + c2 + c3)*Q2) + 
-        di^2*(24*mo^2 + (6 + 11*c1 - 9*c2 + 15*c3)*Q2))/
-      (36*f^2*(4*mo^2 + Q2)), 
+     (di^2*(8*mo^2 + (2 + c1 + 9*c2 - 7*c3)*Q2) - 
+       18*di*fi*(8*mo^2 + (2 + c1 + c2 + c3)*Q2) + 
+       9*fi^2*(8*mo^2 + (2 + c1 + c2 + c3)*Q2))/(36*f^2*(4*mo^2 + Q2)), 
     u`f2`o2`\[CapitalSigma]0`\[CapitalXi]0`\[CapitalXi]0`\[CapitalKappa]i0 -> 
-     -(-18*di*fi*(4*mo^2 + Q2 + c3*Q2) - 9*fi^2*(4*mo^2 + Q2 + c3*Q2) + 
-        di^2*(12*mo^2 + (3 + 4*c1 + 3*c3)*Q2))/(36*f^2*(4*mo^2 + Q2)), 
+     (18*di*fi*(4*mo^2 + Q2 + c3*Q2) + 9*fi^2*(4*mo^2 + Q2 + c3*Q2) + 
+       di^2*(4*mo^2 + (1 - 4*c1 + c3)*Q2))/(36*f^2*(4*mo^2 + Q2)), 
     u`f2`o2`\[CapitalSigma]0`Nn`Nn`\[CapitalKappa]i0b -> 
-     -(18*di*fi*(4*mo^2 + Q2 + c3*Q2) - 9*fi^2*(4*mo^2 + Q2 + c3*Q2) + 
-        di^2*(12*mo^2 + (3 + 4*c1 + 3*c3)*Q2))/(36*f^2*(4*mo^2 + Q2))|>, 
+     (-18*di*fi*(4*mo^2 + Q2 + c3*Q2) + 9*fi^2*(4*mo^2 + Q2 + c3*Q2) + 
+       di^2*(4*mo^2 + (1 - 8*c1 + c3)*Q2))/(36*f^2*(4*mo^2 + Q2))|>, 
    <|d`f2`o2`\[CapitalSigma]0`\[CapitalSigma]m`\[CapitalSigma]m`\[Pi]ip -> 
      -(-9*fi^2*(8*mo^2 + (2 + c1 + c2 + c3)*Q2) + 
-        2*di^2*(12*mo^2 + (3 + c1 + 3*c3)*Q2))/(9*f^2*(4*mo^2 + Q2)), 
+        2*di^2*(8*mo^2 + (2 + c1 + 2*c3)*Q2))/(9*f^2*(4*mo^2 + Q2)), 
     d`f2`o2`\[CapitalSigma]0`Nn`Nn`\[CapitalKappa]i0b -> 
-     -(18*di*fi*(8*mo^2 + (2 + c1 + c2 + c3)*Q2) - 
-        9*fi^2*(8*mo^2 + (2 + c1 + c2 + c3)*Q2) + 
-        di^2*(24*mo^2 + (6 + 11*c1 - 9*c2 + 15*c3)*Q2))/
-      (36*f^2*(4*mo^2 + Q2)), 
+     (di^2*(8*mo^2 + (2 + c1 + 9*c2 - 7*c3)*Q2) - 
+       18*di*fi*(8*mo^2 + (2 + c1 + c2 + c3)*Q2) + 
+       9*fi^2*(8*mo^2 + (2 + c1 + c2 + c3)*Q2))/(36*f^2*(4*mo^2 + Q2)), 
     d`f2`o2`\[CapitalSigma]0`\[CapitalXi]m`\[CapitalXi]m`\[CapitalKappa]ip -> 
-     -(-18*di*fi*(4*mo^2 + Q2 + c3*Q2) - 9*fi^2*(4*mo^2 + Q2 + c3*Q2) + 
-        di^2*(12*mo^2 + (3 + 4*c1 + 3*c3)*Q2))/(36*f^2*(4*mo^2 + Q2)), 
+     (18*di*fi*(4*mo^2 + Q2 + c3*Q2) + 9*fi^2*(4*mo^2 + Q2 + c3*Q2) + 
+       di^2*(4*mo^2 + (1 - 4*c1 + c3)*Q2))/(36*f^2*(4*mo^2 + Q2)), 
     d`f2`o2`\[CapitalSigma]0`Np`Np`\[CapitalKappa]im -> 
-     -(18*di*fi*(4*mo^2 + Q2 + c3*Q2) - 9*fi^2*(4*mo^2 + Q2 + c3*Q2) + 
-        di^2*(12*mo^2 + (3 + 4*c1 + 3*c3)*Q2))/(36*f^2*(4*mo^2 + Q2))|>, 
+     (-18*di*fi*(4*mo^2 + Q2 + c3*Q2) + 9*fi^2*(4*mo^2 + Q2 + c3*Q2) + 
+       di^2*(4*mo^2 + (1 - 8*c1 + c3)*Q2))/(36*f^2*(4*mo^2 + Q2))|>, 
    <|
     s`f2`o2`\[CapitalSigma]0`\[CapitalXi]m`\[CapitalXi]m`\[CapitalKappa]ip -> \
--(-18*di*fi*(8*mo^2 + (2 + c1 + c2 + c3)*Q2) - 
-        9*fi^2*(8*mo^2 + (2 + c1 + c2 + c3)*Q2) + 
-        di^2*(24*mo^2 + (6 + 11*c1 - 9*c2 + 15*c3)*Q2))/
-      (36*f^2*(4*mo^2 + Q2)), 
+(di^2*(8*mo^2 + (2 - 3*c1 + 9*c2 - 7*c3)*Q2) + 
+       18*di*fi*(8*mo^2 + (2 + c1 + c2 + c3)*Q2) + 
+       9*fi^2*(8*mo^2 + (2 + c1 + c2 + c3)*Q2))/(36*f^2*(4*mo^2 + Q2)), 
     s`f2`o2`\[CapitalSigma]0`\[CapitalXi]0`\[CapitalXi]0`\[CapitalKappa]i0 -> 
-     -(-18*di*fi*(8*mo^2 + (2 + c1 + c2 + c3)*Q2) - 
-        9*fi^2*(8*mo^2 + (2 + c1 + c2 + c3)*Q2) + 
-        di^2*(24*mo^2 + (6 + 11*c1 - 9*c2 + 15*c3)*Q2))/
-      (36*f^2*(4*mo^2 + Q2)), 
+     (di^2*(8*mo^2 + (2 - 3*c1 + 9*c2 - 7*c3)*Q2) + 
+       18*di*fi*(8*mo^2 + (2 + c1 + c2 + c3)*Q2) + 
+       9*fi^2*(8*mo^2 + (2 + c1 + c2 + c3)*Q2))/(36*f^2*(4*mo^2 + Q2)), 
     s`f2`o2`\[CapitalSigma]0`\[CapitalSigma]m`\[CapitalSigma]m`\[Pi]ip -> 
-     -(-9*fi^2*(4*mo^2 + Q2 + c3*Q2) + di^2*(12*mo^2 + (3 + 4*c1 + 3*c3)*Q2))/
+     -(-9*fi^2*(4*mo^2 + Q2 + c3*Q2) + 2*di^2*(4*mo^2 + (1 + c1 + c3)*Q2))/
       (9*f^2*(4*mo^2 + Q2)), 
     s`f2`o2`\[CapitalSigma]0`\[CapitalSigma]p`\[CapitalSigma]p`\[Pi]im -> 
-     -(-9*fi^2*(4*mo^2 + Q2 + c3*Q2) + di^2*(12*mo^2 + (3 + 4*c1 + 3*c3)*Q2))/
+     -(-9*fi^2*(4*mo^2 + Q2 + c3*Q2) + 2*di^2*(4*mo^2 + (1 + c1 + c3)*Q2))/
       (9*f^2*(4*mo^2 + Q2))|>}, 
   {<|u`f2`o3`\[CapitalSigma]p`\[CapitalSigma]p`\[CapitalSigma]p`\[Eta] -> 
      -(-18*di*fi*(8*mo^2 + (2 + c1 + c2 + c3)*Q2) + 
@@ -300,41 +296,46 @@ m -> (di^2*(24*mo^2 - (-6 + c1 - 9*c2 + 3*c3)*Q2) -
        (di - 3*fi)^2*(12*mo^2 + (3 + 4*c1 + 3*c3)*Q2))/
       (36*f^2*(4*mo^2 + Q2))|>}, 
   {<|u`f2`o8`\[CapitalLambda]`\[CapitalSigma]p`\[CapitalSigma]p`\[Pi]im -> 
-     -((c1 - c2 + c3)*di^2*Q2)/(3*f^2*(4*mo^2 + Q2)), 
+     -(di^2*(-24*mo^2 + (-6 + c1 - 9*c2 + 3*c3)*Q2))/(27*f^2*(4*mo^2 + Q2)), 
     u`f2`o8`\[CapitalLambda]`Np`Np`\[CapitalKappa]im -> 
-     -(-6*di*fi*(8*mo^2 + (2 + c1 + c2 + c3)*Q2) - 
-        9*fi^2*(8*mo^2 + (2 + c1 + c2 + c3)*Q2) + 
-        di^2*(24*mo^2 + (6 + 3*c1 - c2 + 7*c3)*Q2))/(12*f^2*(4*mo^2 + Q2)), 
+     -(-54*di*fi*(8*mo^2 + (2 + c1 + c2 + c3)*Q2) - 
+        81*fi^2*(8*mo^2 + (2 + c1 + c2 + c3)*Q2) + 
+        di^2*(120*mo^2 + (30 + 31*c1 - 9*c2 + 39*c3)*Q2))/
+      (108*f^2*(4*mo^2 + Q2)), 
     u`f2`o8`\[CapitalLambda]`\[CapitalXi]0`\[CapitalXi]0`\[CapitalKappa]i0 -> 
-     -(6*di*fi*(4*mo^2 + Q2 + c3*Q2) - 9*fi^2*(4*mo^2 + Q2 + c3*Q2) + 
-        di^2*(12*mo^2 + (3 + 4*c1 + 3*c3)*Q2))/(12*f^2*(4*mo^2 + Q2)), 
+     -(54*di*fi*(4*mo^2 + Q2 + c3*Q2) - 81*fi^2*(4*mo^2 + Q2 + c3*Q2) + 
+        5*di^2*(12*mo^2 + (3 + 4*c1 + 3*c3)*Q2))/(108*f^2*(4*mo^2 + Q2)), 
     u`f2`o8`\[CapitalLambda]`Nn`Nn`\[CapitalKappa]i0b -> 
-     -(-6*di*fi*(4*mo^2 + Q2 + c3*Q2) - 9*fi^2*(4*mo^2 + Q2 + c3*Q2) + 
-        di^2*(12*mo^2 + (3 + 4*c1 + 3*c3)*Q2))/(12*f^2*(4*mo^2 + Q2))|>, 
+     -(-54*di*fi*(4*mo^2 + Q2 + c3*Q2) - 81*fi^2*(4*mo^2 + Q2 + c3*Q2) + 
+        di^2*(60*mo^2 + 8*c1*Q2 + 15*(1 + c3)*Q2))/(108*f^2*(4*mo^2 + Q2))|>, 
    <|d`f2`o8`\[CapitalLambda]`\[CapitalSigma]m`\[CapitalSigma]m`\[Pi]ip -> 
-     -((c1 - c2 + c3)*di^2*Q2)/(3*f^2*(4*mo^2 + Q2)), 
+     -(di^2*(-24*mo^2 + (-6 + c1 - 9*c2 + 3*c3)*Q2))/(27*f^2*(4*mo^2 + Q2)), 
     d`f2`o8`\[CapitalLambda]`Nn`Nn`\[CapitalKappa]i0b -> 
-     -(-6*di*fi*(8*mo^2 + (2 + c1 + c2 + c3)*Q2) - 
-        9*fi^2*(8*mo^2 + (2 + c1 + c2 + c3)*Q2) + 
-        di^2*(24*mo^2 + (6 + 3*c1 - c2 + 7*c3)*Q2))/(12*f^2*(4*mo^2 + Q2)), 
+     -(-54*di*fi*(8*mo^2 + (2 + c1 + c2 + c3)*Q2) - 
+        81*fi^2*(8*mo^2 + (2 + c1 + c2 + c3)*Q2) + 
+        di^2*(120*mo^2 + (30 + 31*c1 - 9*c2 + 39*c3)*Q2))/
+      (108*f^2*(4*mo^2 + Q2)), 
     d`f2`o8`\[CapitalLambda]`\[CapitalXi]m`\[CapitalXi]m`\[CapitalKappa]ip -> 
-     -(6*di*fi*(4*mo^2 + Q2 + c3*Q2) - 9*fi^2*(4*mo^2 + Q2 + c3*Q2) + 
-        di^2*(12*mo^2 + (3 + 4*c1 + 3*c3)*Q2))/(12*f^2*(4*mo^2 + Q2)), 
+     -(54*di*fi*(4*mo^2 + Q2 + c3*Q2) - 81*fi^2*(4*mo^2 + Q2 + c3*Q2) + 
+        5*di^2*(12*mo^2 + (3 + 4*c1 + 3*c3)*Q2))/(108*f^2*(4*mo^2 + Q2)), 
     d`f2`o8`\[CapitalLambda]`Np`Np`\[CapitalKappa]im -> 
-     -(-6*di*fi*(4*mo^2 + Q2 + c3*Q2) - 9*fi^2*(4*mo^2 + Q2 + c3*Q2) + 
-        di^2*(12*mo^2 + (3 + 4*c1 + 3*c3)*Q2))/(12*f^2*(4*mo^2 + Q2))|>, 
+     -(-54*di*fi*(4*mo^2 + Q2 + c3*Q2) - 81*fi^2*(4*mo^2 + Q2 + c3*Q2) + 
+        di^2*(60*mo^2 + 8*c1*Q2 + 15*(1 + c3)*Q2))/(108*f^2*(4*mo^2 + Q2))|>, 
    <|
     s`f2`o8`\[CapitalLambda]`\[CapitalXi]m`\[CapitalXi]m`\[CapitalKappa]ip -> \
--(6*di*fi*(8*mo^2 + (2 + c1 + c2 + c3)*Q2) - 
-        9*fi^2*(8*mo^2 + (2 + c1 + c2 + c3)*Q2) + 
-        di^2*(24*mo^2 + (6 + 3*c1 - c2 + 7*c3)*Q2))/(12*f^2*(4*mo^2 + Q2)), 
+-(54*di*fi*(8*mo^2 + (2 + c1 + c2 + c3)*Q2) - 
+        81*fi^2*(8*mo^2 + (2 + c1 + c2 + c3)*Q2) + 
+        di^2*(120*mo^2 + (30 + 19*c1 - 9*c2 + 39*c3)*Q2))/
+      (108*f^2*(4*mo^2 + Q2)), 
     s`f2`o8`\[CapitalLambda]`\[CapitalXi]0`\[CapitalXi]0`\[CapitalKappa]i0 -> 
-     -(6*di*fi*(8*mo^2 + (2 + c1 + c2 + c3)*Q2) - 
-        9*fi^2*(8*mo^2 + (2 + c1 + c2 + c3)*Q2) + 
-        di^2*(24*mo^2 + (6 + 3*c1 - c2 + 7*c3)*Q2))/(12*f^2*(4*mo^2 + Q2)), 
-    s`f2`o8`\[CapitalLambda]`\[CapitalSigma]m`\[CapitalSigma]m`\[Pi]ip -> 0, 
+     -(54*di*fi*(8*mo^2 + (2 + c1 + c2 + c3)*Q2) - 
+        81*fi^2*(8*mo^2 + (2 + c1 + c2 + c3)*Q2) + 
+        di^2*(120*mo^2 + (30 + 19*c1 - 9*c2 + 39*c3)*Q2))/
+      (108*f^2*(4*mo^2 + Q2)), 
+    s`f2`o8`\[CapitalLambda]`\[CapitalSigma]m`\[CapitalSigma]m`\[Pi]ip -> 
+     (di^2*(12*mo^2 + (3 - 2*c1 + 3*c3)*Q2))/(27*f^2*(4*mo^2 + Q2)), 
     s`f2`o8`\[CapitalLambda]`\[CapitalSigma]p`\[CapitalSigma]p`\[Pi]im -> 
-     0|>}}, 
+     (di^2*(12*mo^2 + (3 - 2*c1 + 3*c3)*Q2))/(27*f^2*(4*mo^2 + Q2))|>}}, 
  {{<||>, 
    <|d`f3`o1`\[CapitalSigma]m`\[CapitalSigma]m`\[CapitalSigma]m`\[Eta] -> 
      (((-2*I)/27)*(9*c2*fi*(-2*di + fi) + 3*c3*(di^2 - 6*di*fi + 6*fi^2) + 
@@ -361,40 +362,40 @@ m -> (di^2*(24*mo^2 - (-6 + c1 - 9*c2 + 3*c3)*Q2) -
      ((-I/27)*(8*c1*di^2 + 3*c3*(5*di^2 - 6*di*fi + 9*fi^2))*mo)/
       (f^2*(4*mo^2 + Q2))|>}, 
   {<|u`f3`o2`\[CapitalSigma]0`\[CapitalSigma]p`\[CapitalSigma]p`\[Pi]im -> 
-     (((2*I)/9)*(-2*(c1 + 3*c3)*di^2 + 9*(c1 + c2 + c3)*fi^2)*mo)/
-      (f^2*(4*mo^2 + Q2)), 
+     (((2*I)/9)*(-2*c1*di^2 - 4*c3*di^2 + 9*c1*fi^2 + 9*c2*fi^2 + 9*c3*fi^2)*
+       mo)/(f^2*(4*mo^2 + Q2)), 
     u`f3`o2`\[CapitalSigma]0`Np`Np`\[CapitalKappa]im -> 
-     ((I/18)*(9*c2*(di - fi)^2 - 3*c3*(5*di^2 + 6*di*fi - 3*fi^2) + 
-        c1*(-11*di^2 - 18*di*fi + 9*fi^2))*mo)/(f^2*(4*mo^2 + Q2)), 
+     ((I/18)*(9*c2*(di - fi)^2 + c3*(-7*di^2 - 18*di*fi + 9*fi^2) + 
+        c1*(di^2 - 18*di*fi + 9*fi^2))*mo)/(f^2*(4*mo^2 + Q2)), 
     u`f3`o2`\[CapitalSigma]0`\[CapitalXi]0`\[CapitalXi]0`\[CapitalKappa]i0 -> 
-     ((-I/18)*(4*c1*di^2 + 3*c3*(di^2 - 6*di*fi - 3*fi^2))*mo)/
+     ((I/18)*(-4*c1*di^2 + c3*(di^2 + 18*di*fi + 9*fi^2))*mo)/
       (f^2*(4*mo^2 + Q2)), 
     u`f3`o2`\[CapitalSigma]0`Nn`Nn`\[CapitalKappa]i0b -> 
-     ((-I/18)*(4*c1*di^2 + 3*c3*(di^2 + 6*di*fi - 3*fi^2))*mo)/
+     ((I/18)*(-8*c1*di^2 + c3*(di^2 - 18*di*fi + 9*fi^2))*mo)/
       (f^2*(4*mo^2 + Q2))|>, 
    <|d`f3`o2`\[CapitalSigma]0`\[CapitalSigma]m`\[CapitalSigma]m`\[Pi]ip -> 
-     (((2*I)/9)*(-2*(c1 + 3*c3)*di^2 + 9*(c1 + c2 + c3)*fi^2)*mo)/
-      (f^2*(4*mo^2 + Q2)), 
+     (((2*I)/9)*(-2*c1*di^2 - 4*c3*di^2 + 9*c1*fi^2 + 9*c2*fi^2 + 9*c3*fi^2)*
+       mo)/(f^2*(4*mo^2 + Q2)), 
     d`f3`o2`\[CapitalSigma]0`Nn`Nn`\[CapitalKappa]i0b -> 
-     ((I/18)*(9*c2*(di - fi)^2 - 3*c3*(5*di^2 + 6*di*fi - 3*fi^2) + 
-        c1*(-11*di^2 - 18*di*fi + 9*fi^2))*mo)/(f^2*(4*mo^2 + Q2)), 
+     ((I/18)*(9*c2*(di - fi)^2 + c3*(-7*di^2 - 18*di*fi + 9*fi^2) + 
+        c1*(di^2 - 18*di*fi + 9*fi^2))*mo)/(f^2*(4*mo^2 + Q2)), 
     d`f3`o2`\[CapitalSigma]0`\[CapitalXi]m`\[CapitalXi]m`\[CapitalKappa]ip -> 
-     ((-I/18)*(4*c1*di^2 + 3*c3*(di^2 - 6*di*fi - 3*fi^2))*mo)/
+     ((I/18)*(-4*c1*di^2 + c3*(di^2 + 18*di*fi + 9*fi^2))*mo)/
       (f^2*(4*mo^2 + Q2)), 
     d`f3`o2`\[CapitalSigma]0`Np`Np`\[CapitalKappa]im -> 
-     ((-I/18)*(4*c1*di^2 + 3*c3*(di^2 + 6*di*fi - 3*fi^2))*mo)/
+     ((I/18)*(-8*c1*di^2 + c3*(di^2 - 18*di*fi + 9*fi^2))*mo)/
       (f^2*(4*mo^2 + Q2))|>, 
    <|
     s`f3`o2`\[CapitalSigma]0`\[CapitalXi]m`\[CapitalXi]m`\[CapitalKappa]ip -> \
-((I/18)*(9*c2*(di + fi)^2 + 3*c3*(-5*di^2 + 6*di*fi + 3*fi^2) + 
-        c1*(-11*di^2 + 18*di*fi + 9*fi^2))*mo)/(f^2*(4*mo^2 + Q2)), 
+((I/18)*(9*c2*(di + fi)^2 - 3*c1*(di^2 - 6*di*fi - 3*fi^2) + 
+        c3*(-7*di^2 + 18*di*fi + 9*fi^2))*mo)/(f^2*(4*mo^2 + Q2)), 
     s`f3`o2`\[CapitalSigma]0`\[CapitalXi]0`\[CapitalXi]0`\[CapitalKappa]i0 -> 
-     ((I/18)*(9*c2*(di + fi)^2 + 3*c3*(-5*di^2 + 6*di*fi + 3*fi^2) + 
-        c1*(-11*di^2 + 18*di*fi + 9*fi^2))*mo)/(f^2*(4*mo^2 + Q2)), 
+     ((I/18)*(9*c2*(di + fi)^2 - 3*c1*(di^2 - 6*di*fi - 3*fi^2) + 
+        c3*(-7*di^2 + 18*di*fi + 9*fi^2))*mo)/(f^2*(4*mo^2 + Q2)), 
     s`f3`o2`\[CapitalSigma]0`\[CapitalSigma]m`\[CapitalSigma]m`\[Pi]ip -> 
-     (((-2*I)/9)*(4*c1*di^2 + 3*c3*(di^2 - 3*fi^2))*mo)/(f^2*(4*mo^2 + Q2)), 
+     (((-2*I)/9)*(2*c1*di^2 + 2*c3*di^2 - 9*c3*fi^2)*mo)/(f^2*(4*mo^2 + Q2)), 
     s`f3`o2`\[CapitalSigma]0`\[CapitalSigma]p`\[CapitalSigma]p`\[Pi]im -> 
-     (((-2*I)/9)*(4*c1*di^2 + 3*c3*(di^2 - 3*fi^2))*mo)/
+     (((-2*I)/9)*(2*c1*di^2 + 2*c3*di^2 - 9*c3*fi^2)*mo)/
       (f^2*(4*mo^2 + Q2))|>}, 
   {<|u`f3`o3`\[CapitalSigma]p`\[CapitalSigma]p`\[CapitalSigma]p`\[Eta] -> 
      (((-2*I)/27)*(9*c2*fi*(-2*di + fi) + 3*c3*(di^2 - 6*di*fi + 6*fi^2) + 
@@ -499,37 +500,39 @@ m -> ((I/9)*(-(c1*(di - 3*fi)^2) + 3*(-(c3*(di - 3*fi)^2) +
 -> ((I/9)*(-2*c1*(di - 3*fi)^2 + 3*c3*(di^2 + 6*di*fi - 3*fi^2))*mo)/
       (f^2*(4*mo^2 + Q2))|>}, 
   {<|u`f3`o8`\[CapitalLambda]`\[CapitalSigma]p`\[CapitalSigma]p`\[Pi]im -> 
-     (((-2*I)/3)*(c1 - c2 + c3)*di^2*mo)/(f^2*(4*mo^2 + Q2)), 
+     (((-2*I)/27)*(c1 - 9*c2 + 3*c3)*di^2*mo)/(f^2*(4*mo^2 + Q2)), 
     u`f3`o8`\[CapitalLambda]`Np`Np`\[CapitalKappa]im -> 
-     ((I/6)*(c2*(di + 3*fi)^2 + c3*(-7*di^2 + 6*di*fi + 9*fi^2) + 
-        c1*(-3*di^2 + 6*di*fi + 9*fi^2))*mo)/(f^2*(4*mo^2 + Q2)), 
+     ((I/54)*(-39*c3*di^2 + 54*c3*di*fi + 81*c3*fi^2 + 9*c2*(di + 3*fi)^2 + 
+        c1*(-31*di^2 + 54*di*fi + 81*fi^2))*mo)/(f^2*(4*mo^2 + Q2)), 
     u`f3`o8`\[CapitalLambda]`\[CapitalXi]0`\[CapitalXi]0`\[CapitalKappa]i0 -> 
-     ((-I/6)*(4*c1*di^2 + 3*c3*(di^2 + 2*di*fi - 3*fi^2))*mo)/
+     ((-I/54)*(20*c1*di^2 + 3*c3*(5*di^2 + 18*di*fi - 27*fi^2))*mo)/
       (f^2*(4*mo^2 + Q2)), 
     u`f3`o8`\[CapitalLambda]`Nn`Nn`\[CapitalKappa]i0b -> 
-     ((-I/6)*(4*c1*di^2 + 3*c3*(di^2 - 2*di*fi - 3*fi^2))*mo)/
+     ((-I/54)*(8*c1*di^2 + 3*c3*(5*di^2 - 18*di*fi - 27*fi^2))*mo)/
       (f^2*(4*mo^2 + Q2))|>, 
    <|d`f3`o8`\[CapitalLambda]`\[CapitalSigma]m`\[CapitalSigma]m`\[Pi]ip -> 
-     (((-2*I)/3)*(c1 - c2 + c3)*di^2*mo)/(f^2*(4*mo^2 + Q2)), 
+     (((-2*I)/27)*(c1 - 9*c2 + 3*c3)*di^2*mo)/(f^2*(4*mo^2 + Q2)), 
     d`f3`o8`\[CapitalLambda]`Nn`Nn`\[CapitalKappa]i0b -> 
-     ((I/6)*(c2*(di + 3*fi)^2 + c3*(-7*di^2 + 6*di*fi + 9*fi^2) + 
-        c1*(-3*di^2 + 6*di*fi + 9*fi^2))*mo)/(f^2*(4*mo^2 + Q2)), 
+     ((I/54)*(-39*c3*di^2 + 54*c3*di*fi + 81*c3*fi^2 + 9*c2*(di + 3*fi)^2 + 
+        c1*(-31*di^2 + 54*di*fi + 81*fi^2))*mo)/(f^2*(4*mo^2 + Q2)), 
     d`f3`o8`\[CapitalLambda]`\[CapitalXi]m`\[CapitalXi]m`\[CapitalKappa]ip -> 
-     ((-I/6)*(4*c1*di^2 + 3*c3*(di^2 + 2*di*fi - 3*fi^2))*mo)/
+     ((-I/54)*(20*c1*di^2 + 3*c3*(5*di^2 + 18*di*fi - 27*fi^2))*mo)/
       (f^2*(4*mo^2 + Q2)), 
     d`f3`o8`\[CapitalLambda]`Np`Np`\[CapitalKappa]im -> 
-     ((-I/6)*(4*c1*di^2 + 3*c3*(di^2 - 2*di*fi - 3*fi^2))*mo)/
+     ((-I/54)*(8*c1*di^2 + 3*c3*(5*di^2 - 18*di*fi - 27*fi^2))*mo)/
       (f^2*(4*mo^2 + Q2))|>, 
    <|
     s`f3`o8`\[CapitalLambda]`\[CapitalXi]m`\[CapitalXi]m`\[CapitalKappa]ip -> \
-((I/6)*(c2*(di - 3*fi)^2 - 3*c1*(di^2 + 2*di*fi - 3*fi^2) + 
-        c3*(-7*di^2 - 6*di*fi + 9*fi^2))*mo)/(f^2*(4*mo^2 + Q2)), 
+((I/54)*(9*c2*(di - 3*fi)^2 - 3*c3*(13*di^2 + 18*di*fi - 27*fi^2) + 
+        c1*(-19*di^2 - 54*di*fi + 81*fi^2))*mo)/(f^2*(4*mo^2 + Q2)), 
     s`f3`o8`\[CapitalLambda]`\[CapitalXi]0`\[CapitalXi]0`\[CapitalKappa]i0 -> 
-     ((I/6)*(c2*(di - 3*fi)^2 - 3*c1*(di^2 + 2*di*fi - 3*fi^2) + 
-        c3*(-7*di^2 - 6*di*fi + 9*fi^2))*mo)/(f^2*(4*mo^2 + Q2)), 
-    s`f3`o8`\[CapitalLambda]`\[CapitalSigma]m`\[CapitalSigma]m`\[Pi]ip -> 0, 
+     ((I/54)*(9*c2*(di - 3*fi)^2 - 3*c3*(13*di^2 + 18*di*fi - 27*fi^2) + 
+        c1*(-19*di^2 - 54*di*fi + 81*fi^2))*mo)/(f^2*(4*mo^2 + Q2)), 
+    s`f3`o8`\[CapitalLambda]`\[CapitalSigma]m`\[CapitalSigma]m`\[Pi]ip -> 
+     (((2*I)/27)*(-2*c1 + 3*c3)*di^2*mo)/(f^2*(4*mo^2 + Q2)), 
     s`f3`o8`\[CapitalLambda]`\[CapitalSigma]p`\[CapitalSigma]p`\[Pi]im -> 
-     0|>}}, {{<||>, <|d`f4`o1`\[CapitalSigma]m`\[CapitalSigma]m`\[Eta] -> 
+     (((2*I)/27)*(-2*c1 + 3*c3)*di^2*mo)/(f^2*(4*mo^2 + Q2))|>}}, 
+ {{<||>, <|d`f4`o1`\[CapitalSigma]m`\[CapitalSigma]m`\[Eta] -> 
      -(5*di^2 - 3*fi^2)/(18*f^2) - (-5*di^2 + 3*fi^2)/(18*f^2), 
     d`f4`o1`\[CapitalSigma]m`\[CapitalSigma]m`\[Pi]i0 -> 0, 
     d`f4`o1`\[CapitalSigma]m`\[CapitalSigma]m`etas -> 0, 
@@ -540,29 +543,29 @@ m -> ((I/9)*(-(c1*(di - 3*fi)^2) + 3*(-(c3*(di - 3*fi)^2) +
     s`f4`o1`\[CapitalSigma]m`\[CapitalXi]m`\[CapitalKappa]i0 -> 
      -(di^2 + 6*di*fi - 3*fi^2)/(6*f^2)|>}, 
   {<|u`f4`o2`\[CapitalSigma]0`\[CapitalSigma]m`\[Pi]ip -> 
-     -(di^2 - 3*fi^2)/(3*f^2), 
+     -(2*di^2 - 9*fi^2)/(9*f^2), 
     u`f4`o2`\[CapitalSigma]0`\[CapitalXi]m`\[CapitalKappa]ip -> 
-     -(di^2 - 6*di*fi - 3*fi^2)/(12*f^2), 
+     -(8*di^2 - 9*(di + fi)^2)/(36*f^2), 
     u`f4`o2`\[CapitalSigma]0`\[CapitalSigma]p`\[Pi]im -> 
-     (di^2 - 3*fi^2)/(3*f^2), 
+     -(-2*di^2 + 9*fi^2)/(9*f^2), 
     u`f4`o2`\[CapitalSigma]0`Np`\[CapitalKappa]im -> 
-     (di^2 + 6*di*fi - 3*fi^2)/(12*f^2)|>, 
+     -(di^2 - 18*di*fi + 9*fi^2)/(36*f^2)|>, 
    <|d`f4`o2`\[CapitalSigma]0`\[CapitalSigma]p`\[Pi]im -> 
-     -(di^2 - 3*fi^2)/(3*f^2), 
+     -(2*di^2 - 9*fi^2)/(9*f^2), 
     d`f4`o2`\[CapitalSigma]0`\[CapitalXi]0`\[CapitalKappa]i0 -> 
-     -(di^2 - 6*di*fi - 3*fi^2)/(12*f^2), 
+     -(8*di^2 - 9*(di + fi)^2)/(36*f^2), 
     d`f4`o2`\[CapitalSigma]0`\[CapitalSigma]m`\[Pi]ip -> 
-     (di^2 - 3*fi^2)/(3*f^2), 
+     -(-2*di^2 + 9*fi^2)/(9*f^2), 
     d`f4`o2`\[CapitalSigma]0`Nn`\[CapitalKappa]i0b -> 
-     (di^2 + 6*di*fi - 3*fi^2)/(12*f^2)|>, 
+     -(di^2 - 18*di*fi + 9*fi^2)/(36*f^2)|>, 
    <|s`f4`o2`\[CapitalSigma]0`Np`\[CapitalKappa]im -> 
-     -(di^2 + 6*di*fi - 3*fi^2)/(12*f^2), 
+     (di^2 - 18*di*fi + 9*fi^2)/(36*f^2), 
     s`f4`o2`\[CapitalSigma]0`Nn`\[CapitalKappa]i0b -> 
-     -(di^2 + 6*di*fi - 3*fi^2)/(12*f^2), 
+     (di^2 - 18*di*fi + 9*fi^2)/(36*f^2), 
     s`f4`o2`\[CapitalSigma]0`\[CapitalXi]m`\[CapitalKappa]ip -> 
-     (di^2 - 6*di*fi - 3*fi^2)/(12*f^2), 
+     -(di^2 + 18*di*fi + 9*fi^2)/(36*f^2), 
     s`f4`o2`\[CapitalSigma]0`\[CapitalXi]0`\[CapitalKappa]i0 -> 
-     (di^2 - 6*di*fi - 3*fi^2)/(12*f^2)|>}, 
+     -(di^2 + 18*di*fi + 9*fi^2)/(36*f^2)|>}, 
   {<|u`f4`o3`\[CapitalSigma]p`\[CapitalSigma]p`\[Eta] -> 
      -(5*di^2 - 3*fi^2)/(18*f^2) - (-5*di^2 + 3*fi^2)/(18*f^2), 
     u`f4`o3`\[CapitalSigma]p`\[CapitalSigma]p`\[Pi]i0 -> 0, 
@@ -601,26 +604,26 @@ m -> ((I/9)*(-(c1*(di - 3*fi)^2) + 3*(-(c3*(di - 3*fi)^2) +
      -(5*di^2 - 18*di*fi - 3*fi^2)/(36*f^2) - (-5*di^2 + 18*di*fi + 3*fi^2)/
        (36*f^2), s`f4`o7`\[CapitalXi]0`\[CapitalXi]0`etas -> 0, 
     s`f4`o7`\[CapitalXi]0`sss`\[CapitalKappa]ip -> 0|>}, 
-  {<|u`f4`o8`\[CapitalLambda]`\[CapitalSigma]m`\[Pi]ip -> 0, 
+  {<|u`f4`o8`\[CapitalLambda]`\[CapitalSigma]m`\[Pi]ip -> di^2/(9*f^2), 
     u`f4`o8`\[CapitalLambda]`\[CapitalXi]m`\[CapitalKappa]ip -> 
-     -(di^2 + 2*di*fi - 3*fi^2)/(4*f^2), 
-    u`f4`o8`\[CapitalLambda]`\[CapitalSigma]p`\[Pi]im -> 0, 
+     -(5*di^2 + 18*di*fi - 27*fi^2)/(36*f^2), 
+    u`f4`o8`\[CapitalLambda]`\[CapitalSigma]p`\[Pi]im -> -di^2/(9*f^2), 
     u`f4`o8`\[CapitalLambda]`Np`\[CapitalKappa]im -> 
-     (di^2 - 2*di*fi - 3*fi^2)/(4*f^2)|>, 
-   <|d`f4`o8`\[CapitalLambda]`\[CapitalSigma]p`\[Pi]im -> 0, 
+     -(-5*di^2 + 18*di*fi + 27*fi^2)/(36*f^2)|>, 
+   <|d`f4`o8`\[CapitalLambda]`\[CapitalSigma]p`\[Pi]im -> di^2/(9*f^2), 
     d`f4`o8`\[CapitalLambda]`\[CapitalXi]0`\[CapitalKappa]i0 -> 
-     -(di^2 + 2*di*fi - 3*fi^2)/(4*f^2), 
-    d`f4`o8`\[CapitalLambda]`\[CapitalSigma]m`\[Pi]ip -> 0, 
+     -(5*di^2 + 18*di*fi - 27*fi^2)/(36*f^2), 
+    d`f4`o8`\[CapitalLambda]`\[CapitalSigma]m`\[Pi]ip -> -di^2/(9*f^2), 
     d`f4`o8`\[CapitalLambda]`Nn`\[CapitalKappa]i0b -> 
-     (di^2 - 2*di*fi - 3*fi^2)/(4*f^2)|>, 
+     -(-5*di^2 + 18*di*fi + 27*fi^2)/(36*f^2)|>, 
    <|s`f4`o8`\[CapitalLambda]`Np`\[CapitalKappa]im -> 
-     -(di^2 - 2*di*fi - 3*fi^2)/(4*f^2), 
+     -(5*di^2 - 18*di*fi - 27*fi^2)/(36*f^2), 
     s`f4`o8`\[CapitalLambda]`Nn`\[CapitalKappa]i0b -> 
-     -(di^2 - 2*di*fi - 3*fi^2)/(4*f^2), 
+     -(5*di^2 - 18*di*fi - 27*fi^2)/(36*f^2), 
     s`f4`o8`\[CapitalLambda]`\[CapitalXi]m`\[CapitalKappa]ip -> 
-     (di^2 + 2*di*fi - 3*fi^2)/(4*f^2), 
+     (5*di^2 + 18*di*fi - 27*fi^2)/(36*f^2), 
     s`f4`o8`\[CapitalLambda]`\[CapitalXi]0`\[CapitalKappa]i0 -> 
-     (di^2 + 2*di*fi - 3*fi^2)/(4*f^2)|>}}, 
+     (5*di^2 + 18*di*fi - 27*fi^2)/(36*f^2)|>}}, 
  {{<||>, <|d`f5`o1`\[CapitalSigma]m`\[CapitalSigma]m`\[Eta] -> 
      -(5*di^2 - 3*fi^2)/(18*f^2) - (-5*di^2 + 3*fi^2)/(18*f^2), 
     d`f5`o1`\[CapitalSigma]m`\[CapitalSigma]m`\[Pi]i0 -> 0, 
@@ -632,29 +635,29 @@ m -> ((I/9)*(-(c1*(di - 3*fi)^2) + 3*(-(c3*(di - 3*fi)^2) +
     s`f5`o1`\[CapitalSigma]m`\[CapitalXi]m`\[CapitalKappa]i0 -> 
      -(di^2 + 6*di*fi - 3*fi^2)/(6*f^2)|>}, 
   {<|u`f5`o2`\[CapitalSigma]0`\[CapitalSigma]m`\[Pi]ip -> 
-     -(di^2 - 3*fi^2)/(3*f^2), 
+     -(2*di^2 - 9*fi^2)/(9*f^2), 
     u`f5`o2`\[CapitalSigma]0`\[CapitalXi]m`\[CapitalKappa]ip -> 
-     -(di^2 - 6*di*fi - 3*fi^2)/(12*f^2), 
+     -(8*di^2 - 9*(di + fi)^2)/(36*f^2), 
     u`f5`o2`\[CapitalSigma]0`\[CapitalSigma]p`\[Pi]im -> 
-     (di^2 - 3*fi^2)/(3*f^2), 
+     -(-2*di^2 + 9*fi^2)/(9*f^2), 
     u`f5`o2`\[CapitalSigma]0`Np`\[CapitalKappa]im -> 
-     (di^2 + 6*di*fi - 3*fi^2)/(12*f^2)|>, 
+     -(di^2 - 18*di*fi + 9*fi^2)/(36*f^2)|>, 
    <|d`f5`o2`\[CapitalSigma]0`\[CapitalSigma]p`\[Pi]im -> 
-     -(di^2 - 3*fi^2)/(3*f^2), 
+     -(2*di^2 - 9*fi^2)/(9*f^2), 
     d`f5`o2`\[CapitalSigma]0`\[CapitalXi]0`\[CapitalKappa]i0 -> 
-     -(di^2 - 6*di*fi - 3*fi^2)/(12*f^2), 
+     -(8*di^2 - 9*(di + fi)^2)/(36*f^2), 
     d`f5`o2`\[CapitalSigma]0`\[CapitalSigma]m`\[Pi]ip -> 
-     (di^2 - 3*fi^2)/(3*f^2), 
+     -(-2*di^2 + 9*fi^2)/(9*f^2), 
     d`f5`o2`\[CapitalSigma]0`Nn`\[CapitalKappa]i0b -> 
-     (di^2 + 6*di*fi - 3*fi^2)/(12*f^2)|>, 
+     -(di^2 - 18*di*fi + 9*fi^2)/(36*f^2)|>, 
    <|s`f5`o2`\[CapitalSigma]0`Np`\[CapitalKappa]im -> 
-     -(di^2 + 6*di*fi - 3*fi^2)/(12*f^2), 
+     (di^2 - 18*di*fi + 9*fi^2)/(36*f^2), 
     s`f5`o2`\[CapitalSigma]0`Nn`\[CapitalKappa]i0b -> 
-     -(di^2 + 6*di*fi - 3*fi^2)/(12*f^2), 
+     (di^2 - 18*di*fi + 9*fi^2)/(36*f^2), 
     s`f5`o2`\[CapitalSigma]0`\[CapitalXi]m`\[CapitalKappa]ip -> 
-     (di^2 - 6*di*fi - 3*fi^2)/(12*f^2), 
+     -(di^2 + 18*di*fi + 9*fi^2)/(36*f^2), 
     s`f5`o2`\[CapitalSigma]0`\[CapitalXi]0`\[CapitalKappa]i0 -> 
-     (di^2 - 6*di*fi - 3*fi^2)/(12*f^2)|>}, 
+     -(di^2 + 18*di*fi + 9*fi^2)/(36*f^2)|>}, 
   {<|u`f5`o3`\[CapitalSigma]p`\[CapitalSigma]p`\[Eta] -> 
      -(5*di^2 - 3*fi^2)/(18*f^2) - (-5*di^2 + 3*fi^2)/(18*f^2), 
     u`f5`o3`\[CapitalSigma]p`\[CapitalSigma]p`\[Pi]i0 -> 0, 
@@ -693,26 +696,26 @@ m -> ((I/9)*(-(c1*(di - 3*fi)^2) + 3*(-(c3*(di - 3*fi)^2) +
      -(5*di^2 - 18*di*fi - 3*fi^2)/(36*f^2) - (-5*di^2 + 18*di*fi + 3*fi^2)/
        (36*f^2), s`f5`o7`\[CapitalXi]0`\[CapitalXi]0`etas -> 0, 
     s`f5`o7`\[CapitalXi]0`sss`\[CapitalKappa]ip -> 0|>}, 
-  {<|u`f5`o8`\[CapitalLambda]`\[CapitalSigma]m`\[Pi]ip -> 0, 
+  {<|u`f5`o8`\[CapitalLambda]`\[CapitalSigma]m`\[Pi]ip -> di^2/(9*f^2), 
     u`f5`o8`\[CapitalLambda]`\[CapitalXi]m`\[CapitalKappa]ip -> 
-     -(di^2 + 2*di*fi - 3*fi^2)/(4*f^2), 
-    u`f5`o8`\[CapitalLambda]`\[CapitalSigma]p`\[Pi]im -> 0, 
+     -(5*di^2 + 18*di*fi - 27*fi^2)/(36*f^2), 
+    u`f5`o8`\[CapitalLambda]`\[CapitalSigma]p`\[Pi]im -> -di^2/(9*f^2), 
     u`f5`o8`\[CapitalLambda]`Np`\[CapitalKappa]im -> 
-     (di^2 - 2*di*fi - 3*fi^2)/(4*f^2)|>, 
-   <|d`f5`o8`\[CapitalLambda]`\[CapitalSigma]p`\[Pi]im -> 0, 
+     -(-5*di^2 + 18*di*fi + 27*fi^2)/(36*f^2)|>, 
+   <|d`f5`o8`\[CapitalLambda]`\[CapitalSigma]p`\[Pi]im -> di^2/(9*f^2), 
     d`f5`o8`\[CapitalLambda]`\[CapitalXi]0`\[CapitalKappa]i0 -> 
-     -(di^2 + 2*di*fi - 3*fi^2)/(4*f^2), 
-    d`f5`o8`\[CapitalLambda]`\[CapitalSigma]m`\[Pi]ip -> 0, 
+     -(5*di^2 + 18*di*fi - 27*fi^2)/(36*f^2), 
+    d`f5`o8`\[CapitalLambda]`\[CapitalSigma]m`\[Pi]ip -> -di^2/(9*f^2), 
     d`f5`o8`\[CapitalLambda]`Nn`\[CapitalKappa]i0b -> 
-     (di^2 - 2*di*fi - 3*fi^2)/(4*f^2)|>, 
+     -(-5*di^2 + 18*di*fi + 27*fi^2)/(36*f^2)|>, 
    <|s`f5`o8`\[CapitalLambda]`Np`\[CapitalKappa]im -> 
-     -(di^2 - 2*di*fi - 3*fi^2)/(4*f^2), 
+     -(5*di^2 - 18*di*fi - 27*fi^2)/(36*f^2), 
     s`f5`o8`\[CapitalLambda]`Nn`\[CapitalKappa]i0b -> 
-     -(di^2 - 2*di*fi - 3*fi^2)/(4*f^2), 
+     -(5*di^2 - 18*di*fi - 27*fi^2)/(36*f^2), 
     s`f5`o8`\[CapitalLambda]`\[CapitalXi]m`\[CapitalKappa]ip -> 
-     (di^2 + 2*di*fi - 3*fi^2)/(4*f^2), 
+     (5*di^2 + 18*di*fi - 27*fi^2)/(36*f^2), 
     s`f5`o8`\[CapitalLambda]`\[CapitalXi]0`\[CapitalKappa]i0 -> 
-     (di^2 + 2*di*fi - 3*fi^2)/(4*f^2)|>}}, 
+     (5*di^2 + 18*di*fi - 27*fi^2)/(36*f^2)|>}}, 
  {{<||>, <|d`f6`o1`\[CapitalSigma]m`\[CapitalSigma]sm`\[Eta] -> 0, 
     d`f6`o1`\[CapitalSigma]m`\[CapitalSigma]sm`\[Pi]i0 -> 0, 
     d`f6`o1`\[CapitalSigma]m`\[CapitalSigma]sm`etas -> 0, 
@@ -724,26 +727,26 @@ m -> ((I/9)*(-(c1*(di - 3*fi)^2) + 3*(-(c3*(di - 3*fi)^2) +
      -ci^2/(3*f^2), 
     s`f6`o1`\[CapitalSigma]m`\[CapitalXi]sm`\[CapitalKappa]i0 -> 
      ci^2/(12*f^2)|>}, 
-  {<|u`f6`o2`\[CapitalSigma]0`\[CapitalSigma]sm`\[Pi]ip -> ci^2/(6*f^2), 
+  {<|u`f6`o2`\[CapitalSigma]0`\[CapitalSigma]sm`\[Pi]ip -> -ci^2/(24*f^2), 
     u`f6`o2`\[CapitalSigma]0`\[CapitalXi]sm`\[CapitalKappa]ip -> 
-     ci^2/(6*f^2), u`f6`o2`\[CapitalSigma]0`\[CapitalSigma]sp`\[Pi]im -> 
-     -ci^2/(6*f^2), 
+     -ci^2/(24*f^2), u`f6`o2`\[CapitalSigma]0`\[CapitalSigma]sp`\[Pi]im -> 
+     ci^2/(24*f^2), 
     u`f6`o2`\[CapitalSigma]0`\[CapitalDelta]p`\[CapitalKappa]im -> 
-     ci^2/(12*f^2)|>, <|d`f6`o2`\[CapitalSigma]0`\[CapitalSigma]sp`\[Pi]im -> 
-     ci^2/(6*f^2), 
+     ci^2/(6*f^2)|>, <|d`f6`o2`\[CapitalSigma]0`\[CapitalSigma]sp`\[Pi]im -> 
+     -ci^2/(24*f^2), 
     d`f6`o2`\[CapitalSigma]0`\[CapitalXi]s0`\[CapitalKappa]i0 -> 
-     ci^2/(6*f^2), d`f6`o2`\[CapitalSigma]0`\[CapitalSigma]sm`\[Pi]ip -> 
-     -ci^2/(6*f^2), 
+     -ci^2/(24*f^2), d`f6`o2`\[CapitalSigma]0`\[CapitalSigma]sm`\[Pi]ip -> 
+     ci^2/(24*f^2), 
     d`f6`o2`\[CapitalSigma]0`\[CapitalDelta]0`\[CapitalKappa]i0b -> 
-     ci^2/(12*f^2)|>, 
+     ci^2/(6*f^2)|>, 
    <|s`f6`o2`\[CapitalSigma]0`\[CapitalDelta]p`\[CapitalKappa]im -> 
-     -ci^2/(12*f^2), 
-    s`f6`o2`\[CapitalSigma]0`\[CapitalDelta]0`\[CapitalKappa]i0b -> 
-     -ci^2/(12*f^2), 
-    s`f6`o2`\[CapitalSigma]0`\[CapitalXi]sm`\[CapitalKappa]ip -> 
      -ci^2/(6*f^2), 
+    s`f6`o2`\[CapitalSigma]0`\[CapitalDelta]0`\[CapitalKappa]i0b -> 
+     -ci^2/(6*f^2), 
+    s`f6`o2`\[CapitalSigma]0`\[CapitalXi]sm`\[CapitalKappa]ip -> 
+     ci^2/(24*f^2), 
     s`f6`o2`\[CapitalSigma]0`\[CapitalXi]s0`\[CapitalKappa]i0 -> 
-     -ci^2/(6*f^2)|>}, 
+     ci^2/(24*f^2)|>}, 
   {<|u`f6`o3`\[CapitalSigma]p`\[CapitalSigma]sp`\[Eta] -> 0, 
     u`f6`o3`\[CapitalSigma]p`\[CapitalSigma]sp`\[Pi]i0 -> 0, 
     u`f6`o3`\[CapitalSigma]p`\[CapitalSigma]sp`etas -> 0, 
@@ -813,29 +816,29 @@ m -> ((I/9)*(-(c1*(di - 3*fi)^2) + 3*(-(c3*(di - 3*fi)^2) +
     s`f7`o1`\[CapitalSigma]m`\[CapitalSigma]sm`etas -> 
      -(ci^2*(12*md^2 + (3 + c1 + 3*c2)*Q2))/(36*f^2*(4*md^2 + Q2))|>}, 
   {<|u`f7`o2`\[CapitalSigma]0`\[CapitalSigma]sp`\[Pi]im -> 
-     -(ci^2*(12*md^2 + (3 + c1 + 3*c2)*Q2))/(9*f^2*(4*md^2 + Q2)), 
+     (ci^2*(12*md^2 + (3 + c1 + 3*c2)*Q2))/(36*f^2*(4*md^2 + Q2)), 
     u`f7`o2`\[CapitalSigma]0`\[CapitalDelta]p`\[CapitalKappa]im -> 
-     (ci^2*(12*md^2 + (3 + c1 + 3*c2)*Q2))/(18*f^2*(4*md^2 + Q2)), 
+     (ci^2*(12*md^2 + (3 + c1 + 3*c2)*Q2))/(9*f^2*(4*md^2 + Q2)), 
     u`f7`o2`\[CapitalSigma]0`\[CapitalXi]s0`\[CapitalKappa]i0 -> 
-     -(ci^2*(12*md^2 + (3 + c1 + 3*c2)*Q2))/(18*f^2*(4*md^2 + Q2)), 
+     (ci^2*(12*md^2 + (3 + c1 + 3*c2)*Q2))/(72*f^2*(4*md^2 + Q2)), 
     u`f7`o2`\[CapitalSigma]0`\[CapitalDelta]0`\[CapitalKappa]i0b -> 
-     (ci^2*(12*md^2 + (3 + c1 + 3*c2)*Q2))/(36*f^2*(4*md^2 + Q2))|>, 
+     (ci^2*(12*md^2 + (3 + c1 + 3*c2)*Q2))/(18*f^2*(4*md^2 + Q2))|>, 
    <|d`f7`o2`\[CapitalSigma]0`\[CapitalSigma]sm`\[Pi]ip -> 
-     -(ci^2*(12*md^2 + (3 + c1 + 3*c2)*Q2))/(9*f^2*(4*md^2 + Q2)), 
+     (ci^2*(12*md^2 + (3 + c1 + 3*c2)*Q2))/(36*f^2*(4*md^2 + Q2)), 
     d`f7`o2`\[CapitalSigma]0`\[CapitalDelta]0`\[CapitalKappa]i0b -> 
-     (ci^2*(12*md^2 + (3 + c1 + 3*c2)*Q2))/(18*f^2*(4*md^2 + Q2)), 
+     (ci^2*(12*md^2 + (3 + c1 + 3*c2)*Q2))/(9*f^2*(4*md^2 + Q2)), 
     d`f7`o2`\[CapitalSigma]0`\[CapitalXi]sm`\[CapitalKappa]ip -> 
-     -(ci^2*(12*md^2 + (3 + c1 + 3*c2)*Q2))/(18*f^2*(4*md^2 + Q2)), 
+     (ci^2*(12*md^2 + (3 + c1 + 3*c2)*Q2))/(72*f^2*(4*md^2 + Q2)), 
     d`f7`o2`\[CapitalSigma]0`\[CapitalDelta]p`\[CapitalKappa]im -> 
-     (ci^2*(12*md^2 + (3 + c1 + 3*c2)*Q2))/(36*f^2*(4*md^2 + Q2))|>, 
+     (ci^2*(12*md^2 + (3 + c1 + 3*c2)*Q2))/(18*f^2*(4*md^2 + Q2))|>, 
    <|s`f7`o2`\[CapitalSigma]0`\[CapitalXi]sm`\[CapitalKappa]ip -> 
-     -(ci^2*(12*md^2 + (3 + c1 + 3*c2)*Q2))/(9*f^2*(4*md^2 + Q2)), 
+     (ci^2*(12*md^2 + (3 + c1 + 3*c2)*Q2))/(36*f^2*(4*md^2 + Q2)), 
     s`f7`o2`\[CapitalSigma]0`\[CapitalXi]s0`\[CapitalKappa]i0 -> 
-     -(ci^2*(12*md^2 + (3 + c1 + 3*c2)*Q2))/(9*f^2*(4*md^2 + Q2)), 
+     (ci^2*(12*md^2 + (3 + c1 + 3*c2)*Q2))/(36*f^2*(4*md^2 + Q2)), 
     s`f7`o2`\[CapitalSigma]0`\[CapitalSigma]sm`\[Pi]ip -> 
-     -(ci^2*(12*md^2 + (3 + c1 + 3*c2)*Q2))/(18*f^2*(4*md^2 + Q2)), 
+     (ci^2*(12*md^2 + (3 + c1 + 3*c2)*Q2))/(72*f^2*(4*md^2 + Q2)), 
     s`f7`o2`\[CapitalSigma]0`\[CapitalSigma]sp`\[Pi]im -> 
-     -(ci^2*(12*md^2 + (3 + c1 + 3*c2)*Q2))/(18*f^2*(4*md^2 + Q2))|>}, 
+     (ci^2*(12*md^2 + (3 + c1 + 3*c2)*Q2))/(72*f^2*(4*md^2 + Q2))|>}, 
   {<|u`f7`o3`\[CapitalSigma]p`\[CapitalSigma]sp`\[Eta] -> 
      (ci^2*(12*md^2 + (3 + c1 + 3*c2)*Q2))/(12*f^2*(4*md^2 + Q2)), 
     u`f7`o3`\[CapitalSigma]p`\[CapitalSigma]sp`\[Pi]i0 -> 
@@ -937,29 +940,29 @@ m -> ((I/9)*(-(c1*(di - 3*fi)^2) + 3*(-(c3*(di - 3*fi)^2) +
     s`f8`o1`\[CapitalSigma]m`\[CapitalSigma]sm`etas -> 
      ((-I/18)*(c1 + 3*c2)*ci^2*md)/(f^2*(4*md^2 + Q2))|>}, 
   {<|u`f8`o2`\[CapitalSigma]0`\[CapitalSigma]sp`\[Pi]im -> 
-     (((-2*I)/9)*(c1 + 3*c2)*ci^2*md)/(f^2*(4*md^2 + Q2)), 
+     ((I/18)*(c1 + 3*c2)*ci^2*md)/(f^2*(4*md^2 + Q2)), 
     u`f8`o2`\[CapitalSigma]0`\[CapitalDelta]p`\[CapitalKappa]im -> 
-     ((I/9)*(c1 + 3*c2)*ci^2*md)/(f^2*(4*md^2 + Q2)), 
+     (((2*I)/9)*(c1 + 3*c2)*ci^2*md)/(f^2*(4*md^2 + Q2)), 
     u`f8`o2`\[CapitalSigma]0`\[CapitalXi]s0`\[CapitalKappa]i0 -> 
-     ((-I/9)*(c1 + 3*c2)*ci^2*md)/(f^2*(4*md^2 + Q2)), 
+     ((I/36)*(c1 + 3*c2)*ci^2*md)/(f^2*(4*md^2 + Q2)), 
     u`f8`o2`\[CapitalSigma]0`\[CapitalDelta]0`\[CapitalKappa]i0b -> 
-     ((I/18)*(c1 + 3*c2)*ci^2*md)/(f^2*(4*md^2 + Q2))|>, 
+     ((I/9)*(c1 + 3*c2)*ci^2*md)/(f^2*(4*md^2 + Q2))|>, 
    <|d`f8`o2`\[CapitalSigma]0`\[CapitalSigma]sm`\[Pi]ip -> 
-     (((-2*I)/9)*(c1 + 3*c2)*ci^2*md)/(f^2*(4*md^2 + Q2)), 
+     ((I/18)*(c1 + 3*c2)*ci^2*md)/(f^2*(4*md^2 + Q2)), 
     d`f8`o2`\[CapitalSigma]0`\[CapitalDelta]0`\[CapitalKappa]i0b -> 
-     ((I/9)*(c1 + 3*c2)*ci^2*md)/(f^2*(4*md^2 + Q2)), 
+     (((2*I)/9)*(c1 + 3*c2)*ci^2*md)/(f^2*(4*md^2 + Q2)), 
     d`f8`o2`\[CapitalSigma]0`\[CapitalXi]sm`\[CapitalKappa]ip -> 
-     ((-I/9)*(c1 + 3*c2)*ci^2*md)/(f^2*(4*md^2 + Q2)), 
+     ((I/36)*(c1 + 3*c2)*ci^2*md)/(f^2*(4*md^2 + Q2)), 
     d`f8`o2`\[CapitalSigma]0`\[CapitalDelta]p`\[CapitalKappa]im -> 
-     ((I/18)*(c1 + 3*c2)*ci^2*md)/(f^2*(4*md^2 + Q2))|>, 
+     ((I/9)*(c1 + 3*c2)*ci^2*md)/(f^2*(4*md^2 + Q2))|>, 
    <|s`f8`o2`\[CapitalSigma]0`\[CapitalXi]sm`\[CapitalKappa]ip -> 
-     (((-2*I)/9)*(c1 + 3*c2)*ci^2*md)/(f^2*(4*md^2 + Q2)), 
+     ((I/18)*(c1 + 3*c2)*ci^2*md)/(f^2*(4*md^2 + Q2)), 
     s`f8`o2`\[CapitalSigma]0`\[CapitalXi]s0`\[CapitalKappa]i0 -> 
-     (((-2*I)/9)*(c1 + 3*c2)*ci^2*md)/(f^2*(4*md^2 + Q2)), 
+     ((I/18)*(c1 + 3*c2)*ci^2*md)/(f^2*(4*md^2 + Q2)), 
     s`f8`o2`\[CapitalSigma]0`\[CapitalSigma]sm`\[Pi]ip -> 
-     ((-I/9)*(c1 + 3*c2)*ci^2*md)/(f^2*(4*md^2 + Q2)), 
+     ((I/36)*(c1 + 3*c2)*ci^2*md)/(f^2*(4*md^2 + Q2)), 
     s`f8`o2`\[CapitalSigma]0`\[CapitalSigma]sp`\[Pi]im -> 
-     ((-I/9)*(c1 + 3*c2)*ci^2*md)/(f^2*(4*md^2 + Q2))|>}, 
+     ((I/36)*(c1 + 3*c2)*ci^2*md)/(f^2*(4*md^2 + Q2))|>}, 
   {<|u`f8`o3`\[CapitalSigma]p`\[CapitalSigma]sp`\[Eta] -> 
      ((I/6)*(c1 + 3*c2)*ci^2*md)/(f^2*(4*md^2 + Q2)), 
     u`f8`o3`\[CapitalSigma]p`\[CapitalSigma]sp`\[Pi]i0 -> 
@@ -1058,30 +1061,30 @@ m -> ((I/9)*(-(c1*(di - 3*fi)^2) + 3*(-(c3*(di - 3*fi)^2) +
     s`f9`o1`\[CapitalSigma]m`\[CapitalSigma]sm`\[CapitalSigma]m`etas -> 
      (c1*ci*di)/(18*f^2*mo)|>}, 
   {<|u`f9`o2`\[CapitalSigma]0`\[CapitalSigma]sp`\[CapitalSigma]p`\[Pi]im -> 
-     -(c1*ci*(di - fi))/(6*f^2*mo), 
+     -(c1*ci*(di - 6*fi))/(36*f^2*mo), 
     u`f9`o2`\[CapitalSigma]0`\[CapitalDelta]p`Np`\[CapitalKappa]im -> 
-     -(c1*ci*(di - 2*fi))/(12*f^2*mo), 
+     -(c1*ci*(2*di - 3*fi))/(18*f^2*mo), 
     u`f9`o2`\[CapitalSigma]0`\[CapitalXi]s0`\[CapitalXi]0`\[CapitalKappa]i0 \
--> (c1*ci*fi)/(12*f^2*mo), 
+-> (c1*ci*(5*di + 6*fi))/(72*f^2*mo), 
     u`f9`o2`\[CapitalSigma]0`\[CapitalDelta]0`Nn`\[CapitalKappa]i0b -> 
-     (c1*ci*(di - 2*fi))/(12*f^2*mo)|>, 
+     (c1*ci*(2*di - 3*fi))/(18*f^2*mo)|>, 
    <|d`f9`o2`\[CapitalSigma]0`\[CapitalSigma]sm`\[CapitalSigma]m`\[Pi]ip -> 
-     -(c1*ci*(di - fi))/(6*f^2*mo), 
+     -(c1*ci*(di - 6*fi))/(36*f^2*mo), 
     d`f9`o2`\[CapitalSigma]0`\[CapitalDelta]0`Nn`\[CapitalKappa]i0b -> 
-     -(c1*ci*(di - 2*fi))/(12*f^2*mo), 
+     -(c1*ci*(2*di - 3*fi))/(18*f^2*mo), 
     d`f9`o2`\[CapitalSigma]0`\[CapitalXi]sm`\[CapitalXi]m`\[CapitalKappa]ip \
--> (c1*ci*fi)/(12*f^2*mo), 
+-> (c1*ci*(5*di + 6*fi))/(72*f^2*mo), 
     d`f9`o2`\[CapitalSigma]0`\[CapitalDelta]p`Np`\[CapitalKappa]im -> 
-     (c1*ci*(di - 2*fi))/(12*f^2*mo)|>, 
+     (c1*ci*(2*di - 3*fi))/(18*f^2*mo)|>, 
    <|
     s`f9`o2`\[CapitalSigma]0`\[CapitalXi]sm`\[CapitalXi]m`\[CapitalKappa]ip \
--> -(c1*ci*fi)/(12*f^2*mo), 
+-> -(c1*ci*(5*di + 6*fi))/(72*f^2*mo), 
     s`f9`o2`\[CapitalSigma]0`\[CapitalXi]s0`\[CapitalXi]0`\[CapitalKappa]i0 \
--> -(c1*ci*fi)/(12*f^2*mo), 
+-> -(c1*ci*(5*di + 6*fi))/(72*f^2*mo), 
     s`f9`o2`\[CapitalSigma]0`\[CapitalSigma]sm`\[CapitalSigma]m`\[Pi]ip -> 
-     (c1*ci*(di - fi))/(6*f^2*mo), 
+     (c1*ci*(di - 6*fi))/(36*f^2*mo), 
     s`f9`o2`\[CapitalSigma]0`\[CapitalSigma]sp`\[CapitalSigma]p`\[Pi]im -> 
-     (c1*ci*(di - fi))/(6*f^2*mo)|>}, 
+     (c1*ci*(di - 6*fi))/(36*f^2*mo)|>}, 
   {<|u`f9`o3`\[CapitalSigma]p`\[CapitalSigma]sp`\[CapitalSigma]p`\[Eta] -> 
      (c1*ci*(2*di + 3*fi))/(36*f^2*mo), 
     u`f9`o3`\[CapitalSigma]p`\[CapitalSigma]sp`\[CapitalSigma]p`\[Pi]i0 -> 
@@ -1168,26 +1171,26 @@ m -> -(c1*ci*(di + fi))/(12*f^2*mo),
      -ci^2/(3*f^2), 
     s`f10`o1`\[CapitalSigma]m`\[CapitalXi]sm`\[CapitalKappa]i0 -> 
      ci^2/(12*f^2)|>}, 
-  {<|u`f10`o2`\[CapitalSigma]0`\[CapitalSigma]sm`\[Pi]ip -> ci^2/(6*f^2), 
+  {<|u`f10`o2`\[CapitalSigma]0`\[CapitalSigma]sm`\[Pi]ip -> -ci^2/(24*f^2), 
     u`f10`o2`\[CapitalSigma]0`\[CapitalXi]sm`\[CapitalKappa]ip -> 
-     ci^2/(6*f^2), u`f10`o2`\[CapitalSigma]0`\[CapitalSigma]sp`\[Pi]im -> 
-     -ci^2/(6*f^2), 
+     -ci^2/(24*f^2), u`f10`o2`\[CapitalSigma]0`\[CapitalSigma]sp`\[Pi]im -> 
+     ci^2/(24*f^2), 
     u`f10`o2`\[CapitalSigma]0`\[CapitalDelta]p`\[CapitalKappa]im -> 
-     ci^2/(12*f^2)|>, 
-   <|d`f10`o2`\[CapitalSigma]0`\[CapitalSigma]sp`\[Pi]im -> ci^2/(6*f^2), 
+     ci^2/(6*f^2)|>, <|d`f10`o2`\[CapitalSigma]0`\[CapitalSigma]sp`\[Pi]im -> 
+     -ci^2/(24*f^2), 
     d`f10`o2`\[CapitalSigma]0`\[CapitalXi]s0`\[CapitalKappa]i0 -> 
-     ci^2/(6*f^2), d`f10`o2`\[CapitalSigma]0`\[CapitalSigma]sm`\[Pi]ip -> 
-     -ci^2/(6*f^2), 
+     -ci^2/(24*f^2), d`f10`o2`\[CapitalSigma]0`\[CapitalSigma]sm`\[Pi]ip -> 
+     ci^2/(24*f^2), 
     d`f10`o2`\[CapitalSigma]0`\[CapitalDelta]0`\[CapitalKappa]i0b -> 
-     ci^2/(12*f^2)|>, 
+     ci^2/(6*f^2)|>, 
    <|s`f10`o2`\[CapitalSigma]0`\[CapitalDelta]p`\[CapitalKappa]im -> 
-     -ci^2/(12*f^2), 
-    s`f10`o2`\[CapitalSigma]0`\[CapitalDelta]0`\[CapitalKappa]i0b -> 
-     -ci^2/(12*f^2), 
-    s`f10`o2`\[CapitalSigma]0`\[CapitalXi]sm`\[CapitalKappa]ip -> 
      -ci^2/(6*f^2), 
+    s`f10`o2`\[CapitalSigma]0`\[CapitalDelta]0`\[CapitalKappa]i0b -> 
+     -ci^2/(6*f^2), 
+    s`f10`o2`\[CapitalSigma]0`\[CapitalXi]sm`\[CapitalKappa]ip -> 
+     ci^2/(24*f^2), 
     s`f10`o2`\[CapitalSigma]0`\[CapitalXi]s0`\[CapitalKappa]i0 -> 
-     -ci^2/(6*f^2)|>}, 
+     ci^2/(24*f^2)|>}, 
   {<|u`f10`o3`\[CapitalSigma]p`\[CapitalSigma]sp`\[Eta] -> 0, 
     u`f10`o3`\[CapitalSigma]p`\[CapitalSigma]sp`\[Pi]i0 -> 0, 
     u`f10`o3`\[CapitalSigma]p`\[CapitalSigma]sp`etas -> 0, 
@@ -1249,26 +1252,26 @@ m -> -(c1*ci*(di + fi))/(12*f^2*mo),
      -ci^2/(3*f^2), 
     s`f11`o1`\[CapitalSigma]m`\[CapitalXi]sm`\[CapitalKappa]i0 -> 
      ci^2/(12*f^2)|>}, 
-  {<|u`f11`o2`\[CapitalSigma]0`\[CapitalSigma]sm`\[Pi]ip -> ci^2/(6*f^2), 
+  {<|u`f11`o2`\[CapitalSigma]0`\[CapitalSigma]sm`\[Pi]ip -> -ci^2/(24*f^2), 
     u`f11`o2`\[CapitalSigma]0`\[CapitalXi]sm`\[CapitalKappa]ip -> 
-     ci^2/(6*f^2), u`f11`o2`\[CapitalSigma]0`\[CapitalSigma]sp`\[Pi]im -> 
-     -ci^2/(6*f^2), 
+     -ci^2/(24*f^2), u`f11`o2`\[CapitalSigma]0`\[CapitalSigma]sp`\[Pi]im -> 
+     ci^2/(24*f^2), 
     u`f11`o2`\[CapitalSigma]0`\[CapitalDelta]p`\[CapitalKappa]im -> 
-     ci^2/(12*f^2)|>, 
-   <|d`f11`o2`\[CapitalSigma]0`\[CapitalSigma]sp`\[Pi]im -> ci^2/(6*f^2), 
+     ci^2/(6*f^2)|>, <|d`f11`o2`\[CapitalSigma]0`\[CapitalSigma]sp`\[Pi]im -> 
+     -ci^2/(24*f^2), 
     d`f11`o2`\[CapitalSigma]0`\[CapitalXi]s0`\[CapitalKappa]i0 -> 
-     ci^2/(6*f^2), d`f11`o2`\[CapitalSigma]0`\[CapitalSigma]sm`\[Pi]ip -> 
-     -ci^2/(6*f^2), 
+     -ci^2/(24*f^2), d`f11`o2`\[CapitalSigma]0`\[CapitalSigma]sm`\[Pi]ip -> 
+     ci^2/(24*f^2), 
     d`f11`o2`\[CapitalSigma]0`\[CapitalDelta]0`\[CapitalKappa]i0b -> 
-     ci^2/(12*f^2)|>, 
+     ci^2/(6*f^2)|>, 
    <|s`f11`o2`\[CapitalSigma]0`\[CapitalDelta]p`\[CapitalKappa]im -> 
-     -ci^2/(12*f^2), 
-    s`f11`o2`\[CapitalSigma]0`\[CapitalDelta]0`\[CapitalKappa]i0b -> 
-     -ci^2/(12*f^2), 
-    s`f11`o2`\[CapitalSigma]0`\[CapitalXi]sm`\[CapitalKappa]ip -> 
      -ci^2/(6*f^2), 
+    s`f11`o2`\[CapitalSigma]0`\[CapitalDelta]0`\[CapitalKappa]i0b -> 
+     -ci^2/(6*f^2), 
+    s`f11`o2`\[CapitalSigma]0`\[CapitalXi]sm`\[CapitalKappa]ip -> 
+     ci^2/(24*f^2), 
     s`f11`o2`\[CapitalSigma]0`\[CapitalXi]s0`\[CapitalKappa]i0 -> 
-     -ci^2/(6*f^2)|>}, 
+     ci^2/(24*f^2)|>}, 
   {<|u`f11`o3`\[CapitalSigma]p`\[CapitalSigma]sp`\[Eta] -> 0, 
     u`f11`o3`\[CapitalSigma]p`\[CapitalSigma]sp`\[Pi]i0 -> 0, 
     u`f11`o3`\[CapitalSigma]p`\[CapitalSigma]sp`etas -> 0, 
