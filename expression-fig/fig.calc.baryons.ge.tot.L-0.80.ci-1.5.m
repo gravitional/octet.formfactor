@@ -1,4 +1,4 @@
-(* Created with the Wolfram Language : www.wolfram.com *)
+(* Created with the Wolfram Language for Students - Personal Use Only : www.wolfram.com *)
 {
  {Graphics[{{{{}, {}, Annotation[{Directive[Opacity[1.], 
          RGBColor[0.368417, 0.506779, 0.709798], AbsoluteThickness[1.6]], 
