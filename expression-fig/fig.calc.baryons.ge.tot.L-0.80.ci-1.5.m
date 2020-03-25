@@ -1,4 +1,4 @@
-(* Created with the Wolfram Language for Students - Personal Use Only : www.wolfram.com *)
+(* Created with the Wolfram Language : www.wolfram.com *)
 {
  {Graphics[{{{{}, {}, Annotation[{Directive[Opacity[1.], 
          RGBColor[0.368417, 0.506779, 0.709798], AbsoluteThickness[1.6]], 
@@ -54,7 +54,7 @@
          {0.9986271251422112, -0.09774187100163585}, {0.9989703387546176, 
          -0.09770093941501774}, {0.999313552367024, -0.09766003353453806}, 
          {0.9996567659794304, -0.0976191533386758}, {0.9999999795918367, 
-         -0.09757829880593252}}]}, "Charting`Private`Tag$1481#1"]}}, {}}, 
+         -0.09757829880593252}}]}, "Charting`Private`Tag$1482#1"]}}, {}}, 
    {DisplayFunction -> Identity, Ticks -> {Automatic, Automatic}, 
     AxesOrigin -> {0., 0.}, FrameTicks -> 
      {{Automatic, Charting`ScaledFrameTicks[{Identity, Identity}]}, 
@@ -136,7 +136,7 @@
          {0.9989703387546176, -0.03908766214898605}, {0.999313552367024, 
          -0.03907032507358501}, {0.9996567659794304, -0.039052999953328414}, 
          {0.9999999795918367, -0.03903568677715887}}]}, 
-       "Charting`Private`Tag$1600#1"], {}}, {{}, {}}, {{}, {}}}, {}}, 
+       "Charting`Private`Tag$1601#1"], {}}, {{}, {}}, {{}, {}}}, {}}, 
    {DisplayFunction -> Identity, Ticks -> {Automatic, Automatic}, 
     AxesOrigin -> {0., 0.}, FrameTicks -> 
      {{Automatic, Charting`ScaledFrameTicks[{Identity, Identity}]}, 
@@ -217,7 +217,7 @@
          {0.9986271251422112, -0.1368468821922048}, {0.9989703387546176, 
          -0.1367886015640038}, {0.999313552367024, -0.13673035860812308}, 
          {0.9996567659794304, -0.13667215329200422}, {0.9999999795918367, 
-         -0.1366139855830914}}]}, "Charting`Private`Tag$7444#1"], {}}, 
+         -0.1366139855830914}}]}, "Charting`Private`Tag$7445#1"], {}}, 
      {{}, {}}, {{}, {}}}, {}}, {DisplayFunction -> Identity, 
     Ticks -> {Automatic, Automatic}, AxesOrigin -> {0., 0.}, 
     FrameTicks -> {{Automatic, Charting`ScaledFrameTicks[
@@ -287,7 +287,7 @@
          {0.9975974843049922, 0.}, {0.9979406979173985, 0.}, 
          {0.9986271251422112, 0.}, {0.9989703387546176, 0.}, 
          {0.999313552367024, 0.}, {0.9996567659794304, 0.}, 
-         {0.9999999795918367, 0.}}]}, "Charting`Private`Tag$11201#1"]}}, {}}, 
+         {0.9999999795918367, 0.}}]}, "Charting`Private`Tag$11202#1"]}}, {}}, 
    {DisplayFunction -> Identity, Ticks -> {Automatic, Automatic}, 
     AxesOrigin -> {0., 0.}, FrameTicks -> 
      {{Automatic, Charting`ScaledFrameTicks[{Identity, Identity}]}, 
@@ -537,7 +537,7 @@
          -0.0034078209621766545}, {0.9989703387546176, 
          -0.0034073072152879767}, {0.999313552367024, -0.003406793443448369}, 
          {0.9996567659794304, -0.0034062796468444906}, {0.9999999795918367, 
-         -0.0034057658256670406}}]}, "Charting`Private`Tag$11248#1"], {}}, 
+         -0.0034057658256670406}}]}, "Charting`Private`Tag$11249#1"], {}}, 
      {{}, {}}, {{}, {}}}, {}}, {DisplayFunction -> Identity, 
     Ticks -> {Automatic, Automatic}, AxesOrigin -> {0., 0.}, 
     FrameTicks -> {{Automatic, Charting`ScaledFrameTicks[
@@ -788,7 +788,7 @@
          -0.0034078209621766545}, {0.9989703387546176, 
          -0.0034073072152879767}, {0.999313552367024, -0.003406793443448369}, 
          {0.9996567659794304, -0.0034062796468444906}, {0.9999999795918367, 
-         -0.0034057658256670406}}]}, "Charting`Private`Tag$20893#1"], {}}, 
+         -0.0034057658256670406}}]}, "Charting`Private`Tag$20894#1"], {}}, 
      {{}, {}}, {{}, {}}}, {}}, {DisplayFunction -> Identity, 
     Ticks -> {Automatic, Automatic}, AxesOrigin -> {0., 0.}, 
     FrameTicks -> {{Automatic, Charting`ScaledFrameTicks[
@@ -872,7 +872,7 @@
          0.09774187100164186}, {0.9989703387546176, 0.09770093941502374}, 
          {0.999313552367024, 0.09766003353454404}, {0.9996567659794304, 
          0.09761915333868179}, {0.9999999795918367, 0.0975782988059385}}]}, 
-       "Charting`Private`Tag$30538#1"]}}, {}}, {DisplayFunction -> Identity, 
+       "Charting`Private`Tag$30539#1"]}}, {}}, {DisplayFunction -> Identity, 
     Ticks -> {Automatic, Automatic}, AxesOrigin -> {0., 0.}, 
     FrameTicks -> {{Automatic, Charting`ScaledFrameTicks[
         {Identity, Identity}]}, {Automatic, Charting`ScaledFrameTicks[
@@ -953,7 +953,7 @@
          {0.9986271251422112, 0.03228936926621578}, {0.9989703387546176, 
          0.03227304771841048}, {0.999313552367024, 0.0322567381866884}, 
          {0.9996567659794304, 0.032240440659639505}, {0.9999999795918367, 
-         0.03222415512582417}}]}, "Charting`Private`Tag$30585#1"], {}}, 
+         0.03222415512582417}}]}, "Charting`Private`Tag$30586#1"], {}}, 
      {{}, {}}, {{}, {}}}, {}}, {DisplayFunction -> Identity, 
     Ticks -> {Automatic, Automatic}, AxesOrigin -> {0., 0.}, 
     FrameTicks -> {{Automatic, Charting`ScaledFrameTicks[
@@ -1035,7 +1035,7 @@
          {0.9986271251422112, 0.13003124026785765}, {0.9989703387546176, 
          0.12997398713343422}, {0.999313552367024, 0.12991677172123245}, 
          {0.9996567659794304, 0.1298595939983213}, {0.9999999795918367, 
-         0.12980245393176268}}]}, "Charting`Private`Tag$34819#1"], {}}, 
+         0.12980245393176268}}]}, "Charting`Private`Tag$34820#1"], {}}, 
      {{}, {}}, {{}, {}}}, {}}, {DisplayFunction -> Identity, 
     Ticks -> {Automatic, Automatic}, AxesOrigin -> {0., 0.}, 
     FrameTicks -> {{Automatic, Charting`ScaledFrameTicks[
@@ -1119,7 +1119,7 @@
          0.08573996535936464}, {0.9989703387546176, 0.0857040598381916}, 
          {0.999313552367024, 0.0856681768666526}, {0.9996567659794304, 
          0.0856323164258692}, {0.9999999795918367, 0.08559647849698275}}]}, 
-       "Charting`Private`Tag$39053#1"]}}, {}}, {DisplayFunction -> Identity, 
+       "Charting`Private`Tag$39054#1"]}}, {}}, {DisplayFunction -> Identity, 
     Ticks -> {Automatic, Automatic}, AxesOrigin -> {0., 0.}, 
     FrameTicks -> {{Automatic, Charting`ScaledFrameTicks[
         {Identity, Identity}]}, {Automatic, Charting`ScaledFrameTicks[
@@ -1200,7 +1200,7 @@
          {0.9986271251422112, 0.0400080815690109}, {0.9989703387546176, 
          0.039988535049880175}, {0.999313552367024, 0.03996900329603323}, 
          {0.9996567659794304, 0.03994948629447568}, {0.9999999795918367, 
-         0.0399299840309889}}]}, "Charting`Private`Tag$39100#1"], {}}, 
+         0.0399299840309889}}]}, "Charting`Private`Tag$39101#1"], {}}, 
      {{}, {}}, {{}, {}}}, {}}, {DisplayFunction -> Identity, 
     Ticks -> {Automatic, Automatic}, AxesOrigin -> {0., 0.}, 
     FrameTicks -> {{Automatic, Charting`ScaledFrameTicks[
@@ -1282,7 +1282,7 @@
          {0.9986271251422112, 0.12574804692837555}, {0.9989703387546176, 
          0.12569259488807177}, {0.999313552367024, 0.12563718016268582}, 
          {0.9996567659794304, 0.1255818027203449}, {0.9999999795918367, 
-         0.12552646252797164}}]}, "Charting`Private`Tag$42309#1"], {}}, 
+         0.12552646252797164}}]}, "Charting`Private`Tag$42310#1"], {}}, 
      {{}, {}}, {{}, {}}}, {}}, {DisplayFunction -> Identity, 
     Ticks -> {Automatic, Automatic}, AxesOrigin -> {0., 0.}, 
     FrameTicks -> {{Automatic, Charting`ScaledFrameTicks[
@@ -1387,7 +1387,7 @@
          5.127476728873919*^-18}, {0.999313552367024, 
          5.126702051072535*^-18}, {0.9996567659794304, 
          5.125927364517946*^-18}, {0.9999999795918367, 
-         5.125152669472*^-18}}]}, "Charting`Private`Tag$45518#1"]}}, {}}, 
+         5.125152669472*^-18}}]}, "Charting`Private`Tag$45519#1"]}}, {}}, 
    {DisplayFunction -> Identity, Ticks -> {Automatic, Automatic}, 
     AxesOrigin -> {0., 0.}, FrameTicks -> 
      {{Automatic, Charting`ScaledFrameTicks[{Identity, Identity}]}, 
@@ -1643,7 +1643,7 @@
          0.02578858610532135}, {0.9989703387546176, 0.025780921601345923}, 
          {0.999313552367024, 0.025773259721750347}, {0.9996567659794304, 
          0.025765600465707493}, {0.9999999795918367, 0.02575794383269212}}]}, 
-       "Charting`Private`Tag$45565#1"], {}}, {{}, {}}, {{}, {}}}, {}}, 
+       "Charting`Private`Tag$45566#1"], {}}, {{}, {}}, {{}, {}}}, {}}, 
    {DisplayFunction -> Identity, Ticks -> {Automatic, Automatic}, 
     AxesOrigin -> {0., 0.}, FrameTicks -> 
      {{Automatic, Charting`ScaledFrameTicks[{Identity, Identity}]}, 
@@ -1900,7 +1900,7 @@
          {0.9989703387546176, 0.025780921601345926}, {0.999313552367024, 
          0.02577325972175035}, {0.9996567659794304, 0.025765600465707496}, 
          {0.9999999795918367, 0.025757943832692122}}]}, 
-       "Charting`Private`Tag$56300#1"], {}}, {{}, {}}, {{}, {}}}, {}}, 
+       "Charting`Private`Tag$56301#1"], {}}, {{}, {}}, {{}, {}}}, {}}, 
    {DisplayFunction -> Identity, Ticks -> {Automatic, Automatic}, 
     AxesOrigin -> {0., 0.}, FrameTicks -> 
      {{Automatic, Charting`ScaledFrameTicks[{Identity, Identity}]}, 
@@ -1983,7 +1983,7 @@
          -0.11680365527703701}, {0.9989703387546176, -0.11675474114346979}, 
          {0.999313552367024, -0.1167058577292954}, {0.9996567659794304, 
          -0.1166570050087958}, {0.9999999795918367, -0.11660818295627978}}]}, 
-       "Charting`Private`Tag$67035#1"]}}, {}}, {DisplayFunction -> Identity, 
+       "Charting`Private`Tag$67036#1"]}}, {}}, {DisplayFunction -> Identity, 
     Ticks -> {Automatic, Automatic}, AxesOrigin -> {0., 0.}, 
     FrameTicks -> {{Automatic, Charting`ScaledFrameTicks[
         {Identity, Identity}]}, {Automatic, Charting`ScaledFrameTicks[
@@ -2064,7 +2064,7 @@
          {0.9986271251422112, -0.031404775541856736}, {0.9989703387546176, 
          -0.03139125162406015}, {0.999313552367024, -0.03137773660271576}, 
          {0.9996567659794304, -0.03136423047004989}, {0.9999999795918367, 
-         -0.03135073321827194}}]}, "Charting`Private`Tag$67082#1"], {}}, 
+         -0.03135073321827194}}]}, "Charting`Private`Tag$67083#1"], {}}, 
      {{}, {}}, {{}, {}}}, {}}, {DisplayFunction -> Identity, 
     Ticks -> {Automatic, Automatic}, AxesOrigin -> {0., 0.}, 
     FrameTicks -> {{Automatic, Charting`ScaledFrameTicks[
@@ -2146,7 +2146,7 @@
          {0.9986271251422112, -0.14820843081889373}, {0.9989703387546176, 
          -0.14814599276752993}, {0.999313552367024, -0.14808359433201115}, 
          {0.9996567659794304, -0.1480212354788457}, {0.9999999795918367, 
-         -0.14795891617455173}}]}, "Charting`Private`Tag$70691#1"], {}}, 
+         -0.14795891617455173}}]}, "Charting`Private`Tag$70692#1"], {}}, 
      {{}, {}}, {{}, {}}}, {}}, {DisplayFunction -> Identity, 
     Ticks -> {Automatic, Automatic}, AxesOrigin -> {0., 0.}, 
     FrameTicks -> {{Automatic, Charting`ScaledFrameTicks[
@@ -2216,7 +2216,7 @@
          {0.9975974843049922, 0.}, {0.9979406979173985, 0.}, 
          {0.9986271251422112, 0.}, {0.9989703387546176, 0.}, 
          {0.999313552367024, 0.}, {0.9996567659794304, 0.}, 
-         {0.9999999795918367, 0.}}]}, "Charting`Private`Tag$74300#1"]}}, {}}, 
+         {0.9999999795918367, 0.}}]}, "Charting`Private`Tag$74301#1"]}}, {}}, 
    {DisplayFunction -> Identity, Ticks -> {Automatic, Automatic}, 
     AxesOrigin -> {0., 0.}, FrameTicks -> 
      {{Automatic, Charting`ScaledFrameTicks[{Identity, Identity}]}, 
@@ -2440,7 +2440,7 @@
          0.005776607128162788}, {0.9989703387546176, 0.005775468100797072}, 
          {0.999313552367024, 0.005774329121916297}, {0.9996567659794304, 
          0.005773190191908537}, {0.9999999795918367, 
-         0.0057720513111375075}}]}, "Charting`Private`Tag$74347#1"], {}}, 
+         0.0057720513111375075}}]}, "Charting`Private`Tag$74348#1"], {}}, 
      {{}, {}}, {{}, {}}}, {}}, {DisplayFunction -> Identity, 
     Ticks -> {Automatic, Automatic}, AxesOrigin -> {0., 0.}, 
     FrameTicks -> {{Automatic, Charting`ScaledFrameTicks[
@@ -2665,7 +2665,7 @@
          0.005776607128162788}, {0.9989703387546176, 0.005775468100797072}, 
          {0.999313552367024, 0.005774329121916297}, {0.9996567659794304, 
          0.005773190191908537}, {0.9999999795918367, 
-         0.0057720513111375075}}]}, "Charting`Private`Tag$85778#1"], {}}, 
+         0.0057720513111375075}}]}, "Charting`Private`Tag$85779#1"], {}}, 
      {{}, {}}, {{}, {}}}, {}}, {DisplayFunction -> Identity, 
     Ticks -> {Automatic, Automatic}, AxesOrigin -> {0., 0.}, 
     FrameTicks -> {{Automatic, Charting`ScaledFrameTicks[
@@ -2773,7 +2773,7 @@
          -1.16426415361428*^-18}, {0.999313552367024, 
          -1.1641097262688333*^-18}, {0.9996567659794304, 
          -1.1639552879821379*^-18}, {0.9999999795918367, 
-         -1.1638008388150848*^-18}}]}, "Charting`Private`Tag$97209#1"]}}, 
+         -1.1638008388150848*^-18}}]}, "Charting`Private`Tag$97210#1"]}}, 
     {}}, {DisplayFunction -> Identity, Ticks -> {Automatic, Automatic}, 
     AxesOrigin -> {0., 0.}, FrameTicks -> 
      {{Automatic, Charting`ScaledFrameTicks[{Identity, Identity}]}, 
@@ -3009,7 +3009,7 @@
          {0.9986271251422112, 0.0041003995461000135}, {0.9989703387546176, 
          0.004099404592248574}, {0.999313552367024, 0.004098409821372131}, 
          {0.9996567659794304, 0.0040974152336067885}, {0.9999999795918367, 
-         0.0040964208290906814}}]}, "Charting`Private`Tag$97256#1"], {}}, 
+         0.0040964208290906814}}]}, "Charting`Private`Tag$97257#1"], {}}, 
      {{}, {}}, {{}, {}}}, {}}, {DisplayFunction -> Identity, 
     Ticks -> {Automatic, Automatic}, AxesOrigin -> {0., 0.}, 
     FrameTicks -> {{Automatic, Charting`ScaledFrameTicks[
@@ -3246,7 +3246,7 @@
          {0.9989703387546176, 0.004099404592248573}, {0.999313552367024, 
          0.00409840982137213}, {0.9996567659794304, 0.004097415233606788}, 
          {0.9999999795918367, 0.004096420829090681}}]}, 
-       "Charting`Private`Tag$104719#1"], {}}, {{}, {}}, {{}, {}}}, {}}, 
+       "Charting`Private`Tag$104720#1"], {}}, {{}, {}}, {{}, {}}}, {}}, 
    {DisplayFunction -> Identity, Ticks -> {Automatic, Automatic}, 
     AxesOrigin -> {0., 0.}, FrameTicks -> 
      {{Automatic, Charting`ScaledFrameTicks[{Identity, Identity}]}, 
