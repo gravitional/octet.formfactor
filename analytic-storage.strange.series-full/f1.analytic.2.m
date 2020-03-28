@@ -1,3551 +1,5963 @@
--(((mN + mo)*(16*mN^6 - 16*mN^5*mo + mN^3*mo*(16*mm^2 - 16*mo^2 - 15*Q2) + 
-     mN*mo*(mm^2 - mo^2 - 2*Q2)*Q2 + (-mm^2 + mo^2)*Q2^2 + 
-     mN^2*Q2*(-7*mm^2 + 11*mo^2 + Q2) + mN^4*(16*mo^2 + 5*Q2))*
-    \[CapitalLambda]0^4*DiscB[mN^2, mm, mo])/(mN*(4*mN^2 + Q2)^2*
-    (Q2 + \[CapitalLambda]0^2)^2)) + 
- ((mN + mo)^2*\[CapitalLambda]0^6*(48*mN^14 - 96*mN^13*mo + 
-    6*mm^12*(8*mN^2 - Q2) + 24*mN^11*mo*(12*mo^2 - 3*Q2 + 
-      20*\[CapitalLambda]0^2) - 6*mN^12*(16*mo^2 - 3*Q2 + 
-      40*\[CapitalLambda]0^2) - 12*mN^9*mo*(16*mo^4 - 22*mo^2*Q2 + Q2^2 - 
-      50*Q2*\[CapitalLambda]0^2 + 80*\[CapitalLambda]0^4) - 
-    6*mN^10*(8*mo^4 - Q2^2 + 35*Q2*\[CapitalLambda]0^2 - 
-      80*\[CapitalLambda]0^4 - 2*mo^2*(Q2 - 20*\[CapitalLambda]0^2)) - 
-    6*mm^10*(48*mN^4 - 16*mN^3*mo - 4*mN*mo*Q2 + 
-      mN^2*(48*mo^2 + 22*Q2 - 40*\[CapitalLambda]0^2) + 
-      Q2*(-6*mo^2 - 2*Q2 + 5*\[CapitalLambda]0^2)) + 
-    mN^8*(192*mo^6 - 75*Q2^2*\[CapitalLambda]0^2 + 
-      532*Q2*\[CapitalLambda]0^4 - 480*\[CapitalLambda]0^6 - 
-      6*mo^4*(39*Q2 - 80*\[CapitalLambda]0^2) - 
-      2*mo^2*(9*Q2^2 + 165*Q2*\[CapitalLambda]0^2 - 
-        704*\[CapitalLambda]0^4)) - 16*mN^7*mo*
-     (12*mo^6 - 15*Q2^2*\[CapitalLambda]0^2 + 89*Q2*\[CapitalLambda]0^4 - 
-      60*\[CapitalLambda]0^6 + 3*mo^4*(7*Q2 + 20*\[CapitalLambda]0^2) + 
-      mo^2*(-3*Q2^2 + 30*Q2*\[CapitalLambda]0^2 + 116*\[CapitalLambda]0^4)) + 
-    2*mN^5*mo*(144*mo^8 + 72*mo^6*Q2 + 15*Q2^3*\[CapitalLambda]0^2 - 
-      412*Q2^2*\[CapitalLambda]0^4 + 616*Q2*\[CapitalLambda]0^6 - 
-      240*\[CapitalLambda]0^8 - 4*mo^4*(9*Q2^2 + 90*Q2*\[CapitalLambda]0^2 + 
-        232*\[CapitalLambda]0^4) - 4*mo^2*(45*Q2^2*\[CapitalLambda]0^2 + 
-        290*Q2*\[CapitalLambda]0^4 - 256*\[CapitalLambda]0^6)) + 
-    mN^6*(-48*mo^8 - 15*Q2^3*\[CapitalLambda]0^2 + 
-      280*Q2^2*\[CapitalLambda]0^4 - 548*Q2*\[CapitalLambda]0^6 + 
-      240*\[CapitalLambda]0^8 + 24*mo^6*(19*Q2 + 20*\[CapitalLambda]0^2) + 
-      4*mo^4*(3*Q2^2 + 195*Q2*\[CapitalLambda]0^2 + 
-        464*\[CapitalLambda]0^4) - 8*mo^2*(15*Q2^2*\[CapitalLambda]0^2 - 
-        258*Q2*\[CapitalLambda]0^4 + 220*\[CapitalLambda]0^6)) + 
-    Q2*(-6*mo^12 + Q2*\[CapitalLambda]0^8*(Q2 - 3*\[CapitalLambda]0^2) - 
-      15*mo^8*\[CapitalLambda]0^2*(Q2 + 4*\[CapitalLambda]0^2) + 
-      6*mo^10*(Q2 + 5*\[CapitalLambda]0^2) + mo^2*\[CapitalLambda]0^4*
-       (11*Q2^3 - 23*Q2^2*\[CapitalLambda]0^2 + 10*Q2*\[CapitalLambda]0^4 + 
-        6*\[CapitalLambda]0^6) + mo^6*(-15*Q2^2*\[CapitalLambda]0^2 + 
-        16*Q2*\[CapitalLambda]0^4 + 60*\[CapitalLambda]0^6) + 
-      mo^4*(33*Q2^2*\[CapitalLambda]0^4 - 14*Q2*\[CapitalLambda]0^6 - 
-        30*\[CapitalLambda]0^8)) - 2*mN*mo*Q2*
-     (12*mo^10 + 6*mo^8*(Q2 - 10*\[CapitalLambda]0^2) - 
-      60*mo^6*\[CapitalLambda]0^2*(Q2 - 2*\[CapitalLambda]0^2) + 
-      mo^4*(-15*Q2^2*\[CapitalLambda]0^2 + 148*Q2*\[CapitalLambda]0^4 - 
-        120*\[CapitalLambda]0^6) + \[CapitalLambda]0^4*
-       (11*Q2^3 - 31*Q2^2*\[CapitalLambda]0^2 + 30*Q2*\[CapitalLambda]0^4 - 
-        12*\[CapitalLambda]0^6) + 2*mo^2*(33*Q2^2*\[CapitalLambda]0^4 - 
-        62*Q2*\[CapitalLambda]0^6 + 30*\[CapitalLambda]0^8)) - 
-    4*mN^3*mo*(24*mo^10 - 6*mo^8*(Q2 + 20*\[CapitalLambda]0^2) - 
-      12*mo^6*(Q2^2 + 10*Q2*\[CapitalLambda]0^2 - 20*\[CapitalLambda]0^4) + 
-      4*mo^4*(103*Q2*\[CapitalLambda]0^4 - 60*\[CapitalLambda]0^6) + 
-      \[CapitalLambda]0^4*(55*Q2^3 - 124*Q2^2*\[CapitalLambda]0^2 + 
-        90*Q2*\[CapitalLambda]0^4 - 24*\[CapitalLambda]0^6) + 
-      mo^2*(15*Q2^3*\[CapitalLambda]0^2 + 248*Q2^2*\[CapitalLambda]0^4 - 
-        376*Q2*\[CapitalLambda]0^6 + 120*\[CapitalLambda]0^8)) + 
-    mN^4*(-96*mo^10 - 6*mo^8*(59*Q2 + 40*\[CapitalLambda]0^2) + 
-      4*mo^6*(3*Q2^2 + 75*Q2*\[CapitalLambda]0^2 + 352*\[CapitalLambda]0^4) + 
-      10*mo^4*(45*Q2^2*\[CapitalLambda]0^2 + 196*Q2*\[CapitalLambda]0^4 - 
-        176*\[CapitalLambda]0^6) + \[CapitalLambda]0^4*
-       (77*Q2^3 - 250*Q2^2*\[CapitalLambda]0^2 + 250*Q2*\[CapitalLambda]0^4 - 
-        48*\[CapitalLambda]0^6) + mo^2*(15*Q2^3*\[CapitalLambda]0^2 + 
-        1040*Q2^2*\[CapitalLambda]0^4 - 1836*Q2*\[CapitalLambda]0^6 + 
-        736*\[CapitalLambda]0^8)) + 
-    mN^2*(48*mo^12 + 12*mo^10*(9*Q2 - 20*\[CapitalLambda]0^2) - 
-      6*mo^8*(3*Q2^2 + 95*Q2*\[CapitalLambda]0^2 - 80*\[CapitalLambda]0^4) + 
-      Q2*\[CapitalLambda]0^4*(11*Q2^3 - 47*Q2^2*\[CapitalLambda]0^2 + 
-        74*Q2*\[CapitalLambda]0^4 - 42*\[CapitalLambda]0^6) - 
-      16*mo^6*(15*Q2^2*\[CapitalLambda]0^2 - 71*Q2*\[CapitalLambda]0^4 + 
-        30*\[CapitalLambda]0^6) + mo^4*(15*Q2^3*\[CapitalLambda]0^2 + 
-        776*Q2^2*\[CapitalLambda]0^4 - 1036*Q2*\[CapitalLambda]0^6 + 
-        240*\[CapitalLambda]0^8) + mo^2*(242*Q2^3*\[CapitalLambda]0^4 - 
-        576*Q2^2*\[CapitalLambda]0^6 + 404*Q2*\[CapitalLambda]0^8 - 
-        48*\[CapitalLambda]0^10)) + 3*mm^8*(240*mN^6 - 160*mN^5*mo + 
-      mN^4*(352*mo^2 + 202*Q2 - 400*\[CapitalLambda]0^2) - 
-      40*mN^3*mo*(4*mo^2 + 3*Q2 - 4*\[CapitalLambda]0^2) - 
-      20*mN*mo*Q2*(2*mo^2 + Q2 - 2*\[CapitalLambda]0^2) + 
-      2*mN^2*(120*mo^4 + 25*Q2^2 - 95*Q2*\[CapitalLambda]0^2 + 
-        80*\[CapitalLambda]0^4 + 2*mo^2*(53*Q2 - 100*\[CapitalLambda]0^2)) - 
-      Q2*(30*mo^4 + 2*Q2^2 - 15*Q2*\[CapitalLambda]0^2 + 
-        20*\[CapitalLambda]0^4 + 2*mo^2*(7*Q2 - 25*\[CapitalLambda]0^2))) - 
-    3*mm^6*(320*mN^8 - 320*mN^7*mo + 8*mN^6*(56*mo^2 + 41*Q2 - 
-        100*\[CapitalLambda]0^2) - 16*mN^5*mo*(24*mo^2 + 21*Q2 - 
-        40*\[CapitalLambda]0^2) + 4*mN^4*(112*mo^4 + 32*Q2^2 - 
-        175*Q2*\[CapitalLambda]0^2 + 160*\[CapitalLambda]0^4 + 
-        2*mo^2*(57*Q2 - 160*\[CapitalLambda]0^2)) - 
-      32*mN^3*mo*(10*mo^4 + 4*Q2^2 - 15*Q2*\[CapitalLambda]0^2 + 
-        10*\[CapitalLambda]0^4 + mo^2*(11*Q2 - 20*\[CapitalLambda]0^2)) - 
-      16*mN*mo*Q2*(5*mo^4 + Q2^2 - 5*Q2*\[CapitalLambda]0^2 + 
-        5*\[CapitalLambda]0^4 + 2*mo^2*(2*Q2 - 5*\[CapitalLambda]0^2)) + 
-      Q2*(-40*mo^6 - 4*mo^4*(4*Q2 - 25*\[CapitalLambda]0^2) + 
-        40*mo^2*\[CapitalLambda]0^2*(Q2 - 2*\[CapitalLambda]0^2) + 
-        5*\[CapitalLambda]0^2*(Q2 - 2*\[CapitalLambda]0^2)^2) + 
-      4*mN^2*(80*mo^6 + 6*Q2^3 - 45*Q2^2*\[CapitalLambda]0^2 + 
-        80*Q2*\[CapitalLambda]0^4 - 40*\[CapitalLambda]0^6 + 
-        2*mo^4*(51*Q2 - 100*\[CapitalLambda]0^2) + 
-        2*mo^2*(22*Q2^2 - 95*Q2*\[CapitalLambda]0^2 + 
-          80*\[CapitalLambda]0^4))) + mm^4*(720*mN^10 - 960*mN^9*mo + 
-      6*mN^8*(96*mo^2 + 121*Q2 - 400*\[CapitalLambda]0^2) - 
-      48*mN^7*mo*(12*mo^2 + 23*Q2 - 60*\[CapitalLambda]0^2) + 
-      12*mN^6*(40*mo^4 + 23*Q2^2 - 215*Q2*\[CapitalLambda]0^2 + 
-        240*\[CapitalLambda]0^4 + mo^2*(58*Q2 - 360*\[CapitalLambda]0^2)) - 
-      24*mN^5*mo*(24*mo^4 + 21*Q2^2 - 130*Q2*\[CapitalLambda]0^2 + 
-        120*\[CapitalLambda]0^4 + 10*mo^2*(3*Q2 - 16*\[CapitalLambda]0^2)) - 
-      6*mN*mo*Q2*(40*mo^6 + 2*Q2^3 - 25*Q2^2*\[CapitalLambda]0^2 + 
-        60*Q2*\[CapitalLambda]0^4 - 40*\[CapitalLambda]0^6 + 
-        12*mo^4*(3*Q2 - 10*\[CapitalLambda]0^2) + 
-        4*mo^2*(3*Q2^2 - 25*Q2*\[CapitalLambda]0^2 + 
-          30*\[CapitalLambda]0^4)) + 2*mN^4*(288*mo^6 + 21*Q2^3 - 
-        525*Q2^2*\[CapitalLambda]0^2 + 1316*Q2*\[CapitalLambda]0^4 - 
-        720*\[CapitalLambda]0^6 + 6*mo^4*(47*Q2 - 360*\[CapitalLambda]0^2) + 
-        2*mo^2*(75*Q2^2 - 1095*Q2*\[CapitalLambda]0^2 + 
-          1312*\[CapitalLambda]0^4)) + mN^2*(720*mo^8 + 6*Q2^4 - 
-        195*Q2^3*\[CapitalLambda]0^2 + 704*Q2^2*\[CapitalLambda]0^4 - 
-        780*Q2*\[CapitalLambda]0^6 + 240*\[CapitalLambda]0^8 + 
-        24*mo^6*(49*Q2 - 100*\[CapitalLambda]0^2) + 
-        12*mo^4*(49*Q2^2 - 285*Q2*\[CapitalLambda]0^2 + 
-          240*\[CapitalLambda]0^4) + 4*mo^2*(33*Q2^3 - 
-          390*Q2^2*\[CapitalLambda]0^2 + 764*Q2*\[CapitalLambda]0^4 - 
-          360*\[CapitalLambda]0^6)) - 24*mN^3*mo*
-       (40*mo^6 + 6*mo^4*(7*Q2 - 20*\[CapitalLambda]0^2) + 
-        2*mo^2*(9*Q2^2 - 70*Q2*\[CapitalLambda]0^2 + 
-          60*\[CapitalLambda]0^4) + 5*(Q2^3 - 10*Q2^2*\[CapitalLambda]0^2 + 
-          18*Q2*\[CapitalLambda]0^4 - 8*\[CapitalLambda]0^6)) + 
-      Q2*(-90*mo^8 - 11*Q2^2*\[CapitalLambda]0^4 + 
-        30*Q2*\[CapitalLambda]0^6 - 30*\[CapitalLambda]0^8 - 
-        12*mo^6*(Q2 - 25*\[CapitalLambda]0^2) + 
-        18*mo^4*(Q2^2 + 5*Q2*\[CapitalLambda]0^2 - 20*\[CapitalLambda]0^4) + 
-        mo^2*(6*Q2^3 - 15*Q2^2*\[CapitalLambda]0^2 - 
-          104*Q2*\[CapitalLambda]0^4 + 180*\[CapitalLambda]0^6))) + 
-    mm^2*(-288*mN^12 + 480*mN^11*mo - 24*mN^9*mo*(16*mo^2 - 21*Q2 + 
-        80*\[CapitalLambda]0^2) + 12*mN^10*(8*mo^2 - 19*Q2 + 
-        100*\[CapitalLambda]0^2) - 96*mN^7*mo*(2*mo^4 - 2*Q2^2 + 
-        25*Q2*\[CapitalLambda]0^2 - 30*\[CapitalLambda]0^4 + 
-        5*mo^2*(Q2 + 4*\[CapitalLambda]0^2)) - 
-      8*mN^5*mo*(48*mo^6 - 3*Q2^3 + 150*Q2^2*\[CapitalLambda]0^2 - 
-        418*Q2*\[CapitalLambda]0^4 + 240*\[CapitalLambda]0^6 + 
-        6*mo^4*(9*Q2 + 40*\[CapitalLambda]0^2) + 
-        4*mo^2*(9*Q2^2 + 75*Q2*\[CapitalLambda]0^2 - 
-          148*\[CapitalLambda]0^4)) + 
-      6*mN^8*(32*mo^4 - 2*mo^2*(Q2 - 160*\[CapitalLambda]0^2) - 
-        5*(2*Q2^2 - 43*Q2*\[CapitalLambda]0^2 + 64*\[CapitalLambda]0^4)) + 
-      4*mN^6*(48*mo^6 - 3*Q2^3 + 135*Q2^2*\[CapitalLambda]0^2 - 
-        536*Q2*\[CapitalLambda]0^4 + 360*\[CapitalLambda]0^6 + 
-        18*mo^4*(3*Q2 + 20*\[CapitalLambda]0^2) - 
-        2*mo^2*(12*Q2^2 - 285*Q2*\[CapitalLambda]0^2 + 
-          592*\[CapitalLambda]0^4)) + 2*mN*mo*Q2*
-       (60*mo^8 - 15*Q2^3*\[CapitalLambda]0^2 + 82*Q2^2*\[CapitalLambda]0^4 - 
-        120*Q2*\[CapitalLambda]0^6 + 60*\[CapitalLambda]0^8 + 
-        48*mo^6*(Q2 - 5*\[CapitalLambda]0^2) + 
-        12*mo^4*(Q2^2 - 20*Q2*\[CapitalLambda]0^2 + 30*\[CapitalLambda]0^4) + 
-        mo^2*(-90*Q2^2*\[CapitalLambda]0^2 + 328*Q2*\[CapitalLambda]0^4 - 
-          240*\[CapitalLambda]0^6)) + 4*mN^3*mo*(120*mo^8 - 
-        75*Q2^3*\[CapitalLambda]0^2 + 328*Q2^2*\[CapitalLambda]0^4 - 
-        360*Q2*\[CapitalLambda]0^6 + 120*\[CapitalLambda]0^8 + 
-        24*mo^6*(3*Q2 - 20*\[CapitalLambda]0^2) - 
-        120*mo^4*(5*Q2*\[CapitalLambda]0^2 - 6*\[CapitalLambda]0^4) - 
-        4*mo^2*(3*Q2^3 + 75*Q2^2*\[CapitalLambda]0^2 - 
-          238*Q2*\[CapitalLambda]0^4 + 120*\[CapitalLambda]0^6)) + 
-      mN^4*(96*mo^8 + 105*Q2^3*\[CapitalLambda]0^2 - 
-        916*Q2^2*\[CapitalLambda]0^4 + 1388*Q2*\[CapitalLambda]0^6 - 
-        480*\[CapitalLambda]0^8 + 24*mo^6*(23*Q2 + 80*\[CapitalLambda]0^2) + 
-        4*mo^4*(90*Q2^2 + 495*Q2*\[CapitalLambda]0^2 - 
-          1184*\[CapitalLambda]0^4) + 4*mo^2*(3*Q2^3 + 
-          270*Q2^2*\[CapitalLambda]0^2 - 1212*Q2*\[CapitalLambda]0^4 + 
-          800*\[CapitalLambda]0^6)) + 
-      mN^2*(-288*mo^10 + mo^8*(-564*Q2 + 1200*\[CapitalLambda]0^2) - 
-        24*mo^6*(8*Q2^2 - 95*Q2*\[CapitalLambda]0^2 + 
-          80*\[CapitalLambda]0^4) + 4*mo^4*(3*Q2^3 + 
-          315*Q2^2*\[CapitalLambda]0^2 - 808*Q2*\[CapitalLambda]0^4 + 
-          360*\[CapitalLambda]0^6) + 2*mo^2*(165*Q2^3*\[CapitalLambda]0^2 - 
-          804*Q2^2*\[CapitalLambda]0^4 + 908*Q2*\[CapitalLambda]0^6 - 
-          240*\[CapitalLambda]0^8) + \[CapitalLambda]0^2*
-         (15*Q2^4 - 170*Q2^3*\[CapitalLambda]0^2 + 
-          388*Q2^2*\[CapitalLambda]0^4 - 300*Q2*\[CapitalLambda]0^6 + 
-          48*\[CapitalLambda]0^8)) + 
-      Q2*(36*mo^10 - 6*mo^8*(2*Q2 + 25*\[CapitalLambda]0^2) - 
-        12*mo^6*(Q2^2 - 20*\[CapitalLambda]0^4) - \[CapitalLambda]0^6*
-         (Q2^2 + 6*\[CapitalLambda]0^4) + mo^4*(45*Q2^2*\[CapitalLambda]0^2 + 
-          28*Q2*\[CapitalLambda]0^4 - 180*\[CapitalLambda]0^6) + 
-        mo^2*(15*Q2^3*\[CapitalLambda]0^2 - 38*Q2^2*\[CapitalLambda]0^4 - 
-          16*Q2*\[CapitalLambda]0^6 + 60*\[CapitalLambda]0^8))))*
-   DiscB[-Q2, mo, mo])/(6*(4*mN^2 + Q2)^2*(Q2 + \[CapitalLambda]0^2)^2*
-   (mm^4 + mN^4 + mo^4 - 2*mo^2*\[CapitalLambda]0^2 - 
-     Q2*\[CapitalLambda]0^2 + \[CapitalLambda]0^4 - 
-     mm^2*(2*mN^2 + 2*mo^2 + Q2 - 2*\[CapitalLambda]0^2) - 
-     2*mN^2*(mo^2 + \[CapitalLambda]0^2))^3) + 
- ((mN + mo)*\[CapitalLambda]0^4*(-mm^2 + mN^2 - 2*mN*mo + mo^2 - 
-    \[CapitalLambda]0^2)*(48*mN^28 + 48*mN^27*mo - 
-    3*mm^24*(16*mN^3*mo - 7*mN^2*Q2 + mN*mo*Q2 - Q2^2) - 
-    3*mN^25*mo*(160*mo^2 + 5*Q2 + 144*\[CapitalLambda]0^2) - 
-    3*mN^26*(160*mo^2 - 5*Q2 + 176*\[CapitalLambda]0^2) + 
-    3*Q2^2*(mo^3 - mo*\[CapitalLambda]0^2)^4*
-     (mo^4 - 2*mo^2*\[CapitalLambda]0^2 - Q2*\[CapitalLambda]0^2 + 
-       \[CapitalLambda]0^4)^3 - 3*mN*mo^3*Q2*(mo^2 - \[CapitalLambda]0^2)^3*
-     (mo^4 - mo^2*\[CapitalLambda]0^2 - 2*Q2*\[CapitalLambda]0^2)*
-     (mo^4 - 2*mo^2*\[CapitalLambda]0^2 - Q2*\[CapitalLambda]0^2 + 
-       \[CapitalLambda]0^4)^3 + 3*mN^24*(704*mo^4 + Q2^2 - 
-      104*Q2*\[CapitalLambda]0^2 + 864*\[CapitalLambda]0^4 - 
-      64*mo^2*(Q2 - 20*\[CapitalLambda]0^2)) - 
-    3*mm^22*(16*mN^6 - 192*mN^5*mo + mN^4*(-16*mo^2 + 82*Q2) + 
-      mN^2*Q2*(86*mo^2 + 33*Q2 - 70*\[CapitalLambda]0^2) - 
-      4*mN^3*mo*(48*mo^2 + 15*Q2 - 40*\[CapitalLambda]0^2) + 
-      Q2^2*(12*mo^2 + 3*Q2 - 10*\[CapitalLambda]0^2) + 
-      mN*mo*Q2*(-12*mo^2 - 3*Q2 + 10*\[CapitalLambda]0^2)) + 
-    6*mN^23*mo*(352*mo^4 + 9*Q2*\[CapitalLambda]0^2 + 
-      272*\[CapitalLambda]0^4 + 4*mo^2*(7*Q2 + 124*\[CapitalLambda]0^2)) - 
-    3*mN^22*(1760*mo^6 + 27*Q2^2*\[CapitalLambda]0^2 - 
-      703*Q2*\[CapitalLambda]0^4 + 2496*\[CapitalLambda]0^6 + 
-      mo^4*(-374*Q2 + 3728*\[CapitalLambda]0^2) + 
-      4*mo^2*(3*Q2^2 - 233*Q2*\[CapitalLambda]0^2 + 
-        1056*\[CapitalLambda]0^4)) - 3*mN^21*mo*
-     (1760*mo^6 - 15*Q2^2*\[CapitalLambda]0^2 + 53*Q2*\[CapitalLambda]0^4 + 
-      1088*\[CapitalLambda]0^6 + mo^4*(286*Q2 + 2608*\[CapitalLambda]0^2) + 
-      2*mo^2*(93*Q2*\[CapitalLambda]0^2 + 1136*\[CapitalLambda]0^4)) + 
-    3*mN^2*mo^4*Q2*(mo^2 - \[CapitalLambda]0^2)^2*
-     (mo^4 - 2*mo^2*\[CapitalLambda]0^2 - Q2*\[CapitalLambda]0^2 + 
-       \[CapitalLambda]0^4)^2*(9*mo^8 - 17*Q2*\[CapitalLambda]0^6 + 
-      11*\[CapitalLambda]0^8 - 2*mo^6*(6*Q2 + 19*\[CapitalLambda]0^2) + 
-      mo^4*(9*Q2*\[CapitalLambda]0^2 + 60*\[CapitalLambda]0^4) + 
-      mo^2*(6*Q2^2*\[CapitalLambda]0^2 + 20*Q2*\[CapitalLambda]0^4 - 
-        42*\[CapitalLambda]0^6)) + 
-    mN^20*(7920*mo^8 - 9*Q2^3*\[CapitalLambda]0^2 + 
-      738*Q2^2*\[CapitalLambda]0^4 - 7312*Q2*\[CapitalLambda]0^6 + 
-      14112*\[CapitalLambda]0^8 - 72*mo^6*(55*Q2 - 208*\[CapitalLambda]0^2) + 
-      6*mo^4*(33*Q2^2 - 1808*Q2*\[CapitalLambda]0^2 + 
-        3384*\[CapitalLambda]0^4) + 6*mo^2*(135*Q2^2*\[CapitalLambda]0^2 - 
-        2115*Q2*\[CapitalLambda]0^4 + 3584*\[CapitalLambda]0^6)) + 
-    mN^19*mo*(7920*mo^8 - 363*Q2^2*\[CapitalLambda]0^4 + 
-      1208*Q2*\[CapitalLambda]0^6 + 3360*\[CapitalLambda]0^8 + 
-      48*mo^6*(55*Q2 + 162*\[CapitalLambda]0^2) + 
-      6*mo^4*(427*Q2*\[CapitalLambda]0^2 + 1192*\[CapitalLambda]0^4) + 
-      mo^2*(-420*Q2^2*\[CapitalLambda]0^2 + 2406*Q2*\[CapitalLambda]0^4 + 
-        6240*\[CapitalLambda]0^6)) + 
-    mN^15*mo*(720*mo^10*(11*Q2 - 28*\[CapitalLambda]0^2) + 
-      12*mo^8*(981*Q2*\[CapitalLambda]0^2 - 952*\[CapitalLambda]0^4) + 
-      mo^2*\[CapitalLambda]0^4*(363*Q2^3 - 8946*Q2^2*\[CapitalLambda]0^2 + 
-        19400*Q2*\[CapitalLambda]0^4 - 4320*\[CapitalLambda]0^6) + 
-      \[CapitalLambda]0^6*(397*Q2^3 - 4988*Q2^2*\[CapitalLambda]0^2 + 
-        9972*Q2*\[CapitalLambda]0^4 - 2688*\[CapitalLambda]0^6) - 
-      24*mo^6*(180*Q2^2*\[CapitalLambda]0^2 - 1039*Q2*\[CapitalLambda]0^4 + 
-        284*\[CapitalLambda]0^6) + mo^4*(-7854*Q2^2*\[CapitalLambda]0^4 + 
-        24976*Q2*\[CapitalLambda]0^6 - 5280*\[CapitalLambda]0^8)) + 
-    mN^17*mo*(-6336*mo^10 - 9*mo^8*(605*Q2 - 544*\[CapitalLambda]0^2) + 
-      mo^6*(-6858*Q2*\[CapitalLambda]0^2 + 5856*\[CapitalLambda]0^4) - 
-      2*\[CapitalLambda]0^4*(24*Q2^3 - 862*Q2^2*\[CapitalLambda]0^2 + 
-        2439*Q2*\[CapitalLambda]0^4 + 336*\[CapitalLambda]0^6) + 
-      3*mo^4*(585*Q2^2*\[CapitalLambda]0^2 - 3753*Q2*\[CapitalLambda]0^4 + 
-        896*\[CapitalLambda]0^6) + 8*mo^2*(324*Q2^2*\[CapitalLambda]0^4 - 
-        1273*Q2*\[CapitalLambda]0^6 + 36*\[CapitalLambda]0^8)) + 
-    mN^13*mo*(6336*mo^14 + 6*mo^6*Q2*\[CapitalLambda]0^4*
-       (2149*Q2 - 3176*\[CapitalLambda]0^2) - 
-      756*mo^12*(11*Q2 - 24*\[CapitalLambda]0^2) - 
-      84*mo^10*(159*Q2*\[CapitalLambda]0^2 + 88*\[CapitalLambda]0^4) + 
-      6*mo^8*(1155*Q2^2*\[CapitalLambda]0^2 - 4669*Q2*\[CapitalLambda]0^4 - 
-        320*\[CapitalLambda]0^6) + 3*mo^4*\[CapitalLambda]0^4*
-       (-399*Q2^3 + 5856*Q2^2*\[CapitalLambda]0^2 - 
-        5824*Q2*\[CapitalLambda]0^4 + 288*\[CapitalLambda]0^6) + 
-      6*mo^2*\[CapitalLambda]0^6*(-343*Q2^3 + 2497*Q2^2*\[CapitalLambda]0^2 - 
-        2574*Q2*\[CapitalLambda]0^4 + 304*\[CapitalLambda]0^6) + 
-      2*\[CapitalLambda]0^6*(11*Q2^4 - 719*Q2^3*\[CapitalLambda]0^2 + 
-        4239*Q2^2*\[CapitalLambda]0^4 - 5747*Q2*\[CapitalLambda]0^6 + 
-        1824*\[CapitalLambda]0^8)) + 
-    mN^14*(6336*mo^14 + 2772*mo^12*(7*Q2 + 8*\[CapitalLambda]0^2) - 
-      72*mo^10*(33*Q2^2 - 203*Q2*\[CapitalLambda]0^2 - 
-        252*\[CapitalLambda]0^4) - 6*mo^8*(2655*Q2^2*\[CapitalLambda]0^2 + 
-        105*Q2*\[CapitalLambda]0^4 - 2896*\[CapitalLambda]0^6) + 
-      3*mo^4*\[CapitalLambda]0^4*(1089*Q2^3 - 6654*Q2^2*\[CapitalLambda]0^2 - 
-        384*Q2*\[CapitalLambda]0^4 + 5312*\[CapitalLambda]0^6) + 
-      8*mo^2*\[CapitalLambda]0^4*(-9*Q2^4 + 438*Q2^3*\[CapitalLambda]0^2 - 
-        2000*Q2^2*\[CapitalLambda]0^4 + 855*Q2*\[CapitalLambda]0^6 + 
-        1680*\[CapitalLambda]0^8) + 6*mo^6*(180*Q2^3*\[CapitalLambda]0^2 - 
-        3603*Q2^2*\[CapitalLambda]0^4 - 768*Q2*\[CapitalLambda]0^6 + 
-        2960*\[CapitalLambda]0^8) - 2*\[CapitalLambda]0^6*
-       (40*Q2^4 - 908*Q2^3*\[CapitalLambda]0^2 + 
-        4923*Q2^2*\[CapitalLambda]0^4 - 8941*Q2*\[CapitalLambda]0^6 + 
-        4896*\[CapitalLambda]0^8)) - 
-    mN^16*(288*mo^10*(55*Q2 + 56*\[CapitalLambda]0^2) - 
-      9*mo^8*(165*Q2^2 - 3152*Q2*\[CapitalLambda]0^2 - 
-        2464*\[CapitalLambda]0^4) + mo^2*Q2*\[CapitalLambda]0^4*
-       (1005*Q2^2 - 13608*Q2*\[CapitalLambda]0^2 + 
-        26296*\[CapitalLambda]0^4) - 30*mo^6*(315*Q2^2*\[CapitalLambda]0^2 - 
-        932*Q2*\[CapitalLambda]0^4 - 704*\[CapitalLambda]0^6) + 
-      \[CapitalLambda]0^4*(-9*Q2^4 + 707*Q2^3*\[CapitalLambda]0^2 - 
-        7154*Q2^2*\[CapitalLambda]0^4 + 20352*Q2*\[CapitalLambda]0^6 - 
-        16128*\[CapitalLambda]0^8) + mo^4*(405*Q2^3*\[CapitalLambda]0^2 - 
-        15045*Q2^2*\[CapitalLambda]0^4 + 26816*Q2*\[CapitalLambda]0^6 + 
-        13536*\[CapitalLambda]0^8)) - 
-    mN^18*(6336*mo^10 + mo^8*(-9405*Q2 + 3744*\[CapitalLambda]0^2) + 
-      12*mo^6*(55*Q2^2 - 1941*Q2*\[CapitalLambda]0^2 + 
-        312*\[CapitalLambda]0^4) + 3*mo^4*(1205*Q2^2*\[CapitalLambda]0^2 - 
-        9755*Q2*\[CapitalLambda]0^4 + 3168*\[CapitalLambda]0^6) + 
-      2*\[CapitalLambda]0^4*(-66*Q2^3 + 1550*Q2^2*\[CapitalLambda]0^2 - 
-        7611*Q2*\[CapitalLambda]0^4 + 9072*\[CapitalLambda]0^6) + 
-      mo^2*(-90*Q2^3*\[CapitalLambda]0^2 + 5208*Q2^2*\[CapitalLambda]0^4 - 
-        26464*Q2*\[CapitalLambda]0^6 + 17472*\[CapitalLambda]0^8)) + 
-    mN^7*mo*(-2112*mo^20 + 264*mo^18*(5*Q2 + 36*\[CapitalLambda]0^2) + 
-      6*mo^16*(93*Q2*\[CapitalLambda]0^2 - 2336*\[CapitalLambda]0^4) + 
-      3*mo^10*\[CapitalLambda]0^4*(651*Q2^3 + 1662*Q2^2*\[CapitalLambda]0^2 + 
-        2696*Q2*\[CapitalLambda]0^4 - 3744*\[CapitalLambda]0^6) - 
-      24*mo^14*(120*Q2^2*\[CapitalLambda]0^2 + 409*Q2*\[CapitalLambda]0^4 - 
-        108*\[CapitalLambda]0^6) + 3*mo^8*\[CapitalLambda]0^6*
-       (305*Q2^3 - 24*Q2^2*\[CapitalLambda]0^2 - 
-        3276*Q2*\[CapitalLambda]0^4 + 352*\[CapitalLambda]0^6) - 
-      2*mo^6*\[CapitalLambda]0^6*(215*Q2^4 + 361*Q2^3*\[CapitalLambda]0^2 + 
-        1506*Q2^2*\[CapitalLambda]0^4 + 420*Q2*\[CapitalLambda]0^6 - 
-        1008*\[CapitalLambda]0^8) - 6*mo^4*\[CapitalLambda]0^8*
-       (81*Q2^4 + 29*Q2^3*\[CapitalLambda]0^2 + 
-        167*Q2^2*\[CapitalLambda]0^4 - 640*Q2*\[CapitalLambda]0^6 + 
-        112*\[CapitalLambda]0^8) + 2*mo^12*(399*Q2^2*\[CapitalLambda]0^4 + 
-        3992*Q2*\[CapitalLambda]0^6 + 6384*\[CapitalLambda]0^8) + 
-      \[CapitalLambda]0^10*(18*Q2^5 - 352*Q2^4*\[CapitalLambda]0^2 + 
-        1243*Q2^3*\[CapitalLambda]0^4 - 1356*Q2^2*\[CapitalLambda]0^6 + 
-        518*Q2*\[CapitalLambda]0^8 - 96*\[CapitalLambda]0^10) + 
-      3*mo^2*\[CapitalLambda]0^8*(8*Q2^5 - 116*Q2^4*\[CapitalLambda]0^2 - 
-        37*Q2^3*\[CapitalLambda]0^4 + 846*Q2^2*\[CapitalLambda]0^6 - 
-        608*Q2*\[CapitalLambda]0^8 + 64*\[CapitalLambda]0^10)) - 
-    mN^3*mo*(48*mo^24 - 48*mo^22*(Q2 + 10*\[CapitalLambda]0^2) + 
-      18*mo^20*(11*Q2*\[CapitalLambda]0^2 + 120*\[CapitalLambda]0^4) + 
-      6*mo^18*(30*Q2^2*\[CapitalLambda]0^2 + 31*Q2*\[CapitalLambda]0^4 - 
-        960*\[CapitalLambda]0^6) + Q2^2*\[CapitalLambda]0^14*
-       (-6*Q2^3 + 18*Q2^2*\[CapitalLambda]0^2 - 17*Q2*\[CapitalLambda]0^4 + 
-        3*\[CapitalLambda]0^6) + mo^2*Q2*\[CapitalLambda]0^14*
-       (-103*Q2^3 + 243*Q2^2*\[CapitalLambda]0^2 - 
-        174*Q2*\[CapitalLambda]0^4 + 42*\[CapitalLambda]0^6) - 
-      3*mo^14*\[CapitalLambda]0^4*(79*Q2^3 - 346*Q2^2*\[CapitalLambda]0^2 - 
-        2744*Q2*\[CapitalLambda]0^4 + 4032*\[CapitalLambda]0^6) + 
-      mo^12*\[CapitalLambda]0^6*(827*Q2^3 + 1134*Q2^2*\[CapitalLambda]0^2 - 
-        12684*Q2*\[CapitalLambda]0^4 + 10080*\[CapitalLambda]0^6) + 
-      mo^10*\[CapitalLambda]0^6*(127*Q2^4 - 747*Q2^3*\[CapitalLambda]0^2 - 
-        4758*Q2^2*\[CapitalLambda]0^4 + 12012*Q2*\[CapitalLambda]0^6 - 
-        5760*\[CapitalLambda]0^8) - 3*mo^16*(277*Q2^2*\[CapitalLambda]0^4 + 
-        952*Q2*\[CapitalLambda]0^6 - 3360*\[CapitalLambda]0^8) + 
-      mo^8*\[CapitalLambda]0^8*(-268*Q2^4 - 543*Q2^3*\[CapitalLambda]0^2 + 
-        5940*Q2^2*\[CapitalLambda]0^4 - 7176*Q2*\[CapitalLambda]0^6 + 
-        2160*\[CapitalLambda]0^8) + mo^4*\[CapitalLambda]0^10*
-       (18*Q2^5 + 142*Q2^4*\[CapitalLambda]0^2 - 
-        939*Q2^3*\[CapitalLambda]0^4 + 1242*Q2^2*\[CapitalLambda]0^6 - 
-        522*Q2*\[CapitalLambda]0^8 + 48*\[CapitalLambda]0^10) - 
-      3*mo^6*\[CapitalLambda]0^8*(8*Q2^5 - 28*Q2^4*\[CapitalLambda]0^2 - 
-        471*Q2^3*\[CapitalLambda]0^4 + 1258*Q2^2*\[CapitalLambda]0^6 - 
-        872*Q2*\[CapitalLambda]0^8 + 160*\[CapitalLambda]0^10)) - 
-    mN^11*mo*(7920*mo^16 - 576*mo^14*(11*Q2 - \[CapitalLambda]0^2) - 
-      84*mo^12*(117*Q2*\[CapitalLambda]0^2 + 224*\[CapitalLambda]0^4) + 
-      3*mo^4*\[CapitalLambda]0^6*(-1385*Q2^3 + 3738*Q2^2*
-         \[CapitalLambda]0^2 - 588*Q2*\[CapitalLambda]0^4 + 
-        64*\[CapitalLambda]0^6) + 36*mo^10*(210*Q2^2*\[CapitalLambda]0^2 - 
-        329*Q2*\[CapitalLambda]0^4 + 216*\[CapitalLambda]0^6) + 
-      mo^2*\[CapitalLambda]0^6*(131*Q2^4 - 4215*Q2^3*\[CapitalLambda]0^2 + 
-        10242*Q2^2*\[CapitalLambda]0^4 - 2420*Q2*\[CapitalLambda]0^6 - 
-        1056*\[CapitalLambda]0^8) + 4*mo^8*(2961*Q2^2*\[CapitalLambda]0^4 + 
-        1960*Q2*\[CapitalLambda]0^6 + 192*\[CapitalLambda]0^8) + 
-      \[CapitalLambda]0^8*(158*Q2^4 - 2631*Q2^3*\[CapitalLambda]0^2 + 
-        8394*Q2^2*\[CapitalLambda]0^4 - 7704*Q2*\[CapitalLambda]0^6 + 
-        2256*\[CapitalLambda]0^8) + mo^6*(-2247*Q2^3*\[CapitalLambda]0^4 + 
-        14458*Q2^2*\[CapitalLambda]0^6 - 1224*Q2*\[CapitalLambda]0^8 + 
-        384*\[CapitalLambda]0^10)) + 
-    mN^9*mo*(5280*mo^18 - 9*mo^16*(385*Q2 + 1264*\[CapitalLambda]0^2) - 
-      12*mo^14*(351*Q2*\[CapitalLambda]0^2 + 136*\[CapitalLambda]0^4) - 
-      4*mo^6*\[CapitalLambda]0^6*(950*Q2^3 + 553*Q2^2*\[CapitalLambda]0^2 + 
-        9*Q2*\[CapitalLambda]0^4 + 168*\[CapitalLambda]0^6) + 
-      6*mo^12*(945*Q2^2*\[CapitalLambda]0^2 + 1099*Q2*\[CapitalLambda]0^4 + 
-        2880*\[CapitalLambda]0^6) + 2*mo^10*(2499*Q2^2*\[CapitalLambda]0^4 + 
-        5776*Q2*\[CapitalLambda]0^6 - 4848*\[CapitalLambda]0^8) + 
-      2*mo^2*\[CapitalLambda]0^8*(256*Q2^4 - 1389*Q2^3*\[CapitalLambda]0^2 + 
-        231*Q2^2*\[CapitalLambda]0^4 + 1628*Q2*\[CapitalLambda]0^6 - 
-        480*\[CapitalLambda]0^8) + mo^4*\[CapitalLambda]0^6*
-       (325*Q2^4 - 3225*Q2^3*\[CapitalLambda]0^2 + 
-        798*Q2^2*\[CapitalLambda]0^4 - 1258*Q2*\[CapitalLambda]0^6 + 
-        768*\[CapitalLambda]0^8) + mo^8*(-2625*Q2^3*\[CapitalLambda]0^4 + 
-        1200*Q2^2*\[CapitalLambda]0^6 - 9548*Q2*\[CapitalLambda]0^8 + 
-        288*\[CapitalLambda]0^10) + \[CapitalLambda]0^8*
-       (-6*Q2^5 + 360*Q2^4*\[CapitalLambda]0^2 - 
-        2532*Q2^3*\[CapitalLambda]0^4 + 4700*Q2^2*\[CapitalLambda]0^6 - 
-        2883*Q2*\[CapitalLambda]0^8 + 720*\[CapitalLambda]0^10)) + 
-    mN^4*(-48*mo^24 + mo^22*(-312*Q2 + 384*\[CapitalLambda]0^2) + 
-      3*mo^14*Q2*\[CapitalLambda]0^4*(271*Q2^2 + 
-        2744*Q2*\[CapitalLambda]0^2 - 4760*\[CapitalLambda]0^4) + 
-      6*mo^20*(33*Q2^2 + 416*Q2*\[CapitalLambda]0^2 - 
-        216*\[CapitalLambda]0^4) - 18*mo^18*(15*Q2^2*\[CapitalLambda]0^2 + 
-        465*Q2*\[CapitalLambda]0^4 - 128*\[CapitalLambda]0^6) + 
-      Q2^2*\[CapitalLambda]0^14*(-3*Q2^3 + 9*Q2^2*\[CapitalLambda]0^2 - 
-        10*Q2*\[CapitalLambda]0^4 + 6*\[CapitalLambda]0^6) - 
-      mo^2*Q2*\[CapitalLambda]0^14*(13*Q2^3 - 21*Q2^2*\[CapitalLambda]0^2 + 
-        6*Q2*\[CapitalLambda]0^4 + 18*\[CapitalLambda]0^6) + 
-      mo^10*\[CapitalLambda]0^6*(-325*Q2^4 - 2493*Q2^3*\[CapitalLambda]0^2 + 
-        4740*Q2^2*\[CapitalLambda]0^4 + 3444*Q2*\[CapitalLambda]0^6 - 
-        2304*\[CapitalLambda]0^8) + mo^4*\[CapitalLambda]0^12*
-       (8*Q2^4 - 273*Q2^3*\[CapitalLambda]0^2 + 
-        492*Q2^2*\[CapitalLambda]0^4 - 240*Q2*\[CapitalLambda]0^6 + 
-        48*\[CapitalLambda]0^8) - 3*mo^16*(135*Q2^3*\[CapitalLambda]0^2 + 
-        784*Q2^2*\[CapitalLambda]0^4 - 4976*Q2*\[CapitalLambda]0^6 + 
-        672*\[CapitalLambda]0^8) + mo^12*\[CapitalLambda]0^4*
-       (252*Q2^4 + 661*Q2^3*\[CapitalLambda]0^2 - 
-        10410*Q2^2*\[CapitalLambda]0^4 + 5040*Q2*\[CapitalLambda]0^6 + 
-        2016*\[CapitalLambda]0^8) + 3*mo^6*\[CapitalLambda]0^8*
-       (8*Q2^5 + 54*Q2^4*\[CapitalLambda]0^2 + 57*Q2^3*\[CapitalLambda]0^4 - 
-        648*Q2^2*\[CapitalLambda]0^6 + 624*Q2*\[CapitalLambda]0^8 - 
-        128*\[CapitalLambda]0^10) + mo^8*\[CapitalLambda]0^6*
-       (-45*Q2^5 - 109*Q2^4*\[CapitalLambda]0^2 + 
-        1515*Q2^3*\[CapitalLambda]0^4 + 1314*Q2^2*\[CapitalLambda]0^6 - 
-        4560*Q2*\[CapitalLambda]0^8 + 1296*\[CapitalLambda]0^10)) + 
-    mN^6*(480*mo^22 + 6*mo^20*(275*Q2 - 424*\[CapitalLambda]0^2) - 
-      12*mo^18*(55*Q2^2 + 811*Q2*\[CapitalLambda]0^2 - 
-        408*\[CapitalLambda]0^4) + mo^12*Q2*\[CapitalLambda]0^4*
-       (105*Q2^2 - 13438*Q2*\[CapitalLambda]0^2 + 2736*\[CapitalLambda]0^4) - 
-      15*mo^16*(75*Q2^2*\[CapitalLambda]0^2 - 1399*Q2*\[CapitalLambda]0^4 + 
-        224*\[CapitalLambda]0^6) + 2*mo^8*\[CapitalLambda]0^6*
-       (-65*Q2^4 + 745*Q2^3*\[CapitalLambda]0^2 + 
-        1089*Q2^2*\[CapitalLambda]0^4 + 1107*Q2*\[CapitalLambda]0^6 - 
-        2928*\[CapitalLambda]0^8) + 2*mo^2*Q2*\[CapitalLambda]0^10*
-       (9*Q2^4 - 8*Q2^3*\[CapitalLambda]0^2 - 146*Q2^2*\[CapitalLambda]0^4 + 
-        306*Q2*\[CapitalLambda]0^6 - 162*\[CapitalLambda]0^8) + 
-      6*mo^14*(180*Q2^3*\[CapitalLambda]0^2 + 1655*Q2^2*\[CapitalLambda]0^4 - 
-        3104*Q2*\[CapitalLambda]0^6 - 112*\[CapitalLambda]0^8) + 
-      Q2*\[CapitalLambda]0^12*(12*Q2^4 - 80*Q2^3*\[CapitalLambda]0^2 + 
-        168*Q2^2*\[CapitalLambda]0^4 - 161*Q2*\[CapitalLambda]0^6 + 
-        57*\[CapitalLambda]0^8) + 12*mo^10*\[CapitalLambda]0^4*
-       (-42*Q2^4 - 269*Q2^3*\[CapitalLambda]0^2 + 
-        303*Q2^2*\[CapitalLambda]0^4 + 310*Q2*\[CapitalLambda]0^6 + 
-        392*\[CapitalLambda]0^8) + 3*mo^4*\[CapitalLambda]0^8*
-       (8*Q2^5 + 23*Q2^3*\[CapitalLambda]0^4 - 490*Q2^2*\[CapitalLambda]0^6 + 
-        642*Q2*\[CapitalLambda]0^8 - 176*\[CapitalLambda]0^10) + 
-      2*mo^6*\[CapitalLambda]0^6*(30*Q2^5 + 107*Q2^4*\[CapitalLambda]0^2 + 
-        144*Q2^3*\[CapitalLambda]0^4 + 249*Q2^2*\[CapitalLambda]0^6 - 
-        2304*Q2*\[CapitalLambda]0^8 + 1440*\[CapitalLambda]0^10)) + 
-    mN^5*mo*(480*mo^22 - 6*mo^20*(55*Q2 + 568*\[CapitalLambda]0^2) + 
-      6*mo^18*(63*Q2*\[CapitalLambda]0^2 + 1664*\[CapitalLambda]0^4) + 
-      3*mo^16*(315*Q2^2*\[CapitalLambda]0^2 + 1263*Q2*\[CapitalLambda]0^4 - 
-        4928*\[CapitalLambda]0^6) + 6*mo^10*\[CapitalLambda]0^6*
-       (173*Q2^3 + 941*Q2^2*\[CapitalLambda]0^2 + 22*Q2*\[CapitalLambda]0^4 - 
-        1792*\[CapitalLambda]0^6) - 6*mo^14*(321*Q2^2*\[CapitalLambda]0^4 + 
-        1976*Q2*\[CapitalLambda]0^6 - 1568*\[CapitalLambda]0^8) - 
-      2*mo^2*Q2*\[CapitalLambda]0^10*(9*Q2^4 + 11*Q2^3*\[CapitalLambda]0^2 - 
-        393*Q2^2*\[CapitalLambda]0^4 + 567*Q2*\[CapitalLambda]0^6 - 
-        201*\[CapitalLambda]0^8) + Q2*\[CapitalLambda]0^12*
-       (-18*Q2^4 + 146*Q2^3*\[CapitalLambda]0^2 - 
-        270*Q2^2*\[CapitalLambda]0^4 + 157*Q2*\[CapitalLambda]0^6 - 
-        27*\[CapitalLambda]0^8) - 2*mo^6*\[CapitalLambda]0^8*
-       (17*Q2^4 + 516*Q2^3*\[CapitalLambda]0^2 + 
-        1725*Q2^2*\[CapitalLambda]0^4 - 4128*Q2*\[CapitalLambda]0^6 + 
-        1488*\[CapitalLambda]0^8) + 2*mo^8*\[CapitalLambda]0^6*
-       (160*Q2^4 + 468*Q2^3*\[CapitalLambda]0^2 - 
-        1083*Q2^2*\[CapitalLambda]0^4 - 4989*Q2*\[CapitalLambda]0^6 + 
-        4128*\[CapitalLambda]0^8) - 3*mo^4*\[CapitalLambda]0^8*
-       (12*Q2^5 + 42*Q2^4*\[CapitalLambda]0^2 + 
-        185*Q2^3*\[CapitalLambda]0^4 - 1144*Q2^2*\[CapitalLambda]0^6 + 
-        938*Q2*\[CapitalLambda]0^8 - 144*\[CapitalLambda]0^10) + 
-      mo^12*(-903*Q2^3*\[CapitalLambda]0^4 - 1504*Q2^2*\[CapitalLambda]0^6 + 
-        12048*Q2*\[CapitalLambda]0^8 + 3360*\[CapitalLambda]0^10)) + 
-    mN^8*(-2112*mo^20 - 96*mo^18*(55*Q2 - 64*\[CapitalLambda]0^2) + 
-      9*mo^16*(165*Q2^2 + 2312*Q2*\[CapitalLambda]0^2 - 
-        384*\[CapitalLambda]0^4) + 36*mo^14*(165*Q2^2*\[CapitalLambda]0^2 - 
-        590*Q2*\[CapitalLambda]0^4 - 96*\[CapitalLambda]0^6) + 
-      2*mo^6*\[CapitalLambda]0^6*(400*Q2^4 + 331*Q2^3*\[CapitalLambda]0^2 + 
-        42*Q2^2*\[CapitalLambda]0^4 + 924*Q2*\[CapitalLambda]0^6 - 
-        2880*\[CapitalLambda]0^8) - 2*mo^12*(945*Q2^3*\[CapitalLambda]0^2 + 
-        7686*Q2^2*\[CapitalLambda]0^4 - 128*Q2*\[CapitalLambda]0^6 - 
-        336*\[CapitalLambda]0^8) + mo^8*\[CapitalLambda]0^4*
-       (630*Q2^4 + 1815*Q2^3*\[CapitalLambda]0^2 + 
-        2620*Q2^2*\[CapitalLambda]0^4 + 2016*Q2*\[CapitalLambda]0^6 + 
-        1440*\[CapitalLambda]0^8) + mo^2*\[CapitalLambda]0^8*
-       (-36*Q2^5 + 354*Q2^4*\[CapitalLambda]0^2 + 
-        105*Q2^3*\[CapitalLambda]0^4 - 2744*Q2^2*\[CapitalLambda]0^6 + 
-        3336*Q2*\[CapitalLambda]0^8 - 768*\[CapitalLambda]0^10) + 
-      \[CapitalLambda]0^10*(-18*Q2^5 + 239*Q2^4*\[CapitalLambda]0^2 - 
-        841*Q2^3*\[CapitalLambda]0^4 + 1203*Q2^2*\[CapitalLambda]0^6 - 
-        712*Q2*\[CapitalLambda]0^8 + 96*\[CapitalLambda]0^10) + 
-      3*mo^4*\[CapitalLambda]0^6*(-15*Q2^5 + 149*Q2^4*\[CapitalLambda]0^2 + 
-        60*Q2^3*\[CapitalLambda]0^4 + 192*Q2^2*\[CapitalLambda]0^6 - 
-        1824*Q2*\[CapitalLambda]0^8 + 1120*\[CapitalLambda]0^10) + 
-      mo^10*(-3087*Q2^3*\[CapitalLambda]0^4 + 2880*Q2^2*\[CapitalLambda]0^6 + 
-        4440*Q2*\[CapitalLambda]0^8 + 3840*\[CapitalLambda]0^10)) + 
-    mN^12*(-7920*mo^16 - 144*mo^14*(121*Q2 + 64*\[CapitalLambda]0^2) + 
-      252*mo^12*(11*Q2^2 + 40*Q2*\[CapitalLambda]0^2 + 
-        16*\[CapitalLambda]0^4) + 12*mo^10*(1491*Q2^2*\[CapitalLambda]0^2 + 
-        1631*Q2*\[CapitalLambda]0^4 + 64*\[CapitalLambda]0^6) + 
-      3*mo^4*Q2*\[CapitalLambda]0^4*(84*Q2^3 - 2095*Q2^2*
-         \[CapitalLambda]0^2 + 1986*Q2*\[CapitalLambda]0^4 + 
-        3664*\[CapitalLambda]0^6) + mo^2*\[CapitalLambda]0^6*
-       (427*Q2^4 - 4769*Q2^3*\[CapitalLambda]0^2 + 
-        6636*Q2^2*\[CapitalLambda]0^4 + 10004*Q2*\[CapitalLambda]0^6 - 
-        12288*\[CapitalLambda]0^8) - 2*mo^8*(945*Q2^3*\[CapitalLambda]0^2 - 
-        6279*Q2^2*\[CapitalLambda]0^4 - 7168*Q2*\[CapitalLambda]0^6 + 
-        1152*\[CapitalLambda]0^8) + mo^6*(-5817*Q2^3*\[CapitalLambda]0^4 + 
-        6872*Q2^2*\[CapitalLambda]0^6 + 12072*Q2*\[CapitalLambda]0^8 - 
-        1536*\[CapitalLambda]0^10) + \[CapitalLambda]0^6*
-       (-3*Q2^5 + 239*Q2^4*\[CapitalLambda]0^2 - 
-        2529*Q2^3*\[CapitalLambda]0^4 + 8304*Q2^2*\[CapitalLambda]0^6 - 
-        10224*Q2*\[CapitalLambda]0^8 + 3888*\[CapitalLambda]0^10)) + 
-    mN^10*(5280*mo^18 + 9*mo^16*(1265*Q2 - 464*\[CapitalLambda]0^2) - 
-      72*mo^14*(33*Q2^2 + 341*Q2*\[CapitalLambda]0^2 + 
-        92*\[CapitalLambda]0^4) - 6*mo^12*(2205*Q2^2*\[CapitalLambda]0^2 + 
-        385*Q2*\[CapitalLambda]0^4 - 496*\[CapitalLambda]0^6) + 
-      mo^8*\[CapitalLambda]0^4*(5943*Q2^3 + 6150*Q2^2*\[CapitalLambda]0^2 + 
-        1084*Q2*\[CapitalLambda]0^4 - 96*\[CapitalLambda]0^6) + 
-      mo^4*\[CapitalLambda]0^6*(-881*Q2^4 + 2745*Q2^3*\[CapitalLambda]0^2 + 
-        2508*Q2^2*\[CapitalLambda]0^4 + 1190*Q2*\[CapitalLambda]0^6 - 
-        7008*\[CapitalLambda]0^8) + mo^10*(2268*Q2^3*\[CapitalLambda]0^2 + 
-        6342*Q2^2*\[CapitalLambda]0^4 + 4832*Q2*\[CapitalLambda]0^6 + 
-        3456*\[CapitalLambda]0^8) + \[CapitalLambda]0^8*
-       (12*Q2^5 - 336*Q2^4*\[CapitalLambda]0^2 + 
-        1980*Q2^3*\[CapitalLambda]0^4 - 4220*Q2^2*\[CapitalLambda]0^6 + 
-        3627*Q2*\[CapitalLambda]0^8 - 912*\[CapitalLambda]0^10) + 
-      2*mo^2*\[CapitalLambda]0^6*(9*Q2^5 - 340*Q2^4*\[CapitalLambda]0^2 + 
-        1173*Q2^3*\[CapitalLambda]0^4 + 1164*Q2^2*\[CapitalLambda]0^6 - 
-        4960*Q2*\[CapitalLambda]0^8 + 2448*\[CapitalLambda]0^10) + 
-      mo^6*(-504*Q2^4*\[CapitalLambda]0^4 + 3862*Q2^3*\[CapitalLambda]0^6 + 
-        3010*Q2^2*\[CapitalLambda]0^8 - 696*Q2*\[CapitalLambda]0^10 + 
-        2208*\[CapitalLambda]0^12)) + 3*mm^20*(176*mN^8 - 1024*mN^7*mo - 
-      2*mN^5*mo*(880*mo^2 + 275*Q2 - 872*\[CapitalLambda]0^2) + 
-      8*mN^6*(61*Q2 - 22*\[CapitalLambda]0^2) - 
-      2*mN^3*mo*(528*mo^4 + 39*Q2^2 - 279*Q2*\[CapitalLambda]0^2 + 
-        360*\[CapitalLambda]0^4 + 4*mo^2*(73*Q2 - 220*\[CapitalLambda]0^2)) + 
-      mN^2*Q2*(484*mo^4 + 51*Q2^2 - 299*Q2*\[CapitalLambda]0^2 + 
-        315*\[CapitalLambda]0^4 + 36*mo^2*(9*Q2 - 22*\[CapitalLambda]0^2)) - 
-      mN*mo*Q2*(66*mo^4 + 3*Q2^2 - 29*Q2*\[CapitalLambda]0^2 + 
-        45*\[CapitalLambda]0^4 + 10*mo^2*(3*Q2 - 11*\[CapitalLambda]0^2)) + 
-      mN^4*(-176*mo^4 + 2*Q2*(135*Q2 - 374*\[CapitalLambda]0^2) + 
-        4*mo^2*(177*Q2 + 32*\[CapitalLambda]0^2)) + 
-      Q2^2*(66*mo^4 + 10*mo^2*(3*Q2 - 11*\[CapitalLambda]0^2) + 
-        3*(Q2^2 - 9*Q2*\[CapitalLambda]0^2 + 15*\[CapitalLambda]0^4))) - 
-    3*mm^18*(880*mN^10 - 3200*mN^9*mo - 4*mN^7*mo*(1680*mo^2 + 581*Q2 - 
-        2088*\[CapitalLambda]0^2) + 2*mN^8*(280*mo^2 + 931*Q2 - 
-        880*\[CapitalLambda]0^2) - mN^5*mo*(7040*mo^4 + 531*Q2^2 - 
-        4638*Q2*\[CapitalLambda]0^2 + 7056*\[CapitalLambda]0^4 + 
-        4*mo^2*(969*Q2 - 3640*\[CapitalLambda]0^2)) + 
-      mN^6*(-560*mo^4 + 1159*Q2^2 - 4118*Q2*\[CapitalLambda]0^2 + 
-        864*\[CapitalLambda]0^4 + 14*mo^2*(205*Q2 - 
-          32*\[CapitalLambda]0^2)) + Q2^2*(220*mo^6 + Q2^3 - 
-        24*Q2^2*\[CapitalLambda]0^2 + 108*Q2*\[CapitalLambda]0^4 - 
-        120*\[CapitalLambda]0^6 + 5*mo^4*(27*Q2 - 110*\[CapitalLambda]0^2) + 
-        6*mo^2*(4*Q2^2 - 41*Q2*\[CapitalLambda]0^2 + 
-          75*\[CapitalLambda]0^4)) + 
-      mN^4*(-880*mo^6 + 2*mo^4*(1289*Q2 + 640*\[CapitalLambda]0^2) + 
-        2*mo^2*(921*Q2^2 - 2978*Q2*\[CapitalLambda]0^2 - 
-          216*\[CapitalLambda]0^4) + 9*Q2*(33*Q2^2 - 
-          246*Q2*\[CapitalLambda]0^2 + 338*\[CapitalLambda]0^4)) - 
-      mN*mo*Q2*(220*mo^6 + Q2^3 - 30*Q2^2*\[CapitalLambda]0^2 + 
-        126*Q2*\[CapitalLambda]0^4 - 120*\[CapitalLambda]0^6 + 
-        5*mo^4*(27*Q2 - 110*\[CapitalLambda]0^2) + 
-        mo^2*(24*Q2^2 - 266*Q2*\[CapitalLambda]0^2 + 
-          450*\[CapitalLambda]0^4)) + mN^2*Q2*(1650*mo^6 + 31*Q2^3 - 
-        414*Q2^2*\[CapitalLambda]0^2 + 1206*Q2*\[CapitalLambda]0^4 - 
-        840*\[CapitalLambda]0^6 + 11*mo^4*(129*Q2 - 
-          370*\[CapitalLambda]0^2) + 6*mo^2*(64*Q2^2 - 
-          447*Q2*\[CapitalLambda]0^2 + 543*\[CapitalLambda]0^4)) - 
-      2*mN^3*mo*(1760*mo^6 + 20*Q2^3 - 348*Q2^2*\[CapitalLambda]0^2 + 
-        1161*Q2*\[CapitalLambda]0^4 - 960*\[CapitalLambda]0^6 + 
-        10*mo^4*(127*Q2 - 440*\[CapitalLambda]0^2) + 
-        3*mo^2*(97*Q2^2 - 826*Q2*\[CapitalLambda]0^2 + 
-          1200*\[CapitalLambda]0^4))) + 3*mm^16*(2640*mN^12 - 6480*mN^11*mo + 
-      3*mN^10*(800*mo^2 + 1621*Q2 - 2640*\[CapitalLambda]0^2) + 
-      mN^9*(-13600*mo^3 - 5667*mo*Q2 + 23088*mo*\[CapitalLambda]0^2) - 
-      2*mN^7*mo*(8800*mo^4 + 852*Q2^2 - 8765*Q2*\[CapitalLambda]0^2 + 
-        14992*\[CapitalLambda]0^4 + 4*mo^2*(1325*Q2 - 
-          6188*\[CapitalLambda]0^2)) + 
-      3*mN^8*(1045*Q2^2 - 4840*Q2*\[CapitalLambda]0^2 + 
-        2592*\[CapitalLambda]0^4 + 16*mo^2*(145*Q2 - 
-          144*\[CapitalLambda]0^2)) + mN^6*(-2400*mo^6 + 922*Q2^3 - 
-        8623*Q2^2*\[CapitalLambda]0^2 + 15395*Q2*\[CapitalLambda]0^4 - 
-        2496*\[CapitalLambda]0^6 + 2*mo^4*(3195*Q2 + 
-          952*\[CapitalLambda]0^2) + 4*mo^2*(1245*Q2^2 - 
-          5623*Q2*\[CapitalLambda]0^2 + 896*\[CapitalLambda]0^4)) - 
-      mN^3*mo*(7920*mo^8 + 6*Q2^4 - 378*Q2^3*\[CapitalLambda]0^2 + 
-        2761*Q2^2*\[CapitalLambda]0^4 - 5688*Q2*\[CapitalLambda]0^6 + 
-        3360*\[CapitalLambda]0^8 + 240*mo^6*(27*Q2 - 
-          110*\[CapitalLambda]0^2) + 6*mo^4*(308*Q2^2 - 
-          3249*Q2*\[CapitalLambda]0^2 + 5400*\[CapitalLambda]0^4) + 
-        2*mo^2*(102*Q2^3 - 2370*Q2^2*\[CapitalLambda]0^2 + 
-          9319*Q2*\[CapitalLambda]0^4 - 8640*\[CapitalLambda]0^6)) - 
-      mN^5*(15840*mo^7 + 2*mo^5*(5659*Q2 - 26280*\[CapitalLambda]0^2) + 
-        mo^3*(2616*Q2^2 - 29614*Q2*\[CapitalLambda]0^2 + 
-          53120*\[CapitalLambda]0^4) + 3*mo*(64*Q2^3 - 
-          1433*Q2^2*\[CapitalLambda]0^2 + 5771*Q2*\[CapitalLambda]0^4 - 
-          5568*\[CapitalLambda]0^6)) + mN^2*Q2*(3795*mo^8 + 6*Q2^4 - 
-        223*Q2^3*\[CapitalLambda]0^2 + 1476*Q2^2*\[CapitalLambda]0^4 - 
-        2844*Q2*\[CapitalLambda]0^6 + 1470*\[CapitalLambda]0^8 + 
-        12*mo^6*(303*Q2 - 1045*\[CapitalLambda]0^2) + 
-        3*mo^4*(410*Q2^2 - 3543*Q2*\[CapitalLambda]0^2 + 
-          5049*\[CapitalLambda]0^4) + 2*mo^2*(82*Q2^3 - 
-          1413*Q2^2*\[CapitalLambda]0^2 + 4896*Q2*\[CapitalLambda]0^4 - 
-          3936*\[CapitalLambda]0^6)) - mN*mo*Q2*(495*mo^8 - 
-        13*Q2^3*\[CapitalLambda]0^2 + 132*Q2^2*\[CapitalLambda]0^4 - 
-        324*Q2*\[CapitalLambda]0^6 + 210*\[CapitalLambda]0^8 + 
-        30*mo^6*(12*Q2 - 55*\[CapitalLambda]0^2) + 
-        3*mo^4*(28*Q2^2 - 363*Q2*\[CapitalLambda]0^2 + 
-          675*\[CapitalLambda]0^4) + 6*mo^2*(Q2^3 - 
-          37*Q2^2*\[CapitalLambda]0^2 + 175*Q2*\[CapitalLambda]0^4 - 
-          180*\[CapitalLambda]0^6)) + 
-      Q2^2*(495*mo^8 + 30*mo^6*(12*Q2 - 55*\[CapitalLambda]0^2) + 
-        3*mo^4*(28*Q2^2 - 333*Q2*\[CapitalLambda]0^2 + 
-          675*\[CapitalLambda]0^4) + 6*mo^2*(Q2^3 - 
-          29*Q2^2*\[CapitalLambda]0^2 + 148*Q2*\[CapitalLambda]0^4 - 
-          180*\[CapitalLambda]0^6) - 7*\[CapitalLambda]0^2*
-         (Q2^3 - 12*Q2^2*\[CapitalLambda]0^2 + 36*Q2*\[CapitalLambda]0^4 - 
-          30*\[CapitalLambda]0^6)) + mN^4*(-2640*mo^8 + 
-        24*mo^6*(203*Q2 + 240*\[CapitalLambda]0^2) + 
-        2*mo^4*(2517*Q2^2 - 9944*Q2*\[CapitalLambda]0^2 - 
-          1944*\[CapitalLambda]0^4) + 
-        Q2*(124*Q2^3 - 2167*Q2^2*\[CapitalLambda]0^2 + 
-          7994*Q2*\[CapitalLambda]0^4 - 7248*\[CapitalLambda]0^6) + 
-        2*mo^2*(712*Q2^3 - 6869*Q2^2*\[CapitalLambda]0^2 + 
-          11077*Q2*\[CapitalLambda]0^4 + 384*\[CapitalLambda]0^6))) - 
-    3*mm^14*(5280*mN^14 - 8832*mN^13*mo - 8*mN^11*mo*(1840*mo^2 + 1083*Q2 - 
-        5064*\[CapitalLambda]0^2) + 12*mN^12*(360*mo^2 + 743*Q2 - 
-        1760*\[CapitalLambda]0^2) - 2*mN^9*mo*(9600*mo^4 + 1539*Q2^2 - 
-        18818*Q2*\[CapitalLambda]0^2 + 36128*\[CapitalLambda]0^4 + 
-        mo^2*(6844*Q2 - 43840*\[CapitalLambda]0^2)) - 
-      4*mN^8*(400*mo^6 - 440*Q2^3 + 5269*Q2^2*\[CapitalLambda]0^2 - 
-        12438*Q2*\[CapitalLambda]0^4 + 4992*\[CapitalLambda]0^6 + 
-        mo^4*(-2050*Q2 + 2080*\[CapitalLambda]0^2) - 
-        4*mo^2*(441*Q2^2 - 3181*Q2*\[CapitalLambda]0^2 + 
-          2060*\[CapitalLambda]0^4)) + 
-      2*mN^10*(800*mo^4 + 6*mo^2*(809*Q2 - 1984*\[CapitalLambda]0^2) + 
-        3*(951*Q2^2 - 5762*Q2*\[CapitalLambda]0^2 + 
-          5184*\[CapitalLambda]0^4)) - 8*mN^7*mo*(2720*mo^6 + 56*Q2^3 - 
-        1546*Q2^2*\[CapitalLambda]0^2 + 7225*Q2*\[CapitalLambda]0^4 - 
-        7760*\[CapitalLambda]0^6 + 2*mo^4*(1047*Q2 - 
-          7240*\[CapitalLambda]0^2) + 3*mo^2*(185*Q2^2 - 
-          2990*Q2*\[CapitalLambda]0^2 + 6604*\[CapitalLambda]0^4)) - 
-      mN^5*mo*(21120*mo^8 + 19*Q2^4 - 1662*Q2^3*\[CapitalLambda]0^2 + 
-        15272*Q2^2*\[CapitalLambda]0^4 - 37536*Q2*\[CapitalLambda]0^6 + 
-        25536*\[CapitalLambda]0^8 + 16*mo^6*(1063*Q2 - 
-          6600*\[CapitalLambda]0^2) + 4*mo^4*(1197*Q2^2 - 
-          19390*Q2*\[CapitalLambda]0^2 + 42736*\[CapitalLambda]0^4) + 
-        8*mo^2*(67*Q2^3 - 2395*Q2^2*\[CapitalLambda]0^2 + 
-          12367*Q2*\[CapitalLambda]0^4 - 14000*\[CapitalLambda]0^6)) + 
-      mN^6*(-4320*mo^8 + 263*Q2^4 - 6026*Q2^3*\[CapitalLambda]0^2 + 
-        27968*Q2^2*\[CapitalLambda]0^4 - 33472*Q2*\[CapitalLambda]0^6 + 
-        4704*\[CapitalLambda]0^8 + 8*mo^6*(739*Q2 + 
-          1280*\[CapitalLambda]0^2) + 4*mo^4*(1767*Q2^2 - 
-          11650*Q2*\[CapitalLambda]0^2 + 632*\[CapitalLambda]0^4) + 
-        2*mo^2*(1149*Q2^3 - 16820*Q2^2*\[CapitalLambda]0^2 + 
-          38596*Q2*\[CapitalLambda]0^4 - 6272*\[CapitalLambda]0^6)) + 
-      Q2^2*(792*mo^10 + 30*mo^8*(21*Q2 - 110*\[CapitalLambda]0^2) + 
-        24*mo^6*(7*Q2^2 - 99*Q2*\[CapitalLambda]0^2 + 
-          225*\[CapitalLambda]0^4) + 3*mo^4*(5*Q2^3 - 
-          182*Q2^2*\[CapitalLambda]0^2 + 1072*Q2*\[CapitalLambda]0^4 - 
-          1440*\[CapitalLambda]0^6) + 21*\[CapitalLambda]0^4*
-         (Q2^3 - 8*Q2^2*\[CapitalLambda]0^2 + 18*Q2*\[CapitalLambda]0^4 - 
-          12*\[CapitalLambda]0^6) - 2*mo^2*(19*Q2^3*\[CapitalLambda]0^2 - 
-          273*Q2^2*\[CapitalLambda]0^4 + 924*Q2*\[CapitalLambda]0^6 - 
-          840*\[CapitalLambda]0^8)) + mN*mo*Q2*(-792*mo^10 + 
-        mo^8*(-630*Q2 + 3300*\[CapitalLambda]0^2) - 
-        24*mo^6*(7*Q2^2 - 109*Q2*\[CapitalLambda]0^2 + 
-          225*\[CapitalLambda]0^4) + mo^4*(-15*Q2^3 + 
-          714*Q2^2*\[CapitalLambda]0^2 - 3864*Q2*\[CapitalLambda]0^4 + 
-          4320*\[CapitalLambda]0^6) + 2*mo^2*(37*Q2^3*\[CapitalLambda]0^2 - 
-          444*Q2^2*\[CapitalLambda]0^4 + 1212*Q2*\[CapitalLambda]0^6 - 
-          840*\[CapitalLambda]0^8) + \[CapitalLambda]0^2*
-         (2*Q2^4 - 63*Q2^3*\[CapitalLambda]0^2 + 336*Q2^2*\[CapitalLambda]0^
-            4 - 546*Q2*\[CapitalLambda]0^6 + 252*\[CapitalLambda]0^8)) + 
-      mN^2*Q2*(6204*mo^10 - 38*Q2^4*\[CapitalLambda]0^2 + 
-        693*Q2^3*\[CapitalLambda]0^4 - 3024*Q2^2*\[CapitalLambda]0^6 + 
-        4326*Q2*\[CapitalLambda]0^8 - 1764*\[CapitalLambda]0^10 + 
-        18*mo^8*(333*Q2 - 1430*\[CapitalLambda]0^2) + 
-        6*mo^6*(357*Q2^2 - 4060*Q2*\[CapitalLambda]0^2 + 
-          6948*\[CapitalLambda]0^4) + mo^4*(331*Q2^3 - 
-          8118*Q2^2*\[CapitalLambda]0^2 + 34710*Q2*\[CapitalLambda]0^4 - 
-          32736*\[CapitalLambda]0^6) + 6*mo^2*(3*Q2^4 - 
-          177*Q2^3*\[CapitalLambda]0^2 + 1505*Q2^2*\[CapitalLambda]0^4 - 
-          3444*Q2*\[CapitalLambda]0^6 + 2058*\[CapitalLambda]0^8)) + 
-      mN^4*(-5280*mo^10 + 12*mo^8*(339*Q2 + 1280*\[CapitalLambda]0^2) + 
-        8*mo^6*(801*Q2^2 - 4306*Q2*\[CapitalLambda]0^2 - 
-          1944*\[CapitalLambda]0^4) + mo^4*(2386*Q2^3 - 
-          33816*Q2^2*\[CapitalLambda]0^2 + 67112*Q2*\[CapitalLambda]0^4 + 
-          6144*\[CapitalLambda]0^6) + mo^2*(342*Q2^4 - 
-          9352*Q2^3*\[CapitalLambda]0^2 + 44592*Q2^2*\[CapitalLambda]0^4 - 
-          47776*Q2*\[CapitalLambda]0^6 - 672*\[CapitalLambda]0^8) + 
-        Q2*(15*Q2^4 - 798*Q2^3*\[CapitalLambda]0^2 + 
-          6857*Q2^2*\[CapitalLambda]0^4 - 16648*Q2*\[CapitalLambda]0^6 + 
-          11172*\[CapitalLambda]0^8)) - mN^3*mo*(12672*mo^10 - 
-        88*Q2^4*\[CapitalLambda]0^2 + 1531*Q2^3*\[CapitalLambda]0^4 - 
-        6392*Q2^2*\[CapitalLambda]0^6 + 9072*Q2*\[CapitalLambda]0^8 - 
-        4032*\[CapitalLambda]0^10 + 120*mo^8*(89*Q2 - 
-          440*\[CapitalLambda]0^2) + 24*mo^6*(133*Q2^2 - 
-          1854*Q2*\[CapitalLambda]0^2 + 3600*\[CapitalLambda]0^4) + 
-        8*mo^4*(48*Q2^3 - 1704*Q2^2*\[CapitalLambda]0^2 + 
-          8189*Q2*\[CapitalLambda]0^4 - 8640*\[CapitalLambda]0^6) + 
-        2*mo^2*(7*Q2^4 - 900*Q2^3*\[CapitalLambda]0^2 + 
-          8473*Q2^2*\[CapitalLambda]0^4 - 20384*Q2*\[CapitalLambda]0^6 + 
-          13440*\[CapitalLambda]0^8))) + 
-    mm^12*(22176*mN^16 - 24192*mN^15*mo - 84*mN^13*mo*
-       (208*mo^2 + 303*Q2 - 1656*\[CapitalLambda]0^2) + 
-      504*mN^14*(16*mo^2 + 69*Q2 - 220*\[CapitalLambda]0^2) - 
-      12*mN^11*mo*(1520*mo^4 + 837*Q2^2 - 12411*Q2*\[CapitalLambda]0^2 + 
-        26936*\[CapitalLambda]0^4 + 4*mo^2*(373*Q2 - 
-          5068*\[CapitalLambda]0^2)) + 
-      84*mN^12*(40*mo^4 + 6*mo^2*(31*Q2 - 224*\[CapitalLambda]0^2) + 
-        3*(85*Q2^2 - 674*Q2*\[CapitalLambda]0^2 + 864*\[CapitalLambda]0^4)) + 
-      6*mN^10*(1088*Q2^3 - 17115*Q2^2*\[CapitalLambda]0^2 + 
-        53291*Q2*\[CapitalLambda]0^4 - 34944*\[CapitalLambda]0^6 + 
-        8*mo^4*(211*Q2 - 1372*\[CapitalLambda]0^2) + 
-        12*mo^2*(153*Q2^2 - 2744*Q2*\[CapitalLambda]0^2 + 
-          3920*\[CapitalLambda]0^4)) - 6*mN^9*mo*(3520*mo^6 + 291*Q2^3 - 
-        9905*Q2^2*\[CapitalLambda]0^2 + 53821*Q2*\[CapitalLambda]0^4 - 
-        64064*\[CapitalLambda]0^6 + 10*mo^4*(313*Q2 - 
-          5456*\[CapitalLambda]0^2) + 2*mo^2*(561*Q2^2 - 
-          20151*Q2*\[CapitalLambda]0^2 + 60232*\[CapitalLambda]0^4)) - 
-      2*mN^7*mo*(13440*mo^8 + 54*Q2^4 - 5271*Q2^3*\[CapitalLambda]0^2 + 
-        58218*Q2^2*\[CapitalLambda]0^4 - 163480*Q2*\[CapitalLambda]0^6 + 
-        122304*\[CapitalLambda]0^8 + 672*mo^6*(17*Q2 - 
-          282*\[CapitalLambda]0^2) + 12*mo^4*(297*Q2^2 - 
-          12563*Q2*\[CapitalLambda]0^2 + 40748*\[CapitalLambda]0^4) + 
-        6*mo^2*(87*Q2^3 - 7208*Q2^2*\[CapitalLambda]0^2 + 
-          52206*Q2*\[CapitalLambda]0^4 - 71944*\[CapitalLambda]0^6)) - 
-      2*mN^8*(1680*mo^8 - 495*Q2^4 + 15327*Q2^3*\[CapitalLambda]0^2 - 
-        91581*Q2^2*\[CapitalLambda]0^4 + 147152*Q2*\[CapitalLambda]0^6 - 
-        49392*\[CapitalLambda]0^8 - 24*mo^6*(139*Q2 - 
-          80*\[CapitalLambda]0^2) - 6*mo^4*(717*Q2^2 - 
-          14156*Q2*\[CapitalLambda]0^2 + 12840*\[CapitalLambda]0^4) - 
-        6*mo^2*(308*Q2^3 - 10799*Q2^2*\[CapitalLambda]0^2 + 
-          40098*Q2*\[CapitalLambda]0^4 - 21056*\[CapitalLambda]0^6)) - 
-      3*mN*mo*Q2*(924*mo^12 + 84*mo^10*(9*Q2 - 55*\[CapitalLambda]0^2) + 
-        42*mo^8*(5*Q2^2 - 97*Q2*\[CapitalLambda]0^2 + 
-          225*\[CapitalLambda]0^4) + 2*mo^6*(10*Q2^3 - 
-          651*Q2^2*\[CapitalLambda]0^2 + 4116*Q2*\[CapitalLambda]0^4 - 
-          5040*\[CapitalLambda]0^6) + \[CapitalLambda]0^4*
-         (12*Q2^4 - 161*Q2^3*\[CapitalLambda]0^2 + 
-          546*Q2^2*\[CapitalLambda]0^4 - 630*Q2*\[CapitalLambda]0^6 + 
-          210*\[CapitalLambda]0^8) - 4*mo^2*\[CapitalLambda]0^2*
-         (2*Q2^4 - 81*Q2^3*\[CapitalLambda]0^2 + 504*Q2^2*\[CapitalLambda]0^
-            4 - 903*Q2*\[CapitalLambda]0^6 + 441*\[CapitalLambda]0^8) + 
-        mo^4*(-175*Q2^3*\[CapitalLambda]0^2 + 2565*Q2^2*\[CapitalLambda]0^4 - 
-          7896*Q2*\[CapitalLambda]0^6 + 5880*\[CapitalLambda]0^8)) + 
-      3*Q2^2*(924*mo^12 + 84*mo^10*(9*Q2 - 55*\[CapitalLambda]0^2) + 
-        42*mo^8*(5*Q2^2 - 87*Q2*\[CapitalLambda]0^2 + 
-          225*\[CapitalLambda]0^4) + 2*mo^6*(10*Q2^3 - 
-          483*Q2^2*\[CapitalLambda]0^2 + 3360*Q2*\[CapitalLambda]0^4 - 
-          5040*\[CapitalLambda]0^6) + 6*mo^2*\[CapitalLambda]0^4*
-         (17*Q2^3 - 161*Q2^2*\[CapitalLambda]0^2 + 
-          406*Q2*\[CapitalLambda]0^4 - 294*\[CapitalLambda]0^6) + 
-        7*\[CapitalLambda]0^6*(-5*Q2^3 + 30*Q2^2*\[CapitalLambda]0^2 - 
-          54*Q2*\[CapitalLambda]0^4 + 30*\[CapitalLambda]0^6) + 
-        mo^4*(-85*Q2^3*\[CapitalLambda]0^2 + 1515*Q2^2*\[CapitalLambda]0^4 - 
-          5880*Q2*\[CapitalLambda]0^6 + 5880*\[CapitalLambda]0^8)) + 
-      mN^6*(-8064*mo^10 + 60*Q2^5 - 4503*Q2^4*\[CapitalLambda]0^2 + 
-        50562*Q2^3*\[CapitalLambda]0^4 - 155048*Q2^2*\[CapitalLambda]0^6 + 
-        140028*Q2*\[CapitalLambda]0^8 - 18144*\[CapitalLambda]0^10 + 
-        168*mo^8*(19*Q2 + 316*\[CapitalLambda]0^2) + 
-        48*mo^6*(157*Q2^2 - 2570*Q2*\[CapitalLambda]0^2 - 
-          630*\[CapitalLambda]0^4) + 12*mo^4*(271*Q2^3 - 
-          10747*Q2^2*\[CapitalLambda]0^2 + 36553*Q2*\[CapitalLambda]0^4 - 
-          5992*\[CapitalLambda]0^6) + 12*mo^2*(50*Q2^4 - 
-          3359*Q2^3*\[CapitalLambda]0^2 + 24374*Q2^2*\[CapitalLambda]0^4 - 
-          37912*Q2*\[CapitalLambda]0^6 + 6272*\[CapitalLambda]0^8)) + 
-      3*mN^2*Q2*(7392*mo^12 + 168*mo^10*(39*Q2 - 220*\[CapitalLambda]0^2) + 
-        42*mo^8*(50*Q2^2 - 843*Q2*\[CapitalLambda]0^2 + 
-          1791*\[CapitalLambda]0^4) + 14*mo^6*(20*Q2^3 - 
-          894*Q2^2*\[CapitalLambda]0^2 + 5007*Q2*\[CapitalLambda]0^4 - 
-          5664*\[CapitalLambda]0^6) + \[CapitalLambda]0^4*
-         (102*Q2^4 - 1211*Q2^3*\[CapitalLambda]0^2 + 
-          3906*Q2^2*\[CapitalLambda]0^4 - 4410*Q2*\[CapitalLambda]0^6 + 
-          1470*\[CapitalLambda]0^8) - 6*mo^2*\[CapitalLambda]0^2*
-         (17*Q2^4 - 488*Q2^3*\[CapitalLambda]0^2 + 2723*Q2^2*
-           \[CapitalLambda]0^4 - 4620*Q2*\[CapitalLambda]0^6 + 
-          2184*\[CapitalLambda]0^8) + mo^4*(12*Q2^4 - 
-          1907*Q2^3*\[CapitalLambda]0^2 + 22923*Q2^2*\[CapitalLambda]0^4 - 
-          64554*Q2*\[CapitalLambda]0^6 + 45276*\[CapitalLambda]0^8)) + 
-      mN^4*(-22176*mo^12 - 504*mo^10*(13*Q2 - 160*\[CapitalLambda]0^2) + 
-        84*mo^8*(69*Q2^2 - 982*Q2*\[CapitalLambda]0^2 - 
-          1296*\[CapitalLambda]0^4) + 12*mo^6*(275*Q2^3 - 
-          9618*Q2^2*\[CapitalLambda]0^2 + 26250*Q2*\[CapitalLambda]0^4 + 
-          5376*\[CapitalLambda]0^6) + Q2*\[CapitalLambda]0^2*
-         (-255*Q2^4 + 6561*Q2^3*\[CapitalLambda]0^2 - 
-          36811*Q2^2*\[CapitalLambda]0^4 + 65940*Q2*\[CapitalLambda]0^6 - 
-          34776*\[CapitalLambda]0^8) + 6*mo^4*(98*Q2^4 - 
-          6968*Q2^3*\[CapitalLambda]0^2 + 48683*Q2^2*\[CapitalLambda]0^4 - 
-          64736*Q2*\[CapitalLambda]0^6 - 2352*\[CapitalLambda]0^8) + 
-        3*mo^2*Q2*(12*Q2^4 - 1962*Q2^3*\[CapitalLambda]0^2 + 
-          26219*Q2^2*\[CapitalLambda]0^4 - 82208*Q2*\[CapitalLambda]0^6 + 
-          65744*\[CapitalLambda]0^8)) - mN^5*mo*(44352*mo^10 - 
-        771*Q2^4*\[CapitalLambda]0^2 + 18066*Q2^3*\[CapitalLambda]0^4 - 
-        93424*Q2^2*\[CapitalLambda]0^6 + 156240*Q2*\[CapitalLambda]0^8 - 
-        78624*\[CapitalLambda]0^10 + 84*mo^8*(437*Q2 - 
-          4440*\[CapitalLambda]0^2) + 168*mo^6*(63*Q2^2 - 
-          1845*Q2*\[CapitalLambda]0^2 + 5392*\[CapitalLambda]0^4) + 
-        12*mo^4*(98*Q2^3 - 7833*Q2^2*\[CapitalLambda]0^2 + 
-          57195*Q2*\[CapitalLambda]0^4 - 79072*\[CapitalLambda]0^6) + 
-        6*mo^2*(6*Q2^4 - 2129*Q2^3*\[CapitalLambda]0^2 + 
-          30253*Q2^2*\[CapitalLambda]0^4 - 94456*Q2*\[CapitalLambda]0^6 + 
-          75040*\[CapitalLambda]0^8)) + 
-      mN^3*(-44352*mo^13 - 5040*mo^11*(7*Q2 - 44*\[CapitalLambda]0^2) - 
-        252*mo^9*(37*Q2^2 - 771*Q2*\[CapitalLambda]0^2 + 
-          1800*\[CapitalLambda]0^4) - 12*mo^7*(65*Q2^3 - 
-          5292*Q2^2*\[CapitalLambda]0^2 + 32942*Q2*\[CapitalLambda]0^4 - 
-          40320*\[CapitalLambda]0^6) + 6*mo^5*(2*Q2^4 + 
-          1607*Q2^3*\[CapitalLambda]0^2 - 21709*Q2^2*\[CapitalLambda]0^4 + 
-          63056*Q2*\[CapitalLambda]0^6 - 47040*\[CapitalLambda]0^8) + 
-        3*mo^3*\[CapitalLambda]0^2*(240*Q2^4 - 6609*Q2^3*\[CapitalLambda]0^
-            2 + 34786*Q2^2*\[CapitalLambda]0^4 - 57176*Q2*\[CapitalLambda]0^
-            6 + 28224*\[CapitalLambda]0^8) + mo*\[CapitalLambda]0^2*
-         (24*Q2^5 - 1224*Q2^4*\[CapitalLambda]0^2 + 10481*Q2^3*
-           \[CapitalLambda]0^4 - 28560*Q2^2*\[CapitalLambda]0^6 + 
-          29484*Q2*\[CapitalLambda]0^8 - 10080*\[CapitalLambda]0^10))) - 
-    3*mm^10*(7392*mN^18 - 4608*mN^17*mo - 84*mN^16*(40*mo^2 - 127*Q2 + 
-        528*\[CapitalLambda]0^2) + 40*mN^15*mo*(112*mo^2 - 129*Q2 + 
-        840*\[CapitalLambda]0^2) - 6*mN^14*(112*mo^4 - 1021*Q2^2 + 
-        10682*Q2*\[CapitalLambda]0^2 - 18144*\[CapitalLambda]0^4 + 
-        42*mo^2*(23*Q2 + 96*\[CapitalLambda]0^2)) + 
-      2*mN^13*mo*(1024*mo^4 - 1119*Q2^2 + 20398*Q2*\[CapitalLambda]0^2 - 
-        50288*\[CapitalLambda]0^4 + 4*mo^2*(599*Q2 + 
-          3304*\[CapitalLambda]0^2)) + 4*mN^11*mo*(480*mo^6 - 114*Q2^3 + 
-        4736*Q2^2*\[CapitalLambda]0^2 - 30087*Q2*\[CapitalLambda]0^4 + 
-        39648*\[CapitalLambda]0^6 + mo^4*(566*Q2 + 
-          7248*\[CapitalLambda]0^2) + mo^2*(483*Q2^2 + 
-          7466*Q2*\[CapitalLambda]0^2 - 46168*\[CapitalLambda]0^4)) - 
-      4*mN^12*(40*mo^6 - 439*Q2^3 + 9359*Q2^2*\[CapitalLambda]0^2 - 
-        38227*Q2*\[CapitalLambda]0^4 + 34944*\[CapitalLambda]0^6 + 
-        mo^4*(393*Q2 + 2912*\[CapitalLambda]0^2) + 
-        mo^2*(957*Q2^2 + 8750*Q2*\[CapitalLambda]0^2 - 
-          31864*\[CapitalLambda]0^4)) + mN^9*mo*(2560*mo^8 - 39*Q2^4 + 
-        4106*Q2^3*\[CapitalLambda]0^2 - 54196*Q2^2*\[CapitalLambda]0^4 + 
-        172976*Q2*\[CapitalLambda]0^6 - 141120*\[CapitalLambda]0^8 + 
-        8*mo^6*(303*Q2 + 4336*\[CapitalLambda]0^2) + 
-        6*mo^4*(161*Q2^2 + 5358*Q2*\[CapitalLambda]0^2 - 
-          43008*\[CapitalLambda]0^4) + 4*mo^2*(86*Q2^3 + 
-          3191*Q2^2*\[CapitalLambda]0^2 - 49795*Q2*\[CapitalLambda]0^4 + 
-          91440*\[CapitalLambda]0^6)) + mN^10*(160*mo^8 + 253*Q2^4 - 
-        11050*Q2^3*\[CapitalLambda]0^2 + 87036*Q2^2*\[CapitalLambda]0^4 - 
-        185744*Q2*\[CapitalLambda]0^6 + 98784*\[CapitalLambda]0^8 - 
-        4*mo^6*(205*Q2 + 1152*\[CapitalLambda]0^2) - 
-        2*mo^4*(627*Q2^2 + 10978*Q2*\[CapitalLambda]0^2 - 
-          44784*\[CapitalLambda]0^4) - 2*mo^2*(617*Q2^3 + 
-          10470*Q2^2*\[CapitalLambda]0^2 - 93590*Q2*\[CapitalLambda]0^4 + 
-          99456*\[CapitalLambda]0^6)) + mN^8*(672*mo^10 + 15*Q2^5 - 
-        1650*Q2^4*\[CapitalLambda]0^2 + 24975*Q2^3*\[CapitalLambda]0^4 - 
-        99256*Q2^2*\[CapitalLambda]0^6 + 122324*Q2*\[CapitalLambda]0^8 - 
-        36288*\[CapitalLambda]0^10 - 4*mo^8*(95*Q2 - 
-          432*\[CapitalLambda]0^2) - 16*mo^6*(54*Q2^2 + 
-          941*Q2*\[CapitalLambda]0^2 - 2088*\[CapitalLambda]0^4) - 
-        2*mo^4*(237*Q2^3 + 7922*Q2^2*\[CapitalLambda]0^2 - 
-          81516*Q2*\[CapitalLambda]0^4 + 66560*\[CapitalLambda]0^6) - 
-        4*mo^2*(49*Q2^4 + 1608*Q2^3*\[CapitalLambda]0^2 - 
-          27793*Q2^2*\[CapitalLambda]0^4 + 70808*Q2*\[CapitalLambda]0^6 - 
-          32424*\[CapitalLambda]0^8)) + 
-      Q2^2*(792*mo^14 + 210*mo^12*(3*Q2 - 22*\[CapitalLambda]0^2) + 
-        84*mo^10*(2*Q2^2 - 45*Q2*\[CapitalLambda]0^2 + 
-          135*\[CapitalLambda]0^4) + 3*mo^8*(5*Q2^3 - 
-          350*Q2^2*\[CapitalLambda]0^2 + 2968*Q2*\[CapitalLambda]0^4 - 
-          5040*\[CapitalLambda]0^6) + 3*mo^4*\[CapitalLambda]0^4*
-         (67*Q2^3 - 776*Q2^2*\[CapitalLambda]0^2 + 
-          2226*Q2*\[CapitalLambda]0^4 - 1764*\[CapitalLambda]0^6) + 
-        \[CapitalLambda]0^8*(35*Q2^3 - 168*Q2^2*\[CapitalLambda]0^2 + 
-          252*Q2*\[CapitalLambda]0^4 - 120*\[CapitalLambda]0^6) + 
-        30*mo^2*\[CapitalLambda]0^6*(-5*Q2^3 + 35*Q2^2*\[CapitalLambda]0^2 - 
-          70*Q2*\[CapitalLambda]0^4 + 42*\[CapitalLambda]0^6) - 
-        4*mo^6*(25*Q2^3*\[CapitalLambda]0^2 - 582*Q2^2*\[CapitalLambda]0^4 + 
-          2646*Q2*\[CapitalLambda]0^6 - 2940*\[CapitalLambda]0^8)) + 
-      mN*mo*Q2*(-792*mo^14 - 210*mo^12*(3*Q2 - 22*\[CapitalLambda]0^2) - 
-        84*mo^10*(2*Q2^2 - 51*Q2*\[CapitalLambda]0^2 + 
-          135*\[CapitalLambda]0^4) - 3*mo^8*(5*Q2^3 - 
-          490*Q2^2*\[CapitalLambda]0^2 + 3724*Q2*\[CapitalLambda]0^4 - 
-          5040*\[CapitalLambda]0^6) + 2*mo^6*(110*Q2^3*\[CapitalLambda]0^2 - 
-          2067*Q2^2*\[CapitalLambda]0^4 + 7308*Q2*\[CapitalLambda]0^6 - 
-          5880*\[CapitalLambda]0^8) + \[CapitalLambda]0^6*
-         (30*Q2^4 - 245*Q2^3*\[CapitalLambda]0^2 + 
-          588*Q2^2*\[CapitalLambda]0^4 - 504*Q2*\[CapitalLambda]0^6 + 
-          120*\[CapitalLambda]0^8) - 6*mo^2*\[CapitalLambda]0^4*
-         (7*Q2^4 - 121*Q2^3*\[CapitalLambda]0^2 + 
-          476*Q2^2*\[CapitalLambda]0^4 - 602*Q2*\[CapitalLambda]0^6 + 
-          210*\[CapitalLambda]0^8) + 3*mo^4*\[CapitalLambda]0^2*
-         (4*Q2^4 - 227*Q2^3*\[CapitalLambda]0^2 + 1700*Q2^2*
-           \[CapitalLambda]0^4 - 3402*Q2*\[CapitalLambda]0^6 + 
-          1764*\[CapitalLambda]0^8)) + 
-      mN^7*(6272*mo^11 + 56*mo^9*(95*Q2 + 808*\[CapitalLambda]0^2) + 
-        8*mo^7*(201*Q2^2 + 4982*Q2*\[CapitalLambda]0^2 - 
-          38324*\[CapitalLambda]0^4) + 8*mo^5*(26*Q2^3 + 
-          1694*Q2^2*\[CapitalLambda]0^2 - 31669*Q2*\[CapitalLambda]0^4 + 
-          63568*\[CapitalLambda]0^6) + mo^3*(20*Q2^4 + 
-          2468*Q2^3*\[CapitalLambda]0^2 - 78866*Q2^2*\[CapitalLambda]0^4 + 
-          339328*Q2*\[CapitalLambda]0^6 - 323744*\[CapitalLambda]0^8) + 
-        mo*\[CapitalLambda]0^2*(392*Q2^4 - 11229*Q2^3*\[CapitalLambda]0^2 + 
-          68632*Q2^2*\[CapitalLambda]0^4 - 128976*Q2*\[CapitalLambda]0^6 + 
-          70336*\[CapitalLambda]0^8)) - 2*mN^5*mo*
-       (-6*Q2^5*\[CapitalLambda]0^2 + 524*Q2^4*\[CapitalLambda]0^4 - 
-        5995*Q2^3*\[CapitalLambda]0^6 + 19987*Q2^2*\[CapitalLambda]0^8 - 
-        23982*Q2*\[CapitalLambda]0^10 + 9072*\[CapitalLambda]0^12 + 
-        28*mo^10*(5*Q2 - 1368*\[CapitalLambda]0^2) + 
-        7*mo^8*(15*Q2^2 - 4654*Q2*\[CapitalLambda]0^2 + 
-          21968*\[CapitalLambda]0^4) + 12*mo^6*(2*Q2^3 - 
-          835*Q2^2*\[CapitalLambda]0^2 + 11023*Q2*\[CapitalLambda]0^4 - 
-          20048*\[CapitalLambda]0^6) - 2*mo^2*\[CapitalLambda]0^2*
-         (47*Q2^4 - 3412*Q2^3*\[CapitalLambda]0^2 + 26767*Q2^2*
-           \[CapitalLambda]0^4 - 56456*Q2*\[CapitalLambda]0^6 + 
-          33040*\[CapitalLambda]0^8) + 
-        mo^4*(Q2^4 - 1356*Q2^3*\[CapitalLambda]0^2 + 43182*Q2^2*
-           \[CapitalLambda]0^4 - 188784*Q2*\[CapitalLambda]0^6 + 
-          182112*\[CapitalLambda]0^8)) + 
-      mN^2*Q2*(6468*mo^14 + 42*mo^12*(111*Q2 - 902*\[CapitalLambda]0^2) + 
-        42*mo^10*(23*Q2^2 - 798*Q2*\[CapitalLambda]0^2 + 
-          2214*\[CapitalLambda]0^4) + 
-        mo^8*(5*Q2^3 - 10710*Q2^2*\[CapitalLambda]0^2 + 
-          88074*Q2*\[CapitalLambda]0^4 - 123312*\[CapitalLambda]0^6) - 
-        4*mo^6*(3*Q2^4 + 355*Q2^3*\[CapitalLambda]0^2 - 
-          7671*Q2^2*\[CapitalLambda]0^4 + 28161*Q2*\[CapitalLambda]0^6 - 
-          23667*\[CapitalLambda]0^8) + \[CapitalLambda]0^6*
-         (-150*Q2^4 + 1295*Q2^3*\[CapitalLambda]0^2 - 
-          3276*Q2^2*\[CapitalLambda]0^4 + 3024*Q2*\[CapitalLambda]0^6 - 
-          840*\[CapitalLambda]0^8) + 2*mo^2*\[CapitalLambda]0^4*
-         (120*Q2^4 - 2225*Q2^3*\[CapitalLambda]0^2 + 
-          9135*Q2^2*\[CapitalLambda]0^4 - 12222*Q2*\[CapitalLambda]0^6 + 
-          4746*\[CapitalLambda]0^8) + mo^4*(-60*Q2^4*\[CapitalLambda]0^2 + 
-          4587*Q2^3*\[CapitalLambda]0^4 - 35940*Q2^2*\[CapitalLambda]0^6 + 
-          74844*Q2*\[CapitalLambda]0^8 - 41580*\[CapitalLambda]0^10)) - 
-      mN^4*(7392*mo^14 + 84*mo^12*(119*Q2 - 384*\[CapitalLambda]0^2) + 
-        28*mo^10*(183*Q2^2 - 238*Q2*\[CapitalLambda]0^2 + 
-          1944*\[CapitalLambda]0^4) + 4*mo^8*(310*Q2^3 + 
-          2765*Q2^2*\[CapitalLambda]0^2 - 19495*Q2*\[CapitalLambda]0^4 - 
-          10752*\[CapitalLambda]0^6) + mo^4*Q2*(6*Q2^4 + 
-          988*Q2^3*\[CapitalLambda]0^2 - 34003*Q2^2*\[CapitalLambda]0^4 + 
-          155944*Q2*\[CapitalLambda]0^6 - 156380*\[CapitalLambda]0^8) + 
-        Q2*\[CapitalLambda]0^4*(-201*Q2^4 + 3308*Q2^3*\[CapitalLambda]0^2 - 
-          13555*Q2^2*\[CapitalLambda]0^4 + 19012*Q2*\[CapitalLambda]0^6 - 
-          8148*\[CapitalLambda]0^8) + 4*mo^6*(35*Q2^4 + 
-          1423*Q2^3*\[CapitalLambda]0^2 - 24239*Q2^2*\[CapitalLambda]0^4 + 
-          44856*Q2*\[CapitalLambda]0^6 + 3528*\[CapitalLambda]0^8) + 
-        mo^2*\[CapitalLambda]0^2*(60*Q2^5 - 4685*Q2^4*\[CapitalLambda]0^2 + 
-          40662*Q2^3*\[CapitalLambda]0^4 - 94052*Q2^2*\[CapitalLambda]0^6 + 
-          59752*Q2*\[CapitalLambda]0^8 - 672*\[CapitalLambda]0^10)) + 
-      mN^3*(-12672*mo^15 - 168*mo^13*(51*Q2 - 440*\[CapitalLambda]0^2) - 
-        84*mo^11*(17*Q2^2 - 738*Q2*\[CapitalLambda]0^2 + 
-          2160*\[CapitalLambda]0^4) + 4*mo^9*(30*Q2^3 + 
-          4620*Q2^2*\[CapitalLambda]0^2 - 41503*Q2*\[CapitalLambda]0^4 + 
-          60480*\[CapitalLambda]0^6) + 2*mo^7*(18*Q2^4 + 
-          1150*Q2^3*\[CapitalLambda]0^2 - 29629*Q2^2*\[CapitalLambda]0^4 + 
-          109536*Q2*\[CapitalLambda]0^6 - 94080*\[CapitalLambda]0^8) + 
-        mo^5*\[CapitalLambda]0^2*(128*Q2^4 - 10669*Q2^3*\[CapitalLambda]0^2 + 
-          77704*Q2^2*\[CapitalLambda]0^4 - 152544*Q2*\[CapitalLambda]0^6 + 
-          84672*\[CapitalLambda]0^8) + mo^3*\[CapitalLambda]0^2*
-         (8*Q2^5 - 1037*Q2^4*\[CapitalLambda]0^2 + 13266*Q2^3*
-           \[CapitalLambda]0^4 - 44958*Q2^2*\[CapitalLambda]0^6 + 
-          53368*Q2*\[CapitalLambda]0^8 - 20160*\[CapitalLambda]0^10) + 
-        mo*\[CapitalLambda]0^4*(-42*Q2^5 + 936*Q2^4*\[CapitalLambda]0^2 - 
-          4939*Q2^3*\[CapitalLambda]0^4 + 9464*Q2^2*\[CapitalLambda]0^6 - 
-          7308*Q2*\[CapitalLambda]0^8 + 1920*\[CapitalLambda]0^10)) + 
-      2*mN^6*(1680*mo^12 - 50*Q2^5*\[CapitalLambda]0^2 + 
-        1793*Q2^4*\[CapitalLambda]0^4 - 13103*Q2^3*\[CapitalLambda]0^6 + 
-        29811*Q2^2*\[CapitalLambda]0^8 - 21686*Q2*\[CapitalLambda]0^10 + 
-        2688*\[CapitalLambda]0^12 + 14*mo^10*(51*Q2 + 
-          352*\[CapitalLambda]0^2) - mo^8*(255*Q2^2 + 
-          4402*Q2*\[CapitalLambda]0^2 + 10864*\[CapitalLambda]0^4) - 
-        2*mo^6*(101*Q2^3 + 3450*Q2^2*\[CapitalLambda]0^2 - 
-          29750*Q2*\[CapitalLambda]0^4 + 5040*\[CapitalLambda]0^6) + 
-        mo^4*(-45*Q2^4 - 2800*Q2^3*\[CapitalLambda]0^2 + 
-          54839*Q2^2*\[CapitalLambda]0^4 - 128176*Q2*\[CapitalLambda]0^6 + 
-          27328*\[CapitalLambda]0^8) - 
-        mo^2*(6*Q2^5 + 502*Q2^4*\[CapitalLambda]0^2 - 
-          16413*Q2^3*\[CapitalLambda]0^4 + 78692*Q2^2*\[CapitalLambda]0^6 - 
-          93394*Q2*\[CapitalLambda]0^8 + 15680*\[CapitalLambda]0^10))) + 
-    mm^2*(-528*mN^26 - 384*mN^25*mo + 12*mN^23*mo*(208*mo^2 + Q2 + 
-        248*\[CapitalLambda]0^2) + 6*mN^24*(648*mo^2 - 55*Q2 + 
-        880*\[CapitalLambda]0^2) - 3*mN^21*mo*(1920*mo^4 - 15*Q2^2 - 
-        26*Q2*\[CapitalLambda]0^2 + 3056*\[CapitalLambda]0^4 + 
-        4*mo^2*(11*Q2 + 952*\[CapitalLambda]0^2)) - 
-      3*mN^22*(3920*mo^4 + 27*Q2^2 - 1486*Q2*\[CapitalLambda]0^2 + 
-        7776*\[CapitalLambda]0^4 + mo^2*(-978*Q2 + 
-          8768*\[CapitalLambda]0^2)) - 3*mo^2*Q2^2*
-       (mo^2 - \[CapitalLambda]0^2)^3*(mo^4 - 2*mo^2*\[CapitalLambda]0^2 - 
-         Q2*\[CapitalLambda]0^2 + \[CapitalLambda]0^4)^2*
-       (12*mo^6 + mo^4*(3*Q2 - 26*\[CapitalLambda]0^2) + 
-        2*\[CapitalLambda]0^4*(Q2 - \[CapitalLambda]0^2) + 
-        mo^2*(-9*Q2*\[CapitalLambda]0^2 + 16*\[CapitalLambda]0^4)) + 
-      6*mN^19*mo*(480*mo^6 - 100*Q2^2*\[CapitalLambda]0^2 + 
-        241*Q2*\[CapitalLambda]0^4 + 2176*\[CapitalLambda]0^6 + 
-        34*mo^4*(3*Q2 + 40*\[CapitalLambda]0^2) + 
-        mo^2*(-69*Q2^2 + 338*Q2*\[CapitalLambda]0^2 + 
-          2304*\[CapitalLambda]0^4)) + 3*mN^20*(6000*mo^6 + 
-        mo^4*(-3746*Q2 + 15232*\[CapitalLambda]0^2) + 
-        mo^2*(270*Q2^2 - 8924*Q2*\[CapitalLambda]0^2 + 
-          22960*\[CapitalLambda]0^4) - 
-        3*(Q2^3 - 170*Q2^2*\[CapitalLambda]0^2 + 2614*Q2*\[CapitalLambda]0^
-            4 - 6656*\[CapitalLambda]0^6)) - 
-      3*mN^18*(4320*mo^8 - 88*Q2^3*\[CapitalLambda]0^2 + 
-        3294*Q2^2*\[CapitalLambda]0^4 - 22248*Q2*\[CapitalLambda]0^6 + 
-        32928*\[CapitalLambda]0^8 + mo^6*(-7854*Q2 + 
-          7680*\[CapitalLambda]0^2) + mo^4*(1203*Q2^2 - 
-          20614*Q2*\[CapitalLambda]0^2 + 14240*\[CapitalLambda]0^4) + 
-        mo^2*(-30*Q2^3 + 3574*Q2^2*\[CapitalLambda]0^2 - 
-          28438*Q2*\[CapitalLambda]0^4 + 25856*\[CapitalLambda]0^6)) + 
-      3*mN*mo*Q2*(mo^2 - \[CapitalLambda]0^2)^2*
-       (mo^4 - 2*mo^2*\[CapitalLambda]0^2 - Q2*\[CapitalLambda]0^2 + 
-         \[CapitalLambda]0^4)^2*(12*mo^10 + 
-        mo^8*(3*Q2 - 38*\[CapitalLambda]0^2) + 2*Q2*\[CapitalLambda]0^6*
-         (-Q2 + \[CapitalLambda]0^2) + mo^6*(-32*Q2*\[CapitalLambda]0^2 + 
-          42*\[CapitalLambda]0^4) + mo^4*(-6*Q2^2*\[CapitalLambda]0^2 + 
-          53*Q2*\[CapitalLambda]0^4 - 18*\[CapitalLambda]0^6) + 
-        2*mo^2*(7*Q2^2*\[CapitalLambda]0^4 - 13*Q2*\[CapitalLambda]0^6 + 
-          \[CapitalLambda]0^8)) + 3*mN^17*(3840*mo^9 + 
-        mo^7*(-516*Q2 + 6016*\[CapitalLambda]0^2) + 
-        mo^5*(567*Q2^2 - 4726*Q2*\[CapitalLambda]0^2 + 
-          6016*\[CapitalLambda]0^4) + 2*mo^3*(683*Q2^2*\[CapitalLambda]0^2 - 
-          3487*Q2*\[CapitalLambda]0^4 + 1312*\[CapitalLambda]0^6) - 
-        2*mo*(16*Q2^3*\[CapitalLambda]0^2 - 671*Q2^2*\[CapitalLambda]0^4 + 
-          2220*Q2*\[CapitalLambda]0^6 + 672*\[CapitalLambda]0^8)) + 
-      mN^11*(5760*mo^15 - 168*mo^13*(3*Q2 - 248*\[CapitalLambda]0^2) - 
-        12*mo^11*(567*Q2^2 - 1526*Q2*\[CapitalLambda]0^2 + 
-          2696*\[CapitalLambda]0^4) - 12*mo^9*
-         (1064*Q2^2*\[CapitalLambda]0^2 + 2565*Q2*\[CapitalLambda]0^4 + 
-          544*\[CapitalLambda]0^6) - 3*mo^5*\[CapitalLambda]0^4*
-         (-3285*Q2^3 + 10824*Q2^2*\[CapitalLambda]0^2 + 
-          1248*Q2*\[CapitalLambda]0^4 + 4544*\[CapitalLambda]0^6) + 
-        mo*\[CapitalLambda]0^6*(-572*Q2^4 + 12177*Q2^3*\[CapitalLambda]0^2 - 
-          48888*Q2^2*\[CapitalLambda]0^4 + 56052*Q2*\[CapitalLambda]0^6 - 
-          18432*\[CapitalLambda]0^8) + 6*mo^7*(686*Q2^3*\[CapitalLambda]0^2 - 
-          5111*Q2^2*\[CapitalLambda]0^4 - 1184*Q2*\[CapitalLambda]0^6 - 
-          1056*\[CapitalLambda]0^8) + 3*mo^3*\[CapitalLambda]0^4*
-         (-125*Q2^4 + 4734*Q2^3*\[CapitalLambda]0^2 - 
-          13210*Q2^2*\[CapitalLambda]0^4 - 3064*Q2*\[CapitalLambda]0^6 + 
-          8928*\[CapitalLambda]0^8)) - 3*mN^2*Q2*(mo^2 - \[CapitalLambda]0^2)*
-       (106*mo^20 + 2*Q2*\[CapitalLambda]0^12*(Q2 - \[CapitalLambda]0^2)^3 - 
-        mo^18*(81*Q2 + 884*\[CapitalLambda]0^2) - 2*mo^2*\[CapitalLambda]0^10*
-         (Q2 - \[CapitalLambda]0^2)^2*(5*Q2^2 - 26*Q2*\[CapitalLambda]0^2 + 
-          9*\[CapitalLambda]0^4) + mo^16*(-30*Q2^2 + 
-          133*Q2*\[CapitalLambda]0^2 + 3238*\[CapitalLambda]0^4) + 
-        mo^14*(294*Q2^2*\[CapitalLambda]0^2 + 1021*Q2*\[CapitalLambda]0^4 - 
-          6818*\[CapitalLambda]0^6) - mo^10*\[CapitalLambda]0^4*
-         (225*Q2^3 + 486*Q2^2*\[CapitalLambda]0^2 - 
-          7417*Q2*\[CapitalLambda]0^4 + 7826*\[CapitalLambda]0^6) + 
-        mo^6*\[CapitalLambda]0^6*(36*Q2^4 + 203*Q2^3*\[CapitalLambda]0^2 - 
-          2100*Q2^2*\[CapitalLambda]0^4 + 3427*Q2*\[CapitalLambda]0^6 - 
-          1478*\[CapitalLambda]0^8) + mo^4*\[CapitalLambda]0^8*
-         (2*Q2^4 - 265*Q2^3*\[CapitalLambda]0^2 + 
-          876*Q2^2*\[CapitalLambda]0^4 - 881*Q2*\[CapitalLambda]0^6 + 
-          268*\[CapitalLambda]0^8) + mo^8*\[CapitalLambda]0^4*
-         (-18*Q2^4 + 173*Q2^3*\[CapitalLambda]0^2 + 
-          2070*Q2^2*\[CapitalLambda]0^4 - 6779*Q2*\[CapitalLambda]0^6 + 
-          4354*\[CapitalLambda]0^8) + mo^12*(48*Q2^3*\[CapitalLambda]0^2 - 
-          498*Q2^2*\[CapitalLambda]0^4 - 4343*Q2*\[CapitalLambda]0^6 + 
-          9058*\[CapitalLambda]0^8)) + 2*mN^13*(8064*mo^13 - 
-        84*mo^11*(9*Q2 + 152*\[CapitalLambda]0^2) + 
-        3*mo^9*(1071*Q2^2 - 7238*Q2*\[CapitalLambda]0^2 - 
-          720*\[CapitalLambda]0^4) + 12*mo^7*(721*Q2^2*\[CapitalLambda]0^2 - 
-          1741*Q2*\[CapitalLambda]0^4 - 96*\[CapitalLambda]0^6) + 
-        6*mo^3*\[CapitalLambda]0^4*(-438*Q2^3 + 4029*Q2^2*\[CapitalLambda]0^
-            2 - 5056*Q2*\[CapitalLambda]0^4 + 144*\[CapitalLambda]0^6) - 
-        6*mo^5*(189*Q2^3*\[CapitalLambda]0^2 - 3283*Q2^2*\[CapitalLambda]0^
-            4 + 4344*Q2*\[CapitalLambda]0^6 - 16*\[CapitalLambda]0^8) + 
-        mo*\[CapitalLambda]0^4*(33*Q2^4 - 2537*Q2^3*\[CapitalLambda]0^2 + 
-          18735*Q2^2*\[CapitalLambda]0^4 - 31998*Q2*\[CapitalLambda]0^6 + 
-          12432*\[CapitalLambda]0^8)) - mN^15*mo*(24192*mo^10 - 
-        1065*Q2^3*\[CapitalLambda]0^4 + 16280*Q2^2*\[CapitalLambda]0^6 - 
-        41040*Q2*\[CapitalLambda]0^8 + 14784*\[CapitalLambda]0^10 - 
-        72*mo^8*(31*Q2 - 280*\[CapitalLambda]0^2) + 
-        24*mo^6*(171*Q2^2 - 1510*Q2*\[CapitalLambda]0^2 + 
-          1084*\[CapitalLambda]0^4) + 72*mo^4*(162*Q2^2*\[CapitalLambda]0^2 - 
-          805*Q2*\[CapitalLambda]0^4 + 368*\[CapitalLambda]0^6) + 
-        mo^2*(-708*Q2^3*\[CapitalLambda]0^2 + 20574*Q2^2*\[CapitalLambda]0^
-            4 - 61952*Q2*\[CapitalLambda]0^6 + 24480*\[CapitalLambda]0^8)) - 
-      2*mN^14*(1008*mo^12 - 42*mo^10*(123*Q2 + 160*\[CapitalLambda]0^2) + 
-        3*mo^8*(2619*Q2^2 - 1022*Q2*\[CapitalLambda]0^2 - 
-          4016*\[CapitalLambda]0^4) - 12*mo^6*(45*Q2^3 - 
-          1769*Q2^2*\[CapitalLambda]0^2 - 65*Q2*\[CapitalLambda]0^4 + 
-          1688*\[CapitalLambda]0^6) + mo^2*\[CapitalLambda]0^2*
-         (72*Q2^4 - 5355*Q2^3*\[CapitalLambda]0^2 + 34124*Q2^2*
-           \[CapitalLambda]0^4 - 16854*Q2*\[CapitalLambda]0^6 - 
-          47040*\[CapitalLambda]0^8) - 
-        3*mo^4*(1086*Q2^3*\[CapitalLambda]0^2 - 10237*Q2^2*
-           \[CapitalLambda]0^4 + 464*Q2*\[CapitalLambda]0^6 + 
-          9664*\[CapitalLambda]0^8) + \[CapitalLambda]0^4*
-         (120*Q2^4 - 3917*Q2^3*\[CapitalLambda]0^2 + 28107*Q2^2*
-           \[CapitalLambda]0^4 - 62670*Q2*\[CapitalLambda]0^6 + 
-          40320*\[CapitalLambda]0^8)) + 
-      mN^16*(2016*mo^10 - 12*mo^8*(2259*Q2 + 1456*\[CapitalLambda]0^2) + 
-        12*mo^6*(783*Q2^2 - 5060*Q2*\[CapitalLambda]0^2 - 
-          2880*\[CapitalLambda]0^4) - 9*mo^4*(45*Q2^3 - 
-          3394*Q2^2*\[CapitalLambda]0^2 + 9976*Q2*\[CapitalLambda]0^4 + 
-          3840*\[CapitalLambda]0^6) + mo^2*(-2010*Q2^3*\[CapitalLambda]0^2 + 
-          42882*Q2^2*\[CapitalLambda]0^4 - 114976*Q2*\[CapitalLambda]0^6 + 
-          2016*\[CapitalLambda]0^8) + \[CapitalLambda]0^2*
-         (18*Q2^4 - 2175*Q2^3*\[CapitalLambda]0^2 + 31376*Q2^2*
-           \[CapitalLambda]0^4 - 114708*Q2*\[CapitalLambda]0^6 + 
-          108864*\[CapitalLambda]0^8)) - 
-      mN^9*(17280*mo^17 - 72*mo^15*(29*Q2 + 80*\[CapitalLambda]0^2) - 
-        6*mo^13*(819*Q2^2 + 2002*Q2*\[CapitalLambda]0^2 + 
-          9536*\[CapitalLambda]0^4) - 12*mo^11*
-         (105*Q2^2*\[CapitalLambda]0^2 + 2867*Q2*\[CapitalLambda]0^4 - 
-          3504*\[CapitalLambda]0^6) + 2*mo^7*\[CapitalLambda]0^4*
-         (3855*Q2^3 + 6920*Q2^2*\[CapitalLambda]0^2 + 
-          5448*Q2*\[CapitalLambda]0^4 + 11136*\[CapitalLambda]0^6) + 
-        3*mo^5*\[CapitalLambda]0^4*(-295*Q2^4 + 3280*Q2^3*\[CapitalLambda]0^
-            2 + 1594*Q2^2*\[CapitalLambda]0^4 + 9148*Q2*\[CapitalLambda]0^6 - 
-          14592*\[CapitalLambda]0^8) + 
-        4*mo^9*(1155*Q2^3*\[CapitalLambda]0^2 - 165*Q2^2*\[CapitalLambda]0^
-            4 + 9716*Q2*\[CapitalLambda]0^6 + 1968*\[CapitalLambda]0^8) + 
-        2*mo^3*\[CapitalLambda]0^6*(-877*Q2^4 + 5604*Q2^3*\[CapitalLambda]0^
-            2 + 5886*Q2^2*\[CapitalLambda]0^4 - 26978*Q2*\[CapitalLambda]0^
-            6 + 12192*\[CapitalLambda]0^8) + 2*mo*\[CapitalLambda]0^6*
-         (9*Q2^5 - 843*Q2^4*\[CapitalLambda]0^2 + 7635*Q2^3*
-           \[CapitalLambda]0^4 - 18004*Q2^2*\[CapitalLambda]0^6 + 
-          13908*Q2*\[CapitalLambda]0^8 - 3552*\[CapitalLambda]0^10)) - 
-      mN^5*(4224*mo^21 - 12*mo^19*(89*Q2 + 2120*\[CapitalLambda]0^2) + 
-        mo^17*(-729*Q2^2 - 5910*Q2*\[CapitalLambda]0^2 + 
-          58704*\[CapitalLambda]0^4) - 12*mo^11*\[CapitalLambda]0^4*
-         (315*Q2^3 + 1705*Q2^2*\[CapitalLambda]0^2 + 
-          360*Q2*\[CapitalLambda]0^4 - 7952*\[CapitalLambda]0^6) + 
-        24*mo^15*(199*Q2^2*\[CapitalLambda]0^2 + 1565*Q2*\[CapitalLambda]0^
-            4 - 2224*\[CapitalLambda]0^6) + 12*mo^13*
-         (119*Q2^3*\[CapitalLambda]0^2 + 93*Q2^2*\[CapitalLambda]0^4 - 
-          4632*Q2*\[CapitalLambda]0^6 - 1680*\[CapitalLambda]0^8) + 
-        4*mo^7*\[CapitalLambda]0^6*(85*Q2^4 + 1089*Q2^3*\[CapitalLambda]0^2 + 
-          8232*Q2^2*\[CapitalLambda]0^4 - 24270*Q2*\[CapitalLambda]0^6 + 
-          12384*\[CapitalLambda]0^8) - 6*mo^9*\[CapitalLambda]0^4*
-         (130*Q2^4 + 377*Q2^3*\[CapitalLambda]0^2 - 
-          1361*Q2^2*\[CapitalLambda]0^4 - 14918*Q2*\[CapitalLambda]0^6 + 
-          16240*\[CapitalLambda]0^8) + 6*mo^5*\[CapitalLambda]0^6*
-         (18*Q2^5 + 117*Q2^4*\[CapitalLambda]0^2 + 1050*Q2^3*
-           \[CapitalLambda]0^4 - 6746*Q2^2*\[CapitalLambda]0^6 + 
-          7720*Q2*\[CapitalLambda]0^8 - 2144*\[CapitalLambda]0^10) + 
-        mo*\[CapitalLambda]0^10*(108*Q2^5 - 1214*Q2^4*\[CapitalLambda]0^2 + 
-          3126*Q2^3*\[CapitalLambda]0^4 - 2829*Q2^2*\[CapitalLambda]0^6 + 
-          930*Q2*\[CapitalLambda]0^8 - 48*\[CapitalLambda]0^10) + 
-        6*mo^3*\[CapitalLambda]0^8*(13*Q2^5 + 112*Q2^4*\[CapitalLambda]0^2 - 
-          1512*Q2^3*\[CapitalLambda]0^4 + 2918*Q2^2*\[CapitalLambda]0^6 - 
-          1726*Q2*\[CapitalLambda]0^8 + 240*\[CapitalLambda]0^10)) + 
-      mN^3*(576*mo^23 - 60*mo^21*(5*Q2 + 88*\[CapitalLambda]0^2) - 
-        18*mo^19*(7*Q2^2 - 6*Q2*\[CapitalLambda]0^2 - 
-          1200*\[CapitalLambda]0^4) + 6*mo^17*(276*Q2^2*\[CapitalLambda]0^2 + 
-          1409*Q2*\[CapitalLambda]0^4 - 8640*\[CapitalLambda]0^6) - 
-        3*mo^13*\[CapitalLambda]0^4*(773*Q2^3 + 1096*Q2^2*\[CapitalLambda]0^
-            2 - 25536*Q2*\[CapitalLambda]0^4 + 28224*\[CapitalLambda]0^6) + 
-        mo^9*\[CapitalLambda]0^6*(988*Q2^4 + 2265*Q2^3*\[CapitalLambda]0^2 - 
-          42024*Q2^2*\[CapitalLambda]0^4 + 69972*Q2*\[CapitalLambda]0^6 - 
-          28800*\[CapitalLambda]0^8) + 3*mo*Q2*\[CapitalLambda]0^12*
-         (18*Q2^4 - 88*Q2^3*\[CapitalLambda]0^2 + 
-          137*Q2^2*\[CapitalLambda]0^4 - 80*Q2*\[CapitalLambda]0^6 + 
-          18*\[CapitalLambda]0^8) + 6*mo^15*(58*Q2^3*\[CapitalLambda]0^2 - 
-          641*Q2^2*\[CapitalLambda]0^4 - 6176*Q2*\[CapitalLambda]0^6 + 
-          13440*\[CapitalLambda]0^8) + 3*mo^11*\[CapitalLambda]0^4*
-         (-97*Q2^4 + 1134*Q2^3*\[CapitalLambda]0^2 + 
-          8390*Q2^2*\[CapitalLambda]0^4 - 30968*Q2*\[CapitalLambda]0^6 + 
-          20160*\[CapitalLambda]0^8) + mo^3*\[CapitalLambda]0^10*
-         (-36*Q2^5 + 1063*Q2^4*\[CapitalLambda]0^2 - 
-          3222*Q2^3*\[CapitalLambda]0^4 + 3228*Q2^2*\[CapitalLambda]0^6 - 
-          1188*Q2*\[CapitalLambda]0^8 + 96*\[CapitalLambda]0^10) - 
-        3*mo^5*\[CapitalLambda]0^8*(26*Q2^5 + 356*Q2^4*\[CapitalLambda]0^2 - 
-          2905*Q2^3*\[CapitalLambda]0^4 + 5048*Q2^2*\[CapitalLambda]0^6 - 
-          2932*Q2*\[CapitalLambda]0^8 + 480*\[CapitalLambda]0^10) + 
-        6*mo^7*\[CapitalLambda]0^6*(12*Q2^5 - 72*Q2^4*\[CapitalLambda]0^2 - 
-          1600*Q2^3*\[CapitalLambda]0^4 + 5769*Q2^2*\[CapitalLambda]0^6 - 
-          5424*Q2*\[CapitalLambda]0^8 + 1440*\[CapitalLambda]0^10)) + 
-      mN^7*(12480*mo^19 - 12*mo^17*(171*Q2 + 3304*\[CapitalLambda]0^2) - 
-        24*mo^15*(99*Q2^2 + 698*Q2*\[CapitalLambda]0^2 - 
-          828*\[CapitalLambda]0^4) + 3*mo^9*\[CapitalLambda]0^4*
-         (45*Q2^3 + 440*Q2^2*\[CapitalLambda]0^2 - 
-          17232*Q2*\[CapitalLambda]0^4 - 8640*\[CapitalLambda]0^6) + 
-        24*mo^13*(238*Q2^2*\[CapitalLambda]0^2 + 1143*Q2*\[CapitalLambda]0^
-            4 + 2288*\[CapitalLambda]0^6) - 2*mo^7*\[CapitalLambda]0^4*
-         (555*Q2^4 + 1522*Q2^3*\[CapitalLambda]0^2 + 
-          8874*Q2^2*\[CapitalLambda]0^4 + 17112*Q2*\[CapitalLambda]0^6 - 
-          32304*\[CapitalLambda]0^8) + 6*mo^11*
-         (546*Q2^3*\[CapitalLambda]0^2 + 1789*Q2^2*\[CapitalLambda]0^4 + 
-          5696*Q2*\[CapitalLambda]0^6 - 9712*\[CapitalLambda]0^8) - 
-        6*mo^5*\[CapitalLambda]0^6*(248*Q2^4 + 491*Q2^3*\[CapitalLambda]0^2 + 
-          3000*Q2^2*\[CapitalLambda]0^4 - 11988*Q2*\[CapitalLambda]0^6 + 
-          5952*\[CapitalLambda]0^8) + mo*\[CapitalLambda]0^8*
-         (78*Q2^5 - 2148*Q2^4*\[CapitalLambda]0^2 + 
-          9931*Q2^3*\[CapitalLambda]0^4 - 14376*Q2^2*\[CapitalLambda]0^6 + 
-          7380*Q2*\[CapitalLambda]0^8 - 1248*\[CapitalLambda]0^10) + 
-        6*mo^3*\[CapitalLambda]0^6*(12*Q2^5 - 246*Q2^4*\[CapitalLambda]0^2 - 
-          764*Q2^3*\[CapitalLambda]0^4 + 5661*Q2^2*\[CapitalLambda]0^6 - 
-          6032*Q2*\[CapitalLambda]0^8 + 1488*\[CapitalLambda]0^10)) + 
-      mN^6*(-3888*mo^20 - 6*mo^18*(1907*Q2 - 2912*\[CapitalLambda]0^2) - 
-        3*mo^16*(207*Q2^2 - 17590*Q2*\[CapitalLambda]0^2 + 
-          8960*\[CapitalLambda]0^4) + 24*mo^14*(45*Q2^3 + 
-          911*Q2^2*\[CapitalLambda]0^2 - 3269*Q2*\[CapitalLambda]0^4 + 
-          536*\[CapitalLambda]0^6) + 2*mo^8*\[CapitalLambda]0^4*
-         (-105*Q2^4 + 3745*Q2^3*\[CapitalLambda]0^2 + 
-          5901*Q2^2*\[CapitalLambda]0^4 + 12114*Q2*\[CapitalLambda]0^6 - 
-          20496*\[CapitalLambda]0^8) - 6*mo^12*(70*Q2^3*\[CapitalLambda]0^2 + 
-          8387*Q2^2*\[CapitalLambda]0^4 - 4656*Q2*\[CapitalLambda]0^6 + 
-          224*\[CapitalLambda]0^8) + 6*mo^10*\[CapitalLambda]0^2*
-         (-168*Q2^4 - 1815*Q2^3*\[CapitalLambda]0^2 + 
-          3624*Q2^2*\[CapitalLambda]0^4 + 2646*Q2*\[CapitalLambda]0^6 + 
-          3584*\[CapitalLambda]0^8) + 6*mo^4*\[CapitalLambda]0^6*
-         (18*Q2^5 + 60*Q2^4*\[CapitalLambda]0^2 + 
-          718*Q2^3*\[CapitalLambda]0^4 - 5183*Q2^2*\[CapitalLambda]0^6 + 
-          6136*Q2*\[CapitalLambda]0^8 - 1624*\[CapitalLambda]0^10) + 
-        \[CapitalLambda]0^10*(108*Q2^5 - 956*Q2^4*\[CapitalLambda]0^2 + 
-          2502*Q2^3*\[CapitalLambda]0^4 - 2673*Q2^2*\[CapitalLambda]0^6 + 
-          1098*Q2*\[CapitalLambda]0^8 - 96*\[CapitalLambda]0^10) + 
-        2*mo^2*\[CapitalLambda]0^8*(51*Q2^5 + 276*Q2^4*\[CapitalLambda]0^2 - 
-          3677*Q2^3*\[CapitalLambda]0^4 + 7524*Q2^2*\[CapitalLambda]0^6 - 
-          4737*Q2*\[CapitalLambda]0^8 + 672*\[CapitalLambda]0^10) + 
-        4*mo^6*\[CapitalLambda]0^4*(45*Q2^5 + 277*Q2^4*\[CapitalLambda]0^2 + 
-          741*Q2^3*\[CapitalLambda]0^4 + 3564*Q2^2*\[CapitalLambda]0^6 - 
-          14838*Q2*\[CapitalLambda]0^8 + 7440*\[CapitalLambda]0^10)) + 
-      mN^4*(528*mo^22 + 6*mo^20*(483*Q2 - 640*\[CapitalLambda]0^2) - 
-        18*mo^18*(27*Q2^2 + 1114*Q2*\[CapitalLambda]0^2 - 
-          648*\[CapitalLambda]0^4) - 3*mo^16*(135*Q2^3 + 
-          1578*Q2^2*\[CapitalLambda]0^2 - 18670*Q2*\[CapitalLambda]0^4 + 
-          6144*\[CapitalLambda]0^6) + 3*mo^12*Q2*\[CapitalLambda]0^2*
-         (168*Q2^3 + 595*Q2^2*\[CapitalLambda]0^2 - 
-          17384*Q2*\[CapitalLambda]0^4 + 13916*\[CapitalLambda]0^6) - 
-        3*Q2*\[CapitalLambda]0^12*(15*Q2^4 - 72*Q2^3*\[CapitalLambda]0^2 + 
-          112*Q2^2*\[CapitalLambda]0^4 - 70*Q2*\[CapitalLambda]0^6 + 
-          10*\[CapitalLambda]0^8) + 12*mo^14*(167*Q2^3*\[CapitalLambda]0^2 + 
-          2401*Q2^2*\[CapitalLambda]0^4 - 6392*Q2*\[CapitalLambda]0^6 + 
-          1176*\[CapitalLambda]0^8) - 3*mo^10*\[CapitalLambda]0^4*
-         (385*Q2^4 + 3986*Q2^3*\[CapitalLambda]0^2 - 10276*Q2^2*
-           \[CapitalLambda]0^4 - 6664*Q2*\[CapitalLambda]0^6 + 
-          3360*\[CapitalLambda]0^8) + 6*mo^6*\[CapitalLambda]0^6*
-         (18*Q2^5 + 177*Q2^4*\[CapitalLambda]0^2 + 
-          776*Q2^3*\[CapitalLambda]0^4 - 4870*Q2^2*\[CapitalLambda]0^6 + 
-          4480*Q2*\[CapitalLambda]0^8 - 648*\[CapitalLambda]0^10) + 
-        mo^2*\[CapitalLambda]0^10*(36*Q2^5 - 823*Q2^4*\[CapitalLambda]0^2 + 
-          2562*Q2^3*\[CapitalLambda]0^4 - 2574*Q2^2*\[CapitalLambda]0^6 + 
-          732*Q2*\[CapitalLambda]0^8 - 48*\[CapitalLambda]0^10) + 
-        3*mo^4*\[CapitalLambda]0^8*(8*Q2^5 + 220*Q2^4*\[CapitalLambda]0^2 - 
-          2483*Q2^3*\[CapitalLambda]0^4 + 4616*Q2^2*\[CapitalLambda]0^6 - 
-          2402*Q2*\[CapitalLambda]0^8 + 256*\[CapitalLambda]0^10) + 
-        mo^8*\[CapitalLambda]0^4*(-135*Q2^5 - 484*Q2^4*\[CapitalLambda]0^2 + 
-          9141*Q2^3*\[CapitalLambda]0^4 + 15468*Q2^2*\[CapitalLambda]0^6 - 
-          44268*Q2*\[CapitalLambda]0^8 + 9216*\[CapitalLambda]0^10)) + 
-      mN^8*(11760*mo^18 + 6*mo^16*(4173*Q2 - 4240*\[CapitalLambda]0^2) + 
-        48*mo^14*(108*Q2^2 - 1289*Q2*\[CapitalLambda]0^2 + 
-          160*\[CapitalLambda]0^4) - 6*mo^12*(315*Q2^3 + 
-          5978*Q2^2*\[CapitalLambda]0^2 - 2876*Q2*\[CapitalLambda]0^4 - 
-          256*\[CapitalLambda]0^6) + 12*mo^10*\[CapitalLambda]0^2*
-         (-462*Q2^3 + 1421*Q2^2*\[CapitalLambda]0^2 + 
-          1368*Q2*\[CapitalLambda]0^4 + 1112*\[CapitalLambda]0^6) + 
-        2*mo^6*\[CapitalLambda]0^4*(1155*Q2^4 + 2002*Q2^3*\[CapitalLambda]0^
-            2 + 3288*Q2^2*\[CapitalLambda]0^4 + 14664*Q2*\[CapitalLambda]0^
-            6 - 29952*\[CapitalLambda]0^8) + mo^8*\[CapitalLambda]0^2*
-         (1260*Q2^4 + 7515*Q2^3*\[CapitalLambda]0^2 + 
-          12280*Q2^2*\[CapitalLambda]0^4 + 13188*Q2*\[CapitalLambda]0^6 + 
-          17472*\[CapitalLambda]0^8) + \[CapitalLambda]0^8*
-         (-114*Q2^5 + 1938*Q2^4*\[CapitalLambda]0^2 - 
-          8473*Q2^3*\[CapitalLambda]0^4 + 14112*Q2^2*\[CapitalLambda]0^6 - 
-          9474*Q2*\[CapitalLambda]0^8 + 1824*\[CapitalLambda]0^10) - 
-        2*mo^2*\[CapitalLambda]0^6*(81*Q2^5 - 912*Q2^4*\[CapitalLambda]0^2 - 
-          2502*Q2^3*\[CapitalLambda]0^4 + 18910*Q2^2*\[CapitalLambda]0^6 - 
-          23808*Q2*\[CapitalLambda]0^8 + 7176*\[CapitalLambda]0^10) + 
-        3*mo^4*\[CapitalLambda]0^4*(-45*Q2^5 + 600*Q2^4*\[CapitalLambda]0^2 + 
-          928*Q2^3*\[CapitalLambda]0^4 + 5692*Q2^2*\[CapitalLambda]0^6 - 
-          25832*Q2*\[CapitalLambda]0^8 + 15360*\[CapitalLambda]0^10)) + 
-      mN^10*(-18000*mo^16 + mo^14*(-31212*Q2 + 6144*\[CapitalLambda]0^2) - 
-        6*mo^12*(2079*Q2^2 - 2702*Q2*\[CapitalLambda]0^2 - 
-          720*\[CapitalLambda]0^4) + 12*mo^10*(189*Q2^3 + 
-          1575*Q2^2*\[CapitalLambda]0^2 + 1613*Q2*\[CapitalLambda]0^4 + 
-          864*\[CapitalLambda]0^6) + 2*mo^8*(5754*Q2^3*\[CapitalLambda]0^2 + 
-          8865*Q2^2*\[CapitalLambda]0^4 + 6200*Q2*\[CapitalLambda]0^6 + 
-          3024*\[CapitalLambda]0^8) + 4*mo^6*\[CapitalLambda]0^2*
-         (-252*Q2^4 + 2595*Q2^3*\[CapitalLambda]0^2 + 
-          3355*Q2^2*\[CapitalLambda]0^4 + 2583*Q2*\[CapitalLambda]0^6 + 
-          6624*\[CapitalLambda]0^8) - 3*mo^4*\[CapitalLambda]0^4*
-         (875*Q2^4 - 3416*Q2^3*\[CapitalLambda]0^2 - 
-          5140*Q2^2*\[CapitalLambda]0^4 - 11980*Q2*\[CapitalLambda]0^6 + 
-          27104*\[CapitalLambda]0^8) + 2*\[CapitalLambda]0^6*
-         (27*Q2^5 - 993*Q2^4*\[CapitalLambda]0^2 + 7467*Q2^3*
-           \[CapitalLambda]0^4 - 19204*Q2^2*\[CapitalLambda]0^6 + 
-          19068*Q2*\[CapitalLambda]0^8 - 5832*\[CapitalLambda]0^10) + 
-        2*mo^2*\[CapitalLambda]0^4*(27*Q2^5 - 1453*Q2^4*\[CapitalLambda]0^2 + 
-          5748*Q2^3*\[CapitalLambda]0^4 + 14226*Q2^2*\[CapitalLambda]0^6 - 
-          51094*Q2*\[CapitalLambda]0^8 + 28800*\[CapitalLambda]0^10)) + 
-      mN^12*(12960*mo^14 + 252*mo^12*(67*Q2 + 32*\[CapitalLambda]0^2) + 
-        12*mo^10*(1449*Q2^2 + 2086*Q2*\[CapitalLambda]0^2 + 
-          904*\[CapitalLambda]0^4) - 6*mo^8*(315*Q2^3 - 
-          3542*Q2^2*\[CapitalLambda]0^2 - 4626*Q2*\[CapitalLambda]0^4 - 
-          896*\[CapitalLambda]0^6) + mo^2*\[CapitalLambda]0^4*
-         (1281*Q2^4 - 20102*Q2^3*\[CapitalLambda]0^2 + 
-          31908*Q2^2*\[CapitalLambda]0^4 + 83160*Q2*\[CapitalLambda]0^6 - 
-          109536*\[CapitalLambda]0^8) - 12*mo^6*
-         (959*Q2^3*\[CapitalLambda]0^2 - 1597*Q2^2*\[CapitalLambda]0^4 - 
-          2936*Q2*\[CapitalLambda]0^6 - 552*\[CapitalLambda]0^8) + 
-        3*mo^4*\[CapitalLambda]0^2*(168*Q2^4 - 6267*Q2^3*\[CapitalLambda]0^
-            2 + 7416*Q2^2*\[CapitalLambda]0^4 + 15828*Q2*\[CapitalLambda]0^
-            6 + 9856*\[CapitalLambda]0^8) + \[CapitalLambda]0^4*
-         (-9*Q2^5 + 1028*Q2^4*\[CapitalLambda]0^2 - 14559*Q2^3*
-           \[CapitalLambda]0^4 + 60036*Q2^2*\[CapitalLambda]0^6 - 
-          87708*Q2*\[CapitalLambda]0^8 + 39168*\[CapitalLambda]0^10))) + 
-    mm^8*(15840*mN^20 - 3600*mN^19*mo - 9*mN^18*(2880*mo^2 - 2279*Q2 + 
-        12320*\[CapitalLambda]0^2) + 3*mN^17*mo*(6080*mo^2 - 1719*Q2 + 
-        13152*\[CapitalLambda]0^2) - 12*mN^15*mo*(960*mo^4 + 234*Q2^2 - 
-        4997*Q2*\[CapitalLambda]0^2 + 13664*\[CapitalLambda]0^4 - 
-        4*mo^2*(419*Q2 - 980*\[CapitalLambda]0^2)) + 
-      3*mN^16*(2240*mo^4 + 3519*Q2^2 - 49728*Q2*\[CapitalLambda]0^2 + 
-        108864*\[CapitalLambda]0^4 - 48*mo^2*(275*Q2 - 
-          224*\[CapitalLambda]0^2)) + 6*mN^14*(160*mo^6 + 451*Q2^3 - 
-        13627*Q2^2*\[CapitalLambda]0^2 + 73311*Q2*\[CapitalLambda]0^4 - 
-        87360*\[CapitalLambda]0^6 + mo^4*(2194*Q2 + 
-          3920*\[CapitalLambda]0^2) - 4*mo^2*(981*Q2^2 - 
-          2723*Q2*\[CapitalLambda]0^2 - 9296*\[CapitalLambda]0^4)) - 
-      6*mN^13*mo*(800*mo^6 + 116*Q2^3 - 5563*Q2^2*\[CapitalLambda]0^2 + 
-        40661*Q2*\[CapitalLambda]0^4 - 58240*\[CapitalLambda]0^6 + 
-        mo^4*(2118*Q2 + 3920*\[CapitalLambda]0^2) + 
-        mo^2*(-1428*Q2^2 + 9882*Q2*\[CapitalLambda]0^2 + 
-          22800*\[CapitalLambda]0^4)) - 6*mN^11*mo*(880*mo^8 + 11*Q2^4 - 
-        1423*Q2^3*\[CapitalLambda]0^2 + 22323*Q2^2*\[CapitalLambda]0^4 - 
-        80400*Q2*\[CapitalLambda]0^6 + 70560*\[CapitalLambda]0^8 + 
-        16*mo^6*(65*Q2 + 242*\[CapitalLambda]0^2) + 
-        mo^4*(900*Q2^2 + 4838*Q2*\[CapitalLambda]0^2 + 
-          27424*\[CapitalLambda]0^4) + mo^2*(-286*Q2^3 + 
-          4780*Q2^2*\[CapitalLambda]0^2 + 29634*Q2*\[CapitalLambda]0^4 - 
-          111280*\[CapitalLambda]0^6)) + 
-      6*mN^12*(58*Q2^4 - 3807*Q2^3*\[CapitalLambda]0^2 + 
-        40588*Q2^2*\[CapitalLambda]0^4 - 113600*Q2*\[CapitalLambda]0^6 + 
-        82320*\[CapitalLambda]0^8 + 16*mo^6*(31*Q2 + 
-          80*\[CapitalLambda]0^2) + 2*mo^4*(789*Q2^2 + 
-          2740*Q2*\[CapitalLambda]0^2 + 9520*\[CapitalLambda]0^4) - 
-        2*mo^2*(570*Q2^3 - 3887*Q2^2*\[CapitalLambda]0^2 - 
-          22867*Q2*\[CapitalLambda]0^4 + 56000*\[CapitalLambda]0^6)) + 
-      3*Q2^2*(495*mo^16 + 60*mo^14*(6*Q2 - 55*\[CapitalLambda]0^2) + 
-        42*mo^12*(2*Q2^2 - 63*Q2*\[CapitalLambda]0^2 + 
-          225*\[CapitalLambda]0^4) + 6*mo^10*
-         (Q2^3 - 119*Q2^2*\[CapitalLambda]0^2 + 1288*Q2*\[CapitalLambda]0^4 - 
-          2520*\[CapitalLambda]0^6) + 6*mo^6*\[CapitalLambda]0^4*
-         (34*Q2^3 - 505*Q2^2*\[CapitalLambda]0^2 + 
-          1680*Q2*\[CapitalLambda]0^4 - 1470*\[CapitalLambda]0^6) + 
-        2*mo^2*\[CapitalLambda]0^8*(65*Q2^3 - 357*Q2^2*\[CapitalLambda]0^2 + 
-          588*Q2*\[CapitalLambda]0^4 - 300*\[CapitalLambda]0^6) + 
-        3*\[CapitalLambda]0^10*(-7*Q2^3 + 28*Q2^2*\[CapitalLambda]0^2 - 
-          36*Q2*\[CapitalLambda]0^4 + 15*\[CapitalLambda]0^6) + 
-        15*mo^4*\[CapitalLambda]0^6*(-17*Q2^3 + 143*Q2^2*\[CapitalLambda]0^
-            2 - 322*Q2*\[CapitalLambda]0^4 + 210*\[CapitalLambda]0^6) - 
-        5*mo^8*(13*Q2^3*\[CapitalLambda]0^2 - 429*Q2^2*\[CapitalLambda]0^4 + 
-          2352*Q2*\[CapitalLambda]0^6 - 2940*\[CapitalLambda]0^8)) - 
-      3*mN*mo*Q2*(495*mo^16 + 60*mo^14*(6*Q2 - 55*\[CapitalLambda]0^2) + 
-        42*mo^12*(2*Q2^2 - 73*Q2*\[CapitalLambda]0^2 + 
-          225*\[CapitalLambda]0^4) + 6*mo^10*
-         (Q2^3 - 175*Q2^2*\[CapitalLambda]0^2 + 1666*Q2*\[CapitalLambda]0^4 - 
-          2520*\[CapitalLambda]0^6) - 5*mo^8*(31*Q2^3*\[CapitalLambda]0^2 - 
-          807*Q2^2*\[CapitalLambda]0^4 + 3360*Q2*\[CapitalLambda]0^6 - 
-          2940*\[CapitalLambda]0^8) + \[CapitalLambda]0^8*
-         (40*Q2^4 - 231*Q2^3*\[CapitalLambda]0^2 + 
-          420*Q2^2*\[CapitalLambda]0^4 - 276*Q2*\[CapitalLambda]0^6 + 
-          45*\[CapitalLambda]0^8) - 2*mo^2*\[CapitalLambda]0^6*
-         (45*Q2^4 - 470*Q2^3*\[CapitalLambda]0^2 + 1302*Q2^2*
-           \[CapitalLambda]0^4 - 1218*Q2*\[CapitalLambda]0^6 + 
-          300*\[CapitalLambda]0^8) + 3*mo^4*\[CapitalLambda]0^4*
-         (18*Q2^4 - 435*Q2^3*\[CapitalLambda]0^2 + 2045*Q2^2*
-           \[CapitalLambda]0^4 - 2870*Q2*\[CapitalLambda]0^6 + 
-          1050*\[CapitalLambda]0^8) - 4*mo^6*\[CapitalLambda]0^2*
-         (2*Q2^4 - 186*Q2^3*\[CapitalLambda]0^2 + 1755*Q2^2*
-           \[CapitalLambda]0^4 - 3990*Q2*\[CapitalLambda]0^6 + 
-          2205*\[CapitalLambda]0^8)) + 3*mN^2*Q2*(4125*mo^16 + 
-        72*mo^14*(27*Q2 - 385*\[CapitalLambda]0^2) - 
-        42*mo^12*(3*Q2^2 + 481*Q2*\[CapitalLambda]0^2 - 
-          1899*\[CapitalLambda]0^4) - 2*mo^10*(82*Q2^3 + 
-          2142*Q2^2*\[CapitalLambda]0^2 - 35133*Q2*\[CapitalLambda]0^4 + 
-          63840*\[CapitalLambda]0^6) - 3*mo^8*(6*Q2^4 + 
-          15*Q2^3*\[CapitalLambda]0^2 - 7435*Q2^2*\[CapitalLambda]0^4 + 
-          39690*Q2*\[CapitalLambda]0^6 - 41160*\[CapitalLambda]0^8) + 
-        2*mo^6*\[CapitalLambda]0^2*(26*Q2^4 + 1461*Q2^3*\[CapitalLambda]0^2 - 
-          20325*Q2^2*\[CapitalLambda]0^4 + 54915*Q2*\[CapitalLambda]0^6 - 
-          36540*\[CapitalLambda]0^8) + \[CapitalLambda]0^8*
-         (130*Q2^4 - 861*Q2^3*\[CapitalLambda]0^2 + 
-          1764*Q2^2*\[CapitalLambda]0^4 - 1356*Q2*\[CapitalLambda]0^6 + 
-          315*\[CapitalLambda]0^8) - 6*mo^2*\[CapitalLambda]0^6*
-         (50*Q2^4 - 670*Q2^3*\[CapitalLambda]0^2 + 2149*Q2^2*
-           \[CapitalLambda]0^4 - 2352*Q2*\[CapitalLambda]0^6 + 
-          768*\[CapitalLambda]0^8) + mo^4*\[CapitalLambda]0^4*
-         (120*Q2^4 - 5915*Q2^3*\[CapitalLambda]0^2 + 33885*Q2^2*
-           \[CapitalLambda]0^4 - 55524*Q2*\[CapitalLambda]0^6 + 
-          25410*\[CapitalLambda]0^8)) + mN^10*(-960*mo^10 + 18*Q2^5 - 
-        3267*Q2^4*\[CapitalLambda]0^2 + 69276*Q2^3*\[CapitalLambda]0^4 - 
-        364112*Q2^2*\[CapitalLambda]0^6 + 598800*Q2*\[CapitalLambda]0^8 - 
-        272160*\[CapitalLambda]0^10 + 6*mo^8*(219*Q2 + 
-          368*\[CapitalLambda]0^2) + 216*mo^6*(13*Q2^2 + 
-          73*Q2*\[CapitalLambda]0^2 + 284*\[CapitalLambda]0^4) + 
-        6*mo^4*(547*Q2^3 + 3321*Q2^2*\[CapitalLambda]0^2 + 
-          28201*Q2*\[CapitalLambda]0^4 - 86544*\[CapitalLambda]0^6) + 
-        mo^2*(-972*Q2^4 + 15660*Q2^3*\[CapitalLambda]0^2 + 
-          143832*Q2^2*\[CapitalLambda]0^4 - 862880*Q2*\[CapitalLambda]0^6 + 
-          745920*\[CapitalLambda]0^8)) - 
-      mN^9*mo*(14400*mo^10 - 957*Q2^4*\[CapitalLambda]0^2 + 
-        34152*Q2^3*\[CapitalLambda]0^4 - 245432*Q2^2*\[CapitalLambda]0^6 + 
-        512460*Q2*\[CapitalLambda]0^8 - 299040*\[CapitalLambda]0^10 + 
-        6*mo^8*(2137*Q2 + 5360*\[CapitalLambda]0^2) + 
-        12*mo^6*(366*Q2^2 + 2653*Q2*\[CapitalLambda]0^2 + 
-          17144*\[CapitalLambda]0^4) + 6*mo^4*(186*Q2^3 + 
-          2369*Q2^2*\[CapitalLambda]0^2 + 33387*Q2*\[CapitalLambda]0^4 - 
-          162624*\[CapitalLambda]0^6) + mo^2*(-150*Q2^4 + 
-          6522*Q2^3*\[CapitalLambda]0^2 + 87642*Q2^2*\[CapitalLambda]0^4 - 
-          796576*Q2*\[CapitalLambda]0^6 + 995040*\[CapitalLambda]0^8)) + 
-      mN^8*(-6720*mo^12 - 195*Q2^5*\[CapitalLambda]0^2 + 
-        10131*Q2^4*\[CapitalLambda]0^4 - 99601*Q2^3*\[CapitalLambda]0^6 + 
-        296040*Q2^2*\[CapitalLambda]0^8 - 298896*Q2*\[CapitalLambda]0^10 + 
-        80640*\[CapitalLambda]0^12 - 48*mo^10*(53*Q2 + 
-          80*\[CapitalLambda]0^2) + 6*mo^8*(261*Q2^2 + 
-          1616*Q2*\[CapitalLambda]0^2 + 2960*\[CapitalLambda]0^4) + 
-        12*mo^6*(106*Q2^3 + 1085*Q2^2*\[CapitalLambda]0^2 + 
-          9938*Q2*\[CapitalLambda]0^4 - 22688*\[CapitalLambda]0^6) + 
-        6*mo^4*(94*Q2^4 + 1091*Q2^3*\[CapitalLambda]0^2 + 
-          17720*Q2^2*\[CapitalLambda]0^4 - 125856*Q2*\[CapitalLambda]0^6 + 
-          93200*\[CapitalLambda]0^8) + mo^2*(-54*Q2^5 + 
-          2538*Q2^4*\[CapitalLambda]0^2 + 40401*Q2^3*\[CapitalLambda]0^4 - 
-          464288*Q2^2*\[CapitalLambda]0^6 + 913320*Q2*\[CapitalLambda]0^8 - 
-          376320*\[CapitalLambda]0^10)) + 
-      mN^7*(13440*mo^13 + 336*mo^11*(33*Q2 - 244*\[CapitalLambda]0^2) + 
-        12*mo^9*(258*Q2^2 - 5945*Q2*\[CapitalLambda]0^2 - 
-          22920*\[CapitalLambda]0^4) + 24*mo^7*(11*Q2^3 - 
-          960*Q2^2*\[CapitalLambda]0^2 - 10555*Q2*\[CapitalLambda]0^4 + 
-          49860*\[CapitalLambda]0^6) + 3*mo^3*\[CapitalLambda]0^2*
-         (-216*Q2^4 - 6733*Q2^3*\[CapitalLambda]0^2 + 116790*Q2^2*
-           \[CapitalLambda]0^4 - 333880*Q2*\[CapitalLambda]0^6 + 
-          230880*\[CapitalLambda]0^8) - 6*mo^5*(6*Q2^4 + 
-          618*Q2^3*\[CapitalLambda]0^2 + 15699*Q2^2*\[CapitalLambda]0^4 - 
-          172344*Q2*\[CapitalLambda]0^6 + 237680*\[CapitalLambda]0^8) + 
-        mo*\[CapitalLambda]0^2*(24*Q2^5 - 3972*Q2^4*\[CapitalLambda]0^2 + 
-          57451*Q2^3*\[CapitalLambda]0^4 - 223740*Q2^2*\[CapitalLambda]0^6 + 
-          296412*Q2*\[CapitalLambda]0^8 - 119616*\[CapitalLambda]0^10)) + 
-      mN^4*(-15840*mo^16 - 1152*mo^14*(33*Q2 - 70*\[CapitalLambda]0^2) - 
-        84*mo^12*(261*Q2^2 - 1388*Q2*\[CapitalLambda]0^2 + 
-          1944*\[CapitalLambda]0^4) - 12*mo^10*(362*Q2^3 - 
-          5229*Q2^2*\[CapitalLambda]0^2 + 917*Q2*\[CapitalLambda]0^4 - 
-          13440*\[CapitalLambda]0^6) - 3*Q2*\[CapitalLambda]0^6*
-         (255*Q2^4 - 2985*Q2^3*\[CapitalLambda]0^2 + 
-          9447*Q2^2*\[CapitalLambda]0^4 - 10724*Q2*\[CapitalLambda]0^6 + 
-          3792*\[CapitalLambda]0^8) - 6*mo^8*(18*Q2^4 - 
-          2631*Q2^3*\[CapitalLambda]0^2 - 12715*Q2^2*\[CapitalLambda]0^4 + 
-          59920*Q2*\[CapitalLambda]0^6 + 11760*\[CapitalLambda]0^8) + 
-        3*mo^6*Q2*(12*Q2^4 + 612*Q2^3*\[CapitalLambda]0^2 + 
-          11857*Q2^2*\[CapitalLambda]0^4 - 131912*Q2*\[CapitalLambda]0^6 + 
-          186760*\[CapitalLambda]0^8) + mo^2*\[CapitalLambda]0^4*
-         (360*Q2^5 - 17893*Q2^4*\[CapitalLambda]0^2 + 112995*Q2^3*
-           \[CapitalLambda]0^4 - 204876*Q2^2*\[CapitalLambda]0^6 + 
-          107268*Q2*\[CapitalLambda]0^8 - 2304*\[CapitalLambda]0^10) + 
-        3*mo^4*\[CapitalLambda]0^2*(26*Q2^5 + 2000*Q2^4*\[CapitalLambda]0^2 - 
-          44463*Q2^3*\[CapitalLambda]0^4 + 150410*Q2^2*\[CapitalLambda]0^6 - 
-          121408*Q2*\[CapitalLambda]0^8 + 3360*\[CapitalLambda]0^10)) + 
-      mN^6*(25920*mo^14 + 84*mo^12*(355*Q2 - 376*\[CapitalLambda]0^2) + 
-        24*mo^10*(573*Q2^2 - 331*Q2*\[CapitalLambda]0^2 - 
-          1372*\[CapitalLambda]0^4) + 6*mo^8*(537*Q2^3 + 
-          1655*Q2^2*\[CapitalLambda]0^2 + 12945*Q2*\[CapitalLambda]0^4 - 
-          2800*\[CapitalLambda]0^6) + 6*mo^6*(68*Q2^4 + 
-          940*Q2^3*\[CapitalLambda]0^2 + 15291*Q2^2*\[CapitalLambda]0^4 - 
-          92288*Q2*\[CapitalLambda]0^6 + 30800*\[CapitalLambda]0^8) + 
-        3*mo^4*(12*Q2^5 + 390*Q2^4*\[CapitalLambda]0^2 + 
-          11663*Q2^3*\[CapitalLambda]0^4 - 150682*Q2^2*\[CapitalLambda]0^6 + 
-          272280*Q2*\[CapitalLambda]0^8 - 64960*\[CapitalLambda]0^10) + 
-        2*\[CapitalLambda]0^4*(306*Q2^5 - 6931*Q2^4*\[CapitalLambda]0^2 + 
-          36885*Q2^3*\[CapitalLambda]0^4 - 66261*Q2^2*\[CapitalLambda]0^6 + 
-          40467*Q2*\[CapitalLambda]0^8 - 4896*\[CapitalLambda]0^10) + 
-        4*mo^2*\[CapitalLambda]0^2*(39*Q2^5 + 1509*Q2^4*\[CapitalLambda]0^2 - 
-          32251*Q2^3*\[CapitalLambda]0^4 + 114960*Q2^2*\[CapitalLambda]0^6 - 
-          111090*Q2*\[CapitalLambda]0^8 + 18816*\[CapitalLambda]0^10)) + 
-      mN^5*(31680*mo^15 + 84*mo^13*(223*Q2 + 120*\[CapitalLambda]0^2) + 
-        84*mo^11*(18*Q2^2 + 71*Q2*\[CapitalLambda]0^2 - 
-          5792*\[CapitalLambda]0^4) - 6*mo^9*(136*Q2^3 + 
-          55*Q2^2*\[CapitalLambda]0^2 + 70955*Q2*\[CapitalLambda]0^4 - 
-          206080*\[CapitalLambda]0^6) - 6*mo^7*(22*Q2^4 + 
-          158*Q2^3*\[CapitalLambda]0^2 + 23239*Q2^2*\[CapitalLambda]0^4 - 
-          183960*Q2*\[CapitalLambda]0^6 + 231840*\[CapitalLambda]0^8) + 
-        3*mo^5*\[CapitalLambda]0^2*(-82*Q2^4 - 7329*Q2^3*\[CapitalLambda]0^
-            2 + 129040*Q2^2*\[CapitalLambda]0^4 - 378480*Q2*
-           \[CapitalLambda]0^6 + 267680*\[CapitalLambda]0^8) + 
-        2*mo*\[CapitalLambda]0^4*(-81*Q2^5 + 3076*Q2^4*\[CapitalLambda]0^2 - 
-          21525*Q2^3*\[CapitalLambda]0^4 + 49869*Q2^2*\[CapitalLambda]0^6 - 
-          44037*Q2*\[CapitalLambda]0^8 + 12384*\[CapitalLambda]0^10) - 
-        6*mo^3*\[CapitalLambda]0^2*(4*Q2^5 + 347*Q2^4*\[CapitalLambda]0^2 - 
-          11497*Q2^3*\[CapitalLambda]0^4 + 57615*Q2^2*\[CapitalLambda]0^6 - 
-          86798*Q2*\[CapitalLambda]0^8 + 38080*\[CapitalLambda]0^10)) - 
-      mN^3*(23760*mo^17 + 2880*mo^15*(4*Q2 - 55*\[CapitalLambda]0^2) - 
-        252*mo^13*(2*Q2^2 + 459*Q2*\[CapitalLambda]0^2 - 
-          1800*\[CapitalLambda]0^4) - 12*mo^11*(75*Q2^3 + 
-          1974*Q2^2*\[CapitalLambda]0^2 - 33593*Q2*\[CapitalLambda]0^4 + 
-          60480*\[CapitalLambda]0^6) + 3*mo^7*\[CapitalLambda]0^2*
-         (176*Q2^4 + 7127*Q2^3*\[CapitalLambda]0^2 - 90450*Q2^2*
-           \[CapitalLambda]0^4 + 222600*Q2*\[CapitalLambda]0^6 - 
-          141120*\[CapitalLambda]0^8) - 6*mo^9*(17*Q2^4 - 
-          85*Q2^3*\[CapitalLambda]0^2 - 22430*Q2^2*\[CapitalLambda]0^4 + 
-          116200*Q2*\[CapitalLambda]0^6 - 117600*\[CapitalLambda]0^8) + 
-        mo^3*\[CapitalLambda]0^4*(108*Q2^5 - 6187*Q2^4*\[CapitalLambda]0^2 + 
-          47745*Q2^3*\[CapitalLambda]0^4 - 112926*Q2^2*\[CapitalLambda]0^6 + 
-          99708*Q2*\[CapitalLambda]0^8 - 28800*\[CapitalLambda]0^10) + 
-        3*mo*\[CapitalLambda]0^6*(-90*Q2^5 + 1220*Q2^4*\[CapitalLambda]0^2 - 
-          4455*Q2^3*\[CapitalLambda]0^4 + 6286*Q2^2*\[CapitalLambda]0^6 - 
-          3672*Q2*\[CapitalLambda]0^8 + 720*\[CapitalLambda]0^10) + 
-        3*mo^5*\[CapitalLambda]0^2*(8*Q2^5 + 622*Q2^4*\[CapitalLambda]0^2 - 
-          18529*Q2^3*\[CapitalLambda]0^4 + 85010*Q2^2*\[CapitalLambda]0^6 - 
-          119420*Q2*\[CapitalLambda]0^8 + 50400*\[CapitalLambda]0^10))) + 
-    mm^6*(-7920*mN^22 - 960*mN^21*mo - 12*mN^19*mo*(400*mo^2 - 43*Q2 + 
-        72*\[CapitalLambda]0^2) + 6*mN^20*(4200*mo^2 - 1469*Q2 + 
-        10560*\[CapitalLambda]0^2) - 3*mN^18*(8000*mo^4 + 1285*Q2^2 - 
-        25710*Q2*\[CapitalLambda]0^2 + 72576*\[CapitalLambda]0^4 - 
-        6*mo^2*(1835*Q2 - 5248*\[CapitalLambda]0^2)) + 
-      3*mN^17*mo*(6400*mo^4 + 279*Q2^2 - 5010*Q2*\[CapitalLambda]0^2 + 
-        11584*\[CapitalLambda]0^4 - 4*mo^2*(625*Q2 - 
-          3424*\[CapitalLambda]0^2)) + 3*mN^16*(1600*mo^6 - 277*Q2^3 + 
-        12738*Q2^2*\[CapitalLambda]0^2 - 92120*Q2*\[CapitalLambda]0^4 + 
-        139776*\[CapitalLambda]0^6 - 56*mo^4*(235*Q2 - 
-          16*\[CapitalLambda]0^2) + 36*mo^2*(155*Q2^2 - 
-          1308*Q2*\[CapitalLambda]0^2 + 336*\[CapitalLambda]0^4)) - 
-      24*mN^15*mo*(480*mo^6 - 10*Q2^3 + 518*Q2^2*\[CapitalLambda]0^2 - 
-        3941*Q2*\[CapitalLambda]0^4 + 5488*\[CapitalLambda]0^6 + 
-        mo^4*(-854*Q2 + 1360*\[CapitalLambda]0^2) + 
-        mo^2*(177*Q2^2 - 2742*Q2*\[CapitalLambda]0^2 + 
-          2900*\[CapitalLambda]0^4)) - mN^13*mo*(5760*mo^8 - 15*Q2^4 + 
-        3630*Q2^3*\[CapitalLambda]0^2 - 67128*Q2^2*\[CapitalLambda]0^4 + 
-        263584*Q2*\[CapitalLambda]0^6 - 235200*\[CapitalLambda]0^8 + 
-        144*mo^6*(95*Q2 + 104*\[CapitalLambda]0^2) + 
-        mo^4*(-8316*Q2^2 + 43656*Q2*\[CapitalLambda]0^2 + 
-          30144*\[CapitalLambda]0^4) + 24*mo^2*(43*Q2^3 - 
-          1549*Q2^2*\[CapitalLambda]0^2 + 4385*Q2*\[CapitalLambda]0^4 + 
-          4480*\[CapitalLambda]0^6)) + mN^14*(480*mo^8 - 87*Q2^4 + 
-        9666*Q2^3*\[CapitalLambda]0^2 - 144912*Q2^2*\[CapitalLambda]0^4 + 
-        531584*Q2*\[CapitalLambda]0^6 - 493920*\[CapitalLambda]0^8 + 
-        24*mo^6*(469*Q2 + 640*\[CapitalLambda]0^2) + 
-        mo^4*(-24228*Q2^2 + 29784*Q2*\[CapitalLambda]0^2 + 
-          67104*\[CapitalLambda]0^4) + 6*mo^2*(677*Q2^3 - 
-          13916*Q2^2*\[CapitalLambda]0^2 + 16428*Q2*\[CapitalLambda]0^4 + 
-          54656*\[CapitalLambda]0^6)) - 3*Q2^2*(mo^2 - \[CapitalLambda]0^2)*
-       (220*mo^16 + 5*mo^14*(27*Q2 - 286*\[CapitalLambda]0^2) + 
-        \[CapitalLambda]0^10*(Q2 - \[CapitalLambda]0^2)^2*
-         (-7*Q2 + 10*\[CapitalLambda]0^2) + 
-        mo^12*(24*Q2^2 - 1089*Q2*\[CapitalLambda]0^2 + 
-          3970*\[CapitalLambda]0^4) + 
-        mo^10*(Q2^3 - 270*Q2^2*\[CapitalLambda]0^2 + 
-          3279*Q2*\[CapitalLambda]0^4 - 6110*\[CapitalLambda]0^6) + 
-        mo^6*\[CapitalLambda]0^4*(90*Q2^3 - 1356*Q2^2*\[CapitalLambda]0^2 + 
-          4077*Q2*\[CapitalLambda]0^4 - 3170*\[CapitalLambda]0^6) + 
-        mo^2*\[CapitalLambda]0^8*(59*Q2^3 - 270*Q2^2*\[CapitalLambda]0^2 + 
-          381*Q2*\[CapitalLambda]0^4 - 170*\[CapitalLambda]0^6) + 
-        mo^4*\[CapitalLambda]0^6*(-126*Q2^3 + 924*Q2^2*\[CapitalLambda]0^2 - 
-          1803*Q2*\[CapitalLambda]0^4 + 1030*\[CapitalLambda]0^6) + 
-        mo^8*(-21*Q2^3*\[CapitalLambda]0^2 + 924*Q2^2*\[CapitalLambda]0^4 - 
-          4953*Q2*\[CapitalLambda]0^6 + 5650*\[CapitalLambda]0^8)) + 
-      3*mN^2*Q2*(-1870*mo^18 - 3*mo^16*(87*Q2 - 4730*\[CapitalLambda]0^2) + 
-        6*mo^14*(65*Q2^2 + 1164*Q2*\[CapitalLambda]0^2 - 
-          7812*\[CapitalLambda]0^4) + 3*mo^12*(37*Q2^3 - 
-          98*Q2^2*\[CapitalLambda]0^2 - 11494*Q2*\[CapitalLambda]0^4 + 
-          29344*\[CapitalLambda]0^6) + 2*mo^10*(3*Q2^4 - 
-          281*Q2^3*\[CapitalLambda]0^2 - 3723*Q2^2*\[CapitalLambda]0^4 + 
-          38472*Q2*\[CapitalLambda]0^6 - 51450*\[CapitalLambda]0^8) + 
-        2*mo^6*\[CapitalLambda]0^4*(45*Q2^4 + 1544*Q2^3*\[CapitalLambda]0^2 - 
-          15555*Q2^2*\[CapitalLambda]0^4 + 32928*Q2*\[CapitalLambda]0^6 - 
-          18060*\[CapitalLambda]0^8) + \[CapitalLambda]0^10*
-         (66*Q2^4 - 343*Q2^3*\[CapitalLambda]0^2 + 
-          576*Q2^2*\[CapitalLambda]0^4 - 369*Q2*\[CapitalLambda]0^6 + 
-          70*\[CapitalLambda]0^8) - 6*mo^2*\[CapitalLambda]0^8*
-         (35*Q2^4 - 359*Q2^3*\[CapitalLambda]0^2 + 
-          931*Q2^2*\[CapitalLambda]0^4 - 852*Q2*\[CapitalLambda]0^6 + 
-          237*\[CapitalLambda]0^8) + mo^4*\[CapitalLambda]0^6*
-         (120*Q2^4 - 4345*Q2^3*\[CapitalLambda]0^2 + 19350*Q2^2*
-           \[CapitalLambda]0^4 - 25914*Q2*\[CapitalLambda]0^6 + 
-          10032*\[CapitalLambda]0^8) + 3*mo^8*\[CapitalLambda]0^2*
-         (-22*Q2^4 - 35*Q2^3*\[CapitalLambda]0^2 + 8040*Q2^2*
-           \[CapitalLambda]0^4 - 31290*Q2*\[CapitalLambda]0^6 + 
-          25620*\[CapitalLambda]0^8)) - mN^11*mo*(13440*mo^10 + 
-        24*mo^8*(555*Q2 + 728*\[CapitalLambda]0^2) + 
-        24*mo^6*(315*Q2^2 + 918*Q2*\[CapitalLambda]0^2 + 
-          1448*\[CapitalLambda]0^4) - 24*mo^4*(62*Q2^3 - 
-          948*Q2^2*\[CapitalLambda]0^2 - 1873*Q2*\[CapitalLambda]0^4 - 
-          6432*\[CapitalLambda]0^6) + 2*mo^2*(39*Q2^4 - 
-          4704*Q2^3*\[CapitalLambda]0^2 + 29559*Q2^2*\[CapitalLambda]0^4 + 
-          86240*Q2*\[CapitalLambda]0^6 - 225120*\[CapitalLambda]0^8) + 
-        3*\[CapitalLambda]0^2*(128*Q2^4 - 6629*Q2^3*\[CapitalLambda]0^2 + 
-          56552*Q2^2*\[CapitalLambda]0^4 - 129360*Q2*\[CapitalLambda]0^6 + 
-          78400*\[CapitalLambda]0^8)) + mN^9*mo*(19200*mo^12 - 
-        6*Q2^5*\[CapitalLambda]0^2 + 2529*Q2^4*\[CapitalLambda]0^4 - 
-        48540*Q2^3*\[CapitalLambda]0^6 + 221258*Q2^2*\[CapitalLambda]0^8 - 
-        319356*Q2*\[CapitalLambda]0^10 + 135744*\[CapitalLambda]0^12 + 
-        24*mo^10*(601*Q2 - 2096*\[CapitalLambda]0^2) + 
-        42*mo^8*(75*Q2^2 - 1098*Q2*\[CapitalLambda]0^2 - 
-          1184*\[CapitalLambda]0^4) - 24*mo^6*(15*Q2^3 + 
-          721*Q2^2*\[CapitalLambda]0^2 + 2195*Q2*\[CapitalLambda]0^4 + 
-          8528*\[CapitalLambda]0^6) - 2*mo^2*\[CapitalLambda]0^2*
-         (-513*Q2^4 + 7800*Q2^3*\[CapitalLambda]0^2 + 
-          50016*Q2^2*\[CapitalLambda]0^4 - 304952*Q2*\[CapitalLambda]0^6 + 
-          270720*\[CapitalLambda]0^8) + mo^4*(165*Q2^4 - 
-          5982*Q2^3*\[CapitalLambda]0^2 - 26112*Q2^2*\[CapitalLambda]0^4 - 
-          211360*Q2*\[CapitalLambda]0^6 + 692736*\[CapitalLambda]0^8)) + 
-      mN^12*(-480*mo^10 + 12*mo^8*(205*Q2 + 352*\[CapitalLambda]0^2) + 
-        24*mo^6*(377*Q2^2 + 886*Q2*\[CapitalLambda]0^2 + 
-          984*\[CapitalLambda]0^4) + mo^4*(-6990*Q2^3 + 
-          29256*Q2^2*\[CapitalLambda]0^2 + 77112*Q2*\[CapitalLambda]0^4 + 
-          166656*\[CapitalLambda]0^6) + mo^2*(462*Q2^4 - 
-          24384*Q2^3*\[CapitalLambda]0^2 + 77472*Q2^2*\[CapitalLambda]0^4 + 
-          359456*Q2*\[CapitalLambda]0^6 - 668640*\[CapitalLambda]0^8) - 
-        3*(Q2^5 - 418*Q2^4*\[CapitalLambda]0^2 + 13127*Q2^3*
-           \[CapitalLambda]0^4 - 93080*Q2^2*\[CapitalLambda]0^6 + 
-          199980*Q2*\[CapitalLambda]0^8 - 120960*\[CapitalLambda]0^10)) + 
-      3*mN*mo*Q2*(220*mo^18 + 15*mo^16*(9*Q2 - 110*\[CapitalLambda]0^2) + 
-        24*mo^14*(Q2^2 - 61*Q2*\[CapitalLambda]0^2 + 
-          225*\[CapitalLambda]0^4) + 
-        mo^12*(Q2^3 - 462*Q2^2*\[CapitalLambda]0^2 + 
-          5880*Q2*\[CapitalLambda]0^4 - 10080*\[CapitalLambda]0^6) - 
-        2*mo^10*(29*Q2^3*\[CapitalLambda]0^2 - 1206*Q2^2*\[CapitalLambda]0^
-            4 + 6132*Q2*\[CapitalLambda]0^6 - 5880*\[CapitalLambda]0^8) + 
-        mo^4*\[CapitalLambda]0^6*(-96*Q2^4 + 1385*Q2^3*\[CapitalLambda]0^2 - 
-          4554*Q2^2*\[CapitalLambda]0^4 + 4704*Q2*\[CapitalLambda]0^6 - 
-          1200*\[CapitalLambda]0^8) + \[CapitalLambda]0^10*
-         (-30*Q2^4 + 133*Q2^3*\[CapitalLambda]0^2 - 
-          192*Q2^2*\[CapitalLambda]0^4 + 99*Q2*\[CapitalLambda]0^6 - 
-          10*\[CapitalLambda]0^8) + 2*mo^2*\[CapitalLambda]0^8*
-         (50*Q2^4 - 363*Q2^3*\[CapitalLambda]0^2 + 
-          756*Q2^2*\[CapitalLambda]0^4 - 540*Q2*\[CapitalLambda]0^6 + 
-          90*\[CapitalLambda]0^8) + 6*mo^6*\[CapitalLambda]0^4*
-         (5*Q2^4 - 196*Q2^3*\[CapitalLambda]0^2 + 1150*Q2^2*
-           \[CapitalLambda]0^4 - 1820*Q2*\[CapitalLambda]0^6 + 
-          700*\[CapitalLambda]0^8) + mo^8*(-2*Q2^4*\[CapitalLambda]0^2 + 
-          441*Q2^3*\[CapitalLambda]0^4 - 5640*Q2^2*\[CapitalLambda]0^6 + 
-          14910*Q2*\[CapitalLambda]0^8 - 8820*\[CapitalLambda]0^10)) + 
-      mN^4*(7920*mo^18 + 18*mo^16*(1513*Q2 - 2560*\[CapitalLambda]0^2) + 
-        24*mo^14*(507*Q2^2 - 5174*Q2*\[CapitalLambda]0^2 + 
-          4536*\[CapitalLambda]0^4) + 6*mo^12*(53*Q2^3 - 
-          12516*Q2^2*\[CapitalLambda]0^2 + 29148*Q2*\[CapitalLambda]0^4 - 
-          21504*\[CapitalLambda]0^6) - 6*mo^10*(83*Q2^4 + 
-          2608*Q2^3*\[CapitalLambda]0^2 - 16788*Q2^2*\[CapitalLambda]0^4 - 
-          4144*Q2*\[CapitalLambda]0^6 - 11760*\[CapitalLambda]0^8) + 
-        Q2*\[CapitalLambda]0^8*(-555*Q2^4 + 4842*Q2^3*\[CapitalLambda]0^2 - 
-          12161*Q2^2*\[CapitalLambda]0^4 + 11352*Q2*\[CapitalLambda]0^6 - 
-          3294*\[CapitalLambda]0^8) - 9*mo^8*Q2*(5*Q2^4 + 
-          54*Q2^3*\[CapitalLambda]0^2 - 2947*Q2^2*\[CapitalLambda]0^4 - 
-          9896*Q2*\[CapitalLambda]0^6 + 35700*\[CapitalLambda]0^8) + 
-        6*mo^6*\[CapitalLambda]0^2*(22*Q2^5 + 525*Q2^4*\[CapitalLambda]0^2 + 
-          6238*Q2^3*\[CapitalLambda]0^4 - 51624*Q2^2*\[CapitalLambda]0^6 + 
-          59976*Q2*\[CapitalLambda]0^8 - 3360*\[CapitalLambda]0^10) + 
-        4*mo^2*\[CapitalLambda]0^6*(90*Q2^5 - 3208*Q2^4*\[CapitalLambda]0^2 + 
-          15633*Q2^3*\[CapitalLambda]0^4 - 23016*Q2^2*\[CapitalLambda]0^6 + 
-          10128*Q2*\[CapitalLambda]0^8 - 324*\[CapitalLambda]0^10) + 
-        2*mo^4*\[CapitalLambda]0^4*(63*Q2^5 + 3052*Q2^4*\[CapitalLambda]0^2 - 
-          49548*Q2^3*\[CapitalLambda]0^4 + 131796*Q2^2*\[CapitalLambda]0^6 - 
-          89292*Q2*\[CapitalLambda]0^8 + 4608*\[CapitalLambda]0^10)) + 
-      mN^6*(-25200*mo^16 + mo^14*(-45480*Q2 + 66048*\[CapitalLambda]0^2) - 
-        12*mo^12*(1955*Q2^2 - 6898*Q2*\[CapitalLambda]0^2 + 
-          2856*\[CapitalLambda]0^4) - 6*mo^10*(689*Q2^3 - 
-          7004*Q2^2*\[CapitalLambda]0^2 - 900*Q2*\[CapitalLambda]0^4 - 
-          448*\[CapitalLambda]0^6) + 3*mo^8*(5*Q2^4 + 
-          3634*Q2^3*\[CapitalLambda]0^2 + 7572*Q2^2*\[CapitalLambda]0^4 + 
-          36224*Q2*\[CapitalLambda]0^6 - 36960*\[CapitalLambda]0^8) + 
-        6*mo^4*\[CapitalLambda]0^2*(22*Q2^5 + 315*Q2^4*\[CapitalLambda]0^2 + 
-          6126*Q2^3*\[CapitalLambda]0^4 - 59164*Q2^2*\[CapitalLambda]0^6 + 
-          88340*Q2*\[CapitalLambda]0^8 - 22288*\[CapitalLambda]0^10) + 
-        \[CapitalLambda]0^6*(648*Q2^5 - 10313*Q2^4*\[CapitalLambda]0^2 + 
-          42306*Q2^3*\[CapitalLambda]0^4 - 62344*Q2^2*\[CapitalLambda]0^6 + 
-          32880*Q2*\[CapitalLambda]0^8 - 3888*\[CapitalLambda]0^10) + 
-        12*mo^6*(5*Q2^5 + 125*Q2^4*\[CapitalLambda]0^2 + 
-          836*Q2^3*\[CapitalLambda]0^4 + 8558*Q2^2*\[CapitalLambda]0^6 - 
-          40946*Q2*\[CapitalLambda]0^8 + 16800*\[CapitalLambda]0^10) + 
-        2*mo^2*\[CapitalLambda]0^4*(135*Q2^5 + 3010*Q2^4*\[CapitalLambda]0^
-            2 - 48053*Q2^3*\[CapitalLambda]0^4 + 136020*Q2^2*
-           \[CapitalLambda]0^6 - 111468*Q2*\[CapitalLambda]0^8 + 
-          18816*\[CapitalLambda]0^10)) + 2*mN^7*mo*
-       (9600*mo^14 + 168*mo^12*(25*Q2 + 168*\[CapitalLambda]0^2) - 
-        12*mo^10*(63*Q2^2 - 1690*Q2*\[CapitalLambda]0^2 + 
-          5972*\[CapitalLambda]0^4) - 12*mo^8*(50*Q2^3 - 
-          314*Q2^2*\[CapitalLambda]0^2 + 5285*Q2*\[CapitalLambda]0^4 + 
-          11600*\[CapitalLambda]0^6) - 6*mo^6*(15*Q2^4 + 
-          68*Q2^3*\[CapitalLambda]0^2 + 3611*Q2^2*\[CapitalLambda]0^4 + 
-          22656*Q2*\[CapitalLambda]0^6 - 73680*\[CapitalLambda]0^8) - 
-        3*mo^4*\[CapitalLambda]0^2*(100*Q2^4 + 1357*Q2^3*\[CapitalLambda]0^
-            2 + 18488*Q2^2*\[CapitalLambda]0^4 - 134496*Q2*
-           \[CapitalLambda]0^6 + 133440*\[CapitalLambda]0^8) + 
-        \[CapitalLambda]0^4*(45*Q2^5 - 3146*Q2^4*\[CapitalLambda]0^2 + 
-          28367*Q2^3*\[CapitalLambda]0^4 - 76176*Q2^2*\[CapitalLambda]0^6 + 
-          72980*Q2*\[CapitalLambda]0^8 - 21696*\[CapitalLambda]0^10) + 
-        6*mo^2*\[CapitalLambda]0^2*(2*Q2^5 - 158*Q2^4*\[CapitalLambda]0^2 - 
-          2227*Q2^3*\[CapitalLambda]0^4 + 24935*Q2^2*\[CapitalLambda]0^6 - 
-          50180*Q2*\[CapitalLambda]0^8 + 25496*\[CapitalLambda]0^10)) + 
-      mN^3*mo*(10560*mo^18 + 180*mo^16*(13*Q2 - 440*\[CapitalLambda]0^2) - 
-        72*mo^14*(23*Q2^2 + 606*Q2*\[CapitalLambda]0^2 - 
-          3600*\[CapitalLambda]0^4) - 24*mo^12*(22*Q2^3 - 
-          8561*Q2*\[CapitalLambda]0^4 + 20160*\[CapitalLambda]0^6) + 
-        3*mo^8*\[CapitalLambda]0^2*(216*Q2^4 + 413*Q2^3*\[CapitalLambda]0^2 - 
-          56760*Q2^2*\[CapitalLambda]0^4 + 190960*Q2*\[CapitalLambda]0^6 - 
-          141120*\[CapitalLambda]0^8) - 6*mo^10*(5*Q2^4 - 
-          616*Q2^3*\[CapitalLambda]0^2 - 8363*Q2^2*\[CapitalLambda]0^4 + 
-          76384*Q2*\[CapitalLambda]0^6 - 94080*\[CapitalLambda]0^8) + 
-        \[CapitalLambda]0^8*(300*Q2^5 - 2808*Q2^4*\[CapitalLambda]0^2 + 
-          7579*Q2^3*\[CapitalLambda]0^4 - 8088*Q2^2*\[CapitalLambda]0^6 + 
-          3564*Q2*\[CapitalLambda]0^8 - 480*\[CapitalLambda]0^10) + 
-        2*mo^2*\[CapitalLambda]0^6*(-90*Q2^5 + 3284*Q2^4*\[CapitalLambda]0^
-            2 - 17406*Q2^3*\[CapitalLambda]0^4 + 30225*Q2^2*
-           \[CapitalLambda]0^6 - 20112*Q2*\[CapitalLambda]0^8 + 
-          4320*\[CapitalLambda]0^10) + 12*mo^6*\[CapitalLambda]0^2*
-         (2*Q2^5 - 83*Q2^4*\[CapitalLambda]0^2 - 2663*Q2^3*
-           \[CapitalLambda]0^4 + 20215*Q2^2*\[CapitalLambda]0^6 - 
-          35140*Q2*\[CapitalLambda]0^8 + 16800*\[CapitalLambda]0^10) - 
-        2*mo^4*\[CapitalLambda]0^4*(45*Q2^5 + 1658*Q2^4*\[CapitalLambda]0^2 - 
-          27399*Q2^3*\[CapitalLambda]0^4 + 86592*Q2^2*\[CapitalLambda]0^6 - 
-          89796*Q2*\[CapitalLambda]0^8 + 28800*\[CapitalLambda]0^10)) - 
-      mN^5*mo*(31680*mo^16 + 48*mo^14*(257*Q2 - 2040*\[CapitalLambda]0^2) - 
-        84*mo^12*(27*Q2^2 + 822*Q2*\[CapitalLambda]0^2 + 
-          400*\[CapitalLambda]0^4) - 24*mo^10*(55*Q2^3 + 
-          507*Q2^2*\[CapitalLambda]0^2 + 561*Q2*\[CapitalLambda]0^4 - 
-          22288*\[CapitalLambda]0^6) + mo^8*(-105*Q2^4 + 
-          1290*Q2^3*\[CapitalLambda]0^2 + 6384*Q2^2*\[CapitalLambda]0^4 + 
-          481440*Q2*\[CapitalLambda]0^6 - 960960*\[CapitalLambda]0^8) + 
-        12*mo^6*\[CapitalLambda]0^2*(43*Q2^4 + 385*Q2^3*\[CapitalLambda]0^2 + 
-          13906*Q2^2*\[CapitalLambda]0^4 - 74320*Q2*\[CapitalLambda]0^6 + 
-          68320*\[CapitalLambda]0^8) + 12*mo^4*\[CapitalLambda]0^2*
-         (3*Q2^5 + 80*Q2^4*\[CapitalLambda]0^2 + 2455*Q2^3*
-           \[CapitalLambda]0^4 - 27895*Q2^2*\[CapitalLambda]0^6 + 
-          58262*Q2*\[CapitalLambda]0^8 - 30800*\[CapitalLambda]0^10) + 
-        \[CapitalLambda]0^6*(288*Q2^5 - 6593*Q2^4*\[CapitalLambda]0^2 + 
-          31566*Q2^3*\[CapitalLambda]0^4 - 53072*Q2^2*\[CapitalLambda]0^6 + 
-          34704*Q2*\[CapitalLambda]0^8 - 6912*\[CapitalLambda]0^10) + 
-        2*mo^2*\[CapitalLambda]0^4*(45*Q2^5 + 1622*Q2^4*\[CapitalLambda]0^2 - 
-          32844*Q2^3*\[CapitalLambda]0^4 + 114384*Q2^2*\[CapitalLambda]0^6 - 
-          126636*Q2*\[CapitalLambda]0^8 + 41280*\[CapitalLambda]0^10)) + 
-      mN^10*(-4800*mo^12 + mo^10*(-876*Q2 + 768*\[CapitalLambda]0^2) + 
-        6*mo^8*(465*Q2^2 + 1610*Q2*\[CapitalLambda]0^2 + 
-          2016*\[CapitalLambda]0^4) + 6*mo^6*(585*Q2^3 + 
-          2268*Q2^2*\[CapitalLambda]0^2 + 5980*Q2*\[CapitalLambda]0^4 + 
-          17216*\[CapitalLambda]0^6) + mo^4*(-933*Q2^4 + 
-          11418*Q2^3*\[CapitalLambda]0^2 + 38970*Q2^2*\[CapitalLambda]0^4 + 
-          214880*Q2*\[CapitalLambda]0^6 - 539136*\[CapitalLambda]0^8) + 
-        \[CapitalLambda]0^2*(66*Q2^5 - 5571*Q2^4*\[CapitalLambda]0^2 + 
-          76188*Q2^3*\[CapitalLambda]0^4 - 300038*Q2^2*\[CapitalLambda]0^6 + 
-          404724*Q2*\[CapitalLambda]0^8 - 161280*\[CapitalLambda]0^10) + 
-        2*mo^2*(9*Q2^5 - 1755*Q2^4*\[CapitalLambda]0^2 + 
-          13509*Q2^3*\[CapitalLambda]0^4 + 83532*Q2^2*\[CapitalLambda]0^6 - 
-          384070*Q2*\[CapitalLambda]0^8 + 282240*\[CapitalLambda]0^10)) + 
-      mN^8*(24000*mo^14 + 24*mo^12*(1095*Q2 - 496*\[CapitalLambda]0^2) + 
-        48*mo^10*(255*Q2^2 + 47*Q2*\[CapitalLambda]0^2 + 
-          84*\[CapitalLambda]0^4) + 12*mo^8*(275*Q2^3 + 
-          799*Q2^2*\[CapitalLambda]0^2 + 2094*Q2*\[CapitalLambda]0^4 + 
-          4352*\[CapitalLambda]0^6) + 12*mo^6*(65*Q2^4 + 
-          438*Q2^3*\[CapitalLambda]0^2 + 2056*Q2^2*\[CapitalLambda]0^4 + 
-          12944*Q2*\[CapitalLambda]0^6 - 27632*\[CapitalLambda]0^8) + 
-        \[CapitalLambda]0^4*(-333*Q2^5 + 10832*Q2^4*\[CapitalLambda]0^2 - 
-          77434*Q2^3*\[CapitalLambda]0^4 + 183420*Q2^2*\[CapitalLambda]0^6 - 
-          158120*Q2*\[CapitalLambda]0^8 + 39168*\[CapitalLambda]0^10) + 
-        3*mo^4*(-15*Q2^5 + 682*Q2^4*\[CapitalLambda]0^2 + 
-          3750*Q2^3*\[CapitalLambda]0^4 + 40128*Q2^2*\[CapitalLambda]0^6 - 
-          222008*Q2*\[CapitalLambda]0^8 + 150400*\[CapitalLambda]0^10) + 
-        mo^2*(-198*Q2^5*\[CapitalLambda]0^2 + 4428*Q2^4*\[CapitalLambda]0^4 + 
-          42492*Q2^3*\[CapitalLambda]0^6 - 372872*Q2^2*\[CapitalLambda]0^8 + 
-          605040*Q2*\[CapitalLambda]0^10 - 227136*\[CapitalLambda]0^12))) + 
-    3*mm^4*(880*mN^24 + 384*mN^23*mo - 16*mN^22*(280*mo^2 - 49*Q2 + 
-        495*\[CapitalLambda]0^2) - 2*mN^21*mo*(560*mo^2 - 21*Q2 + 
-        1144*\[CapitalLambda]0^2) + mN^20*(8400*mo^4 + 270*Q2^2 - 
-        8332*Q2*\[CapitalLambda]0^2 + 31104*\[CapitalLambda]0^4 - 
-        28*mo^2*(169*Q2 - 864*\[CapitalLambda]0^2)) + 
-      2*mN^19*mo*(-400*mo^4 - 39*Q2^2 + 163*Q2*\[CapitalLambda]0^2 + 
-        2072*\[CapitalLambda]0^4 + mo^2*(76*Q2 + 560*\[CapitalLambda]0^2)) + 
-      mN^17*mo*(5760*mo^6 - 15*Q2^3 + 1073*Q2^2*\[CapitalLambda]0^2 - 
-        6105*Q2*\[CapitalLambda]0^4 + 1920*\[CapitalLambda]0^6 - 
-        2*mo^4*(949*Q2 - 5280*\[CapitalLambda]0^2) + 
-        2*mo^2*(249*Q2^2 - 3205*Q2*\[CapitalLambda]0^2 + 
-          5072*\[CapitalLambda]0^4)) - mN^18*(6400*mo^6 - 45*Q2^3 + 
-        3551*Q2^2*\[CapitalLambda]0^2 - 36047*Q2*\[CapitalLambda]0^4 + 
-        69888*\[CapitalLambda]0^6 - 20*mo^4*(555*Q2 - 
-          944*\[CapitalLambda]0^2) + 4*mo^2*(471*Q2^2 - 
-          7646*Q2*\[CapitalLambda]0^2 + 10720*\[CapitalLambda]0^4)) + 
-      mN^16*(1120*mo^8 + 3*Q2^4 - 771*Q2^3*\[CapitalLambda]0^2 + 
-        17293*Q2^2*\[CapitalLambda]0^4 - 84512*Q2*\[CapitalLambda]0^6 + 
-        98784*\[CapitalLambda]0^8 - 16*mo^6*(727*Q2 + 
-          240*\[CapitalLambda]0^2) + mo^4*(5322*Q2^2 - 
-          34000*Q2*\[CapitalLambda]0^2 - 8352*\[CapitalLambda]0^4) + 
-        mo^2*(-342*Q2^3 + 15370*Q2^2*\[CapitalLambda]0^2 - 
-          63448*Q2*\[CapitalLambda]0^4 + 5376*\[CapitalLambda]0^6)) - 
-      2*mN^15*mo*(2240*mo^8 - 151*Q2^3*\[CapitalLambda]0^2 + 
-        3486*Q2^2*\[CapitalLambda]0^4 - 13528*Q2*\[CapitalLambda]0^6 + 
-        9408*\[CapitalLambda]0^8 - 32*mo^6*(87*Q2 - 
-          130*\[CapitalLambda]0^2) + 12*mo^4*(53*Q2^2 - 
-          765*Q2*\[CapitalLambda]0^2 + 588*\[CapitalLambda]0^4) + 
-        mo^2*(-54*Q2^3 + 2720*Q2^2*\[CapitalLambda]0^2 - 
-          14708*Q2*\[CapitalLambda]0^4 + 9360*\[CapitalLambda]0^6)) + 
-      mN^14*(-83*Q2^4*\[CapitalLambda]0^2 + 4326*Q2^3*\[CapitalLambda]0^4 - 
-        42632*Q2^2*\[CapitalLambda]0^6 + 118892*Q2*\[CapitalLambda]0^8 - 
-        90720*\[CapitalLambda]0^10 + 16*mo^8*(217*Q2 + 
-          270*\[CapitalLambda]0^2) - 16*mo^6*(453*Q2^2 - 
-          268*Q2*\[CapitalLambda]0^2 - 774*\[CapitalLambda]0^4) + 
-        4*mo^4*(276*Q2^3 - 5491*Q2^2*\[CapitalLambda]0^2 + 
-          1713*Q2*\[CapitalLambda]0^4 + 7304*\[CapitalLambda]0^6) - 
-        4*mo^2*(6*Q2^4 - 945*Q2^3*\[CapitalLambda]0^2 + 
-          9350*Q2^2*\[CapitalLambda]0^4 - 6456*Q2*\[CapitalLambda]0^6 - 
-          20832*\[CapitalLambda]0^8)) + Q2^2*(mo^2 - \[CapitalLambda]0^2)^2*
-       (66*mo^16 + mo^14*(30*Q2 - 418*\[CapitalLambda]0^2) + 
-        4*mo^2*\[CapitalLambda]0^8*(4*Q2 - 7*\[CapitalLambda]0^2)*
-         (Q2 - \[CapitalLambda]0^2)^2 + \[CapitalLambda]0^10*
-         (-Q2 + \[CapitalLambda]0^2)^3 + 
-        mo^12*(3*Q2^2 - 291*Q2*\[CapitalLambda]0^2 + 
-          1123*\[CapitalLambda]0^4) + 2*mo^6*\[CapitalLambda]0^4*
-         (12*Q2^3 - 201*Q2^2*\[CapitalLambda]0^2 + 
-          543*Q2*\[CapitalLambda]0^4 - 373*\[CapitalLambda]0^6) + 
-        3*mo^4*\[CapitalLambda]0^6*(-14*Q2^3 + 86*Q2^2*\[CapitalLambda]0^2 - 
-          143*Q2*\[CapitalLambda]0^4 + 71*\[CapitalLambda]0^6) - 
-        12*mo^10*(5*Q2^2*\[CapitalLambda]0^2 - 77*Q2*\[CapitalLambda]0^4 + 
-          138*\[CapitalLambda]0^6) + mo^8*(-3*Q2^3*\[CapitalLambda]0^2 + 
-          258*Q2^2*\[CapitalLambda]0^4 - 1389*Q2*\[CapitalLambda]0^6 + 
-          1445*\[CapitalLambda]0^8)) - mN*mo*Q2*(mo^2 - \[CapitalLambda]0^2)*
-       (66*mo^18 + mo^16*(30*Q2 - 484*\[CapitalLambda]0^2) - 
-        \[CapitalLambda]0^10*(Q2 - \[CapitalLambda]0^2)^2*
-         (12*Q2^2 - 19*Q2*\[CapitalLambda]0^2 + \[CapitalLambda]0^4) + 
-        mo^14*(3*Q2^2 - 411*Q2*\[CapitalLambda]0^2 + 
-          1541*\[CapitalLambda]0^4) + mo^12*(-111*Q2^2*\[CapitalLambda]0^2 + 
-          1773*Q2*\[CapitalLambda]0^4 - 2779*\[CapitalLambda]0^6) + 
-        mo^8*\[CapitalLambda]0^4*(123*Q2^3 - 1884*Q2^2*\[CapitalLambda]0^2 + 
-          4545*Q2*\[CapitalLambda]0^4 - 2191*\[CapitalLambda]0^6) + 
-        mo^4*\[CapitalLambda]0^6*(-36*Q2^4 + 544*Q2^3*\[CapitalLambda]0^2 - 
-          1542*Q2^2*\[CapitalLambda]0^4 + 1311*Q2*\[CapitalLambda]0^6 - 
-          241*\[CapitalLambda]0^8) + mo^2*\[CapitalLambda]0^8*
-         (48*Q2^4 - 281*Q2^3*\[CapitalLambda]0^2 + 
-          477*Q2^2*\[CapitalLambda]0^4 - 273*Q2*\[CapitalLambda]0^6 + 
-          29*\[CapitalLambda]0^8) + mo^6*\[CapitalLambda]0^4*
-         (6*Q2^4 - 420*Q2^3*\[CapitalLambda]0^2 + 2376*Q2^2*
-           \[CapitalLambda]0^4 - 3225*Q2*\[CapitalLambda]0^6 + 
-          959*\[CapitalLambda]0^8) + mo^10*(-9*Q2^3*\[CapitalLambda]0^2 + 
-          732*Q2^2*\[CapitalLambda]0^4 - 3771*Q2*\[CapitalLambda]0^6 + 
-          3101*\[CapitalLambda]0^8)) - mN^13*mo*(4928*mo^10 - 
-        19*Q2^4*\[CapitalLambda]0^2 + 2190*Q2^3*\[CapitalLambda]0^4 - 
-        23152*Q2^2*\[CapitalLambda]0^6 + 56352*Q2*\[CapitalLambda]0^8 - 
-        32032*\[CapitalLambda]0^10 + 20*mo^8*(371*Q2 + 
-          232*\[CapitalLambda]0^2) - 8*mo^6*(189*Q2^2 - 
-          1557*Q2*\[CapitalLambda]0^2 - 520*\[CapitalLambda]0^4) + 
-        28*mo^4*(12*Q2^3 - 371*Q2^2*\[CapitalLambda]0^2 + 
-          781*Q2*\[CapitalLambda]0^4 + 160*\[CapitalLambda]0^6) + 
-        2*mo^2*(705*Q2^3*\[CapitalLambda]0^2 - 10329*Q2^2*\[CapitalLambda]0^
-            4 + 17592*Q2*\[CapitalLambda]0^6 + 5440*\[CapitalLambda]0^8)) + 
-      mN^12*(-1120*mo^12 - 3*Q2^5*\[CapitalLambda]0^2 + 
-        565*Q2^4*\[CapitalLambda]0^4 - 11279*Q2^3*\[CapitalLambda]0^6 + 
-        59444*Q2^2*\[CapitalLambda]0^8 - 103816*Q2*\[CapitalLambda]0^10 + 
-        53760*\[CapitalLambda]0^12 + 8*mo^10*(63*Q2 + 
-          160*\[CapitalLambda]0^2) + 4*mo^8*(819*Q2^2 + 
-          1550*Q2*\[CapitalLambda]0^2 + 992*\[CapitalLambda]0^4) + 
-        mo^6*(-1932*Q2^3 + 7160*Q2^2*\[CapitalLambda]0^2 + 
-          13816*Q2*\[CapitalLambda]0^4 + 8192*\[CapitalLambda]0^6) + 
-        mo^2*\[CapitalLambda]0^2*(442*Q2^4 - 10959*Q2^3*\[CapitalLambda]0^2 + 
-          22528*Q2^2*\[CapitalLambda]0^4 + 82528*Q2*\[CapitalLambda]0^6 - 
-          125440*\[CapitalLambda]0^8) + 2*mo^4*(42*Q2^4 - 
-          3276*Q2^3*\[CapitalLambda]0^2 + 6013*Q2^2*\[CapitalLambda]0^4 + 
-          14240*Q2*\[CapitalLambda]0^6 + 18928*\[CapitalLambda]0^8)) + 
-      mN^2*Q2*(572*mo^20 - 4*mo^18*(39*Q2 + 1210*\[CapitalLambda]0^2) - 
-        3*mo^16*(61*Q2^2 + 285*Q2*\[CapitalLambda]0^2 - 
-          6021*\[CapitalLambda]0^4) + \[CapitalLambda]0^12*
-         (Q2 - \[CapitalLambda]0^2)^2*(18*Q2^2 - 37*Q2*\[CapitalLambda]0^2 + 
-          7*\[CapitalLambda]0^4) - 6*mo^14*(4*Q2^3 - 
-          162*Q2^2*\[CapitalLambda]0^2 - 1545*Q2*\[CapitalLambda]0^4 + 
-          6496*\[CapitalLambda]0^6) + 2*mo^6*\[CapitalLambda]0^6*
-         (39*Q2^4 + 866*Q2^3*\[CapitalLambda]0^2 - 6756*Q2^2*
-           \[CapitalLambda]0^4 + 11655*Q2*\[CapitalLambda]0^6 - 
-          5424*\[CapitalLambda]0^8) - 2*mo^2*\[CapitalLambda]0^10*
-         (39*Q2^4 - 316*Q2^3*\[CapitalLambda]0^2 + 
-          675*Q2^2*\[CapitalLambda]0^4 - 522*Q2*\[CapitalLambda]0^6 + 
-          124*\[CapitalLambda]0^8) + 3*mo^4*\[CapitalLambda]0^8*
-         (20*Q2^4 - 587*Q2^3*\[CapitalLambda]0^2 + 2111*Q2^2*
-           \[CapitalLambda]0^4 - 2370*Q2*\[CapitalLambda]0^6 + 
-          792*\[CapitalLambda]0^8) - 6*mo^10*\[CapitalLambda]0^2*
-         (-3*Q2^4 + 119*Q2^3*\[CapitalLambda]0^2 + 1049*Q2^2*
-           \[CapitalLambda]0^4 - 7686*Q2*\[CapitalLambda]0^6 + 
-          8064*\[CapitalLambda]0^8) + 3*mo^12*(101*Q2^3*\[CapitalLambda]0^2 - 
-          65*Q2^2*\[CapitalLambda]0^4 - 9618*Q2*\[CapitalLambda]0^6 + 
-          17836*\[CapitalLambda]0^8) + mo^8*\[CapitalLambda]0^4*
-         (-90*Q2^4 - 95*Q2^3*\[CapitalLambda]0^2 + 14130*Q2^2*
-           \[CapitalLambda]0^4 - 42714*Q2*\[CapitalLambda]0^6 + 
-          28770*\[CapitalLambda]0^8)) - 
-      2*mN^7*(4480*mo^17 + 64*mo^15*(14*Q2 - 95*\[CapitalLambda]0^2) - 
-        4*mo^13*(189*Q2^2 + 1155*Q2*\[CapitalLambda]0^2 + 
-          3548*\[CapitalLambda]0^4) - 2*mo^11*(105*Q2^3 + 
-          328*Q2^2*\[CapitalLambda]0^2 + 4630*Q2*\[CapitalLambda]0^4 - 
-          10600*\[CapitalLambda]0^6) + mo^7*\[CapitalLambda]0^2*
-         (140*Q2^4 + 567*Q2^3*\[CapitalLambda]0^2 + 
-          6642*Q2^2*\[CapitalLambda]0^4 + 24776*Q2*\[CapitalLambda]0^6 - 
-          59360*\[CapitalLambda]0^8) + mo^9*(315*Q2^3*\[CapitalLambda]0^2 - 
-          972*Q2^2*\[CapitalLambda]0^4 + 18888*Q2*\[CapitalLambda]0^6 + 
-          23200*\[CapitalLambda]0^8) + mo^5*\[CapitalLambda]0^4*
-         (261*Q2^4 + 1305*Q2^3*\[CapitalLambda]0^2 + 11210*Q2^2*
-           \[CapitalLambda]0^4 - 58300*Q2*\[CapitalLambda]0^6 + 
-          42000*\[CapitalLambda]0^8) + mo^3*\[CapitalLambda]0^4*
-         (-12*Q2^5 + 406*Q2^4*\[CapitalLambda]0^2 + 
-          2893*Q2^3*\[CapitalLambda]0^4 - 23950*Q2^2*\[CapitalLambda]0^6 + 
-          34980*Q2*\[CapitalLambda]0^8 - 12848*\[CapitalLambda]0^10) + 
-        mo*\[CapitalLambda]0^6*(-21*Q2^5 + 864*Q2^4*\[CapitalLambda]0^2 - 
-          5410*Q2^3*\[CapitalLambda]0^4 + 10514*Q2^2*\[CapitalLambda]0^6 - 
-          7360*Q2*\[CapitalLambda]0^8 + 1600*\[CapitalLambda]0^10)) + 
-      mN^5*(5280*mo^19 + mo^17*(562*Q2 - 25200*\[CapitalLambda]0^2) - 
-        8*mo^15*(111*Q2^2 + 1585*Q2*\[CapitalLambda]0^2 - 
-          4592*\[CapitalLambda]0^4) + 12*mo^13*(-14*Q2^3 + 
-          75*Q2^2*\[CapitalLambda]0^2 + 2607*Q2*\[CapitalLambda]0^4 + 
-          1120*\[CapitalLambda]0^6) + 6*mo^11*(223*Q2^3*\[CapitalLambda]0^2 + 
-          1415*Q2^2*\[CapitalLambda]0^4 + 696*Q2*\[CapitalLambda]0^6 - 
-          17696*\[CapitalLambda]0^8) - 2*mo^7*\[CapitalLambda]0^4*
-         (115*Q2^4 + 1142*Q2^3*\[CapitalLambda]0^2 + 17742*Q2^2*
-           \[CapitalLambda]0^4 - 68604*Q2*\[CapitalLambda]0^6 + 
-          47040*\[CapitalLambda]0^8) + mo^9*\[CapitalLambda]0^2*
-         (185*Q2^4 + 284*Q2^3*\[CapitalLambda]0^2 - 
-          3808*Q2^2*\[CapitalLambda]0^4 - 98000*Q2*\[CapitalLambda]0^6 + 
-          142240*\[CapitalLambda]0^8) - 2*mo^5*\[CapitalLambda]0^4*
-         (18*Q2^5 + 214*Q2^4*\[CapitalLambda]0^2 + 3363*Q2^3*
-           \[CapitalLambda]0^4 - 27354*Q2^2*\[CapitalLambda]0^6 + 
-          42050*Q2*\[CapitalLambda]0^8 - 16512*\[CapitalLambda]0^10) + 
-        mo*\[CapitalLambda]0^8*(-84*Q2^5 + 1313*Q2^4*\[CapitalLambda]0^2 - 
-          4562*Q2^3*\[CapitalLambda]0^4 + 5672*Q2^2*\[CapitalLambda]0^6 - 
-          2706*Q2*\[CapitalLambda]0^8 + 336*\[CapitalLambda]0^10) - 
-        2*mo^3*\[CapitalLambda]0^6*(21*Q2^5 + 390*Q2^4*\[CapitalLambda]0^2 - 
-          5795*Q2^3*\[CapitalLambda]0^4 + 14795*Q2^2*\[CapitalLambda]0^6 - 
-          12128*Q2*\[CapitalLambda]0^8 + 2800*\[CapitalLambda]0^10)) + 
-      mN^9*(3200*mo^15 + 4*mo^13*(147*Q2 + 4880*\[CapitalLambda]0^2) - 
-        12*mo^11*(91*Q2^2 - 1047*Q2*\[CapitalLambda]0^2 + 
-          1896*\[CapitalLambda]0^4) - 2*mo^9*(315*Q2^3 - 
-          575*Q2^2*\[CapitalLambda]0^2 + 10435*Q2*\[CapitalLambda]0^4 + 
-          5568*\[CapitalLambda]0^6) - 2*mo^7*(725*Q2^3*\[CapitalLambda]0^2 + 
-          4090*Q2^2*\[CapitalLambda]0^4 + 6496*Q2*\[CapitalLambda]0^6 + 
-          17248*\[CapitalLambda]0^8) - 2*mo^3*\[CapitalLambda]0^4*
-         (-353*Q2^4 + 3090*Q2^3*\[CapitalLambda]0^2 + 
-          9364*Q2^2*\[CapitalLambda]0^4 - 43470*Q2*\[CapitalLambda]0^6 + 
-          27760*\[CapitalLambda]0^8) + mo^5*\[CapitalLambda]0^2*
-         (235*Q2^4 - 3827*Q2^3*\[CapitalLambda]0^2 - 
-          6792*Q2^2*\[CapitalLambda]0^4 - 38296*Q2*\[CapitalLambda]0^6 + 
-          88128*\[CapitalLambda]0^8) + mo*\[CapitalLambda]0^4*
-         (-6*Q2^5 + 1005*Q2^4*\[CapitalLambda]0^2 - 12566*Q2^3*
-           \[CapitalLambda]0^4 + 39842*Q2^2*\[CapitalLambda]0^6 - 
-          41246*Q2*\[CapitalLambda]0^8 + 13056*\[CapitalLambda]0^10)) + 
-      mN^6*(4480*mo^18 + 112*mo^16*(96*Q2 - 145*\[CapitalLambda]0^2) + 
-        16*mo^14*(243*Q2^2 - 2200*Q2*\[CapitalLambda]0^2 + 
-          1118*\[CapitalLambda]0^4) - 4*mo^12*(42*Q2^3 + 
-          5015*Q2^2*\[CapitalLambda]0^2 - 6513*Q2*\[CapitalLambda]0^4 + 
-          1176*\[CapitalLambda]0^6) - 4*mo^10*(42*Q2^4 + 
-          981*Q2^3*\[CapitalLambda]0^2 - 3865*Q2^2*\[CapitalLambda]0^4 - 
-          1768*Q2*\[CapitalLambda]0^6 - 2576*\[CapitalLambda]0^8) + 
-        mo^8*(-25*Q2^4*\[CapitalLambda]0^2 + 4560*Q2^3*\[CapitalLambda]0^4 + 
-          7980*Q2^2*\[CapitalLambda]0^6 + 25412*Q2*\[CapitalLambda]0^8 - 
-          34720*\[CapitalLambda]0^10) + 2*mo^4*\[CapitalLambda]0^4*
-         (30*Q2^5 + 225*Q2^4*\[CapitalLambda]0^2 + 3259*Q2^3*
-           \[CapitalLambda]0^4 - 25640*Q2^2*\[CapitalLambda]0^6 + 
-          33190*Q2*\[CapitalLambda]0^8 - 8624*\[CapitalLambda]0^10) + 
-        \[CapitalLambda]0^8*(124*Q2^5 - 1457*Q2^4*\[CapitalLambda]0^2 + 
-          4746*Q2^3*\[CapitalLambda]0^4 - 5888*Q2^2*\[CapitalLambda]0^6 + 
-          2732*Q2*\[CapitalLambda]0^8 - 304*\[CapitalLambda]0^10) + 
-        2*mo^2*\[CapitalLambda]0^6*(39*Q2^5 + 494*Q2^4*\[CapitalLambda]0^2 - 
-          6538*Q2^3*\[CapitalLambda]0^4 + 15380*Q2^2*\[CapitalLambda]0^6 - 
-          10976*Q2*\[CapitalLambda]0^8 + 1792*\[CapitalLambda]0^10) + 
-        2*mo^6*\[CapitalLambda]0^2*(30*Q2^5 + 331*Q2^4*\[CapitalLambda]0^2 + 
-          1380*Q2^3*\[CapitalLambda]0^4 + 9762*Q2^2*\[CapitalLambda]0^6 - 
-          40624*Q2*\[CapitalLambda]0^8 + 18480*\[CapitalLambda]0^10)) + 
-      mN^10*(6400*mo^14 + 8*mo^12*(889*Q2 - 24*\[CapitalLambda]0^2) + 
-        8*mo^10*(483*Q2^2 + 454*Q2*\[CapitalLambda]0^2 + 
-          360*\[CapitalLambda]0^4) + 2*mo^8*(945*Q2^3 + 
-          2415*Q2^2*\[CapitalLambda]0^2 + 3277*Q2*\[CapitalLambda]0^4 + 
-          2592*\[CapitalLambda]0^6) + mo^6*(-168*Q2^4 + 
-          3396*Q2^3*\[CapitalLambda]0^2 + 7070*Q2^2*\[CapitalLambda]0^4 + 
-          11200*Q2*\[CapitalLambda]0^6 + 26688*\[CapitalLambda]0^8) + 
-        mo^4*(-899*Q2^4*\[CapitalLambda]0^2 + 5213*Q2^3*\[CapitalLambda]0^4 + 
-          11906*Q2^2*\[CapitalLambda]0^6 + 45388*Q2*\[CapitalLambda]0^8 - 
-          100608*\[CapitalLambda]0^10) + \[CapitalLambda]0^4*
-         (30*Q2^5 - 1571*Q2^4*\[CapitalLambda]0^2 + 15496*Q2^3*
-           \[CapitalLambda]0^4 - 48550*Q2^2*\[CapitalLambda]0^6 + 
-          55682*Q2*\[CapitalLambda]0^8 - 19584*\[CapitalLambda]0^10) + 
-        2*mo^2*\[CapitalLambda]0^2*(9*Q2^5 - 794*Q2^4*\[CapitalLambda]0^2 + 
-          4035*Q2^3*\[CapitalLambda]0^4 + 16860*Q2^2*\[CapitalLambda]0^6 - 
-          65104*Q2*\[CapitalLambda]0^8 + 41664*\[CapitalLambda]0^10)) + 
-      mN^11*(6720*mo^13 + 16*mo^11*(259*Q2 - 732*\[CapitalLambda]0^2) - 
-        4*mo^9*(105*Q2^2 + 3035*Q2*\[CapitalLambda]0^2 + 
-          1496*\[CapitalLambda]0^4) + mo^7*(588*Q2^3 - 
-          8336*Q2^2*\[CapitalLambda]0^2 - 8040*Q2*\[CapitalLambda]0^4 - 
-          7744*\[CapitalLambda]0^6) + mo*\[CapitalLambda]0^4*
-         (-244*Q2^4 + 7421*Q2^3*\[CapitalLambda]0^2 - 
-          41000*Q2^2*\[CapitalLambda]0^4 + 64044*Q2*\[CapitalLambda]0^6 - 
-          27552*\[CapitalLambda]0^8) + 6*mo^5*(401*Q2^3*\[CapitalLambda]0^2 - 
-          2145*Q2^2*\[CapitalLambda]0^4 - 1568*Q2*\[CapitalLambda]0^6 - 
-          4000*\[CapitalLambda]0^8) + mo^3*(-104*Q2^4*\[CapitalLambda]0^2 + 
-          5893*Q2^3*\[CapitalLambda]0^4 - 21874*Q2^2*\[CapitalLambda]0^6 - 
-          25992*Q2*\[CapitalLambda]0^8 + 54400*\[CapitalLambda]0^10)) + 
-      mN^3*(-1056*mo^21 + 40*mo^19*(3*Q2 + 220*\[CapitalLambda]0^2) + 
-        6*mo^17*(43*Q2^2 + 441*Q2*\[CapitalLambda]0^2 - 
-          5400*\[CapitalLambda]0^4) + 4*mo^15*(9*Q2^3 - 
-          372*Q2^2*\[CapitalLambda]0^2 - 5078*Q2*\[CapitalLambda]0^4 + 
-          17280*\[CapitalLambda]0^6) + mo^9*\[CapitalLambda]0^4*
-         (422*Q2^4 + 1037*Q2^3*\[CapitalLambda]0^2 - 39300*Q2^2*
-           \[CapitalLambda]0^4 + 91420*Q2*\[CapitalLambda]0^6 - 
-          50400*\[CapitalLambda]0^8) - 2*mo^13*
-         (335*Q2^3*\[CapitalLambda]0^2 + 443*Q2^2*\[CapitalLambda]0^4 - 
-          29904*Q2*\[CapitalLambda]0^6 + 47040*\[CapitalLambda]0^8) + 
-        mo*\[CapitalLambda]0^10*(60*Q2^5 - 408*Q2^4*\[CapitalLambda]0^2 + 
-          841*Q2^3*\[CapitalLambda]0^4 - 682*Q2^2*\[CapitalLambda]0^6 + 
-          222*Q2*\[CapitalLambda]0^8 - 16*\[CapitalLambda]0^10) + 
-        mo^3*\[CapitalLambda]0^8*(-44*Q2^5 + 1258*Q2^4*\[CapitalLambda]0^2 - 
-          4935*Q2^3*\[CapitalLambda]0^4 + 6486*Q2^2*\[CapitalLambda]0^6 - 
-          3248*Q2*\[CapitalLambda]0^8 + 480*\[CapitalLambda]0^10) - 
-        2*mo^5*\[CapitalLambda]0^6*(21*Q2^5 + 462*Q2^4*\[CapitalLambda]0^2 - 
-          5084*Q2^3*\[CapitalLambda]0^4 + 11711*Q2^2*\[CapitalLambda]0^6 - 
-          9096*Q2*\[CapitalLambda]0^8 + 2160*\[CapitalLambda]0^10) + 
-        2*mo^7*\[CapitalLambda]0^4*(12*Q2^5 - 154*Q2^4*\[CapitalLambda]0^2 - 
-          4147*Q2^3*\[CapitalLambda]0^4 + 20986*Q2^2*\[CapitalLambda]0^6 - 
-          26628*Q2*\[CapitalLambda]0^8 + 9600*\[CapitalLambda]0^10) + 
-        mo^11*(-64*Q2^4*\[CapitalLambda]0^2 + 1817*Q2^3*\[CapitalLambda]0^4 + 
-          17062*Q2^2*\[CapitalLambda]0^6 - 95592*Q2*\[CapitalLambda]0^8 + 
-          84672*\[CapitalLambda]0^10)) + 
-      mN^4*(-880*mo^20 + mo^18*(-3932*Q2 + 5760*\[CapitalLambda]0^2) - 
-        2*mo^16*(381*Q2^2 - 11386*Q2*\[CapitalLambda]0^2 + 
-          7776*\[CapitalLambda]0^4) + 4*mo^14*(99*Q2^3 + 
-          2726*Q2^2*\[CapitalLambda]0^2 - 12382*Q2*\[CapitalLambda]0^4 + 
-          5376*\[CapitalLambda]0^6) + mo^10*Q2*\[CapitalLambda]0^2*
-         (-442*Q2^3 - 6923*Q2^2*\[CapitalLambda]0^2 + 
-          26480*Q2*\[CapitalLambda]0^4 + 12992*\[CapitalLambda]0^6) + 
-        6*mo^12*(14*Q2^4 + 80*Q2^3*\[CapitalLambda]0^2 - 
-          5273*Q2^2*\[CapitalLambda]0^4 + 6944*Q2*\[CapitalLambda]0^6 - 
-          2352*\[CapitalLambda]0^8) + Q2*\[CapitalLambda]0^10*
-         (-75*Q2^4 + 493*Q2^3*\[CapitalLambda]0^2 - 
-          987*Q2^2*\[CapitalLambda]0^4 + 758*Q2*\[CapitalLambda]0^6 - 
-          172*\[CapitalLambda]0^8) + 2*mo^6*\[CapitalLambda]0^4*
-         (30*Q2^5 + 439*Q2^4*\[CapitalLambda]0^2 + 3353*Q2^3*
-           \[CapitalLambda]0^4 - 22660*Q2^2*\[CapitalLambda]0^6 + 
-          22764*Q2*\[CapitalLambda]0^8 - 2304*\[CapitalLambda]0^10) + 
-        mo^2*\[CapitalLambda]0^8*(60*Q2^5 - 1648*Q2^4*\[CapitalLambda]0^2 + 
-          6397*Q2^3*\[CapitalLambda]0^4 - 7792*Q2^2*\[CapitalLambda]0^6 + 
-          2876*Q2*\[CapitalLambda]0^8 - 128*\[CapitalLambda]0^10) + 
-        2*mo^4*\[CapitalLambda]0^6*(15*Q2^5 + 522*Q2^4*\[CapitalLambda]0^2 - 
-          6707*Q2^3*\[CapitalLambda]0^4 + 14633*Q2^2*\[CapitalLambda]0^6 - 
-          8576*Q2*\[CapitalLambda]0^8 + 648*\[CapitalLambda]0^10) + 
-        mo^8*(-45*Q2^5*\[CapitalLambda]0^2 - 251*Q2^4*\[CapitalLambda]0^4 + 
-          7361*Q2^3*\[CapitalLambda]0^6 + 18104*Q2^2*\[CapitalLambda]0^8 - 
-          55048*Q2*\[CapitalLambda]0^10 + 6720*\[CapitalLambda]0^12)) + 
-      mN^8*(-8400*mo^16 - 80*mo^14*(175*Q2 - 144*\[CapitalLambda]0^2) - 
-        4*mo^12*(1659*Q2^2 - 3724*Q2*\[CapitalLambda]0^2 + 
-          360*\[CapitalLambda]0^4) + mo^10*(-840*Q2^3 + 
-          8716*Q2^2*\[CapitalLambda]0^2 + 5592*Q2*\[CapitalLambda]0^4 + 
-          5120*\[CapitalLambda]0^6) + 2*mo^8*(105*Q2^4 + 
-          1485*Q2^3*\[CapitalLambda]0^2 + 2947*Q2^2*\[CapitalLambda]0^4 + 
-          4624*Q2*\[CapitalLambda]0^6 + 8112*\[CapitalLambda]0^8) + 
-        mo^6*(770*Q2^4*\[CapitalLambda]0^2 + 2442*Q2^3*\[CapitalLambda]0^4 + 
-          6912*Q2^2*\[CapitalLambda]0^6 + 34016*Q2*\[CapitalLambda]0^8 - 
-          68352*\[CapitalLambda]0^10) + 2*mo^2*\[CapitalLambda]0^4*
-         (-45*Q2^5 + 658*Q2^4*\[CapitalLambda]0^2 + 
-          3765*Q2^3*\[CapitalLambda]0^4 - 28126*Q2^2*\[CapitalLambda]0^6 + 
-          39388*Q2*\[CapitalLambda]0^8 - 13440*\[CapitalLambda]0^10) + 
-        \[CapitalLambda]0^6*(-93*Q2^5 + 2120*Q2^4*\[CapitalLambda]0^2 - 
-          11672*Q2^3*\[CapitalLambda]0^4 + 22906*Q2^2*\[CapitalLambda]0^6 - 
-          17312*Q2*\[CapitalLambda]0^8 + 3888*\[CapitalLambda]0^10) + 
-        mo^4*(-45*Q2^5*\[CapitalLambda]0^2 + 945*Q2^4*\[CapitalLambda]0^4 + 
-          2910*Q2^3*\[CapitalLambda]0^6 + 23164*Q2^2*\[CapitalLambda]0^8 - 
-          108912*Q2*\[CapitalLambda]0^10 + 68320*\[CapitalLambda]0^12))))*
+-(((mN + mo)*(16*mN^6 + 16*mm^2*mN^3*mo - 16*mN^5*mo + 16*mN^4*mo^2 - 
+     16*mN^3*mo^3 - 7*mm^2*mN^2*Q2 + 5*mN^4*Q2 + mm^2*mN*mo*Q2 - 
+     15*mN^3*mo*Q2 + 11*mN^2*mo^2*Q2 - mN*mo^3*Q2 - mm^2*Q2^2 + mN^2*Q2^2 - 
+     2*mN*mo*Q2^2 + mo^2*Q2^2)*\[CapitalLambda]0^4*DiscB[mN^2, mm, mo])/
+   (mN*(4*mN^2 + Q2)^2*(Q2 + \[CapitalLambda]0^2)^2)) + 
+ ((mN + mo)^2*\[CapitalLambda]0^6*(48*mm^12*mN^2 - 288*mm^10*mN^4 + 
+    720*mm^8*mN^6 - 960*mm^6*mN^8 + 720*mm^4*mN^10 - 288*mm^2*mN^12 + 
+    48*mN^14 + 96*mm^10*mN^3*mo - 480*mm^8*mN^5*mo + 960*mm^6*mN^7*mo - 
+    960*mm^4*mN^9*mo + 480*mm^2*mN^11*mo - 96*mN^13*mo - 
+    288*mm^10*mN^2*mo^2 + 1056*mm^8*mN^4*mo^2 - 1344*mm^6*mN^6*mo^2 + 
+    576*mm^4*mN^8*mo^2 + 96*mm^2*mN^10*mo^2 - 96*mN^12*mo^2 - 
+    480*mm^8*mN^3*mo^3 + 1152*mm^6*mN^5*mo^3 - 576*mm^4*mN^7*mo^3 - 
+    384*mm^2*mN^9*mo^3 + 288*mN^11*mo^3 + 720*mm^8*mN^2*mo^4 - 
+    1344*mm^6*mN^4*mo^4 + 480*mm^4*mN^6*mo^4 + 192*mm^2*mN^8*mo^4 - 
+    48*mN^10*mo^4 + 960*mm^6*mN^3*mo^5 - 576*mm^4*mN^5*mo^5 - 
+    192*mm^2*mN^7*mo^5 - 192*mN^9*mo^5 - 960*mm^6*mN^2*mo^6 + 
+    576*mm^4*mN^4*mo^6 + 192*mm^2*mN^6*mo^6 + 192*mN^8*mo^6 - 
+    960*mm^4*mN^3*mo^7 - 384*mm^2*mN^5*mo^7 - 192*mN^7*mo^7 + 
+    720*mm^4*mN^2*mo^8 + 96*mm^2*mN^4*mo^8 - 48*mN^6*mo^8 + 
+    480*mm^2*mN^3*mo^9 + 288*mN^5*mo^9 - 288*mm^2*mN^2*mo^10 - 
+    96*mN^4*mo^10 - 96*mN^3*mo^11 + 48*mN^2*mo^12 - 6*mm^12*Q2 - 
+    132*mm^10*mN^2*Q2 + 606*mm^8*mN^4*Q2 - 984*mm^6*mN^6*Q2 + 
+    726*mm^4*mN^8*Q2 - 228*mm^2*mN^10*Q2 + 18*mN^12*Q2 + 24*mm^10*mN*mo*Q2 - 
+    360*mm^8*mN^3*mo*Q2 + 1008*mm^6*mN^5*mo*Q2 - 1104*mm^4*mN^7*mo*Q2 + 
+    504*mm^2*mN^9*mo*Q2 - 72*mN^11*mo*Q2 + 36*mm^10*mo^2*Q2 + 
+    636*mm^8*mN^2*mo^2*Q2 - 1368*mm^6*mN^4*mo^2*Q2 + 696*mm^4*mN^6*mo^2*Q2 - 
+    12*mm^2*mN^8*mo^2*Q2 + 12*mN^10*mo^2*Q2 - 120*mm^8*mN*mo^3*Q2 + 
+    1056*mm^6*mN^3*mo^3*Q2 - 720*mm^4*mN^5*mo^3*Q2 - 480*mm^2*mN^7*mo^3*Q2 + 
+    264*mN^9*mo^3*Q2 - 90*mm^8*mo^4*Q2 - 1224*mm^6*mN^2*mo^4*Q2 + 
+    564*mm^4*mN^4*mo^4*Q2 + 216*mm^2*mN^6*mo^4*Q2 - 234*mN^8*mo^4*Q2 + 
+    240*mm^6*mN*mo^5*Q2 - 1008*mm^4*mN^3*mo^5*Q2 - 432*mm^2*mN^5*mo^5*Q2 - 
+    336*mN^7*mo^5*Q2 + 120*mm^6*mo^6*Q2 + 1176*mm^4*mN^2*mo^6*Q2 + 
+    552*mm^2*mN^4*mo^6*Q2 + 456*mN^6*mo^6*Q2 - 240*mm^4*mN*mo^7*Q2 + 
+    288*mm^2*mN^3*mo^7*Q2 + 144*mN^5*mo^7*Q2 - 90*mm^4*mo^8*Q2 - 
+    564*mm^2*mN^2*mo^8*Q2 - 354*mN^4*mo^8*Q2 + 120*mm^2*mN*mo^9*Q2 + 
+    24*mN^3*mo^9*Q2 + 36*mm^2*mo^10*Q2 + 108*mN^2*mo^10*Q2 - 24*mN*mo^11*Q2 - 
+    6*mo^12*Q2 + 12*mm^10*Q2^2 + 150*mm^8*mN^2*Q2^2 - 384*mm^6*mN^4*Q2^2 + 
+    276*mm^4*mN^6*Q2^2 - 60*mm^2*mN^8*Q2^2 + 6*mN^10*Q2^2 - 
+    60*mm^8*mN*mo*Q2^2 + 384*mm^6*mN^3*mo*Q2^2 - 504*mm^4*mN^5*mo*Q2^2 + 
+    192*mm^2*mN^7*mo*Q2^2 - 12*mN^9*mo*Q2^2 - 42*mm^8*mo^2*Q2^2 - 
+    528*mm^6*mN^2*mo^2*Q2^2 + 300*mm^4*mN^4*mo^2*Q2^2 - 
+    96*mm^2*mN^6*mo^2*Q2^2 - 18*mN^8*mo^2*Q2^2 + 192*mm^6*mN*mo^3*Q2^2 - 
+    432*mm^4*mN^3*mo^3*Q2^2 - 288*mm^2*mN^5*mo^3*Q2^2 + 48*mN^7*mo^3*Q2^2 + 
+    48*mm^6*mo^4*Q2^2 + 588*mm^4*mN^2*mo^4*Q2^2 + 360*mm^2*mN^4*mo^4*Q2^2 + 
+    12*mN^6*mo^4*Q2^2 - 216*mm^4*mN*mo^5*Q2^2 - 72*mN^5*mo^5*Q2^2 - 
+    12*mm^4*mo^6*Q2^2 - 192*mm^2*mN^2*mo^6*Q2^2 + 12*mN^4*mo^6*Q2^2 + 
+    96*mm^2*mN*mo^7*Q2^2 + 48*mN^3*mo^7*Q2^2 - 12*mm^2*mo^8*Q2^2 - 
+    18*mN^2*mo^8*Q2^2 - 12*mN*mo^9*Q2^2 + 6*mo^10*Q2^2 - 6*mm^8*Q2^3 - 
+    72*mm^6*mN^2*Q2^3 + 42*mm^4*mN^4*Q2^3 - 12*mm^2*mN^6*Q2^3 + 
+    48*mm^6*mN*mo*Q2^3 - 120*mm^4*mN^3*mo*Q2^3 + 24*mm^2*mN^5*mo*Q2^3 + 
+    132*mm^4*mN^2*mo^2*Q2^3 + 12*mm^2*mN^4*mo^2*Q2^3 - 72*mm^4*mN*mo^3*Q2^3 - 
+    48*mm^2*mN^3*mo^3*Q2^3 + 18*mm^4*mo^4*Q2^3 + 12*mm^2*mN^2*mo^4*Q2^3 + 
+    24*mm^2*mN*mo^5*Q2^3 - 12*mm^2*mo^6*Q2^3 + 6*mm^4*mN^2*Q2^4 - 
+    12*mm^4*mN*mo*Q2^4 + 6*mm^4*mo^2*Q2^4 + 240*mm^10*mN^2*
+     \[CapitalLambda]0^2 - 1200*mm^8*mN^4*\[CapitalLambda]0^2 + 
+    2400*mm^6*mN^6*\[CapitalLambda]0^2 - 2400*mm^4*mN^8*\[CapitalLambda]0^2 + 
+    1200*mm^2*mN^10*\[CapitalLambda]0^2 - 240*mN^12*\[CapitalLambda]0^2 + 
+    480*mm^8*mN^3*mo*\[CapitalLambda]0^2 - 1920*mm^6*mN^5*mo*
+     \[CapitalLambda]0^2 + 2880*mm^4*mN^7*mo*\[CapitalLambda]0^2 - 
+    1920*mm^2*mN^9*mo*\[CapitalLambda]0^2 + 
+    480*mN^11*mo*\[CapitalLambda]0^2 - 1200*mm^8*mN^2*mo^2*
+     \[CapitalLambda]0^2 + 3840*mm^6*mN^4*mo^2*\[CapitalLambda]0^2 - 
+    4320*mm^4*mN^6*mo^2*\[CapitalLambda]0^2 + 1920*mm^2*mN^8*mo^2*
+     \[CapitalLambda]0^2 - 240*mN^10*mo^2*\[CapitalLambda]0^2 - 
+    1920*mm^6*mN^3*mo^3*\[CapitalLambda]0^2 + 3840*mm^4*mN^5*mo^3*
+     \[CapitalLambda]0^2 - 1920*mm^2*mN^7*mo^3*\[CapitalLambda]0^2 + 
+    2400*mm^6*mN^2*mo^4*\[CapitalLambda]0^2 - 4320*mm^4*mN^4*mo^4*
+     \[CapitalLambda]0^2 + 1440*mm^2*mN^6*mo^4*\[CapitalLambda]0^2 + 
+    480*mN^8*mo^4*\[CapitalLambda]0^2 + 2880*mm^4*mN^3*mo^5*
+     \[CapitalLambda]0^2 - 1920*mm^2*mN^5*mo^5*\[CapitalLambda]0^2 - 
+    960*mN^7*mo^5*\[CapitalLambda]0^2 - 2400*mm^4*mN^2*mo^6*
+     \[CapitalLambda]0^2 + 1920*mm^2*mN^4*mo^6*\[CapitalLambda]0^2 + 
+    480*mN^6*mo^6*\[CapitalLambda]0^2 - 1920*mm^2*mN^3*mo^7*
+     \[CapitalLambda]0^2 + 1200*mm^2*mN^2*mo^8*\[CapitalLambda]0^2 - 
+    240*mN^4*mo^8*\[CapitalLambda]0^2 + 480*mN^3*mo^9*\[CapitalLambda]0^2 - 
+    240*mN^2*mo^10*\[CapitalLambda]0^2 - 30*mm^10*Q2*\[CapitalLambda]0^2 - 
+    570*mm^8*mN^2*Q2*\[CapitalLambda]0^2 + 2100*mm^6*mN^4*Q2*
+     \[CapitalLambda]0^2 - 2580*mm^4*mN^6*Q2*\[CapitalLambda]0^2 + 
+    1290*mm^2*mN^8*Q2*\[CapitalLambda]0^2 - 
+    210*mN^10*Q2*\[CapitalLambda]0^2 + 120*mm^8*mN*mo*Q2*
+     \[CapitalLambda]0^2 - 1440*mm^6*mN^3*mo*Q2*\[CapitalLambda]0^2 + 
+    3120*mm^4*mN^5*mo*Q2*\[CapitalLambda]0^2 - 2400*mm^2*mN^7*mo*Q2*
+     \[CapitalLambda]0^2 + 600*mN^9*mo*Q2*\[CapitalLambda]0^2 + 
+    150*mm^8*mo^2*Q2*\[CapitalLambda]0^2 + 2280*mm^6*mN^2*mo^2*Q2*
+     \[CapitalLambda]0^2 - 4380*mm^4*mN^4*mo^2*Q2*\[CapitalLambda]0^2 + 
+    2280*mm^2*mN^6*mo^2*Q2*\[CapitalLambda]0^2 - 
+    330*mN^8*mo^2*Q2*\[CapitalLambda]0^2 - 480*mm^6*mN*mo^3*Q2*
+     \[CapitalLambda]0^2 + 3360*mm^4*mN^3*mo^3*Q2*\[CapitalLambda]0^2 - 
+    2400*mm^2*mN^5*mo^3*Q2*\[CapitalLambda]0^2 - 
+    480*mN^7*mo^3*Q2*\[CapitalLambda]0^2 - 300*mm^6*mo^4*Q2*
+     \[CapitalLambda]0^2 - 3420*mm^4*mN^2*mo^4*Q2*\[CapitalLambda]0^2 + 
+    1980*mm^2*mN^4*mo^4*Q2*\[CapitalLambda]0^2 + 
+    780*mN^6*mo^4*Q2*\[CapitalLambda]0^2 + 720*mm^4*mN*mo^5*Q2*
+     \[CapitalLambda]0^2 - 2400*mm^2*mN^3*mo^5*Q2*\[CapitalLambda]0^2 - 
+    720*mN^5*mo^5*Q2*\[CapitalLambda]0^2 + 300*mm^4*mo^6*Q2*
+     \[CapitalLambda]0^2 + 2280*mm^2*mN^2*mo^6*Q2*\[CapitalLambda]0^2 + 
+    300*mN^4*mo^6*Q2*\[CapitalLambda]0^2 - 480*mm^2*mN*mo^7*Q2*
+     \[CapitalLambda]0^2 + 480*mN^3*mo^7*Q2*\[CapitalLambda]0^2 - 
+    150*mm^2*mo^8*Q2*\[CapitalLambda]0^2 - 570*mN^2*mo^8*Q2*
+     \[CapitalLambda]0^2 + 120*mN*mo^9*Q2*\[CapitalLambda]0^2 + 
+    30*mo^10*Q2*\[CapitalLambda]0^2 + 45*mm^8*Q2^2*\[CapitalLambda]0^2 + 
+    540*mm^6*mN^2*Q2^2*\[CapitalLambda]0^2 - 1050*mm^4*mN^4*Q2^2*
+     \[CapitalLambda]0^2 + 540*mm^2*mN^6*Q2^2*\[CapitalLambda]0^2 - 
+    75*mN^8*Q2^2*\[CapitalLambda]0^2 - 240*mm^6*mN*mo*Q2^2*
+     \[CapitalLambda]0^2 + 1200*mm^4*mN^3*mo*Q2^2*\[CapitalLambda]0^2 - 
+    1200*mm^2*mN^5*mo*Q2^2*\[CapitalLambda]0^2 + 
+    240*mN^7*mo*Q2^2*\[CapitalLambda]0^2 - 120*mm^6*mo^2*Q2^2*
+     \[CapitalLambda]0^2 - 1560*mm^4*mN^2*mo^2*Q2^2*\[CapitalLambda]0^2 + 
+    1080*mm^2*mN^4*mo^2*Q2^2*\[CapitalLambda]0^2 - 
+    120*mN^6*mo^2*Q2^2*\[CapitalLambda]0^2 + 600*mm^4*mN*mo^3*Q2^2*
+     \[CapitalLambda]0^2 - 1200*mm^2*mN^3*mo^3*Q2^2*\[CapitalLambda]0^2 - 
+    360*mN^5*mo^3*Q2^2*\[CapitalLambda]0^2 + 90*mm^4*mo^4*Q2^2*
+     \[CapitalLambda]0^2 + 1260*mm^2*mN^2*mo^4*Q2^2*\[CapitalLambda]0^2 + 
+    450*mN^4*mo^4*Q2^2*\[CapitalLambda]0^2 - 480*mm^2*mN*mo^5*Q2^2*
+     \[CapitalLambda]0^2 - 240*mN^2*mo^6*Q2^2*\[CapitalLambda]0^2 + 
+    120*mN*mo^7*Q2^2*\[CapitalLambda]0^2 - 15*mo^8*Q2^2*\[CapitalLambda]0^2 - 
+    15*mm^6*Q2^3*\[CapitalLambda]0^2 - 195*mm^4*mN^2*Q2^3*
+     \[CapitalLambda]0^2 + 105*mm^2*mN^4*Q2^3*\[CapitalLambda]0^2 - 
+    15*mN^6*Q2^3*\[CapitalLambda]0^2 + 150*mm^4*mN*mo*Q2^3*
+     \[CapitalLambda]0^2 - 300*mm^2*mN^3*mo*Q2^3*\[CapitalLambda]0^2 + 
+    30*mN^5*mo*Q2^3*\[CapitalLambda]0^2 - 15*mm^4*mo^2*Q2^3*
+     \[CapitalLambda]0^2 + 330*mm^2*mN^2*mo^2*Q2^3*\[CapitalLambda]0^2 + 
+    15*mN^4*mo^2*Q2^3*\[CapitalLambda]0^2 - 180*mm^2*mN*mo^3*Q2^3*
+     \[CapitalLambda]0^2 - 60*mN^3*mo^3*Q2^3*\[CapitalLambda]0^2 + 
+    45*mm^2*mo^4*Q2^3*\[CapitalLambda]0^2 + 15*mN^2*mo^4*Q2^3*
+     \[CapitalLambda]0^2 + 30*mN*mo^5*Q2^3*\[CapitalLambda]0^2 - 
+    15*mo^6*Q2^3*\[CapitalLambda]0^2 + 15*mm^2*mN^2*Q2^4*
+     \[CapitalLambda]0^2 - 30*mm^2*mN*mo*Q2^4*\[CapitalLambda]0^2 + 
+    15*mm^2*mo^2*Q2^4*\[CapitalLambda]0^2 + 480*mm^8*mN^2*
+     \[CapitalLambda]0^4 - 1920*mm^6*mN^4*\[CapitalLambda]0^4 + 
+    2880*mm^4*mN^6*\[CapitalLambda]0^4 - 1920*mm^2*mN^8*\[CapitalLambda]0^4 + 
+    480*mN^10*\[CapitalLambda]0^4 + 960*mm^6*mN^3*mo*\[CapitalLambda]0^4 - 
+    2880*mm^4*mN^5*mo*\[CapitalLambda]0^4 + 2880*mm^2*mN^7*mo*
+     \[CapitalLambda]0^4 - 960*mN^9*mo*\[CapitalLambda]0^4 - 
+    1920*mm^6*mN^2*mo^2*\[CapitalLambda]0^4 + 5248*mm^4*mN^4*mo^2*
+     \[CapitalLambda]0^4 - 4736*mm^2*mN^6*mo^2*\[CapitalLambda]0^4 + 
+    1408*mN^8*mo^2*\[CapitalLambda]0^4 - 2880*mm^4*mN^3*mo^3*
+     \[CapitalLambda]0^4 + 4736*mm^2*mN^5*mo^3*\[CapitalLambda]0^4 - 
+    1856*mN^7*mo^3*\[CapitalLambda]0^4 + 2880*mm^4*mN^2*mo^4*
+     \[CapitalLambda]0^4 - 4736*mm^2*mN^4*mo^4*\[CapitalLambda]0^4 + 
+    1856*mN^6*mo^4*\[CapitalLambda]0^4 + 2880*mm^2*mN^3*mo^5*
+     \[CapitalLambda]0^4 - 1856*mN^5*mo^5*\[CapitalLambda]0^4 - 
+    1920*mm^2*mN^2*mo^6*\[CapitalLambda]0^4 + 
+    1408*mN^4*mo^6*\[CapitalLambda]0^4 - 960*mN^3*mo^7*\[CapitalLambda]0^4 + 
+    480*mN^2*mo^8*\[CapitalLambda]0^4 - 60*mm^8*Q2*\[CapitalLambda]0^4 - 
+    960*mm^6*mN^2*Q2*\[CapitalLambda]0^4 + 2632*mm^4*mN^4*Q2*
+     \[CapitalLambda]0^4 - 2144*mm^2*mN^6*Q2*\[CapitalLambda]0^4 + 
+    532*mN^8*Q2*\[CapitalLambda]0^4 + 240*mm^6*mN*mo*Q2*\[CapitalLambda]0^4 - 
+    2160*mm^4*mN^3*mo*Q2*\[CapitalLambda]0^4 + 3344*mm^2*mN^5*mo*Q2*
+     \[CapitalLambda]0^4 - 1424*mN^7*mo*Q2*\[CapitalLambda]0^4 + 
+    240*mm^6*mo^2*Q2*\[CapitalLambda]0^4 + 3056*mm^4*mN^2*mo^2*Q2*
+     \[CapitalLambda]0^4 - 4848*mm^2*mN^4*mo^2*Q2*\[CapitalLambda]0^4 + 
+    2064*mN^6*mo^2*Q2*\[CapitalLambda]0^4 - 720*mm^4*mN*mo^3*Q2*
+     \[CapitalLambda]0^4 + 3808*mm^2*mN^3*mo^3*Q2*\[CapitalLambda]0^4 - 
+    2320*mN^5*mo^3*Q2*\[CapitalLambda]0^4 - 360*mm^4*mo^4*Q2*
+     \[CapitalLambda]0^4 - 3232*mm^2*mN^2*mo^4*Q2*\[CapitalLambda]0^4 + 
+    1960*mN^4*mo^4*Q2*\[CapitalLambda]0^4 + 720*mm^2*mN*mo^5*Q2*
+     \[CapitalLambda]0^4 - 1648*mN^3*mo^5*Q2*\[CapitalLambda]0^4 + 
+    240*mm^2*mo^6*Q2*\[CapitalLambda]0^4 + 1136*mN^2*mo^6*Q2*
+     \[CapitalLambda]0^4 - 240*mN*mo^7*Q2*\[CapitalLambda]0^4 - 
+    60*mo^8*Q2*\[CapitalLambda]0^4 + 60*mm^6*Q2^2*\[CapitalLambda]0^4 + 
+    704*mm^4*mN^2*Q2^2*\[CapitalLambda]0^4 - 916*mm^2*mN^4*Q2^2*
+     \[CapitalLambda]0^4 + 280*mN^6*Q2^2*\[CapitalLambda]0^4 - 
+    360*mm^4*mN*mo*Q2^2*\[CapitalLambda]0^4 + 1312*mm^2*mN^3*mo*Q2^2*
+     \[CapitalLambda]0^4 - 824*mN^5*mo*Q2^2*\[CapitalLambda]0^4 - 
+    104*mm^4*mo^2*Q2^2*\[CapitalLambda]0^4 - 1608*mm^2*mN^2*mo^2*Q2^2*
+     \[CapitalLambda]0^4 + 1040*mN^4*mo^2*Q2^2*\[CapitalLambda]0^4 + 
+    656*mm^2*mN*mo^3*Q2^2*\[CapitalLambda]0^4 - 992*mN^3*mo^3*Q2^2*
+     \[CapitalLambda]0^4 + 28*mm^2*mo^4*Q2^2*\[CapitalLambda]0^4 + 
+    776*mN^2*mo^4*Q2^2*\[CapitalLambda]0^4 - 296*mN*mo^5*Q2^2*
+     \[CapitalLambda]0^4 + 16*mo^6*Q2^2*\[CapitalLambda]0^4 - 
+    11*mm^4*Q2^3*\[CapitalLambda]0^4 - 170*mm^2*mN^2*Q2^3*
+     \[CapitalLambda]0^4 + 77*mN^4*Q2^3*\[CapitalLambda]0^4 + 
+    164*mm^2*mN*mo*Q2^3*\[CapitalLambda]0^4 - 220*mN^3*mo*Q2^3*
+     \[CapitalLambda]0^4 - 38*mm^2*mo^2*Q2^3*\[CapitalLambda]0^4 + 
+    242*mN^2*mo^2*Q2^3*\[CapitalLambda]0^4 - 132*mN*mo^3*Q2^3*
+     \[CapitalLambda]0^4 + 33*mo^4*Q2^3*\[CapitalLambda]0^4 + 
+    11*mN^2*Q2^4*\[CapitalLambda]0^4 - 22*mN*mo*Q2^4*\[CapitalLambda]0^4 + 
+    11*mo^2*Q2^4*\[CapitalLambda]0^4 + 480*mm^6*mN^2*\[CapitalLambda]0^6 - 
+    1440*mm^4*mN^4*\[CapitalLambda]0^6 + 1440*mm^2*mN^6*\[CapitalLambda]0^6 - 
+    480*mN^8*\[CapitalLambda]0^6 + 960*mm^4*mN^3*mo*\[CapitalLambda]0^6 - 
+    1920*mm^2*mN^5*mo*\[CapitalLambda]0^6 + 960*mN^7*mo*\[CapitalLambda]0^6 - 
+    1440*mm^4*mN^2*mo^2*\[CapitalLambda]0^6 + 3200*mm^2*mN^4*mo^2*
+     \[CapitalLambda]0^6 - 1760*mN^6*mo^2*\[CapitalLambda]0^6 - 
+    1920*mm^2*mN^3*mo^3*\[CapitalLambda]0^6 + 
+    2048*mN^5*mo^3*\[CapitalLambda]0^6 + 1440*mm^2*mN^2*mo^4*
+     \[CapitalLambda]0^6 - 1760*mN^4*mo^4*\[CapitalLambda]0^6 + 
+    960*mN^3*mo^5*\[CapitalLambda]0^6 - 480*mN^2*mo^6*\[CapitalLambda]0^6 - 
+    60*mm^6*Q2*\[CapitalLambda]0^6 - 780*mm^4*mN^2*Q2*\[CapitalLambda]0^6 + 
+    1388*mm^2*mN^4*Q2*\[CapitalLambda]0^6 - 548*mN^6*Q2*\[CapitalLambda]0^6 + 
+    240*mm^4*mN*mo*Q2*\[CapitalLambda]0^6 - 1440*mm^2*mN^3*mo*Q2*
+     \[CapitalLambda]0^6 + 1232*mN^5*mo*Q2*\[CapitalLambda]0^6 + 
+    180*mm^4*mo^2*Q2*\[CapitalLambda]0^6 + 1816*mm^2*mN^2*mo^2*Q2*
+     \[CapitalLambda]0^6 - 1836*mN^4*mo^2*Q2*\[CapitalLambda]0^6 - 
+    480*mm^2*mN*mo^3*Q2*\[CapitalLambda]0^6 + 1504*mN^3*mo^3*Q2*
+     \[CapitalLambda]0^6 - 180*mm^2*mo^4*Q2*\[CapitalLambda]0^6 - 
+    1036*mN^2*mo^4*Q2*\[CapitalLambda]0^6 + 240*mN*mo^5*Q2*
+     \[CapitalLambda]0^6 + 60*mo^6*Q2*\[CapitalLambda]0^6 + 
+    30*mm^4*Q2^2*\[CapitalLambda]0^6 + 388*mm^2*mN^2*Q2^2*
+     \[CapitalLambda]0^6 - 250*mN^4*Q2^2*\[CapitalLambda]0^6 - 
+    240*mm^2*mN*mo*Q2^2*\[CapitalLambda]0^6 + 496*mN^3*mo*Q2^2*
+     \[CapitalLambda]0^6 - 16*mm^2*mo^2*Q2^2*\[CapitalLambda]0^6 - 
+    576*mN^2*mo^2*Q2^2*\[CapitalLambda]0^6 + 248*mN*mo^3*Q2^2*
+     \[CapitalLambda]0^6 - 14*mo^4*Q2^2*\[CapitalLambda]0^6 - 
+    mm^2*Q2^3*\[CapitalLambda]0^6 - 47*mN^2*Q2^3*\[CapitalLambda]0^6 + 
+    62*mN*mo*Q2^3*\[CapitalLambda]0^6 - 23*mo^2*Q2^3*\[CapitalLambda]0^6 + 
+    240*mm^4*mN^2*\[CapitalLambda]0^8 - 480*mm^2*mN^4*\[CapitalLambda]0^8 + 
+    240*mN^6*\[CapitalLambda]0^8 + 480*mm^2*mN^3*mo*\[CapitalLambda]0^8 - 
+    480*mN^5*mo*\[CapitalLambda]0^8 - 480*mm^2*mN^2*mo^2*
+     \[CapitalLambda]0^8 + 736*mN^4*mo^2*\[CapitalLambda]0^8 - 
+    480*mN^3*mo^3*\[CapitalLambda]0^8 + 240*mN^2*mo^4*\[CapitalLambda]0^8 - 
+    30*mm^4*Q2*\[CapitalLambda]0^8 - 300*mm^2*mN^2*Q2*\[CapitalLambda]0^8 + 
+    250*mN^4*Q2*\[CapitalLambda]0^8 + 120*mm^2*mN*mo*Q2*\[CapitalLambda]0^8 - 
+    360*mN^3*mo*Q2*\[CapitalLambda]0^8 + 60*mm^2*mo^2*Q2*
+     \[CapitalLambda]0^8 + 404*mN^2*mo^2*Q2*\[CapitalLambda]0^8 - 
+    120*mN*mo^3*Q2*\[CapitalLambda]0^8 - 30*mo^4*Q2*\[CapitalLambda]0^8 + 
+    74*mN^2*Q2^2*\[CapitalLambda]0^8 - 60*mN*mo*Q2^2*\[CapitalLambda]0^8 + 
+    10*mo^2*Q2^2*\[CapitalLambda]0^8 + Q2^3*\[CapitalLambda]0^8 + 
+    48*mm^2*mN^2*\[CapitalLambda]0^10 - 48*mN^4*\[CapitalLambda]0^10 + 
+    96*mN^3*mo*\[CapitalLambda]0^10 - 48*mN^2*mo^2*\[CapitalLambda]0^10 - 
+    6*mm^2*Q2*\[CapitalLambda]0^10 - 42*mN^2*Q2*\[CapitalLambda]0^10 + 
+    24*mN*mo*Q2*\[CapitalLambda]0^10 + 6*mo^2*Q2*\[CapitalLambda]0^10 - 
+    3*Q2^2*\[CapitalLambda]0^10)*DiscB[-Q2, mo, mo])/
+  (6*(4*mN^2*Q2 + Q2^2 + 4*mN^2*\[CapitalLambda]0^2 + Q2*\[CapitalLambda]0^2)^
+    2*(mm^4 - 2*mm^2*mN^2 + mN^4 - 2*mm^2*mo^2 - 2*mN^2*mo^2 + mo^4 - 
+     mm^2*Q2 + 2*mm^2*\[CapitalLambda]0^2 - 2*mN^2*\[CapitalLambda]0^2 - 
+     2*mo^2*\[CapitalLambda]0^2 - Q2*\[CapitalLambda]0^2 + 
+     \[CapitalLambda]0^4)^3) + ((mN + mo)*\[CapitalLambda]0^4*
+   (mm^2 - mN^2 + 2*mN*mo - mo^2 + \[CapitalLambda]0^2)*
+   (48*mm^22*mN^6 - 528*mm^20*mN^8 + 2640*mm^18*mN^10 - 7920*mm^16*mN^12 + 
+    15840*mm^14*mN^14 - 22176*mm^12*mN^16 + 22176*mm^10*mN^18 - 
+    15840*mm^8*mN^20 + 7920*mm^6*mN^22 - 2640*mm^4*mN^24 + 528*mm^2*mN^26 - 
+    48*mN^28 + 48*mm^24*mN^3*mo - 576*mm^22*mN^5*mo + 3072*mm^20*mN^7*mo - 
+    9600*mm^18*mN^9*mo + 19440*mm^16*mN^11*mo - 26496*mm^14*mN^13*mo + 
+    24192*mm^12*mN^15*mo - 13824*mm^10*mN^17*mo + 3600*mm^8*mN^19*mo + 
+    960*mm^6*mN^21*mo - 1152*mm^4*mN^23*mo + 384*mm^2*mN^25*mo - 
+    48*mN^27*mo - 48*mm^22*mN^4*mo^2 + 1680*mm^18*mN^8*mo^2 - 
+    7200*mm^16*mN^10*mo^2 + 12960*mm^14*mN^12*mo^2 - 8064*mm^12*mN^14*mo^2 - 
+    10080*mm^10*mN^16*mo^2 + 25920*mm^8*mN^18*mo^2 - 25200*mm^6*mN^20*mo^2 + 
+    13440*mm^4*mN^22*mo^2 - 3888*mm^2*mN^24*mo^2 + 480*mN^26*mo^2 - 
+    576*mm^22*mN^3*mo^3 + 5280*mm^20*mN^5*mo^3 - 20160*mm^18*mN^7*mo^3 + 
+    40800*mm^16*mN^9*mo^3 - 44160*mm^14*mN^11*mo^3 + 17472*mm^12*mN^13*mo^3 + 
+    13440*mm^10*mN^15*mo^3 - 18240*mm^8*mN^17*mo^3 + 4800*mm^6*mN^19*mo^3 + 
+    3360*mm^4*mN^21*mo^3 - 2496*mm^2*mN^23*mo^3 + 480*mN^25*mo^3 + 
+    528*mm^20*mN^4*mo^4 - 1680*mm^18*mN^6*mo^4 + 4800*mm^14*mN^10*mo^4 - 
+    3360*mm^12*mN^12*mo^4 - 2016*mm^10*mN^14*mo^4 - 6720*mm^8*mN^16*mo^4 + 
+    24000*mm^6*mN^18*mo^4 - 25200*mm^4*mN^20*mo^4 + 11760*mm^2*mN^22*mo^4 - 
+    2112*mN^24*mo^4 + 3168*mm^20*mN^3*mo^5 - 21120*mm^18*mN^5*mo^5 + 
+    52800*mm^16*mN^7*mo^5 - 57600*mm^14*mN^9*mo^5 + 18240*mm^12*mN^11*mo^5 + 
+    6144*mm^10*mN^13*mo^5 + 11520*mm^8*mN^15*mo^5 - 19200*mm^6*mN^17*mo^5 + 
+    2400*mm^4*mN^19*mo^5 + 5760*mm^2*mN^21*mo^5 - 2112*mN^23*mo^5 - 
+    2640*mm^18*mN^4*mo^6 + 7200*mm^16*mN^6*mo^6 - 4800*mm^14*mN^8*mo^6 - 
+    480*mm^10*mN^12*mo^6 - 960*mm^8*mN^14*mo^6 - 4800*mm^6*mN^16*mo^6 + 
+    19200*mm^4*mN^18*mo^6 - 18000*mm^2*mN^20*mo^6 + 5280*mN^22*mo^6 - 
+    10560*mm^18*mN^3*mo^7 + 47520*mm^16*mN^5*mo^7 - 65280*mm^14*mN^7*mo^7 + 
+    21120*mm^12*mN^9*mo^7 + 5760*mm^10*mN^11*mo^7 + 4800*mm^8*mN^13*mo^7 + 
+    11520*mm^6*mN^15*mo^7 - 17280*mm^4*mN^17*mo^7 - 2880*mm^2*mN^19*mo^7 + 
+    5280*mN^21*mo^7 + 7920*mm^16*mN^4*mo^8 - 12960*mm^14*mN^6*mo^8 + 
+    3360*mm^12*mN^8*mo^8 + 480*mm^10*mN^10*mo^8 - 480*mm^6*mN^14*mo^8 - 
+    3360*mm^4*mN^16*mo^8 + 12960*mm^2*mN^18*mo^8 - 7920*mN^20*mo^8 + 
+    23760*mm^16*mN^3*mo^9 - 63360*mm^14*mN^5*mo^9 + 26880*mm^12*mN^7*mo^9 + 
+    7680*mm^10*mN^9*mo^9 + 5280*mm^8*mN^11*mo^9 + 5760*mm^6*mN^13*mo^9 + 
+    13440*mm^4*mN^15*mo^9 - 11520*mm^2*mN^17*mo^9 - 7920*mN^19*mo^9 - 
+    15840*mm^14*mN^4*mo^10 + 8064*mm^12*mN^6*mo^10 + 2016*mm^10*mN^8*mo^10 + 
+    960*mm^8*mN^10*mo^10 + 480*mm^6*mN^12*mo^10 - 2016*mm^2*mN^16*mo^10 + 
+    6336*mN^18*mo^10 - 38016*mm^14*mN^3*mo^11 + 44352*mm^12*mN^5*mo^11 + 
+    18816*mm^10*mN^7*mo^11 + 14400*mm^8*mN^9*mo^11 + 13440*mm^6*mN^11*mo^11 + 
+    14784*mm^4*mN^13*mo^11 + 24192*mm^2*mN^15*mo^11 + 6336*mN^17*mo^11 + 
+    22176*mm^12*mN^4*mo^12 + 10080*mm^10*mN^6*mo^12 + 6720*mm^8*mN^8*mo^12 + 
+    4800*mm^6*mN^10*mo^12 + 3360*mm^4*mN^12*mo^12 + 2016*mm^2*mN^14*mo^12 + 
+    44352*mm^12*mN^3*mo^13 - 13440*mm^8*mN^7*mo^13 - 19200*mm^6*mN^9*mo^13 - 
+    20160*mm^4*mN^11*mo^13 - 16128*mm^2*mN^13*mo^13 - 
+    22176*mm^10*mN^4*mo^14 - 25920*mm^8*mN^6*mo^14 - 24000*mm^6*mN^8*mo^14 - 
+    19200*mm^4*mN^10*mo^14 - 12960*mm^2*mN^12*mo^14 - 6336*mN^14*mo^14 - 
+    38016*mm^10*mN^3*mo^15 - 31680*mm^8*mN^5*mo^15 - 19200*mm^6*mN^7*mo^15 - 
+    9600*mm^4*mN^9*mo^15 - 5760*mm^2*mN^11*mo^15 - 6336*mN^13*mo^15 + 
+    15840*mm^8*mN^4*mo^16 + 25200*mm^6*mN^6*mo^16 + 25200*mm^4*mN^8*mo^16 + 
+    18000*mm^2*mN^10*mo^16 + 7920*mN^12*mo^16 + 23760*mm^8*mN^3*mo^17 + 
+    31680*mm^6*mN^5*mo^17 + 26880*mm^4*mN^7*mo^17 + 17280*mm^2*mN^9*mo^17 + 
+    7920*mN^11*mo^17 - 7920*mm^6*mN^4*mo^18 - 13440*mm^4*mN^6*mo^18 - 
+    11760*mm^2*mN^8*mo^18 - 5280*mN^10*mo^18 - 10560*mm^6*mN^3*mo^19 - 
+    15840*mm^4*mN^5*mo^19 - 12480*mm^2*mN^7*mo^19 - 5280*mN^9*mo^19 + 
+    2640*mm^4*mN^4*mo^20 + 3888*mm^2*mN^6*mo^20 + 2112*mN^8*mo^20 + 
+    3168*mm^4*mN^3*mo^21 + 4224*mm^2*mN^5*mo^21 + 2112*mN^7*mo^21 - 
+    528*mm^2*mN^4*mo^22 - 480*mN^6*mo^22 - 576*mm^2*mN^3*mo^23 - 
+    480*mN^5*mo^23 + 48*mN^4*mo^24 + 48*mN^3*mo^25 - 21*mm^24*mN^2*Q2 + 
+    246*mm^22*mN^4*Q2 - 1464*mm^20*mN^6*Q2 + 5586*mm^18*mN^8*Q2 - 
+    14589*mm^16*mN^10*Q2 + 26748*mm^14*mN^12*Q2 - 34776*mm^12*mN^14*Q2 + 
+    32004*mm^10*mN^16*Q2 - 20511*mm^8*mN^18*Q2 + 8814*mm^6*mN^20*Q2 - 
+    2352*mm^4*mN^22*Q2 + 330*mm^2*mN^24*Q2 - 15*mN^26*Q2 + 3*mm^24*mN*mo*Q2 - 
+    180*mm^22*mN^3*mo*Q2 + 1650*mm^20*mN^5*mo*Q2 - 6972*mm^18*mN^7*mo*Q2 + 
+    17001*mm^16*mN^9*mo*Q2 - 25992*mm^14*mN^11*mo*Q2 + 
+    25452*mm^12*mN^13*mo*Q2 - 15480*mm^10*mN^15*mo*Q2 + 
+    5157*mm^8*mN^17*mo*Q2 - 516*mm^6*mN^19*mo*Q2 - 126*mm^4*mN^21*mo*Q2 - 
+    12*mm^2*mN^23*mo*Q2 + 15*mN^25*mo*Q2 + 258*mm^22*mN^2*mo^2*Q2 - 
+    2124*mm^20*mN^4*mo^2*Q2 + 8610*mm^18*mN^6*mo^2*Q2 - 
+    20880*mm^16*mN^8*mo^2*Q2 + 29124*mm^14*mN^10*mo^2*Q2 - 
+    15624*mm^12*mN^12*mo^2*Q2 - 17388*mm^10*mN^14*mo^2*Q2 + 
+    39600*mm^8*mN^16*mo^2*Q2 - 33030*mm^6*mN^18*mo^2*Q2 + 
+    14196*mm^4*mN^20*mo^2*Q2 - 2934*mm^2*mN^22*mo^2*Q2 + 192*mN^24*mo^2*Q2 - 
+    36*mm^22*mN*mo^3*Q2 + 1752*mm^20*mN^3*mo^3*Q2 - 
+    11628*mm^18*mN^5*mo^3*Q2 + 31800*mm^16*mN^7*mo^3*Q2 - 
+    41064*mm^14*mN^9*mo^3*Q2 + 17904*mm^12*mN^11*mo^3*Q2 + 
+    14376*mm^10*mN^13*mo^3*Q2 - 20112*mm^8*mN^15*mo^3*Q2 + 
+    7500*mm^6*mN^17*mo^3*Q2 - 456*mm^4*mN^19*mo^3*Q2 + 
+    132*mm^2*mN^21*mo^3*Q2 - 168*mN^23*mo^3*Q2 - 1452*mm^20*mN^2*mo^4*Q2 + 
+    7734*mm^18*mN^4*mo^4*Q2 - 19170*mm^16*mN^6*mo^4*Q2 + 
+    24600*mm^14*mN^8*mo^4*Q2 - 10128*mm^12*mN^10*mo^4*Q2 - 
+    4716*mm^10*mN^12*mo^4*Q2 - 13164*mm^8*mN^14*mo^4*Q2 + 
+    39480*mm^6*mN^16*mo^4*Q2 - 33300*mm^4*mN^18*mo^4*Q2 + 
+    11238*mm^2*mN^20*mo^4*Q2 - 1122*mN^22*mo^4*Q2 + 198*mm^20*mN*mo^5*Q2 - 
+    7620*mm^18*mN^3*mo^5*Q2 + 33954*mm^16*mN^5*mo^5*Q2 - 
+    50256*mm^14*mN^7*mo^5*Q2 + 18780*mm^12*mN^9*mo^5*Q2 + 
+    6792*mm^10*mN^11*mo^5*Q2 + 12708*mm^8*mN^13*mo^5*Q2 - 
+    20496*mm^6*mN^15*mo^5*Q2 + 5694*mm^4*mN^17*mo^5*Q2 - 
+    612*mm^2*mN^19*mo^5*Q2 + 858*mN^21*mo^5*Q2 + 4950*mm^18*mN^2*mo^6*Q2 - 
+    14616*mm^16*mN^4*mo^6*Q2 + 17736*mm^14*mN^6*mo^6*Q2 - 
+    6672*mm^12*mN^8*mo^6*Q2 - 2460*mm^10*mN^10*mo^6*Q2 - 
+    2976*mm^8*mN^12*mo^6*Q2 - 11256*mm^6*mN^14*mo^6*Q2 + 
+    34896*mm^4*mN^16*mo^6*Q2 - 23562*mm^2*mN^18*mo^6*Q2 + 
+    3960*mN^20*mo^6*Q2 - 660*mm^18*mN*mo^7*Q2 + 19440*mm^16*mN^3*mo^7*Q2 - 
+    51024*mm^14*mN^5*mo^7*Q2 + 22848*mm^12*mN^7*mo^7*Q2 + 
+    7272*mm^10*mN^9*mo^7*Q2 + 6240*mm^8*mN^11*mo^7*Q2 + 
+    13680*mm^6*mN^13*mo^7*Q2 - 16704*mm^4*mN^15*mo^7*Q2 + 
+    1548*mm^2*mN^17*mo^7*Q2 - 2640*mN^19*mo^7*Q2 - 11385*mm^16*mN^2*mo^8*Q2 + 
+    12204*mm^14*mN^4*mo^8*Q2 - 3192*mm^12*mN^6*mo^8*Q2 - 
+    1140*mm^10*mN^8*mo^8*Q2 - 1314*mm^8*mN^10*mo^8*Q2 - 
+    2460*mm^6*mN^12*mo^8*Q2 - 10416*mm^4*mN^14*mo^8*Q2 + 
+    27108*mm^2*mN^16*mo^8*Q2 - 9405*mN^18*mo^8*Q2 + 1485*mm^16*mN*mo^9*Q2 - 
+    32040*mm^14*mN^3*mo^9*Q2 + 36708*mm^12*mN^5*mo^9*Q2 + 
+    15960*mm^10*mN^7*mo^9*Q2 + 12822*mm^8*mN^9*mo^9*Q2 + 
+    13320*mm^6*mN^11*mo^9*Q2 + 22260*mm^4*mN^13*mo^9*Q2 - 
+    2232*mm^2*mN^15*mo^9*Q2 + 5445*mN^17*mo^9*Q2 + 
+    18612*mm^14*mN^2*mo^10*Q2 + 6552*mm^12*mN^4*mo^10*Q2 + 
+    4284*mm^10*mN^6*mo^10*Q2 + 2544*mm^8*mN^8*mo^10*Q2 + 
+    876*mm^6*mN^10*mo^10*Q2 - 1512*mm^4*mN^12*mo^10*Q2 - 
+    10332*mm^2*mN^14*mo^10*Q2 + 15840*mN^16*mo^10*Q2 - 
+    2376*mm^14*mN*mo^11*Q2 + 35280*mm^12*mN^3*mo^11*Q2 - 
+    840*mm^10*mN^5*mo^11*Q2 - 11088*mm^8*mN^7*mo^11*Q2 - 
+    14424*mm^6*mN^9*mo^11*Q2 - 12432*mm^4*mN^11*mo^11*Q2 + 
+    1512*mm^2*mN^13*mo^11*Q2 - 7920*mN^15*mo^11*Q2 - 
+    22176*mm^12*mN^2*mo^12*Q2 - 29988*mm^10*mN^4*mo^12*Q2 - 
+    29820*mm^8*mN^6*mo^12*Q2 - 26280*mm^6*mN^8*mo^12*Q2 - 
+    21336*mm^4*mN^10*mo^12*Q2 - 16884*mm^2*mN^12*mo^12*Q2 - 
+    19404*mN^14*mo^12*Q2 + 2772*mm^12*mN*mo^13*Q2 - 
+    25704*mm^10*mN^3*mo^13*Q2 - 18732*mm^8*mN^5*mo^13*Q2 - 
+    8400*mm^6*mN^7*mo^13*Q2 - 1764*mm^4*mN^9*mo^13*Q2 + 
+    504*mm^2*mN^11*mo^13*Q2 + 8316*mN^13*mo^13*Q2 + 
+    19404*mm^10*mN^2*mo^14*Q2 + 38016*mm^8*mN^4*mo^14*Q2 + 
+    45480*mm^6*mN^6*mo^14*Q2 + 42000*mm^4*mN^8*mo^14*Q2 + 
+    31212*mm^2*mN^10*mo^14*Q2 + 17424*mN^12*mo^14*Q2 - 
+    2376*mm^10*mN*mo^15*Q2 + 11520*mm^8*mN^3*mo^15*Q2 + 
+    12336*mm^6*mN^5*mo^15*Q2 + 5376*mm^4*mN^7*mo^15*Q2 - 
+    2088*mm^2*mN^9*mo^15*Q2 - 6336*mN^11*mo^15*Q2 - 
+    12375*mm^8*mN^2*mo^16*Q2 - 27234*mm^6*mN^4*mo^16*Q2 - 
+    32256*mm^4*mN^6*mo^16*Q2 - 25038*mm^2*mN^8*mo^16*Q2 - 
+    11385*mN^10*mo^16*Q2 + 1485*mm^8*mN*mo^17*Q2 - 2340*mm^6*mN^3*mo^17*Q2 - 
+    1686*mm^4*mN^5*mo^17*Q2 + 2052*mm^2*mN^7*mo^17*Q2 + 3465*mN^9*mo^17*Q2 + 
+    5610*mm^6*mN^2*mo^18*Q2 + 11796*mm^4*mN^4*mo^18*Q2 + 
+    11442*mm^2*mN^6*mo^18*Q2 + 5280*mN^8*mo^18*Q2 - 660*mm^6*mN*mo^19*Q2 - 
+    360*mm^4*mN^3*mo^19*Q2 - 1068*mm^2*mN^5*mo^19*Q2 - 1320*mN^7*mo^19*Q2 - 
+    1716*mm^4*mN^2*mo^20*Q2 - 2898*mm^2*mN^4*mo^20*Q2 - 1650*mN^6*mo^20*Q2 + 
+    198*mm^4*mN*mo^21*Q2 + 300*mm^2*mN^3*mo^21*Q2 + 330*mN^5*mo^21*Q2 + 
+    318*mm^2*mN^2*mo^22*Q2 + 312*mN^4*mo^22*Q2 - 36*mm^2*mN*mo^23*Q2 - 
+    48*mN^3*mo^23*Q2 - 27*mN^2*mo^24*Q2 + 3*mN*mo^25*Q2 - 3*mm^24*Q2^2 + 
+    99*mm^22*mN^2*Q2^2 - 810*mm^20*mN^4*Q2^2 + 3477*mm^18*mN^6*Q2^2 - 
+    9405*mm^16*mN^8*Q2^2 + 17118*mm^14*mN^10*Q2^2 - 21420*mm^12*mN^12*Q2^2 + 
+    18378*mm^10*mN^14*Q2^2 - 10557*mm^8*mN^16*Q2^2 + 3855*mm^6*mN^18*Q2^2 - 
+    810*mm^4*mN^20*Q2^2 + 81*mm^2*mN^22*Q2^2 - 3*mN^24*Q2^2 - 
+    9*mm^22*mN*mo*Q2^2 + 234*mm^20*mN^3*mo*Q2^2 - 1593*mm^18*mN^5*mo*Q2^2 + 
+    5112*mm^16*mN^7*mo*Q2^2 - 9234*mm^14*mN^9*mo*Q2^2 + 
+    10044*mm^12*mN^11*mo*Q2^2 - 6714*mm^10*mN^13*mo*Q2^2 + 
+    2808*mm^8*mN^15*mo*Q2^2 - 837*mm^6*mN^17*mo*Q2^2 + 
+    234*mm^4*mN^19*mo*Q2^2 - 45*mm^2*mN^21*mo*Q2^2 + 36*mm^22*mo^2*Q2^2 - 
+    972*mm^20*mN^2*mo^2*Q2^2 + 5526*mm^18*mN^4*mo^2*Q2^2 - 
+    14940*mm^16*mN^6*mo^2*Q2^2 + 21168*mm^14*mN^8*mo^2*Q2^2 - 
+    11016*mm^12*mN^10*mo^2*Q2^2 - 11484*mm^10*mN^12*mo^2*Q2^2 + 
+    23544*mm^8*mN^14*mo^2*Q2^2 - 16740*mm^6*mN^16*mo^2*Q2^2 + 
+    5652*mm^4*mN^18*mo^2*Q2^2 - 810*mm^2*mN^20*mo^2*Q2^2 + 
+    36*mN^22*mo^2*Q2^2 + 90*mm^20*mN*mo^3*Q2^2 - 1746*mm^18*mN^3*mo^3*Q2^2 + 
+    7848*mm^16*mN^5*mo^3*Q2^2 - 13320*mm^14*mN^7*mo^3*Q2^2 + 
+    6732*mm^12*mN^9*mo^3*Q2^2 + 5796*mm^10*mN^11*mo^3*Q2^2 - 
+    8568*mm^8*mN^13*mo^3*Q2^2 + 4248*mm^6*mN^15*mo^3*Q2^2 - 
+    1494*mm^4*mN^17*mo^3*Q2^2 + 414*mm^2*mN^19*mo^3*Q2^2 - 
+    198*mm^20*mo^4*Q2^2 + 4257*mm^18*mN^2*mo^4*Q2^2 - 
+    15102*mm^16*mN^4*mo^4*Q2^2 + 21204*mm^14*mN^6*mo^4*Q2^2 - 
+    8604*mm^12*mN^8*mo^4*Q2^2 - 3762*mm^10*mN^10*mo^4*Q2^2 - 
+    9468*mm^8*mN^12*mo^4*Q2^2 + 24228*mm^6*mN^14*mo^4*Q2^2 - 
+    15966*mm^4*mN^16*mo^4*Q2^2 + 3609*mm^2*mN^18*mo^4*Q2^2 - 
+    198*mN^20*mo^4*Q2^2 - 405*mm^18*mN*mo^5*Q2^2 + 
+    5544*mm^16*mN^3*mo^5*Q2^2 - 14364*mm^14*mN^5*mo^5*Q2^2 + 
+    7128*mm^12*mN^7*mo^5*Q2^2 + 2898*mm^10*mN^9*mo^5*Q2^2 + 
+    5400*mm^8*mN^11*mo^5*Q2^2 - 8316*mm^6*mN^13*mo^5*Q2^2 + 
+    3816*mm^4*mN^15*mo^5*Q2^2 - 1701*mm^2*mN^17*mo^5*Q2^2 + 
+    660*mm^18*mo^6*Q2^2 - 10908*mm^16*mN^2*mo^6*Q2^2 + 
+    19224*mm^14*mN^4*mo^6*Q2^2 - 7536*mm^12*mN^6*mo^6*Q2^2 - 
+    2592*mm^10*mN^8*mo^6*Q2^2 - 2808*mm^8*mN^10*mo^6*Q2^2 - 
+    9048*mm^6*mN^12*mo^6*Q2^2 + 21744*mm^4*mN^14*mo^6*Q2^2 - 
+    9396*mm^2*mN^16*mo^6*Q2^2 + 660*mN^18*mo^6*Q2^2 + 
+    1080*mm^16*mN*mo^7*Q2^2 - 9576*mm^14*mN^3*mo^7*Q2^2 + 
+    10584*mm^12*mN^5*mo^7*Q2^2 + 4824*mm^10*mN^7*mo^7*Q2^2 + 
+    4392*mm^8*mN^9*mo^7*Q2^2 + 7560*mm^6*mN^11*mo^7*Q2^2 - 
+    4536*mm^4*mN^13*mo^7*Q2^2 + 4104*mm^2*mN^15*mo^7*Q2^2 - 
+    1485*mm^16*mo^8*Q2^2 + 17982*mm^14*mN^2*mo^8*Q2^2 - 
+    5796*mm^12*mN^4*mo^8*Q2^2 - 1530*mm^10*mN^6*mo^8*Q2^2 - 
+    1566*mm^8*mN^8*mo^8*Q2^2 - 2790*mm^6*mN^10*mo^8*Q2^2 - 
+    9828*mm^4*mN^12*mo^8*Q2^2 + 15714*mm^2*mN^14*mo^8*Q2^2 - 
+    1485*mN^16*mo^8*Q2^2 - 1890*mm^14*mN*mo^9*Q2^2 + 
+    9324*mm^12*mN^3*mo^9*Q2^2 - 630*mm^10*mN^5*mo^9*Q2^2 - 
+    3096*mm^8*mN^7*mo^9*Q2^2 - 3150*mm^6*mN^9*mo^9*Q2^2 + 
+    1260*mm^4*mN^11*mo^9*Q2^2 - 6426*mm^2*mN^13*mo^9*Q2^2 + 
+    2376*mm^14*mo^10*Q2^2 - 19656*mm^12*mN^2*mo^10*Q2^2 - 
+    15372*mm^10*mN^4*mo^10*Q2^2 - 13752*mm^8*mN^6*mo^10*Q2^2 - 
+    12240*mm^6*mN^8*mo^10*Q2^2 - 11592*mm^4*mN^10*mo^10*Q2^2 - 
+    17388*mm^2*mN^12*mo^10*Q2^2 + 2376*mN^14*mo^10*Q2^2 + 
+    2268*mm^12*mN*mo^11*Q2^2 - 4284*mm^10*mN^3*mo^11*Q2^2 - 
+    1512*mm^8*mN^5*mo^11*Q2^2 + 1512*mm^6*mN^7*mo^11*Q2^2 + 
+    3276*mm^4*mN^9*mo^11*Q2^2 + 6804*mm^2*mN^11*mo^11*Q2^2 - 
+    2772*mm^12*mo^12*Q2^2 + 13986*mm^10*mN^2*mo^12*Q2^2 + 
+    21924*mm^8*mN^4*mo^12*Q2^2 + 23460*mm^6*mN^6*mo^12*Q2^2 + 
+    19908*mm^4*mN^8*mo^12*Q2^2 + 12474*mm^2*mN^10*mo^12*Q2^2 - 
+    2772*mN^12*mo^12*Q2^2 - 1890*mm^10*mN*mo^13*Q2^2 - 
+    504*mm^8*mN^3*mo^13*Q2^2 - 2268*mm^6*mN^5*mo^13*Q2^2 - 
+    4536*mm^4*mN^7*mo^13*Q2^2 - 4914*mm^2*mN^9*mo^13*Q2^2 + 
+    2376*mm^10*mo^14*Q2^2 - 5832*mm^8*mN^2*mo^14*Q2^2 - 
+    12168*mm^6*mN^4*mo^14*Q2^2 - 11664*mm^4*mN^6*mo^14*Q2^2 - 
+    5184*mm^2*mN^8*mo^14*Q2^2 + 2376*mN^10*mo^14*Q2^2 + 
+    1080*mm^8*mN*mo^15*Q2^2 + 1656*mm^6*mN^3*mo^15*Q2^2 + 
+    2664*mm^4*mN^5*mo^15*Q2^2 + 2376*mm^2*mN^7*mo^15*Q2^2 - 
+    1485*mm^8*mo^16*Q2^2 + 783*mm^6*mN^2*mo^16*Q2^2 + 
+    2286*mm^4*mN^4*mo^16*Q2^2 + 621*mm^2*mN^6*mo^16*Q2^2 - 
+    1485*mN^8*mo^16*Q2^2 - 405*mm^6*mN*mo^17*Q2^2 - 
+    774*mm^4*mN^3*mo^17*Q2^2 - 729*mm^2*mN^5*mo^17*Q2^2 + 
+    660*mm^6*mo^18*Q2^2 + 468*mm^4*mN^2*mo^18*Q2^2 + 
+    486*mm^2*mN^4*mo^18*Q2^2 + 660*mN^6*mo^18*Q2^2 + 90*mm^4*mN*mo^19*Q2^2 + 
+    126*mm^2*mN^3*mo^19*Q2^2 - 198*mm^4*mo^20*Q2^2 - 
+    243*mm^2*mN^2*mo^20*Q2^2 - 198*mN^4*mo^20*Q2^2 - 9*mm^2*mN*mo^21*Q2^2 + 
+    36*mm^2*mo^22*Q2^2 + 36*mN^2*mo^22*Q2^2 - 3*mo^24*Q2^2 + 9*mm^22*Q2^3 - 
+    153*mm^20*mN^2*Q2^3 + 891*mm^18*mN^4*Q2^3 - 2766*mm^16*mN^6*Q2^3 + 
+    5280*mm^14*mN^8*Q2^3 - 6528*mm^12*mN^10*Q2^3 + 5268*mm^10*mN^12*Q2^3 - 
+    2706*mm^8*mN^14*Q2^3 + 831*mm^6*mN^16*Q2^3 - 135*mm^4*mN^18*Q2^3 + 
+    9*mm^2*mN^20*Q2^3 + 9*mm^20*mN*mo*Q2^3 - 120*mm^18*mN^3*mo*Q2^3 + 
+    576*mm^16*mN^5*mo*Q2^3 - 1344*mm^14*mN^7*mo*Q2^3 + 
+    1746*mm^12*mN^9*mo*Q2^3 - 1368*mm^10*mN^11*mo*Q2^3 + 
+    696*mm^8*mN^13*mo*Q2^3 - 240*mm^6*mN^15*mo*Q2^3 + 45*mm^4*mN^17*mo*Q2^3 - 
+    90*mm^20*mo^2*Q2^3 + 1152*mm^18*mN^2*mo^2*Q2^3 - 
+    4272*mm^16*mN^4*mo^2*Q2^3 + 6894*mm^14*mN^6*mo^2*Q2^3 - 
+    3696*mm^12*mN^8*mo^2*Q2^3 - 3702*mm^10*mN^10*mo^2*Q2^3 + 
+    6840*mm^8*mN^12*mo^2*Q2^3 - 4062*mm^6*mN^14*mo^2*Q2^3 + 
+    1026*mm^4*mN^16*mo^2*Q2^3 - 90*mm^2*mN^18*mo^2*Q2^3 - 
+    72*mm^18*mN*mo^3*Q2^3 + 612*mm^16*mN^3*mo^3*Q2^3 - 
+    1608*mm^14*mN^5*mo^3*Q2^3 + 1044*mm^12*mN^7*mo^3*Q2^3 + 
+    1032*mm^10*mN^9*mo^3*Q2^3 - 1716*mm^8*mN^11*mo^3*Q2^3 + 
+    1032*mm^6*mN^13*mo^3*Q2^3 - 324*mm^4*mN^15*mo^3*Q2^3 + 
+    405*mm^18*mo^4*Q2^3 - 3690*mm^16*mN^2*mo^4*Q2^3 + 
+    7158*mm^14*mN^4*mo^4*Q2^3 - 3252*mm^12*mN^6*mo^4*Q2^3 - 
+    1422*mm^10*mN^8*mo^4*Q2^3 - 3282*mm^8*mN^10*mo^4*Q2^3 + 
+    6990*mm^6*mN^12*mo^4*Q2^3 - 3312*mm^4*mN^14*mo^4*Q2^3 + 
+    405*mm^2*mN^16*mo^4*Q2^3 + 252*mm^16*mN*mo^5*Q2^3 - 
+    1152*mm^14*mN^3*mo^5*Q2^3 + 1176*mm^12*mN^5*mo^5*Q2^3 + 
+    624*mm^10*mN^7*mo^5*Q2^3 + 1116*mm^8*mN^9*mo^5*Q2^3 - 
+    1488*mm^6*mN^11*mo^5*Q2^3 + 1008*mm^4*mN^13*mo^5*Q2^3 - 
+    1080*mm^16*mo^6*Q2^3 + 6426*mm^14*mN^2*mo^6*Q2^3 - 
+    3300*mm^12*mN^4*mo^6*Q2^3 - 1212*mm^10*mN^6*mo^6*Q2^3 - 
+    1272*mm^8*mN^8*mo^6*Q2^3 - 3510*mm^6*mN^10*mo^6*Q2^3 + 
+    5796*mm^4*mN^12*mo^6*Q2^3 - 1080*mm^2*mN^14*mo^6*Q2^3 - 
+    504*mm^14*mN*mo^7*Q2^3 + 780*mm^12*mN^3*mo^7*Q2^3 - 
+    144*mm^10*mN^5*mo^7*Q2^3 - 264*mm^8*mN^7*mo^7*Q2^3 + 
+    360*mm^6*mN^9*mo^7*Q2^3 - 1764*mm^4*mN^11*mo^7*Q2^3 + 
+    1890*mm^14*mo^8*Q2^3 - 6300*mm^12*mN^2*mo^8*Q2^3 - 
+    3720*mm^10*mN^4*mo^8*Q2^3 - 3222*mm^8*mN^6*mo^8*Q2^3 - 
+    3300*mm^6*mN^8*mo^8*Q2^3 - 5670*mm^4*mN^10*mo^8*Q2^3 + 
+    1890*mm^2*mN^12*mo^8*Q2^3 + 630*mm^12*mN*mo^9*Q2^3 + 
+    360*mm^10*mN^3*mo^9*Q2^3 + 816*mm^8*mN^5*mo^9*Q2^3 + 
+    1200*mm^6*mN^7*mo^9*Q2^3 + 1890*mm^4*mN^9*mo^9*Q2^3 - 
+    2268*mm^12*mo^10*Q2^3 + 2898*mm^10*mN^2*mo^10*Q2^3 + 
+    4344*mm^8*mN^4*mo^10*Q2^3 + 4134*mm^6*mN^6*mo^10*Q2^3 + 
+    2520*mm^4*mN^8*mo^10*Q2^3 - 2268*mm^2*mN^10*mo^10*Q2^3 - 
+    504*mm^10*mN*mo^11*Q2^3 - 900*mm^8*mN^3*mo^11*Q2^3 - 
+    1320*mm^6*mN^5*mo^11*Q2^3 - 1260*mm^4*mN^7*mo^11*Q2^3 + 
+    1890*mm^10*mo^12*Q2^3 + 378*mm^8*mN^2*mo^12*Q2^3 - 
+    318*mm^6*mN^4*mo^12*Q2^3 + 504*mm^4*mN^6*mo^12*Q2^3 + 
+    1890*mm^2*mN^8*mo^12*Q2^3 + 252*mm^8*mN*mo^13*Q2^3 + 
+    528*mm^6*mN^3*mo^13*Q2^3 + 504*mm^4*mN^5*mo^13*Q2^3 - 
+    1080*mm^8*mo^14*Q2^3 - 1170*mm^6*mN^2*mo^14*Q2^3 - 
+    1188*mm^4*mN^4*mo^14*Q2^3 - 1080*mm^2*mN^6*mo^14*Q2^3 - 
+    72*mm^6*mN*mo^15*Q2^3 - 108*mm^4*mN^3*mo^15*Q2^3 + 405*mm^6*mo^16*Q2^3 + 
+    549*mm^4*mN^2*mo^16*Q2^3 + 405*mm^2*mN^4*mo^16*Q2^3 + 
+    9*mm^4*mN*mo^17*Q2^3 - 90*mm^4*mo^18*Q2^3 - 90*mm^2*mN^2*mo^18*Q2^3 + 
+    9*mm^2*mo^20*Q2^3 - 9*mm^20*Q2^4 + 93*mm^18*mN^2*Q2^4 - 
+    372*mm^16*mN^4*Q2^4 + 789*mm^14*mN^6*Q2^4 - 990*mm^12*mN^8*Q2^4 + 
+    759*mm^10*mN^10*Q2^4 - 348*mm^8*mN^12*Q2^4 + 87*mm^6*mN^14*Q2^4 - 
+    9*mm^4*mN^16*Q2^4 - 3*mm^18*mN*mo*Q2^4 + 18*mm^16*mN^3*mo*Q2^4 - 
+    57*mm^14*mN^5*mo*Q2^4 + 108*mm^12*mN^7*mo*Q2^4 - 117*mm^10*mN^9*mo*Q2^4 + 
+    66*mm^8*mN^11*mo*Q2^4 - 15*mm^6*mN^13*mo*Q2^4 + 72*mm^18*mo^2*Q2^4 - 
+    492*mm^16*mN^2*mo^2*Q2^4 + 1026*mm^14*mN^4*mo^2*Q2^4 - 
+    600*mm^12*mN^6*mo^2*Q2^4 - 588*mm^10*mN^8*mo^2*Q2^4 + 
+    972*mm^8*mN^10*mo^2*Q2^4 - 462*mm^6*mN^12*mo^2*Q2^4 + 
+    72*mm^4*mN^14*mo^2*Q2^4 + 18*mm^16*mN*mo^3*Q2^4 - 
+    42*mm^14*mN^3*mo^3*Q2^4 + 36*mm^12*mN^5*mo^3*Q2^4 + 
+    60*mm^10*mN^7*mo^3*Q2^4 - 150*mm^8*mN^9*mo^3*Q2^4 + 
+    78*mm^6*mN^11*mo^3*Q2^4 - 252*mm^16*mo^4*Q2^4 + 
+    993*mm^14*mN^2*mo^4*Q2^4 - 588*mm^12*mN^4*mo^4*Q2^4 - 
+    270*mm^10*mN^6*mo^4*Q2^4 - 564*mm^8*mN^8*mo^4*Q2^4 + 
+    933*mm^6*mN^10*mo^4*Q2^4 - 252*mm^4*mN^12*mo^4*Q2^4 - 
+    45*mm^14*mN*mo^5*Q2^4 - 12*mm^12*mN^3*mo^5*Q2^4 - 
+    6*mm^10*mN^5*mo^5*Q2^4 + 36*mm^8*mN^7*mo^5*Q2^4 - 
+    165*mm^6*mN^9*mo^5*Q2^4 + 504*mm^14*mo^6*Q2^4 - 
+    840*mm^12*mN^2*mo^6*Q2^4 - 420*mm^10*mN^4*mo^6*Q2^4 - 
+    408*mm^8*mN^6*mo^6*Q2^4 - 780*mm^6*mN^8*mo^6*Q2^4 + 
+    504*mm^4*mN^10*mo^6*Q2^4 + 60*mm^12*mN*mo^7*Q2^4 + 
+    108*mm^10*mN^3*mo^7*Q2^4 + 132*mm^8*mN^5*mo^7*Q2^4 + 
+    180*mm^6*mN^7*mo^7*Q2^4 - 630*mm^12*mo^8*Q2^4 + 15*mm^10*mN^2*mo^8*Q2^4 + 
+    108*mm^8*mN^4*mo^8*Q2^4 - 15*mm^6*mN^6*mo^8*Q2^4 - 
+    630*mm^4*mN^8*mo^8*Q2^4 - 45*mm^10*mN*mo^9*Q2^4 - 
+    102*mm^8*mN^3*mo^9*Q2^4 - 105*mm^6*mN^5*mo^9*Q2^4 + 
+    504*mm^10*mo^10*Q2^4 + 492*mm^8*mN^2*mo^10*Q2^4 + 
+    498*mm^6*mN^4*mo^10*Q2^4 + 504*mm^4*mN^6*mo^10*Q2^4 + 
+    18*mm^8*mN*mo^11*Q2^4 + 30*mm^6*mN^3*mo^11*Q2^4 - 252*mm^8*mo^12*Q2^4 - 
+    333*mm^6*mN^2*mo^12*Q2^4 - 252*mm^4*mN^4*mo^12*Q2^4 - 
+    3*mm^6*mN*mo^13*Q2^4 + 72*mm^6*mo^14*Q2^4 + 72*mm^4*mN^2*mo^14*Q2^4 - 
+    9*mm^4*mo^16*Q2^4 + 3*mm^18*Q2^5 - 18*mm^16*mN^2*Q2^5 + 
+    45*mm^14*mN^4*Q2^5 - 60*mm^12*mN^6*Q2^5 + 45*mm^10*mN^8*Q2^5 - 
+    18*mm^8*mN^10*Q2^5 + 3*mm^6*mN^12*Q2^5 - 18*mm^16*mo^2*Q2^5 + 
+    54*mm^14*mN^2*mo^2*Q2^5 - 36*mm^12*mN^4*mo^2*Q2^5 - 
+    36*mm^10*mN^6*mo^2*Q2^5 + 54*mm^8*mN^8*mo^2*Q2^5 - 
+    18*mm^6*mN^10*mo^2*Q2^5 + 45*mm^14*mo^4*Q2^5 - 36*mm^12*mN^2*mo^4*Q2^5 - 
+    18*mm^10*mN^4*mo^4*Q2^5 - 36*mm^8*mN^6*mo^4*Q2^5 + 
+    45*mm^6*mN^8*mo^4*Q2^5 - 60*mm^12*mo^6*Q2^5 - 36*mm^10*mN^2*mo^6*Q2^5 - 
+    36*mm^8*mN^4*mo^6*Q2^5 - 60*mm^6*mN^6*mo^6*Q2^5 + 45*mm^10*mo^8*Q2^5 + 
+    54*mm^8*mN^2*mo^8*Q2^5 + 45*mm^6*mN^4*mo^8*Q2^5 - 18*mm^8*mo^10*Q2^5 - 
+    18*mm^6*mN^2*mo^10*Q2^5 + 3*mm^6*mo^12*Q2^5 + 
+    528*mm^20*mN^6*\[CapitalLambda]0^2 - 5280*mm^18*mN^8*
+     \[CapitalLambda]0^2 + 23760*mm^16*mN^10*\[CapitalLambda]0^2 - 
+    63360*mm^14*mN^12*\[CapitalLambda]0^2 + 110880*mm^12*mN^14*
+     \[CapitalLambda]0^2 - 133056*mm^10*mN^16*\[CapitalLambda]0^2 + 
+    110880*mm^8*mN^18*\[CapitalLambda]0^2 - 63360*mm^6*mN^20*
+     \[CapitalLambda]0^2 + 23760*mm^4*mN^22*\[CapitalLambda]0^2 - 
+    5280*mm^2*mN^24*\[CapitalLambda]0^2 + 528*mN^26*\[CapitalLambda]0^2 + 
+    480*mm^22*mN^3*mo*\[CapitalLambda]0^2 - 5232*mm^20*mN^5*mo*
+     \[CapitalLambda]0^2 + 25056*mm^18*mN^7*mo*\[CapitalLambda]0^2 - 
+    69264*mm^16*mN^9*mo*\[CapitalLambda]0^2 + 121536*mm^14*mN^11*mo*
+     \[CapitalLambda]0^2 - 139104*mm^12*mN^13*mo*\[CapitalLambda]0^2 + 
+    100800*mm^10*mN^15*mo*\[CapitalLambda]0^2 - 39456*mm^8*mN^17*mo*
+     \[CapitalLambda]0^2 + 864*mm^6*mN^19*mo*\[CapitalLambda]0^2 + 
+    6864*mm^4*mN^21*mo*\[CapitalLambda]0^2 - 2976*mm^2*mN^23*mo*
+     \[CapitalLambda]0^2 + 432*mN^25*mo*\[CapitalLambda]0^2 - 
+    384*mm^20*mN^4*mo^2*\[CapitalLambda]0^2 - 1344*mm^18*mN^6*mo^2*
+     \[CapitalLambda]0^2 + 20736*mm^16*mN^8*mo^2*\[CapitalLambda]0^2 - 
+    71424*mm^14*mN^10*mo^2*\[CapitalLambda]0^2 + 112896*mm^12*mN^12*mo^2*
+     \[CapitalLambda]0^2 - 72576*mm^10*mN^14*mo^2*\[CapitalLambda]0^2 - 
+    32256*mm^8*mN^16*mo^2*\[CapitalLambda]0^2 + 94464*mm^6*mN^18*mo^2*
+     \[CapitalLambda]0^2 - 72576*mm^4*mN^20*mo^2*\[CapitalLambda]0^2 + 
+    26304*mm^2*mN^22*mo^2*\[CapitalLambda]0^2 - 
+    3840*mN^24*mo^2*\[CapitalLambda]0^2 - 5280*mm^20*mN^3*mo^3*
+     \[CapitalLambda]0^2 + 43680*mm^18*mN^5*mo^3*\[CapitalLambda]0^2 - 
+    148512*mm^16*mN^7*mo^3*\[CapitalLambda]0^2 + 263040*mm^14*mN^9*mo^3*
+     \[CapitalLambda]0^2 - 243264*mm^12*mN^11*mo^3*\[CapitalLambda]0^2 + 
+    79296*mm^10*mN^13*mo^3*\[CapitalLambda]0^2 + 47040*mm^8*mN^15*mo^3*
+     \[CapitalLambda]0^2 - 41088*mm^6*mN^17*mo^3*\[CapitalLambda]0^2 - 
+    3360*mm^4*mN^19*mo^3*\[CapitalLambda]0^2 + 11424*mm^2*mN^21*mo^3*
+     \[CapitalLambda]0^2 - 2976*mN^23*mo^3*\[CapitalLambda]0^2 + 
+    3840*mm^18*mN^4*mo^4*\[CapitalLambda]0^2 - 5712*mm^16*mN^6*mo^4*
+     \[CapitalLambda]0^2 - 24960*mm^14*mN^8*mo^4*\[CapitalLambda]0^2 + 
+    65856*mm^12*mN^10*mo^4*\[CapitalLambda]0^2 - 34944*mm^10*mN^12*mo^4*
+     \[CapitalLambda]0^2 - 23520*mm^8*mN^14*mo^4*\[CapitalLambda]0^2 - 
+    2688*mm^6*mN^16*mo^4*\[CapitalLambda]0^2 + 56640*mm^4*mN^18*mo^4*
+     \[CapitalLambda]0^2 - 45696*mm^2*mN^20*mo^4*\[CapitalLambda]0^2 + 
+    11184*mN^22*mo^4*\[CapitalLambda]0^2 + 26400*mm^18*mN^3*mo^5*
+     \[CapitalLambda]0^2 - 157680*mm^16*mN^5*mo^5*\[CapitalLambda]0^2 + 
+    347520*mm^14*mN^7*mo^5*\[CapitalLambda]0^2 - 327360*mm^12*mN^9*mo^5*
+     \[CapitalLambda]0^2 + 86976*mm^10*mN^11*mo^5*\[CapitalLambda]0^2 + 
+    23520*mm^8*mN^13*mo^5*\[CapitalLambda]0^2 + 32640*mm^6*mN^15*mo^5*
+     \[CapitalLambda]0^2 - 31680*mm^4*mN^17*mo^5*\[CapitalLambda]0^2 - 
+    8160*mm^2*mN^19*mo^5*\[CapitalLambda]0^2 + 
+    7824*mN^21*mo^5*\[CapitalLambda]0^2 - 17280*mm^16*mN^4*mo^6*
+     \[CapitalLambda]0^2 + 30720*mm^14*mN^6*mo^6*\[CapitalLambda]0^2 + 
+    3840*mm^12*mN^8*mo^6*\[CapitalLambda]0^2 - 13824*mm^10*mN^10*mo^6*
+     \[CapitalLambda]0^2 - 7680*mm^8*mN^12*mo^6*\[CapitalLambda]0^2 - 
+    15360*mm^6*mN^14*mo^6*\[CapitalLambda]0^2 + 11520*mm^4*mN^16*mo^6*
+     \[CapitalLambda]0^2 + 23040*mm^2*mN^18*mo^6*\[CapitalLambda]0^2 - 
+    14976*mN^20*mo^6*\[CapitalLambda]0^2 - 79200*mm^16*mN^3*mo^7*
+     \[CapitalLambda]0^2 + 316800*mm^14*mN^5*mo^7*\[CapitalLambda]0^2 - 
+    379008*mm^12*mN^7*mo^7*\[CapitalLambda]0^2 + 104064*mm^10*mN^9*mo^7*
+     \[CapitalLambda]0^2 + 23232*mm^8*mN^11*mo^7*\[CapitalLambda]0^2 + 
+    14976*mm^6*mN^13*mo^7*\[CapitalLambda]0^2 + 24960*mm^4*mN^15*mo^7*
+     \[CapitalLambda]0^2 - 18048*mm^2*mN^17*mo^7*\[CapitalLambda]0^2 - 
+    7776*mN^19*mo^7*\[CapitalLambda]0^2 + 46080*mm^14*mN^4*mo^8*
+     \[CapitalLambda]0^2 - 53088*mm^12*mN^6*mo^8*\[CapitalLambda]0^2 + 
+    5184*mm^10*mN^8*mo^8*\[CapitalLambda]0^2 - 2208*mm^8*mN^10*mo^8*
+     \[CapitalLambda]0^2 - 4224*mm^6*mN^12*mo^8*\[CapitalLambda]0^2 - 
+    12960*mm^4*mN^14*mo^8*\[CapitalLambda]0^2 + 17472*mm^2*mN^16*mo^8*
+     \[CapitalLambda]0^2 + 3744*mN^18*mo^8*\[CapitalLambda]0^2 + 
+    158400*mm^14*mN^3*mo^9*\[CapitalLambda]0^2 - 372960*mm^12*mN^5*mo^9*
+     \[CapitalLambda]0^2 + 135744*mm^10*mN^7*mo^9*\[CapitalLambda]0^2 + 
+    32160*mm^8*mN^9*mo^9*\[CapitalLambda]0^2 + 17472*mm^6*mN^11*mo^9*
+     \[CapitalLambda]0^2 + 13920*mm^4*mN^13*mo^9*\[CapitalLambda]0^2 + 
+    20160*mm^2*mN^15*mo^9*\[CapitalLambda]0^2 - 
+    4896*mN^17*mo^9*\[CapitalLambda]0^2 - 80640*mm^12*mN^4*mo^10*
+     \[CapitalLambda]0^2 + 29568*mm^10*mN^6*mo^10*\[CapitalLambda]0^2 + 
+    3840*mm^8*mN^8*mo^10*\[CapitalLambda]0^2 - 768*mm^6*mN^10*mo^10*
+     \[CapitalLambda]0^2 - 3840*mm^4*mN^12*mo^10*\[CapitalLambda]0^2 - 
+    13440*mm^2*mN^14*mo^10*\[CapitalLambda]0^2 + 
+    16128*mN^16*mo^10*\[CapitalLambda]0^2 - 221760*mm^12*mN^3*mo^11*
+     \[CapitalLambda]0^2 + 229824*mm^10*mN^5*mo^11*\[CapitalLambda]0^2 + 
+    81984*mm^8*mN^7*mo^11*\[CapitalLambda]0^2 + 50304*mm^6*mN^9*mo^11*
+     \[CapitalLambda]0^2 + 35136*mm^4*mN^11*mo^11*\[CapitalLambda]0^2 + 
+    25536*mm^2*mN^13*mo^11*\[CapitalLambda]0^2 + 
+    20160*mN^15*mo^11*\[CapitalLambda]0^2 + 96768*mm^10*mN^4*mo^12*
+     \[CapitalLambda]0^2 + 31584*mm^8*mN^6*mo^12*\[CapitalLambda]0^2 + 
+    11904*mm^6*mN^8*mo^12*\[CapitalLambda]0^2 + 576*mm^4*mN^10*mo^12*
+     \[CapitalLambda]0^2 - 8064*mm^2*mN^12*mo^12*\[CapitalLambda]0^2 - 
+    22176*mN^14*mo^12*\[CapitalLambda]0^2 + 221760*mm^10*mN^3*mo^13*
+     \[CapitalLambda]0^2 - 10080*mm^8*mN^5*mo^13*\[CapitalLambda]0^2 - 
+    56448*mm^6*mN^7*mo^13*\[CapitalLambda]0^2 - 58560*mm^4*mN^9*mo^13*
+     \[CapitalLambda]0^2 - 41664*mm^2*mN^11*mo^13*\[CapitalLambda]0^2 - 
+    18144*mN^13*mo^13*\[CapitalLambda]0^2 - 80640*mm^8*mN^4*mo^14*
+     \[CapitalLambda]0^2 - 66048*mm^6*mN^6*mo^14*\[CapitalLambda]0^2 - 
+    34560*mm^4*mN^8*mo^14*\[CapitalLambda]0^2 - 6144*mm^2*mN^10*mo^14*
+     \[CapitalLambda]0^2 + 9216*mN^12*mo^14*\[CapitalLambda]0^2 - 
+    158400*mm^8*mN^3*mo^15*\[CapitalLambda]0^2 - 97920*mm^6*mN^5*mo^15*
+     \[CapitalLambda]0^2 - 36480*mm^4*mN^7*mo^15*\[CapitalLambda]0^2 - 
+    5760*mm^2*mN^9*mo^15*\[CapitalLambda]0^2 + 
+    576*mN^11*mo^15*\[CapitalLambda]0^2 + 46080*mm^6*mN^4*mo^16*
+     \[CapitalLambda]0^2 + 48720*mm^4*mN^6*mo^16*\[CapitalLambda]0^2 + 
+    25440*mm^2*mN^8*mo^16*\[CapitalLambda]0^2 + 
+    4176*mN^10*mo^16*\[CapitalLambda]0^2 + 79200*mm^6*mN^3*mo^17*
+     \[CapitalLambda]0^2 + 75600*mm^4*mN^5*mo^17*\[CapitalLambda]0^2 + 
+    39648*mm^2*mN^7*mo^17*\[CapitalLambda]0^2 + 
+    11376*mN^9*mo^17*\[CapitalLambda]0^2 - 17280*mm^4*mN^4*mo^18*
+     \[CapitalLambda]0^2 - 17472*mm^2*mN^6*mo^18*\[CapitalLambda]0^2 - 
+    6144*mN^8*mo^18*\[CapitalLambda]0^2 - 26400*mm^4*mN^3*mo^19*
+     \[CapitalLambda]0^2 - 25440*mm^2*mN^5*mo^19*\[CapitalLambda]0^2 - 
+    9504*mN^7*mo^19*\[CapitalLambda]0^2 + 3840*mm^2*mN^4*mo^20*
+     \[CapitalLambda]0^2 + 2544*mN^6*mo^20*\[CapitalLambda]0^2 + 
+    5280*mm^2*mN^3*mo^21*\[CapitalLambda]0^2 + 
+    3408*mN^5*mo^21*\[CapitalLambda]0^2 - 384*mN^4*mo^22*
+     \[CapitalLambda]0^2 - 480*mN^3*mo^23*\[CapitalLambda]0^2 - 
+    210*mm^22*mN^2*Q2*\[CapitalLambda]0^2 + 2244*mm^20*mN^4*Q2*
+     \[CapitalLambda]0^2 - 12354*mm^18*mN^6*Q2*\[CapitalLambda]0^2 + 
+    43560*mm^16*mN^8*Q2*\[CapitalLambda]0^2 - 103716*mm^14*mN^10*Q2*
+     \[CapitalLambda]0^2 + 169848*mm^12*mN^12*Q2*\[CapitalLambda]0^2 - 
+    192276*mm^10*mN^14*Q2*\[CapitalLambda]0^2 + 149184*mm^8*mN^16*Q2*
+     \[CapitalLambda]0^2 - 77130*mm^6*mN^18*Q2*\[CapitalLambda]0^2 + 
+    24996*mm^4*mN^20*Q2*\[CapitalLambda]0^2 - 4458*mm^2*mN^22*Q2*
+     \[CapitalLambda]0^2 + 312*mN^24*Q2*\[CapitalLambda]0^2 + 
+    30*mm^22*mN*mo*Q2*\[CapitalLambda]0^2 - 1674*mm^20*mN^3*mo*Q2*
+     \[CapitalLambda]0^2 + 13914*mm^18*mN^5*mo*Q2*\[CapitalLambda]0^2 - 
+    52590*mm^16*mN^7*mo*Q2*\[CapitalLambda]0^2 + 112908*mm^14*mN^9*mo*Q2*
+     \[CapitalLambda]0^2 - 148932*mm^12*mN^11*mo*Q2*\[CapitalLambda]0^2 + 
+    122388*mm^10*mN^13*mo*Q2*\[CapitalLambda]0^2 - 
+    59964*mm^8*mN^15*mo*Q2*\[CapitalLambda]0^2 + 15030*mm^6*mN^17*mo*Q2*
+     \[CapitalLambda]0^2 - 978*mm^4*mN^19*mo*Q2*\[CapitalLambda]0^2 - 
+    78*mm^2*mN^21*mo*Q2*\[CapitalLambda]0^2 - 
+    54*mN^23*mo*Q2*\[CapitalLambda]0^2 + 2376*mm^20*mN^2*mo^2*Q2*
+     \[CapitalLambda]0^2 - 17868*mm^18*mN^4*mo^2*Q2*\[CapitalLambda]0^2 + 
+    67476*mm^16*mN^6*mo^2*Q2*\[CapitalLambda]0^2 - 
+    152688*mm^14*mN^8*mo^2*Q2*\[CapitalLambda]0^2 + 
+    197568*mm^12*mN^10*mo^2*Q2*\[CapitalLambda]0^2 - 
+    105000*mm^10*mN^12*mo^2*Q2*\[CapitalLambda]0^2 - 
+    65352*mm^8*mN^14*mo^2*Q2*\[CapitalLambda]0^2 + 
+    141264*mm^6*mN^16*mo^2*Q2*\[CapitalLambda]0^2 - 
+    91752*mm^4*mN^18*mo^2*Q2*\[CapitalLambda]0^2 + 
+    26772*mm^2*mN^20*mo^2*Q2*\[CapitalLambda]0^2 - 
+    2796*mN^22*mo^2*Q2*\[CapitalLambda]0^2 - 330*mm^20*mN*mo^3*Q2*
+     \[CapitalLambda]0^2 + 14868*mm^18*mN^3*mo^3*Q2*\[CapitalLambda]0^2 - 
+    88842*mm^16*mN^5*mo^3*Q2*\[CapitalLambda]0^2 + 
+    215280*mm^14*mN^7*mo^3*Q2*\[CapitalLambda]0^2 - 
+    241812*mm^12*mN^9*mo^3*Q2*\[CapitalLambda]0^2 + 
+    89592*mm^10*mN^11*mo^3*Q2*\[CapitalLambda]0^2 + 
+    59292*mm^8*mN^13*mo^3*Q2*\[CapitalLambda]0^2 - 
+    65808*mm^6*mN^15*mo^3*Q2*\[CapitalLambda]0^2 + 
+    19230*mm^4*mN^17*mo^3*Q2*\[CapitalLambda]0^2 - 
+    2028*mm^2*mN^19*mo^3*Q2*\[CapitalLambda]0^2 + 
+    558*mN^21*mo^3*Q2*\[CapitalLambda]0^2 - 12210*mm^18*mN^2*mo^4*Q2*
+     \[CapitalLambda]0^2 + 59664*mm^16*mN^4*mo^4*Q2*\[CapitalLambda]0^2 - 
+    139800*mm^14*mN^6*mo^4*Q2*\[CapitalLambda]0^2 + 
+    169872*mm^12*mN^8*mo^4*Q2*\[CapitalLambda]0^2 - 
+    65868*mm^10*mN^10*mo^4*Q2*\[CapitalLambda]0^2 - 
+    32880*mm^8*mN^12*mo^4*Q2*\[CapitalLambda]0^2 - 
+    29784*mm^6*mN^14*mo^4*Q2*\[CapitalLambda]0^2 + 
+    102000*mm^4*mN^16*mo^4*Q2*\[CapitalLambda]0^2 - 
+    61842*mm^2*mN^18*mo^4*Q2*\[CapitalLambda]0^2 + 
+    10848*mN^20*mo^4*Q2*\[CapitalLambda]0^2 + 1650*mm^18*mN*mo^5*Q2*
+     \[CapitalLambda]0^2 - 58482*mm^16*mN^3*mo^5*Q2*\[CapitalLambda]0^2 + 
+    232680*mm^14*mN^5*mo^5*Q2*\[CapitalLambda]0^2 - 
+    301512*mm^12*mN^7*mo^5*Q2*\[CapitalLambda]0^2 + 
+    96444*mm^10*mN^9*mo^5*Q2*\[CapitalLambda]0^2 + 
+    29028*mm^8*mN^11*mo^5*Q2*\[CapitalLambda]0^2 + 
+    43656*mm^6*mN^13*mo^5*Q2*\[CapitalLambda]0^2 - 
+    55080*mm^4*mN^15*mo^5*Q2*\[CapitalLambda]0^2 + 
+    14178*mm^2*mN^17*mo^5*Q2*\[CapitalLambda]0^2 - 
+    2562*mN^19*mo^5*Q2*\[CapitalLambda]0^2 + 37620*mm^16*mN^2*mo^6*Q2*
+     \[CapitalLambda]0^2 - 103344*mm^14*mN^4*mo^6*Q2*\[CapitalLambda]0^2 + 
+    123360*mm^12*mN^6*mo^6*Q2*\[CapitalLambda]0^2 - 
+    45168*mm^10*mN^8*mo^6*Q2*\[CapitalLambda]0^2 - 
+    15768*mm^8*mN^10*mo^6*Q2*\[CapitalLambda]0^2 - 
+    21264*mm^6*mN^12*mo^6*Q2*\[CapitalLambda]0^2 - 
+    12864*mm^4*mN^14*mo^6*Q2*\[CapitalLambda]0^2 + 
+    60720*mm^2*mN^16*mo^6*Q2*\[CapitalLambda]0^2 - 
+    23292*mN^18*mo^6*Q2*\[CapitalLambda]0^2 - 4950*mm^16*mN*mo^7*Q2*
+     \[CapitalLambda]0^2 + 133488*mm^14*mN^3*mo^7*Q2*\[CapitalLambda]0^2 - 
+    309960*mm^12*mN^5*mo^7*Q2*\[CapitalLambda]0^2 + 
+    119568*mm^10*mN^7*mo^7*Q2*\[CapitalLambda]0^2 + 
+    31836*mm^8*mN^9*mo^7*Q2*\[CapitalLambda]0^2 + 22032*mm^6*mN^11*mo^7*Q2*
+     \[CapitalLambda]0^2 + 37368*mm^4*mN^13*mo^7*Q2*\[CapitalLambda]0^2 - 
+    36240*mm^2*mN^15*mo^7*Q2*\[CapitalLambda]0^2 + 
+    6858*mN^17*mo^7*Q2*\[CapitalLambda]0^2 - 77220*mm^14*mN^2*mo^8*Q2*
+     \[CapitalLambda]0^2 + 82488*mm^12*mN^4*mo^8*Q2*\[CapitalLambda]0^2 - 
+    26412*mm^10*mN^6*mo^8*Q2*\[CapitalLambda]0^2 - 
+    9696*mm^8*mN^8*mo^8*Q2*\[CapitalLambda]0^2 - 9660*mm^6*mN^10*mo^8*Q2*
+     \[CapitalLambda]0^2 - 18600*mm^4*mN^12*mo^8*Q2*\[CapitalLambda]0^2 - 
+    6132*mm^2*mN^14*mo^8*Q2*\[CapitalLambda]0^2 + 
+    28368*mN^16*mo^8*Q2*\[CapitalLambda]0^2 + 9900*mm^14*mN*mo^9*Q2*
+     \[CapitalLambda]0^2 - 194292*mm^12*mN^3*mo^9*Q2*\[CapitalLambda]0^2 + 
+    195468*mm^10*mN^5*mo^9*Q2*\[CapitalLambda]0^2 + 
+    71340*mm^8*mN^7*mo^9*Q2*\[CapitalLambda]0^2 + 46116*mm^6*mN^9*mo^9*Q2*
+     \[CapitalLambda]0^2 + 36420*mm^4*mN^11*mo^9*Q2*\[CapitalLambda]0^2 + 
+    43428*mm^2*mN^13*mo^9*Q2*\[CapitalLambda]0^2 - 
+    11772*mN^15*mo^9*Q2*\[CapitalLambda]0^2 + 110880*mm^12*mN^2*mo^10*Q2*
+     \[CapitalLambda]0^2 + 19992*mm^10*mN^4*mo^10*Q2*\[CapitalLambda]0^2 + 
+    7944*mm^8*mN^6*mo^10*Q2*\[CapitalLambda]0^2 - 2256*mm^6*mN^8*mo^10*Q2*
+     \[CapitalLambda]0^2 - 10896*mm^4*mN^10*mo^10*Q2*\[CapitalLambda]0^2 - 
+    25032*mm^2*mN^12*mo^10*Q2*\[CapitalLambda]0^2 - 
+    14616*mN^14*mo^10*Q2*\[CapitalLambda]0^2 - 13860*mm^12*mN*mo^11*Q2*
+     \[CapitalLambda]0^2 + 185976*mm^10*mN^3*mo^11*Q2*\[CapitalLambda]0^2 - 
+    5964*mm^8*mN^5*mo^11*Q2*\[CapitalLambda]0^2 - 40560*mm^6*mN^7*mo^11*Q2*
+     \[CapitalLambda]0^2 - 37692*mm^4*mN^9*mo^11*Q2*\[CapitalLambda]0^2 - 
+    18312*mm^2*mN^11*mo^11*Q2*\[CapitalLambda]0^2 + 
+    13356*mN^13*mo^11*Q2*\[CapitalLambda]0^2 - 113652*mm^10*mN^2*mo^12*Q2*
+     \[CapitalLambda]0^2 - 116592*mm^8*mN^4*mo^12*Q2*\[CapitalLambda]0^2 - 
+    82776*mm^6*mN^6*mo^12*Q2*\[CapitalLambda]0^2 - 
+    44688*mm^4*mN^8*mo^12*Q2*\[CapitalLambda]0^2 - 
+    16212*mm^2*mN^10*mo^12*Q2*\[CapitalLambda]0^2 - 
+    10080*mN^12*mo^12*Q2*\[CapitalLambda]0^2 + 13860*mm^10*mN*mo^13*Q2*
+     \[CapitalLambda]0^2 - 115668*mm^8*mN^3*mo^13*Q2*\[CapitalLambda]0^2 - 
+    69048*mm^6*mN^5*mo^13*Q2*\[CapitalLambda]0^2 - 
+    27720*mm^4*mN^7*mo^13*Q2*\[CapitalLambda]0^2 - 
+    12012*mm^2*mN^9*mo^13*Q2*\[CapitalLambda]0^2 - 
+    9828*mN^11*mo^13*Q2*\[CapitalLambda]0^2 + 83160*mm^8*mN^2*mo^14*Q2*
+     \[CapitalLambda]0^2 + 124176*mm^6*mN^4*mo^14*Q2*\[CapitalLambda]0^2 + 
+    105600*mm^4*mN^6*mo^14*Q2*\[CapitalLambda]0^2 + 
+    61872*mm^2*mN^8*mo^14*Q2*\[CapitalLambda]0^2 + 
+    24552*mN^10*mo^14*Q2*\[CapitalLambda]0^2 - 9900*mm^8*mN*mo^15*Q2*
+     \[CapitalLambda]0^2 + 43632*mm^6*mN^3*mo^15*Q2*\[CapitalLambda]0^2 + 
+    38040*mm^4*mN^5*mo^15*Q2*\[CapitalLambda]0^2 + 
+    16752*mm^2*mN^7*mo^15*Q2*\[CapitalLambda]0^2 + 
+    4212*mN^9*mo^15*Q2*\[CapitalLambda]0^2 - 42570*mm^6*mN^2*mo^16*Q2*
+     \[CapitalLambda]0^2 - 68316*mm^4*mN^4*mo^16*Q2*\[CapitalLambda]0^2 - 
+    52770*mm^2*mN^6*mo^16*Q2*\[CapitalLambda]0^2 - 
+    20808*mN^8*mo^16*Q2*\[CapitalLambda]0^2 + 4950*mm^6*mN*mo^17*Q2*
+     \[CapitalLambda]0^2 - 7938*mm^4*mN^3*mo^17*Q2*\[CapitalLambda]0^2 - 
+    5910*mm^2*mN^5*mo^17*Q2*\[CapitalLambda]0^2 - 
+    558*mN^7*mo^17*Q2*\[CapitalLambda]0^2 + 14520*mm^4*mN^2*mo^18*Q2*
+     \[CapitalLambda]0^2 + 20052*mm^2*mN^4*mo^18*Q2*\[CapitalLambda]0^2 + 
+    9732*mN^6*mo^18*Q2*\[CapitalLambda]0^2 - 1650*mm^4*mN*mo^19*Q2*
+     \[CapitalLambda]0^2 - 108*mm^2*mN^3*mo^19*Q2*\[CapitalLambda]0^2 - 
+    378*mN^5*mo^19*Q2*\[CapitalLambda]0^2 - 2970*mm^2*mN^2*mo^20*Q2*
+     \[CapitalLambda]0^2 - 2496*mN^4*mo^20*Q2*\[CapitalLambda]0^2 + 
+    330*mm^2*mN*mo^21*Q2*\[CapitalLambda]0^2 + 198*mN^3*mo^21*Q2*
+     \[CapitalLambda]0^2 + 276*mN^2*mo^22*Q2*\[CapitalLambda]0^2 - 
+    30*mN*mo^23*Q2*\[CapitalLambda]0^2 - 30*mm^22*Q2^2*\[CapitalLambda]0^2 + 
+    897*mm^20*mN^2*Q2^2*\[CapitalLambda]0^2 - 6642*mm^18*mN^4*Q2^2*
+     \[CapitalLambda]0^2 + 25869*mm^16*mN^6*Q2^2*\[CapitalLambda]0^2 - 
+    63228*mm^14*mN^8*Q2^2*\[CapitalLambda]0^2 + 102690*mm^12*mN^10*Q2^2*
+     \[CapitalLambda]0^2 - 112308*mm^10*mN^12*Q2^2*\[CapitalLambda]0^2 + 
+    81762*mm^8*mN^14*Q2^2*\[CapitalLambda]0^2 - 38214*mm^6*mN^16*Q2^2*
+     \[CapitalLambda]0^2 + 10653*mm^4*mN^18*Q2^2*\[CapitalLambda]0^2 - 
+    1530*mm^2*mN^20*Q2^2*\[CapitalLambda]0^2 + 
+    81*mN^22*Q2^2*\[CapitalLambda]0^2 - 87*mm^20*mN*mo*Q2^2*
+     \[CapitalLambda]0^2 + 2088*mm^18*mN^3*mo*Q2^2*\[CapitalLambda]0^2 - 
+    12897*mm^16*mN^5*mo*Q2^2*\[CapitalLambda]0^2 + 
+    37104*mm^14*mN^7*mo*Q2^2*\[CapitalLambda]0^2 - 
+    59430*mm^12*mN^9*mo*Q2^2*\[CapitalLambda]0^2 + 
+    56832*mm^10*mN^11*mo*Q2^2*\[CapitalLambda]0^2 - 
+    33378*mm^8*mN^13*mo*Q2^2*\[CapitalLambda]0^2 + 
+    12432*mm^6*mN^15*mo*Q2^2*\[CapitalLambda]0^2 - 
+    3219*mm^4*mN^17*mo*Q2^2*\[CapitalLambda]0^2 + 600*mm^2*mN^19*mo*Q2^2*
+     \[CapitalLambda]0^2 - 45*mN^21*mo*Q2^2*\[CapitalLambda]0^2 + 
+    330*mm^20*mo^2*Q2^2*\[CapitalLambda]0^2 - 8046*mm^18*mN^2*mo^2*Q2^2*
+     \[CapitalLambda]0^2 + 41214*mm^16*mN^4*mo^2*Q2^2*\[CapitalLambda]0^2 - 
+    100920*mm^14*mN^6*mo^2*Q2^2*\[CapitalLambda]0^2 + 
+    129588*mm^12*mN^8*mo^2*Q2^2*\[CapitalLambda]0^2 - 
+    62820*mm^10*mN^10*mo^2*Q2^2*\[CapitalLambda]0^2 - 
+    46644*mm^8*mN^12*mo^2*Q2^2*\[CapitalLambda]0^2 + 
+    83496*mm^6*mN^14*mo^2*Q2^2*\[CapitalLambda]0^2 - 
+    46110*mm^4*mN^16*mo^2*Q2^2*\[CapitalLambda]0^2 + 
+    10722*mm^2*mN^18*mo^2*Q2^2*\[CapitalLambda]0^2 - 
+    810*mN^20*mo^2*Q2^2*\[CapitalLambda]0^2 + 798*mm^18*mN*mo^3*Q2^2*
+     \[CapitalLambda]0^2 - 14220*mm^16*mN^3*mo^3*Q2^2*\[CapitalLambda]0^2 + 
+    57480*mm^14*mN^5*mo^3*Q2^2*\[CapitalLambda]0^2 - 
+    86496*mm^12*mN^7*mo^3*Q2^2*\[CapitalLambda]0^2 + 
+    38292*mm^10*mN^9*mo^3*Q2^2*\[CapitalLambda]0^2 + 
+    28680*mm^8*mN^11*mo^3*Q2^2*\[CapitalLambda]0^2 - 
+    37176*mm^6*mN^13*mo^3*Q2^2*\[CapitalLambda]0^2 + 
+    16320*mm^4*mN^15*mo^3*Q2^2*\[CapitalLambda]0^2 - 
+    4098*mm^2*mN^17*mo^3*Q2^2*\[CapitalLambda]0^2 + 
+    420*mN^19*mo^3*Q2^2*\[CapitalLambda]0^2 - 1650*mm^18*mo^4*Q2^2*
+     \[CapitalLambda]0^2 + 31887*mm^16*mN^2*mo^4*Q2^2*\[CapitalLambda]0^2 - 
+    101448*mm^14*mN^4*mo^4*Q2^2*\[CapitalLambda]0^2 + 
+    128964*mm^12*mN^6*mo^4*Q2^2*\[CapitalLambda]0^2 - 
+    47532*mm^10*mN^8*mo^4*Q2^2*\[CapitalLambda]0^2 - 
+    19926*mm^8*mN^10*mo^4*Q2^2*\[CapitalLambda]0^2 - 
+    29256*mm^6*mN^12*mo^4*Q2^2*\[CapitalLambda]0^2 + 
+    65892*mm^4*mN^14*mo^4*Q2^2*\[CapitalLambda]0^2 - 
+    30546*mm^2*mN^16*mo^4*Q2^2*\[CapitalLambda]0^2 + 
+    3615*mN^18*mo^4*Q2^2*\[CapitalLambda]0^2 - 3267*mm^16*mN*mo^5*Q2^2*
+     \[CapitalLambda]0^2 + 40896*mm^14*mN^3*mo^5*Q2^2*\[CapitalLambda]0^2 - 
+    93996*mm^12*mN^5*mo^5*Q2^2*\[CapitalLambda]0^2 + 
+    40656*mm^10*mN^7*mo^5*Q2^2*\[CapitalLambda]0^2 + 
+    14214*mm^8*mN^9*mo^5*Q2^2*\[CapitalLambda]0^2 + 
+    22752*mm^6*mN^11*mo^5*Q2^2*\[CapitalLambda]0^2 - 
+    31164*mm^4*mN^13*mo^5*Q2^2*\[CapitalLambda]0^2 + 
+    11664*mm^2*mN^15*mo^5*Q2^2*\[CapitalLambda]0^2 - 
+    1755*mN^17*mo^5*Q2^2*\[CapitalLambda]0^2 + 4950*mm^16*mo^6*Q2^2*
+     \[CapitalLambda]0^2 - 73080*mm^14*mN^2*mo^6*Q2^2*\[CapitalLambda]0^2 + 
+    115416*mm^12*mN^4*mo^6*Q2^2*\[CapitalLambda]0^2 - 
+    41400*mm^10*mN^6*mo^6*Q2^2*\[CapitalLambda]0^2 - 
+    13020*mm^8*mN^8*mo^6*Q2^2*\[CapitalLambda]0^2 - 
+    13608*mm^6*mN^10*mo^6*Q2^2*\[CapitalLambda]0^2 - 
+    21480*mm^4*mN^12*mo^6*Q2^2*\[CapitalLambda]0^2 + 
+    42456*mm^2*mN^14*mo^6*Q2^2*\[CapitalLambda]0^2 - 
+    9450*mN^16*mo^6*Q2^2*\[CapitalLambda]0^2 + 7848*mm^14*mN*mo^7*Q2^2*
+     \[CapitalLambda]0^2 - 63504*mm^12*mN^3*mo^7*Q2^2*\[CapitalLambda]0^2 + 
+    60120*mm^10*mN^5*mo^7*Q2^2*\[CapitalLambda]0^2 + 
+    23040*mm^8*mN^7*mo^7*Q2^2*\[CapitalLambda]0^2 + 
+    17304*mm^6*mN^9*mo^7*Q2^2*\[CapitalLambda]0^2 + 
+    25008*mm^4*mN^11*mo^7*Q2^2*\[CapitalLambda]0^2 - 
+    17304*mm^2*mN^13*mo^7*Q2^2*\[CapitalLambda]0^2 + 
+    4320*mN^15*mo^7*Q2^2*\[CapitalLambda]0^2 - 9900*mm^14*mo^8*Q2^2*
+     \[CapitalLambda]0^2 + 106218*mm^12*mN^2*mo^8*Q2^2*\[CapitalLambda]0^2 - 
+    33180*mm^10*mN^4*mo^8*Q2^2*\[CapitalLambda]0^2 - 
+    9930*mm^8*mN^6*mo^8*Q2^2*\[CapitalLambda]0^2 - 
+    9588*mm^6*mN^8*mo^8*Q2^2*\[CapitalLambda]0^2 - 
+    14490*mm^4*mN^10*mo^8*Q2^2*\[CapitalLambda]0^2 - 
+    21252*mm^2*mN^12*mo^8*Q2^2*\[CapitalLambda]0^2 + 
+    15930*mN^14*mo^8*Q2^2*\[CapitalLambda]0^2 - 12222*mm^12*mN*mo^9*Q2^2*
+     \[CapitalLambda]0^2 + 55440*mm^10*mN^3*mo^9*Q2^2*\[CapitalLambda]0^2 + 
+    330*mm^8*mN^5*mo^9*Q2^2*\[CapitalLambda]0^2 - 7536*mm^6*mN^7*mo^9*Q2^2*
+     \[CapitalLambda]0^2 - 3450*mm^4*mN^9*mo^9*Q2^2*\[CapitalLambda]0^2 + 
+    12768*mm^2*mN^11*mo^9*Q2^2*\[CapitalLambda]0^2 - 
+    6930*mN^13*mo^9*Q2^2*\[CapitalLambda]0^2 + 13860*mm^12*mo^10*Q2^2*
+     \[CapitalLambda]0^2 - 100548*mm^10*mN^2*mo^10*Q2^2*\[CapitalLambda]0^2 - 
+    62748*mm^8*mN^4*mo^10*Q2^2*\[CapitalLambda]0^2 - 
+    42024*mm^6*mN^6*mo^10*Q2^2*\[CapitalLambda]0^2 - 
+    26148*mm^4*mN^8*mo^10*Q2^2*\[CapitalLambda]0^2 - 
+    18900*mm^2*mN^10*mo^10*Q2^2*\[CapitalLambda]0^2 - 
+    17892*mN^12*mo^10*Q2^2*\[CapitalLambda]0^2 + 12852*mm^10*mN*mo^11*Q2^2*
+     \[CapitalLambda]0^2 - 23688*mm^8*mN^3*mo^11*Q2^2*\[CapitalLambda]0^2 - 
+    12168*mm^6*mN^5*mo^11*Q2^2*\[CapitalLambda]0^2 - 
+    3936*mm^4*mN^7*mo^11*Q2^2*\[CapitalLambda]0^2 - 
+    1260*mm^2*mN^9*mo^11*Q2^2*\[CapitalLambda]0^2 + 
+    7560*mN^11*mo^11*Q2^2*\[CapitalLambda]0^2 - 13860*mm^10*mo^12*Q2^2*
+     \[CapitalLambda]0^2 + 60606*mm^8*mN^2*mo^12*Q2^2*\[CapitalLambda]0^2 + 
+    75096*mm^6*mN^4*mo^12*Q2^2*\[CapitalLambda]0^2 + 
+    60180*mm^4*mN^6*mo^12*Q2^2*\[CapitalLambda]0^2 + 
+    35868*mm^2*mN^8*mo^12*Q2^2*\[CapitalLambda]0^2 + 
+    13230*mN^10*mo^12*Q2^2*\[CapitalLambda]0^2 - 9198*mm^8*mN*mo^13*Q2^2*
+     \[CapitalLambda]0^2 - 2700*mm^4*mN^5*mo^13*Q2^2*\[CapitalLambda]0^2 - 
+    5712*mm^2*mN^7*mo^13*Q2^2*\[CapitalLambda]0^2 - 
+    5670*mN^9*mo^13*Q2^2*\[CapitalLambda]0^2 + 9900*mm^8*mo^14*Q2^2*
+     \[CapitalLambda]0^2 - 20952*mm^6*mN^2*mo^14*Q2^2*\[CapitalLambda]0^2 - 
+    32712*mm^4*mN^4*mo^14*Q2^2*\[CapitalLambda]0^2 - 
+    21864*mm^2*mN^6*mo^14*Q2^2*\[CapitalLambda]0^2 - 
+    5940*mN^8*mo^14*Q2^2*\[CapitalLambda]0^2 + 4392*mm^6*mN*mo^15*Q2^2*
+     \[CapitalLambda]0^2 + 4464*mm^4*mN^3*mo^15*Q2^2*\[CapitalLambda]0^2 + 
+    4776*mm^2*mN^5*mo^15*Q2^2*\[CapitalLambda]0^2 + 
+    2880*mN^7*mo^15*Q2^2*\[CapitalLambda]0^2 - 4950*mm^6*mo^16*Q2^2*
+     \[CapitalLambda]0^2 + 2565*mm^4*mN^2*mo^16*Q2^2*\[CapitalLambda]0^2 + 
+    4734*mm^2*mN^4*mo^16*Q2^2*\[CapitalLambda]0^2 + 
+    1125*mN^6*mo^16*Q2^2*\[CapitalLambda]0^2 - 1323*mm^4*mN*mo^17*Q2^2*
+     \[CapitalLambda]0^2 - 1656*mm^2*mN^3*mo^17*Q2^2*\[CapitalLambda]0^2 - 
+    945*mN^5*mo^17*Q2^2*\[CapitalLambda]0^2 + 1650*mm^4*mo^18*Q2^2*
+     \[CapitalLambda]0^2 + 642*mm^2*mN^2*mo^18*Q2^2*\[CapitalLambda]0^2 + 
+    270*mN^4*mo^18*Q2^2*\[CapitalLambda]0^2 + 222*mm^2*mN*mo^19*Q2^2*
+     \[CapitalLambda]0^2 + 180*mN^3*mo^19*Q2^2*\[CapitalLambda]0^2 - 
+    330*mm^2*mo^20*Q2^2*\[CapitalLambda]0^2 - 189*mN^2*mo^20*Q2^2*
+     \[CapitalLambda]0^2 - 15*mN*mo^21*Q2^2*\[CapitalLambda]0^2 + 
+    30*mo^22*Q2^2*\[CapitalLambda]0^2 + 81*mm^20*Q2^3*\[CapitalLambda]0^2 - 
+    1242*mm^18*mN^2*Q2^3*\[CapitalLambda]0^2 + 6501*mm^16*mN^4*Q2^3*
+     \[CapitalLambda]0^2 - 18078*mm^14*mN^6*Q2^3*\[CapitalLambda]0^2 + 
+    30654*mm^12*mN^8*Q2^3*\[CapitalLambda]0^2 - 33150*mm^10*mN^10*Q2^3*
+     \[CapitalLambda]0^2 + 22842*mm^8*mN^12*Q2^3*\[CapitalLambda]0^2 - 
+    9666*mm^6*mN^14*Q2^3*\[CapitalLambda]0^2 + 2313*mm^4*mN^16*Q2^3*
+     \[CapitalLambda]0^2 - 264*mm^2*mN^18*Q2^3*\[CapitalLambda]0^2 + 
+    9*mN^20*Q2^3*\[CapitalLambda]0^2 + 90*mm^18*mN*mo*Q2^3*
+     \[CapitalLambda]0^2 - 1134*mm^16*mN^3*mo*Q2^3*\[CapitalLambda]0^2 + 
+    4986*mm^14*mN^5*mo*Q2^3*\[CapitalLambda]0^2 - 10542*mm^12*mN^7*mo*Q2^3*
+     \[CapitalLambda]0^2 + 12318*mm^10*mN^9*mo*Q2^3*\[CapitalLambda]0^2 - 
+    8538*mm^8*mN^11*mo*Q2^3*\[CapitalLambda]0^2 + 3630*mm^6*mN^13*mo*Q2^3*
+     \[CapitalLambda]0^2 - 906*mm^4*mN^15*mo*Q2^3*\[CapitalLambda]0^2 + 
+    96*mm^2*mN^17*mo*Q2^3*\[CapitalLambda]0^2 - 738*mm^18*mo^2*Q2^3*
+     \[CapitalLambda]0^2 + 8478*mm^16*mN^2*mo^2*Q2^3*\[CapitalLambda]0^2 - 
+    28056*mm^14*mN^4*mo^2*Q2^3*\[CapitalLambda]0^2 + 
+    40308*mm^12*mN^6*mo^2*Q2^3*\[CapitalLambda]0^2 - 
+    19296*mm^10*mN^8*mo^2*Q2^3*\[CapitalLambda]0^2 - 
+    15660*mm^8*mN^10*mo^2*Q2^3*\[CapitalLambda]0^2 + 
+    24384*mm^6*mN^12*mo^2*Q2^3*\[CapitalLambda]0^2 - 
+    11340*mm^4*mN^14*mo^2*Q2^3*\[CapitalLambda]0^2 + 
+    2010*mm^2*mN^16*mo^2*Q2^3*\[CapitalLambda]0^2 - 
+    90*mN^18*mo^2*Q2^3*\[CapitalLambda]0^2 - 666*mm^16*mN*mo^3*Q2^3*
+     \[CapitalLambda]0^2 + 5400*mm^14*mN^3*mo^3*Q2^3*\[CapitalLambda]0^2 - 
+    12774*mm^12*mN^5*mo^3*Q2^3*\[CapitalLambda]0^2 + 
+    7404*mm^10*mN^7*mo^3*Q2^3*\[CapitalLambda]0^2 + 
+    6522*mm^8*mN^9*mo^3*Q2^3*\[CapitalLambda]0^2 - 
+    9408*mm^6*mN^11*mo^3*Q2^3*\[CapitalLambda]0^2 + 
+    4230*mm^4*mN^13*mo^3*Q2^3*\[CapitalLambda]0^2 - 
+    708*mm^2*mN^15*mo^3*Q2^3*\[CapitalLambda]0^2 + 
+    2997*mm^16*mo^4*Q2^3*\[CapitalLambda]0^2 - 24354*mm^14*mN^2*mo^4*Q2^3*
+     \[CapitalLambda]0^2 + 41808*mm^12*mN^4*mo^4*Q2^3*\[CapitalLambda]0^2 - 
+    16800*mm^10*mN^6*mo^4*Q2^3*\[CapitalLambda]0^2 - 
+    6546*mm^8*mN^8*mo^4*Q2^3*\[CapitalLambda]0^2 - 
+    11418*mm^6*mN^10*mo^4*Q2^3*\[CapitalLambda]0^2 + 
+    19656*mm^4*mN^12*mo^4*Q2^3*\[CapitalLambda]0^2 - 
+    6516*mm^2*mN^14*mo^4*Q2^3*\[CapitalLambda]0^2 + 
+    405*mN^16*mo^4*Q2^3*\[CapitalLambda]0^2 + 2142*mm^14*mN*mo^5*Q2^3*
+     \[CapitalLambda]0^2 - 9642*mm^12*mN^3*mo^5*Q2^3*\[CapitalLambda]0^2 + 
+    8136*mm^10*mN^5*mo^5*Q2^3*\[CapitalLambda]0^2 + 
+    3708*mm^8*mN^7*mo^5*Q2^3*\[CapitalLambda]0^2 + 
+    5982*mm^6*mN^9*mo^5*Q2^3*\[CapitalLambda]0^2 - 
+    7218*mm^4*mN^11*mo^5*Q2^3*\[CapitalLambda]0^2 + 
+    2268*mm^2*mN^13*mo^5*Q2^3*\[CapitalLambda]0^2 - 
+    7128*mm^14*mo^6*Q2^3*\[CapitalLambda]0^2 + 37548*mm^12*mN^2*mo^6*Q2^3*
+     \[CapitalLambda]0^2 - 17076*mm^10*mN^4*mo^6*Q2^3*\[CapitalLambda]0^2 - 
+    5640*mm^8*mN^6*mo^6*Q2^3*\[CapitalLambda]0^2 - 
+    5256*mm^6*mN^8*mo^6*Q2^3*\[CapitalLambda]0^2 - 
+    10188*mm^4*mN^10*mo^6*Q2^3*\[CapitalLambda]0^2 + 
+    11508*mm^2*mN^12*mo^6*Q2^3*\[CapitalLambda]0^2 - 
+    1080*mN^14*mo^6*Q2^3*\[CapitalLambda]0^2 - 3906*mm^12*mN*mo^7*Q2^3*
+     \[CapitalLambda]0^2 + 6900*mm^10*mN^3*mo^7*Q2^3*\[CapitalLambda]0^2 + 
+    948*mm^8*mN^5*mo^7*Q2^3*\[CapitalLambda]0^2 + 816*mm^6*mN^7*mo^7*Q2^3*
+     \[CapitalLambda]0^2 + 4350*mm^4*mN^9*mo^7*Q2^3*\[CapitalLambda]0^2 - 
+    4116*mm^2*mN^11*mo^7*Q2^3*\[CapitalLambda]0^2 + 
+    10962*mm^12*mo^8*Q2^3*\[CapitalLambda]0^2 - 32130*mm^10*mN^2*mo^8*Q2^3*
+     \[CapitalLambda]0^2 - 15786*mm^8*mN^4*mo^8*Q2^3*\[CapitalLambda]0^2 - 
+    10902*mm^6*mN^6*mo^8*Q2^3*\[CapitalLambda]0^2 - 
+    8910*mm^4*mN^8*mo^8*Q2^3*\[CapitalLambda]0^2 - 
+    11508*mm^2*mN^10*mo^8*Q2^3*\[CapitalLambda]0^2 + 
+    1890*mN^12*mo^8*Q2^3*\[CapitalLambda]0^2 + 4410*mm^10*mN*mo^9*Q2^3*
+     \[CapitalLambda]0^2 + 510*mm^8*mN^3*mo^9*Q2^3*\[CapitalLambda]0^2 + 
+    1290*mm^6*mN^5*mo^9*Q2^3*\[CapitalLambda]0^2 + 
+    1890*mm^4*mN^7*mo^9*Q2^3*\[CapitalLambda]0^2 + 
+    4620*mm^2*mN^9*mo^9*Q2^3*\[CapitalLambda]0^2 - 
+    11340*mm^10*mo^10*Q2^3*\[CapitalLambda]0^2 + 12852*mm^8*mN^2*mo^10*Q2^3*
+     \[CapitalLambda]0^2 + 15648*mm^6*mN^4*mo^10*Q2^3*\[CapitalLambda]0^2 + 
+    11772*mm^4*mN^6*mo^10*Q2^3*\[CapitalLambda]0^2 + 
+    5544*mm^2*mN^8*mo^10*Q2^3*\[CapitalLambda]0^2 - 
+    2268*mN^10*mo^10*Q2^3*\[CapitalLambda]0^2 - 3150*mm^8*mN*mo^11*Q2^3*
+     \[CapitalLambda]0^2 - 3696*mm^6*mN^3*mo^11*Q2^3*\[CapitalLambda]0^2 - 
+    4014*mm^4*mN^5*mo^11*Q2^3*\[CapitalLambda]0^2 - 
+    3276*mm^2*mN^7*mo^11*Q2^3*\[CapitalLambda]0^2 + 
+    7938*mm^8*mo^12*Q2^3*\[CapitalLambda]0^2 + 882*mm^6*mN^2*mo^12*Q2^3*
+     \[CapitalLambda]0^2 - 1440*mm^4*mN^4*mo^12*Q2^3*\[CapitalLambda]0^2 + 
+    420*mm^2*mN^6*mo^12*Q2^3*\[CapitalLambda]0^2 + 
+    1890*mN^8*mo^12*Q2^3*\[CapitalLambda]0^2 + 1386*mm^6*mN*mo^13*Q2^3*
+     \[CapitalLambda]0^2 + 2010*mm^4*mN^3*mo^13*Q2^3*\[CapitalLambda]0^2 + 
+    1428*mm^2*mN^5*mo^13*Q2^3*\[CapitalLambda]0^2 - 
+    3672*mm^6*mo^14*Q2^3*\[CapitalLambda]0^2 - 2916*mm^4*mN^2*mo^14*Q2^3*
+     \[CapitalLambda]0^2 - 2004*mm^2*mN^4*mo^14*Q2^3*\[CapitalLambda]0^2 - 
+    1080*mN^6*mo^14*Q2^3*\[CapitalLambda]0^2 - 342*mm^4*mN*mo^15*Q2^3*
+     \[CapitalLambda]0^2 - 348*mm^2*mN^3*mo^15*Q2^3*\[CapitalLambda]0^2 + 
+    1053*mm^4*mo^16*Q2^3*\[CapitalLambda]0^2 + 972*mm^2*mN^2*mo^16*Q2^3*
+     \[CapitalLambda]0^2 + 405*mN^4*mo^16*Q2^3*\[CapitalLambda]0^2 + 
+    36*mm^2*mN*mo^17*Q2^3*\[CapitalLambda]0^2 - 162*mm^2*mo^18*Q2^3*
+     \[CapitalLambda]0^2 - 90*mN^2*mo^18*Q2^3*\[CapitalLambda]0^2 + 
+    9*mo^20*Q2^3*\[CapitalLambda]0^2 - 72*mm^18*Q2^4*\[CapitalLambda]0^2 + 
+    669*mm^16*mN^2*Q2^4*\[CapitalLambda]0^2 - 2394*mm^14*mN^4*Q2^4*
+     \[CapitalLambda]0^2 + 4503*mm^12*mN^6*Q2^4*\[CapitalLambda]0^2 - 
+    4950*mm^10*mN^8*Q2^4*\[CapitalLambda]0^2 + 3267*mm^8*mN^10*Q2^4*
+     \[CapitalLambda]0^2 - 1254*mm^6*mN^12*Q2^4*\[CapitalLambda]0^2 + 
+    249*mm^4*mN^14*Q2^4*\[CapitalLambda]0^2 - 18*mm^2*mN^16*Q2^4*
+     \[CapitalLambda]0^2 - 39*mm^16*mN*mo*Q2^4*\[CapitalLambda]0^2 + 
+    264*mm^14*mN^3*mo*Q2^4*\[CapitalLambda]0^2 - 771*mm^12*mN^5*mo*Q2^4*
+     \[CapitalLambda]0^2 + 1176*mm^10*mN^7*mo*Q2^4*\[CapitalLambda]0^2 - 
+    957*mm^8*mN^9*mo*Q2^4*\[CapitalLambda]0^2 + 384*mm^6*mN^11*mo*Q2^4*
+     \[CapitalLambda]0^2 - 57*mm^4*mN^13*mo*Q2^4*\[CapitalLambda]0^2 + 
+    522*mm^16*mo^2*Q2^4*\[CapitalLambda]0^2 - 3186*mm^14*mN^2*mo^2*Q2^4*
+     \[CapitalLambda]0^2 + 5886*mm^12*mN^4*mo^2*Q2^4*\[CapitalLambda]0^2 - 
+    3012*mm^10*mN^6*mo^2*Q2^4*\[CapitalLambda]0^2 - 
+    2538*mm^8*mN^8*mo^2*Q2^4*\[CapitalLambda]0^2 + 
+    3510*mm^6*mN^10*mo^2*Q2^4*\[CapitalLambda]0^2 - 
+    1326*mm^4*mN^12*mo^2*Q2^4*\[CapitalLambda]0^2 + 
+    144*mm^2*mN^14*mo^2*Q2^4*\[CapitalLambda]0^2 + 
+    222*mm^14*mN*mo^3*Q2^4*\[CapitalLambda]0^2 - 720*mm^12*mN^3*mo^3*Q2^4*
+     \[CapitalLambda]0^2 + 564*mm^10*mN^5*mo^3*Q2^4*\[CapitalLambda]0^2 + 
+    648*mm^8*mN^7*mo^3*Q2^4*\[CapitalLambda]0^2 - 1026*mm^6*mN^9*mo^3*Q2^4*
+     \[CapitalLambda]0^2 + 312*mm^4*mN^11*mo^3*Q2^4*\[CapitalLambda]0^2 - 
+    1638*mm^14*mo^4*Q2^4*\[CapitalLambda]0^2 + 5721*mm^12*mN^2*mo^4*Q2^4*
+     \[CapitalLambda]0^2 - 2964*mm^10*mN^4*mo^4*Q2^4*\[CapitalLambda]0^2 - 
+    1170*mm^8*mN^6*mo^4*Q2^4*\[CapitalLambda]0^2 - 
+    2046*mm^6*mN^8*mo^4*Q2^4*\[CapitalLambda]0^2 + 
+    2697*mm^4*mN^10*mo^4*Q2^4*\[CapitalLambda]0^2 - 
+    504*mm^2*mN^12*mo^4*Q2^4*\[CapitalLambda]0^2 - 
+    525*mm^12*mN*mo^5*Q2^4*\[CapitalLambda]0^2 + 384*mm^10*mN^3*mo^5*Q2^4*
+     \[CapitalLambda]0^2 + 246*mm^8*mN^5*mo^5*Q2^4*\[CapitalLambda]0^2 + 
+    600*mm^6*mN^7*mo^5*Q2^4*\[CapitalLambda]0^2 - 705*mm^4*mN^9*mo^5*Q2^4*
+     \[CapitalLambda]0^2 + 2898*mm^12*mo^6*Q2^4*\[CapitalLambda]0^2 - 
+    4260*mm^10*mN^2*mo^6*Q2^4*\[CapitalLambda]0^2 - 
+    1836*mm^8*mN^4*mo^6*Q2^4*\[CapitalLambda]0^2 - 
+    1500*mm^6*mN^6*mo^6*Q2^4*\[CapitalLambda]0^2 - 
+    2310*mm^4*mN^8*mo^6*Q2^4*\[CapitalLambda]0^2 + 
+    1008*mm^2*mN^10*mo^6*Q2^4*\[CapitalLambda]0^2 + 
+    660*mm^10*mN*mo^7*Q2^4*\[CapitalLambda]0^2 + 528*mm^8*mN^3*mo^7*Q2^4*
+     \[CapitalLambda]0^2 + 516*mm^6*mN^5*mo^7*Q2^4*\[CapitalLambda]0^2 + 
+    840*mm^4*mN^7*mo^7*Q2^4*\[CapitalLambda]0^2 - 
+    3150*mm^10*mo^8*Q2^4*\[CapitalLambda]0^2 + 135*mm^8*mN^2*mo^8*Q2^4*
+     \[CapitalLambda]0^2 + 486*mm^6*mN^4*mo^8*Q2^4*\[CapitalLambda]0^2 + 
+    75*mm^4*mN^6*mo^8*Q2^4*\[CapitalLambda]0^2 - 1260*mm^2*mN^8*mo^8*Q2^4*
+     \[CapitalLambda]0^2 - 465*mm^8*mN*mo^9*Q2^4*\[CapitalLambda]0^2 - 
+    648*mm^6*mN^3*mo^9*Q2^4*\[CapitalLambda]0^2 - 555*mm^4*mN^5*mo^9*Q2^4*
+     \[CapitalLambda]0^2 + 2142*mm^8*mo^10*Q2^4*\[CapitalLambda]0^2 + 
+    1686*mm^6*mN^2*mo^10*Q2^4*\[CapitalLambda]0^2 + 
+    1326*mm^4*mN^4*mo^10*Q2^4*\[CapitalLambda]0^2 + 
+    1008*mm^2*mN^6*mo^10*Q2^4*\[CapitalLambda]0^2 + 
+    174*mm^6*mN*mo^11*Q2^4*\[CapitalLambda]0^2 + 192*mm^4*mN^3*mo^11*Q2^4*
+     \[CapitalLambda]0^2 - 882*mm^6*mo^12*Q2^4*\[CapitalLambda]0^2 - 
+    909*mm^4*mN^2*mo^12*Q2^4*\[CapitalLambda]0^2 - 
+    504*mm^2*mN^4*mo^12*Q2^4*\[CapitalLambda]0^2 - 
+    27*mm^4*mN*mo^13*Q2^4*\[CapitalLambda]0^2 + 198*mm^4*mo^14*Q2^4*
+     \[CapitalLambda]0^2 + 144*mm^2*mN^2*mo^14*Q2^4*\[CapitalLambda]0^2 - 
+    18*mm^2*mo^16*Q2^4*\[CapitalLambda]0^2 + 
+    21*mm^16*Q2^5*\[CapitalLambda]0^2 - 114*mm^14*mN^2*Q2^5*
+     \[CapitalLambda]0^2 + 255*mm^12*mN^4*Q2^5*\[CapitalLambda]0^2 - 
+    300*mm^10*mN^6*Q2^5*\[CapitalLambda]0^2 + 195*mm^8*mN^8*Q2^5*
+     \[CapitalLambda]0^2 - 66*mm^6*mN^10*Q2^5*\[CapitalLambda]0^2 + 
+    9*mm^4*mN^12*Q2^5*\[CapitalLambda]0^2 + 6*mm^14*mN*mo*Q2^5*
+     \[CapitalLambda]0^2 - 24*mm^12*mN^3*mo*Q2^5*\[CapitalLambda]0^2 + 
+    36*mm^10*mN^5*mo*Q2^5*\[CapitalLambda]0^2 - 24*mm^8*mN^7*mo*Q2^5*
+     \[CapitalLambda]0^2 + 6*mm^6*mN^9*mo*Q2^5*\[CapitalLambda]0^2 - 
+    114*mm^14*mo^2*Q2^5*\[CapitalLambda]0^2 + 306*mm^12*mN^2*mo^2*Q2^5*
+     \[CapitalLambda]0^2 - 180*mm^10*mN^4*mo^2*Q2^5*\[CapitalLambda]0^2 - 
+    156*mm^8*mN^6*mo^2*Q2^5*\[CapitalLambda]0^2 + 198*mm^6*mN^8*mo^2*Q2^5*
+     \[CapitalLambda]0^2 - 54*mm^4*mN^10*mo^2*Q2^5*\[CapitalLambda]0^2 - 
+    24*mm^12*mN*mo^3*Q2^5*\[CapitalLambda]0^2 + 24*mm^10*mN^3*mo^3*Q2^5*
+     \[CapitalLambda]0^2 + 24*mm^8*mN^5*mo^3*Q2^5*\[CapitalLambda]0^2 - 
+    24*mm^6*mN^7*mo^3*Q2^5*\[CapitalLambda]0^2 + 255*mm^12*mo^4*Q2^5*
+     \[CapitalLambda]0^2 - 180*mm^10*mN^2*mo^4*Q2^5*\[CapitalLambda]0^2 - 
+    78*mm^8*mN^4*mo^4*Q2^5*\[CapitalLambda]0^2 - 132*mm^6*mN^6*mo^4*Q2^5*
+     \[CapitalLambda]0^2 + 135*mm^4*mN^8*mo^4*Q2^5*\[CapitalLambda]0^2 + 
+    36*mm^10*mN*mo^5*Q2^5*\[CapitalLambda]0^2 + 24*mm^8*mN^3*mo^5*Q2^5*
+     \[CapitalLambda]0^2 + 36*mm^6*mN^5*mo^5*Q2^5*\[CapitalLambda]0^2 - 
+    300*mm^10*mo^6*Q2^5*\[CapitalLambda]0^2 - 156*mm^8*mN^2*mo^6*Q2^5*
+     \[CapitalLambda]0^2 - 132*mm^6*mN^4*mo^6*Q2^5*\[CapitalLambda]0^2 - 
+    180*mm^4*mN^6*mo^6*Q2^5*\[CapitalLambda]0^2 - 
+    24*mm^8*mN*mo^7*Q2^5*\[CapitalLambda]0^2 - 24*mm^6*mN^3*mo^7*Q2^5*
+     \[CapitalLambda]0^2 + 195*mm^8*mo^8*Q2^5*\[CapitalLambda]0^2 + 
+    198*mm^6*mN^2*mo^8*Q2^5*\[CapitalLambda]0^2 + 135*mm^4*mN^4*mo^8*Q2^5*
+     \[CapitalLambda]0^2 + 6*mm^6*mN*mo^9*Q2^5*\[CapitalLambda]0^2 - 
+    66*mm^6*mo^10*Q2^5*\[CapitalLambda]0^2 - 54*mm^4*mN^2*mo^10*Q2^5*
+     \[CapitalLambda]0^2 + 9*mm^4*mo^12*Q2^5*\[CapitalLambda]0^2 + 
+    2592*mm^18*mN^6*\[CapitalLambda]0^4 - 23328*mm^16*mN^8*
+     \[CapitalLambda]0^4 + 93312*mm^14*mN^10*\[CapitalLambda]0^4 - 
+    217728*mm^12*mN^12*\[CapitalLambda]0^4 + 326592*mm^10*mN^14*
+     \[CapitalLambda]0^4 - 326592*mm^8*mN^16*\[CapitalLambda]0^4 + 
+    217728*mm^6*mN^18*\[CapitalLambda]0^4 - 93312*mm^4*mN^20*
+     \[CapitalLambda]0^4 + 23328*mm^2*mN^22*\[CapitalLambda]0^4 - 
+    2592*mN^24*\[CapitalLambda]0^4 + 2160*mm^20*mN^3*mo*\[CapitalLambda]0^4 - 
+    21168*mm^18*mN^5*mo*\[CapitalLambda]0^4 + 89952*mm^16*mN^7*mo*
+     \[CapitalLambda]0^4 - 216768*mm^14*mN^9*mo*\[CapitalLambda]0^4 + 
+    323232*mm^12*mN^11*mo*\[CapitalLambda]0^4 - 301728*mm^10*mN^13*mo*
+     \[CapitalLambda]0^4 + 163968*mm^8*mN^15*mo*\[CapitalLambda]0^4 - 
+    34752*mm^6*mN^17*mo*\[CapitalLambda]0^4 - 12432*mm^4*mN^19*mo*
+     \[CapitalLambda]0^4 + 9168*mm^2*mN^21*mo*\[CapitalLambda]0^4 - 
+    1632*mN^23*mo*\[CapitalLambda]0^4 - 1296*mm^18*mN^4*mo^2*
+     \[CapitalLambda]0^4 - 10752*mm^16*mN^6*mo^2*\[CapitalLambda]0^4 + 
+    98880*mm^14*mN^8*mo^2*\[CapitalLambda]0^4 - 282240*mm^12*mN^10*mo^2*
+     \[CapitalLambda]0^4 + 382368*mm^10*mN^12*mo^2*\[CapitalLambda]0^4 - 
+    223104*mm^8*mN^14*mo^2*\[CapitalLambda]0^4 - 36288*mm^6*mN^16*mo^2*
+     \[CapitalLambda]0^4 + 128640*mm^4*mN^18*mo^2*\[CapitalLambda]0^4 - 
+    68880*mm^2*mN^20*mo^2*\[CapitalLambda]0^4 + 
+    12672*mN^22*mo^2*\[CapitalLambda]0^4 - 21600*mm^18*mN^3*mo^3*
+     \[CapitalLambda]0^4 + 159360*mm^16*mN^5*mo^3*\[CapitalLambda]0^4 - 
+    475488*mm^14*mN^7*mo^3*\[CapitalLambda]0^4 + 722784*mm^12*mN^9*mo^3*
+     \[CapitalLambda]0^4 - 554016*mm^10*mN^11*mo^3*\[CapitalLambda]0^4 + 
+    136800*mm^8*mN^13*mo^3*\[CapitalLambda]0^4 + 69600*mm^6*mN^15*mo^3*
+     \[CapitalLambda]0^4 - 30432*mm^4*mN^17*mo^3*\[CapitalLambda]0^4 - 
+    13824*mm^2*mN^19*mo^3*\[CapitalLambda]0^4 + 
+    6816*mN^21*mo^3*\[CapitalLambda]0^4 + 11664*mm^16*mN^4*mo^4*
+     \[CapitalLambda]0^4 + 7584*mm^14*mN^6*mo^4*\[CapitalLambda]0^4 - 
+    154080*mm^12*mN^8*mo^4*\[CapitalLambda]0^4 + 268704*mm^10*mN^10*mo^4*
+     \[CapitalLambda]0^4 - 114240*mm^8*mN^12*mo^4*\[CapitalLambda]0^4 - 
+    67104*mm^6*mN^14*mo^4*\[CapitalLambda]0^4 + 25056*mm^4*mN^16*mo^4*
+     \[CapitalLambda]0^4 + 42720*mm^2*mN^18*mo^4*\[CapitalLambda]0^4 - 
+    20304*mN^20*mo^4*\[CapitalLambda]0^4 + 97200*mm^16*mN^3*mo^5*
+     \[CapitalLambda]0^4 - 512832*mm^14*mN^5*mo^5*\[CapitalLambda]0^4 + 
+    977952*mm^12*mN^7*mo^5*\[CapitalLambda]0^4 - 774144*mm^10*mN^9*mo^5*
+     \[CapitalLambda]0^4 + 164544*mm^8*mN^11*mo^5*\[CapitalLambda]0^4 + 
+    30144*mm^6*mN^13*mo^5*\[CapitalLambda]0^4 + 42336*mm^4*mN^15*mo^5*
+     \[CapitalLambda]0^4 - 18048*mm^2*mN^17*mo^5*\[CapitalLambda]0^4 - 
+    7152*mN^19*mo^5*\[CapitalLambda]0^4 - 46656*mm^14*mN^4*mo^6*
+     \[CapitalLambda]0^4 + 30240*mm^12*mN^6*mo^6*\[CapitalLambda]0^4 + 
+    100224*mm^10*mN^8*mo^6*\[CapitalLambda]0^4 - 61344*mm^8*mN^10*mo^6*
+     \[CapitalLambda]0^4 - 23616*mm^6*mN^12*mo^6*\[CapitalLambda]0^4 - 
+    37152*mm^4*mN^14*mo^6*\[CapitalLambda]0^4 + 34560*mm^2*mN^16*mo^6*
+     \[CapitalLambda]0^4 + 3744*mN^18*mo^6*\[CapitalLambda]0^4 - 
+    259200*mm^14*mN^3*mo^7*\[CapitalLambda]0^4 + 905856*mm^12*mN^5*mo^7*
+     \[CapitalLambda]0^4 - 919776*mm^10*mN^7*mo^7*\[CapitalLambda]0^4 + 
+    205728*mm^8*mN^9*mo^7*\[CapitalLambda]0^4 + 34752*mm^6*mN^11*mo^7*
+     \[CapitalLambda]0^4 + 12480*mm^4*mN^13*mo^7*\[CapitalLambda]0^4 + 
+    26016*mm^2*mN^15*mo^7*\[CapitalLambda]0^4 - 
+    5856*mN^17*mo^7*\[CapitalLambda]0^4 + 108864*mm^12*mN^4*mo^8*
+     \[CapitalLambda]0^4 - 65184*mm^10*mN^6*mo^8*\[CapitalLambda]0^4 - 
+    17760*mm^8*mN^8*mo^8*\[CapitalLambda]0^4 - 12096*mm^6*mN^10*mo^8*
+     \[CapitalLambda]0^4 - 11904*mm^4*mN^12*mo^8*\[CapitalLambda]0^4 - 
+    24096*mm^2*mN^14*mo^8*\[CapitalLambda]0^4 + 
+    22176*mN^16*mo^8*\[CapitalLambda]0^4 + 453600*mm^12*mN^3*mo^9*
+     \[CapitalLambda]0^4 - 922656*mm^10*mN^5*mo^9*\[CapitalLambda]0^4 + 
+    275040*mm^8*mN^7*mo^9*\[CapitalLambda]0^4 + 49728*mm^6*mN^9*mo^9*
+     \[CapitalLambda]0^4 + 17952*mm^4*mN^11*mo^9*\[CapitalLambda]0^4 + 
+    4320*mm^2*mN^13*mo^9*\[CapitalLambda]0^4 + 11424*mN^15*mo^9*
+     \[CapitalLambda]0^4 - 163296*mm^10*mN^4*mo^10*\[CapitalLambda]0^4 + 
+    32928*mm^8*mN^6*mo^10*\[CapitalLambda]0^4 - 4032*mm^6*mN^8*mo^10*
+     \[CapitalLambda]0^4 - 8640*mm^4*mN^10*mo^10*\[CapitalLambda]0^4 - 
+    10848*mm^2*mN^12*mo^10*\[CapitalLambda]0^4 - 
+    18144*mN^14*mo^10*\[CapitalLambda]0^4 - 544320*mm^10*mN^3*mo^11*
+     \[CapitalLambda]0^4 + 486528*mm^8*mN^5*mo^11*\[CapitalLambda]0^4 + 
+    143328*mm^6*mN^7*mo^11*\[CapitalLambda]0^4 + 68256*mm^4*mN^9*mo^11*
+     \[CapitalLambda]0^4 + 32352*mm^2*mN^11*mo^11*\[CapitalLambda]0^4 + 
+    7392*mN^13*mo^11*\[CapitalLambda]0^4 + 163296*mm^8*mN^4*mo^12*
+     \[CapitalLambda]0^4 + 34272*mm^6*mN^6*mo^12*\[CapitalLambda]0^4 + 
+    4320*mm^4*mN^8*mo^12*\[CapitalLambda]0^4 - 4320*mm^2*mN^10*mo^12*
+     \[CapitalLambda]0^4 - 4032*mN^12*mo^12*\[CapitalLambda]0^4 + 
+    453600*mm^8*mN^3*mo^13*\[CapitalLambda]0^4 - 33600*mm^6*mN^5*mo^13*
+     \[CapitalLambda]0^4 - 85152*mm^4*mN^7*mo^13*\[CapitalLambda]0^4 - 
+    57216*mm^2*mN^9*mo^13*\[CapitalLambda]0^4 - 18816*mN^11*mo^13*
+     \[CapitalLambda]0^4 - 108864*mm^6*mN^4*mo^14*\[CapitalLambda]0^4 - 
+    53664*mm^4*mN^6*mo^14*\[CapitalLambda]0^4 - 7680*mm^2*mN^8*mo^14*
+     \[CapitalLambda]0^4 + 6624*mN^10*mo^14*\[CapitalLambda]0^4 - 
+    259200*mm^6*mN^3*mo^15*\[CapitalLambda]0^4 - 110208*mm^4*mN^5*mo^15*
+     \[CapitalLambda]0^4 - 19872*mm^2*mN^7*mo^15*\[CapitalLambda]0^4 + 
+    1632*mN^9*mo^15*\[CapitalLambda]0^4 + 46656*mm^4*mN^4*mo^16*
+     \[CapitalLambda]0^4 + 26880*mm^2*mN^6*mo^16*\[CapitalLambda]0^4 + 
+    3456*mN^8*mo^16*\[CapitalLambda]0^4 + 97200*mm^4*mN^3*mo^17*
+     \[CapitalLambda]0^4 + 58704*mm^2*mN^5*mo^17*\[CapitalLambda]0^4 + 
+    14016*mN^7*mo^17*\[CapitalLambda]0^4 - 11664*mm^2*mN^4*mo^18*
+     \[CapitalLambda]0^4 - 4896*mN^6*mo^18*\[CapitalLambda]0^4 - 
+    21600*mm^2*mN^3*mo^19*\[CapitalLambda]0^4 - 
+    9984*mN^5*mo^19*\[CapitalLambda]0^4 + 1296*mN^4*mo^20*
+     \[CapitalLambda]0^4 + 2160*mN^3*mo^21*\[CapitalLambda]0^4 - 
+    945*mm^20*mN^2*Q2*\[CapitalLambda]0^4 + 9126*mm^18*mN^4*Q2*
+     \[CapitalLambda]0^4 - 46185*mm^16*mN^6*Q2*\[CapitalLambda]0^4 + 
+    149256*mm^14*mN^8*Q2*\[CapitalLambda]0^4 - 319746*mm^12*mN^10*Q2*
+     \[CapitalLambda]0^4 + 458724*mm^10*mN^12*Q2*\[CapitalLambda]0^4 - 
+    439866*mm^8*mN^14*Q2*\[CapitalLambda]0^4 + 276360*mm^6*mN^16*Q2*
+     \[CapitalLambda]0^4 - 108141*mm^4*mN^18*Q2*\[CapitalLambda]0^4 + 
+    23526*mm^2*mN^20*Q2*\[CapitalLambda]0^4 - 
+    2109*mN^22*Q2*\[CapitalLambda]0^4 + 135*mm^20*mN*mo*Q2*
+     \[CapitalLambda]0^4 - 6966*mm^18*mN^3*mo*Q2*\[CapitalLambda]0^4 + 
+    51939*mm^16*mN^5*mo*Q2*\[CapitalLambda]0^4 - 173400*mm^14*mN^7*mo*Q2*
+     \[CapitalLambda]0^4 + 322926*mm^12*mN^9*mo*Q2*\[CapitalLambda]0^4 - 
+    361044*mm^10*mN^11*mo*Q2*\[CapitalLambda]0^4 + 
+    243966*mm^8*mN^13*mo*Q2*\[CapitalLambda]0^4 - 94584*mm^6*mN^15*mo*Q2*
+     \[CapitalLambda]0^4 + 18315*mm^4*mN^17*mo*Q2*\[CapitalLambda]0^4 - 
+    1446*mm^2*mN^19*mo*Q2*\[CapitalLambda]0^4 + 
+    159*mN^21*mo*Q2*\[CapitalLambda]0^4 + 9774*mm^18*mN^2*mo^2*Q2*
+     \[CapitalLambda]0^4 - 66462*mm^16*mN^4*mo^2*Q2*\[CapitalLambda]0^4 + 
+    231576*mm^14*mN^6*mo^2*Q2*\[CapitalLambda]0^4 - 
+    481176*mm^12*mN^8*mo^2*Q2*\[CapitalLambda]0^4 + 
+    561540*mm^10*mN^10*mo^2*Q2*\[CapitalLambda]0^4 - 
+    274404*mm^8*mN^12*mo^2*Q2*\[CapitalLambda]0^4 - 
+    98568*mm^6*mN^14*mo^2*Q2*\[CapitalLambda]0^4 + 
+    190344*mm^4*mN^16*mo^2*Q2*\[CapitalLambda]0^4 - 
+    85314*mm^2*mN^18*mo^2*Q2*\[CapitalLambda]0^4 + 
+    12690*mN^20*mo^2*Q2*\[CapitalLambda]0^4 - 1350*mm^18*mN*mo^3*Q2*
+     \[CapitalLambda]0^4 + 55914*mm^16*mN^3*mo^3*Q2*\[CapitalLambda]0^4 - 
+    296808*mm^14*mN^5*mo^3*Q2*\[CapitalLambda]0^4 + 
+    626472*mm^12*mN^7*mo^3*Q2*\[CapitalLambda]0^4 - 
+    597540*mm^10*mN^9*mo^3*Q2*\[CapitalLambda]0^4 + 
+    177804*mm^8*mN^11*mo^3*Q2*\[CapitalLambda]0^4 + 
+    105240*mm^6*mN^13*mo^3*Q2*\[CapitalLambda]0^4 - 
+    88248*mm^4*mN^15*mo^3*Q2*\[CapitalLambda]0^4 + 
+    20922*mm^2*mN^17*mo^3*Q2*\[CapitalLambda]0^4 - 
+    2406*mN^19*mo^3*Q2*\[CapitalLambda]0^4 - 45441*mm^16*mN^2*mo^4*Q2*
+     \[CapitalLambda]0^4 + 201336*mm^14*mN^4*mo^4*Q2*\[CapitalLambda]0^4 - 
+    438636*mm^12*mN^6*mo^4*Q2*\[CapitalLambda]0^4 + 
+    489096*mm^10*mN^8*mo^4*Q2*\[CapitalLambda]0^4 - 
+    169206*mm^8*mN^10*mo^4*Q2*\[CapitalLambda]0^4 - 
+    77112*mm^6*mN^12*mo^4*Q2*\[CapitalLambda]0^4 - 
+    20556*mm^4*mN^14*mo^4*Q2*\[CapitalLambda]0^4 + 
+    89784*mm^2*mN^16*mo^4*Q2*\[CapitalLambda]0^4 - 
+    29265*mN^18*mo^4*Q2*\[CapitalLambda]0^4 + 6075*mm^16*mN*mo^5*Q2*
+     \[CapitalLambda]0^4 - 196536*mm^14*mN^3*mo^5*Q2*\[CapitalLambda]0^4 + 
+    686340*mm^12*mN^5*mo^5*Q2*\[CapitalLambda]0^4 - 
+    760056*mm^10*mN^7*mo^5*Q2*\[CapitalLambda]0^4 + 
+    200322*mm^8*mN^9*mo^5*Q2*\[CapitalLambda]0^4 + 
+    44952*mm^6*mN^11*mo^5*Q2*\[CapitalLambda]0^4 + 
+    65604*mm^4*mN^13*mo^5*Q2*\[CapitalLambda]0^4 - 
+    57960*mm^2*mN^15*mo^5*Q2*\[CapitalLambda]0^4 + 
+    11259*mN^17*mo^5*Q2*\[CapitalLambda]0^4 + 125064*mm^14*mN^2*mo^6*Q2*
+     \[CapitalLambda]0^4 - 315000*mm^12*mN^4*mo^6*Q2*\[CapitalLambda]0^4 + 
+    357000*mm^10*mN^6*mo^6*Q2*\[CapitalLambda]0^4 - 
+    119256*mm^8*mN^8*mo^6*Q2*\[CapitalLambda]0^4 - 
+    35880*mm^6*mN^10*mo^6*Q2*\[CapitalLambda]0^4 - 
+    41448*mm^4*mN^12*mo^6*Q2*\[CapitalLambda]0^4 + 
+    1560*mm^2*mN^14*mo^6*Q2*\[CapitalLambda]0^4 + 
+    27960*mN^16*mo^6*Q2*\[CapitalLambda]0^4 - 16200*mm^14*mN*mo^7*Q2*
+     \[CapitalLambda]0^4 + 395304*mm^12*mN^3*mo^7*Q2*\[CapitalLambda]0^4 - 
+    793656*mm^10*mN^5*mo^7*Q2*\[CapitalLambda]0^4 + 
+    253320*mm^8*mN^7*mo^7*Q2*\[CapitalLambda]0^4 + 
+    52680*mm^6*mN^9*mo^7*Q2*\[CapitalLambda]0^4 + 24120*mm^4*mN^11*mo^7*Q2*
+     \[CapitalLambda]0^4 + 41784*mm^2*mN^13*mo^7*Q2*\[CapitalLambda]0^4 - 
+    24936*mN^15*mo^7*Q2*\[CapitalLambda]0^4 - 225666*mm^12*mN^2*mo^8*Q2*
+     \[CapitalLambda]0^4 + 233940*mm^10*mN^4*mo^8*Q2*\[CapitalLambda]0^4 - 
+    77670*mm^8*mN^6*mo^8*Q2*\[CapitalLambda]0^4 - 25128*mm^6*mN^8*mo^8*Q2*
+     \[CapitalLambda]0^4 - 19662*mm^4*mN^10*mo^8*Q2*\[CapitalLambda]0^4 - 
+    27756*mm^2*mN^12*mo^8*Q2*\[CapitalLambda]0^4 + 
+    630*mN^14*mo^8*Q2*\[CapitalLambda]0^4 + 28350*mm^12*mN*mo^9*Q2*
+     \[CapitalLambda]0^4 - 498036*mm^10*mN^3*mo^9*Q2*\[CapitalLambda]0^4 + 
+    425730*mm^8*mN^5*mo^9*Q2*\[CapitalLambda]0^4 + 
+    126840*mm^6*mN^7*mo^9*Q2*\[CapitalLambda]0^4 + 
+    62610*mm^4*mN^9*mo^9*Q2*\[CapitalLambda]0^4 + 30780*mm^2*mN^11*mo^9*Q2*
+     \[CapitalLambda]0^4 + 28014*mN^13*mo^9*Q2*\[CapitalLambda]0^4 + 
+    278964*mm^10*mN^2*mo^10*Q2*\[CapitalLambda]0^4 + 
+    11004*mm^8*mN^4*mo^10*Q2*\[CapitalLambda]0^4 - 
+    5400*mm^6*mN^6*mo^10*Q2*\[CapitalLambda]0^4 - 16776*mm^4*mN^8*mo^10*Q2*
+     \[CapitalLambda]0^4 - 19356*mm^2*mN^10*mo^10*Q2*\[CapitalLambda]0^4 - 
+    19572*mN^12*mo^10*Q2*\[CapitalLambda]0^4 - 34020*mm^10*mN*mo^11*Q2*
+     \[CapitalLambda]0^4 + 403116*mm^8*mN^3*mo^11*Q2*\[CapitalLambda]0^4 - 
+    13464*mm^6*mN^5*mo^11*Q2*\[CapitalLambda]0^4 - 
+    55560*mm^4*mN^7*mo^11*Q2*\[CapitalLambda]0^4 - 
+    34404*mm^2*mN^9*mo^11*Q2*\[CapitalLambda]0^4 - 
+    11844*mN^11*mo^11*Q2*\[CapitalLambda]0^4 - 239274*mm^8*mN^2*mo^12*Q2*
+     \[CapitalLambda]0^4 - 174888*mm^6*mN^4*mo^12*Q2*\[CapitalLambda]0^4 - 
+    78156*mm^4*mN^6*mo^12*Q2*\[CapitalLambda]0^4 - 
+    17256*mm^2*mN^8*mo^12*Q2*\[CapitalLambda]0^4 + 
+    2310*mN^10*mo^12*Q2*\[CapitalLambda]0^4 + 28350*mm^8*mN*mo^13*Q2*
+     \[CapitalLambda]0^4 - 205464*mm^6*mN^3*mo^13*Q2*\[CapitalLambda]0^4 - 
+    93852*mm^4*mN^5*mo^13*Q2*\[CapitalLambda]0^4 - 
+    27432*mm^2*mN^7*mo^13*Q2*\[CapitalLambda]0^4 - 
+    6594*mN^9*mo^13*Q2*\[CapitalLambda]0^4 + 140616*mm^6*mN^2*mo^14*Q2*
+     \[CapitalLambda]0^4 + 148584*mm^4*mN^4*mo^14*Q2*\[CapitalLambda]0^4 + 
+    78456*mm^2*mN^6*mo^14*Q2*\[CapitalLambda]0^4 + 
+    21240*mN^8*mo^14*Q2*\[CapitalLambda]0^4 - 16200*mm^6*mN*mo^15*Q2*
+     \[CapitalLambda]0^4 + 60936*mm^4*mN^3*mo^15*Q2*\[CapitalLambda]0^4 + 
+    37560*mm^2*mN^5*mo^15*Q2*\[CapitalLambda]0^4 + 
+    9816*mN^7*mo^15*Q2*\[CapitalLambda]0^4 - 54189*mm^4*mN^2*mo^16*Q2*
+     \[CapitalLambda]0^4 - 56010*mm^2*mN^4*mo^16*Q2*\[CapitalLambda]0^4 - 
+    20985*mN^6*mo^16*Q2*\[CapitalLambda]0^4 + 6075*mm^4*mN*mo^17*Q2*
+     \[CapitalLambda]0^4 - 8454*mm^2*mN^3*mo^17*Q2*\[CapitalLambda]0^4 - 
+    3789*mN^5*mo^17*Q2*\[CapitalLambda]0^4 + 12366*mm^2*mN^2*mo^18*Q2*
+     \[CapitalLambda]0^4 + 8370*mN^4*mo^18*Q2*\[CapitalLambda]0^4 - 
+    1350*mm^2*mN*mo^19*Q2*\[CapitalLambda]0^4 + 186*mN^3*mo^19*Q2*
+     \[CapitalLambda]0^4 - 1269*mN^2*mo^20*Q2*\[CapitalLambda]0^4 + 
+    135*mN*mo^21*Q2*\[CapitalLambda]0^4 - 135*mm^20*Q2^2*
+     \[CapitalLambda]0^4 + 3618*mm^18*mN^2*Q2^2*\[CapitalLambda]0^4 - 
+    23982*mm^16*mN^4*Q2^2*\[CapitalLambda]0^4 + 83904*mm^14*mN^6*Q2^2*
+     \[CapitalLambda]0^4 - 183162*mm^12*mN^8*Q2^2*\[CapitalLambda]0^4 + 
+    261108*mm^10*mN^10*Q2^2*\[CapitalLambda]0^4 - 243528*mm^8*mN^12*Q2^2*
+     \[CapitalLambda]0^4 + 144912*mm^6*mN^14*Q2^2*\[CapitalLambda]0^4 - 
+    51879*mm^4*mN^16*Q2^2*\[CapitalLambda]0^4 + 9882*mm^2*mN^18*Q2^2*
+     \[CapitalLambda]0^4 - 738*mN^20*Q2^2*\[CapitalLambda]0^4 - 
+    378*mm^18*mN*mo*Q2^2*\[CapitalLambda]0^4 + 8283*mm^16*mN^3*mo*Q2^2*
+     \[CapitalLambda]0^4 - 45816*mm^14*mN^5*mo*Q2^2*\[CapitalLambda]0^4 + 
+    116436*mm^12*mN^7*mo*Q2^2*\[CapitalLambda]0^4 - 
+    162588*mm^10*mN^9*mo*Q2^2*\[CapitalLambda]0^4 + 
+    133938*mm^8*mN^11*mo*Q2^2*\[CapitalLambda]0^4 - 
+    67128*mm^6*mN^13*mo*Q2^2*\[CapitalLambda]0^4 + 
+    20916*mm^4*mN^15*mo*Q2^2*\[CapitalLambda]0^4 - 
+    4026*mm^2*mN^17*mo*Q2^2*\[CapitalLambda]0^4 + 
+    363*mN^19*mo*Q2^2*\[CapitalLambda]0^4 + 1350*mm^18*mo^2*Q2^2*
+     \[CapitalLambda]0^4 - 29376*mm^16*mN^2*mo^2*Q2^2*\[CapitalLambda]0^4 + 
+    133776*mm^14*mN^4*mo^2*Q2^2*\[CapitalLambda]0^4 - 
+    292488*mm^12*mN^6*mo^2*Q2^2*\[CapitalLambda]0^4 + 
+    333516*mm^10*mN^8*mo^2*Q2^2*\[CapitalLambda]0^4 - 
+    143832*mm^8*mN^10*mo^2*Q2^2*\[CapitalLambda]0^4 - 
+    77472*mm^6*mN^12*mo^2*Q2^2*\[CapitalLambda]0^4 + 
+    112200*mm^4*mN^14*mo^2*Q2^2*\[CapitalLambda]0^4 - 
+    42882*mm^2*mN^16*mo^2*Q2^2*\[CapitalLambda]0^4 + 
+    5208*mN^18*mo^2*Q2^2*\[CapitalLambda]0^4 + 3150*mm^16*mN*mo^3*Q2^2*
+     \[CapitalLambda]0^4 - 50838*mm^14*mN^3*mo^3*Q2^2*\[CapitalLambda]0^4 + 
+    181518*mm^12*mN^5*mo^3*Q2^2*\[CapitalLambda]0^4 - 
+    236598*mm^10*mN^7*mo^3*Q2^2*\[CapitalLambda]0^4 + 
+    87642*mm^8*mN^9*mo^3*Q2^2*\[CapitalLambda]0^4 + 
+    59118*mm^6*mN^11*mo^3*Q2^2*\[CapitalLambda]0^4 - 
+    61974*mm^4*mN^13*mo^3*Q2^2*\[CapitalLambda]0^4 + 
+    20574*mm^2*mN^15*mo^3*Q2^2*\[CapitalLambda]0^4 - 
+    2592*mN^17*mo^3*Q2^2*\[CapitalLambda]0^4 - 6075*mm^16*mo^4*Q2^2*
+     \[CapitalLambda]0^4 + 104130*mm^14*mN^2*mo^4*Q2^2*\[CapitalLambda]0^4 - 
+    292098*mm^12*mN^4*mo^4*Q2^2*\[CapitalLambda]0^4 + 
+    329034*mm^10*mN^6*mo^4*Q2^2*\[CapitalLambda]0^4 - 
+    106320*mm^8*mN^8*mo^4*Q2^2*\[CapitalLambda]0^4 - 
+    38970*mm^6*mN^10*mo^4*Q2^2*\[CapitalLambda]0^4 - 
+    36078*mm^4*mN^12*mo^4*Q2^2*\[CapitalLambda]0^4 + 
+    61422*mm^2*mN^14*mo^4*Q2^2*\[CapitalLambda]0^4 - 
+    15045*mN^16*mo^4*Q2^2*\[CapitalLambda]0^4 - 11592*mm^14*mN*mo^5*Q2^2*
+     \[CapitalLambda]0^4 + 130254*mm^12*mN^3*mo^5*Q2^2*\[CapitalLambda]0^4 - 
+    259092*mm^10*mN^5*mo^5*Q2^2*\[CapitalLambda]0^4 + 
+    94194*mm^8*mN^7*mo^5*Q2^2*\[CapitalLambda]0^4 + 
+    26112*mm^6*mN^9*mo^5*Q2^2*\[CapitalLambda]0^4 + 
+    38610*mm^4*mN^11*mo^5*Q2^2*\[CapitalLambda]0^4 - 
+    39396*mm^2*mN^13*mo^5*Q2^2*\[CapitalLambda]0^4 + 
+    7854*mN^15*mo^5*Q2^2*\[CapitalLambda]0^4 + 16200*mm^14*mo^6*Q2^2*
+     \[CapitalLambda]0^4 - 210294*mm^12*mN^2*mo^6*Q2^2*\[CapitalLambda]0^4 + 
+    290868*mm^10*mN^4*mo^6*Q2^2*\[CapitalLambda]0^4 - 
+    91746*mm^8*mN^6*mo^6*Q2^2*\[CapitalLambda]0^4 - 
+    24672*mm^6*mN^8*mo^6*Q2^2*\[CapitalLambda]0^4 - 
+    21210*mm^4*mN^10*mo^6*Q2^2*\[CapitalLambda]0^4 - 
+    19164*mm^2*mN^12*mo^6*Q2^2*\[CapitalLambda]0^4 + 
+    21618*mN^14*mo^6*Q2^2*\[CapitalLambda]0^4 + 24696*mm^12*mN*mo^7*Q2^2*
+     \[CapitalLambda]0^4 - 177774*mm^10*mN^3*mo^7*Q2^2*\[CapitalLambda]0^4 + 
+    139434*mm^8*mN^5*mo^7*Q2^2*\[CapitalLambda]0^4 + 
+    43332*mm^6*mN^7*mo^7*Q2^2*\[CapitalLambda]0^4 + 
+    24540*mm^4*mN^9*mo^7*Q2^2*\[CapitalLambda]0^4 + 
+    30666*mm^2*mN^11*mo^7*Q2^2*\[CapitalLambda]0^4 - 
+    12894*mN^13*mo^7*Q2^2*\[CapitalLambda]0^4 - 28350*mm^12*mo^8*Q2^2*
+     \[CapitalLambda]0^4 + 264222*mm^10*mN^2*mo^8*Q2^2*\[CapitalLambda]0^4 - 
+    76290*mm^8*mN^4*mo^8*Q2^2*\[CapitalLambda]0^4 - 
+    22716*mm^6*mN^6*mo^8*Q2^2*\[CapitalLambda]0^4 - 
+    17682*mm^4*mN^8*mo^8*Q2^2*\[CapitalLambda]0^4 - 
+    17730*mm^2*mN^10*mo^8*Q2^2*\[CapitalLambda]0^4 - 
+    12558*mN^12*mo^8*Q2^2*\[CapitalLambda]0^4 - 33516*mm^10*mN*mo^9*Q2^2*
+     \[CapitalLambda]0^4 + 134580*mm^8*mN^3*mo^9*Q2^2*\[CapitalLambda]0^4 + 
+    6384*mm^6*mN^5*mo^9*Q2^2*\[CapitalLambda]0^4 - 
+    5832*mm^4*mN^7*mo^9*Q2^2*\[CapitalLambda]0^4 - 
+    660*mm^2*mN^9*mo^9*Q2^2*\[CapitalLambda]0^4 + 
+    11844*mN^11*mo^9*Q2^2*\[CapitalLambda]0^4 + 34020*mm^10*mo^10*Q2^2*
+     \[CapitalLambda]0^4 - 210798*mm^8*mN^2*mo^10*Q2^2*\[CapitalLambda]0^4 - 
+    100728*mm^6*mN^4*mo^10*Q2^2*\[CapitalLambda]0^4 - 
+    46380*mm^4*mN^6*mo^10*Q2^2*\[CapitalLambda]0^4 - 
+    17052*mm^2*mN^8*mo^10*Q2^2*\[CapitalLambda]0^4 - 
+    6342*mN^10*mo^10*Q2^2*\[CapitalLambda]0^4 + 29988*mm^8*mN*mo^11*Q2^2*
+     \[CapitalLambda]0^4 - 50178*mm^6*mN^3*mo^11*Q2^2*\[CapitalLambda]0^4 - 
+    25470*mm^4*mN^5*mo^11*Q2^2*\[CapitalLambda]0^4 - 
+    10734*mm^2*mN^7*mo^11*Q2^2*\[CapitalLambda]0^4 - 
+    4998*mN^9*mo^11*Q2^2*\[CapitalLambda]0^4 - 28350*mm^8*mo^12*Q2^2*
+     \[CapitalLambda]0^4 + 103446*mm^6*mN^2*mo^12*Q2^2*\[CapitalLambda]0^4 + 
+    94914*mm^4*mN^4*mo^12*Q2^2*\[CapitalLambda]0^4 + 
+    50322*mm^2*mN^6*mo^12*Q2^2*\[CapitalLambda]0^4 + 
+    15372*mN^8*mo^12*Q2^2*\[CapitalLambda]0^4 - 17640*mm^6*mN*mo^13*Q2^2*
+     \[CapitalLambda]0^4 + 2658*mm^4*mN^3*mo^13*Q2^2*\[CapitalLambda]0^4 + 
+    1116*mm^2*mN^5*mo^13*Q2^2*\[CapitalLambda]0^4 - 
+    798*mN^7*mo^13*Q2^2*\[CapitalLambda]0^4 + 16200*mm^6*mo^14*Q2^2*
+     \[CapitalLambda]0^4 - 27810*mm^4*mN^2*mo^14*Q2^2*\[CapitalLambda]0^4 - 
+    28812*mm^2*mN^4*mo^14*Q2^2*\[CapitalLambda]0^4 - 
+    9930*mN^6*mo^14*Q2^2*\[CapitalLambda]0^4 + 6552*mm^4*mN*mo^15*Q2^2*
+     \[CapitalLambda]0^4 + 3846*mm^2*mN^3*mo^15*Q2^2*\[CapitalLambda]0^4 + 
+    1926*mN^5*mo^15*Q2^2*\[CapitalLambda]0^4 - 6075*mm^4*mo^16*Q2^2*
+     \[CapitalLambda]0^4 + 2664*mm^2*mN^2*mo^16*Q2^2*\[CapitalLambda]0^4 + 
+    2352*mN^4*mo^16*Q2^2*\[CapitalLambda]0^4 - 1386*mm^2*mN*mo^17*Q2^2*
+     \[CapitalLambda]0^4 - 831*mN^3*mo^17*Q2^2*\[CapitalLambda]0^4 + 
+    1350*mm^2*mo^18*Q2^2*\[CapitalLambda]0^4 + 198*mN^2*mo^18*Q2^2*
+     \[CapitalLambda]0^4 + 126*mN*mo^19*Q2^2*\[CapitalLambda]0^4 - 
+    135*mo^20*Q2^2*\[CapitalLambda]0^4 + 324*mm^18*Q2^3*\[CapitalLambda]0^4 - 
+    4428*mm^16*mN^2*Q2^3*\[CapitalLambda]0^4 + 20571*mm^14*mN^4*Q2^3*
+     \[CapitalLambda]0^4 - 50562*mm^12*mN^6*Q2^3*\[CapitalLambda]0^4 + 
+    74925*mm^10*mN^8*Q2^3*\[CapitalLambda]0^4 - 69276*mm^8*mN^10*Q2^3*
+     \[CapitalLambda]0^4 + 39381*mm^6*mN^12*Q2^3*\[CapitalLambda]0^4 - 
+    12978*mm^4*mN^14*Q2^3*\[CapitalLambda]0^4 + 2175*mm^2*mN^16*Q2^3*
+     \[CapitalLambda]0^4 - 132*mN^18*Q2^3*\[CapitalLambda]0^4 + 
+    396*mm^16*mN*mo*Q2^3*\[CapitalLambda]0^4 - 4593*mm^14*mN^3*mo*Q2^3*
+     \[CapitalLambda]0^4 + 18066*mm^12*mN^5*mo*Q2^3*\[CapitalLambda]0^4 - 
+    33687*mm^10*mN^7*mo*Q2^3*\[CapitalLambda]0^4 + 
+    34152*mm^8*mN^9*mo*Q2^3*\[CapitalLambda]0^4 - 19887*mm^6*mN^11*mo*Q2^3*
+     \[CapitalLambda]0^4 + 6570*mm^4*mN^13*mo*Q2^3*\[CapitalLambda]0^4 - 
+    1065*mm^2*mN^15*mo*Q2^3*\[CapitalLambda]0^4 + 
+    48*mN^17*mo*Q2^3*\[CapitalLambda]0^4 - 2664*mm^16*mo^2*Q2^3*
+     \[CapitalLambda]0^4 + 27090*mm^14*mN^2*mo^2*Q2^3*\[CapitalLambda]0^4 - 
+    78657*mm^12*mN^4*mo^2*Q2^3*\[CapitalLambda]0^4 + 
+    98478*mm^10*mN^6*mo^2*Q2^3*\[CapitalLambda]0^4 - 
+    40401*mm^8*mN^8*mo^2*Q2^3*\[CapitalLambda]0^4 - 
+    27018*mm^6*mN^10*mo^2*Q2^3*\[CapitalLambda]0^4 + 
+    32877*mm^4*mN^12*mo^2*Q2^3*\[CapitalLambda]0^4 - 
+    10710*mm^2*mN^14*mo^2*Q2^3*\[CapitalLambda]0^4 + 
+    1005*mN^16*mo^2*Q2^3*\[CapitalLambda]0^4 - 2664*mm^14*mN*mo^3*Q2^3*
+     \[CapitalLambda]0^4 + 19827*mm^12*mN^3*mo^3*Q2^3*\[CapitalLambda]0^4 - 
+    40944*mm^10*mN^5*mo^3*Q2^3*\[CapitalLambda]0^4 + 
+    20199*mm^8*mN^7*mo^3*Q2^3*\[CapitalLambda]0^4 + 
+    15600*mm^6*mN^9*mo^3*Q2^3*\[CapitalLambda]0^4 - 
+    17679*mm^4*mN^11*mo^3*Q2^3*\[CapitalLambda]0^4 + 
+    5256*mm^2*mN^13*mo^3*Q2^3*\[CapitalLambda]0^4 - 
+    363*mN^15*mo^3*Q2^3*\[CapitalLambda]0^4 + 9648*mm^14*mo^4*Q2^3*
+     \[CapitalLambda]0^4 - 68769*mm^12*mN^2*mo^4*Q2^3*\[CapitalLambda]0^4 + 
+    102009*mm^10*mN^4*mo^4*Q2^3*\[CapitalLambda]0^4 - 
+    34989*mm^8*mN^6*mo^4*Q2^3*\[CapitalLambda]0^4 - 
+    11250*mm^6*mN^8*mo^4*Q2^3*\[CapitalLambda]0^4 - 
+    15639*mm^4*mN^10*mo^4*Q2^3*\[CapitalLambda]0^4 + 
+    18801*mm^2*mN^12*mo^4*Q2^3*\[CapitalLambda]0^4 - 
+    3267*mN^14*mo^4*Q2^3*\[CapitalLambda]0^4 + 7695*mm^12*mN*mo^5*Q2^3*
+     \[CapitalLambda]0^4 - 32007*mm^10*mN^3*mo^5*Q2^3*\[CapitalLambda]0^4 + 
+    21987*mm^8*mN^5*mo^5*Q2^3*\[CapitalLambda]0^4 + 
+    8142*mm^6*mN^7*mo^5*Q2^3*\[CapitalLambda]0^4 + 
+    11481*mm^4*mN^9*mo^5*Q2^3*\[CapitalLambda]0^4 - 
+    9855*mm^2*mN^11*mo^5*Q2^3*\[CapitalLambda]0^4 + 
+    1197*mN^13*mo^5*Q2^3*\[CapitalLambda]0^4 - 20160*mm^12*mo^6*Q2^3*
+     \[CapitalLambda]0^4 + 92052*mm^10*mN^2*mo^6*Q2^3*\[CapitalLambda]0^4 - 
+    35571*mm^8*mN^4*mo^6*Q2^3*\[CapitalLambda]0^4 - 
+    10032*mm^6*mN^6*mo^6*Q2^3*\[CapitalLambda]0^4 - 
+    7326*mm^4*mN^8*mo^6*Q2^3*\[CapitalLambda]0^4 - 
+    10380*mm^2*mN^10*mo^6*Q2^3*\[CapitalLambda]0^4 + 
+    5817*mN^12*mo^6*Q2^3*\[CapitalLambda]0^4 - 12402*mm^10*mN*mo^7*Q2^3*
+     \[CapitalLambda]0^4 + 21381*mm^8*mN^3*mo^7*Q2^3*\[CapitalLambda]0^4 + 
+    4620*mm^6*mN^5*mo^7*Q2^3*\[CapitalLambda]0^4 + 
+    3402*mm^4*mN^7*mo^7*Q2^3*\[CapitalLambda]0^4 + 
+    7710*mm^2*mN^9*mo^7*Q2^3*\[CapitalLambda]0^4 - 
+    2247*mN^11*mo^7*Q2^3*\[CapitalLambda]0^4 + 26712*mm^10*mo^8*Q2^3*
+     \[CapitalLambda]0^4 - 66915*mm^8*mN^2*mo^8*Q2^3*\[CapitalLambda]0^4 - 
+    26523*mm^6*mN^4*mo^8*Q2^3*\[CapitalLambda]0^4 - 
+    13680*mm^4*mN^6*mo^8*Q2^3*\[CapitalLambda]0^4 - 
+    7515*mm^2*mN^8*mo^8*Q2^3*\[CapitalLambda]0^4 - 
+    5943*mN^10*mo^8*Q2^3*\[CapitalLambda]0^4 + 12105*mm^8*mN*mo^9*Q2^3*
+     \[CapitalLambda]0^4 - 1239*mm^6*mN^3*mo^9*Q2^3*\[CapitalLambda]0^4 - 
+    852*mm^4*mN^5*mo^9*Q2^3*\[CapitalLambda]0^4 - 135*mm^2*mN^7*mo^9*Q2^3*
+     \[CapitalLambda]0^4 + 2625*mN^9*mo^9*Q2^3*\[CapitalLambda]0^4 - 
+    23184*mm^8*mo^10*Q2^3*\[CapitalLambda]0^4 + 22338*mm^6*mN^2*mo^10*Q2^3*
+     \[CapitalLambda]0^4 + 20769*mm^4*mN^4*mo^10*Q2^3*\[CapitalLambda]0^4 + 
+    10890*mm^2*mN^6*mo^10*Q2^3*\[CapitalLambda]0^4 + 
+    3087*mN^8*mo^10*Q2^3*\[CapitalLambda]0^4 - 7236*mm^6*mN*mo^11*Q2^3*
+     \[CapitalLambda]0^4 - 5451*mm^4*mN^3*mo^11*Q2^3*\[CapitalLambda]0^4 - 
+    3780*mm^2*mN^5*mo^11*Q2^3*\[CapitalLambda]0^4 - 
+    1953*mN^7*mo^11*Q2^3*\[CapitalLambda]0^4 + 13104*mm^6*mo^12*Q2^3*
+     \[CapitalLambda]0^4 + 585*mm^4*mN^2*mo^12*Q2^3*\[CapitalLambda]0^4 - 
+    1785*mm^2*mN^4*mo^12*Q2^3*\[CapitalLambda]0^4 - 
+    105*mN^6*mo^12*Q2^3*\[CapitalLambda]0^4 + 2529*mm^4*mN*mo^13*Q2^3*
+     \[CapitalLambda]0^4 + 2319*mm^2*mN^3*mo^13*Q2^3*\[CapitalLambda]0^4 + 
+    903*mN^5*mo^13*Q2^3*\[CapitalLambda]0^4 - 4608*mm^4*mo^14*Q2^3*
+     \[CapitalLambda]0^4 - 2376*mm^2*mN^2*mo^14*Q2^3*\[CapitalLambda]0^4 - 
+    813*mN^4*mo^14*Q2^3*\[CapitalLambda]0^4 - 450*mm^2*mN*mo^15*Q2^3*
+     \[CapitalLambda]0^4 - 237*mN^3*mo^15*Q2^3*\[CapitalLambda]0^4 + 
+    900*mm^2*mo^16*Q2^3*\[CapitalLambda]0^4 + 423*mN^2*mo^16*Q2^3*
+     \[CapitalLambda]0^4 + 27*mN*mo^17*Q2^3*\[CapitalLambda]0^4 - 
+    72*mo^18*Q2^3*\[CapitalLambda]0^4 - 252*mm^16*Q2^4*\[CapitalLambda]0^4 + 
+    2079*mm^14*mN^2*Q2^4*\[CapitalLambda]0^4 - 6561*mm^12*mN^4*Q2^4*
+     \[CapitalLambda]0^4 + 10758*mm^10*mN^6*Q2^4*\[CapitalLambda]0^4 - 
+    10131*mm^8*mN^8*Q2^4*\[CapitalLambda]0^4 + 5571*mm^6*mN^10*Q2^4*
+     \[CapitalLambda]0^4 - 1695*mm^4*mN^12*Q2^4*\[CapitalLambda]0^4 + 
+    240*mm^2*mN^14*Q2^4*\[CapitalLambda]0^4 - 
+    9*mN^16*Q2^4*\[CapitalLambda]0^4 - 189*mm^14*mN*mo*Q2^4*
+     \[CapitalLambda]0^4 + 1224*mm^12*mN^3*mo*Q2^4*\[CapitalLambda]0^4 - 
+    3144*mm^10*mN^5*mo*Q2^4*\[CapitalLambda]0^4 + 3972*mm^8*mN^7*mo*Q2^4*
+     \[CapitalLambda]0^4 - 2529*mm^6*mN^9*mo*Q2^4*\[CapitalLambda]0^4 + 
+    732*mm^4*mN^11*mo*Q2^4*\[CapitalLambda]0^4 - 66*mm^2*mN^13*mo*Q2^4*
+     \[CapitalLambda]0^4 + 1638*mm^14*mo^2*Q2^4*\[CapitalLambda]0^4 - 
+    8784*mm^12*mN^2*mo^2*Q2^4*\[CapitalLambda]0^4 + 
+    14055*mm^10*mN^4*mo^2*Q2^4*\[CapitalLambda]0^4 - 
+    6036*mm^8*mN^6*mo^2*Q2^4*\[CapitalLambda]0^4 - 
+    4428*mm^6*mN^8*mo^2*Q2^4*\[CapitalLambda]0^4 + 
+    4764*mm^4*mN^10*mo^2*Q2^4*\[CapitalLambda]0^4 - 
+    1281*mm^2*mN^12*mo^2*Q2^4*\[CapitalLambda]0^4 + 
+    72*mN^14*mo^2*Q2^4*\[CapitalLambda]0^4 + 972*mm^12*mN*mo^3*Q2^4*
+     \[CapitalLambda]0^4 - 3111*mm^10*mN^3*mo^3*Q2^4*\[CapitalLambda]0^4 + 
+    2082*mm^8*mN^5*mo^3*Q2^4*\[CapitalLambda]0^4 + 
+    1896*mm^6*mN^7*mo^3*Q2^4*\[CapitalLambda]0^4 - 
+    2118*mm^4*mN^9*mo^3*Q2^4*\[CapitalLambda]0^4 + 
+    375*mm^2*mN^11*mo^3*Q2^4*\[CapitalLambda]0^4 - 
+    4545*mm^12*mo^4*Q2^4*\[CapitalLambda]0^4 + 13761*mm^10*mN^2*mo^4*Q2^4*
+     \[CapitalLambda]0^4 - 6000*mm^8*mN^4*mo^4*Q2^4*\[CapitalLambda]0^4 - 
+    1890*mm^6*mN^6*mo^4*Q2^4*\[CapitalLambda]0^4 - 
+    2835*mm^4*mN^8*mo^4*Q2^4*\[CapitalLambda]0^4 + 
+    2625*mm^2*mN^10*mo^4*Q2^4*\[CapitalLambda]0^4 - 
+    252*mN^12*mo^4*Q2^4*\[CapitalLambda]0^4 - 2043*mm^10*mN*mo^5*Q2^4*
+     \[CapitalLambda]0^4 + 1866*mm^8*mN^3*mo^5*Q2^4*\[CapitalLambda]0^4 + 
+    960*mm^6*mN^5*mo^5*Q2^4*\[CapitalLambda]0^4 + 1566*mm^4*mN^7*mo^5*Q2^4*
+     \[CapitalLambda]0^4 - 885*mm^2*mN^9*mo^5*Q2^4*\[CapitalLambda]0^4 + 
+    6984*mm^10*mo^6*Q2^4*\[CapitalLambda]0^4 - 8766*mm^8*mN^2*mo^6*Q2^4*
+     \[CapitalLambda]0^4 - 3150*mm^6*mN^4*mo^6*Q2^4*\[CapitalLambda]0^4 - 
+    1986*mm^4*mN^6*mo^6*Q2^4*\[CapitalLambda]0^4 - 
+    2310*mm^2*mN^8*mo^6*Q2^4*\[CapitalLambda]0^4 + 
+    504*mN^10*mo^6*Q2^4*\[CapitalLambda]0^4 + 2232*mm^8*mN*mo^7*Q2^4*
+     \[CapitalLambda]0^4 + 996*mm^6*mN^3*mo^7*Q2^4*\[CapitalLambda]0^4 + 
+    690*mm^4*mN^5*mo^7*Q2^4*\[CapitalLambda]0^4 + 1110*mm^2*mN^7*mo^7*Q2^4*
+     \[CapitalLambda]0^4 - 6435*mm^8*mo^8*Q2^4*\[CapitalLambda]0^4 + 
+    315*mm^6*mN^2*mo^8*Q2^4*\[CapitalLambda]0^4 + 753*mm^4*mN^4*mo^8*Q2^4*
+     \[CapitalLambda]0^4 + 210*mm^2*mN^6*mo^8*Q2^4*\[CapitalLambda]0^4 - 
+    630*mN^8*mo^8*Q2^4*\[CapitalLambda]0^4 - 1323*mm^6*mN*mo^9*Q2^4*
+     \[CapitalLambda]0^4 - 1266*mm^4*mN^3*mo^9*Q2^4*\[CapitalLambda]0^4 - 
+    780*mm^2*mN^5*mo^9*Q2^4*\[CapitalLambda]0^4 + 
+    3582*mm^6*mo^10*Q2^4*\[CapitalLambda]0^4 + 2142*mm^4*mN^2*mo^10*Q2^4*
+     \[CapitalLambda]0^4 + 1155*mm^2*mN^4*mo^10*Q2^4*\[CapitalLambda]0^4 + 
+    504*mN^6*mo^10*Q2^4*\[CapitalLambda]0^4 + 396*mm^4*mN*mo^11*Q2^4*
+     \[CapitalLambda]0^4 + 291*mm^2*mN^3*mo^11*Q2^4*\[CapitalLambda]0^4 - 
+    1143*mm^4*mo^12*Q2^4*\[CapitalLambda]0^4 - 819*mm^2*mN^2*mo^12*Q2^4*
+     \[CapitalLambda]0^4 - 252*mN^4*mo^12*Q2^4*\[CapitalLambda]0^4 - 
+    45*mm^2*mN*mo^13*Q2^4*\[CapitalLambda]0^4 + 180*mm^2*mo^14*Q2^4*
+     \[CapitalLambda]0^4 + 72*mN^2*mo^14*Q2^4*\[CapitalLambda]0^4 - 
+    9*mo^16*Q2^4*\[CapitalLambda]0^4 + 63*mm^14*Q2^5*\[CapitalLambda]0^4 - 
+    306*mm^12*mN^2*Q2^5*\[CapitalLambda]0^4 + 603*mm^10*mN^4*Q2^5*
+     \[CapitalLambda]0^4 - 612*mm^8*mN^6*Q2^5*\[CapitalLambda]0^4 + 
+    333*mm^6*mN^8*Q2^5*\[CapitalLambda]0^4 - 90*mm^4*mN^10*Q2^5*
+     \[CapitalLambda]0^4 + 9*mm^2*mN^12*Q2^5*\[CapitalLambda]0^4 + 
+    36*mm^12*mN*mo*Q2^5*\[CapitalLambda]0^4 - 126*mm^10*mN^3*mo*Q2^5*
+     \[CapitalLambda]0^4 + 162*mm^8*mN^5*mo*Q2^5*\[CapitalLambda]0^4 - 
+    90*mm^6*mN^7*mo*Q2^5*\[CapitalLambda]0^4 + 18*mm^4*mN^9*mo*Q2^5*
+     \[CapitalLambda]0^4 - 306*mm^12*mo^2*Q2^5*\[CapitalLambda]0^4 + 
+    720*mm^10*mN^2*mo^2*Q2^5*\[CapitalLambda]0^4 - 
+    360*mm^8*mN^4*mo^2*Q2^5*\[CapitalLambda]0^4 - 270*mm^6*mN^6*mo^2*Q2^5*
+     \[CapitalLambda]0^4 + 270*mm^4*mN^8*mo^2*Q2^5*\[CapitalLambda]0^4 - 
+    54*mm^2*mN^10*mo^2*Q2^5*\[CapitalLambda]0^4 - 126*mm^10*mN*mo^3*Q2^5*
+     \[CapitalLambda]0^4 + 108*mm^8*mN^3*mo^3*Q2^5*\[CapitalLambda]0^4 + 
+    90*mm^6*mN^5*mo^3*Q2^5*\[CapitalLambda]0^4 - 72*mm^4*mN^7*mo^3*Q2^5*
+     \[CapitalLambda]0^4 + 603*mm^10*mo^4*Q2^5*\[CapitalLambda]0^4 - 
+    360*mm^8*mN^2*mo^4*Q2^5*\[CapitalLambda]0^4 - 126*mm^6*mN^4*mo^4*Q2^5*
+     \[CapitalLambda]0^4 - 180*mm^4*mN^6*mo^4*Q2^5*\[CapitalLambda]0^4 + 
+    135*mm^2*mN^8*mo^4*Q2^5*\[CapitalLambda]0^4 + 
+    162*mm^8*mN*mo^5*Q2^5*\[CapitalLambda]0^4 + 90*mm^6*mN^3*mo^5*Q2^5*
+     \[CapitalLambda]0^4 + 108*mm^4*mN^5*mo^5*Q2^5*\[CapitalLambda]0^4 - 
+    612*mm^8*mo^6*Q2^5*\[CapitalLambda]0^4 - 270*mm^6*mN^2*mo^6*Q2^5*
+     \[CapitalLambda]0^4 - 180*mm^4*mN^4*mo^6*Q2^5*\[CapitalLambda]0^4 - 
+    180*mm^2*mN^6*mo^6*Q2^5*\[CapitalLambda]0^4 - 
+    90*mm^6*mN*mo^7*Q2^5*\[CapitalLambda]0^4 - 72*mm^4*mN^3*mo^7*Q2^5*
+     \[CapitalLambda]0^4 + 333*mm^6*mo^8*Q2^5*\[CapitalLambda]0^4 + 
+    270*mm^4*mN^2*mo^8*Q2^5*\[CapitalLambda]0^4 + 135*mm^2*mN^4*mo^8*Q2^5*
+     \[CapitalLambda]0^4 + 18*mm^4*mN*mo^9*Q2^5*\[CapitalLambda]0^4 - 
+    90*mm^4*mo^10*Q2^5*\[CapitalLambda]0^4 - 54*mm^2*mN^2*mo^10*Q2^5*
+     \[CapitalLambda]0^4 + 9*mm^2*mo^12*Q2^5*\[CapitalLambda]0^4 + 
+    7488*mm^16*mN^6*\[CapitalLambda]0^6 - 59904*mm^14*mN^8*
+     \[CapitalLambda]0^6 + 209664*mm^12*mN^10*\[CapitalLambda]0^6 - 
+    419328*mm^10*mN^12*\[CapitalLambda]0^6 + 524160*mm^8*mN^14*
+     \[CapitalLambda]0^6 - 419328*mm^6*mN^16*\[CapitalLambda]0^6 + 
+    209664*mm^4*mN^18*\[CapitalLambda]0^6 - 59904*mm^2*mN^20*
+     \[CapitalLambda]0^6 + 7488*mN^22*\[CapitalLambda]0^6 + 
+    5760*mm^18*mN^3*mo*\[CapitalLambda]0^6 - 50112*mm^16*mN^5*mo*
+     \[CapitalLambda]0^6 + 186240*mm^14*mN^7*mo*\[CapitalLambda]0^6 - 
+    384384*mm^12*mN^9*mo*\[CapitalLambda]0^6 + 475776*mm^10*mN^11*mo*
+     \[CapitalLambda]0^6 - 349440*mm^8*mN^13*mo*\[CapitalLambda]0^6 + 
+    131712*mm^6*mN^15*mo*\[CapitalLambda]0^6 - 5760*mm^4*mN^17*mo*
+     \[CapitalLambda]0^6 - 13056*mm^2*mN^19*mo*\[CapitalLambda]0^6 + 
+    3264*mN^21*mo*\[CapitalLambda]0^6 - 2304*mm^16*mN^4*mo^2*
+     \[CapitalLambda]0^6 - 37632*mm^14*mN^6*mo^2*\[CapitalLambda]0^6 + 
+    252672*mm^12*mN^8*mo^2*\[CapitalLambda]0^6 - 596736*mm^10*mN^10*mo^2*
+     \[CapitalLambda]0^6 + 672000*mm^8*mN^12*mo^2*\[CapitalLambda]0^6 - 
+    327936*mm^6*mN^14*mo^2*\[CapitalLambda]0^6 - 16128*mm^4*mN^16*mo^2*
+     \[CapitalLambda]0^6 + 77568*mm^2*mN^18*mo^2*\[CapitalLambda]0^6 - 
+    21504*mN^20*mo^2*\[CapitalLambda]0^6 - 51840*mm^16*mN^3*mo^3*
+     \[CapitalLambda]0^6 + 336000*mm^14*mN^5*mo^3*\[CapitalLambda]0^6 - 
+    863328*mm^12*mN^7*mo^3*\[CapitalLambda]0^6 + 1097280*mm^10*mN^9*mo^3*
+     \[CapitalLambda]0^6 - 667680*mm^8*mN^11*mo^3*\[CapitalLambda]0^6 + 
+    107520*mm^6*mN^13*mo^3*\[CapitalLambda]0^6 + 56160*mm^4*mN^15*mo^3*
+     \[CapitalLambda]0^6 - 7872*mm^2*mN^17*mo^3*\[CapitalLambda]0^6 - 
+    6240*mN^19*mo^3*\[CapitalLambda]0^6 + 18432*mm^14*mN^4*mo^4*
+     \[CapitalLambda]0^6 + 71904*mm^12*mN^6*mo^4*\[CapitalLambda]0^6 - 
+    399360*mm^10*mN^8*mo^4*\[CapitalLambda]0^6 + 519264*mm^8*mN^10*mo^4*
+     \[CapitalLambda]0^6 - 166656*mm^6*mN^12*mo^4*\[CapitalLambda]0^6 - 
+    87648*mm^4*mN^14*mo^4*\[CapitalLambda]0^6 + 34560*mm^2*mN^16*mo^4*
+     \[CapitalLambda]0^6 + 9504*mN^18*mo^4*\[CapitalLambda]0^6 + 
+    207360*mm^14*mN^3*mo^5*\[CapitalLambda]0^6 - 948864*mm^12*mN^5*mo^5*
+     \[CapitalLambda]0^6 + 1525632*mm^10*mN^7*mo^5*\[CapitalLambda]0^6 - 
+    975744*mm^8*mN^9*mo^5*\[CapitalLambda]0^6 + 154368*mm^6*mN^11*mo^5*
+     \[CapitalLambda]0^6 + 13440*mm^4*mN^13*mo^5*\[CapitalLambda]0^6 + 
+    26496*mm^2*mN^15*mo^5*\[CapitalLambda]0^6 - 
+    2688*mN^17*mo^5*\[CapitalLambda]0^6 - 64512*mm^12*mN^4*mo^6*
+     \[CapitalLambda]0^6 - 60480*mm^10*mN^6*mo^6*\[CapitalLambda]0^6 + 
+    272256*mm^8*mN^8*mo^6*\[CapitalLambda]0^6 - 103296*mm^6*mN^10*mo^6*
+     \[CapitalLambda]0^6 - 24576*mm^4*mN^12*mo^6*\[CapitalLambda]0^6 - 
+    40512*mm^2*mN^14*mo^6*\[CapitalLambda]0^6 + 
+    21120*mN^16*mo^6*\[CapitalLambda]0^6 - 483840*mm^12*mN^3*mo^7*
+     \[CapitalLambda]0^6 + 1443456*mm^10*mN^5*mo^7*\[CapitalLambda]0^6 - 
+    1196640*mm^8*mN^7*mo^7*\[CapitalLambda]0^6 + 204672*mm^6*mN^9*mo^7*
+     \[CapitalLambda]0^6 + 23232*mm^4*mN^11*mo^7*\[CapitalLambda]0^6 + 
+    2304*mm^2*mN^13*mo^7*\[CapitalLambda]0^6 + 
+    6816*mN^15*mo^7*\[CapitalLambda]0^6 + 129024*mm^10*mN^4*mo^8*
+     \[CapitalLambda]0^6 + 16800*mm^8*mN^6*mo^8*\[CapitalLambda]0^6 - 
+    52224*mm^6*mN^8*mo^8*\[CapitalLambda]0^6 - 15552*mm^4*mN^10*mo^8*
+     \[CapitalLambda]0^6 - 5376*mm^2*mN^12*mo^8*\[CapitalLambda]0^6 - 
+    17376*mN^14*mo^8*\[CapitalLambda]0^6 + 725760*mm^10*mN^3*mo^9*
+     \[CapitalLambda]0^6 - 1236480*mm^8*mN^5*mo^9*\[CapitalLambda]0^6 + 
+    278400*mm^6*mN^7*mo^9*\[CapitalLambda]0^6 + 33408*mm^4*mN^9*mo^9*
+     \[CapitalLambda]0^6 + 6528*mm^2*mN^11*mo^9*\[CapitalLambda]0^6 + 
+    1920*mN^13*mo^9*\[CapitalLambda]0^6 - 161280*mm^8*mN^4*mo^10*
+     \[CapitalLambda]0^6 - 2688*mm^6*mN^6*mo^10*\[CapitalLambda]0^6 - 
+    15360*mm^4*mN^8*mo^10*\[CapitalLambda]0^6 - 10368*mm^2*mN^10*mo^10*
+     \[CapitalLambda]0^6 - 768*mN^12*mo^10*\[CapitalLambda]0^6 - 
+    725760*mm^8*mN^3*mo^11*\[CapitalLambda]0^6 + 534912*mm^6*mN^5*mo^11*
+     \[CapitalLambda]0^6 + 127200*mm^4*mN^7*mo^11*\[CapitalLambda]0^6 + 
+    42048*mm^2*mN^9*mo^11*\[CapitalLambda]0^6 + 
+    7776*mN^11*mo^11*\[CapitalLambda]0^6 + 129024*mm^6*mN^4*mo^12*
+     \[CapitalLambda]0^6 + 14112*mm^4*mN^6*mo^12*\[CapitalLambda]0^6 - 
+    1536*mm^2*mN^8*mo^12*\[CapitalLambda]0^6 - 2976*mN^10*mo^12*
+     \[CapitalLambda]0^6 + 483840*mm^6*mN^3*mo^13*\[CapitalLambda]0^6 - 
+    40320*mm^4*mN^5*mo^13*\[CapitalLambda]0^6 - 54912*mm^2*mN^7*mo^13*
+     \[CapitalLambda]0^6 - 17280*mN^9*mo^13*\[CapitalLambda]0^6 - 
+    64512*mm^4*mN^4*mo^14*\[CapitalLambda]0^6 - 12864*mm^2*mN^6*mo^14*
+     \[CapitalLambda]0^6 + 3456*mN^8*mo^14*\[CapitalLambda]0^6 - 
+    207360*mm^4*mN^3*mo^15*\[CapitalLambda]0^6 - 53376*mm^2*mN^5*mo^15*
+     \[CapitalLambda]0^6 - 2592*mN^7*mo^15*\[CapitalLambda]0^6 + 
+    18432*mm^2*mN^4*mo^16*\[CapitalLambda]0^6 + 
+    3360*mN^6*mo^16*\[CapitalLambda]0^6 + 51840*mm^2*mN^3*mo^17*
+     \[CapitalLambda]0^6 + 14784*mN^5*mo^17*\[CapitalLambda]0^6 - 
+    2304*mN^4*mo^18*\[CapitalLambda]0^6 - 5760*mN^3*mo^19*
+     \[CapitalLambda]0^6 - 2520*mm^18*mN^2*Q2*\[CapitalLambda]0^6 + 
+    21744*mm^16*mN^4*Q2*\[CapitalLambda]0^6 - 100416*mm^14*mN^6*Q2*
+     \[CapitalLambda]0^6 + 294304*mm^12*mN^8*Q2*\[CapitalLambda]0^6 - 
+    557232*mm^10*mN^10*Q2*\[CapitalLambda]0^6 + 681600*mm^8*mN^12*Q2*
+     \[CapitalLambda]0^6 - 531584*mm^6*mN^14*Q2*\[CapitalLambda]0^6 + 
+    253536*mm^4*mN^16*Q2*\[CapitalLambda]0^6 - 66744*mm^2*mN^18*Q2*
+     \[CapitalLambda]0^6 + 7312*mN^20*Q2*\[CapitalLambda]0^6 + 
+    360*mm^18*mN*mo*Q2*\[CapitalLambda]0^6 - 17064*mm^16*mN^3*mo*Q2*
+     \[CapitalLambda]0^6 + 112608*mm^14*mN^5*mo*Q2*\[CapitalLambda]0^6 - 
+    326960*mm^12*mN^7*mo*Q2*\[CapitalLambda]0^6 + 518928*mm^10*mN^9*mo*Q2*
+     \[CapitalLambda]0^6 - 482400*mm^8*mN^11*mo*Q2*\[CapitalLambda]0^6 + 
+    263584*mm^6*mN^13*mo*Q2*\[CapitalLambda]0^6 - 81168*mm^4*mN^15*mo*Q2*
+     \[CapitalLambda]0^6 + 13320*mm^2*mN^17*mo*Q2*\[CapitalLambda]0^6 - 
+    1208*mN^19*mo*Q2*\[CapitalLambda]0^6 + 23616*mm^16*mN^2*mo^2*Q2*
+     \[CapitalLambda]0^6 - 143328*mm^14*mN^4*mo^2*Q2*\[CapitalLambda]0^6 + 
+    454944*mm^12*mN^6*mo^2*Q2*\[CapitalLambda]0^6 - 
+    849696*mm^10*mN^8*mo^2*Q2*\[CapitalLambda]0^6 + 
+    862880*mm^8*mN^10*mo^2*Q2*\[CapitalLambda]0^6 - 
+    359456*mm^6*mN^12*mo^2*Q2*\[CapitalLambda]0^6 - 
+    77472*mm^4*mN^14*mo^2*Q2*\[CapitalLambda]0^6 + 
+    114976*mm^2*mN^16*mo^2*Q2*\[CapitalLambda]0^6 - 
+    26464*mN^18*mo^2*Q2*\[CapitalLambda]0^6 - 3240*mm^16*mN*mo^3*Q2*
+     \[CapitalLambda]0^6 + 122304*mm^14*mN^3*mo^3*Q2*\[CapitalLambda]0^6 - 
+    566736*mm^12*mN^5*mo^3*Q2*\[CapitalLambda]0^6 + 
+    1017984*mm^10*mN^7*mo^3*Q2*\[CapitalLambda]0^6 - 
+    796576*mm^8*mN^9*mo^3*Q2*\[CapitalLambda]0^6 + 
+    172480*mm^6*mN^11*mo^3*Q2*\[CapitalLambda]0^6 + 
+    105552*mm^4*mN^13*mo^3*Q2*\[CapitalLambda]0^6 - 
+    61952*mm^2*mN^15*mo^3*Q2*\[CapitalLambda]0^6 + 
+    10184*mN^17*mo^3*Q2*\[CapitalLambda]0^6 - 98208*mm^14*mN^2*mo^4*Q2*
+     \[CapitalLambda]0^6 + 388416*mm^12*mN^4*mo^4*Q2*\[CapitalLambda]0^6 - 
+    769056*mm^10*mN^6*mo^4*Q2*\[CapitalLambda]0^6 + 
+    755136*mm^8*mN^8*mo^4*Q2*\[CapitalLambda]0^6 - 
+    214880*mm^6*mN^10*mo^4*Q2*\[CapitalLambda]0^6 - 
+    85440*mm^4*mN^12*mo^4*Q2*\[CapitalLambda]0^6 - 
+    2784*mm^2*mN^14*mo^4*Q2*\[CapitalLambda]0^6 + 
+    26816*mN^16*mo^4*Q2*\[CapitalLambda]0^6 + 12960*mm^14*mN*mo^5*Q2*
+     \[CapitalLambda]0^6 - 378336*mm^12*mN^3*mo^5*Q2*\[CapitalLambda]0^6 + 
+    1132704*mm^10*mN^5*mo^5*Q2*\[CapitalLambda]0^6 - 
+    1034064*mm^8*mN^7*mo^5*Q2*\[CapitalLambda]0^6 + 
+    211360*mm^6*mN^9*mo^5*Q2*\[CapitalLambda]0^6 + 
+    28224*mm^4*mN^11*mo^5*Q2*\[CapitalLambda]0^6 + 
+    52128*mm^2*mN^13*mo^5*Q2*\[CapitalLambda]0^6 - 
+    24976*mN^15*mo^5*Q2*\[CapitalLambda]0^6 + 237888*mm^12*mN^2*mo^6*Q2*
+     \[CapitalLambda]0^6 - 538272*mm^10*mN^4*mo^6*Q2*\[CapitalLambda]0^6 + 
+    553728*mm^8*mN^6*mo^6*Q2*\[CapitalLambda]0^6 - 
+    155328*mm^6*mN^8*mo^6*Q2*\[CapitalLambda]0^6 - 
+    33600*mm^4*mN^10*mo^6*Q2*\[CapitalLambda]0^6 - 
+    35232*mm^2*mN^12*mo^6*Q2*\[CapitalLambda]0^6 + 
+    4608*mN^14*mo^6*Q2*\[CapitalLambda]0^6 - 30240*mm^12*mN*mo^7*Q2*
+     \[CapitalLambda]0^6 + 657216*mm^10*mN^3*mo^7*Q2*\[CapitalLambda]0^6 - 
+    1103760*mm^8*mN^5*mo^7*Q2*\[CapitalLambda]0^6 + 
+    271872*mm^6*mN^7*mo^7*Q2*\[CapitalLambda]0^6 + 
+    38976*mm^4*mN^9*mo^7*Q2*\[CapitalLambda]0^6 + 7104*mm^2*mN^11*mo^7*Q2*
+     \[CapitalLambda]0^6 + 19056*mN^13*mo^7*Q2*\[CapitalLambda]0^6 - 
+    369936*mm^10*mN^2*mo^8*Q2*\[CapitalLambda]0^6 + 
+    359520*mm^8*mN^4*mo^8*Q2*\[CapitalLambda]0^6 - 
+    108672*mm^6*mN^6*mo^8*Q2*\[CapitalLambda]0^6 - 
+    27744*mm^4*mN^8*mo^8*Q2*\[CapitalLambda]0^6 - 12400*mm^2*mN^10*mo^8*Q2*
+     \[CapitalLambda]0^6 - 14336*mN^12*mo^8*Q2*\[CapitalLambda]0^6 + 
+    45360*mm^10*mN*mo^9*Q2*\[CapitalLambda]0^6 - 697200*mm^8*mN^3*mo^9*Q2*
+     \[CapitalLambda]0^6 + 481440*mm^6*mN^5*mo^9*Q2*\[CapitalLambda]0^6 + 
+    113328*mm^4*mN^7*mo^9*Q2*\[CapitalLambda]0^6 + 
+    38864*mm^2*mN^9*mo^9*Q2*\[CapitalLambda]0^6 + 
+    7840*mN^11*mo^9*Q2*\[CapitalLambda]0^6 + 383040*mm^8*mN^2*mo^10*Q2*
+     \[CapitalLambda]0^6 - 24864*mm^6*mN^4*mo^10*Q2*\[CapitalLambda]0^6 - 
+    21216*mm^4*mN^6*mo^10*Q2*\[CapitalLambda]0^6 - 
+    16416*mm^2*mN^8*mo^10*Q2*\[CapitalLambda]0^6 - 
+    4832*mN^10*mo^10*Q2*\[CapitalLambda]0^6 - 45360*mm^8*mN*mo^11*Q2*
+     \[CapitalLambda]0^6 + 458304*mm^6*mN^3*mo^11*Q2*\[CapitalLambda]0^6 - 
+    12528*mm^4*mN^5*mo^11*Q2*\[CapitalLambda]0^6 - 
+    34176*mm^2*mN^7*mo^11*Q2*\[CapitalLambda]0^6 - 
+    11552*mN^9*mo^11*Q2*\[CapitalLambda]0^6 - 264096*mm^6*mN^2*mo^12*Q2*
+     \[CapitalLambda]0^6 - 124992*mm^4*mN^4*mo^12*Q2*\[CapitalLambda]0^6 - 
+    27936*mm^2*mN^6*mo^12*Q2*\[CapitalLambda]0^6 - 
+    256*mN^8*mo^12*Q2*\[CapitalLambda]0^6 + 30240*mm^6*mN*mo^13*Q2*
+     \[CapitalLambda]0^6 - 179424*mm^4*mN^3*mo^13*Q2*\[CapitalLambda]0^6 - 
+    55584*mm^2*mN^5*mo^13*Q2*\[CapitalLambda]0^6 - 
+    7984*mN^7*mo^13*Q2*\[CapitalLambda]0^6 + 116928*mm^4*mN^2*mo^14*Q2*
+     \[CapitalLambda]0^6 + 76704*mm^2*mN^4*mo^14*Q2*\[CapitalLambda]0^6 + 
+    18624*mN^6*mo^14*Q2*\[CapitalLambda]0^6 - 12960*mm^4*mN*mo^15*Q2*
+     \[CapitalLambda]0^6 + 37056*mm^2*mN^3*mo^15*Q2*\[CapitalLambda]0^6 + 
+    11856*mN^5*mo^15*Q2*\[CapitalLambda]0^6 - 30168*mm^2*mN^2*mo^16*Q2*
+     \[CapitalLambda]0^6 - 14928*mN^4*mo^16*Q2*\[CapitalLambda]0^6 + 
+    3240*mm^2*mN*mo^17*Q2*\[CapitalLambda]0^6 - 2856*mN^3*mo^17*Q2*
+     \[CapitalLambda]0^6 + 3456*mN^2*mo^18*Q2*\[CapitalLambda]0^6 - 
+    360*mN*mo^19*Q2*\[CapitalLambda]0^6 - 360*mm^18*Q2^2*
+     \[CapitalLambda]0^6 + 8532*mm^16*mN^2*Q2^2*\[CapitalLambda]0^6 - 
+    49944*mm^14*mN^4*Q2^2*\[CapitalLambda]0^6 + 155048*mm^12*mN^6*Q2^2*
+     \[CapitalLambda]0^6 - 297768*mm^10*mN^8*Q2^2*\[CapitalLambda]0^6 + 
+    364112*mm^8*mN^10*Q2^2*\[CapitalLambda]0^6 - 279240*mm^6*mN^12*Q2^2*
+     \[CapitalLambda]0^6 + 127896*mm^4*mN^14*Q2^2*\[CapitalLambda]0^6 - 
+    31376*mm^2*mN^16*Q2^2*\[CapitalLambda]0^6 + 
+    3100*mN^18*Q2^2*\[CapitalLambda]0^6 - 972*mm^16*mN*mo*Q2^2*
+     \[CapitalLambda]0^6 + 19176*mm^14*mN^3*mo*Q2^2*\[CapitalLambda]0^6 - 
+    93424*mm^12*mN^5*mo*Q2^2*\[CapitalLambda]0^6 + 
+    205896*mm^10*mN^7*mo*Q2^2*\[CapitalLambda]0^6 - 
+    245432*mm^8*mN^9*mo*Q2^2*\[CapitalLambda]0^6 + 
+    169656*mm^6*mN^11*mo*Q2^2*\[CapitalLambda]0^6 - 
+    69456*mm^4*mN^13*mo*Q2^2*\[CapitalLambda]0^6 + 
+    16280*mm^2*mN^15*mo*Q2^2*\[CapitalLambda]0^6 - 
+    1724*mN^17*mo*Q2^2*\[CapitalLambda]0^6 + 3240*mm^16*mo^2*Q2^2*
+     \[CapitalLambda]0^6 - 61992*mm^14*mN^2*mo^2*Q2^2*\[CapitalLambda]0^6 + 
+    246624*mm^12*mN^4*mo^2*Q2^2*\[CapitalLambda]0^6 - 
+    472152*mm^10*mN^6*mo^2*Q2^2*\[CapitalLambda]0^6 + 
+    464288*mm^8*mN^8*mo^2*Q2^2*\[CapitalLambda]0^6 - 
+    167064*mm^6*mN^10*mo^2*Q2^2*\[CapitalLambda]0^6 - 
+    67584*mm^4*mN^12*mo^2*Q2^2*\[CapitalLambda]0^6 + 
+    68248*mm^2*mN^14*mo^2*Q2^2*\[CapitalLambda]0^6 - 
+    13608*mN^16*mo^2*Q2^2*\[CapitalLambda]0^6 + 7272*mm^14*mN*mo^3*Q2^2*
+     \[CapitalLambda]0^6 - 104358*mm^12*mN^3*mo^3*Q2^2*\[CapitalLambda]0^6 + 
+    321204*mm^10*mN^5*mo^3*Q2^2*\[CapitalLambda]0^6 - 
+    350370*mm^8*mN^7*mo^3*Q2^2*\[CapitalLambda]0^6 + 
+    100032*mm^6*mN^9*mo^3*Q2^2*\[CapitalLambda]0^6 + 
+    65622*mm^4*mN^11*mo^3*Q2^2*\[CapitalLambda]0^6 - 
+    48348*mm^2*mN^13*mo^3*Q2^2*\[CapitalLambda]0^6 + 
+    8946*mN^15*mo^3*Q2^2*\[CapitalLambda]0^6 - 12960*mm^14*mo^4*Q2^2*
+     \[CapitalLambda]0^6 + 193662*mm^12*mN^2*mo^4*Q2^2*\[CapitalLambda]0^6 - 
+    467832*mm^10*mN^4*mo^4*Q2^2*\[CapitalLambda]0^6 + 
+    452046*mm^8*mN^6*mo^4*Q2^2*\[CapitalLambda]0^6 - 
+    120384*mm^6*mN^8*mo^4*Q2^2*\[CapitalLambda]0^6 - 
+    35718*mm^4*mN^10*mo^4*Q2^2*\[CapitalLambda]0^6 - 
+    22248*mm^2*mN^12*mo^4*Q2^2*\[CapitalLambda]0^6 + 
+    19962*mN^14*mo^4*Q2^2*\[CapitalLambda]0^6 - 23688*mm^12*mN*mo^5*Q2^2*
+     \[CapitalLambda]0^6 + 233112*mm^10*mN^3*mo^5*Q2^2*\[CapitalLambda]0^6 - 
+    387120*mm^8*mN^5*mo^5*Q2^2*\[CapitalLambda]0^6 + 
+    110928*mm^6*mN^7*mo^5*Q2^2*\[CapitalLambda]0^6 + 
+    20376*mm^4*mN^9*mo^5*Q2^2*\[CapitalLambda]0^6 + 
+    32472*mm^2*mN^11*mo^5*Q2^2*\[CapitalLambda]0^6 - 
+    17568*mN^13*mo^5*Q2^2*\[CapitalLambda]0^6 + 30240*mm^12*mo^6*Q2^2*
+     \[CapitalLambda]0^6 - 337932*mm^10*mN^2*mo^6*Q2^2*\[CapitalLambda]0^6 + 
+    395736*mm^8*mN^4*mo^6*Q2^2*\[CapitalLambda]0^6 - 
+    102696*mm^6*mN^6*mo^6*Q2^2*\[CapitalLambda]0^6 - 
+    20736*mm^4*mN^8*mo^6*Q2^2*\[CapitalLambda]0^6 - 
+    13420*mm^2*mN^10*mo^6*Q2^2*\[CapitalLambda]0^6 - 
+    6872*mN^12*mo^6*Q2^2*\[CapitalLambda]0^6 + 43848*mm^10*mN*mo^7*Q2^2*
+     \[CapitalLambda]0^6 - 271350*mm^8*mN^3*mo^7*Q2^2*\[CapitalLambda]0^6 + 
+    166872*mm^6*mN^5*mo^7*Q2^2*\[CapitalLambda]0^6 + 
+    39852*mm^4*mN^7*mo^7*Q2^2*\[CapitalLambda]0^6 + 
+    13840*mm^2*mN^9*mo^7*Q2^2*\[CapitalLambda]0^6 + 
+    14458*mN^11*mo^7*Q2^2*\[CapitalLambda]0^6 - 45360*mm^10*mo^8*Q2^2*
+     \[CapitalLambda]0^6 + 357210*mm^8*mN^2*mo^8*Q2^2*\[CapitalLambda]0^6 - 
+    89064*mm^6*mN^4*mo^8*Q2^2*\[CapitalLambda]0^6 - 
+    23940*mm^4*mN^6*mo^8*Q2^2*\[CapitalLambda]0^6 - 
+    12280*mm^2*mN^8*mo^8*Q2^2*\[CapitalLambda]0^6 - 
+    6150*mN^10*mo^8*Q2^2*\[CapitalLambda]0^6 - 50400*mm^8*mN*mo^9*Q2^2*
+     \[CapitalLambda]0^6 + 170280*mm^6*mN^3*mo^9*Q2^2*\[CapitalLambda]0^6 + 
+    11424*mm^4*mN^5*mo^9*Q2^2*\[CapitalLambda]0^6 - 
+    1320*mm^2*mN^7*mo^9*Q2^2*\[CapitalLambda]0^6 - 
+    1200*mN^9*mo^9*Q2^2*\[CapitalLambda]0^6 + 45360*mm^8*mo^10*Q2^2*
+     \[CapitalLambda]0^6 - 230832*mm^6*mN^2*mo^10*Q2^2*\[CapitalLambda]0^6 - 
+    79440*mm^4*mN^4*mo^10*Q2^2*\[CapitalLambda]0^6 - 
+    21744*mm^2*mN^6*mo^10*Q2^2*\[CapitalLambda]0^6 - 
+    2880*mN^8*mo^10*Q2^2*\[CapitalLambda]0^6 + 36792*mm^6*mN*mo^11*Q2^2*
+     \[CapitalLambda]0^6 - 51186*mm^4*mN^3*mo^11*Q2^2*\[CapitalLambda]0^6 - 
+    20460*mm^2*mN^5*mo^11*Q2^2*\[CapitalLambda]0^6 - 
+    4986*mN^7*mo^11*Q2^2*\[CapitalLambda]0^6 - 30240*mm^6*mo^12*Q2^2*
+     \[CapitalLambda]0^6 + 86562*mm^4*mN^2*mo^12*Q2^2*\[CapitalLambda]0^6 + 
+    52152*mm^2*mN^4*mo^12*Q2^2*\[CapitalLambda]0^6 + 
+    13438*mN^6*mo^12*Q2^2*\[CapitalLambda]0^6 - 16632*mm^4*mN*mo^13*Q2^2*
+     \[CapitalLambda]0^6 + 3288*mm^2*mN^3*mo^13*Q2^2*\[CapitalLambda]0^6 + 
+    1504*mN^5*mo^13*Q2^2*\[CapitalLambda]0^6 + 12960*mm^4*mo^14*Q2^2*
+     \[CapitalLambda]0^6 - 16092*mm^2*mN^2*mo^14*Q2^2*\[CapitalLambda]0^6 - 
+    8232*mN^4*mo^14*Q2^2*\[CapitalLambda]0^6 + 4248*mm^2*mN*mo^15*Q2^2*
+     \[CapitalLambda]0^6 + 1038*mN^3*mo^15*Q2^2*\[CapitalLambda]0^6 - 
+    3240*mm^2*mo^16*Q2^2*\[CapitalLambda]0^6 + 882*mN^2*mo^16*Q2^2*
+     \[CapitalLambda]0^6 - 468*mN*mo^17*Q2^2*\[CapitalLambda]0^6 + 
+    360*mo^18*Q2^2*\[CapitalLambda]0^6 + 756*mm^16*Q2^3*\[CapitalLambda]0^6 - 
+    9072*mm^14*mN^2*Q2^3*\[CapitalLambda]0^6 + 36811*mm^12*mN^4*Q2^3*
+     \[CapitalLambda]0^6 - 78618*mm^10*mN^6*Q2^3*\[CapitalLambda]0^6 + 
+    99601*mm^8*mN^8*Q2^3*\[CapitalLambda]0^6 - 76188*mm^6*mN^10*Q2^3*
+     \[CapitalLambda]0^6 + 33837*mm^4*mN^12*Q2^3*\[CapitalLambda]0^6 - 
+    7834*mm^2*mN^14*Q2^3*\[CapitalLambda]0^6 + 
+    707*mN^16*Q2^3*\[CapitalLambda]0^6 + 1008*mm^14*mN*mo*Q2^3*
+     \[CapitalLambda]0^6 - 10481*mm^12*mN^3*mo*Q2^3*\[CapitalLambda]0^6 + 
+    35970*mm^10*mN^5*mo*Q2^3*\[CapitalLambda]0^6 - 
+    57451*mm^8*mN^7*mo*Q2^3*\[CapitalLambda]0^6 + 48540*mm^6*mN^9*mo*Q2^3*
+     \[CapitalLambda]0^6 - 22263*mm^4*mN^11*mo*Q2^3*\[CapitalLambda]0^6 + 
+    5074*mm^2*mN^13*mo*Q2^3*\[CapitalLambda]0^6 - 
+    397*mN^15*mo*Q2^3*\[CapitalLambda]0^6 - 5544*mm^14*mo^2*Q2^3*
+     \[CapitalLambda]0^6 + 49014*mm^12*mN^2*mo^2*Q2^3*\[CapitalLambda]0^6 - 
+    121986*mm^10*mN^4*mo^2*Q2^3*\[CapitalLambda]0^6 + 
+    129004*mm^8*mN^6*mo^2*Q2^3*\[CapitalLambda]0^6 - 
+    42492*mm^6*mN^8*mo^2*Q2^3*\[CapitalLambda]0^6 - 
+    24210*mm^4*mN^10*mo^2*Q2^3*\[CapitalLambda]0^6 + 
+    20102*mm^2*mN^12*mo^2*Q2^3*\[CapitalLambda]0^6 - 
+    3504*mN^14*mo^2*Q2^3*\[CapitalLambda]0^6 - 6048*mm^12*mN*mo^3*Q2^3*
+     \[CapitalLambda]0^6 + 39798*mm^10*mN^3*mo^3*Q2^3*\[CapitalLambda]0^6 - 
+    68982*mm^8*mN^5*mo^3*Q2^3*\[CapitalLambda]0^6 + 
+    26724*mm^6*mN^7*mo^3*Q2^3*\[CapitalLambda]0^6 + 
+    18540*mm^4*mN^9*mo^3*Q2^3*\[CapitalLambda]0^6 - 
+    14202*mm^2*mN^11*mo^3*Q2^3*\[CapitalLambda]0^6 + 
+    2058*mN^13*mo^3*Q2^3*\[CapitalLambda]0^6 + 17640*mm^12*mo^4*Q2^3*
+     \[CapitalLambda]0^6 - 107820*mm^10*mN^2*mo^4*Q2^3*\[CapitalLambda]0^6 + 
+    133389*mm^8*mN^4*mo^4*Q2^3*\[CapitalLambda]0^6 - 
+    36756*mm^6*mN^6*mo^4*Q2^3*\[CapitalLambda]0^6 - 
+    8730*mm^4*mN^8*mo^4*Q2^3*\[CapitalLambda]0^6 - 
+    10248*mm^2*mN^10*mo^4*Q2^3*\[CapitalLambda]0^6 + 
+    6285*mN^12*mo^4*Q2^3*\[CapitalLambda]0^6 + 15300*mm^10*mN*mo^5*Q2^3*
+     \[CapitalLambda]0^6 - 55587*mm^8*mN^3*mo^5*Q2^3*\[CapitalLambda]0^6 + 
+    29460*mm^6*mN^5*mo^5*Q2^3*\[CapitalLambda]0^6 + 
+    7830*mm^4*mN^7*mo^5*Q2^3*\[CapitalLambda]0^6 + 
+    9840*mm^2*mN^9*mo^5*Q2^3*\[CapitalLambda]0^6 - 
+    4155*mN^11*mo^5*Q2^3*\[CapitalLambda]0^6 - 31752*mm^10*mo^6*Q2^3*
+     \[CapitalLambda]0^6 + 121950*mm^8*mN^2*mo^6*Q2^3*\[CapitalLambda]0^6 - 
+    37428*mm^6*mN^4*mo^6*Q2^3*\[CapitalLambda]0^6 - 
+    8280*mm^4*mN^6*mo^6*Q2^3*\[CapitalLambda]0^6 - 
+    4004*mm^2*mN^8*mo^6*Q2^3*\[CapitalLambda]0^6 - 
+    3862*mN^10*mo^6*Q2^3*\[CapitalLambda]0^6 - 21060*mm^8*mN*mo^7*Q2^3*
+     \[CapitalLambda]0^6 + 31956*mm^6*mN^3*mo^7*Q2^3*\[CapitalLambda]0^6 + 
+    6852*mm^4*mN^5*mo^7*Q2^3*\[CapitalLambda]0^6 + 
+    3044*mm^2*mN^7*mo^7*Q2^3*\[CapitalLambda]0^6 + 
+    3800*mN^9*mo^7*Q2^3*\[CapitalLambda]0^6 + 35280*mm^8*mo^8*Q2^3*
+     \[CapitalLambda]0^6 - 72360*mm^6*mN^2*mo^8*Q2^3*\[CapitalLambda]0^6 - 
+    22083*mm^4*mN^4*mo^8*Q2^3*\[CapitalLambda]0^6 - 
+    7490*mm^2*mN^6*mo^8*Q2^3*\[CapitalLambda]0^6 - 
+    1815*mN^8*mo^8*Q2^3*\[CapitalLambda]0^6 + 16920*mm^6*mN*mo^9*Q2^3*
+     \[CapitalLambda]0^6 - 3111*mm^4*mN^3*mo^9*Q2^3*\[CapitalLambda]0^6 - 
+    2262*mm^2*mN^5*mo^9*Q2^3*\[CapitalLambda]0^6 - 
+    915*mN^7*mo^9*Q2^3*\[CapitalLambda]0^6 - 24696*mm^6*mo^10*Q2^3*
+     \[CapitalLambda]0^6 + 18882*mm^4*mN^2*mo^10*Q2^3*\[CapitalLambda]0^6 + 
+    11958*mm^2*mN^4*mo^10*Q2^3*\[CapitalLambda]0^6 + 
+    3228*mN^6*mo^10*Q2^3*\[CapitalLambda]0^6 - 7848*mm^4*mN*mo^11*Q2^3*
+     \[CapitalLambda]0^6 - 3402*mm^2*mN^3*mo^11*Q2^3*\[CapitalLambda]0^6 - 
+    1038*mN^5*mo^11*Q2^3*\[CapitalLambda]0^6 + 10584*mm^4*mo^12*Q2^3*
+     \[CapitalLambda]0^6 + 36*mm^2*mN^2*mo^12*Q2^3*\[CapitalLambda]0^6 - 
+    661*mN^4*mo^12*Q2^3*\[CapitalLambda]0^6 + 1908*mm^2*mN*mo^13*Q2^3*
+     \[CapitalLambda]0^6 + 827*mN^3*mo^13*Q2^3*\[CapitalLambda]0^6 - 
+    2520*mm^2*mo^14*Q2^3*\[CapitalLambda]0^6 - 630*mN^2*mo^14*Q2^3*
+     \[CapitalLambda]0^6 - 180*mN*mo^15*Q2^3*\[CapitalLambda]0^6 + 
+    252*mo^16*Q2^3*\[CapitalLambda]0^6 - 504*mm^14*Q2^4*\[CapitalLambda]0^6 + 
+    3633*mm^12*mN^2*Q2^4*\[CapitalLambda]0^6 - 9924*mm^10*mN^4*Q2^4*
+     \[CapitalLambda]0^6 + 13862*mm^8*mN^6*Q2^4*\[CapitalLambda]0^6 - 
+    10832*mm^6*mN^8*Q2^4*\[CapitalLambda]0^6 + 4713*mm^4*mN^10*Q2^4*
+     \[CapitalLambda]0^6 - 1028*mm^2*mN^12*Q2^4*\[CapitalLambda]0^6 + 
+    80*mN^14*Q2^4*\[CapitalLambda]0^6 - 483*mm^12*mN*mo*Q2^4*
+     \[CapitalLambda]0^6 + 2808*mm^10*mN^3*mo*Q2^4*\[CapitalLambda]0^6 - 
+    6152*mm^8*mN^5*mo*Q2^4*\[CapitalLambda]0^6 + 6292*mm^6*mN^7*mo*Q2^4*
+     \[CapitalLambda]0^6 - 3015*mm^4*mN^9*mo*Q2^4*\[CapitalLambda]0^6 + 
+    572*mm^2*mN^11*mo*Q2^4*\[CapitalLambda]0^6 - 
+    22*mN^13*mo*Q2^4*\[CapitalLambda]0^6 + 2898*mm^12*mo^2*Q2^4*
+     \[CapitalLambda]0^6 - 13350*mm^10*mN^2*mo^2*Q2^4*\[CapitalLambda]0^6 + 
+    17893*mm^8*mN^4*mo^2*Q2^4*\[CapitalLambda]0^6 - 
+    6020*mm^6*mN^6*mo^2*Q2^4*\[CapitalLambda]0^6 - 
+    3948*mm^4*mN^8*mo^2*Q2^4*\[CapitalLambda]0^6 + 
+    2906*mm^2*mN^10*mo^2*Q2^4*\[CapitalLambda]0^6 - 
+    427*mN^12*mo^2*Q2^4*\[CapitalLambda]0^6 + 2178*mm^10*mN*mo^3*Q2^4*
+     \[CapitalLambda]0^6 - 6187*mm^8*mN^3*mo^3*Q2^4*\[CapitalLambda]0^6 + 
+    3244*mm^6*mN^5*mo^3*Q2^4*\[CapitalLambda]0^6 + 
+    2436*mm^4*mN^7*mo^3*Q2^4*\[CapitalLambda]0^6 - 
+    1754*mm^2*mN^9*mo^3*Q2^4*\[CapitalLambda]0^6 + 
+    131*mN^11*mo^3*Q2^4*\[CapitalLambda]0^6 - 6984*mm^10*mo^4*Q2^4*
+     \[CapitalLambda]0^6 + 17745*mm^8*mN^2*mo^4*Q2^4*\[CapitalLambda]0^6 - 
+    6104*mm^6*mN^4*mo^4*Q2^4*\[CapitalLambda]0^6 - 
+    1350*mm^4*mN^6*mo^4*Q2^4*\[CapitalLambda]0^6 - 
+    1800*mm^2*mN^8*mo^4*Q2^4*\[CapitalLambda]0^6 + 
+    881*mN^10*mo^4*Q2^4*\[CapitalLambda]0^6 - 3915*mm^8*mN*mo^5*Q2^4*
+     \[CapitalLambda]0^6 + 3316*mm^6*mN^3*mo^5*Q2^4*\[CapitalLambda]0^6 + 
+    1284*mm^4*mN^5*mo^5*Q2^4*\[CapitalLambda]0^6 + 
+    1488*mm^2*mN^7*mo^5*Q2^4*\[CapitalLambda]0^6 - 
+    325*mN^9*mo^5*Q2^4*\[CapitalLambda]0^6 + 9090*mm^8*mo^6*Q2^4*
+     \[CapitalLambda]0^6 - 9264*mm^6*mN^2*mo^6*Q2^4*\[CapitalLambda]0^6 - 
+    2634*mm^4*mN^4*mo^6*Q2^4*\[CapitalLambda]0^6 - 
+    1108*mm^2*mN^6*mo^6*Q2^4*\[CapitalLambda]0^6 - 
+    800*mN^8*mo^6*Q2^4*\[CapitalLambda]0^6 + 3528*mm^6*mN*mo^7*Q2^4*
+     \[CapitalLambda]0^6 + 924*mm^4*mN^3*mo^7*Q2^4*\[CapitalLambda]0^6 + 
+    340*mm^2*mN^5*mo^7*Q2^4*\[CapitalLambda]0^6 + 
+    430*mN^7*mo^7*Q2^4*\[CapitalLambda]0^6 - 6840*mm^6*mo^8*Q2^4*
+     \[CapitalLambda]0^6 + 285*mm^4*mN^2*mo^8*Q2^4*\[CapitalLambda]0^6 + 
+    484*mm^2*mN^4*mo^8*Q2^4*\[CapitalLambda]0^6 + 
+    130*mN^6*mo^8*Q2^4*\[CapitalLambda]0^6 - 1629*mm^4*mN*mo^9*Q2^4*
+     \[CapitalLambda]0^6 - 988*mm^2*mN^3*mo^9*Q2^4*\[CapitalLambda]0^6 - 
+    320*mN^5*mo^9*Q2^4*\[CapitalLambda]0^6 + 2934*mm^4*mo^10*Q2^4*
+     \[CapitalLambda]0^6 + 1194*mm^2*mN^2*mo^10*Q2^4*\[CapitalLambda]0^6 + 
+    325*mN^4*mo^10*Q2^4*\[CapitalLambda]0^6 + 342*mm^2*mN*mo^11*Q2^4*
+     \[CapitalLambda]0^6 + 127*mN^3*mo^11*Q2^4*\[CapitalLambda]0^6 - 
+    648*mm^2*mo^12*Q2^4*\[CapitalLambda]0^6 - 243*mN^2*mo^12*Q2^4*
+     \[CapitalLambda]0^6 - 21*mN*mo^13*Q2^4*\[CapitalLambda]0^6 + 
+    54*mo^14*Q2^4*\[CapitalLambda]0^6 + 105*mm^12*Q2^5*\[CapitalLambda]0^6 - 
+    450*mm^10*mN^2*Q2^5*\[CapitalLambda]0^6 + 765*mm^8*mN^4*Q2^5*
+     \[CapitalLambda]0^6 - 648*mm^6*mN^6*Q2^5*\[CapitalLambda]0^6 + 
+    279*mm^4*mN^8*Q2^5*\[CapitalLambda]0^6 - 54*mm^2*mN^10*Q2^5*
+     \[CapitalLambda]0^6 + 3*mN^12*Q2^5*\[CapitalLambda]0^6 + 
+    90*mm^10*mN*mo*Q2^5*\[CapitalLambda]0^6 - 270*mm^8*mN^3*mo*Q2^5*
+     \[CapitalLambda]0^6 + 288*mm^6*mN^5*mo*Q2^5*\[CapitalLambda]0^6 - 
+    126*mm^4*mN^7*mo*Q2^5*\[CapitalLambda]0^6 + 18*mm^2*mN^9*mo*Q2^5*
+     \[CapitalLambda]0^6 - 450*mm^10*mo^2*Q2^5*\[CapitalLambda]0^6 + 
+    900*mm^8*mN^2*mo^2*Q2^5*\[CapitalLambda]0^6 - 360*mm^6*mN^4*mo^2*Q2^5*
+     \[CapitalLambda]0^6 - 234*mm^4*mN^6*mo^2*Q2^5*\[CapitalLambda]0^6 + 
+    162*mm^2*mN^8*mo^2*Q2^5*\[CapitalLambda]0^6 - 
+    18*mN^10*mo^2*Q2^5*\[CapitalLambda]0^6 - 270*mm^8*mN*mo^3*Q2^5*
+     \[CapitalLambda]0^6 + 180*mm^6*mN^3*mo^3*Q2^5*\[CapitalLambda]0^6 + 
+    126*mm^4*mN^5*mo^3*Q2^5*\[CapitalLambda]0^6 - 72*mm^2*mN^7*mo^3*Q2^5*
+     \[CapitalLambda]0^6 + 765*mm^8*mo^4*Q2^5*\[CapitalLambda]0^6 - 
+    360*mm^6*mN^2*mo^4*Q2^5*\[CapitalLambda]0^6 - 90*mm^4*mN^4*mo^4*Q2^5*
+     \[CapitalLambda]0^6 - 108*mm^2*mN^6*mo^4*Q2^5*\[CapitalLambda]0^6 + 
+    45*mN^8*mo^4*Q2^5*\[CapitalLambda]0^6 + 288*mm^6*mN*mo^5*Q2^5*
+     \[CapitalLambda]0^6 + 126*mm^4*mN^3*mo^5*Q2^5*\[CapitalLambda]0^6 + 
+    108*mm^2*mN^5*mo^5*Q2^5*\[CapitalLambda]0^6 - 
+    648*mm^6*mo^6*Q2^5*\[CapitalLambda]0^6 - 234*mm^4*mN^2*mo^6*Q2^5*
+     \[CapitalLambda]0^6 - 108*mm^2*mN^4*mo^6*Q2^5*\[CapitalLambda]0^6 - 
+    60*mN^6*mo^6*Q2^5*\[CapitalLambda]0^6 - 126*mm^4*mN*mo^7*Q2^5*
+     \[CapitalLambda]0^6 - 72*mm^2*mN^3*mo^7*Q2^5*\[CapitalLambda]0^6 + 
+    279*mm^4*mo^8*Q2^5*\[CapitalLambda]0^6 + 162*mm^2*mN^2*mo^8*Q2^5*
+     \[CapitalLambda]0^6 + 45*mN^4*mo^8*Q2^5*\[CapitalLambda]0^6 + 
+    18*mm^2*mN*mo^9*Q2^5*\[CapitalLambda]0^6 - 54*mm^2*mo^10*Q2^5*
+     \[CapitalLambda]0^6 - 18*mN^2*mo^10*Q2^5*\[CapitalLambda]0^6 + 
+    3*mo^12*Q2^5*\[CapitalLambda]0^6 + 14112*mm^14*mN^6*\[CapitalLambda]0^8 - 
+    98784*mm^12*mN^8*\[CapitalLambda]0^8 + 296352*mm^10*mN^10*
+     \[CapitalLambda]0^8 - 493920*mm^8*mN^12*\[CapitalLambda]0^8 + 
+    493920*mm^6*mN^14*\[CapitalLambda]0^8 - 296352*mm^4*mN^16*
+     \[CapitalLambda]0^8 + 98784*mm^2*mN^18*\[CapitalLambda]0^8 - 
+    14112*mN^20*\[CapitalLambda]0^8 + 10080*mm^16*mN^3*mo*
+     \[CapitalLambda]0^8 - 76608*mm^14*mN^5*mo*\[CapitalLambda]0^8 + 
+    244608*mm^12*mN^7*mo*\[CapitalLambda]0^8 - 423360*mm^10*mN^9*mo*
+     \[CapitalLambda]0^8 + 423360*mm^8*mN^11*mo*\[CapitalLambda]0^8 - 
+    235200*mm^6*mN^13*mo*\[CapitalLambda]0^8 + 56448*mm^4*mN^15*mo*
+     \[CapitalLambda]0^8 + 4032*mm^2*mN^17*mo*\[CapitalLambda]0^8 - 
+    3360*mN^19*mo*\[CapitalLambda]0^8 - 2016*mm^14*mN^4*mo^2*
+     \[CapitalLambda]0^8 - 75264*mm^12*mN^6*mo^2*\[CapitalLambda]0^8 + 
+    389088*mm^10*mN^8*mo^2*\[CapitalLambda]0^8 - 745920*mm^8*mN^10*mo^2*
+     \[CapitalLambda]0^8 + 668640*mm^6*mN^12*mo^2*\[CapitalLambda]0^8 - 
+    249984*mm^4*mN^14*mo^2*\[CapitalLambda]0^8 - 2016*mm^2*mN^16*mo^2*
+     \[CapitalLambda]0^8 + 17472*mN^18*mo^2*\[CapitalLambda]0^8 - 
+    80640*mm^14*mN^3*mo^3*\[CapitalLambda]0^8 + 450240*mm^12*mN^5*mo^3*
+     \[CapitalLambda]0^8 - 971232*mm^10*mN^7*mo^3*\[CapitalLambda]0^8 + 
+    995040*mm^8*mN^9*mo^3*\[CapitalLambda]0^8 - 450240*mm^6*mN^11*mo^3*
+     \[CapitalLambda]0^8 + 32640*mm^4*mN^13*mo^3*\[CapitalLambda]0^8 + 
+    24480*mm^2*mN^15*mo^3*\[CapitalLambda]0^8 - 
+    288*mN^17*mo^3*\[CapitalLambda]0^8 + 14112*mm^12*mN^4*mo^4*
+     \[CapitalLambda]0^8 + 163968*mm^10*mN^6*mo^4*\[CapitalLambda]0^8 - 
+    559200*mm^8*mN^8*mo^4*\[CapitalLambda]0^8 + 539136*mm^6*mN^10*mo^4*
+     \[CapitalLambda]0^8 - 113568*mm^4*mN^12*mo^4*\[CapitalLambda]0^8 - 
+    57984*mm^2*mN^14*mo^4*\[CapitalLambda]0^8 + 
+    13536*mN^16*mo^4*\[CapitalLambda]0^8 + 282240*mm^12*mN^3*mo^5*
+     \[CapitalLambda]0^8 - 1092672*mm^10*mN^5*mo^5*\[CapitalLambda]0^8 + 
+    1426080*mm^8*mN^7*mo^5*\[CapitalLambda]0^8 - 692736*mm^6*mN^9*mo^5*
+     \[CapitalLambda]0^8 + 72000*mm^4*mN^11*mo^5*\[CapitalLambda]0^8 - 
+    192*mm^2*mN^13*mo^5*\[CapitalLambda]0^8 + 5280*mN^15*mo^5*
+     \[CapitalLambda]0^8 - 42336*mm^10*mN^4*mo^6*\[CapitalLambda]0^8 - 
+    184800*mm^8*mN^6*mo^6*\[CapitalLambda]0^8 + 331584*mm^6*mN^8*mo^6*
+     \[CapitalLambda]0^8 - 80064*mm^4*mN^10*mo^6*\[CapitalLambda]0^8 - 
+    6624*mm^2*mN^12*mo^6*\[CapitalLambda]0^8 - 17760*mN^14*mo^6*
+     \[CapitalLambda]0^8 - 564480*mm^10*mN^3*mo^7*\[CapitalLambda]0^8 + 
+    1391040*mm^8*mN^5*mo^7*\[CapitalLambda]0^8 - 884160*mm^6*mN^7*mo^7*
+     \[CapitalLambda]0^8 + 103488*mm^4*mN^9*mo^7*\[CapitalLambda]0^8 + 
+    6336*mm^2*mN^11*mo^7*\[CapitalLambda]0^8 + 70560*mm^8*mN^4*mo^8*
+     \[CapitalLambda]0^8 + 110880*mm^6*mN^6*mo^8*\[CapitalLambda]0^8 - 
+    48672*mm^4*mN^8*mo^8*\[CapitalLambda]0^8 - 6048*mm^2*mN^10*mo^8*
+     \[CapitalLambda]0^8 + 2304*mN^12*mo^8*\[CapitalLambda]0^8 + 
+    705600*mm^8*mN^3*mo^9*\[CapitalLambda]0^8 - 960960*mm^6*mN^5*mo^9*
+     \[CapitalLambda]0^8 + 139200*mm^4*mN^7*mo^9*\[CapitalLambda]0^8 + 
+    7872*mm^2*mN^9*mo^9*\[CapitalLambda]0^8 + 
+    768*mN^11*mo^9*\[CapitalLambda]0^8 - 70560*mm^6*mN^4*mo^10*
+     \[CapitalLambda]0^8 - 30912*mm^4*mN^6*mo^10*\[CapitalLambda]0^8 - 
+    13344*mm^2*mN^8*mo^10*\[CapitalLambda]0^8 - 
+    3456*mN^10*mo^10*\[CapitalLambda]0^8 - 564480*mm^6*mN^3*mo^11*
+     \[CapitalLambda]0^8 + 318528*mm^4*mN^5*mo^11*\[CapitalLambda]0^8 + 
+    58272*mm^2*mN^7*mo^11*\[CapitalLambda]0^8 + 
+    9696*mN^9*mo^11*\[CapitalLambda]0^8 + 42336*mm^4*mN^4*mo^12*
+     \[CapitalLambda]0^8 + 1344*mm^2*mN^6*mo^12*\[CapitalLambda]0^8 - 
+    672*mN^8*mo^12*\[CapitalLambda]0^8 + 282240*mm^4*mN^3*mo^13*
+     \[CapitalLambda]0^8 - 20160*mm^2*mN^5*mo^13*\[CapitalLambda]0^8 - 
+    12768*mN^7*mo^13*\[CapitalLambda]0^8 - 14112*mm^2*mN^4*mo^14*
+     \[CapitalLambda]0^8 + 672*mN^6*mo^14*\[CapitalLambda]0^8 - 
+    80640*mm^2*mN^3*mo^15*\[CapitalLambda]0^8 - 
+    9408*mN^5*mo^15*\[CapitalLambda]0^8 + 2016*mN^4*mo^16*
+     \[CapitalLambda]0^8 + 10080*mN^3*mo^17*\[CapitalLambda]0^8 - 
+    4410*mm^16*mN^2*Q2*\[CapitalLambda]0^8 + 33516*mm^14*mN^4*Q2*
+     \[CapitalLambda]0^8 - 140028*mm^12*mN^6*Q2*\[CapitalLambda]0^8 + 
+    366972*mm^10*mN^8*Q2*\[CapitalLambda]0^8 - 598800*mm^8*mN^10*Q2*
+     \[CapitalLambda]0^8 + 599940*mm^6*mN^12*Q2*\[CapitalLambda]0^8 - 
+    356676*mm^4*mN^14*Q2*\[CapitalLambda]0^8 + 114708*mm^2*mN^16*Q2*
+     \[CapitalLambda]0^8 - 15222*mN^18*Q2*\[CapitalLambda]0^8 + 
+    630*mm^16*mN*mo*Q2*\[CapitalLambda]0^8 - 27216*mm^14*mN^3*mo*Q2*
+     \[CapitalLambda]0^8 + 156240*mm^12*mN^5*mo*Q2*\[CapitalLambda]0^8 - 
+    386928*mm^10*mN^7*mo*Q2*\[CapitalLambda]0^8 + 512460*mm^8*mN^9*mo*Q2*
+     \[CapitalLambda]0^8 - 388080*mm^6*mN^11*mo*Q2*\[CapitalLambda]0^8 + 
+    169056*mm^4*mN^13*mo*Q2*\[CapitalLambda]0^8 - 41040*mm^2*mN^15*mo*Q2*
+     \[CapitalLambda]0^8 + 4878*mN^17*mo*Q2*\[CapitalLambda]0^8 + 
+    37044*mm^14*mN^2*mo^2*Q2*\[CapitalLambda]0^8 - 
+    197232*mm^12*mN^4*mo^2*Q2*\[CapitalLambda]0^8 + 
+    560364*mm^10*mN^6*mo^2*Q2*\[CapitalLambda]0^8 - 
+    913320*mm^8*mN^8*mo^2*Q2*\[CapitalLambda]0^8 + 
+    768140*mm^6*mN^10*mo^2*Q2*\[CapitalLambda]0^8 - 
+    247584*mm^4*mN^12*mo^2*Q2*\[CapitalLambda]0^8 - 
+    33708*mm^2*mN^14*mo^2*Q2*\[CapitalLambda]0^8 + 
+    26296*mN^16*mo^2*Q2*\[CapitalLambda]0^8 - 5040*mm^14*mN*mo^3*Q2*
+     \[CapitalLambda]0^8 + 171528*mm^12*mN^3*mo^3*Q2*\[CapitalLambda]0^8 - 
+    677472*mm^10*mN^5*mo^3*Q2*\[CapitalLambda]0^8 + 
+    1001640*mm^8*mN^7*mo^3*Q2*\[CapitalLambda]0^8 - 
+    609904*mm^6*mN^9*mo^3*Q2*\[CapitalLambda]0^8 + 
+    77976*mm^4*mN^11*mo^3*Q2*\[CapitalLambda]0^8 + 
+    60672*mm^2*mN^13*mo^3*Q2*\[CapitalLambda]0^8 - 
+    19400*mN^15*mo^3*Q2*\[CapitalLambda]0^8 - 135828*mm^12*mN^2*mo^4*Q2*
+     \[CapitalLambda]0^8 + 469140*mm^10*mN^4*mo^4*Q2*\[CapitalLambda]0^8 - 
+    816840*mm^8*mN^6*mo^4*Q2*\[CapitalLambda]0^8 + 
+    666024*mm^6*mN^8*mo^4*Q2*\[CapitalLambda]0^8 - 
+    136164*mm^4*mN^10*mo^4*Q2*\[CapitalLambda]0^8 - 
+    47484*mm^2*mN^12*mo^4*Q2*\[CapitalLambda]0^8 + 
+    1152*mN^14*mo^4*Q2*\[CapitalLambda]0^8 + 17640*mm^12*mN*mo^5*Q2*
+     \[CapitalLambda]0^8 - 457632*mm^10*mN^3*mo^5*Q2*\[CapitalLambda]0^8 + 
+    1135440*mm^8*mN^5*mo^5*Q2*\[CapitalLambda]0^8 - 
+    806976*mm^6*mN^7*mo^5*Q2*\[CapitalLambda]0^8 + 
+    114888*mm^4*mN^9*mo^5*Q2*\[CapitalLambda]0^8 + 
+    3744*mm^2*mN^11*mo^5*Q2*\[CapitalLambda]0^8 + 
+    17472*mN^13*mo^5*Q2*\[CapitalLambda]0^8 + 284004*mm^10*mN^2*mo^6*Q2*
+     \[CapitalLambda]0^8 - 560280*mm^8*mN^4*mo^6*Q2*\[CapitalLambda]0^8 + 
+    491352*mm^6*mN^6*mo^6*Q2*\[CapitalLambda]0^8 - 
+    102048*mm^4*mN^8*mo^6*Q2*\[CapitalLambda]0^8 - 
+    10332*mm^2*mN^10*mo^6*Q2*\[CapitalLambda]0^8 - 
+    12072*mN^12*mo^6*Q2*\[CapitalLambda]0^8 - 35280*mm^10*mN*mo^7*Q2*
+     \[CapitalLambda]0^8 + 667800*mm^8*mN^3*mo^7*Q2*\[CapitalLambda]0^8 - 
+    891840*mm^6*mN^5*mo^7*Q2*\[CapitalLambda]0^8 + 
+    148656*mm^4*mN^7*mo^7*Q2*\[CapitalLambda]0^8 + 
+    10896*mm^2*mN^9*mo^7*Q2*\[CapitalLambda]0^8 - 
+    1224*mN^11*mo^7*Q2*\[CapitalLambda]0^8 - 370440*mm^8*mN^2*mo^8*Q2*
+     \[CapitalLambda]0^8 + 321300*mm^6*mN^4*mo^8*Q2*\[CapitalLambda]0^8 - 
+    76236*mm^4*mN^6*mo^8*Q2*\[CapitalLambda]0^8 - 13188*mm^2*mN^8*mo^8*Q2*
+     \[CapitalLambda]0^8 - 1084*mN^10*mo^8*Q2*\[CapitalLambda]0^8 + 
+    44100*mm^8*mN*mo^9*Q2*\[CapitalLambda]0^8 - 572880*mm^6*mN^3*mo^9*Q2*
+     \[CapitalLambda]0^8 + 294000*mm^4*mN^5*mo^9*Q2*\[CapitalLambda]0^8 + 
+    51696*mm^2*mN^7*mo^9*Q2*\[CapitalLambda]0^8 + 
+    9548*mN^9*mo^9*Q2*\[CapitalLambda]0^8 + 308700*mm^6*mN^2*mo^10*Q2*
+     \[CapitalLambda]0^8 - 38976*mm^4*mN^4*mo^10*Q2*\[CapitalLambda]0^8 - 
+    15876*mm^2*mN^6*mo^10*Q2*\[CapitalLambda]0^8 - 
+    4440*mN^8*mo^10*Q2*\[CapitalLambda]0^8 - 35280*mm^6*mN*mo^11*Q2*
+     \[CapitalLambda]0^8 + 286776*mm^4*mN^3*mo^11*Q2*\[CapitalLambda]0^8 - 
+    4320*mm^2*mN^5*mo^11*Q2*\[CapitalLambda]0^8 - 
+    8088*mN^7*mo^11*Q2*\[CapitalLambda]0^8 - 160524*mm^4*mN^2*mo^12*Q2*
+     \[CapitalLambda]0^8 - 41748*mm^2*mN^4*mo^12*Q2*\[CapitalLambda]0^8 - 
+    2736*mN^6*mo^12*Q2*\[CapitalLambda]0^8 + 17640*mm^4*mN*mo^13*Q2*
+     \[CapitalLambda]0^8 - 76608*mm^2*mN^3*mo^13*Q2*\[CapitalLambda]0^8 - 
+    12048*mN^5*mo^13*Q2*\[CapitalLambda]0^8 + 47628*mm^2*mN^2*mo^14*Q2*
+     \[CapitalLambda]0^8 + 14280*mN^4*mo^14*Q2*\[CapitalLambda]0^8 - 
+    5040*mm^2*mN*mo^15*Q2*\[CapitalLambda]0^8 + 8232*mN^3*mo^15*Q2*
+     \[CapitalLambda]0^8 - 6174*mN^2*mo^16*Q2*\[CapitalLambda]0^8 + 
+    630*mN*mo^17*Q2*\[CapitalLambda]0^8 - 630*mm^16*Q2^2*
+     \[CapitalLambda]0^8 + 12978*mm^14*mN^2*Q2^2*\[CapitalLambda]0^8 - 
+    65940*mm^12*mN^4*Q2^2*\[CapitalLambda]0^8 + 178866*mm^10*mN^6*Q2^2*
+     \[CapitalLambda]0^8 - 296040*mm^8*mN^8*Q2^2*\[CapitalLambda]0^8 + 
+    300038*mm^6*mN^10*Q2^2*\[CapitalLambda]0^8 - 178332*mm^4*mN^12*Q2^2*
+     \[CapitalLambda]0^8 + 56214*mm^2*mN^14*Q2^2*\[CapitalLambda]0^8 - 
+    7154*mN^16*Q2^2*\[CapitalLambda]0^8 - 1638*mm^14*mN*mo*Q2^2*
+     \[CapitalLambda]0^8 + 28560*mm^12*mN^3*mo*Q2^2*\[CapitalLambda]0^8 - 
+    119922*mm^10*mN^5*mo*Q2^2*\[CapitalLambda]0^8 + 
+    223740*mm^8*mN^7*mo*Q2^2*\[CapitalLambda]0^8 - 
+    221258*mm^6*mN^9*mo*Q2^2*\[CapitalLambda]0^8 + 
+    123000*mm^4*mN^11*mo*Q2^2*\[CapitalLambda]0^8 - 
+    37470*mm^2*mN^13*mo*Q2^2*\[CapitalLambda]0^8 + 
+    4988*mN^15*mo*Q2^2*\[CapitalLambda]0^8 + 5040*mm^14*mo^2*Q2^2*
+     \[CapitalLambda]0^8 - 83160*mm^12*mN^2*mo^2*Q2^2*\[CapitalLambda]0^8 + 
+    282156*mm^10*mN^4*mo^2*Q2^2*\[CapitalLambda]0^8 - 
+    459840*mm^8*mN^6*mo^2*Q2^2*\[CapitalLambda]0^8 + 
+    372872*mm^6*mN^8*mo^2*Q2^2*\[CapitalLambda]0^8 - 
+    101160*mm^4*mN^10*mo^2*Q2^2*\[CapitalLambda]0^8 - 
+    31908*mm^2*mN^12*mo^2*Q2^2*\[CapitalLambda]0^8 + 
+    16000*mN^14*mo^2*Q2^2*\[CapitalLambda]0^8 + 10836*mm^12*mN*mo^3*Q2^2*
+     \[CapitalLambda]0^8 - 134874*mm^10*mN^3*mo^3*Q2^2*\[CapitalLambda]0^8 + 
+    345690*mm^8*mN^5*mo^3*Q2^2*\[CapitalLambda]0^8 - 
+    299220*mm^6*mN^7*mo^3*Q2^2*\[CapitalLambda]0^8 + 
+    56184*mm^4*mN^9*mo^3*Q2^2*\[CapitalLambda]0^8 + 
+    39630*mm^2*mN^11*mo^3*Q2^2*\[CapitalLambda]0^8 - 
+    14982*mN^13*mo^3*Q2^2*\[CapitalLambda]0^8 - 17640*mm^12*mo^4*Q2^2*
+     \[CapitalLambda]0^8 + 224532*mm^10*mN^2*mo^4*Q2^2*\[CapitalLambda]0^8 - 
+    451230*mm^8*mN^4*mo^4*Q2^2*\[CapitalLambda]0^8 + 
+    354984*mm^6*mN^6*mo^4*Q2^2*\[CapitalLambda]0^8 - 
+    69492*mm^4*mN^8*mo^4*Q2^2*\[CapitalLambda]0^8 - 
+    15420*mm^2*mN^10*mo^4*Q2^2*\[CapitalLambda]0^8 - 
+    5958*mN^12*mo^4*Q2^2*\[CapitalLambda]0^8 - 30618*mm^10*mN*mo^5*Q2^2*
+     \[CapitalLambda]0^8 + 255030*mm^8*mN^3*mo^5*Q2^2*\[CapitalLambda]0^8 - 
+    334740*mm^6*mN^5*mo^5*Q2^2*\[CapitalLambda]0^8 + 
+    67260*mm^4*mN^7*mo^5*Q2^2*\[CapitalLambda]0^8 + 
+    4782*mm^2*mN^9*mo^5*Q2^2*\[CapitalLambda]0^8 + 
+    11214*mN^11*mo^5*Q2^2*\[CapitalLambda]0^8 + 35280*mm^10*mo^6*Q2^2*
+     \[CapitalLambda]0^8 - 329490*mm^8*mN^2*mo^6*Q2^2*\[CapitalLambda]0^8 + 
+    309744*mm^6*mN^4*mo^6*Q2^2*\[CapitalLambda]0^8 - 
+    58572*mm^4*mN^6*mo^6*Q2^2*\[CapitalLambda]0^8 - 
+    6576*mm^2*mN^8*mo^6*Q2^2*\[CapitalLambda]0^8 - 
+    3010*mN^10*mo^6*Q2^2*\[CapitalLambda]0^8 + 47880*mm^8*mN*mo^7*Q2^2*
+     \[CapitalLambda]0^8 - 242580*mm^6*mN^3*mo^7*Q2^2*\[CapitalLambda]0^8 + 
+    106452*mm^4*mN^5*mo^7*Q2^2*\[CapitalLambda]0^8 + 
+    17748*mm^2*mN^7*mo^7*Q2^2*\[CapitalLambda]0^8 + 
+    2212*mN^9*mo^7*Q2^2*\[CapitalLambda]0^8 - 44100*mm^8*mo^8*Q2^2*
+     \[CapitalLambda]0^8 + 281610*mm^6*mN^2*mo^8*Q2^2*\[CapitalLambda]0^8 - 
+    54312*mm^4*mN^4*mo^8*Q2^2*\[CapitalLambda]0^8 - 
+    11802*mm^2*mN^6*mo^8*Q2^2*\[CapitalLambda]0^8 - 
+    2620*mN^8*mo^8*Q2^2*\[CapitalLambda]0^8 - 44730*mm^6*mN*mo^9*Q2^2*
+     \[CapitalLambda]0^8 + 117900*mm^4*mN^3*mo^9*Q2^2*\[CapitalLambda]0^8 + 
+    8166*mm^2*mN^5*mo^9*Q2^2*\[CapitalLambda]0^8 + 
+    72*mN^7*mo^9*Q2^2*\[CapitalLambda]0^8 + 35280*mm^6*mo^10*Q2^2*
+     \[CapitalLambda]0^8 - 138348*mm^4*mN^2*mo^10*Q2^2*\[CapitalLambda]0^8 - 
+    30828*mm^2*mN^4*mo^10*Q2^2*\[CapitalLambda]0^8 - 
+    3636*mN^6*mo^10*Q2^2*\[CapitalLambda]0^8 + 24948*mm^4*mN*mo^11*Q2^2*
+     \[CapitalLambda]0^8 - 25170*mm^2*mN^3*mo^11*Q2^2*\[CapitalLambda]0^8 - 
+    5646*mN^5*mo^11*Q2^2*\[CapitalLambda]0^8 - 17640*mm^4*mo^12*Q2^2*
+     \[CapitalLambda]0^8 + 35280*mm^2*mN^2*mo^12*Q2^2*\[CapitalLambda]0^8 + 
+    10410*mN^4*mo^12*Q2^2*\[CapitalLambda]0^8 - 7686*mm^2*mN*mo^13*Q2^2*
+     \[CapitalLambda]0^8 + 1134*mN^3*mo^13*Q2^2*\[CapitalLambda]0^8 + 
+    5040*mm^2*mo^14*Q2^2*\[CapitalLambda]0^8 - 3402*mN^2*mo^14*Q2^2*
+     \[CapitalLambda]0^8 + 1008*mN*mo^15*Q2^2*\[CapitalLambda]0^8 - 
+    630*mo^16*Q2^2*\[CapitalLambda]0^8 + 1134*mm^14*Q2^3*
+     \[CapitalLambda]0^8 - 11718*mm^12*mN^2*Q2^3*\[CapitalLambda]0^8 + 
+    40665*mm^10*mN^4*Q2^3*\[CapitalLambda]0^8 - 73770*mm^8*mN^6*Q2^3*
+     \[CapitalLambda]0^8 + 77434*mm^6*mN^8*Q2^3*\[CapitalLambda]0^8 - 
+    46488*mm^4*mN^10*Q2^3*\[CapitalLambda]0^8 + 14559*mm^2*mN^12*Q2^3*
+     \[CapitalLambda]0^8 - 1816*mN^14*Q2^3*\[CapitalLambda]0^8 + 
+    1638*mm^12*mN*mo*Q2^3*\[CapitalLambda]0^8 - 14817*mm^10*mN^3*mo*Q2^3*
+     \[CapitalLambda]0^8 + 43050*mm^8*mN^5*mo*Q2^3*\[CapitalLambda]0^8 - 
+    56734*mm^6*mN^7*mo*Q2^3*\[CapitalLambda]0^8 + 37698*mm^4*mN^9*mo*Q2^3*
+     \[CapitalLambda]0^8 - 12177*mm^2*mN^11*mo*Q2^3*\[CapitalLambda]0^8 + 
+    1438*mN^13*mo*Q2^3*\[CapitalLambda]0^8 - 7308*mm^12*mo^2*Q2^3*
+     \[CapitalLambda]0^8 + 54810*mm^10*mN^2*mo^2*Q2^3*\[CapitalLambda]0^8 - 
+    112995*mm^8*mN^4*mo^2*Q2^3*\[CapitalLambda]0^8 + 
+    96106*mm^6*mN^6*mo^2*Q2^3*\[CapitalLambda]0^8 - 
+    22590*mm^4*mN^8*mo^2*Q2^3*\[CapitalLambda]0^8 - 
+    11496*mm^2*mN^10*mo^2*Q2^3*\[CapitalLambda]0^8 + 
+    4769*mN^12*mo^2*Q2^3*\[CapitalLambda]0^8 - 8568*mm^10*mN*mo^3*Q2^3*
+     \[CapitalLambda]0^8 + 47745*mm^8*mN^3*mo^3*Q2^3*\[CapitalLambda]0^8 - 
+    65688*mm^6*mN^5*mo^3*Q2^3*\[CapitalLambda]0^8 + 
+    17358*mm^4*mN^7*mo^3*Q2^3*\[CapitalLambda]0^8 + 
+    11208*mm^2*mN^9*mo^3*Q2^3*\[CapitalLambda]0^8 - 
+    4215*mN^11*mo^3*Q2^3*\[CapitalLambda]0^8 + 20034*mm^10*mo^4*Q2^3*
+     \[CapitalLambda]0^8 - 101655*mm^8*mN^2*mo^4*Q2^3*\[CapitalLambda]0^8 + 
+    99096*mm^6*mN^4*mo^4*Q2^3*\[CapitalLambda]0^8 - 
+    19554*mm^4*mN^6*mo^4*Q2^3*\[CapitalLambda]0^8 - 
+    2784*mm^2*mN^8*mo^4*Q2^3*\[CapitalLambda]0^8 - 
+    2745*mN^10*mo^4*Q2^3*\[CapitalLambda]0^8 + 18405*mm^8*mN*mo^5*Q2^3*
+     \[CapitalLambda]0^8 - 54798*mm^6*mN^3*mo^5*Q2^3*\[CapitalLambda]0^8 + 
+    20178*mm^4*mN^5*mo^5*Q2^3*\[CapitalLambda]0^8 + 
+    2946*mm^2*mN^7*mo^5*Q2^3*\[CapitalLambda]0^8 + 
+    3225*mN^9*mo^5*Q2^3*\[CapitalLambda]0^8 - 30240*mm^8*mo^6*Q2^3*
+     \[CapitalLambda]0^8 + 93330*mm^6*mN^2*mo^6*Q2^3*\[CapitalLambda]0^8 - 
+    20118*mm^4*mN^4*mo^6*Q2^3*\[CapitalLambda]0^8 - 
+    2964*mm^2*mN^6*mo^6*Q2^3*\[CapitalLambda]0^8 - 
+    662*mN^8*mo^6*Q2^3*\[CapitalLambda]0^8 - 20700*mm^6*mN*mo^7*Q2^3*
+     \[CapitalLambda]0^8 + 24882*mm^4*mN^3*mo^7*Q2^3*\[CapitalLambda]0^8 + 
+    4356*mm^2*mN^5*mo^7*Q2^3*\[CapitalLambda]0^8 + 
+    722*mN^7*mo^7*Q2^3*\[CapitalLambda]0^8 + 27090*mm^6*mo^8*Q2^3*
+     \[CapitalLambda]0^8 - 42390*mm^4*mN^2*mo^8*Q2^3*\[CapitalLambda]0^8 - 
+    9141*mm^2*mN^4*mo^8*Q2^3*\[CapitalLambda]0^8 - 
+    1490*mN^6*mo^8*Q2^3*\[CapitalLambda]0^8 + 12780*mm^4*mN*mo^9*Q2^3*
+     \[CapitalLambda]0^8 - 2265*mm^2*mN^3*mo^9*Q2^3*\[CapitalLambda]0^8 - 
+    936*mN^5*mo^9*Q2^3*\[CapitalLambda]0^8 - 14364*mm^4*mo^10*Q2^3*
+     \[CapitalLambda]0^8 + 7668*mm^2*mN^2*mo^10*Q2^3*\[CapitalLambda]0^8 + 
+    2493*mN^4*mo^10*Q2^3*\[CapitalLambda]0^8 - 4068*mm^2*mN*mo^11*Q2^3*
+     \[CapitalLambda]0^8 - 747*mN^3*mo^11*Q2^3*\[CapitalLambda]0^8 + 
+    4158*mm^2*mo^12*Q2^3*\[CapitalLambda]0^8 - 45*mN^2*mo^12*Q2^3*
+     \[CapitalLambda]0^8 + 513*mN*mo^13*Q2^3*\[CapitalLambda]0^8 - 
+    504*mo^14*Q2^3*\[CapitalLambda]0^8 - 630*mm^12*Q2^4*\[CapitalLambda]0^8 + 
+    3885*mm^10*mN^2*Q2^4*\[CapitalLambda]0^8 - 8955*mm^8*mN^4*Q2^4*
+     \[CapitalLambda]0^8 + 10313*mm^6*mN^6*Q2^4*\[CapitalLambda]0^8 - 
+    6360*mm^4*mN^8*Q2^4*\[CapitalLambda]0^8 + 1986*mm^2*mN^10*Q2^4*
+     \[CapitalLambda]0^8 - 239*mN^12*Q2^4*\[CapitalLambda]0^8 - 
+    735*mm^10*mN*mo*Q2^4*\[CapitalLambda]0^8 + 3660*mm^8*mN^3*mo*Q2^4*
+     \[CapitalLambda]0^8 - 6593*mm^6*mN^5*mo*Q2^4*\[CapitalLambda]0^8 + 
+    5184*mm^4*mN^7*mo*Q2^4*\[CapitalLambda]0^8 - 1686*mm^2*mN^9*mo*Q2^4*
+     \[CapitalLambda]0^8 + 158*mN^11*mo*Q2^4*\[CapitalLambda]0^8 + 
+    3150*mm^10*mo^2*Q2^4*\[CapitalLambda]0^8 - 12060*mm^8*mN^2*mo^2*Q2^4*
+     \[CapitalLambda]0^8 + 12832*mm^6*mN^4*mo^2*Q2^4*\[CapitalLambda]0^8 - 
+    2964*mm^4*mN^6*mo^2*Q2^4*\[CapitalLambda]0^8 - 
+    1824*mm^2*mN^8*mo^2*Q2^4*\[CapitalLambda]0^8 + 
+    680*mN^10*mo^2*Q2^4*\[CapitalLambda]0^8 + 2820*mm^8*mN*mo^3*Q2^4*
+     \[CapitalLambda]0^8 - 6568*mm^6*mN^3*mo^3*Q2^4*\[CapitalLambda]0^8 + 
+    2340*mm^4*mN^5*mo^3*Q2^4*\[CapitalLambda]0^8 + 
+    1476*mm^2*mN^7*mo^3*Q2^4*\[CapitalLambda]0^8 - 
+    512*mN^9*mo^3*Q2^4*\[CapitalLambda]0^8 - 6435*mm^8*mo^4*Q2^4*
+     \[CapitalLambda]0^8 + 13035*mm^6*mN^2*mo^4*Q2^4*\[CapitalLambda]0^8 - 
+    3132*mm^4*mN^4*mo^4*Q2^4*\[CapitalLambda]0^8 - 
+    360*mm^2*mN^6*mo^4*Q2^4*\[CapitalLambda]0^8 - 
+    447*mN^8*mo^4*Q2^4*\[CapitalLambda]0^8 - 4155*mm^6*mN*mo^5*Q2^4*
+     \[CapitalLambda]0^8 + 2772*mm^4*mN^3*mo^5*Q2^4*\[CapitalLambda]0^8 + 
+    702*mm^2*mN^5*mo^5*Q2^4*\[CapitalLambda]0^8 + 
+    486*mN^7*mo^5*Q2^4*\[CapitalLambda]0^8 + 6840*mm^6*mo^6*Q2^4*
+     \[CapitalLambda]0^8 - 5196*mm^4*mN^2*mo^6*Q2^4*\[CapitalLambda]0^8 - 
+    1062*mm^2*mN^4*mo^6*Q2^4*\[CapitalLambda]0^8 - 
+    214*mN^6*mo^6*Q2^4*\[CapitalLambda]0^8 + 2892*mm^4*mN*mo^7*Q2^4*
+     \[CapitalLambda]0^8 + 432*mm^2*mN^3*mo^7*Q2^4*\[CapitalLambda]0^8 + 
+    34*mN^5*mo^7*Q2^4*\[CapitalLambda]0^8 - 3960*mm^4*mo^8*Q2^4*
+     \[CapitalLambda]0^8 + 90*mm^2*mN^2*mo^8*Q2^4*\[CapitalLambda]0^8 + 
+    109*mN^4*mo^8*Q2^4*\[CapitalLambda]0^8 - 924*mm^2*mN*mo^9*Q2^4*
+     \[CapitalLambda]0^8 - 268*mN^3*mo^9*Q2^4*\[CapitalLambda]0^8 + 
+    1170*mm^2*mo^10*Q2^4*\[CapitalLambda]0^8 + 246*mN^2*mo^10*Q2^4*
+     \[CapitalLambda]0^8 + 102*mN*mo^11*Q2^4*\[CapitalLambda]0^8 - 
+    135*mo^12*Q2^4*\[CapitalLambda]0^8 + 105*mm^10*Q2^5*\[CapitalLambda]0^8 - 
+    390*mm^8*mN^2*Q2^5*\[CapitalLambda]0^8 + 555*mm^6*mN^4*Q2^5*
+     \[CapitalLambda]0^8 - 372*mm^4*mN^6*Q2^5*\[CapitalLambda]0^8 + 
+    114*mm^2*mN^8*Q2^5*\[CapitalLambda]0^8 - 
+    12*mN^10*Q2^5*\[CapitalLambda]0^8 + 120*mm^8*mN*mo*Q2^5*
+     \[CapitalLambda]0^8 - 300*mm^6*mN^3*mo*Q2^5*\[CapitalLambda]0^8 + 
+    252*mm^4*mN^5*mo*Q2^5*\[CapitalLambda]0^8 - 78*mm^2*mN^7*mo*Q2^5*
+     \[CapitalLambda]0^8 + 6*mN^9*mo*Q2^5*\[CapitalLambda]0^8 - 
+    390*mm^8*mo^2*Q2^5*\[CapitalLambda]0^8 + 630*mm^6*mN^2*mo^2*Q2^5*
+     \[CapitalLambda]0^8 - 180*mm^4*mN^4*mo^2*Q2^5*\[CapitalLambda]0^8 - 
+    102*mm^2*mN^6*mo^2*Q2^5*\[CapitalLambda]0^8 + 
+    36*mN^8*mo^2*Q2^5*\[CapitalLambda]0^8 - 300*mm^6*mN*mo^3*Q2^5*
+     \[CapitalLambda]0^8 + 132*mm^4*mN^3*mo^3*Q2^5*\[CapitalLambda]0^8 + 
+    78*mm^2*mN^5*mo^3*Q2^5*\[CapitalLambda]0^8 - 
+    24*mN^7*mo^3*Q2^5*\[CapitalLambda]0^8 + 555*mm^6*mo^4*Q2^5*
+     \[CapitalLambda]0^8 - 180*mm^4*mN^2*mo^4*Q2^5*\[CapitalLambda]0^8 - 
+    24*mm^2*mN^4*mo^4*Q2^5*\[CapitalLambda]0^8 - 
+    24*mN^6*mo^4*Q2^5*\[CapitalLambda]0^8 + 252*mm^4*mN*mo^5*Q2^5*
+     \[CapitalLambda]0^8 + 78*mm^2*mN^3*mo^5*Q2^5*\[CapitalLambda]0^8 + 
+    36*mN^5*mo^5*Q2^5*\[CapitalLambda]0^8 - 372*mm^4*mo^6*Q2^5*
+     \[CapitalLambda]0^8 - 102*mm^2*mN^2*mo^6*Q2^5*\[CapitalLambda]0^8 - 
+    24*mN^4*mo^6*Q2^5*\[CapitalLambda]0^8 - 78*mm^2*mN*mo^7*Q2^5*
+     \[CapitalLambda]0^8 - 24*mN^3*mo^7*Q2^5*\[CapitalLambda]0^8 + 
+    114*mm^2*mo^8*Q2^5*\[CapitalLambda]0^8 + 36*mN^2*mo^8*Q2^5*
+     \[CapitalLambda]0^8 + 6*mN*mo^9*Q2^5*\[CapitalLambda]0^8 - 
+    12*mo^10*Q2^5*\[CapitalLambda]0^8 + 18144*mm^12*mN^6*
+     \[CapitalLambda]0^10 - 108864*mm^10*mN^8*\[CapitalLambda]0^10 + 
+    272160*mm^8*mN^10*\[CapitalLambda]0^10 - 362880*mm^6*mN^12*
+     \[CapitalLambda]0^10 + 272160*mm^4*mN^14*\[CapitalLambda]0^10 - 
+    108864*mm^2*mN^16*\[CapitalLambda]0^10 + 
+    18144*mN^18*\[CapitalLambda]0^10 + 12096*mm^14*mN^3*mo*
+     \[CapitalLambda]0^10 - 78624*mm^12*mN^5*mo*\[CapitalLambda]0^10 + 
+    211008*mm^10*mN^7*mo*\[CapitalLambda]0^10 - 299040*mm^8*mN^9*mo*
+     \[CapitalLambda]0^10 + 235200*mm^6*mN^11*mo*\[CapitalLambda]0^10 - 
+    96096*mm^4*mN^13*mo*\[CapitalLambda]0^10 + 14784*mm^2*mN^15*mo*
+     \[CapitalLambda]0^10 + 672*mN^17*mo*\[CapitalLambda]0^10 - 
+    94080*mm^10*mN^6*mo^2*\[CapitalLambda]0^10 + 376320*mm^8*mN^8*mo^2*
+     \[CapitalLambda]0^10 - 564480*mm^6*mN^10*mo^2*\[CapitalLambda]0^10 + 
+    376320*mm^4*mN^12*mo^2*\[CapitalLambda]0^10 - 
+    94080*mm^2*mN^14*mo^2*\[CapitalLambda]0^10 - 84672*mm^12*mN^3*mo^3*
+     \[CapitalLambda]0^10 + 396480*mm^10*mN^5*mo^3*\[CapitalLambda]0^10 - 
+    692640*mm^8*mN^7*mo^3*\[CapitalLambda]0^10 + 541440*mm^6*mN^9*mo^3*
+     \[CapitalLambda]0^10 - 163200*mm^4*mN^11*mo^3*\[CapitalLambda]0^10 - 
+    1728*mm^2*mN^13*mo^3*\[CapitalLambda]0^10 + 
+    4320*mN^15*mo^3*\[CapitalLambda]0^10 + 194880*mm^8*mN^6*mo^4*
+     \[CapitalLambda]0^10 - 451200*mm^6*mN^8*mo^4*\[CapitalLambda]0^10 + 
+    301824*mm^4*mN^10*mo^4*\[CapitalLambda]0^10 - 
+    29568*mm^2*mN^12*mo^4*\[CapitalLambda]0^10 - 
+    15936*mN^14*mo^4*\[CapitalLambda]0^10 + 254016*mm^10*mN^3*mo^5*
+     \[CapitalLambda]0^10 - 803040*mm^8*mN^5*mo^5*\[CapitalLambda]0^10 + 
+    800640*mm^6*mN^7*mo^5*\[CapitalLambda]0^10 - 264384*mm^4*mN^9*mo^5*
+     \[CapitalLambda]0^10 + 13632*mm^2*mN^11*mo^5*\[CapitalLambda]0^10 - 
+    864*mN^13*mo^5*\[CapitalLambda]0^10 - 201600*mm^6*mN^6*mo^6*
+     \[CapitalLambda]0^10 + 205056*mm^4*mN^8*mo^6*\[CapitalLambda]0^10 - 
+    26496*mm^2*mN^10*mo^6*\[CapitalLambda]0^10 + 
+    1536*mN^12*mo^6*\[CapitalLambda]0^10 - 423360*mm^8*mN^3*mo^7*
+     \[CapitalLambda]0^10 + 819840*mm^6*mN^5*mo^7*\[CapitalLambda]0^10 - 
+    356160*mm^4*mN^7*mo^7*\[CapitalLambda]0^10 + 22272*mm^2*mN^9*mo^7*
+     \[CapitalLambda]0^10 + 384*mN^11*mo^7*\[CapitalLambda]0^10 + 
+    104160*mm^4*mN^6*mo^8*\[CapitalLambda]0^10 - 17472*mm^2*mN^8*mo^8*
+     \[CapitalLambda]0^10 + 96*mN^10*mo^8*\[CapitalLambda]0^10 + 
+    423360*mm^6*mN^3*mo^9*\[CapitalLambda]0^10 - 426720*mm^4*mN^5*mo^9*
+     \[CapitalLambda]0^10 + 25920*mm^2*mN^7*mo^9*\[CapitalLambda]0^10 - 
+    288*mN^9*mo^9*\[CapitalLambda]0^10 - 21504*mm^2*mN^6*mo^10*
+     \[CapitalLambda]0^10 - 3840*mN^8*mo^10*\[CapitalLambda]0^10 - 
+    254016*mm^4*mN^3*mo^11*\[CapitalLambda]0^10 + 
+    95424*mm^2*mN^5*mo^11*\[CapitalLambda]0^10 + 
+    11232*mN^7*mo^11*\[CapitalLambda]0^10 + 84672*mm^2*mN^3*mo^13*
+     \[CapitalLambda]0^10 - 3360*mN^5*mo^13*\[CapitalLambda]0^10 - 
+    12096*mN^3*mo^15*\[CapitalLambda]0^10 - 5292*mm^14*mN^2*Q2*
+     \[CapitalLambda]0^10 + 34776*mm^12*mN^4*Q2*\[CapitalLambda]0^10 - 
+    130116*mm^10*mN^6*Q2*\[CapitalLambda]0^10 + 298896*mm^8*mN^8*Q2*
+     \[CapitalLambda]0^10 - 404724*mm^6*mN^10*Q2*\[CapitalLambda]0^10 + 
+    311448*mm^4*mN^12*Q2*\[CapitalLambda]0^10 - 125340*mm^2*mN^14*Q2*
+     \[CapitalLambda]0^10 + 20352*mN^16*Q2*\[CapitalLambda]0^10 + 
+    756*mm^14*mN*mo*Q2*\[CapitalLambda]0^10 - 29484*mm^12*mN^3*mo*Q2*
+     \[CapitalLambda]0^10 + 143892*mm^10*mN^5*mo*Q2*\[CapitalLambda]0^10 - 
+    296412*mm^8*mN^7*mo*Q2*\[CapitalLambda]0^10 + 319356*mm^6*mN^9*mo*Q2*
+     \[CapitalLambda]0^10 - 192132*mm^4*mN^11*mo*Q2*\[CapitalLambda]0^10 + 
+    63996*mm^2*mN^13*mo*Q2*\[CapitalLambda]0^10 - 
+    9972*mN^15*mo*Q2*\[CapitalLambda]0^10 + 39312*mm^12*mN^2*mo^2*Q2*
+     \[CapitalLambda]0^10 - 179256*mm^10*mN^4*mo^2*Q2*\[CapitalLambda]0^10 + 
+    444360*mm^8*mN^6*mo^2*Q2*\[CapitalLambda]0^10 - 
+    605040*mm^6*mN^8*mo^2*Q2*\[CapitalLambda]0^10 + 
+    390624*mm^4*mN^10*mo^2*Q2*\[CapitalLambda]0^10 - 
+    83160*mm^2*mN^12*mo^2*Q2*\[CapitalLambda]0^10 - 
+    6840*mN^14*mo^2*Q2*\[CapitalLambda]0^10 - 5292*mm^12*mN*mo^3*Q2*
+     \[CapitalLambda]0^10 + 160104*mm^10*mN^3*mo^3*Q2*\[CapitalLambda]0^10 - 
+    520788*mm^8*mN^5*mo^3*Q2*\[CapitalLambda]0^10 + 
+    602160*mm^6*mN^7*mo^3*Q2*\[CapitalLambda]0^10 - 
+    260820*mm^4*mN^9*mo^3*Q2*\[CapitalLambda]0^10 + 
+    9192*mm^2*mN^11*mo^3*Q2*\[CapitalLambda]0^10 + 
+    15444*mN^13*mo^3*Q2*\[CapitalLambda]0^10 - 124740*mm^10*mN^2*mo^4*Q2*
+     \[CapitalLambda]0^10 + 364224*mm^8*mN^4*mo^4*Q2*\[CapitalLambda]0^10 - 
+    530040*mm^6*mN^6*mo^4*Q2*\[CapitalLambda]0^10 + 
+    326736*mm^4*mN^8*mo^4*Q2*\[CapitalLambda]0^10 - 
+    35940*mm^2*mN^10*mo^4*Q2*\[CapitalLambda]0^10 - 
+    10992*mN^12*mo^4*Q2*\[CapitalLambda]0^10 + 15876*mm^10*mN*mo^5*Q2*
+     \[CapitalLambda]0^10 - 358260*mm^8*mN^3*mo^5*Q2*\[CapitalLambda]0^10 + 
+    699144*mm^6*mN^5*mo^5*Q2*\[CapitalLambda]0^10 - 
+    349800*mm^4*mN^7*mo^5*Q2*\[CapitalLambda]0^10 + 
+    27444*mm^2*mN^9*mo^5*Q2*\[CapitalLambda]0^10 - 
+    1764*mN^11*mo^5*Q2*\[CapitalLambda]0^10 + 219240*mm^8*mN^2*mo^6*Q2*
+     \[CapitalLambda]0^10 - 359856*mm^6*mN^4*mo^6*Q2*\[CapitalLambda]0^10 + 
+    243744*mm^4*mN^6*mo^6*Q2*\[CapitalLambda]0^10 - 
+    29328*mm^2*mN^8*mo^6*Q2*\[CapitalLambda]0^10 + 
+    696*mN^10*mo^6*Q2*\[CapitalLambda]0^10 - 26460*mm^8*mN*mo^7*Q2*
+     \[CapitalLambda]0^10 + 421680*mm^6*mN^3*mo^7*Q2*\[CapitalLambda]0^10 - 
+    411624*mm^4*mN^5*mo^7*Q2*\[CapitalLambda]0^10 + 
+    34224*mm^2*mN^7*mo^7*Q2*\[CapitalLambda]0^10 + 
+    36*mN^9*mo^7*Q2*\[CapitalLambda]0^10 - 230580*mm^6*mN^2*mo^8*Q2*
+     \[CapitalLambda]0^10 + 165144*mm^4*mN^4*mo^8*Q2*\[CapitalLambda]0^10 - 
+    24228*mm^2*mN^6*mo^8*Q2*\[CapitalLambda]0^10 - 
+    2016*mN^8*mo^8*Q2*\[CapitalLambda]0^10 + 26460*mm^6*mN*mo^9*Q2*
+     \[CapitalLambda]0^10 - 274260*mm^4*mN^3*mo^9*Q2*\[CapitalLambda]0^10 + 
+    89508*mm^2*mN^5*mo^9*Q2*\[CapitalLambda]0^10 + 
+    9828*mN^7*mo^9*Q2*\[CapitalLambda]0^10 + 145152*mm^4*mN^2*mo^10*Q2*
+     \[CapitalLambda]0^10 - 19992*mm^2*mN^4*mo^10*Q2*\[CapitalLambda]0^10 - 
+    3720*mN^6*mo^10*Q2*\[CapitalLambda]0^10 - 15876*mm^4*mN*mo^11*Q2*
+     \[CapitalLambda]0^10 + 92904*mm^2*mN^3*mo^11*Q2*\[CapitalLambda]0^10 - 
+    132*mN^5*mo^11*Q2*\[CapitalLambda]0^10 - 50652*mm^2*mN^2*mo^12*Q2*
+     \[CapitalLambda]0^10 - 5040*mN^4*mo^12*Q2*\[CapitalLambda]0^10 + 
+    5292*mm^2*mN*mo^13*Q2*\[CapitalLambda]0^10 - 12684*mN^3*mo^13*Q2*
+     \[CapitalLambda]0^10 + 7560*mN^2*mo^14*Q2*\[CapitalLambda]0^10 - 
+    756*mN*mo^15*Q2*\[CapitalLambda]0^10 - 756*mm^14*Q2^2*
+     \[CapitalLambda]0^10 + 13230*mm^12*mN^2*Q2^2*\[CapitalLambda]0^10 - 
+    57036*mm^10*mN^4*Q2^2*\[CapitalLambda]0^10 + 132522*mm^8*mN^6*Q2^2*
+     \[CapitalLambda]0^10 - 183420*mm^6*mN^8*Q2^2*\[CapitalLambda]0^10 + 
+    145650*mm^4*mN^10*Q2^2*\[CapitalLambda]0^10 - 
+    60036*mm^2*mN^12*Q2^2*\[CapitalLambda]0^10 + 
+    9846*mN^14*Q2^2*\[CapitalLambda]0^10 - 1890*mm^12*mN*mo*Q2^2*
+     \[CapitalLambda]0^10 + 28392*mm^10*mN^3*mo*Q2^2*\[CapitalLambda]0^10 - 
+    99738*mm^8*mN^5*mo*Q2^2*\[CapitalLambda]0^10 + 
+    152352*mm^6*mN^7*mo*Q2^2*\[CapitalLambda]0^10 - 
+    119526*mm^4*mN^9*mo*Q2^2*\[CapitalLambda]0^10 + 
+    48888*mm^2*mN^11*mo*Q2^2*\[CapitalLambda]0^10 - 
+    8478*mN^13*mo*Q2^2*\[CapitalLambda]0^10 + 5292*mm^12*mo^2*Q2^2*
+     \[CapitalLambda]0^10 - 73332*mm^10*mN^2*mo^2*Q2^2*\[CapitalLambda]0^10 + 
+    204876*mm^8*mN^4*mo^2*Q2^2*\[CapitalLambda]0^10 - 
+    272040*mm^6*mN^6*mo^2*Q2^2*\[CapitalLambda]0^10 + 
+    168756*mm^4*mN^8*mo^2*Q2^2*\[CapitalLambda]0^10 - 
+    28452*mm^2*mN^10*mo^2*Q2^2*\[CapitalLambda]0^10 - 
+    6636*mN^12*mo^2*Q2^2*\[CapitalLambda]0^10 + 10836*mm^10*mN*mo^3*Q2^2*
+     \[CapitalLambda]0^10 - 112926*mm^8*mN^3*mo^3*Q2^2*\[CapitalLambda]0^10 + 
+    228768*mm^6*mN^5*mo^3*Q2^2*\[CapitalLambda]0^10 - 
+    143700*mm^4*mN^7*mo^3*Q2^2*\[CapitalLambda]0^10 + 
+    11772*mm^2*mN^9*mo^3*Q2^2*\[CapitalLambda]0^10 + 
+    10242*mN^11*mo^3*Q2^2*\[CapitalLambda]0^10 - 15876*mm^10*mo^4*Q2^2*
+     \[CapitalLambda]0^10 + 166572*mm^8*mN^2*mo^4*Q2^2*\[CapitalLambda]0^10 - 
+    263592*mm^6*mN^4*mo^4*Q2^2*\[CapitalLambda]0^10 + 
+    153840*mm^4*mN^6*mo^4*Q2^2*\[CapitalLambda]0^10 - 
+    17076*mm^2*mN^8*mo^4*Q2^2*\[CapitalLambda]0^10 - 
+    2508*mN^10*mo^4*Q2^2*\[CapitalLambda]0^10 - 25830*mm^8*mN*mo^5*Q2^2*
+     \[CapitalLambda]0^10 + 173184*mm^6*mN^3*mo^5*Q2^2*\[CapitalLambda]0^10 - 
+    164124*mm^4*mN^5*mo^5*Q2^2*\[CapitalLambda]0^10 + 
+    18000*mm^2*mN^7*mo^5*Q2^2*\[CapitalLambda]0^10 - 
+    798*mN^9*mo^5*Q2^2*\[CapitalLambda]0^10 + 26460*mm^8*mo^6*Q2^2*
+     \[CapitalLambda]0^10 - 197568*mm^6*mN^2*mo^6*Q2^2*\[CapitalLambda]0^10 + 
+    135960*mm^4*mN^4*mo^6*Q2^2*\[CapitalLambda]0^10 - 
+    14256*mm^2*mN^6*mo^6*Q2^2*\[CapitalLambda]0^10 - 
+    84*mN^8*mo^6*Q2^2*\[CapitalLambda]0^10 + 32760*mm^6*mN*mo^7*Q2^2*
+     \[CapitalLambda]0^10 - 125916*mm^4*mN^3*mo^7*Q2^2*\[CapitalLambda]0^10 + 
+    32928*mm^2*mN^5*mo^7*Q2^2*\[CapitalLambda]0^10 + 
+    3012*mN^7*mo^7*Q2^2*\[CapitalLambda]0^10 - 26460*mm^6*mo^8*Q2^2*
+     \[CapitalLambda]0^10 + 128142*mm^4*mN^2*mo^8*Q2^2*\[CapitalLambda]0^10 - 
+    15468*mm^2*mN^4*mo^8*Q2^2*\[CapitalLambda]0^10 - 
+    2178*mN^6*mo^8*Q2^2*\[CapitalLambda]0^10 - 23310*mm^4*mN*mo^9*Q2^2*
+     \[CapitalLambda]0^10 + 42024*mm^2*mN^3*mo^9*Q2^2*\[CapitalLambda]0^10 + 
+    2166*mN^5*mo^9*Q2^2*\[CapitalLambda]0^10 + 15876*mm^4*mo^10*Q2^2*
+     \[CapitalLambda]0^10 - 42588*mm^2*mN^2*mo^10*Q2^2*\[CapitalLambda]0^10 - 
+    4740*mN^4*mo^10*Q2^2*\[CapitalLambda]0^10 + 8820*mm^2*mN*mo^11*Q2^2*
+     \[CapitalLambda]0^10 - 4758*mN^3*mo^11*Q2^2*\[CapitalLambda]0^10 - 
+    5292*mm^2*mo^12*Q2^2*\[CapitalLambda]0^10 + 5544*mN^2*mo^12*Q2^2*
+     \[CapitalLambda]0^10 - 1386*mN*mo^13*Q2^2*\[CapitalLambda]0^10 + 
+    756*mo^14*Q2^2*\[CapitalLambda]0^10 + 1134*mm^12*Q2^3*
+     \[CapitalLambda]0^10 - 9828*mm^10*mN^2*Q2^3*\[CapitalLambda]0^10 + 
+    28341*mm^8*mN^4*Q2^3*\[CapitalLambda]0^10 - 42306*mm^6*mN^6*Q2^3*
+     \[CapitalLambda]0^10 + 35016*mm^4*mN^8*Q2^3*\[CapitalLambda]0^10 - 
+    14934*mm^2*mN^10*Q2^3*\[CapitalLambda]0^10 + 
+    2529*mN^12*Q2^3*\[CapitalLambda]0^10 + 1764*mm^10*mN*mo*Q2^3*
+     \[CapitalLambda]0^10 - 13365*mm^8*mN^3*mo*Q2^3*\[CapitalLambda]0^10 + 
+    31566*mm^6*mN^5*mo*Q2^3*\[CapitalLambda]0^10 - 
+    32460*mm^4*mN^7*mo*Q2^3*\[CapitalLambda]0^10 + 
+    15270*mm^2*mN^9*mo*Q2^3*\[CapitalLambda]0^10 - 
+    2631*mN^11*mo*Q2^3*\[CapitalLambda]0^10 - 6300*mm^10*mo^2*Q2^3*
+     \[CapitalLambda]0^10 + 38682*mm^8*mN^2*mo^2*Q2^3*\[CapitalLambda]0^10 - 
+    62532*mm^6*mN^4*mo^2*Q2^3*\[CapitalLambda]0^10 + 
+    39228*mm^4*mN^6*mo^2*Q2^3*\[CapitalLambda]0^10 - 
+    5004*mm^2*mN^8*mo^2*Q2^3*\[CapitalLambda]0^10 - 
+    2346*mN^10*mo^2*Q2^3*\[CapitalLambda]0^10 - 7812*mm^8*mN*mo^3*Q2^3*
+     \[CapitalLambda]0^10 + 34812*mm^6*mN^3*mo^3*Q2^3*\[CapitalLambda]0^10 - 
+    34770*mm^4*mN^5*mo^3*Q2^3*\[CapitalLambda]0^10 + 
+    4584*mm^2*mN^7*mo^3*Q2^3*\[CapitalLambda]0^10 + 
+    2778*mN^9*mo^3*Q2^3*\[CapitalLambda]0^10 + 14490*mm^8*mo^4*Q2^3*
+     \[CapitalLambda]0^10 - 58050*mm^6*mN^2*mo^4*Q2^3*\[CapitalLambda]0^10 + 
+    40242*mm^4*mN^4*mo^4*Q2^3*\[CapitalLambda]0^10 - 
+    4308*mm^2*mN^6*mo^4*Q2^3*\[CapitalLambda]0^10 - 
+    180*mN^8*mo^4*Q2^3*\[CapitalLambda]0^10 + 13662*mm^6*mN*mo^5*Q2^3*
+     \[CapitalLambda]0^10 - 30504*mm^4*mN^3*mo^5*Q2^3*\[CapitalLambda]0^10 + 
+    6300*mm^2*mN^5*mo^5*Q2^3*\[CapitalLambda]0^10 + 
+    174*mN^7*mo^5*Q2^3*\[CapitalLambda]0^10 - 17640*mm^6*mo^6*Q2^3*
+     \[CapitalLambda]0^10 + 40536*mm^4*mN^2*mo^6*Q2^3*\[CapitalLambda]0^10 - 
+    4656*mm^2*mN^4*mo^6*Q2^3*\[CapitalLambda]0^10 - 
+    288*mN^6*mo^6*Q2^3*\[CapitalLambda]0^10 - 11754*mm^4*mN*mo^7*Q2^3*
+     \[CapitalLambda]0^10 + 9600*mm^2*mN^3*mo^7*Q2^3*\[CapitalLambda]0^10 + 
+    1032*mN^5*mo^7*Q2^3*\[CapitalLambda]0^10 + 11970*mm^4*mo^8*Q2^3*
+     \[CapitalLambda]0^10 - 12510*mm^2*mN^2*mo^8*Q2^3*\[CapitalLambda]0^10 - 
+    1515*mN^4*mo^8*Q2^3*\[CapitalLambda]0^10 + 4950*mm^2*mN*mo^9*Q2^3*
+     \[CapitalLambda]0^10 - 543*mN^3*mo^9*Q2^3*\[CapitalLambda]0^10 - 
+    4284*mm^2*mo^10*Q2^3*\[CapitalLambda]0^10 + 1170*mN^2*mo^10*Q2^3*
+     \[CapitalLambda]0^10 - 810*mN*mo^11*Q2^3*\[CapitalLambda]0^10 + 
+    630*mo^12*Q2^3*\[CapitalLambda]0^10 - 504*mm^10*Q2^4*
+     \[CapitalLambda]0^10 + 2583*mm^8*mN^2*Q2^4*\[CapitalLambda]0^10 - 
+    4842*mm^6*mN^4*Q2^4*\[CapitalLambda]0^10 + 4371*mm^4*mN^6*Q2^4*
+     \[CapitalLambda]0^10 - 1938*mm^2*mN^8*Q2^4*\[CapitalLambda]0^10 + 
+    336*mN^10*Q2^4*\[CapitalLambda]0^10 - 693*mm^8*mN*mo*Q2^4*
+     \[CapitalLambda]0^10 + 2808*mm^6*mN^3*mo*Q2^4*\[CapitalLambda]0^10 - 
+    3939*mm^4*mN^5*mo*Q2^4*\[CapitalLambda]0^10 + 2148*mm^2*mN^7*mo*Q2^4*
+     \[CapitalLambda]0^10 - 360*mN^9*mo*Q2^4*\[CapitalLambda]0^10 + 
+    2142*mm^8*mo^2*Q2^4*\[CapitalLambda]0^10 - 6462*mm^6*mN^2*mo^2*Q2^4*
+     \[CapitalLambda]0^10 + 4944*mm^4*mN^4*mo^2*Q2^4*\[CapitalLambda]0^10 - 
+    552*mm^2*mN^6*mo^2*Q2^4*\[CapitalLambda]0^10 - 
+    354*mN^8*mo^2*Q2^4*\[CapitalLambda]0^10 + 2178*mm^6*mN*mo^3*Q2^4*
+     \[CapitalLambda]0^10 - 3774*mm^4*mN^3*mo^3*Q2^4*\[CapitalLambda]0^10 + 
+    672*mm^2*mN^5*mo^3*Q2^4*\[CapitalLambda]0^10 + 
+    348*mN^7*mo^3*Q2^4*\[CapitalLambda]0^10 - 3582*mm^6*mo^4*Q2^4*
+     \[CapitalLambda]0^10 + 5283*mm^4*mN^2*mo^4*Q2^4*\[CapitalLambda]0^10 - 
+    660*mm^2*mN^4*mo^4*Q2^4*\[CapitalLambda]0^10 - 
+    2475*mm^4*mN*mo^5*Q2^4*\[CapitalLambda]0^10 + 1068*mm^2*mN^3*mo^5*Q2^4*
+     \[CapitalLambda]0^10 + 126*mN^5*mo^5*Q2^4*\[CapitalLambda]0^10 + 
+    2934*mm^4*mo^6*Q2^4*\[CapitalLambda]0^10 - 1404*mm^2*mN^2*mo^6*Q2^4*
+     \[CapitalLambda]0^10 - 162*mN^4*mo^6*Q2^4*\[CapitalLambda]0^10 + 
+    1188*mm^2*mN*mo^7*Q2^4*\[CapitalLambda]0^10 + 
+    84*mN^3*mo^7*Q2^4*\[CapitalLambda]0^10 - 1170*mm^2*mo^8*Q2^4*
+     \[CapitalLambda]0^10 - 198*mN*mo^9*Q2^4*\[CapitalLambda]0^10 + 
+    180*mo^10*Q2^4*\[CapitalLambda]0^10 + 63*mm^8*Q2^5*\[CapitalLambda]0^10 - 
+    198*mm^6*mN^2*Q2^5*\[CapitalLambda]0^10 + 225*mm^4*mN^4*Q2^5*
+     \[CapitalLambda]0^10 - 108*mm^2*mN^6*Q2^5*\[CapitalLambda]0^10 + 
+    18*mN^8*Q2^5*\[CapitalLambda]0^10 + 90*mm^6*mN*mo*Q2^5*
+     \[CapitalLambda]0^10 - 180*mm^4*mN^3*mo*Q2^5*\[CapitalLambda]0^10 + 
+    108*mm^2*mN^5*mo*Q2^5*\[CapitalLambda]0^10 - 
+    18*mN^7*mo*Q2^5*\[CapitalLambda]0^10 - 198*mm^6*mo^2*Q2^5*
+     \[CapitalLambda]0^10 + 234*mm^4*mN^2*mo^2*Q2^5*\[CapitalLambda]0^10 - 
+    36*mm^2*mN^4*mo^2*Q2^5*\[CapitalLambda]0^10 - 
+    18*mN^6*mo^2*Q2^5*\[CapitalLambda]0^10 - 180*mm^4*mN*mo^3*Q2^5*
+     \[CapitalLambda]0^10 + 36*mm^2*mN^3*mo^3*Q2^5*\[CapitalLambda]0^10 + 
+    18*mN^5*mo^3*Q2^5*\[CapitalLambda]0^10 + 225*mm^4*mo^4*Q2^5*
+     \[CapitalLambda]0^10 - 36*mm^2*mN^2*mo^4*Q2^5*\[CapitalLambda]0^10 + 
+    108*mm^2*mN*mo^5*Q2^5*\[CapitalLambda]0^10 + 
+    18*mN^3*mo^5*Q2^5*\[CapitalLambda]0^10 - 108*mm^2*mo^6*Q2^5*
+     \[CapitalLambda]0^10 - 18*mN^2*mo^6*Q2^5*\[CapitalLambda]0^10 - 
+    18*mN*mo^7*Q2^5*\[CapitalLambda]0^10 + 
+    18*mo^8*Q2^5*\[CapitalLambda]0^10 + 16128*mm^10*mN^6*
+     \[CapitalLambda]0^12 - 80640*mm^8*mN^8*\[CapitalLambda]0^12 + 
+    161280*mm^6*mN^10*\[CapitalLambda]0^12 - 161280*mm^4*mN^12*
+     \[CapitalLambda]0^12 + 80640*mm^2*mN^14*\[CapitalLambda]0^12 - 
+    16128*mN^16*\[CapitalLambda]0^12 + 10080*mm^12*mN^3*mo*
+     \[CapitalLambda]0^12 - 54432*mm^10*mN^5*mo*\[CapitalLambda]0^12 + 
+    119616*mm^8*mN^7*mo*\[CapitalLambda]0^12 - 135744*mm^6*mN^9*mo*
+     \[CapitalLambda]0^12 + 82656*mm^4*mN^11*mo*\[CapitalLambda]0^12 - 
+    24864*mm^2*mN^13*mo*\[CapitalLambda]0^12 + 
+    2688*mN^15*mo*\[CapitalLambda]0^12 + 2016*mm^10*mN^4*mo^2*
+     \[CapitalLambda]0^12 - 75264*mm^8*mN^6*mo^2*\[CapitalLambda]0^12 + 
+    227136*mm^6*mN^8*mo^2*\[CapitalLambda]0^12 - 249984*mm^4*mN^10*mo^2*
+     \[CapitalLambda]0^12 + 109536*mm^2*mN^12*mo^2*\[CapitalLambda]0^12 - 
+    13440*mN^14*mo^2*\[CapitalLambda]0^12 - 60480*mm^10*mN^3*mo^3*
+     \[CapitalLambda]0^12 + 228480*mm^8*mN^5*mo^3*\[CapitalLambda]0^12 - 
+    305952*mm^6*mN^7*mo^3*\[CapitalLambda]0^12 + 166560*mm^4*mN^9*mo^3*
+     \[CapitalLambda]0^12 - 26784*mm^2*mN^11*mo^3*\[CapitalLambda]0^12 - 
+    1824*mN^13*mo^3*\[CapitalLambda]0^12 - 10080*mm^8*mN^4*mo^4*
+     \[CapitalLambda]0^12 + 133728*mm^6*mN^6*mo^4*\[CapitalLambda]0^12 - 
+    204960*mm^4*mN^8*mo^4*\[CapitalLambda]0^12 + 81312*mm^2*mN^10*mo^4*
+     \[CapitalLambda]0^12 + 151200*mm^8*mN^3*mo^5*\[CapitalLambda]0^12 - 
+    369600*mm^6*mN^5*mo^5*\[CapitalLambda]0^12 + 252000*mm^4*mN^7*mo^5*
+     \[CapitalLambda]0^12 - 43776*mm^2*mN^9*mo^5*\[CapitalLambda]0^12 + 
+    192*mN^11*mo^5*\[CapitalLambda]0^12 + 20160*mm^6*mN^4*mo^6*
+     \[CapitalLambda]0^12 - 110880*mm^4*mN^6*mo^6*\[CapitalLambda]0^12 + 
+    59904*mm^2*mN^8*mo^6*\[CapitalLambda]0^12 - 
+    2208*mN^10*mo^6*\[CapitalLambda]0^12 - 201600*mm^6*mN^3*mo^7*
+     \[CapitalLambda]0^12 + 282240*mm^4*mN^5*mo^7*\[CapitalLambda]0^12 - 
+    64608*mm^2*mN^7*mo^7*\[CapitalLambda]0^12 + 
+    672*mN^9*mo^7*\[CapitalLambda]0^12 - 20160*mm^4*mN^4*mo^8*
+     \[CapitalLambda]0^12 + 40992*mm^2*mN^6*mo^8*\[CapitalLambda]0^12 - 
+    1440*mN^8*mo^8*\[CapitalLambda]0^12 + 151200*mm^4*mN^3*mo^9*
+     \[CapitalLambda]0^12 - 97440*mm^2*mN^5*mo^9*\[CapitalLambda]0^12 - 
+    1056*mN^7*mo^9*\[CapitalLambda]0^12 + 10080*mm^2*mN^4*mo^10*
+     \[CapitalLambda]0^12 - 4704*mN^6*mo^10*\[CapitalLambda]0^12 - 
+    60480*mm^2*mN^3*mo^11*\[CapitalLambda]0^12 + 
+    10752*mN^5*mo^11*\[CapitalLambda]0^12 - 2016*mN^4*mo^12*
+     \[CapitalLambda]0^12 + 10080*mN^3*mo^13*\[CapitalLambda]0^12 - 
+    4410*mm^12*mN^2*Q2*\[CapitalLambda]0^12 + 24444*mm^10*mN^4*Q2*
+     \[CapitalLambda]0^12 - 80934*mm^8*mN^6*Q2*\[CapitalLambda]0^12 + 
+    158120*mm^6*mN^8*Q2*\[CapitalLambda]0^12 - 167046*mm^4*mN^10*Q2*
+     \[CapitalLambda]0^12 + 87708*mm^2*mN^12*Q2*\[CapitalLambda]0^12 - 
+    17882*mN^14*Q2*\[CapitalLambda]0^12 + 630*mm^12*mN*mo*Q2*
+     \[CapitalLambda]0^12 - 21924*mm^10*mN^3*mo*Q2*\[CapitalLambda]0^12 + 
+    88074*mm^8*mN^5*mo*Q2*\[CapitalLambda]0^12 - 145960*mm^6*mN^7*mo*Q2*
+     \[CapitalLambda]0^12 + 123738*mm^4*mN^9*mo*Q2*\[CapitalLambda]0^12 - 
+    56052*mm^2*mN^11*mo*Q2*\[CapitalLambda]0^12 + 
+    11494*mN^13*mo*Q2*\[CapitalLambda]0^12 + 28476*mm^10*mN^2*mo^2*Q2*
+     \[CapitalLambda]0^12 - 107268*mm^8*mN^4*mo^2*Q2*\[CapitalLambda]0^12 + 
+    222936*mm^6*mN^6*mo^2*Q2*\[CapitalLambda]0^12 - 
+    236328*mm^4*mN^8*mo^2*Q2*\[CapitalLambda]0^12 + 
+    102188*mm^2*mN^10*mo^2*Q2*\[CapitalLambda]0^12 - 
+    10004*mN^12*mo^2*Q2*\[CapitalLambda]0^12 - 3780*mm^10*mN*mo^3*Q2*
+     \[CapitalLambda]0^12 + 99708*mm^8*mN^3*mo^3*Q2*\[CapitalLambda]0^12 - 
+    253272*mm^6*mN^5*mo^3*Q2*\[CapitalLambda]0^12 + 
+    209880*mm^4*mN^7*mo^3*Q2*\[CapitalLambda]0^12 - 
+    53956*mm^2*mN^9*mo^3*Q2*\[CapitalLambda]0^12 - 
+    2420*mN^11*mo^3*Q2*\[CapitalLambda]0^12 - 76230*mm^8*mN^2*mo^4*Q2*
+     \[CapitalLambda]0^12 + 178584*mm^6*mN^4*mo^4*Q2*\[CapitalLambda]0^12 - 
+    199140*mm^4*mN^6*mo^4*Q2*\[CapitalLambda]0^12 + 
+    77496*mm^2*mN^8*mo^4*Q2*\[CapitalLambda]0^12 - 
+    1190*mN^10*mo^4*Q2*\[CapitalLambda]0^12 + 9450*mm^8*mN*mo^5*Q2*
+     \[CapitalLambda]0^12 - 179592*mm^6*mN^3*mo^5*Q2*\[CapitalLambda]0^12 + 
+    252300*mm^4*mN^5*mo^5*Q2*\[CapitalLambda]0^12 - 
+    71928*mm^2*mN^7*mo^5*Q2*\[CapitalLambda]0^12 + 
+    1258*mN^9*mo^5*Q2*\[CapitalLambda]0^12 + 108360*mm^6*mN^2*mo^6*Q2*
+     \[CapitalLambda]0^12 - 136584*mm^4*mN^4*mo^6*Q2*\[CapitalLambda]0^12 + 
+    59352*mm^2*mN^6*mo^6*Q2*\[CapitalLambda]0^12 - 
+    1848*mN^8*mo^6*Q2*\[CapitalLambda]0^12 - 12600*mm^6*mN*mo^7*Q2*
+     \[CapitalLambda]0^12 + 159768*mm^4*mN^3*mo^7*Q2*\[CapitalLambda]0^12 - 
+    97080*mm^2*mN^5*mo^7*Q2*\[CapitalLambda]0^12 + 
+    840*mN^7*mo^7*Q2*\[CapitalLambda]0^12 - 86310*mm^4*mN^2*mo^8*Q2*
+     \[CapitalLambda]0^12 + 44268*mm^2*mN^4*mo^8*Q2*\[CapitalLambda]0^12 - 
+    2214*mN^6*mo^8*Q2*\[CapitalLambda]0^12 + 9450*mm^4*mN*mo^9*Q2*
+     \[CapitalLambda]0^12 - 69972*mm^2*mN^3*mo^9*Q2*\[CapitalLambda]0^12 + 
+    9978*mN^5*mo^9*Q2*\[CapitalLambda]0^12 + 36540*mm^2*mN^2*mo^10*Q2*
+     \[CapitalLambda]0^12 - 3444*mN^4*mo^10*Q2*\[CapitalLambda]0^12 - 
+    3780*mm^2*mN*mo^11*Q2*\[CapitalLambda]0^12 + 12012*mN^3*mo^11*Q2*
+     \[CapitalLambda]0^12 - 6426*mN^2*mo^12*Q2*\[CapitalLambda]0^12 + 
+    630*mN*mo^13*Q2*\[CapitalLambda]0^12 - 630*mm^12*Q2^2*
+     \[CapitalLambda]0^12 + 9072*mm^10*mN^2*Q2^2*\[CapitalLambda]0^12 - 
+    32172*mm^8*mN^4*Q2^2*\[CapitalLambda]0^12 + 62344*mm^6*mN^6*Q2^2*
+     \[CapitalLambda]0^12 - 68718*mm^4*mN^8*Q2^2*\[CapitalLambda]0^12 + 
+    38408*mm^2*mN^10*Q2^2*\[CapitalLambda]0^12 - 
+    8304*mN^12*Q2^2*\[CapitalLambda]0^12 - 1512*mm^10*mN*mo*Q2^2*
+     \[CapitalLambda]0^12 + 18858*mm^8*mN^3*mo*Q2^2*\[CapitalLambda]0^12 - 
+    53072*mm^6*mN^5*mo*Q2^2*\[CapitalLambda]0^12 + 
+    63084*mm^4*mN^7*mo*Q2^2*\[CapitalLambda]0^12 - 
+    36008*mm^2*mN^9*mo*Q2^2*\[CapitalLambda]0^12 + 
+    8394*mN^11*mo*Q2^2*\[CapitalLambda]0^12 + 3780*mm^10*mo^2*Q2^2*
+     \[CapitalLambda]0^12 - 42336*mm^8*mN^2*mo^2*Q2^2*\[CapitalLambda]0^12 + 
+    92064*mm^6*mN^4*mo^2*Q2^2*\[CapitalLambda]0^12 - 
+    92280*mm^4*mN^6*mo^2*Q2^2*\[CapitalLambda]0^12 + 
+    37820*mm^2*mN^8*mo^2*Q2^2*\[CapitalLambda]0^12 - 
+    2328*mN^10*mo^2*Q2^2*\[CapitalLambda]0^12 + 7308*mm^8*mN*mo^3*Q2^2*
+     \[CapitalLambda]0^12 - 60450*mm^6*mN^3*mo^3*Q2^2*\[CapitalLambda]0^12 + 
+    88770*mm^4*mN^5*mo^3*Q2^2*\[CapitalLambda]0^12 - 
+    33966*mm^2*mN^7*mo^3*Q2^2*\[CapitalLambda]0^12 - 
+    462*mN^9*mo^3*Q2^2*\[CapitalLambda]0^12 - 9450*mm^8*mo^4*Q2^2*
+     \[CapitalLambda]0^12 + 77742*mm^6*mN^2*mo^4*Q2^2*\[CapitalLambda]0^12 - 
+    87798*mm^4*mN^4*mo^4*Q2^2*\[CapitalLambda]0^12 + 
+    31098*mm^2*mN^6*mo^4*Q2^2*\[CapitalLambda]0^12 - 
+    576*mN^8*mo^4*Q2^2*\[CapitalLambda]0^12 - 14112*mm^6*mN*mo^5*Q2^2*
+     \[CapitalLambda]0^12 + 70266*mm^4*mN^3*mo^5*Q2^2*\[CapitalLambda]0^12 - 
+    40476*mm^2*mN^5*mo^5*Q2^2*\[CapitalLambda]0^12 + 
+    1002*mN^7*mo^5*Q2^2*\[CapitalLambda]0^12 + 12600*mm^6*mo^6*Q2^2*
+     \[CapitalLambda]0^12 - 69930*mm^4*mN^2*mo^6*Q2^2*\[CapitalLambda]0^12 + 
+    29220*mm^2*mN^4*mo^6*Q2^2*\[CapitalLambda]0^12 - 
+    498*mN^6*mo^6*Q2^2*\[CapitalLambda]0^12 + 13608*mm^4*mN*mo^7*Q2^2*
+     \[CapitalLambda]0^12 - 34614*mm^2*mN^3*mo^7*Q2^2*\[CapitalLambda]0^12 + 
+    3450*mN^5*mo^7*Q2^2*\[CapitalLambda]0^12 - 9450*mm^4*mo^8*Q2^2*
+     \[CapitalLambda]0^12 + 30618*mm^2*mN^2*mo^8*Q2^2*\[CapitalLambda]0^12 - 
+    1314*mN^4*mo^8*Q2^2*\[CapitalLambda]0^12 - 6552*mm^2*mN*mo^9*Q2^2*
+     \[CapitalLambda]0^12 + 5940*mN^3*mo^9*Q2^2*\[CapitalLambda]0^12 + 
+    3780*mm^2*mo^10*Q2^2*\[CapitalLambda]0^12 - 5166*mN^2*mo^10*Q2^2*
+     \[CapitalLambda]0^12 + 1260*mN*mo^11*Q2^2*\[CapitalLambda]0^12 - 
+    630*mo^12*Q2^2*\[CapitalLambda]0^12 + 756*mm^10*Q2^3*
+     \[CapitalLambda]0^12 - 5292*mm^8*mN^2*Q2^3*\[CapitalLambda]0^12 + 
+    12161*mm^6*mN^4*Q2^3*\[CapitalLambda]0^12 - 14238*mm^4*mN^6*Q2^3*
+     \[CapitalLambda]0^12 + 8473*mm^2*mN^8*Q2^3*\[CapitalLambda]0^12 - 
+    1980*mN^10*Q2^3*\[CapitalLambda]0^12 + 1260*mm^8*mN*mo*Q2^3*
+     \[CapitalLambda]0^12 - 7579*mm^6*mN^3*mo*Q2^3*\[CapitalLambda]0^12 + 
+    13686*mm^4*mN^5*mo*Q2^3*\[CapitalLambda]0^12 - 
+    9931*mm^2*mN^7*mo*Q2^3*\[CapitalLambda]0^12 + 
+    2532*mN^9*mo*Q2^3*\[CapitalLambda]0^12 - 3528*mm^8*mo^2*Q2^3*
+     \[CapitalLambda]0^12 + 16758*mm^6*mN^2*mo^2*Q2^3*\[CapitalLambda]0^12 - 
+    19191*mm^4*mN^4*mo^2*Q2^3*\[CapitalLambda]0^12 + 
+    7354*mm^2*mN^6*mo^2*Q2^3*\[CapitalLambda]0^12 - 
+    105*mN^8*mo^2*Q2^3*\[CapitalLambda]0^12 - 4536*mm^6*mN*mo^3*Q2^3*
+     \[CapitalLambda]0^12 + 14805*mm^4*mN^3*mo^3*Q2^3*\[CapitalLambda]0^12 - 
+    9072*mm^2*mN^5*mo^3*Q2^3*\[CapitalLambda]0^12 + 
+    111*mN^7*mo^3*Q2^3*\[CapitalLambda]0^12 + 6552*mm^6*mo^4*Q2^3*
+     \[CapitalLambda]0^12 - 18999*mm^4*mN^2*mo^4*Q2^3*\[CapitalLambda]0^12 + 
+    7449*mm^2*mN^4*mo^4*Q2^3*\[CapitalLambda]0^12 - 
+    69*mN^6*mo^4*Q2^3*\[CapitalLambda]0^12 + 6057*mm^4*mN*mo^5*Q2^3*
+     \[CapitalLambda]0^12 - 8715*mm^2*mN^3*mo^5*Q2^3*\[CapitalLambda]0^12 + 
+    555*mN^5*mo^5*Q2^3*\[CapitalLambda]0^12 - 6048*mm^4*mo^6*Q2^3*
+     \[CapitalLambda]0^12 + 8928*mm^2*mN^2*mo^6*Q2^3*\[CapitalLambda]0^12 - 
+    171*mN^4*mo^6*Q2^3*\[CapitalLambda]0^12 - 3546*mm^2*mN*mo^7*Q2^3*
+     \[CapitalLambda]0^12 + 1413*mN^3*mo^7*Q2^3*\[CapitalLambda]0^12 + 
+    2772*mm^2*mo^8*Q2^3*\[CapitalLambda]0^12 - 1395*mN^2*mo^8*Q2^3*
+     \[CapitalLambda]0^12 + 765*mN*mo^9*Q2^3*\[CapitalLambda]0^12 - 
+    504*mo^10*Q2^3*\[CapitalLambda]0^12 - 252*mm^8*Q2^4*
+     \[CapitalLambda]0^12 + 1029*mm^6*mN^2*Q2^4*\[CapitalLambda]0^12 - 
+    1479*mm^4*mN^4*Q2^4*\[CapitalLambda]0^12 + 956*mm^2*mN^6*Q2^4*
+     \[CapitalLambda]0^12 - 239*mN^8*Q2^4*\[CapitalLambda]0^12 - 
+    399*mm^6*mN*mo*Q2^4*\[CapitalLambda]0^12 + 1224*mm^4*mN^3*mo*Q2^4*
+     \[CapitalLambda]0^12 - 1214*mm^2*mN^5*mo*Q2^4*\[CapitalLambda]0^12 + 
+    352*mN^7*mo*Q2^4*\[CapitalLambda]0^12 + 882*mm^6*mo^2*Q2^4*
+     \[CapitalLambda]0^12 - 1896*mm^4*mN^2*mo^2*Q2^4*\[CapitalLambda]0^12 + 
+    823*mm^2*mN^4*mo^2*Q2^4*\[CapitalLambda]0^12 + 
+    16*mN^6*mo^2*Q2^4*\[CapitalLambda]0^12 + 972*mm^4*mN*mo^3*Q2^4*
+     \[CapitalLambda]0^12 - 1063*mm^2*mN^3*mo^3*Q2^4*\[CapitalLambda]0^12 + 
+    22*mN^5*mo^3*Q2^4*\[CapitalLambda]0^12 - 1143*mm^4*mo^4*Q2^4*
+     \[CapitalLambda]0^12 + 1011*mm^2*mN^2*mo^4*Q2^4*\[CapitalLambda]0^12 - 
+    8*mN^4*mo^4*Q2^4*\[CapitalLambda]0^12 - 765*mm^2*mN*mo^5*Q2^4*
+     \[CapitalLambda]0^12 + 142*mN^3*mo^5*Q2^4*\[CapitalLambda]0^12 + 
+    648*mm^2*mo^6*Q2^4*\[CapitalLambda]0^12 - 126*mN^2*mo^6*Q2^4*
+     \[CapitalLambda]0^12 + 192*mN*mo^7*Q2^4*\[CapitalLambda]0^12 - 
+    135*mo^8*Q2^4*\[CapitalLambda]0^12 + 21*mm^6*Q2^5*\[CapitalLambda]0^12 - 
+    54*mm^4*mN^2*Q2^5*\[CapitalLambda]0^12 + 45*mm^2*mN^4*Q2^5*
+     \[CapitalLambda]0^12 - 12*mN^6*Q2^5*\[CapitalLambda]0^12 + 
+    36*mm^4*mN*mo*Q2^5*\[CapitalLambda]0^12 - 54*mm^2*mN^3*mo*Q2^5*
+     \[CapitalLambda]0^12 + 18*mN^5*mo*Q2^5*\[CapitalLambda]0^12 - 
+    54*mm^4*mo^2*Q2^5*\[CapitalLambda]0^12 + 36*mm^2*mN^2*mo^2*Q2^5*
+     \[CapitalLambda]0^12 - 54*mm^2*mN*mo^3*Q2^5*\[CapitalLambda]0^12 + 
+    45*mm^2*mo^4*Q2^5*\[CapitalLambda]0^12 + 18*mN*mo^5*Q2^5*
+     \[CapitalLambda]0^12 - 12*mo^6*Q2^5*\[CapitalLambda]0^12 + 
+    9792*mm^8*mN^6*\[CapitalLambda]0^14 - 39168*mm^6*mN^8*
+     \[CapitalLambda]0^14 + 58752*mm^4*mN^10*\[CapitalLambda]0^14 - 
+    39168*mm^2*mN^12*\[CapitalLambda]0^14 + 9792*mN^14*\[CapitalLambda]0^14 + 
+    5760*mm^10*mN^3*mo*\[CapitalLambda]0^14 - 24768*mm^8*mN^5*mo*
+     \[CapitalLambda]0^14 + 43392*mm^6*mN^7*mo*\[CapitalLambda]0^14 - 
+    39168*mm^4*mN^9*mo*\[CapitalLambda]0^14 + 18432*mm^2*mN^11*mo*
+     \[CapitalLambda]0^14 - 3648*mN^13*mo*\[CapitalLambda]0^14 + 
+    2304*mm^8*mN^4*mo^2*\[CapitalLambda]0^14 - 37632*mm^6*mN^6*mo^2*
+     \[CapitalLambda]0^14 + 80640*mm^4*mN^8*mo^2*\[CapitalLambda]0^14 - 
+    57600*mm^2*mN^10*mo^2*\[CapitalLambda]0^14 + 
+    12288*mN^12*mo^2*\[CapitalLambda]0^14 - 28800*mm^8*mN^3*mo^3*
+     \[CapitalLambda]0^14 + 82560*mm^6*mN^5*mo^3*\[CapitalLambda]0^14 - 
+    77088*mm^4*mN^7*mo^3*\[CapitalLambda]0^14 + 24384*mm^2*mN^9*mo^3*
+     \[CapitalLambda]0^14 - 1056*mN^11*mo^3*\[CapitalLambda]0^14 - 
+    9216*mm^6*mN^4*mo^4*\[CapitalLambda]0^14 + 51744*mm^4*mN^6*mo^4*
+     \[CapitalLambda]0^14 - 46080*mm^2*mN^8*mo^4*\[CapitalLambda]0^14 + 
+    7008*mN^10*mo^4*\[CapitalLambda]0^14 + 57600*mm^6*mN^3*mo^5*
+     \[CapitalLambda]0^14 - 99072*mm^4*mN^5*mo^5*\[CapitalLambda]0^14 + 
+    35712*mm^2*mN^7*mo^5*\[CapitalLambda]0^14 - 
+    768*mN^9*mo^5*\[CapitalLambda]0^14 + 13824*mm^4*mN^4*mo^6*
+     \[CapitalLambda]0^14 - 29760*mm^2*mN^6*mo^6*\[CapitalLambda]0^14 + 
+    5760*mN^8*mo^6*\[CapitalLambda]0^14 - 57600*mm^4*mN^3*mo^7*
+     \[CapitalLambda]0^14 + 49536*mm^2*mN^5*mo^7*\[CapitalLambda]0^14 - 
+    2016*mN^7*mo^7*\[CapitalLambda]0^14 - 9216*mm^2*mN^4*mo^8*
+     \[CapitalLambda]0^14 + 5856*mN^6*mo^8*\[CapitalLambda]0^14 + 
+    28800*mm^2*mN^3*mo^9*\[CapitalLambda]0^14 - 
+    8256*mN^5*mo^9*\[CapitalLambda]0^14 + 2304*mN^4*mo^10*
+     \[CapitalLambda]0^14 - 5760*mN^3*mo^11*\[CapitalLambda]0^14 - 
+    2520*mm^10*mN^2*Q2*\[CapitalLambda]0^14 + 11376*mm^8*mN^4*Q2*
+     \[CapitalLambda]0^14 - 32880*mm^6*mN^6*Q2*\[CapitalLambda]0^14 + 
+    51936*mm^4*mN^8*Q2*\[CapitalLambda]0^14 - 38136*mm^2*mN^10*Q2*
+     \[CapitalLambda]0^14 + 10224*mN^12*Q2*\[CapitalLambda]0^14 + 
+    360*mm^10*mN*mo*Q2*\[CapitalLambda]0^14 - 11016*mm^8*mN^3*mo*Q2*
+     \[CapitalLambda]0^14 + 34704*mm^6*mN^5*mo*Q2*\[CapitalLambda]0^14 - 
+    44160*mm^4*mN^7*mo*Q2*\[CapitalLambda]0^14 + 27816*mm^2*mN^9*mo*Q2*
+     \[CapitalLambda]0^14 - 7704*mN^11*mo*Q2*\[CapitalLambda]0^14 + 
+    13824*mm^8*mN^2*mo^2*Q2*\[CapitalLambda]0^14 - 
+    40512*mm^6*mN^4*mo^2*Q2*\[CapitalLambda]0^14 + 
+    65856*mm^4*mN^6*mo^2*Q2*\[CapitalLambda]0^14 - 
+    47616*mm^2*mN^8*mo^2*Q2*\[CapitalLambda]0^14 + 
+    9920*mN^10*mo^2*Q2*\[CapitalLambda]0^14 - 1800*mm^8*mN*mo^3*Q2*
+     \[CapitalLambda]0^14 + 40224*mm^6*mN^3*mo^3*Q2*\[CapitalLambda]0^14 - 
+    72768*mm^4*mN^5*mo^3*Q2*\[CapitalLambda]0^14 + 
+    36192*mm^2*mN^7*mo^3*Q2*\[CapitalLambda]0^14 - 
+    3256*mN^9*mo^3*Q2*\[CapitalLambda]0^14 - 30096*mm^6*mN^2*mo^4*Q2*
+     \[CapitalLambda]0^14 + 51456*mm^4*mN^4*mo^4*Q2*\[CapitalLambda]0^14 - 
+    36816*mm^2*mN^6*mo^4*Q2*\[CapitalLambda]0^14 + 
+    5472*mN^8*mo^4*Q2*\[CapitalLambda]0^14 + 3600*mm^6*mN*mo^5*Q2*
+     \[CapitalLambda]0^14 - 54576*mm^4*mN^3*mo^5*Q2*\[CapitalLambda]0^14 + 
+    46320*mm^2*mN^5*mo^5*Q2*\[CapitalLambda]0^14 - 
+    3840*mN^7*mo^5*Q2*\[CapitalLambda]0^14 + 32544*mm^4*mN^2*mo^6*Q2*
+     \[CapitalLambda]0^14 - 26880*mm^2*mN^4*mo^6*Q2*\[CapitalLambda]0^14 + 
+    4608*mN^6*mo^6*Q2*\[CapitalLambda]0^14 - 3600*mm^4*mN*mo^7*Q2*
+     \[CapitalLambda]0^14 + 32544*mm^2*mN^3*mo^7*Q2*\[CapitalLambda]0^14 - 
+    8256*mN^5*mo^7*Q2*\[CapitalLambda]0^14 - 17496*mm^2*mN^2*mo^8*Q2*
+     \[CapitalLambda]0^14 + 4560*mN^4*mo^8*Q2*\[CapitalLambda]0^14 + 
+    1800*mm^2*mN*mo^9*Q2*\[CapitalLambda]0^14 - 7176*mN^3*mo^9*Q2*
+     \[CapitalLambda]0^14 + 3744*mN^2*mo^10*Q2*\[CapitalLambda]0^14 - 
+    360*mN*mo^11*Q2*\[CapitalLambda]0^14 - 360*mm^10*Q2^2*
+     \[CapitalLambda]0^14 + 4068*mm^8*mN^2*Q2^2*\[CapitalLambda]0^14 - 
+    11352*mm^6*mN^4*Q2^2*\[CapitalLambda]0^14 + 17664*mm^4*mN^6*Q2^2*
+     \[CapitalLambda]0^14 - 14112*mm^2*mN^8*Q2^2*\[CapitalLambda]0^14 + 
+    4220*mN^10*Q2^2*\[CapitalLambda]0^14 - 828*mm^8*mN*mo*Q2^2*
+     \[CapitalLambda]0^14 + 8088*mm^6*mN^3*mo*Q2^2*\[CapitalLambda]0^14 - 
+    17016*mm^4*mN^5*mo*Q2^2*\[CapitalLambda]0^14 + 
+    14376*mm^2*mN^7*mo*Q2^2*\[CapitalLambda]0^14 - 
+    4700*mN^9*mo*Q2^2*\[CapitalLambda]0^14 + 1800*mm^8*mo^2*Q2^2*
+     \[CapitalLambda]0^14 - 15336*mm^6*mN^2*mo^2*Q2^2*\[CapitalLambda]0^14 + 
+    23376*mm^4*mN^4*mo^2*Q2^2*\[CapitalLambda]0^14 - 
+    15048*mm^2*mN^6*mo^2*Q2^2*\[CapitalLambda]0^14 + 
+    2744*mN^8*mo^2*Q2^2*\[CapitalLambda]0^14 + 3240*mm^6*mN*mo^3*Q2^2*
+     \[CapitalLambda]0^14 - 19458*mm^4*mN^3*mo^3*Q2^2*\[CapitalLambda]0^14 + 
+    17508*mm^2*mN^5*mo^3*Q2^2*\[CapitalLambda]0^14 - 
+    2538*mN^7*mo^3*Q2^2*\[CapitalLambda]0^14 - 3600*mm^6*mo^4*Q2^2*
+     \[CapitalLambda]0^14 + 21330*mm^4*mN^2*mo^4*Q2^2*\[CapitalLambda]0^14 - 
+    13848*mm^2*mN^4*mo^4*Q2^2*\[CapitalLambda]0^14 + 
+    1470*mN^6*mo^4*Q2^2*\[CapitalLambda]0^14 - 4752*mm^4*mN*mo^5*Q2^2*
+     \[CapitalLambda]0^14 + 15144*mm^2*mN^3*mo^5*Q2^2*\[CapitalLambda]0^14 - 
+    3432*mN^5*mo^5*Q2^2*\[CapitalLambda]0^14 + 3600*mm^4*mo^6*Q2^2*
+     \[CapitalLambda]0^14 - 12924*mm^2*mN^2*mo^6*Q2^2*\[CapitalLambda]0^14 + 
+    1944*mN^4*mo^6*Q2^2*\[CapitalLambda]0^14 + 3096*mm^2*mN*mo^7*Q2^2*
+     \[CapitalLambda]0^14 - 3774*mN^3*mo^7*Q2^2*\[CapitalLambda]0^14 - 
+    1800*mm^2*mo^8*Q2^2*\[CapitalLambda]0^14 + 2862*mN^2*mo^8*Q2^2*
+     \[CapitalLambda]0^14 - 756*mN*mo^9*Q2^2*\[CapitalLambda]0^14 + 
+    360*mo^10*Q2^2*\[CapitalLambda]0^14 + 324*mm^8*Q2^3*
+     \[CapitalLambda]0^14 - 1728*mm^6*mN^2*Q2^3*\[CapitalLambda]0^14 + 
+    2961*mm^4*mN^4*Q2^3*\[CapitalLambda]0^14 - 2502*mm^2*mN^6*Q2^3*
+     \[CapitalLambda]0^14 + 841*mN^8*Q2^3*\[CapitalLambda]0^14 + 
+    576*mm^6*mN*mo*Q2^3*\[CapitalLambda]0^14 - 2523*mm^4*mN^3*mo*Q2^3*
+     \[CapitalLambda]0^14 + 3126*mm^2*mN^5*mo*Q2^3*\[CapitalLambda]0^14 - 
+    1243*mN^7*mo*Q2^3*\[CapitalLambda]0^14 - 1224*mm^6*mo^2*Q2^3*
+     \[CapitalLambda]0^14 + 4050*mm^4*mN^2*mo^2*Q2^3*\[CapitalLambda]0^14 - 
+    2562*mm^2*mN^4*mo^2*Q2^3*\[CapitalLambda]0^14 + 
+    292*mN^6*mo^2*Q2^3*\[CapitalLambda]0^14 - 1584*mm^4*mN*mo^3*Q2^3*
+     \[CapitalLambda]0^14 + 3222*mm^2*mN^3*mo^3*Q2^3*\[CapitalLambda]0^14 - 
+    786*mN^5*mo^3*Q2^3*\[CapitalLambda]0^14 + 1728*mm^4*mo^4*Q2^3*
+     \[CapitalLambda]0^14 - 3024*mm^2*mN^2*mo^4*Q2^3*\[CapitalLambda]0^14 + 
+    273*mN^4*mo^4*Q2^3*\[CapitalLambda]0^14 + 1440*mm^2*mN*mo^5*Q2^3*
+     \[CapitalLambda]0^14 - 939*mN^3*mo^5*Q2^3*\[CapitalLambda]0^14 - 
+    1080*mm^2*mo^6*Q2^3*\[CapitalLambda]0^14 + 702*mN^2*mo^6*Q2^3*
+     \[CapitalLambda]0^14 - 432*mN*mo^7*Q2^3*\[CapitalLambda]0^14 + 
+    252*mo^8*Q2^3*\[CapitalLambda]0^14 - 72*mm^6*Q2^4*\[CapitalLambda]0^14 + 
+    219*mm^4*mN^2*Q2^4*\[CapitalLambda]0^14 - 216*mm^2*mN^4*Q2^4*
+     \[CapitalLambda]0^14 + 80*mN^6*Q2^4*\[CapitalLambda]0^14 - 
+    129*mm^4*mN*mo*Q2^4*\[CapitalLambda]0^14 + 264*mm^2*mN^3*mo*Q2^4*
+     \[CapitalLambda]0^14 - 146*mN^5*mo*Q2^4*\[CapitalLambda]0^14 + 
+    198*mm^4*mo^2*Q2^4*\[CapitalLambda]0^14 - 234*mm^2*mN^2*mo^2*Q2^4*
+     \[CapitalLambda]0^14 + 13*mN^4*mo^2*Q2^4*\[CapitalLambda]0^14 + 
+    222*mm^2*mN*mo^3*Q2^4*\[CapitalLambda]0^14 - 
+    103*mN^3*mo^3*Q2^4*\[CapitalLambda]0^14 - 180*mm^2*mo^4*Q2^4*
+     \[CapitalLambda]0^14 + 51*mN^2*mo^4*Q2^4*\[CapitalLambda]0^14 - 
+    93*mN*mo^5*Q2^4*\[CapitalLambda]0^14 + 
+    54*mo^6*Q2^4*\[CapitalLambda]0^14 + 3*mm^4*Q2^5*\[CapitalLambda]0^14 - 
+    6*mm^2*mN^2*Q2^5*\[CapitalLambda]0^14 + 
+    3*mN^4*Q2^5*\[CapitalLambda]0^14 + 6*mm^2*mN*mo*Q2^5*
+     \[CapitalLambda]0^14 - 6*mN^3*mo*Q2^5*\[CapitalLambda]0^14 - 
+    6*mm^2*mo^2*Q2^5*\[CapitalLambda]0^14 - 6*mN*mo^3*Q2^5*
+     \[CapitalLambda]0^14 + 3*mo^4*Q2^5*\[CapitalLambda]0^14 + 
+    3888*mm^6*mN^6*\[CapitalLambda]0^16 - 11664*mm^4*mN^8*
+     \[CapitalLambda]0^16 + 11664*mm^2*mN^10*\[CapitalLambda]0^16 - 
+    3888*mN^12*\[CapitalLambda]0^16 + 2160*mm^8*mN^3*mo*
+     \[CapitalLambda]0^16 - 6912*mm^6*mN^5*mo*\[CapitalLambda]0^16 + 
+    9600*mm^4*mN^7*mo*\[CapitalLambda]0^16 - 7104*mm^2*mN^9*mo*
+     \[CapitalLambda]0^16 + 2256*mN^11*mo*\[CapitalLambda]0^16 + 
+    1296*mm^6*mN^4*mo^2*\[CapitalLambda]0^16 - 10752*mm^4*mN^6*mo^2*
+     \[CapitalLambda]0^16 + 14352*mm^2*mN^8*mo^2*\[CapitalLambda]0^16 - 
+    4896*mN^10*mo^2*\[CapitalLambda]0^16 - 8640*mm^6*mN^3*mo^3*
+     \[CapitalLambda]0^16 + 16800*mm^4*mN^5*mo^3*\[CapitalLambda]0^16 - 
+    8928*mm^2*mN^7*mo^3*\[CapitalLambda]0^16 + 
+    960*mN^9*mo^3*\[CapitalLambda]0^16 - 3888*mm^4*mN^4*mo^4*
+     \[CapitalLambda]0^16 + 9744*mm^2*mN^6*mo^4*\[CapitalLambda]0^16 - 
+    3360*mN^8*mo^4*\[CapitalLambda]0^16 + 12960*mm^4*mN^3*mo^5*
+     \[CapitalLambda]0^16 - 12864*mm^2*mN^5*mo^5*\[CapitalLambda]0^16 + 
+    672*mN^7*mo^5*\[CapitalLambda]0^16 + 3888*mm^2*mN^4*mo^6*
+     \[CapitalLambda]0^16 - 2880*mN^6*mo^6*\[CapitalLambda]0^16 - 
+    8640*mm^2*mN^3*mo^7*\[CapitalLambda]0^16 + 
+    2976*mN^5*mo^7*\[CapitalLambda]0^16 - 1296*mN^4*mo^8*
+     \[CapitalLambda]0^16 + 2160*mN^3*mo^9*\[CapitalLambda]0^16 - 
+    945*mm^8*mN^2*Q2*\[CapitalLambda]0^16 + 3294*mm^6*mN^4*Q2*
+     \[CapitalLambda]0^16 - 8196*mm^4*mN^6*Q2*\[CapitalLambda]0^16 + 
+    9474*mm^2*mN^8*Q2*\[CapitalLambda]0^16 - 
+    3627*mN^10*Q2*\[CapitalLambda]0^16 + 135*mm^8*mN*mo*Q2*
+     \[CapitalLambda]0^16 - 3564*mm^6*mN^3*mo*Q2*\[CapitalLambda]0^16 + 
+    8118*mm^4*mN^5*mo*Q2*\[CapitalLambda]0^16 - 7380*mm^2*mN^7*mo*Q2*
+     \[CapitalLambda]0^16 + 2883*mN^9*mo*Q2*\[CapitalLambda]0^16 + 
+    4266*mm^6*mN^2*mo^2*Q2*\[CapitalLambda]0^16 - 8628*mm^4*mN^4*mo^2*Q2*
+     \[CapitalLambda]0^16 + 9474*mm^2*mN^6*mo^2*Q2*\[CapitalLambda]0^16 - 
+    3336*mN^8*mo^2*Q2*\[CapitalLambda]0^16 - 540*mm^6*mN*mo^3*Q2*
+     \[CapitalLambda]0^16 + 9744*mm^4*mN^3*mo^3*Q2*\[CapitalLambda]0^16 - 
+    10356*mm^2*mN^5*mo^3*Q2*\[CapitalLambda]0^16 + 
+    1824*mN^7*mo^3*Q2*\[CapitalLambda]0^16 - 7128*mm^4*mN^2*mo^4*Q2*
+     \[CapitalLambda]0^16 + 7206*mm^2*mN^4*mo^4*Q2*\[CapitalLambda]0^16 - 
+    1926*mN^6*mo^4*Q2*\[CapitalLambda]0^16 + 810*mm^4*mN*mo^5*Q2*
+     \[CapitalLambda]0^16 - 8796*mm^2*mN^3*mo^5*Q2*\[CapitalLambda]0^16 + 
+    2814*mN^5*mo^5*Q2*\[CapitalLambda]0^16 + 5238*mm^2*mN^2*mo^6*Q2*
+     \[CapitalLambda]0^16 - 1872*mN^4*mo^6*Q2*\[CapitalLambda]0^16 - 
+    540*mm^2*mN*mo^7*Q2*\[CapitalLambda]0^16 + 2616*mN^3*mo^7*Q2*
+     \[CapitalLambda]0^16 - 1431*mN^2*mo^8*Q2*\[CapitalLambda]0^16 + 
+    135*mN*mo^9*Q2*\[CapitalLambda]0^16 - 135*mm^8*Q2^2*
+     \[CapitalLambda]0^16 + 1107*mm^6*mN^2*Q2^2*\[CapitalLambda]0^16 - 
+    2274*mm^4*mN^4*Q2^2*\[CapitalLambda]0^16 + 2673*mm^2*mN^6*Q2^2*
+     \[CapitalLambda]0^16 - 1203*mN^8*Q2^2*\[CapitalLambda]0^16 - 
+    297*mm^6*mN*mo*Q2^2*\[CapitalLambda]0^16 + 2046*mm^4*mN^3*mo*Q2^2*
+     \[CapitalLambda]0^16 - 2829*mm^2*mN^5*mo*Q2^2*\[CapitalLambda]0^16 + 
+    1356*mN^7*mo*Q2^2*\[CapitalLambda]0^16 + 540*mm^6*mo^2*Q2^2*
+     \[CapitalLambda]0^16 - 3132*mm^4*mN^2*mo^2*Q2^2*\[CapitalLambda]0^16 + 
+    2574*mm^2*mN^4*mo^2*Q2^2*\[CapitalLambda]0^16 - 
+    612*mN^6*mo^2*Q2^2*\[CapitalLambda]0^16 + 882*mm^4*mN*mo^3*Q2^2*
+     \[CapitalLambda]0^16 - 3228*mm^2*mN^3*mo^3*Q2^2*\[CapitalLambda]0^16 + 
+    1134*mN^5*mo^3*Q2^2*\[CapitalLambda]0^16 - 810*mm^4*mo^4*Q2^2*
+     \[CapitalLambda]0^16 + 2907*mm^2*mN^2*mo^4*Q2^2*\[CapitalLambda]0^16 - 
+    492*mN^4*mo^4*Q2^2*\[CapitalLambda]0^16 - 873*mm^2*mN*mo^5*Q2^2*
+     \[CapitalLambda]0^16 + 1242*mN^3*mo^5*Q2^2*\[CapitalLambda]0^16 + 
+    540*mm^2*mo^6*Q2^2*\[CapitalLambda]0^16 - 882*mN^2*mo^6*Q2^2*
+     \[CapitalLambda]0^16 + 288*mN*mo^7*Q2^2*\[CapitalLambda]0^16 - 
+    135*mo^8*Q2^2*\[CapitalLambda]0^16 + 81*mm^6*Q2^3*\[CapitalLambda]0^16 - 
+    297*mm^4*mN^2*Q2^3*\[CapitalLambda]0^16 + 336*mm^2*mN^4*Q2^3*
+     \[CapitalLambda]0^16 - 168*mN^6*Q2^3*\[CapitalLambda]0^16 + 
+    153*mm^4*mN*mo*Q2^3*\[CapitalLambda]0^16 - 411*mm^2*mN^3*mo*Q2^3*
+     \[CapitalLambda]0^16 + 270*mN^5*mo*Q2^3*\[CapitalLambda]0^16 - 
+    234*mm^4*mo^2*Q2^3*\[CapitalLambda]0^16 + 414*mm^2*mN^2*mo^2*Q2^3*
+     \[CapitalLambda]0^16 - 21*mN^4*mo^2*Q2^3*\[CapitalLambda]0^16 - 
+    288*mm^2*mN*mo^3*Q2^3*\[CapitalLambda]0^16 + 
+    243*mN^3*mo^3*Q2^3*\[CapitalLambda]0^16 + 225*mm^2*mo^4*Q2^3*
+     \[CapitalLambda]0^16 - 135*mN^2*mo^4*Q2^3*\[CapitalLambda]0^16 + 
+    135*mN*mo^5*Q2^3*\[CapitalLambda]0^16 - 
+    72*mo^6*Q2^3*\[CapitalLambda]0^16 - 9*mm^4*Q2^4*\[CapitalLambda]0^16 + 
+    18*mm^2*mN^2*Q2^4*\[CapitalLambda]0^16 - 
+    9*mN^4*Q2^4*\[CapitalLambda]0^16 - 18*mm^2*mN*mo*Q2^4*
+     \[CapitalLambda]0^16 + 18*mN^3*mo*Q2^4*\[CapitalLambda]0^16 + 
+    18*mm^2*mo^2*Q2^4*\[CapitalLambda]0^16 + 18*mN*mo^3*Q2^4*
+     \[CapitalLambda]0^16 - 9*mo^4*Q2^4*\[CapitalLambda]0^16 + 
+    912*mm^4*mN^6*\[CapitalLambda]0^18 - 1824*mm^2*mN^8*
+     \[CapitalLambda]0^18 + 912*mN^10*\[CapitalLambda]0^18 + 
+    480*mm^6*mN^3*mo*\[CapitalLambda]0^18 - 1008*mm^4*mN^5*mo*
+     \[CapitalLambda]0^18 + 1248*mm^2*mN^7*mo*\[CapitalLambda]0^18 - 
+    720*mN^9*mo*\[CapitalLambda]0^18 + 384*mm^4*mN^4*mo^2*
+     \[CapitalLambda]0^18 - 1344*mm^2*mN^6*mo^2*\[CapitalLambda]0^18 + 
+    768*mN^8*mo^2*\[CapitalLambda]0^18 - 1440*mm^4*mN^3*mo^3*
+     \[CapitalLambda]0^18 + 1440*mm^2*mN^5*mo^3*\[CapitalLambda]0^18 - 
+    192*mN^7*mo^3*\[CapitalLambda]0^18 - 768*mm^2*mN^4*mo^4*
+     \[CapitalLambda]0^18 + 528*mN^6*mo^4*\[CapitalLambda]0^18 + 
+    1440*mm^2*mN^3*mo^5*\[CapitalLambda]0^18 - 
+    432*mN^5*mo^5*\[CapitalLambda]0^18 + 384*mN^4*mo^6*\[CapitalLambda]0^18 - 
+    480*mN^3*mo^7*\[CapitalLambda]0^18 - 210*mm^6*mN^2*Q2*
+     \[CapitalLambda]0^18 + 516*mm^4*mN^4*Q2*\[CapitalLambda]0^18 - 
+    1098*mm^2*mN^6*Q2*\[CapitalLambda]0^18 + 
+    712*mN^8*Q2*\[CapitalLambda]0^18 + 30*mm^6*mN*mo*Q2*
+     \[CapitalLambda]0^18 - 666*mm^4*mN^3*mo*Q2*\[CapitalLambda]0^18 + 
+    930*mm^2*mN^5*mo*Q2*\[CapitalLambda]0^18 - 
+    518*mN^7*mo*Q2*\[CapitalLambda]0^18 + 744*mm^4*mN^2*mo^2*Q2*
+     \[CapitalLambda]0^18 - 732*mm^2*mN^4*mo^2*Q2*\[CapitalLambda]0^18 + 
+    324*mN^6*mo^2*Q2*\[CapitalLambda]0^18 - 90*mm^4*mN*mo^3*Q2*
+     \[CapitalLambda]0^18 + 1188*mm^2*mN^3*mo^3*Q2*\[CapitalLambda]0^18 - 
+    402*mN^5*mo^3*Q2*\[CapitalLambda]0^18 - 858*mm^2*mN^2*mo^4*Q2*
+     \[CapitalLambda]0^18 + 240*mN^4*mo^4*Q2*\[CapitalLambda]0^18 + 
+    90*mm^2*mN*mo^5*Q2*\[CapitalLambda]0^18 - 522*mN^3*mo^5*Q2*
+     \[CapitalLambda]0^18 + 324*mN^2*mo^6*Q2*\[CapitalLambda]0^18 - 
+    30*mN*mo^7*Q2*\[CapitalLambda]0^18 - 30*mm^6*Q2^2*\[CapitalLambda]0^18 + 
+    153*mm^4*mN^2*Q2^2*\[CapitalLambda]0^18 - 210*mm^2*mN^4*Q2^2*
+     \[CapitalLambda]0^18 + 161*mN^6*Q2^2*\[CapitalLambda]0^18 - 
+    63*mm^4*mN*mo*Q2^2*\[CapitalLambda]0^18 + 240*mm^2*mN^3*mo*Q2^2*
+     \[CapitalLambda]0^18 - 157*mN^5*mo*Q2^2*\[CapitalLambda]0^18 + 
+    90*mm^4*mo^2*Q2^2*\[CapitalLambda]0^18 - 270*mm^2*mN^2*mo^2*Q2^2*
+     \[CapitalLambda]0^18 + 6*mN^4*mo^2*Q2^2*\[CapitalLambda]0^18 + 
+    126*mm^2*mN*mo^3*Q2^2*\[CapitalLambda]0^18 - 
+    174*mN^3*mo^3*Q2^2*\[CapitalLambda]0^18 - 90*mm^2*mo^4*Q2^2*
+     \[CapitalLambda]0^18 + 117*mN^2*mo^4*Q2^2*\[CapitalLambda]0^18 - 
+    63*mN*mo^5*Q2^2*\[CapitalLambda]0^18 + 
+    30*mo^6*Q2^2*\[CapitalLambda]0^18 + 9*mm^4*Q2^3*\[CapitalLambda]0^18 - 
+    18*mm^2*mN^2*Q2^3*\[CapitalLambda]0^18 + 
+    10*mN^4*Q2^3*\[CapitalLambda]0^18 + 18*mm^2*mN*mo*Q2^3*
+     \[CapitalLambda]0^18 - 17*mN^3*mo*Q2^3*\[CapitalLambda]0^18 - 
+    18*mm^2*mo^2*Q2^3*\[CapitalLambda]0^18 - 18*mN*mo^3*Q2^3*
+     \[CapitalLambda]0^18 + 9*mo^4*Q2^3*\[CapitalLambda]0^18 + 
+    96*mm^2*mN^6*\[CapitalLambda]0^20 - 96*mN^8*\[CapitalLambda]0^20 + 
+    48*mm^4*mN^3*mo*\[CapitalLambda]0^20 - 48*mm^2*mN^5*mo*
+     \[CapitalLambda]0^20 + 96*mN^7*mo*\[CapitalLambda]0^20 + 
+    48*mm^2*mN^4*mo^2*\[CapitalLambda]0^20 - 96*mm^2*mN^3*mo^3*
+     \[CapitalLambda]0^20 - 48*mN^4*mo^4*\[CapitalLambda]0^20 + 
+    48*mN^3*mo^5*\[CapitalLambda]0^20 - 21*mm^4*mN^2*Q2*
+     \[CapitalLambda]0^20 + 30*mm^2*mN^4*Q2*\[CapitalLambda]0^20 - 
+    57*mN^6*Q2*\[CapitalLambda]0^20 + 3*mm^4*mN*mo*Q2*\[CapitalLambda]0^20 - 
+    54*mm^2*mN^3*mo*Q2*\[CapitalLambda]0^20 + 
+    27*mN^5*mo*Q2*\[CapitalLambda]0^20 + 54*mm^2*mN^2*mo^2*Q2*
+     \[CapitalLambda]0^20 + 18*mN^4*mo^2*Q2*\[CapitalLambda]0^20 - 
+    6*mm^2*mN*mo^3*Q2*\[CapitalLambda]0^20 + 42*mN^3*mo^3*Q2*
+     \[CapitalLambda]0^20 - 33*mN^2*mo^4*Q2*\[CapitalLambda]0^20 + 
+    3*mN*mo^5*Q2*\[CapitalLambda]0^20 - 3*mm^4*Q2^2*\[CapitalLambda]0^20 + 
+    6*mm^2*mN^2*Q2^2*\[CapitalLambda]0^20 - 
+    6*mN^4*Q2^2*\[CapitalLambda]0^20 - 6*mm^2*mN*mo*Q2^2*
+     \[CapitalLambda]0^20 + 3*mN^3*mo*Q2^2*\[CapitalLambda]0^20 + 
+    6*mm^2*mo^2*Q2^2*\[CapitalLambda]0^20 + 6*mN*mo^3*Q2^2*
+     \[CapitalLambda]0^20 - 3*mo^4*Q2^2*\[CapitalLambda]0^20)*
    DiscB[mN^2, mo, Sqrt[mm^2 + \[CapitalLambda]0^2]])/
-  (3*mN*(4*mN^2 + Q2)^2*(Q2 + \[CapitalLambda]0^2)^2*
-   (mm^4 + mN^4 + mo^4 - 2*mo^2*\[CapitalLambda]0^2 - 
-     Q2*\[CapitalLambda]0^2 + \[CapitalLambda]0^4 - 
-     mm^2*(2*mN^2 + 2*mo^2 + Q2 - 2*\[CapitalLambda]0^2) - 
-     2*mN^2*(mo^2 + \[CapitalLambda]0^2))^3*
+  (3*mN*(4*mN^2*Q2 + Q2^2 + 4*mN^2*\[CapitalLambda]0^2 + 
+     Q2*\[CapitalLambda]0^2)^2*(mm^4 - 2*mm^2*mN^2 + mN^4 - 2*mm^2*mo^2 - 
+     2*mN^2*mo^2 + mo^4 - mm^2*Q2 + 2*mm^2*\[CapitalLambda]0^2 - 
+     2*mN^2*\[CapitalLambda]0^2 - 2*mo^2*\[CapitalLambda]0^2 - 
+     Q2*\[CapitalLambda]0^2 + \[CapitalLambda]0^4)^3*
    Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2]^3) - 
  (\[CapitalLambda]0^6*(mm^2 - mN^2 + 2*mN*mo - mo^2 + \[CapitalLambda]0^2)*
-   (6*mm^16*(2*mN^3 + 2*mN*mo^2 - mo*Q2) - 
-    3*mm^14*(28*mN^5 + 8*mN^4*mo + 2*mN^2*(4*mo^3 - 7*mo*Q2) - 
-      2*mo*Q2*(7*mo^2 + 2*Q2 - 7*\[CapitalLambda]0^2) + 
-      8*mN^3*(7*mo^2 + Q2 - 4*\[CapitalLambda]0^2) + 
-      mN*(28*mo^4 - Q2*\[CapitalLambda]0^2 + 
-        4*mo^2*(Q2 - 7*\[CapitalLambda]0^2))) + 
-    2*mm^12*(126*mN^7 + 72*mN^6*mo + 6*mN^5*(51*mo^2 + 10*Q2 - 
-        49*\[CapitalLambda]0^2) + 3*mN^4*mo*(48*mo^2 - 13*Q2 - 
-        24*\[CapitalLambda]0^2) + 2*mN^3*(153*mo^4 + 3*Q2^2 - 
-        48*Q2*\[CapitalLambda]0^2 + 83*\[CapitalLambda]0^4 + 
-        6*mo^2*(7*Q2 - 44*\[CapitalLambda]0^2)) - 
-      3*mo*Q2*(21*mo^4 + Q2^2 - 12*Q2*\[CapitalLambda]0^2 + 
-        21*\[CapitalLambda]0^4 + mo^2*(10*Q2 - 43*\[CapitalLambda]0^2)) + 
-      3*mN^2*mo*(24*mo^4 - 2*mo^2*(11*Q2 + 12*\[CapitalLambda]0^2) + 
-        Q2*(-10*Q2 + 41*\[CapitalLambda]0^2)) + 
-      mN*(126*mo^6 + 6*mo^4*(4*Q2 - 43*\[CapitalLambda]0^2) + 
-        Q2*\[CapitalLambda]0^2*(-3*Q2 + 10*\[CapitalLambda]0^2) - 
-        6*mo^2*(Q2^2 + 7*Q2*\[CapitalLambda]0^2 - 21*\[CapitalLambda]0^4))) - 
-    mm^10*(420*mN^9 + 360*mN^8*mo + 6*mN^6*mo*(132*mo^2 - 3*Q2 - 
-        124*\[CapitalLambda]0^2) + 24*mN^7*(40*mo^2 + 10*Q2 - 
-        63*\[CapitalLambda]0^2) + 2*mN^4*mo*(396*mo^4 - 48*Q2^2 + 
-        177*Q2*\[CapitalLambda]0^2 + 176*\[CapitalLambda]0^4 + 
-        mo^2*(57*Q2 - 744*\[CapitalLambda]0^2)) + 
-      mN^5*(1080*mo^4 + 36*Q2^2 - 795*Q2*\[CapitalLambda]0^2 + 
-        1748*\[CapitalLambda]0^4 + 12*mo^2*(29*Q2 - 
-          271*\[CapitalLambda]0^2)) + 2*mN^2*mo*(180*mo^6 - 
-        3*mo^4*(13*Q2 + 124*\[CapitalLambda]0^2) + 
-        Q2*(-9*Q2^2 + 147*Q2*\[CapitalLambda]0^2 - 298*\[CapitalLambda]0^4) - 
-        30*mo^2*(2*Q2^2 - 11*Q2*\[CapitalLambda]0^2 - 
-          6*\[CapitalLambda]0^4)) - 6*mo*Q2*(35*mo^6 + 
-        mo^4*(20*Q2 - 111*\[CapitalLambda]0^2) - 5*\[CapitalLambda]0^2*
-         (Q2^2 - 6*Q2*\[CapitalLambda]0^2 + 7*\[CapitalLambda]0^4) + 
-        mo^2*(3*Q2^2 - 52*Q2*\[CapitalLambda]0^2 + 
-          111*\[CapitalLambda]0^4)) + 
-      mN^3*(960*mo^6 - 105*Q2^2*\[CapitalLambda]0^2 + 
-        636*Q2*\[CapitalLambda]0^4 - 648*\[CapitalLambda]0^6 + 
-        24*mo^4*(13*Q2 - 134*\[CapitalLambda]0^2) + 
-        mo^2*(-24*Q2^2 - 954*Q2*\[CapitalLambda]0^2 + 
-          2768*\[CapitalLambda]0^4)) + 
-      mN*(420*mo^8 + 12*mo^6*(5*Q2 - 111*\[CapitalLambda]0^2) - 
-        3*mo^4*(20*Q2^2 + 89*Q2*\[CapitalLambda]0^2 - 
-          444*\[CapitalLambda]0^4) + Q2*\[CapitalLambda]0^2*
-         (-3*Q2^2 + 34*Q2*\[CapitalLambda]0^2 - 57*\[CapitalLambda]0^4) + 
-        mo^2*(-12*Q2^3 + 51*Q2^2*\[CapitalLambda]0^2 + 
-          242*Q2*\[CapitalLambda]0^4 - 420*\[CapitalLambda]0^6))) + 
-    mm^8*(420*mN^11 + 480*mN^10*mo + 60*mN^9*(11*mo^2 + 4*Q2 - 
-        35*\[CapitalLambda]0^2) + 2*mN^6*mo*(288*mo^4 - 36*Q2^2 - 
-        15*Q2*\[CapitalLambda]0^2 + 776*\[CapitalLambda]0^4 + 
-        12*mo^2*(15*Q2 - 143*\[CapitalLambda]0^2)) + 
-      4*mN^7*(114*mo^4 + 9*Q2^2 - 330*Q2*\[CapitalLambda]0^2 + 
-        940*\[CapitalLambda]0^4 + 12*mo^2*(3*Q2 - 85*\[CapitalLambda]0^2)) + 
-      6*mN^8*mo*(128*mo^2 + 13*(Q2 - 20*\[CapitalLambda]0^2)) + 
-      2*mN^4*mo*(384*mo^6 - 9*Q2^3 + 180*Q2^2*\[CapitalLambda]0^2 - 
-        321*Q2*\[CapitalLambda]0^4 - 220*\[CapitalLambda]0^6 + 
-        6*mo^4*(31*Q2 - 286*\[CapitalLambda]0^2) + 
-        3*mo^2*(4*Q2^2 - 91*Q2*\[CapitalLambda]0^2 + 
-          524*\[CapitalLambda]0^4)) + 
-      2*mN^5*(228*mo^6 - 123*Q2^2*\[CapitalLambda]0^2 + 
-        1071*Q2*\[CapitalLambda]0^4 - 1430*\[CapitalLambda]0^6 + 
-        36*mo^4*(2*Q2 - 65*\[CapitalLambda]0^2) + 
-        mo^2*(-42*Q2^2 - 762*Q2*\[CapitalLambda]0^2 + 
-          3512*\[CapitalLambda]0^4)) + 2*mN^2*mo*
-       (240*mo^8 + 12*mo^6*(7*Q2 - 65*\[CapitalLambda]0^2) + 
-        2*Q2*\[CapitalLambda]0^2*(18*Q2^2 - 145*Q2*\[CapitalLambda]0^2 + 
-          190*\[CapitalLambda]0^4) + mo^4*(-12*Q2^2 + 
-          159*Q2*\[CapitalLambda]0^2 + 780*\[CapitalLambda]0^4) - 
-        3*mo^2*(2*Q2^3 - 84*Q2^2*\[CapitalLambda]0^2 + 
-          219*Q2*\[CapitalLambda]0^4 + 80*\[CapitalLambda]0^6)) + 
-      mN^3*(660*mo^8 - 9*Q2^3*\[CapitalLambda]0^2 + 
-        334*Q2^2*\[CapitalLambda]0^4 - 1140*Q2*\[CapitalLambda]0^6 + 
-        780*\[CapitalLambda]0^8 + 48*mo^6*(5*Q2 - 87*\[CapitalLambda]0^2) - 
-        4*mo^4*(9*Q2^2 + 348*Q2*\[CapitalLambda]0^2 - 
-          1700*\[CapitalLambda]0^4) - 4*mo^2*(6*Q2^3 - 
-          21*Q2^2*\[CapitalLambda]0^2 - 540*Q2*\[CapitalLambda]0^4 + 
-          970*\[CapitalLambda]0^6)) - 
-      6*mo*Q2*(35*mo^8 + 5*mo^6*(4*Q2 - 31*\[CapitalLambda]0^2) + 
-        mo^4*(3*Q2^2 - 88*Q2*\[CapitalLambda]0^2 + 240*\[CapitalLambda]0^4) + 
-        mo^2*(-13*Q2^2*\[CapitalLambda]0^2 + 110*Q2*\[CapitalLambda]0^4 - 
-          155*\[CapitalLambda]0^6) + 5*(2*Q2^2*\[CapitalLambda]0^4 - 
-          8*Q2*\[CapitalLambda]0^6 + 7*\[CapitalLambda]0^8)) + 
-      mN*(420*mo^10 - 1860*mo^8*\[CapitalLambda]0^2 - 
-        12*mo^6*(9*Q2^2 + 23*Q2*\[CapitalLambda]0^2 - 
-          240*\[CapitalLambda]0^4) + 2*Q2*\[CapitalLambda]0^4*
-         (7*Q2^2 - 40*Q2*\[CapitalLambda]0^2 + 45*\[CapitalLambda]0^4) + 
-        mo^4*(-24*Q2^3 + 258*Q2^2*\[CapitalLambda]0^2 + 
-          590*Q2*\[CapitalLambda]0^4 - 1860*\[CapitalLambda]0^6) + 
-        mo^2*(51*Q2^3*\[CapitalLambda]0^2 - 94*Q2^2*\[CapitalLambda]0^4 - 
-          370*Q2*\[CapitalLambda]0^6 + 420*\[CapitalLambda]0^8))) + 
-    mm^2*(-12*mN^17 - 24*mN^16*mo + 24*mN^15*
-       (2*mo^2 + 7*\[CapitalLambda]0^2) + 6*mN^14*mo*
-       (20*mo^2 + Q2 + 44*\[CapitalLambda]0^2) + 
-      mN^13*(-48*mo^4 + 57*Q2*\[CapitalLambda]0^2 - 772*\[CapitalLambda]0^4 + 
-        12*mo^2*(Q2 - 27*\[CapitalLambda]0^2)) - 
-      2*mN^12*mo*(108*mo^4 - 9*Q2*\[CapitalLambda]0^2 + 
-        464*\[CapitalLambda]0^4 + 3*mo^2*(5*Q2 + 88*\[CapitalLambda]0^2)) + 
-      2*mN^10*mo*(60*mo^6 - 9*Q2^2*\[CapitalLambda]0^2 - 
-        102*Q2*\[CapitalLambda]0^4 + 712*\[CapitalLambda]0^6 + 
-        3*mo^4*(9*Q2 - 44*\[CapitalLambda]0^2) - 
-        2*mo^2*(27*Q2*\[CapitalLambda]0^2 + 10*\[CapitalLambda]0^4)) + 
-      mN^11*(-48*mo^6 - 72*mo^4*Q2 + 3*Q2^2*\[CapitalLambda]0^2 - 
-        444*Q2*\[CapitalLambda]0^4 + 1720*\[CapitalLambda]0^6 + 
-        mo^2*(-294*Q2*\[CapitalLambda]0^2 + 272*\[CapitalLambda]0^4)) + 
-      2*mN^8*mo*(60*mo^8 + 22*Q2^2*\[CapitalLambda]0^4 + 
-        139*Q2*\[CapitalLambda]0^6 - 492*\[CapitalLambda]0^8 + 
-        mo^6*(-15*Q2 + 528*\[CapitalLambda]0^2) + 
-        mo^4*(87*Q2*\[CapitalLambda]0^2 + 544*\[CapitalLambda]0^4) + 
-        mo^2*(24*Q2^2*\[CapitalLambda]0^2 - 51*Q2*\[CapitalLambda]0^4 + 
-          944*\[CapitalLambda]0^6)) + 
-      mN^9*(120*mo^8 + 36*mo^6*(5*Q2 + \[CapitalLambda]0^2) + 
-        mo^4*(519*Q2*\[CapitalLambda]0^2 + 388*\[CapitalLambda]0^4) - 
-        3*\[CapitalLambda]0^4*(28*Q2^2 - 407*Q2*\[CapitalLambda]0^2 + 
-          700*\[CapitalLambda]0^4) + mo^2*(-57*Q2^2*\[CapitalLambda]0^2 + 
-          874*Q2*\[CapitalLambda]0^4 + 1108*\[CapitalLambda]0^6)) + 
-      mN*(-12*mo^16 + 12*mo^14*(Q2 + 13*\[CapitalLambda]0^2) + 
-        Q2*\[CapitalLambda]0^10*(11*Q2^2 - 26*Q2*\[CapitalLambda]0^2 + 
-          15*\[CapitalLambda]0^4) - 3*mo^12*(29*Q2*\[CapitalLambda]0^2 + 
-          204*\[CapitalLambda]0^4) - 5*mo^10*(9*Q2^2*\[CapitalLambda]0^2 - 
-          26*Q2*\[CapitalLambda]0^4 - 228*\[CapitalLambda]0^6) + 
-        mo^4*\[CapitalLambda]0^6*(-55*Q2^3 + 180*Q2^2*\[CapitalLambda]0^2 + 
-          83*Q2*\[CapitalLambda]0^4 - 156*\[CapitalLambda]0^6) + 
-        mo^2*\[CapitalLambda]0^8*(45*Q2^3 - 43*Q2^2*\[CapitalLambda]0^2 - 
-          34*Q2*\[CapitalLambda]0^4 + 12*\[CapitalLambda]0^6) + 
-        mo^6*\[CapitalLambda]0^4*(29*Q2^3 - 264*Q2^2*\[CapitalLambda]0^2 - 
-          132*Q2*\[CapitalLambda]0^4 + 612*\[CapitalLambda]0^6) + 
-        mo^8*(194*Q2^2*\[CapitalLambda]0^4 + 13*Q2*\[CapitalLambda]0^6 - 
-          1140*\[CapitalLambda]0^8)) + 2*mN^4*mo*
-       (60*mo^12 + 3*mo^10*(9*Q2 - 88*\[CapitalLambda]0^2) - 
-        3*mo^8*(51*Q2*\[CapitalLambda]0^2 + 16*\[CapitalLambda]0^4) - 
-        2*mo^6*(18*Q2^2*\[CapitalLambda]0^2 + 63*Q2*\[CapitalLambda]0^4 - 
-          392*\[CapitalLambda]0^6) + \[CapitalLambda]0^6*
-         (-11*Q2^3 + 72*Q2^2*\[CapitalLambda]0^2 - 
-          33*Q2*\[CapitalLambda]0^4 + 8*\[CapitalLambda]0^6) + 
-        mo^2*\[CapitalLambda]0^4*(5*Q2^3 + 40*Q2^2*\[CapitalLambda]0^2 - 
-          285*Q2*\[CapitalLambda]0^4 + 312*\[CapitalLambda]0^6) + 
-        mo^4*(-32*Q2^2*\[CapitalLambda]0^4 + 378*Q2*\[CapitalLambda]0^6 - 
-          852*\[CapitalLambda]0^8)) + 2*mN^6*mo*(-108*mo^10 + 
-        12*mo^6*\[CapitalLambda]0^2*(Q2 + 34*\[CapitalLambda]0^2) - 
-        3*mo^8*(5*Q2 + 44*\[CapitalLambda]0^2) + 6*mo^4*\[CapitalLambda]0^2*
-         (-Q2^2 + 70*Q2*\[CapitalLambda]0^2 + 48*\[CapitalLambda]0^4) + 
-        \[CapitalLambda]0^4*(2*Q2^3 - 44*Q2^2*\[CapitalLambda]0^2 - 
-          21*Q2*\[CapitalLambda]0^4 + 116*\[CapitalLambda]0^6) + 
-        2*mo^2*(11*Q2^2*\[CapitalLambda]0^4 + 226*Q2*\[CapitalLambda]0^6 - 
-          510*\[CapitalLambda]0^8)) + 
-      mN^7*(-48*mo^10 - 7*Q2^3*\[CapitalLambda]0^4 + 
-        316*Q2^2*\[CapitalLambda]0^6 - 1560*Q2*\[CapitalLambda]0^8 + 
-        1432*\[CapitalLambda]0^10 + mo^8*(-240*Q2 + 
-          456*\[CapitalLambda]0^2) + mo^6*(-276*Q2*\[CapitalLambda]0^2 + 
-          96*\[CapitalLambda]0^4) + 2*mo^4*(99*Q2^2*\[CapitalLambda]0^2 - 
-          236*Q2*\[CapitalLambda]0^4 + 288*\[CapitalLambda]0^6) + 
-        6*mo^2*(65*Q2^2*\[CapitalLambda]0^4 - 74*Q2*\[CapitalLambda]0^6 - 
-          368*\[CapitalLambda]0^8)) + 6*mo*Q2*(mo^2 - \[CapitalLambda]0^2)*
-       (mo^12 - 12*mo^10*\[CapitalLambda]0^2 + \[CapitalLambda]0^8*
-         (Q2 - \[CapitalLambda]0^2)^2 - 6*mo^2*\[CapitalLambda]0^6*
-         (Q2^2 - 3*Q2*\[CapitalLambda]0^2 + 2*\[CapitalLambda]0^4) + 
-        mo^8*(-4*Q2*\[CapitalLambda]0^2 + 39*\[CapitalLambda]0^4) + 
-        mo^6*(22*Q2*\[CapitalLambda]0^4 - 56*\[CapitalLambda]0^6) + 
-        mo^4*(3*Q2^2*\[CapitalLambda]0^4 - 34*Q2*\[CapitalLambda]0^6 + 
-          39*\[CapitalLambda]0^8)) - 2*mN^2*mo*(12*mo^14 + 
-        3*mo^12*(5*Q2 - 44*\[CapitalLambda]0^2) - 
-        6*mo^10*(23*Q2*\[CapitalLambda]0^2 - 70*\[CapitalLambda]0^4) + 
-        Q2*\[CapitalLambda]0^8*(-15*Q2^2 + 35*Q2*\[CapitalLambda]0^2 - 
-          8*\[CapitalLambda]0^4) + mo^4*\[CapitalLambda]0^4*
-         (16*Q2^3 + 36*Q2^2*\[CapitalLambda]0^2 - 69*Q2*\[CapitalLambda]0^4 - 
-          132*\[CapitalLambda]0^6) + 2*mo^2*\[CapitalLambda]0^6*
-         (7*Q2^3 - 51*Q2^2*\[CapitalLambda]0^2 + 27*Q2*\[CapitalLambda]0^4 + 
-          6*\[CapitalLambda]0^6) - 3*mo^8*(13*Q2^2*\[CapitalLambda]0^2 - 
-          98*Q2*\[CapitalLambda]0^4 + 200*\[CapitalLambda]0^6) + 
-        2*mo^6*(45*Q2^2*\[CapitalLambda]0^4 - 74*Q2*\[CapitalLambda]0^6 + 
-          210*\[CapitalLambda]0^8)) + 
-      mN^5*(-48*mo^12 + 36*mo^10*(5*Q2 - 7*\[CapitalLambda]0^2) - 
-        201*mo^8*\[CapitalLambda]0^2*(Q2 - 4*\[CapitalLambda]0^2) + 
-        \[CapitalLambda]0^6*(29*Q2^3 - 402*Q2^2*\[CapitalLambda]0^2 + 
-          963*Q2*\[CapitalLambda]0^4 - 508*\[CapitalLambda]0^6) + 
-        mo^6*(-282*Q2^2*\[CapitalLambda]0^2 + 228*Q2*\[CapitalLambda]0^4 + 
-          536*\[CapitalLambda]0^6) + mo^2*\[CapitalLambda]0^4*
-         (43*Q2^3 - 448*Q2^2*\[CapitalLambda]0^2 - 
-          540*Q2*\[CapitalLambda]0^4 + 1348*\[CapitalLambda]0^6) - 
-        2*mo^4*(167*Q2^2*\[CapitalLambda]0^4 - 187*Q2*\[CapitalLambda]0^6 + 
-          972*\[CapitalLambda]0^8)) + 
-      mN^3*(48*mo^14 - 24*mo^12*(3*Q2 + 10*\[CapitalLambda]0^2) + 
-        2*mo^10*(141*Q2*\[CapitalLambda]0^2 - 88*\[CapitalLambda]0^4) + 
-        2*mo^2*\[CapitalLambda]0^6*(-39*Q2^3 + 81*Q2^2*\[CapitalLambda]0^2 + 
-          189*Q2*\[CapitalLambda]0^4 - 128*\[CapitalLambda]0^6) + 
-        \[CapitalLambda]0^8*(-33*Q2^3 + 193*Q2^2*\[CapitalLambda]0^2 - 
-          252*Q2*\[CapitalLambda]0^4 + 72*\[CapitalLambda]0^6) + 
-        mo^4*\[CapitalLambda]0^4*(-65*Q2^3 - 20*Q2^2*\[CapitalLambda]0^2 - 
-          552*Q2*\[CapitalLambda]0^4 + 992*\[CapitalLambda]0^6) + 
-        mo^8*(183*Q2^2*\[CapitalLambda]0^2 - 316*Q2*\[CapitalLambda]0^4 + 
-          1576*\[CapitalLambda]0^6) - 2*mo^6*(83*Q2^2*\[CapitalLambda]0^4 - 
-          250*Q2*\[CapitalLambda]0^6 + 1008*\[CapitalLambda]0^8))) + 
-    mm^6*(-252*mN^13 - 360*mN^12*mo - 6*mN^10*mo*(12*mo^2 + 11*Q2 - 
-        280*\[CapitalLambda]0^2) - 24*mN^11*(3*mo^2 + 5*Q2 - 
-        70*\[CapitalLambda]0^2) + 6*mN^8*mo*(72*mo^4 + 6*Q2^2 + 
-        63*Q2*\[CapitalLambda]0^2 - 448*\[CapitalLambda]0^4 + 
-        mo^2*(-15*Q2 + 448*\[CapitalLambda]0^2)) + 
-      3*mN^9*(84*mo^4 - 4*Q2^2 + 355*Q2*\[CapitalLambda]0^2 - 
-        1400*\[CapitalLambda]0^4 + mo^2*(52*Q2 + 660*\[CapitalLambda]0^2)) + 
-      4*mN^7*(36*mo^6 + 420*mo^4*\[CapitalLambda]0^2 + 
-        51*Q2^2*\[CapitalLambda]0^2 - 710*Q2*\[CapitalLambda]0^4 + 
-        1240*\[CapitalLambda]0^6 + 3*mo^2*(8*Q2^2 + 
-          21*Q2*\[CapitalLambda]0^2 - 568*\[CapitalLambda]0^4)) + 
-      2*mN^6*mo*(216*mo^6 + 3*Q2^3 - 96*Q2^2*\[CapitalLambda]0^2 - 
-        92*Q2*\[CapitalLambda]0^4 + 824*\[CapitalLambda]0^6 + 
-        6*mo^4*(29*Q2 + 168*\[CapitalLambda]0^2) - 
-        4*mo^2*(3*Q2^2 - 150*Q2*\[CapitalLambda]0^2 + 
-          734*\[CapitalLambda]0^4)) - 2*mN^4*mo*
-       (36*mo^8 + 27*Q2^3*\[CapitalLambda]0^2 - 
-        264*Q2^2*\[CapitalLambda]0^4 + 294*Q2*\[CapitalLambda]0^6 + 
-        140*\[CapitalLambda]0^8 + 6*mo^6*(3*Q2 - 224*\[CapitalLambda]0^2) + 
-        mo^4*(-642*Q2*\[CapitalLambda]0^2 + 2880*\[CapitalLambda]0^4) + 
-        mo^2*(3*Q2^3 - 24*Q2^2*\[CapitalLambda]0^2 + 
-          538*Q2*\[CapitalLambda]0^4 - 1728*\[CapitalLambda]0^6)) + 
-      mN^5*(252*mo^8 + 9*Q2^3*\[CapitalLambda]0^2 - 
-        610*Q2^2*\[CapitalLambda]0^4 + 3018*Q2*\[CapitalLambda]0^6 - 
-        2780*\[CapitalLambda]0^8 + 24*mo^6*(3*Q2 + 67*\[CapitalLambda]0^2) - 
-        6*mo^4*(12*Q2^2 - 89*Q2*\[CapitalLambda]0^2 + 
-          1288*\[CapitalLambda]0^4) + 4*mo^2*(3*Q2^3 - 
-          90*Q2^2*\[CapitalLambda]0^2 - 626*Q2*\[CapitalLambda]0^4 + 
-          1954*\[CapitalLambda]0^6)) + 
-      mN*(-252*mo^12 + 60*mo^10*(Q2 + 25*\[CapitalLambda]0^2) + 
-        mo^8*(84*Q2^2 + 9*Q2*\[CapitalLambda]0^2 - 
-          3240*\[CapitalLambda]0^4) + Q2*\[CapitalLambda]0^6*
-         (26*Q2^2 - 100*Q2*\[CapitalLambda]0^2 + 85*\[CapitalLambda]0^4) + 
-        mo^2*\[CapitalLambda]0^4*(91*Q2^3 - 106*Q2^2*\[CapitalLambda]0^2 - 
-          320*Q2*\[CapitalLambda]0^4 + 252*\[CapitalLambda]0^6) + 
-        12*mo^6*(Q2^3 - 32*Q2^2*\[CapitalLambda]0^2 - 
-          40*Q2*\[CapitalLambda]0^4 + 270*\[CapitalLambda]0^6) + 
-        mo^4*(-87*Q2^3*\[CapitalLambda]0^2 + 448*Q2^2*\[CapitalLambda]0^4 + 
-          650*Q2*\[CapitalLambda]0^6 - 1500*\[CapitalLambda]0^8)) - 
-      2*mN^2*mo*(180*mo^10 + 3*mo^8*(47*Q2 - 280*\[CapitalLambda]0^2) + 
-        Q2*\[CapitalLambda]0^4*(-56*Q2^2 + 290*Q2*\[CapitalLambda]0^2 - 
-          265*\[CapitalLambda]0^4) + 12*mo^6*(3*Q2^2 - 
-          24*Q2*\[CapitalLambda]0^2 + 110*\[CapitalLambda]0^4) + 
-        3*mo^4*(Q2^3 + 16*Q2^2*\[CapitalLambda]0^2 - 
-          84*Q2*\[CapitalLambda]0^4 - 280*\[CapitalLambda]0^6) + 
-        2*mo^2*(12*Q2^3*\[CapitalLambda]0^2 - 203*Q2^2*\[CapitalLambda]0^4 + 
-          324*Q2*\[CapitalLambda]0^6 + 90*\[CapitalLambda]0^8)) + 
-      6*mo*Q2*(21*mo^10 - 10*Q2^2*\[CapitalLambda]0^6 + 
-        30*Q2*\[CapitalLambda]0^8 - 21*\[CapitalLambda]0^10 + 
-        5*mo^8*(2*Q2 - 25*\[CapitalLambda]0^2) + 
-        mo^6*(Q2^2 - 72*Q2*\[CapitalLambda]0^2 + 270*\[CapitalLambda]0^4) + 
-        mo^4*(-11*Q2^2*\[CapitalLambda]0^2 + 152*Q2*\[CapitalLambda]0^4 - 
-          270*\[CapitalLambda]0^6) + mo^2*(22*Q2^2*\[CapitalLambda]0^4 - 
-          120*Q2*\[CapitalLambda]0^6 + 125*\[CapitalLambda]0^8)) - 
-      mN^3*(72*mo^10 + 24*mo^8*(7*Q2 - 96*\[CapitalLambda]0^2) + 
-        12*mo^6*(8*Q2^2 - 69*Q2*\[CapitalLambda]0^2 + 
-          584*\[CapitalLambda]0^4) + 4*mo^4*(6*Q2^3 + 
-          33*Q2^2*\[CapitalLambda]0^2 + 584*Q2*\[CapitalLambda]0^4 - 
-          1820*\[CapitalLambda]0^6) + \[CapitalLambda]0^4*
-         (35*Q2^3 - 526*Q2^2*\[CapitalLambda]0^2 + 
-          1200*Q2*\[CapitalLambda]0^4 - 592*\[CapitalLambda]0^6) + 
-        2*mo^2*(45*Q2^3*\[CapitalLambda]0^2 - 79*Q2^2*\[CapitalLambda]0^4 - 
-          1230*Q2*\[CapitalLambda]0^6 + 1540*\[CapitalLambda]0^8))) + 
-    mm^4*(84*mN^15 + 144*mN^14*mo - 12*mN^13*(11*mo^2 - 2*Q2 + 
-        63*\[CapitalLambda]0^2) - 6*mN^12*mo*(48*mo^2 - Q2 + 
-        160*\[CapitalLambda]0^2) - 4*mN^11*(27*mo^4 + 
-        102*Q2*\[CapitalLambda]0^2 - 635*\[CapitalLambda]0^4 + 
-        6*mo^2*(5*Q2 - 4*\[CapitalLambda]0^2)) - 
-      2*mN^10*mo*(72*mo^4 + 6*Q2^2 + 111*Q2*\[CapitalLambda]0^2 - 
-        1136*\[CapitalLambda]0^4 + 6*mo^2*(3*Q2 + 16*\[CapitalLambda]0^2)) + 
-      4*mN^9*(39*mo^6 + mo^4*(48*Q2 + 87*\[CapitalLambda]0^2) - 
-        3*\[CapitalLambda]0^2*(5*Q2^2 - 144*Q2*\[CapitalLambda]0^2 + 
-          350*\[CapitalLambda]0^4) + mo^2*(-6*Q2^2 + 
-          171*Q2*\[CapitalLambda]0^2 + 551*\[CapitalLambda]0^4)) + 
-      2*mN^8*mo*(288*mo^6 + 36*Q2^2*\[CapitalLambda]0^2 + 
-        275*Q2*\[CapitalLambda]0^4 - 1152*\[CapitalLambda]0^6 + 
-        3*mo^4*(7*Q2 + 192*\[CapitalLambda]0^2) + 
-        mo^2*(18*Q2^2 - 57*Q2*\[CapitalLambda]0^2 + 
-          1720*\[CapitalLambda]0^4)) + 
-      mN^7*(156*mo^8 - 3*Q2^3*\[CapitalLambda]0^2 + 
-        392*Q2^2*\[CapitalLambda]0^4 - 3000*Q2*\[CapitalLambda]0^6 + 
-        3660*\[CapitalLambda]0^8 - 48*mo^6*(Q2 - 10*\[CapitalLambda]0^2) + 
-        24*mo^4*(4*Q2^2 - 10*Q2*\[CapitalLambda]0^2 + 
-          79*\[CapitalLambda]0^4) + 12*mo^2*(28*Q2^2*\[CapitalLambda]0^2 - 
-          11*Q2*\[CapitalLambda]0^4 - 464*\[CapitalLambda]0^6)) - 
-      4*mN^6*mo*(36*mo^8 - 3*Q2^3*\[CapitalLambda]0^2 + 
-        47*Q2^2*\[CapitalLambda]0^4 + 48*Q2*\[CapitalLambda]0^6 - 
-        228*\[CapitalLambda]0^8 - 18*mo^6*(Q2 + 16*\[CapitalLambda]0^2) + 
-        3*mo^4*(2*Q2^2 - 71*Q2*\[CapitalLambda]0^2 - 
-          180*\[CapitalLambda]0^4) + mo^2*(-383*Q2*\[CapitalLambda]0^4 + 
-          1236*\[CapitalLambda]0^6)) - 
-      mN^3*(132*mo^12 - 24*mo^10*(7*Q2 - 8*\[CapitalLambda]0^2) - 
-        4*mo^8*(24*Q2^2 - 102*Q2*\[CapitalLambda]0^2 + 
-          731*\[CapitalLambda]0^4) + 3*\[CapitalLambda]0^6*
-         (17*Q2^3 - 148*Q2^2*\[CapitalLambda]0^2 + 
-          248*Q2*\[CapitalLambda]0^4 - 92*\[CapitalLambda]0^6) + 
-        2*mo^2*\[CapitalLambda]0^4*(63*Q2^3 - 105*Q2^2*\[CapitalLambda]0^2 - 
-          720*Q2*\[CapitalLambda]0^4 + 664*\[CapitalLambda]0^6) + 
-        4*mo^6*(60*Q2^2*\[CapitalLambda]0^2 - 253*Q2*\[CapitalLambda]0^4 + 
-          1392*\[CapitalLambda]0^6) + mo^4*(69*Q2^3*\[CapitalLambda]0^2 + 
-          136*Q2^2*\[CapitalLambda]0^4 + 1776*Q2*\[CapitalLambda]0^6 - 
-          4020*\[CapitalLambda]0^8)) - 2*mN^4*mo*(144*mo^10 + 
-        mo^8*(99*Q2 + 96*\[CapitalLambda]0^2) + 
-        2*mo^6*(6*Q2^2 + 33*Q2*\[CapitalLambda]0^2 - 
-          820*\[CapitalLambda]0^4) + \[CapitalLambda]0^4*
-         (28*Q2^3 - 192*Q2^2*\[CapitalLambda]0^2 + 
-          141*Q2*\[CapitalLambda]0^4 + 32*\[CapitalLambda]0^6) + 
-        12*mo^4*(2*Q2^2*\[CapitalLambda]0^2 - 65*Q2*\[CapitalLambda]0^4 + 
-          192*\[CapitalLambda]0^6) + mo^2*(3*Q2^3*\[CapitalLambda]0^2 - 
-          32*Q2^2*\[CapitalLambda]0^4 + 546*Q2*\[CapitalLambda]0^6 - 
-          1032*\[CapitalLambda]0^8)) + 2*mN^2*mo*
-       (72*mo^12 + 6*mo^10*(13*Q2 - 80*\[CapitalLambda]0^2) + 
-        Q2*\[CapitalLambda]0^6*(42*Q2^2 - 150*Q2*\[CapitalLambda]0^2 + 
-          91*\[CapitalLambda]0^4) + 3*mo^8*(6*Q2^2 - 
-          121*Q2*\[CapitalLambda]0^2 + 360*\[CapitalLambda]0^4) - 
-        mo^2*\[CapitalLambda]0^4*(31*Q2^3 - 306*Q2^2*\[CapitalLambda]0^2 + 
-          312*Q2*\[CapitalLambda]0^4 + 72*\[CapitalLambda]0^6) - 
-        2*mo^6*(48*Q2^2*\[CapitalLambda]0^2 - 169*Q2*\[CapitalLambda]0^4 + 
-          540*\[CapitalLambda]0^6) - 6*mo^4*(2*Q2^3*\[CapitalLambda]0^2 + 
-          11*Q2^2*\[CapitalLambda]0^4 - 32*Q2*\[CapitalLambda]0^6 - 
-          80*\[CapitalLambda]0^8)) + mN^5*(-108*mo^10 + 
-        mo^8*(-168*Q2 + 708*\[CapitalLambda]0^2) - 
-        8*mo^6*(18*Q2^2 - 27*Q2*\[CapitalLambda]0^2 - 
-          221*\[CapitalLambda]0^4) + 2*\[CapitalLambda]0^4*
-         (14*Q2^3 - 357*Q2^2*\[CapitalLambda]0^2 + 
-          1176*Q2*\[CapitalLambda]0^4 - 802*\[CapitalLambda]0^6) - 
-        4*mo^4*(66*Q2^2*\[CapitalLambda]0^2 - 175*Q2*\[CapitalLambda]0^4 + 
-          1476*\[CapitalLambda]0^6) + mo^2*(39*Q2^3*\[CapitalLambda]0^2 - 
-          596*Q2^2*\[CapitalLambda]0^4 - 1848*Q2*\[CapitalLambda]0^6 + 
-          4644*\[CapitalLambda]0^8)) + 
-      mN*(84*mo^14 - 12*mo^12*(4*Q2 + 57*\[CapitalLambda]0^2) + 
-        2*Q2*\[CapitalLambda]0^8*(12*Q2^2 - 35*Q2*\[CapitalLambda]0^2 + 
-          24*\[CapitalLambda]0^4) + mo^10*(-24*Q2^2 + 
-          156*Q2*\[CapitalLambda]0^2 + 1980*\[CapitalLambda]0^4) + 
-        4*mo^8*(57*Q2^2*\[CapitalLambda]0^2 + 5*Q2*\[CapitalLambda]0^4 - 
-          690*\[CapitalLambda]0^6) + mo^2*\[CapitalLambda]0^6*
-         (87*Q2^3 - 84*Q2^2*\[CapitalLambda]0^2 - 
-          152*Q2*\[CapitalLambda]0^4 + 84*\[CapitalLambda]0^6) + 
-        3*mo^6*(11*Q2^3*\[CapitalLambda]0^2 - 164*Q2^2*\[CapitalLambda]0^4 - 
-          128*Q2*\[CapitalLambda]0^6 + 660*\[CapitalLambda]0^8) + 
-        mo^4*(-110*Q2^3*\[CapitalLambda]0^4 + 396*Q2^2*\[CapitalLambda]0^6 + 
-          360*Q2*\[CapitalLambda]0^8 - 684*\[CapitalLambda]0^10)) - 
-      6*mo*Q2*(7*mo^12 + mo^10*(2*Q2 - 57*\[CapitalLambda]0^2) + 
-        \[CapitalLambda]0^8*(5*Q2^2 - 12*Q2*\[CapitalLambda]0^2 + 
-          7*\[CapitalLambda]0^4) + mo^8*(-28*Q2*\[CapitalLambda]0^2 + 
-          165*\[CapitalLambda]0^4) + mo^6*(-3*Q2^2*\[CapitalLambda]0^2 + 
-          96*Q2*\[CapitalLambda]0^4 - 230*\[CapitalLambda]0^6) + 
-        mo^4*(15*Q2^2*\[CapitalLambda]0^4 - 128*Q2*\[CapitalLambda]0^6 + 
-          165*\[CapitalLambda]0^8) + mo^2*(-18*Q2^2*\[CapitalLambda]0^6 + 
-          70*Q2*\[CapitalLambda]0^8 - 57*\[CapitalLambda]0^10))) - 
-    2*\[CapitalLambda]0^2*(6*mN^17 + 12*mN^16*mo - 
-      4*mN^15*(6*mo^2 + 11*\[CapitalLambda]0^2) - 
-      3*mN^14*mo*(20*mo^2 + Q2 + 24*\[CapitalLambda]0^2) - 
-      3*mo^3*Q2*(mo^2 - \[CapitalLambda]0^2)^2*
-       (mo^4 - 2*mo^2*\[CapitalLambda]0^2 - Q2*\[CapitalLambda]0^2 + 
-         \[CapitalLambda]0^4)^2 + mN^13*(24*mo^4 - 
-        15*Q2*\[CapitalLambda]0^2 + 134*\[CapitalLambda]0^4 - 
-        6*mo^2*(Q2 - 14*\[CapitalLambda]0^2)) + 
-      mN^12*mo*(108*mo^4 - 5*Q2*\[CapitalLambda]0^2 + 
-        164*\[CapitalLambda]0^4 + 3*mo^2*(5*Q2 + 52*\[CapitalLambda]0^2)) + 
-      mN^10*mo*(-60*mo^6 - 9*mo^4*(3*Q2 - 4*\[CapitalLambda]0^2) + 
-        4*\[CapitalLambda]0^2*(Q2^2 + 6*Q2*\[CapitalLambda]0^2 - 
-          44*\[CapitalLambda]0^4) + mo^2*(29*Q2*\[CapitalLambda]0^2 - 
-          40*\[CapitalLambda]0^4)) + 
-      mN^11*(24*mo^6 + 12*mo^4*(3*Q2 + \[CapitalLambda]0^2) + 
-        26*mo^2*(3*Q2*\[CapitalLambda]0^2 - 2*\[CapitalLambda]0^4) - 
-        \[CapitalLambda]0^2*(Q2^2 - 78*Q2*\[CapitalLambda]0^2 + 
-          220*\[CapitalLambda]0^4)) - 
-      mN^8*mo*(60*mo^8 + 4*Q2^2*\[CapitalLambda]0^4 + 
-        14*Q2*\[CapitalLambda]0^6 - 84*\[CapitalLambda]0^8 - 
-        3*mo^6*(5*Q2 - 88*\[CapitalLambda]0^2) + 
-        8*mo^4*(6*Q2*\[CapitalLambda]0^2 + 23*\[CapitalLambda]0^4) + 
-        mo^2*(10*Q2^2*\[CapitalLambda]0^2 - 39*Q2*\[CapitalLambda]0^4 + 
-          184*\[CapitalLambda]0^6)) + mN^6*mo*(108*mo^10 + 
-        2*mo^6*\[CapitalLambda]0^2*(Q2 - 24*\[CapitalLambda]0^2) + 
-        3*mo^8*(5*Q2 + 32*\[CapitalLambda]0^2) + \[CapitalLambda]0^4*
-         (Q2^3 + 10*Q2^2*\[CapitalLambda]0^2 - 7*Q2*\[CapitalLambda]0^4 - 
-          8*\[CapitalLambda]0^6) - 24*mo^4*(7*Q2*\[CapitalLambda]0^4 - 
-          3*\[CapitalLambda]0^6) - 2*mo^2*(5*Q2^2*\[CapitalLambda]0^4 + 
-          53*Q2*\[CapitalLambda]0^6 - 82*\[CapitalLambda]0^8)) + 
-      mN^2*mo*(12*mo^14 + 15*mo^12*(Q2 - 4*\[CapitalLambda]0^2) + 
-        mo^2*Q2*\[CapitalLambda]0^6*(Q2^2 - 10*Q2*\[CapitalLambda]0^2 - 
-          3*\[CapitalLambda]0^4) + 2*Q2*\[CapitalLambda]0^8*
-         (-Q2^2 + Q2*\[CapitalLambda]0^2 + \[CapitalLambda]0^4) + 
-        mo^10*(-63*Q2*\[CapitalLambda]0^2 + 120*\[CapitalLambda]0^4) + 
-        mo^4*\[CapitalLambda]0^4*(7*Q2^3 + 6*Q2^2*\[CapitalLambda]0^2 - 
-          9*Q2*\[CapitalLambda]0^4 - 12*\[CapitalLambda]0^6) - 
-        4*mo^8*(5*Q2^2*\[CapitalLambda]0^2 - 18*Q2*\[CapitalLambda]0^4 + 
-          30*\[CapitalLambda]0^6) + 2*mo^6*(15*Q2^2*\[CapitalLambda]0^4 - 
-          7*Q2*\[CapitalLambda]0^6 + 30*\[CapitalLambda]0^8)) + 
-      mN^4*mo*(-60*mo^12 - 27*mo^10*(Q2 - 4*\[CapitalLambda]0^2) + 
-        mo^8*(67*Q2*\[CapitalLambda]0^2 - 12*\[CapitalLambda]0^4) + 
-        2*mo^6*(10*Q2^2*\[CapitalLambda]0^2 + 39*Q2*\[CapitalLambda]0^4 - 
-          52*\[CapitalLambda]0^6) + \[CapitalLambda]0^6*
-         (Q2^3 - 12*Q2^2*\[CapitalLambda]0^2 + 3*Q2*\[CapitalLambda]0^4 - 
-          4*\[CapitalLambda]0^6) - mo^2*\[CapitalLambda]0^4*
-         (5*Q2^3 + 20*Q2^2*\[CapitalLambda]0^2 - 61*Q2*\[CapitalLambda]0^4 + 
-          36*\[CapitalLambda]0^6) + 2*mo^4*(4*Q2^2*\[CapitalLambda]0^4 - 
-          27*Q2*\[CapitalLambda]0^6 + 54*\[CapitalLambda]0^8)) - 
-      mN^9*(60*mo^8 + mo^6*(90*Q2 + 44*\[CapitalLambda]0^2) + 
-        mo^4*(143*Q2*\[CapitalLambda]0^2 + 146*\[CapitalLambda]0^4) + 
-        mo^2*(-15*Q2^2*\[CapitalLambda]0^2 + 173*Q2*\[CapitalLambda]0^4 + 
-          112*\[CapitalLambda]0^6) - 3*(6*Q2^2*\[CapitalLambda]0^4 - 
-          53*Q2*\[CapitalLambda]0^6 + 70*\[CapitalLambda]0^8)) + 
-      mN^3*(-24*mo^14 + 4*mo^12*(9*Q2 + 13*\[CapitalLambda]0^2) + 
-        mo^10*(-58*Q2*\[CapitalLambda]0^2 + 28*\[CapitalLambda]0^4) + 
-        mo^8*(-45*Q2^2*\[CapitalLambda]0^2 + 38*Q2*\[CapitalLambda]0^4 - 
-          148*\[CapitalLambda]0^6) + 2*mo^4*\[CapitalLambda]0^4*
-         (5*Q2^3 - 5*Q2^2*\[CapitalLambda]0^2 + 8*Q2*\[CapitalLambda]0^4 - 
-          14*\[CapitalLambda]0^6) + \[CapitalLambda]0^8*
-         (4*Q2^3 - 17*Q2^2*\[CapitalLambda]0^2 + 18*Q2*\[CapitalLambda]0^4 - 
-          4*\[CapitalLambda]0^6) + mo^2*\[CapitalLambda]0^6*
-         (9*Q2^3 - 25*Q2^2*\[CapitalLambda]0^2 - 12*Q2*\[CapitalLambda]0^4 + 
-          4*\[CapitalLambda]0^6) + mo^6*(11*Q2^2*\[CapitalLambda]0^4 - 
-          38*Q2*\[CapitalLambda]0^6 + 120*\[CapitalLambda]0^8)) + 
-      mN^7*(24*mo^10 + 12*mo^8*(10*Q2 - 7*\[CapitalLambda]0^2) + 
-        4*mo^6*(23*Q2*\[CapitalLambda]0^2 + 30*\[CapitalLambda]0^4) + 
-        2*\[CapitalLambda]0^4*(Q2^3 - 23*Q2^2*\[CapitalLambda]0^2 + 
-          80*Q2*\[CapitalLambda]0^4 - 58*\[CapitalLambda]0^6) + 
-        mo^4*(-50*Q2^2*\[CapitalLambda]0^2 + 116*Q2*\[CapitalLambda]0^4 + 
-          48*\[CapitalLambda]0^6) + mo^2*(-75*Q2^2*\[CapitalLambda]0^4 + 
-          102*Q2*\[CapitalLambda]0^6 + 168*\[CapitalLambda]0^8)) + 
-      mN^5*(24*mo^12 + mo^10*(-90*Q2 + 60*\[CapitalLambda]0^2) + 
-        3*mo^8*(9*Q2*\[CapitalLambda]0^2 - 58*\[CapitalLambda]0^4) + 
-        \[CapitalLambda]0^6*(-5*Q2^3 + 44*Q2^2*\[CapitalLambda]0^2 - 
-          81*Q2*\[CapitalLambda]0^4 + 34*\[CapitalLambda]0^6) + 
-        mo^6*(70*Q2^2*\[CapitalLambda]0^2 - 42*Q2*\[CapitalLambda]0^4 + 
-          40*\[CapitalLambda]0^6) + mo^4*(71*Q2^2*\[CapitalLambda]0^4 - 
-          32*Q2*\[CapitalLambda]0^6 + 84*\[CapitalLambda]0^8) + 
-        mo^2*(-8*Q2^3*\[CapitalLambda]0^4 + 64*Q2^2*\[CapitalLambda]0^6 + 
-          10*Q2*\[CapitalLambda]0^8 - 68*\[CapitalLambda]0^10)) + 
-      mN*(6*mo^16 - Q2*\[CapitalLambda]0^10*(Q2 - \[CapitalLambda]0^2)^2 - 
-        6*mo^14*(Q2 + 6*\[CapitalLambda]0^2) + mo^2*Q2*\[CapitalLambda]0^8*
-         (-5*Q2^2 + 5*Q2*\[CapitalLambda]0^2 + \[CapitalLambda]0^4) + 
-        mo^12*(19*Q2*\[CapitalLambda]0^2 + 90*\[CapitalLambda]0^4) + 
-        mo^10*(11*Q2^2*\[CapitalLambda]0^2 - 17*Q2*\[CapitalLambda]0^4 - 
-          120*\[CapitalLambda]0^6) + mo^4*\[CapitalLambda]0^6*
-         (4*Q2^3 - 17*Q2^2*\[CapitalLambda]0^2 - Q2*\[CapitalLambda]0^4 + 
-          6*\[CapitalLambda]0^6) - mo^8*(25*Q2^2*\[CapitalLambda]0^4 + 
-          Q2*\[CapitalLambda]0^6 - 90*\[CapitalLambda]0^8) + 
-        mo^6*(-4*Q2^3*\[CapitalLambda]0^4 + 24*Q2^2*\[CapitalLambda]0^6 + 
-          6*Q2*\[CapitalLambda]0^8 - 36*\[CapitalLambda]0^10)))))/
-  (6*mN*(4*mN^2 + Q2)*(mm^2 + \[CapitalLambda]0^2)*
-   (Q2 + \[CapitalLambda]0^2)^2*
-   (mm^4 + mN^4 + mo^4 - 2*mo^2*\[CapitalLambda]0^2 - 
-     Q2*\[CapitalLambda]0^2 + \[CapitalLambda]0^4 - 
-     mm^2*(2*mN^2 + 2*mo^2 + Q2 - 2*\[CapitalLambda]0^2) - 
-     2*mN^2*(mo^2 + \[CapitalLambda]0^2))^2*
-   Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2]^2) + 
- ((mN + mo)*(mm^4*(16*mN^3*mo - 7*mN^2*Q2 + mN*mo*Q2 - Q2^2) + 
-    (mN - mo)^2*(mN + mo)*(16*mN^5 - 10*mN^2*mo*Q2 - mo*Q2^2 + 
-      mN*Q2*(mo^2 + Q2) + mN^3*(16*mo^2 + 5*Q2)) + 
-    2*mm^2*(10*mN^6 - 6*mN^5*mo + mo^2*Q2^2 - mN*mo*Q2*(mo^2 + Q2) + 
-      2*mN^4*(4*mo^2 + Q2) + mN^2*Q2*(9*mo^2 + Q2) - 
-      2*mN^3*(8*mo^3 + 5*mo*Q2)))*\[CapitalLambda]0^4*Log[mm^2/mo^2])/
-  (2*mN^3*(4*mN^2 + Q2)^2*(Q2 + \[CapitalLambda]0^2)^2) - 
- (mm^2*(10*mN^4 - 4*mN^3*mo - 4*mN*mo*Q2 + Q2*(-mo^2 + Q2) + 
-    mN^2*(2*mo^2 + 5*Q2))*\[CapitalLambda]0^4*
+   (12*mm^16*mN^3 - 84*mm^14*mN^5 + 252*mm^12*mN^7 - 420*mm^10*mN^9 + 
+    420*mm^8*mN^11 - 252*mm^6*mN^13 + 84*mm^4*mN^15 - 12*mm^2*mN^17 - 
+    24*mm^14*mN^4*mo + 144*mm^12*mN^6*mo - 360*mm^10*mN^8*mo + 
+    480*mm^8*mN^10*mo - 360*mm^6*mN^12*mo + 144*mm^4*mN^14*mo - 
+    24*mm^2*mN^16*mo + 12*mm^16*mN*mo^2 - 168*mm^14*mN^3*mo^2 + 
+    612*mm^12*mN^5*mo^2 - 960*mm^10*mN^7*mo^2 + 660*mm^8*mN^9*mo^2 - 
+    72*mm^6*mN^11*mo^2 - 132*mm^4*mN^13*mo^2 + 48*mm^2*mN^15*mo^2 - 
+    24*mm^14*mN^2*mo^3 + 288*mm^12*mN^4*mo^3 - 792*mm^10*mN^6*mo^3 + 
+    768*mm^8*mN^8*mo^3 - 72*mm^6*mN^10*mo^3 - 288*mm^4*mN^12*mo^3 + 
+    120*mm^2*mN^14*mo^3 - 84*mm^14*mN*mo^4 + 612*mm^12*mN^3*mo^4 - 
+    1080*mm^10*mN^5*mo^4 + 456*mm^8*mN^7*mo^4 + 252*mm^6*mN^9*mo^4 - 
+    108*mm^4*mN^11*mo^4 - 48*mm^2*mN^13*mo^4 + 144*mm^12*mN^2*mo^5 - 
+    792*mm^10*mN^4*mo^5 + 576*mm^8*mN^6*mo^5 + 432*mm^6*mN^8*mo^5 - 
+    144*mm^4*mN^10*mo^5 - 216*mm^2*mN^12*mo^5 + 252*mm^12*mN*mo^6 - 
+    960*mm^10*mN^3*mo^6 + 456*mm^8*mN^5*mo^6 + 144*mm^6*mN^7*mo^6 + 
+    156*mm^4*mN^9*mo^6 - 48*mm^2*mN^11*mo^6 - 360*mm^10*mN^2*mo^7 + 
+    768*mm^8*mN^4*mo^7 + 432*mm^6*mN^6*mo^7 + 576*mm^4*mN^8*mo^7 + 
+    120*mm^2*mN^10*mo^7 - 420*mm^10*mN*mo^8 + 660*mm^8*mN^3*mo^8 + 
+    252*mm^6*mN^5*mo^8 + 156*mm^4*mN^7*mo^8 + 120*mm^2*mN^9*mo^8 + 
+    480*mm^8*mN^2*mo^9 - 72*mm^6*mN^4*mo^9 - 144*mm^4*mN^6*mo^9 + 
+    120*mm^2*mN^8*mo^9 + 420*mm^8*mN*mo^10 - 72*mm^6*mN^3*mo^10 - 
+    108*mm^4*mN^5*mo^10 - 48*mm^2*mN^7*mo^10 - 360*mm^6*mN^2*mo^11 - 
+    288*mm^4*mN^4*mo^11 - 216*mm^2*mN^6*mo^11 - 252*mm^6*mN*mo^12 - 
+    132*mm^4*mN^3*mo^12 - 48*mm^2*mN^5*mo^12 + 144*mm^4*mN^2*mo^13 + 
+    120*mm^2*mN^4*mo^13 + 84*mm^4*mN*mo^14 + 48*mm^2*mN^3*mo^14 - 
+    24*mm^2*mN^2*mo^15 - 12*mm^2*mN*mo^16 - 24*mm^14*mN^3*Q2 + 
+    120*mm^12*mN^5*Q2 - 240*mm^10*mN^7*Q2 + 240*mm^8*mN^9*Q2 - 
+    120*mm^6*mN^11*Q2 + 24*mm^4*mN^13*Q2 - 6*mm^16*mo*Q2 + 
+    42*mm^14*mN^2*mo*Q2 - 78*mm^12*mN^4*mo*Q2 + 18*mm^10*mN^6*mo*Q2 + 
+    78*mm^8*mN^8*mo*Q2 - 66*mm^6*mN^10*mo*Q2 + 6*mm^4*mN^12*mo*Q2 + 
+    6*mm^2*mN^14*mo*Q2 - 12*mm^14*mN*mo^2*Q2 + 168*mm^12*mN^3*mo^2*Q2 - 
+    348*mm^10*mN^5*mo^2*Q2 + 144*mm^8*mN^7*mo^2*Q2 + 156*mm^6*mN^9*mo^2*Q2 - 
+    120*mm^4*mN^11*mo^2*Q2 + 12*mm^2*mN^13*mo^2*Q2 + 42*mm^14*mo^3*Q2 - 
+    132*mm^12*mN^2*mo^3*Q2 - 114*mm^10*mN^4*mo^3*Q2 + 360*mm^8*mN^6*mo^3*Q2 - 
+    90*mm^6*mN^8*mo^3*Q2 - 36*mm^4*mN^10*mo^3*Q2 - 30*mm^2*mN^12*mo^3*Q2 + 
+    48*mm^12*mN*mo^4*Q2 - 312*mm^10*mN^3*mo^4*Q2 + 144*mm^8*mN^5*mo^4*Q2 + 
+    192*mm^4*mN^9*mo^4*Q2 - 72*mm^2*mN^11*mo^4*Q2 - 126*mm^12*mo^5*Q2 + 
+    78*mm^10*mN^2*mo^5*Q2 + 372*mm^8*mN^4*mo^5*Q2 + 348*mm^6*mN^6*mo^5*Q2 + 
+    42*mm^4*mN^8*mo^5*Q2 + 54*mm^2*mN^10*mo^5*Q2 - 60*mm^10*mN*mo^6*Q2 + 
+    240*mm^8*mN^3*mo^6*Q2 + 72*mm^6*mN^5*mo^6*Q2 - 48*mm^4*mN^7*mo^6*Q2 + 
+    180*mm^2*mN^9*mo^6*Q2 + 210*mm^10*mo^7*Q2 + 168*mm^8*mN^2*mo^7*Q2 - 
+    36*mm^6*mN^4*mo^7*Q2 + 72*mm^4*mN^6*mo^7*Q2 - 30*mm^2*mN^8*mo^7*Q2 - 
+    168*mm^6*mN^3*mo^8*Q2 - 168*mm^4*mN^5*mo^8*Q2 - 240*mm^2*mN^7*mo^8*Q2 - 
+    210*mm^8*mo^9*Q2 - 282*mm^6*mN^2*mo^9*Q2 - 198*mm^4*mN^4*mo^9*Q2 - 
+    30*mm^2*mN^6*mo^9*Q2 + 60*mm^6*mN*mo^10*Q2 + 168*mm^4*mN^3*mo^10*Q2 + 
+    180*mm^2*mN^5*mo^10*Q2 + 126*mm^6*mo^11*Q2 + 156*mm^4*mN^2*mo^11*Q2 + 
+    54*mm^2*mN^4*mo^11*Q2 - 48*mm^4*mN*mo^12*Q2 - 72*mm^2*mN^3*mo^12*Q2 - 
+    42*mm^4*mo^13*Q2 - 30*mm^2*mN^2*mo^13*Q2 + 12*mm^2*mN*mo^14*Q2 + 
+    6*mm^2*mo^15*Q2 + 12*mm^12*mN^3*Q2^2 - 36*mm^10*mN^5*Q2^2 + 
+    36*mm^8*mN^7*Q2^2 - 12*mm^6*mN^9*Q2^2 + 12*mm^14*mo*Q2^2 - 
+    60*mm^12*mN^2*mo*Q2^2 + 96*mm^10*mN^4*mo*Q2^2 - 72*mm^8*mN^6*mo*Q2^2 + 
+    36*mm^6*mN^8*mo*Q2^2 - 12*mm^4*mN^10*mo*Q2^2 - 12*mm^12*mN*mo^2*Q2^2 + 
+    24*mm^10*mN^3*mo^2*Q2^2 - 84*mm^8*mN^5*mo^2*Q2^2 + 
+    96*mm^6*mN^7*mo^2*Q2^2 - 24*mm^4*mN^9*mo^2*Q2^2 - 60*mm^12*mo^3*Q2^2 + 
+    120*mm^10*mN^2*mo^3*Q2^2 + 24*mm^8*mN^4*mo^3*Q2^2 - 
+    24*mm^6*mN^6*mo^3*Q2^2 + 36*mm^4*mN^8*mo^3*Q2^2 + 60*mm^10*mN*mo^4*Q2^2 - 
+    36*mm^8*mN^3*mo^4*Q2^2 - 72*mm^6*mN^5*mo^4*Q2^2 + 
+    96*mm^4*mN^7*mo^4*Q2^2 + 120*mm^10*mo^5*Q2^2 - 24*mm^8*mN^2*mo^5*Q2^2 - 
+    24*mm^4*mN^6*mo^5*Q2^2 - 108*mm^8*mN*mo^6*Q2^2 - 96*mm^6*mN^3*mo^6*Q2^2 - 
+    144*mm^4*mN^5*mo^6*Q2^2 - 120*mm^8*mo^7*Q2^2 - 72*mm^6*mN^2*mo^7*Q2^2 - 
+    24*mm^4*mN^4*mo^7*Q2^2 + 84*mm^6*mN*mo^8*Q2^2 + 96*mm^4*mN^3*mo^8*Q2^2 + 
+    60*mm^6*mo^9*Q2^2 + 36*mm^4*mN^2*mo^9*Q2^2 - 24*mm^4*mN*mo^10*Q2^2 - 
+    12*mm^4*mo^11*Q2^2 - 6*mm^12*mo*Q2^3 + 18*mm^10*mN^2*mo*Q2^3 - 
+    18*mm^8*mN^4*mo*Q2^3 + 6*mm^6*mN^6*mo*Q2^3 + 12*mm^10*mN*mo^2*Q2^3 - 
+    24*mm^8*mN^3*mo^2*Q2^3 + 12*mm^6*mN^5*mo^2*Q2^3 + 18*mm^10*mo^3*Q2^3 - 
+    12*mm^8*mN^2*mo^3*Q2^3 - 6*mm^6*mN^4*mo^3*Q2^3 - 24*mm^8*mN*mo^4*Q2^3 - 
+    24*mm^6*mN^3*mo^4*Q2^3 - 18*mm^8*mo^5*Q2^3 - 6*mm^6*mN^2*mo^5*Q2^3 + 
+    12*mm^6*mN*mo^6*Q2^3 + 6*mm^6*mo^7*Q2^3 + 
+    96*mm^14*mN^3*\[CapitalLambda]0^2 - 588*mm^12*mN^5*\[CapitalLambda]0^2 + 
+    1512*mm^10*mN^7*\[CapitalLambda]0^2 - 2100*mm^8*mN^9*
+     \[CapitalLambda]0^2 + 1680*mm^6*mN^11*\[CapitalLambda]0^2 - 
+    756*mm^4*mN^13*\[CapitalLambda]0^2 + 168*mm^2*mN^15*\[CapitalLambda]0^2 - 
+    12*mN^17*\[CapitalLambda]0^2 - 144*mm^12*mN^4*mo*\[CapitalLambda]0^2 + 
+    744*mm^10*mN^6*mo*\[CapitalLambda]0^2 - 1560*mm^8*mN^8*mo*
+     \[CapitalLambda]0^2 + 1680*mm^6*mN^10*mo*\[CapitalLambda]0^2 - 
+    960*mm^4*mN^12*mo*\[CapitalLambda]0^2 + 264*mm^2*mN^14*mo*
+     \[CapitalLambda]0^2 - 24*mN^16*mo*\[CapitalLambda]0^2 + 
+    84*mm^14*mN*mo^2*\[CapitalLambda]0^2 - 1056*mm^12*mN^3*mo^2*
+     \[CapitalLambda]0^2 + 3252*mm^10*mN^5*mo^2*\[CapitalLambda]0^2 - 
+    4080*mm^8*mN^7*mo^2*\[CapitalLambda]0^2 + 1980*mm^6*mN^9*mo^2*
+     \[CapitalLambda]0^2 + 96*mm^4*mN^11*mo^2*\[CapitalLambda]0^2 - 
+    324*mm^2*mN^13*mo^2*\[CapitalLambda]0^2 + 
+    48*mN^15*mo^2*\[CapitalLambda]0^2 - 144*mm^12*mN^2*mo^3*
+     \[CapitalLambda]0^2 + 1488*mm^10*mN^4*mo^3*\[CapitalLambda]0^2 - 
+    3432*mm^8*mN^6*mo^3*\[CapitalLambda]0^2 + 2688*mm^6*mN^8*mo^3*
+     \[CapitalLambda]0^2 - 192*mm^4*mN^10*mo^3*\[CapitalLambda]0^2 - 
+    528*mm^2*mN^12*mo^3*\[CapitalLambda]0^2 + 
+    120*mN^14*mo^3*\[CapitalLambda]0^2 - 516*mm^12*mN*mo^4*
+     \[CapitalLambda]0^2 + 3216*mm^10*mN^3*mo^4*\[CapitalLambda]0^2 - 
+    4680*mm^8*mN^5*mo^4*\[CapitalLambda]0^2 + 1680*mm^6*mN^7*mo^4*
+     \[CapitalLambda]0^2 + 348*mm^4*mN^9*mo^4*\[CapitalLambda]0^2 - 
+    48*mN^13*mo^4*\[CapitalLambda]0^2 + 744*mm^10*mN^2*mo^5*
+     \[CapitalLambda]0^2 - 3432*mm^8*mN^4*mo^5*\[CapitalLambda]0^2 + 
+    2016*mm^6*mN^6*mo^5*\[CapitalLambda]0^2 + 1152*mm^4*mN^8*mo^5*
+     \[CapitalLambda]0^2 - 264*mm^2*mN^10*mo^5*\[CapitalLambda]0^2 - 
+    216*mN^12*mo^5*\[CapitalLambda]0^2 + 1332*mm^10*mN*mo^6*
+     \[CapitalLambda]0^2 - 4176*mm^8*mN^3*mo^6*\[CapitalLambda]0^2 + 
+    1608*mm^6*mN^5*mo^6*\[CapitalLambda]0^2 + 480*mm^4*mN^7*mo^6*
+     \[CapitalLambda]0^2 + 36*mm^2*mN^9*mo^6*\[CapitalLambda]0^2 - 
+    48*mN^11*mo^6*\[CapitalLambda]0^2 - 1560*mm^8*mN^2*mo^7*
+     \[CapitalLambda]0^2 + 2688*mm^6*mN^4*mo^7*\[CapitalLambda]0^2 + 
+    1152*mm^4*mN^6*mo^7*\[CapitalLambda]0^2 + 1056*mm^2*mN^8*mo^7*
+     \[CapitalLambda]0^2 + 120*mN^10*mo^7*\[CapitalLambda]0^2 - 
+    1860*mm^8*mN*mo^8*\[CapitalLambda]0^2 + 2304*mm^6*mN^3*mo^8*
+     \[CapitalLambda]0^2 + 708*mm^4*mN^5*mo^8*\[CapitalLambda]0^2 + 
+    456*mm^2*mN^7*mo^8*\[CapitalLambda]0^2 + 
+    120*mN^9*mo^8*\[CapitalLambda]0^2 + 1680*mm^6*mN^2*mo^9*
+     \[CapitalLambda]0^2 - 192*mm^4*mN^4*mo^9*\[CapitalLambda]0^2 - 
+    264*mm^2*mN^6*mo^9*\[CapitalLambda]0^2 + 
+    120*mN^8*mo^9*\[CapitalLambda]0^2 + 1500*mm^6*mN*mo^10*
+     \[CapitalLambda]0^2 - 192*mm^4*mN^3*mo^10*\[CapitalLambda]0^2 - 
+    252*mm^2*mN^5*mo^10*\[CapitalLambda]0^2 - 
+    48*mN^7*mo^10*\[CapitalLambda]0^2 - 960*mm^4*mN^2*mo^11*
+     \[CapitalLambda]0^2 - 528*mm^2*mN^4*mo^11*\[CapitalLambda]0^2 - 
+    216*mN^6*mo^11*\[CapitalLambda]0^2 - 684*mm^4*mN*mo^12*
+     \[CapitalLambda]0^2 - 240*mm^2*mN^3*mo^12*\[CapitalLambda]0^2 - 
+    48*mN^5*mo^12*\[CapitalLambda]0^2 + 264*mm^2*mN^2*mo^13*
+     \[CapitalLambda]0^2 + 120*mN^4*mo^13*\[CapitalLambda]0^2 + 
+    156*mm^2*mN*mo^14*\[CapitalLambda]0^2 + 48*mN^3*mo^14*
+     \[CapitalLambda]0^2 - 24*mN^2*mo^15*\[CapitalLambda]0^2 - 
+    12*mN*mo^16*\[CapitalLambda]0^2 + 3*mm^14*mN*Q2*\[CapitalLambda]0^2 - 
+    192*mm^12*mN^3*Q2*\[CapitalLambda]0^2 + 795*mm^10*mN^5*Q2*
+     \[CapitalLambda]0^2 - 1320*mm^8*mN^7*Q2*\[CapitalLambda]0^2 + 
+    1065*mm^6*mN^9*Q2*\[CapitalLambda]0^2 - 408*mm^4*mN^11*Q2*
+     \[CapitalLambda]0^2 + 57*mm^2*mN^13*Q2*\[CapitalLambda]0^2 - 
+    42*mm^14*mo*Q2*\[CapitalLambda]0^2 + 246*mm^12*mN^2*mo*Q2*
+     \[CapitalLambda]0^2 - 354*mm^10*mN^4*mo*Q2*\[CapitalLambda]0^2 - 
+    30*mm^8*mN^6*mo*Q2*\[CapitalLambda]0^2 + 378*mm^6*mN^8*mo*Q2*
+     \[CapitalLambda]0^2 - 222*mm^4*mN^10*mo*Q2*\[CapitalLambda]0^2 + 
+    18*mm^2*mN^12*mo*Q2*\[CapitalLambda]0^2 + 
+    6*mN^14*mo*Q2*\[CapitalLambda]0^2 - 84*mm^12*mN*mo^2*Q2*
+     \[CapitalLambda]0^2 + 954*mm^10*mN^3*mo^2*Q2*\[CapitalLambda]0^2 - 
+    1524*mm^8*mN^5*mo^2*Q2*\[CapitalLambda]0^2 + 252*mm^6*mN^7*mo^2*Q2*
+     \[CapitalLambda]0^2 + 684*mm^4*mN^9*mo^2*Q2*\[CapitalLambda]0^2 - 
+    294*mm^2*mN^11*mo^2*Q2*\[CapitalLambda]0^2 + 
+    12*mN^13*mo^2*Q2*\[CapitalLambda]0^2 + 258*mm^12*mo^3*Q2*
+     \[CapitalLambda]0^2 - 660*mm^10*mN^2*mo^3*Q2*\[CapitalLambda]0^2 - 
+    546*mm^8*mN^4*mo^3*Q2*\[CapitalLambda]0^2 + 1200*mm^6*mN^6*mo^3*Q2*
+     \[CapitalLambda]0^2 - 114*mm^4*mN^8*mo^3*Q2*\[CapitalLambda]0^2 - 
+    108*mm^2*mN^10*mo^3*Q2*\[CapitalLambda]0^2 - 
+    30*mN^12*mo^3*Q2*\[CapitalLambda]0^2 + 267*mm^10*mN*mo^4*Q2*
+     \[CapitalLambda]0^2 - 1392*mm^8*mN^3*mo^4*Q2*\[CapitalLambda]0^2 + 
+    534*mm^6*mN^5*mo^4*Q2*\[CapitalLambda]0^2 - 240*mm^4*mN^7*mo^4*Q2*
+     \[CapitalLambda]0^2 + 519*mm^2*mN^9*mo^4*Q2*\[CapitalLambda]0^2 - 
+    72*mN^11*mo^4*Q2*\[CapitalLambda]0^2 - 666*mm^10*mo^5*Q2*
+     \[CapitalLambda]0^2 + 318*mm^8*mN^2*mo^5*Q2*\[CapitalLambda]0^2 + 
+    1284*mm^6*mN^4*mo^5*Q2*\[CapitalLambda]0^2 + 852*mm^4*mN^6*mo^5*Q2*
+     \[CapitalLambda]0^2 + 174*mm^2*mN^8*mo^5*Q2*\[CapitalLambda]0^2 + 
+    54*mN^10*mo^5*Q2*\[CapitalLambda]0^2 - 276*mm^8*mN*mo^6*Q2*
+     \[CapitalLambda]0^2 + 828*mm^6*mN^3*mo^6*Q2*\[CapitalLambda]0^2 + 
+    216*mm^4*mN^5*mo^6*Q2*\[CapitalLambda]0^2 - 276*mm^2*mN^7*mo^6*Q2*
+     \[CapitalLambda]0^2 + 180*mN^9*mo^6*Q2*\[CapitalLambda]0^2 + 
+    930*mm^8*mo^7*Q2*\[CapitalLambda]0^2 + 576*mm^6*mN^2*mo^7*Q2*
+     \[CapitalLambda]0^2 - 132*mm^4*mN^4*mo^7*Q2*\[CapitalLambda]0^2 + 
+    24*mm^2*mN^6*mo^7*Q2*\[CapitalLambda]0^2 - 
+    30*mN^8*mo^7*Q2*\[CapitalLambda]0^2 + 9*mm^6*mN*mo^8*Q2*
+     \[CapitalLambda]0^2 - 408*mm^4*mN^3*mo^8*Q2*\[CapitalLambda]0^2 - 
+    201*mm^2*mN^5*mo^8*Q2*\[CapitalLambda]0^2 - 
+    240*mN^7*mo^8*Q2*\[CapitalLambda]0^2 - 750*mm^6*mo^9*Q2*
+     \[CapitalLambda]0^2 - 726*mm^4*mN^2*mo^9*Q2*\[CapitalLambda]0^2 - 
+    306*mm^2*mN^4*mo^9*Q2*\[CapitalLambda]0^2 - 
+    30*mN^6*mo^9*Q2*\[CapitalLambda]0^2 + 156*mm^4*mN*mo^10*Q2*
+     \[CapitalLambda]0^2 + 282*mm^2*mN^3*mo^10*Q2*\[CapitalLambda]0^2 + 
+    180*mN^5*mo^10*Q2*\[CapitalLambda]0^2 + 342*mm^4*mo^11*Q2*
+     \[CapitalLambda]0^2 + 276*mm^2*mN^2*mo^11*Q2*\[CapitalLambda]0^2 + 
+    54*mN^4*mo^11*Q2*\[CapitalLambda]0^2 - 87*mm^2*mN*mo^12*Q2*
+     \[CapitalLambda]0^2 - 72*mN^3*mo^12*Q2*\[CapitalLambda]0^2 - 
+    78*mm^2*mo^13*Q2*\[CapitalLambda]0^2 - 30*mN^2*mo^13*Q2*
+     \[CapitalLambda]0^2 + 12*mN*mo^14*Q2*\[CapitalLambda]0^2 + 
+    6*mo^15*Q2*\[CapitalLambda]0^2 - 6*mm^12*mN*Q2^2*\[CapitalLambda]0^2 + 
+    105*mm^10*mN^3*Q2^2*\[CapitalLambda]0^2 - 246*mm^8*mN^5*Q2^2*
+     \[CapitalLambda]0^2 + 204*mm^6*mN^7*Q2^2*\[CapitalLambda]0^2 - 
+    60*mm^4*mN^9*Q2^2*\[CapitalLambda]0^2 + 3*mm^2*mN^11*Q2^2*
+     \[CapitalLambda]0^2 + 72*mm^12*mo*Q2^2*\[CapitalLambda]0^2 - 
+    294*mm^10*mN^2*mo*Q2^2*\[CapitalLambda]0^2 + 360*mm^8*mN^4*mo*Q2^2*
+     \[CapitalLambda]0^2 - 192*mm^6*mN^6*mo*Q2^2*\[CapitalLambda]0^2 + 
+    72*mm^4*mN^8*mo*Q2^2*\[CapitalLambda]0^2 - 18*mm^2*mN^10*mo*Q2^2*
+     \[CapitalLambda]0^2 - 51*mm^10*mN*mo^2*Q2^2*\[CapitalLambda]0^2 + 
+    84*mm^8*mN^3*mo^2*Q2^2*\[CapitalLambda]0^2 - 360*mm^6*mN^5*mo^2*Q2^2*
+     \[CapitalLambda]0^2 + 336*mm^4*mN^7*mo^2*Q2^2*\[CapitalLambda]0^2 - 
+    57*mm^2*mN^9*mo^2*Q2^2*\[CapitalLambda]0^2 - 312*mm^10*mo^3*Q2^2*
+     \[CapitalLambda]0^2 + 504*mm^8*mN^2*mo^3*Q2^2*\[CapitalLambda]0^2 + 
+    48*mm^6*mN^4*mo^3*Q2^2*\[CapitalLambda]0^2 + 48*mm^2*mN^8*mo^3*Q2^2*
+     \[CapitalLambda]0^2 + 258*mm^8*mN*mo^4*Q2^2*\[CapitalLambda]0^2 - 
+    132*mm^6*mN^3*mo^4*Q2^2*\[CapitalLambda]0^2 - 264*mm^4*mN^5*mo^4*Q2^2*
+     \[CapitalLambda]0^2 + 198*mm^2*mN^7*mo^4*Q2^2*\[CapitalLambda]0^2 + 
+    528*mm^8*mo^5*Q2^2*\[CapitalLambda]0^2 - 96*mm^6*mN^2*mo^5*Q2^2*
+     \[CapitalLambda]0^2 - 48*mm^4*mN^4*mo^5*Q2^2*\[CapitalLambda]0^2 - 
+    12*mm^2*mN^6*mo^5*Q2^2*\[CapitalLambda]0^2 - 384*mm^6*mN*mo^6*Q2^2*
+     \[CapitalLambda]0^2 - 240*mm^4*mN^3*mo^6*Q2^2*\[CapitalLambda]0^2 - 
+    282*mm^2*mN^5*mo^6*Q2^2*\[CapitalLambda]0^2 - 
+    432*mm^6*mo^7*Q2^2*\[CapitalLambda]0^2 - 192*mm^4*mN^2*mo^7*Q2^2*
+     \[CapitalLambda]0^2 - 72*mm^2*mN^4*mo^7*Q2^2*\[CapitalLambda]0^2 + 
+    228*mm^4*mN*mo^8*Q2^2*\[CapitalLambda]0^2 + 183*mm^2*mN^3*mo^8*Q2^2*
+     \[CapitalLambda]0^2 + 168*mm^4*mo^9*Q2^2*\[CapitalLambda]0^2 + 
+    78*mm^2*mN^2*mo^9*Q2^2*\[CapitalLambda]0^2 - 45*mm^2*mN*mo^10*Q2^2*
+     \[CapitalLambda]0^2 - 24*mm^2*mo^11*Q2^2*\[CapitalLambda]0^2 + 
+    3*mm^10*mN*Q2^3*\[CapitalLambda]0^2 - 9*mm^8*mN^3*Q2^3*
+     \[CapitalLambda]0^2 + 9*mm^6*mN^5*Q2^3*\[CapitalLambda]0^2 - 
+    3*mm^4*mN^7*Q2^3*\[CapitalLambda]0^2 - 30*mm^10*mo*Q2^3*
+     \[CapitalLambda]0^2 + 72*mm^8*mN^2*mo*Q2^3*\[CapitalLambda]0^2 - 
+    54*mm^6*mN^4*mo*Q2^3*\[CapitalLambda]0^2 + 12*mm^4*mN^6*mo*Q2^3*
+     \[CapitalLambda]0^2 + 51*mm^8*mN*mo^2*Q2^3*\[CapitalLambda]0^2 - 
+    90*mm^6*mN^3*mo^2*Q2^3*\[CapitalLambda]0^2 + 39*mm^4*mN^5*mo^2*Q2^3*
+     \[CapitalLambda]0^2 + 78*mm^8*mo^3*Q2^3*\[CapitalLambda]0^2 - 
+    48*mm^6*mN^2*mo^3*Q2^3*\[CapitalLambda]0^2 - 6*mm^4*mN^4*mo^3*Q2^3*
+     \[CapitalLambda]0^2 - 87*mm^6*mN*mo^4*Q2^3*\[CapitalLambda]0^2 - 
+    69*mm^4*mN^3*mo^4*Q2^3*\[CapitalLambda]0^2 - 
+    66*mm^6*mo^5*Q2^3*\[CapitalLambda]0^2 - 24*mm^4*mN^2*mo^5*Q2^3*
+     \[CapitalLambda]0^2 + 33*mm^4*mN*mo^6*Q2^3*\[CapitalLambda]0^2 + 
+    18*mm^4*mo^7*Q2^3*\[CapitalLambda]0^2 + 332*mm^12*mN^3*
+     \[CapitalLambda]0^4 - 1748*mm^10*mN^5*\[CapitalLambda]0^4 + 
+    3760*mm^8*mN^7*\[CapitalLambda]0^4 - 4200*mm^6*mN^9*\[CapitalLambda]0^4 + 
+    2540*mm^4*mN^11*\[CapitalLambda]0^4 - 772*mm^2*mN^13*
+     \[CapitalLambda]0^4 + 88*mN^15*\[CapitalLambda]0^4 - 
+    352*mm^10*mN^4*mo*\[CapitalLambda]0^4 + 1552*mm^8*mN^6*mo*
+     \[CapitalLambda]0^4 - 2688*mm^6*mN^8*mo*\[CapitalLambda]0^4 + 
+    2272*mm^4*mN^10*mo*\[CapitalLambda]0^4 - 928*mm^2*mN^12*mo*
+     \[CapitalLambda]0^4 + 144*mN^14*mo*\[CapitalLambda]0^4 + 
+    252*mm^12*mN*mo^2*\[CapitalLambda]0^4 - 2768*mm^10*mN^3*mo^2*
+     \[CapitalLambda]0^4 + 7024*mm^8*mN^5*mo^2*\[CapitalLambda]0^4 - 
+    6816*mm^6*mN^7*mo^2*\[CapitalLambda]0^4 + 2204*mm^4*mN^9*mo^2*
+     \[CapitalLambda]0^4 + 272*mm^2*mN^11*mo^2*\[CapitalLambda]0^4 - 
+    168*mN^13*mo^2*\[CapitalLambda]0^4 - 360*mm^10*mN^2*mo^3*
+     \[CapitalLambda]0^4 + 3144*mm^8*mN^4*mo^3*\[CapitalLambda]0^4 - 
+    5872*mm^6*mN^6*mo^3*\[CapitalLambda]0^4 + 3440*mm^4*mN^8*mo^3*
+     \[CapitalLambda]0^4 - 40*mm^2*mN^10*mo^3*\[CapitalLambda]0^4 - 
+    312*mN^12*mo^3*\[CapitalLambda]0^4 - 1332*mm^10*mN*mo^4*
+     \[CapitalLambda]0^4 + 6800*mm^8*mN^3*mo^4*\[CapitalLambda]0^4 - 
+    7728*mm^6*mN^5*mo^4*\[CapitalLambda]0^4 + 1896*mm^4*mN^7*mo^4*
+     \[CapitalLambda]0^4 + 388*mm^2*mN^9*mo^4*\[CapitalLambda]0^4 - 
+    24*mN^11*mo^4*\[CapitalLambda]0^4 + 1560*mm^8*mN^2*mo^5*
+     \[CapitalLambda]0^4 - 5760*mm^6*mN^4*mo^5*\[CapitalLambda]0^4 + 
+    2160*mm^4*mN^6*mo^5*\[CapitalLambda]0^4 + 1088*mm^2*mN^8*mo^5*
+     \[CapitalLambda]0^4 - 72*mN^10*mo^5*\[CapitalLambda]0^4 + 
+    2880*mm^8*mN*mo^6*\[CapitalLambda]0^4 - 7008*mm^6*mN^3*mo^6*
+     \[CapitalLambda]0^4 + 1768*mm^4*mN^5*mo^6*\[CapitalLambda]0^4 + 
+    96*mm^2*mN^7*mo^6*\[CapitalLambda]0^4 + 
+    88*mN^9*mo^6*\[CapitalLambda]0^4 - 2640*mm^6*mN^2*mo^7*
+     \[CapitalLambda]0^4 + 3280*mm^4*mN^4*mo^7*\[CapitalLambda]0^4 + 
+    816*mm^2*mN^6*mo^7*\[CapitalLambda]0^4 + 
+    528*mN^8*mo^7*\[CapitalLambda]0^4 - 3240*mm^6*mN*mo^8*
+     \[CapitalLambda]0^4 + 2924*mm^4*mN^3*mo^8*\[CapitalLambda]0^4 + 
+    804*mm^2*mN^5*mo^8*\[CapitalLambda]0^4 + 
+    168*mN^7*mo^8*\[CapitalLambda]0^4 + 2160*mm^4*mN^2*mo^9*
+     \[CapitalLambda]0^4 - 96*mm^2*mN^4*mo^9*\[CapitalLambda]0^4 - 
+    192*mN^6*mo^9*\[CapitalLambda]0^4 + 1980*mm^4*mN*mo^10*
+     \[CapitalLambda]0^4 - 176*mm^2*mN^3*mo^10*\[CapitalLambda]0^4 - 
+    120*mN^5*mo^10*\[CapitalLambda]0^4 - 840*mm^2*mN^2*mo^11*
+     \[CapitalLambda]0^4 - 216*mN^4*mo^11*\[CapitalLambda]0^4 - 
+    612*mm^2*mN*mo^12*\[CapitalLambda]0^4 - 104*mN^3*mo^12*
+     \[CapitalLambda]0^4 + 120*mN^2*mo^13*\[CapitalLambda]0^4 + 
+    72*mN*mo^14*\[CapitalLambda]0^4 + 20*mm^12*mN*Q2*\[CapitalLambda]0^4 - 
+    636*mm^10*mN^3*Q2*\[CapitalLambda]0^4 + 2142*mm^8*mN^5*Q2*
+     \[CapitalLambda]0^4 - 2840*mm^6*mN^7*Q2*\[CapitalLambda]0^4 + 
+    1728*mm^4*mN^9*Q2*\[CapitalLambda]0^4 - 444*mm^2*mN^11*Q2*
+     \[CapitalLambda]0^4 + 30*mN^13*Q2*\[CapitalLambda]0^4 - 
+    126*mm^12*mo*Q2*\[CapitalLambda]0^4 + 596*mm^10*mN^2*mo*Q2*
+     \[CapitalLambda]0^4 - 642*mm^8*mN^4*mo*Q2*\[CapitalLambda]0^4 - 
+    184*mm^6*mN^6*mo*Q2*\[CapitalLambda]0^4 + 550*mm^4*mN^8*mo*Q2*
+     \[CapitalLambda]0^4 - 204*mm^2*mN^10*mo*Q2*\[CapitalLambda]0^4 + 
+    10*mN^12*mo*Q2*\[CapitalLambda]0^4 - 242*mm^10*mN*mo^2*Q2*
+     \[CapitalLambda]0^4 + 2160*mm^8*mN^3*mo^2*Q2*\[CapitalLambda]0^4 - 
+    2504*mm^6*mN^5*mo^2*Q2*\[CapitalLambda]0^4 - 132*mm^4*mN^7*mo^2*Q2*
+     \[CapitalLambda]0^4 + 874*mm^2*mN^9*mo^2*Q2*\[CapitalLambda]0^4 - 
+    156*mN^11*mo^2*Q2*\[CapitalLambda]0^4 + 666*mm^10*mo^3*Q2*
+     \[CapitalLambda]0^4 - 1314*mm^8*mN^2*mo^3*Q2*\[CapitalLambda]0^4 - 
+    1076*mm^6*mN^4*mo^3*Q2*\[CapitalLambda]0^4 + 1532*mm^4*mN^6*mo^3*Q2*
+     \[CapitalLambda]0^4 - 102*mm^2*mN^8*mo^3*Q2*\[CapitalLambda]0^4 - 
+    58*mN^10*mo^3*Q2*\[CapitalLambda]0^4 + 590*mm^8*mN*mo^4*Q2*
+     \[CapitalLambda]0^4 - 2336*mm^6*mN^3*mo^4*Q2*\[CapitalLambda]0^4 + 
+    700*mm^4*mN^5*mo^4*Q2*\[CapitalLambda]0^4 - 472*mm^2*mN^7*mo^4*Q2*
+     \[CapitalLambda]0^4 + 286*mN^9*mo^4*Q2*\[CapitalLambda]0^4 - 
+    1440*mm^8*mo^5*Q2*\[CapitalLambda]0^4 + 504*mm^6*mN^2*mo^5*Q2*
+     \[CapitalLambda]0^4 + 1560*mm^4*mN^4*mo^5*Q2*\[CapitalLambda]0^4 + 
+    840*mm^2*mN^6*mo^5*Q2*\[CapitalLambda]0^4 + 
+    96*mN^8*mo^5*Q2*\[CapitalLambda]0^4 - 480*mm^6*mN*mo^6*Q2*
+     \[CapitalLambda]0^4 + 1012*mm^4*mN^3*mo^6*Q2*\[CapitalLambda]0^4 + 
+    228*mm^2*mN^5*mo^6*Q2*\[CapitalLambda]0^4 - 
+    184*mN^7*mo^6*Q2*\[CapitalLambda]0^4 + 1620*mm^6*mo^7*Q2*
+     \[CapitalLambda]0^4 + 676*mm^4*mN^2*mo^7*Q2*\[CapitalLambda]0^4 - 
+    252*mm^2*mN^4*mo^7*Q2*\[CapitalLambda]0^4 - 
+    4*mN^6*mo^7*Q2*\[CapitalLambda]0^4 + 20*mm^4*mN*mo^8*Q2*
+     \[CapitalLambda]0^4 - 316*mm^2*mN^3*mo^8*Q2*\[CapitalLambda]0^4 - 
+    54*mN^5*mo^8*Q2*\[CapitalLambda]0^4 - 990*mm^4*mo^9*Q2*
+     \[CapitalLambda]0^4 - 588*mm^2*mN^2*mo^9*Q2*\[CapitalLambda]0^4 - 
+    134*mN^4*mo^9*Q2*\[CapitalLambda]0^4 + 130*mm^2*mN*mo^10*Q2*
+     \[CapitalLambda]0^4 + 116*mN^3*mo^10*Q2*\[CapitalLambda]0^4 + 
+    306*mm^2*mo^11*Q2*\[CapitalLambda]0^4 + 126*mN^2*mo^11*Q2*
+     \[CapitalLambda]0^4 - 38*mN*mo^12*Q2*\[CapitalLambda]0^4 - 
+    36*mo^13*Q2*\[CapitalLambda]0^4 - 34*mm^10*mN*Q2^2*\[CapitalLambda]0^4 + 
+    334*mm^8*mN^3*Q2^2*\[CapitalLambda]0^4 - 610*mm^6*mN^5*Q2^2*
+     \[CapitalLambda]0^4 + 392*mm^4*mN^7*Q2^2*\[CapitalLambda]0^4 - 
+    84*mm^2*mN^9*Q2^2*\[CapitalLambda]0^4 + 
+    2*mN^11*Q2^2*\[CapitalLambda]0^4 + 180*mm^10*mo*Q2^2*
+     \[CapitalLambda]0^4 - 580*mm^8*mN^2*mo*Q2^2*\[CapitalLambda]0^4 + 
+    528*mm^6*mN^4*mo*Q2^2*\[CapitalLambda]0^4 - 188*mm^4*mN^6*mo*Q2^2*
+     \[CapitalLambda]0^4 + 44*mm^2*mN^8*mo*Q2^2*\[CapitalLambda]0^4 - 
+    8*mN^10*mo*Q2^2*\[CapitalLambda]0^4 - 94*mm^8*mN*mo^2*Q2^2*
+     \[CapitalLambda]0^4 + 158*mm^6*mN^3*mo^2*Q2^2*\[CapitalLambda]0^4 - 
+    596*mm^4*mN^5*mo^2*Q2^2*\[CapitalLambda]0^4 + 390*mm^2*mN^7*mo^2*Q2^2*
+     \[CapitalLambda]0^4 - 30*mN^9*mo^2*Q2^2*\[CapitalLambda]0^4 - 
+    660*mm^8*mo^3*Q2^2*\[CapitalLambda]0^4 + 812*mm^6*mN^2*mo^3*Q2^2*
+     \[CapitalLambda]0^4 + 64*mm^4*mN^4*mo^3*Q2^2*\[CapitalLambda]0^4 + 
+    44*mm^2*mN^6*mo^3*Q2^2*\[CapitalLambda]0^4 + 
+    20*mN^8*mo^3*Q2^2*\[CapitalLambda]0^4 + 448*mm^6*mN*mo^4*Q2^2*
+     \[CapitalLambda]0^4 - 136*mm^4*mN^3*mo^4*Q2^2*\[CapitalLambda]0^4 - 
+    334*mm^2*mN^5*mo^4*Q2^2*\[CapitalLambda]0^4 + 
+    100*mN^7*mo^4*Q2^2*\[CapitalLambda]0^4 + 912*mm^6*mo^5*Q2^2*
+     \[CapitalLambda]0^4 - 132*mm^4*mN^2*mo^5*Q2^2*\[CapitalLambda]0^4 - 
+    64*mm^2*mN^4*mo^5*Q2^2*\[CapitalLambda]0^4 - 492*mm^4*mN*mo^6*Q2^2*
+     \[CapitalLambda]0^4 - 166*mm^2*mN^3*mo^6*Q2^2*\[CapitalLambda]0^4 - 
+    140*mN^5*mo^6*Q2^2*\[CapitalLambda]0^4 - 576*mm^4*mo^7*Q2^2*
+     \[CapitalLambda]0^4 - 180*mm^2*mN^2*mo^7*Q2^2*\[CapitalLambda]0^4 - 
+    40*mN^4*mo^7*Q2^2*\[CapitalLambda]0^4 + 194*mm^2*mN*mo^8*Q2^2*
+     \[CapitalLambda]0^4 + 90*mN^3*mo^8*Q2^2*\[CapitalLambda]0^4 + 
+    156*mm^2*mo^9*Q2^2*\[CapitalLambda]0^4 + 40*mN^2*mo^9*Q2^2*
+     \[CapitalLambda]0^4 - 22*mN*mo^10*Q2^2*\[CapitalLambda]0^4 - 
+    12*mo^11*Q2^2*\[CapitalLambda]0^4 + 14*mm^8*mN*Q2^3*\[CapitalLambda]0^4 - 
+    35*mm^6*mN^3*Q2^3*\[CapitalLambda]0^4 + 28*mm^4*mN^5*Q2^3*
+     \[CapitalLambda]0^4 - 7*mm^2*mN^7*Q2^3*\[CapitalLambda]0^4 - 
+    60*mm^8*mo*Q2^3*\[CapitalLambda]0^4 + 112*mm^6*mN^2*mo*Q2^3*
+     \[CapitalLambda]0^4 - 56*mm^4*mN^4*mo*Q2^3*\[CapitalLambda]0^4 + 
+    4*mm^2*mN^6*mo*Q2^3*\[CapitalLambda]0^4 + 91*mm^6*mN*mo^2*Q2^3*
+     \[CapitalLambda]0^4 - 126*mm^4*mN^3*mo^2*Q2^3*\[CapitalLambda]0^4 + 
+    43*mm^2*mN^5*mo^2*Q2^3*\[CapitalLambda]0^4 + 
+    132*mm^6*mo^3*Q2^3*\[CapitalLambda]0^4 - 62*mm^4*mN^2*mo^3*Q2^3*
+     \[CapitalLambda]0^4 + 10*mm^2*mN^4*mo^3*Q2^3*\[CapitalLambda]0^4 - 
+    110*mm^4*mN*mo^4*Q2^3*\[CapitalLambda]0^4 - 65*mm^2*mN^3*mo^4*Q2^3*
+     \[CapitalLambda]0^4 - 90*mm^4*mo^5*Q2^3*\[CapitalLambda]0^4 - 
+    32*mm^2*mN^2*mo^5*Q2^3*\[CapitalLambda]0^4 + 29*mm^2*mN*mo^6*Q2^3*
+     \[CapitalLambda]0^4 + 18*mm^2*mo^7*Q2^3*\[CapitalLambda]0^4 + 
+    648*mm^10*mN^3*\[CapitalLambda]0^6 - 2860*mm^8*mN^5*\[CapitalLambda]0^6 + 
+    4960*mm^6*mN^7*\[CapitalLambda]0^6 - 4200*mm^4*mN^9*\[CapitalLambda]0^6 + 
+    1720*mm^2*mN^11*\[CapitalLambda]0^6 - 268*mN^13*\[CapitalLambda]0^6 - 
+    440*mm^8*mN^4*mo*\[CapitalLambda]0^6 + 1648*mm^6*mN^6*mo*
+     \[CapitalLambda]0^6 - 2304*mm^4*mN^8*mo*\[CapitalLambda]0^6 + 
+    1424*mm^2*mN^10*mo*\[CapitalLambda]0^6 - 
+    328*mN^12*mo*\[CapitalLambda]0^6 + 420*mm^10*mN*mo^2*
+     \[CapitalLambda]0^6 - 3880*mm^8*mN^3*mo^2*\[CapitalLambda]0^6 + 
+    7816*mm^6*mN^5*mo^2*\[CapitalLambda]0^6 - 5568*mm^4*mN^7*mo^2*
+     \[CapitalLambda]0^6 + 1108*mm^2*mN^9*mo^2*\[CapitalLambda]0^6 + 
+    104*mN^11*mo^2*\[CapitalLambda]0^6 - 480*mm^8*mN^2*mo^3*
+     \[CapitalLambda]0^6 + 3456*mm^6*mN^4*mo^3*\[CapitalLambda]0^6 - 
+    4944*mm^4*mN^6*mo^3*\[CapitalLambda]0^6 + 1888*mm^2*mN^8*mo^3*
+     \[CapitalLambda]0^6 + 80*mN^10*mo^3*\[CapitalLambda]0^6 - 
+    1860*mm^8*mN*mo^4*\[CapitalLambda]0^6 + 7280*mm^6*mN^3*mo^4*
+     \[CapitalLambda]0^6 - 5904*mm^4*mN^5*mo^4*\[CapitalLambda]0^6 + 
+    576*mm^2*mN^7*mo^4*\[CapitalLambda]0^6 + 
+    292*mN^9*mo^4*\[CapitalLambda]0^6 + 1680*mm^6*mN^2*mo^5*
+     \[CapitalLambda]0^6 - 4608*mm^4*mN^4*mo^5*\[CapitalLambda]0^6 + 
+    576*mm^2*mN^6*mo^5*\[CapitalLambda]0^6 + 
+    368*mN^8*mo^5*\[CapitalLambda]0^6 + 3240*mm^6*mN*mo^6*
+     \[CapitalLambda]0^6 - 5568*mm^4*mN^3*mo^6*\[CapitalLambda]0^6 + 
+    536*mm^2*mN^5*mo^6*\[CapitalLambda]0^6 - 
+    240*mN^7*mo^6*\[CapitalLambda]0^6 - 2160*mm^4*mN^2*mo^7*
+     \[CapitalLambda]0^6 + 1568*mm^2*mN^4*mo^7*\[CapitalLambda]0^6 + 
+    96*mN^6*mo^7*\[CapitalLambda]0^6 - 2760*mm^4*mN*mo^8*
+     \[CapitalLambda]0^6 + 1576*mm^2*mN^3*mo^8*\[CapitalLambda]0^6 + 
+    348*mN^5*mo^8*\[CapitalLambda]0^6 + 1200*mm^2*mN^2*mo^9*
+     \[CapitalLambda]0^6 + 24*mN^4*mo^9*\[CapitalLambda]0^6 + 
+    1140*mm^2*mN*mo^10*\[CapitalLambda]0^6 - 
+    56*mN^3*mo^10*\[CapitalLambda]0^6 - 240*mN^2*mo^11*\[CapitalLambda]0^6 - 
+    180*mN*mo^12*\[CapitalLambda]0^6 + 57*mm^10*mN*Q2*\[CapitalLambda]0^6 - 
+    1140*mm^8*mN^3*Q2*\[CapitalLambda]0^6 + 3018*mm^6*mN^5*Q2*
+     \[CapitalLambda]0^6 - 3000*mm^4*mN^7*Q2*\[CapitalLambda]0^6 + 
+    1221*mm^2*mN^9*Q2*\[CapitalLambda]0^6 - 
+    156*mN^11*Q2*\[CapitalLambda]0^6 - 210*mm^10*mo*Q2*\[CapitalLambda]0^6 + 
+    760*mm^8*mN^2*mo*Q2*\[CapitalLambda]0^6 - 588*mm^6*mN^4*mo*Q2*
+     \[CapitalLambda]0^6 - 192*mm^4*mN^6*mo*Q2*\[CapitalLambda]0^6 + 
+    278*mm^2*mN^8*mo*Q2*\[CapitalLambda]0^6 - 
+    48*mN^10*mo*Q2*\[CapitalLambda]0^6 - 370*mm^8*mN*mo^2*Q2*
+     \[CapitalLambda]0^6 + 2460*mm^6*mN^3*mo^2*Q2*\[CapitalLambda]0^6 - 
+    1848*mm^4*mN^5*mo^2*Q2*\[CapitalLambda]0^6 - 444*mm^2*mN^7*mo^2*Q2*
+     \[CapitalLambda]0^6 + 346*mN^9*mo^2*Q2*\[CapitalLambda]0^6 + 
+    930*mm^8*mo^3*Q2*\[CapitalLambda]0^6 - 1296*mm^6*mN^2*mo^3*Q2*
+     \[CapitalLambda]0^6 - 1092*mm^4*mN^4*mo^3*Q2*\[CapitalLambda]0^6 + 
+    904*mm^2*mN^6*mo^3*Q2*\[CapitalLambda]0^6 - 
+    78*mN^8*mo^3*Q2*\[CapitalLambda]0^6 + 650*mm^6*mN*mo^4*Q2*
+     \[CapitalLambda]0^6 - 1776*mm^4*mN^3*mo^4*Q2*\[CapitalLambda]0^6 + 
+    374*mm^2*mN^5*mo^4*Q2*\[CapitalLambda]0^6 - 
+    232*mN^7*mo^4*Q2*\[CapitalLambda]0^6 - 1620*mm^6*mo^5*Q2*
+     \[CapitalLambda]0^6 + 384*mm^4*mN^2*mo^5*Q2*\[CapitalLambda]0^6 + 
+    756*mm^2*mN^4*mo^5*Q2*\[CapitalLambda]0^6 + 
+    336*mN^6*mo^5*Q2*\[CapitalLambda]0^6 - 384*mm^4*mN*mo^6*Q2*
+     \[CapitalLambda]0^6 + 500*mm^2*mN^3*mo^6*Q2*\[CapitalLambda]0^6 + 
+    84*mN^5*mo^6*Q2*\[CapitalLambda]0^6 + 1380*mm^4*mo^7*Q2*
+     \[CapitalLambda]0^6 + 296*mm^2*mN^2*mo^7*Q2*\[CapitalLambda]0^6 - 
+    156*mN^4*mo^7*Q2*\[CapitalLambda]0^6 + 13*mm^2*mN*mo^8*Q2*
+     \[CapitalLambda]0^6 - 76*mN^3*mo^8*Q2*\[CapitalLambda]0^6 - 
+    570*mm^2*mo^9*Q2*\[CapitalLambda]0^6 - 144*mN^2*mo^9*Q2*
+     \[CapitalLambda]0^6 + 34*mN*mo^10*Q2*\[CapitalLambda]0^6 + 
+    90*mo^11*Q2*\[CapitalLambda]0^6 - 80*mm^8*mN*Q2^2*\[CapitalLambda]0^6 + 
+    526*mm^6*mN^3*Q2^2*\[CapitalLambda]0^6 - 714*mm^4*mN^5*Q2^2*
+     \[CapitalLambda]0^6 + 316*mm^2*mN^7*Q2^2*\[CapitalLambda]0^6 - 
+    36*mN^9*Q2^2*\[CapitalLambda]0^6 + 240*mm^8*mo*Q2^2*\[CapitalLambda]0^6 - 
+    580*mm^6*mN^2*mo*Q2^2*\[CapitalLambda]0^6 + 384*mm^4*mN^4*mo*Q2^2*
+     \[CapitalLambda]0^6 - 88*mm^2*mN^6*mo*Q2^2*\[CapitalLambda]0^6 + 
+    8*mN^8*mo*Q2^2*\[CapitalLambda]0^6 - 106*mm^6*mN*mo^2*Q2^2*
+     \[CapitalLambda]0^6 + 210*mm^4*mN^3*mo^2*Q2^2*\[CapitalLambda]0^6 - 
+    448*mm^2*mN^5*mo^2*Q2^2*\[CapitalLambda]0^6 + 
+    150*mN^7*mo^2*Q2^2*\[CapitalLambda]0^6 - 720*mm^6*mo^3*Q2^2*
+     \[CapitalLambda]0^6 + 612*mm^4*mN^2*mo^3*Q2^2*\[CapitalLambda]0^6 + 
+    80*mm^2*mN^4*mo^3*Q2^2*\[CapitalLambda]0^6 + 
+    20*mN^6*mo^3*Q2^2*\[CapitalLambda]0^6 + 396*mm^4*mN*mo^4*Q2^2*
+     \[CapitalLambda]0^6 - 20*mm^2*mN^3*mo^4*Q2^2*\[CapitalLambda]0^6 - 
+    142*mN^5*mo^4*Q2^2*\[CapitalLambda]0^6 + 768*mm^4*mo^5*Q2^2*
+     \[CapitalLambda]0^6 - 72*mm^2*mN^2*mo^5*Q2^2*\[CapitalLambda]0^6 - 
+    16*mN^4*mo^5*Q2^2*\[CapitalLambda]0^6 - 264*mm^2*mN*mo^6*Q2^2*
+     \[CapitalLambda]0^6 - 22*mN^3*mo^6*Q2^2*\[CapitalLambda]0^6 - 
+    336*mm^2*mo^7*Q2^2*\[CapitalLambda]0^6 - 60*mN^2*mo^7*Q2^2*
+     \[CapitalLambda]0^6 + 50*mN*mo^8*Q2^2*\[CapitalLambda]0^6 + 
+    48*mo^9*Q2^2*\[CapitalLambda]0^6 + 26*mm^6*mN*Q2^3*\[CapitalLambda]0^6 - 
+    51*mm^4*mN^3*Q2^3*\[CapitalLambda]0^6 + 29*mm^2*mN^5*Q2^3*
+     \[CapitalLambda]0^6 - 4*mN^7*Q2^3*\[CapitalLambda]0^6 - 
+    60*mm^6*mo*Q2^3*\[CapitalLambda]0^6 + 84*mm^4*mN^2*mo*Q2^3*
+     \[CapitalLambda]0^6 - 22*mm^2*mN^4*mo*Q2^3*\[CapitalLambda]0^6 - 
+    2*mN^6*mo*Q2^3*\[CapitalLambda]0^6 + 87*mm^4*mN*mo^2*Q2^3*
+     \[CapitalLambda]0^6 - 78*mm^2*mN^3*mo^2*Q2^3*\[CapitalLambda]0^6 + 
+    16*mN^5*mo^2*Q2^3*\[CapitalLambda]0^6 + 108*mm^4*mo^3*Q2^3*
+     \[CapitalLambda]0^6 - 28*mm^2*mN^2*mo^3*Q2^3*\[CapitalLambda]0^6 + 
+    10*mN^4*mo^3*Q2^3*\[CapitalLambda]0^6 - 55*mm^2*mN*mo^4*Q2^3*
+     \[CapitalLambda]0^6 - 20*mN^3*mo^4*Q2^3*\[CapitalLambda]0^6 - 
+    54*mm^2*mo^5*Q2^3*\[CapitalLambda]0^6 - 14*mN^2*mo^5*Q2^3*
+     \[CapitalLambda]0^6 + 8*mN*mo^6*Q2^3*\[CapitalLambda]0^6 + 
+    6*mo^7*Q2^3*\[CapitalLambda]0^6 + 780*mm^8*mN^3*\[CapitalLambda]0^8 - 
+    2780*mm^6*mN^5*\[CapitalLambda]0^8 + 3660*mm^4*mN^7*\[CapitalLambda]0^8 - 
+    2100*mm^2*mN^9*\[CapitalLambda]0^8 + 440*mN^11*\[CapitalLambda]0^8 - 
+    280*mm^6*mN^4*mo*\[CapitalLambda]0^8 + 912*mm^4*mN^6*mo*
+     \[CapitalLambda]0^8 - 984*mm^2*mN^8*mo*\[CapitalLambda]0^8 + 
+    352*mN^10*mo*\[CapitalLambda]0^8 + 420*mm^8*mN*mo^2*\[CapitalLambda]0^8 - 
+    3080*mm^6*mN^3*mo^2*\[CapitalLambda]0^8 + 4644*mm^4*mN^5*mo^2*
+     \[CapitalLambda]0^8 - 2208*mm^2*mN^7*mo^2*\[CapitalLambda]0^8 + 
+    224*mN^9*mo^2*\[CapitalLambda]0^8 - 360*mm^6*mN^2*mo^3*
+     \[CapitalLambda]0^8 + 2064*mm^4*mN^4*mo^3*\[CapitalLambda]0^8 - 
+    2040*mm^2*mN^6*mo^3*\[CapitalLambda]0^8 + 
+    368*mN^8*mo^3*\[CapitalLambda]0^8 - 1500*mm^6*mN*mo^4*
+     \[CapitalLambda]0^8 + 4020*mm^4*mN^3*mo^4*\[CapitalLambda]0^8 - 
+    1944*mm^2*mN^5*mo^4*\[CapitalLambda]0^8 - 
+    96*mN^7*mo^4*\[CapitalLambda]0^8 + 960*mm^4*mN^2*mo^5*
+     \[CapitalLambda]0^8 - 1704*mm^2*mN^4*mo^5*\[CapitalLambda]0^8 - 
+    144*mN^6*mo^5*\[CapitalLambda]0^8 + 1980*mm^4*mN*mo^6*
+     \[CapitalLambda]0^8 - 2016*mm^2*mN^3*mo^6*\[CapitalLambda]0^8 - 
+    80*mN^5*mo^6*\[CapitalLambda]0^8 - 840*mm^2*mN^2*mo^7*
+     \[CapitalLambda]0^8 + 208*mN^4*mo^7*\[CapitalLambda]0^8 - 
+    1140*mm^2*mN*mo^8*\[CapitalLambda]0^8 + 296*mN^3*mo^8*
+     \[CapitalLambda]0^8 + 240*mN^2*mo^9*\[CapitalLambda]0^8 + 
+    240*mN*mo^10*\[CapitalLambda]0^8 + 90*mm^8*mN*Q2*\[CapitalLambda]0^8 - 
+    1200*mm^6*mN^3*Q2*\[CapitalLambda]0^8 + 2352*mm^4*mN^5*Q2*
+     \[CapitalLambda]0^8 - 1560*mm^2*mN^7*Q2*\[CapitalLambda]0^8 + 
+    318*mN^9*Q2*\[CapitalLambda]0^8 - 210*mm^8*mo*Q2*\[CapitalLambda]0^8 + 
+    530*mm^6*mN^2*mo*Q2*\[CapitalLambda]0^8 - 282*mm^4*mN^4*mo*Q2*
+     \[CapitalLambda]0^8 - 42*mm^2*mN^6*mo*Q2*\[CapitalLambda]0^8 + 
+    28*mN^8*mo*Q2*\[CapitalLambda]0^8 - 320*mm^6*mN*mo^2*Q2*
+     \[CapitalLambda]0^8 + 1440*mm^4*mN^3*mo^2*Q2*\[CapitalLambda]0^8 - 
+    540*mm^2*mN^5*mo^2*Q2*\[CapitalLambda]0^8 - 
+    204*mN^7*mo^2*Q2*\[CapitalLambda]0^8 + 750*mm^6*mo^3*Q2*
+     \[CapitalLambda]0^8 - 624*mm^4*mN^2*mo^3*Q2*\[CapitalLambda]0^8 - 
+    570*mm^2*mN^4*mo^3*Q2*\[CapitalLambda]0^8 + 
+    212*mN^6*mo^3*Q2*\[CapitalLambda]0^8 + 360*mm^4*mN*mo^4*Q2*
+     \[CapitalLambda]0^8 - 552*mm^2*mN^3*mo^4*Q2*\[CapitalLambda]0^8 + 
+    64*mN^5*mo^4*Q2*\[CapitalLambda]0^8 - 990*mm^4*mo^5*Q2*
+     \[CapitalLambda]0^8 + 138*mm^2*mN^2*mo^5*Q2*\[CapitalLambda]0^8 + 
+    108*mN^4*mo^5*Q2*\[CapitalLambda]0^8 - 132*mm^2*mN*mo^6*Q2*
+     \[CapitalLambda]0^8 + 76*mN^3*mo^6*Q2*\[CapitalLambda]0^8 + 
+    570*mm^2*mo^7*Q2*\[CapitalLambda]0^8 + 28*mN^2*mo^7*Q2*
+     \[CapitalLambda]0^8 + 2*mN*mo^8*Q2*\[CapitalLambda]0^8 - 
+    120*mo^9*Q2*\[CapitalLambda]0^8 - 100*mm^6*mN*Q2^2*\[CapitalLambda]0^8 + 
+    444*mm^4*mN^3*Q2^2*\[CapitalLambda]0^8 - 402*mm^2*mN^5*Q2^2*
+     \[CapitalLambda]0^8 + 92*mN^7*Q2^2*\[CapitalLambda]0^8 + 
+    180*mm^6*mo*Q2^2*\[CapitalLambda]0^8 - 300*mm^4*mN^2*mo*Q2^2*
+     \[CapitalLambda]0^8 + 144*mm^2*mN^4*mo*Q2^2*\[CapitalLambda]0^8 - 
+    20*mN^6*mo*Q2^2*\[CapitalLambda]0^8 - 84*mm^4*mN*mo^2*Q2^2*
+     \[CapitalLambda]0^8 + 162*mm^2*mN^3*mo^2*Q2^2*\[CapitalLambda]0^8 - 
+    128*mN^5*mo^2*Q2^2*\[CapitalLambda]0^8 - 420*mm^4*mo^3*Q2^2*
+     \[CapitalLambda]0^8 + 204*mm^2*mN^2*mo^3*Q2^2*\[CapitalLambda]0^8 + 
+    40*mN^4*mo^3*Q2^2*\[CapitalLambda]0^8 + 180*mm^2*mN*mo^4*Q2^2*
+     \[CapitalLambda]0^8 + 20*mN^3*mo^4*Q2^2*\[CapitalLambda]0^8 + 
+    312*mm^2*mo^5*Q2^2*\[CapitalLambda]0^8 - 12*mN^2*mo^5*Q2^2*
+     \[CapitalLambda]0^8 - 48*mN*mo^6*Q2^2*\[CapitalLambda]0^8 - 
+    72*mo^7*Q2^2*\[CapitalLambda]0^8 + 24*mm^4*mN*Q2^3*\[CapitalLambda]0^8 - 
+    33*mm^2*mN^3*Q2^3*\[CapitalLambda]0^8 + 
+    10*mN^5*Q2^3*\[CapitalLambda]0^8 - 30*mm^4*mo*Q2^3*\[CapitalLambda]0^8 + 
+    30*mm^2*mN^2*mo*Q2^3*\[CapitalLambda]0^8 - 
+    2*mN^4*mo*Q2^3*\[CapitalLambda]0^8 + 45*mm^2*mN*mo^2*Q2^3*
+     \[CapitalLambda]0^8 - 18*mN^3*mo^2*Q2^3*\[CapitalLambda]0^8 + 
+    42*mm^2*mo^3*Q2^3*\[CapitalLambda]0^8 - 2*mN^2*mo^3*Q2^3*
+     \[CapitalLambda]0^8 - 8*mN*mo^4*Q2^3*\[CapitalLambda]0^8 - 
+    12*mo^5*Q2^3*\[CapitalLambda]0^8 + 592*mm^6*mN^3*\[CapitalLambda]0^10 - 
+    1604*mm^4*mN^5*\[CapitalLambda]0^10 + 1432*mm^2*mN^7*
+     \[CapitalLambda]0^10 - 420*mN^9*\[CapitalLambda]0^10 - 
+    64*mm^4*mN^4*mo*\[CapitalLambda]0^10 + 232*mm^2*mN^6*mo*
+     \[CapitalLambda]0^10 - 168*mN^8*mo*\[CapitalLambda]0^10 + 
+    252*mm^6*mN*mo^2*\[CapitalLambda]0^10 - 1328*mm^4*mN^3*mo^2*
+     \[CapitalLambda]0^10 + 1348*mm^2*mN^5*mo^2*\[CapitalLambda]0^10 - 
+    336*mN^7*mo^2*\[CapitalLambda]0^10 - 144*mm^4*mN^2*mo^3*
+     \[CapitalLambda]0^10 + 624*mm^2*mN^4*mo^3*\[CapitalLambda]0^10 - 
+    328*mN^6*mo^3*\[CapitalLambda]0^10 - 684*mm^4*mN*mo^4*
+     \[CapitalLambda]0^10 + 992*mm^2*mN^3*mo^4*\[CapitalLambda]0^10 - 
+    168*mN^5*mo^4*\[CapitalLambda]0^10 + 264*mm^2*mN^2*mo^5*
+     \[CapitalLambda]0^10 - 216*mN^4*mo^5*\[CapitalLambda]0^10 + 
+    612*mm^2*mN*mo^6*\[CapitalLambda]0^10 - 240*mN^3*mo^6*
+     \[CapitalLambda]0^10 - 120*mN^2*mo^7*\[CapitalLambda]0^10 - 
+    180*mN*mo^8*\[CapitalLambda]0^10 + 85*mm^6*mN*Q2*\[CapitalLambda]0^10 - 
+    744*mm^4*mN^3*Q2*\[CapitalLambda]0^10 + 963*mm^2*mN^5*Q2*
+     \[CapitalLambda]0^10 - 320*mN^7*Q2*\[CapitalLambda]0^10 - 
+    126*mm^6*mo*Q2*\[CapitalLambda]0^10 + 182*mm^4*mN^2*mo*Q2*
+     \[CapitalLambda]0^10 - 66*mm^2*mN^4*mo*Q2*\[CapitalLambda]0^10 + 
+    14*mN^6*mo*Q2*\[CapitalLambda]0^10 - 152*mm^4*mN*mo^2*Q2*
+     \[CapitalLambda]0^10 + 378*mm^2*mN^3*mo^2*Q2*\[CapitalLambda]0^10 - 
+    20*mN^5*mo^2*Q2*\[CapitalLambda]0^10 + 342*mm^4*mo^3*Q2*
+     \[CapitalLambda]0^10 - 108*mm^2*mN^2*mo^3*Q2*\[CapitalLambda]0^10 - 
+    122*mN^4*mo^3*Q2*\[CapitalLambda]0^10 + 83*mm^2*mN*mo^4*Q2*
+     \[CapitalLambda]0^10 - 32*mN^3*mo^4*Q2*\[CapitalLambda]0^10 - 
+    306*mm^2*mo^5*Q2*\[CapitalLambda]0^10 + 18*mN^2*mo^5*Q2*
+     \[CapitalLambda]0^10 - 12*mN*mo^6*Q2*\[CapitalLambda]0^10 + 
+    90*mo^7*Q2*\[CapitalLambda]0^10 - 70*mm^4*mN*Q2^2*\[CapitalLambda]0^10 + 
+    193*mm^2*mN^3*Q2^2*\[CapitalLambda]0^10 - 
+    88*mN^5*Q2^2*\[CapitalLambda]0^10 + 72*mm^4*mo*Q2^2*
+     \[CapitalLambda]0^10 - 70*mm^2*mN^2*mo*Q2^2*\[CapitalLambda]0^10 + 
+    24*mN^4*mo*Q2^2*\[CapitalLambda]0^10 - 43*mm^2*mN*mo^2*Q2^2*
+     \[CapitalLambda]0^10 + 50*mN^3*mo^2*Q2^2*\[CapitalLambda]0^10 - 
+    120*mm^2*mo^3*Q2^2*\[CapitalLambda]0^10 + 20*mN^2*mo^3*Q2^2*
+     \[CapitalLambda]0^10 + 34*mN*mo^4*Q2^2*\[CapitalLambda]0^10 + 
+    48*mo^5*Q2^2*\[CapitalLambda]0^10 + 11*mm^2*mN*Q2^3*
+     \[CapitalLambda]0^10 - 8*mN^3*Q2^3*\[CapitalLambda]0^10 - 
+    6*mm^2*mo*Q2^3*\[CapitalLambda]0^10 + 4*mN^2*mo*Q2^3*
+     \[CapitalLambda]0^10 + 10*mN*mo^2*Q2^3*\[CapitalLambda]0^10 + 
+    6*mo^3*Q2^3*\[CapitalLambda]0^10 + 276*mm^4*mN^3*\[CapitalLambda]0^12 - 
+    508*mm^2*mN^5*\[CapitalLambda]0^12 + 232*mN^7*\[CapitalLambda]0^12 + 
+    16*mm^2*mN^4*mo*\[CapitalLambda]0^12 + 16*mN^6*mo*\[CapitalLambda]0^12 + 
+    84*mm^4*mN*mo^2*\[CapitalLambda]0^12 - 256*mm^2*mN^3*mo^2*
+     \[CapitalLambda]0^12 + 136*mN^5*mo^2*\[CapitalLambda]0^12 - 
+    24*mm^2*mN^2*mo^3*\[CapitalLambda]0^12 + 
+    72*mN^4*mo^3*\[CapitalLambda]0^12 - 156*mm^2*mN*mo^4*
+     \[CapitalLambda]0^12 + 56*mN^3*mo^4*\[CapitalLambda]0^12 + 
+    24*mN^2*mo^5*\[CapitalLambda]0^12 + 72*mN*mo^6*\[CapitalLambda]0^12 + 
+    48*mm^4*mN*Q2*\[CapitalLambda]0^12 - 252*mm^2*mN^3*Q2*
+     \[CapitalLambda]0^12 + 162*mN^5*Q2*\[CapitalLambda]0^12 - 
+    42*mm^4*mo*Q2*\[CapitalLambda]0^12 + 16*mm^2*mN^2*mo*Q2*
+     \[CapitalLambda]0^12 - 6*mN^4*mo*Q2*\[CapitalLambda]0^12 - 
+    34*mm^2*mN*mo^2*Q2*\[CapitalLambda]0^12 + 24*mN^3*mo^2*Q2*
+     \[CapitalLambda]0^12 + 78*mm^2*mo^3*Q2*\[CapitalLambda]0^12 + 
+    6*mN^2*mo^3*Q2*\[CapitalLambda]0^12 + 2*mN*mo^4*Q2*\[CapitalLambda]0^12 - 
+    36*mo^5*Q2*\[CapitalLambda]0^12 - 26*mm^2*mN*Q2^2*\[CapitalLambda]0^12 + 
+    34*mN^3*Q2^2*\[CapitalLambda]0^12 + 12*mm^2*mo*Q2^2*
+     \[CapitalLambda]0^12 - 4*mN^2*mo*Q2^2*\[CapitalLambda]0^12 - 
+    10*mN*mo^2*Q2^2*\[CapitalLambda]0^12 - 
+    12*mo^3*Q2^2*\[CapitalLambda]0^12 + 2*mN*Q2^3*\[CapitalLambda]0^12 + 
+    72*mm^2*mN^3*\[CapitalLambda]0^14 - 68*mN^5*\[CapitalLambda]0^14 + 
+    8*mN^4*mo*\[CapitalLambda]0^14 + 12*mm^2*mN*mo^2*\[CapitalLambda]0^14 - 
+    8*mN^3*mo^2*\[CapitalLambda]0^14 - 12*mN*mo^4*\[CapitalLambda]0^14 + 
+    15*mm^2*mN*Q2*\[CapitalLambda]0^14 - 36*mN^3*Q2*\[CapitalLambda]0^14 - 
+    6*mm^2*mo*Q2*\[CapitalLambda]0^14 - 4*mN^2*mo*Q2*\[CapitalLambda]0^14 - 
+    2*mN*mo^2*Q2*\[CapitalLambda]0^14 + 6*mo^3*Q2*\[CapitalLambda]0^14 - 
+    4*mN*Q2^2*\[CapitalLambda]0^14 + 8*mN^3*\[CapitalLambda]0^16 + 
+    2*mN*Q2*\[CapitalLambda]0^16))/(6*mN*(4*mN^2 + Q2)*
+   (mm^2 + \[CapitalLambda]0^2)*(Q2 + \[CapitalLambda]0^2)^2*
+   (mm^4 - 2*mm^2*mN^2 + mN^4 - 2*mm^2*mo^2 - 2*mN^2*mo^2 + mo^4 - mm^2*Q2 + 
+     2*mm^2*\[CapitalLambda]0^2 - 2*mN^2*\[CapitalLambda]0^2 - 
+     2*mo^2*\[CapitalLambda]0^2 - Q2*\[CapitalLambda]0^2 + 
+     \[CapitalLambda]0^4)^2*Kallen\[Lambda][mN^2, mo^2, 
+     mm^2 + \[CapitalLambda]0^2]^2) + 
+ ((mN + mo)*(20*mm^2*mN^6 + 16*mN^8 + 16*mm^4*mN^3*mo - 12*mm^2*mN^5*mo - 
+    16*mN^7*mo + 16*mm^2*mN^4*mo^2 - 32*mm^2*mN^3*mo^3 - 16*mN^4*mo^4 + 
+    16*mN^3*mo^5 - 7*mm^4*mN^2*Q2 + 4*mm^2*mN^4*Q2 + 5*mN^6*Q2 + 
+    mm^4*mN*mo*Q2 - 20*mm^2*mN^3*mo*Q2 - 15*mN^5*mo*Q2 + 
+    18*mm^2*mN^2*mo^2*Q2 + 6*mN^4*mo^2*Q2 - 2*mm^2*mN*mo^3*Q2 + 
+    14*mN^3*mo^3*Q2 - 11*mN^2*mo^4*Q2 + mN*mo^5*Q2 - mm^4*Q2^2 + 
+    2*mm^2*mN^2*Q2^2 + mN^4*Q2^2 - 2*mm^2*mN*mo*Q2^2 - 2*mN^3*mo*Q2^2 + 
+    2*mm^2*mo^2*Q2^2 + 2*mN*mo^3*Q2^2 - mo^4*Q2^2)*\[CapitalLambda]0^4*
+   Log[mm^2/mo^2])/(2*mN^3*(4*mN^2 + Q2)^2*(Q2 + \[CapitalLambda]0^2)^2) - 
+ (mm^2*(10*mN^4 - 4*mN^3*mo + 2*mN^2*mo^2 + 5*mN^2*Q2 - 4*mN*mo*Q2 - 
+    mo^2*Q2 + Q2^2)*\[CapitalLambda]0^4*
    Log[mm^2/(mm^2 + \[CapitalLambda]0^2)])/
   ((4*mN^2 + Q2)^2*(Q2 + \[CapitalLambda]0^2)^2) + 
- ((mN + mo)*\[CapitalLambda]0^4*(1632*mN^23*Q2 - 1824*mN^22*mo*Q2 - 
-    9984*mN^21*mo^2*Q2 + 11520*mN^20*mo^3*Q2 + 24192*mN^19*mo^4*Q2 - 
-    29568*mN^18*mo^5*Q2 - 26880*mN^17*mo^6*Q2 + 37632*mN^16*mo^7*Q2 + 
-    6720*mN^15*mo^8*Q2 - 20160*mN^14*mo^9*Q2 + 16128*mN^13*mo^10*Q2 - 
-    5376*mN^12*mo^11*Q2 - 18816*mN^11*mo^12*Q2 + 13440*mN^10*mo^13*Q2 + 
-    8448*mN^9*mo^14*Q2 - 6912*mN^8*mo^15*Q2 - 1440*mN^7*mo^16*Q2 + 
-    1248*mN^6*mo^17*Q2 + 624*mN^21*Q2^2 - 1584*mN^20*mo*Q2^2 - 
-    3456*mN^19*mo^2*Q2^2 + 11136*mN^18*mo^3*Q2^2 + 6720*mN^17*mo^4*Q2^2 - 
-    33600*mN^16*mo^5*Q2^2 - 2688*mN^15*mo^6*Q2^2 + 56448*mN^14*mo^7*Q2^2 - 
-    10080*mN^13*mo^8*Q2^2 - 57120*mN^12*mo^9*Q2^2 + 18816*mN^11*mo^10*Q2^2 + 
-    34944*mN^10*mo^11*Q2^2 - 14784*mN^9*mo^12*Q2^2 - 12096*mN^8*mo^13*Q2^2 + 
-    5760*mN^7*mo^14*Q2^2 + 1920*mN^6*mo^15*Q2^2 - 912*mN^5*mo^16*Q2^2 - 
-    48*mN^4*mo^17*Q2^2 + 144*mN^19*Q2^3 - 192*mN^18*mo*Q2^3 - 
-    960*mN^17*mo^2*Q2^3 + 1344*mN^16*mo^3*Q2^3 + 2688*mN^15*mo^4*Q2^3 - 
-    4032*mN^14*mo^5*Q2^3 - 4032*mN^13*mo^6*Q2^3 + 6720*mN^12*mo^7*Q2^3 + 
-    3360*mN^11*mo^8*Q2^3 - 6720*mN^10*mo^9*Q2^3 - 1344*mN^9*mo^10*Q2^3 + 
-    4032*mN^8*mo^11*Q2^3 - 1344*mN^6*mo^13*Q2^3 + 192*mN^5*mo^14*Q2^3 + 
-    192*mN^4*mo^15*Q2^3 - 48*mN^3*mo^16*Q2^3 + 48*mm^16*mN^3*Q2*
-     (2*mN^4 + 26*mN^3*mo - 11*mN^2*Q2 - mN*mo*Q2 - Q2^2) - 
-    9984*mN^21*Q2*\[CapitalLambda]0^2 + 11520*mN^20*mo*Q2*
-     \[CapitalLambda]0^2 + 31488*mN^19*mo^2*Q2*\[CapitalLambda]0^2 - 
-    39168*mN^18*mo^3*Q2*\[CapitalLambda]0^2 - 16128*mN^17*mo^4*Q2*
-     \[CapitalLambda]0^2 + 29952*mN^16*mo^5*Q2*\[CapitalLambda]0^2 - 
-    42240*mN^15*mo^6*Q2*\[CapitalLambda]0^2 + 34560*mN^14*mo^7*Q2*
-     \[CapitalLambda]0^2 + 49920*mN^13*mo^8*Q2*\[CapitalLambda]0^2 - 
-    57600*mN^12*mo^9*Q2*\[CapitalLambda]0^2 + 2304*mN^11*mo^10*Q2*
-     \[CapitalLambda]0^2 + 11520*mN^10*mo^11*Q2*\[CapitalLambda]0^2 - 
-    23808*mN^9*mo^12*Q2*\[CapitalLambda]0^2 + 16128*mN^8*mo^13*Q2*
-     \[CapitalLambda]0^2 + 8448*mN^7*mo^14*Q2*\[CapitalLambda]0^2 - 
-    6912*mN^6*mo^15*Q2*\[CapitalLambda]0^2 - 8928*mN^19*Q2^2*
-     \[CapitalLambda]0^2 + 15264*mN^18*mo*Q2^2*\[CapitalLambda]0^2 + 
-    31104*mN^17*mo^2*Q2^2*\[CapitalLambda]0^2 - 63360*mN^16*mo^3*Q2^2*
-     \[CapitalLambda]0^2 - 26784*mN^15*mo^4*Q2^2*\[CapitalLambda]0^2 + 
-    87264*mN^14*mo^5*Q2^2*\[CapitalLambda]0^2 - 20160*mN^13*mo^6*Q2^2*
-     \[CapitalLambda]0^2 - 20160*mN^12*mo^7*Q2^2*\[CapitalLambda]0^2 + 
-    38880*mN^11*mo^8*Q2^2*\[CapitalLambda]0^2 - 59040*mN^10*mo^9*Q2^2*
-     \[CapitalLambda]0^2 - 6912*mN^9*mo^10*Q2^2*\[CapitalLambda]0^2 + 
-    55296*mN^8*mo^11*Q2^2*\[CapitalLambda]0^2 - 12384*mN^7*mo^12*Q2^2*
-     \[CapitalLambda]0^2 - 15840*mN^6*mo^13*Q2^2*\[CapitalLambda]0^2 + 
-    5184*mN^5*mo^14*Q2^2*\[CapitalLambda]0^2 + 576*mN^4*mo^15*Q2^2*
-     \[CapitalLambda]0^2 - 2832*mN^17*Q2^3*\[CapitalLambda]0^2 + 
-    5904*mN^16*mo*Q2^3*\[CapitalLambda]0^2 + 10272*mN^15*mo^2*Q2^3*
-     \[CapitalLambda]0^2 - 28512*mN^14*mo^3*Q2^3*\[CapitalLambda]0^2 - 
-    9072*mN^13*mo^4*Q2^3*\[CapitalLambda]0^2 + 54000*mN^12*mo^5*Q2^3*
-     \[CapitalLambda]0^2 - 9600*mN^11*mo^6*Q2^3*\[CapitalLambda]0^2 - 
-    48960*mN^10*mo^7*Q2^3*\[CapitalLambda]0^2 + 22800*mN^9*mo^8*Q2^3*
-     \[CapitalLambda]0^2 + 19440*mN^8*mo^9*Q2^3*\[CapitalLambda]0^2 - 
-    14688*mN^7*mo^10*Q2^3*\[CapitalLambda]0^2 - 864*mN^6*mo^11*Q2^3*
-     \[CapitalLambda]0^2 + 2928*mN^5*mo^12*Q2^3*\[CapitalLambda]0^2 - 
-    1008*mN^4*mo^13*Q2^3*\[CapitalLambda]0^2 + 192*mN^3*mo^14*Q2^3*
-     \[CapitalLambda]0^2 - 432*mN^15*Q2^4*\[CapitalLambda]0^2 + 
-    576*mN^14*mo*Q2^4*\[CapitalLambda]0^2 + 2016*mN^13*mo^2*Q2^4*
-     \[CapitalLambda]0^2 - 2880*mN^12*mo^3*Q2^4*\[CapitalLambda]0^2 - 
-    3600*mN^11*mo^4*Q2^4*\[CapitalLambda]0^2 + 5760*mN^10*mo^5*Q2^4*
-     \[CapitalLambda]0^2 + 2880*mN^9*mo^6*Q2^4*\[CapitalLambda]0^2 - 
-    5760*mN^8*mo^7*Q2^4*\[CapitalLambda]0^2 - 720*mN^7*mo^8*Q2^4*
-     \[CapitalLambda]0^2 + 2880*mN^6*mo^9*Q2^4*\[CapitalLambda]0^2 - 
-    288*mN^5*mo^10*Q2^4*\[CapitalLambda]0^2 - 576*mN^4*mo^11*Q2^4*
-     \[CapitalLambda]0^2 + 144*mN^3*mo^12*Q2^4*\[CapitalLambda]0^2 + 
-    25728*mN^19*Q2*\[CapitalLambda]0^4 - 31104*mN^18*mo*Q2*
-     \[CapitalLambda]0^4 - 25344*mN^17*mo^2*Q2*\[CapitalLambda]0^4 + 
-    39168*mN^16*mo^3*Q2*\[CapitalLambda]0^4 - 28800*mN^15*mo^4*Q2*
-     \[CapitalLambda]0^4 + 21888*mN^14*mo^5*Q2*\[CapitalLambda]0^4 + 
-    1536*mN^13*mo^6*Q2*\[CapitalLambda]0^4 - 4608*mN^12*mo^7*Q2*
-     \[CapitalLambda]0^4 + 35712*mN^11*mo^8*Q2*\[CapitalLambda]0^4 - 
-    42624*mN^10*mo^9*Q2*\[CapitalLambda]0^4 + 11520*mN^9*mo^10*Q2*
-     \[CapitalLambda]0^4 + 2304*mN^8*mo^11*Q2*\[CapitalLambda]0^4 - 
-    20352*mN^7*mo^12*Q2*\[CapitalLambda]0^4 + 14976*mN^6*mo^13*Q2*
-     \[CapitalLambda]0^4 + 31392*mN^17*Q2^2*\[CapitalLambda]0^4 - 
-    49248*mN^16*mo*Q2^2*\[CapitalLambda]0^4 - 31104*mN^15*mo^2*Q2^2*
-     \[CapitalLambda]0^4 + 81792*mN^14*mo^3*Q2^2*\[CapitalLambda]0^4 - 
-    53856*mN^13*mo^4*Q2^2*\[CapitalLambda]0^4 + 15264*mN^12*mo^5*Q2^2*
-     \[CapitalLambda]0^4 + 46080*mN^11*mo^6*Q2^2*\[CapitalLambda]0^4 - 
-    41472*mN^10*mo^7*Q2^2*\[CapitalLambda]0^4 + 25056*mN^9*mo^8*Q2^2*
-     \[CapitalLambda]0^4 - 46368*mN^8*mo^9*Q2^2*\[CapitalLambda]0^4 - 
-    5760*mN^7*mo^10*Q2^2*\[CapitalLambda]0^4 + 42624*mN^6*mo^11*Q2^2*
-     \[CapitalLambda]0^4 - 11808*mN^5*mo^12*Q2^2*\[CapitalLambda]0^4 - 
-    2592*mN^4*mo^13*Q2^2*\[CapitalLambda]0^4 + 16032*mN^15*Q2^3*
-     \[CapitalLambda]0^4 - 28224*mN^14*mo*Q2^3*\[CapitalLambda]0^4 - 
-    21600*mN^13*mo^2*Q2^3*\[CapitalLambda]0^4 + 59040*mN^12*mo^3*Q2^3*
-     \[CapitalLambda]0^4 - 18720*mN^11*mo^4*Q2^3*\[CapitalLambda]0^4 - 
-    9216*mN^10*mo^5*Q2^3*\[CapitalLambda]0^4 + 25536*mN^9*mo^6*Q2^3*
-     \[CapitalLambda]0^4 - 44352*mN^8*mo^7*Q2^3*\[CapitalLambda]0^4 + 
-    11232*mN^7*mo^8*Q2^3*\[CapitalLambda]0^4 + 21312*mN^6*mo^9*Q2^3*
-     \[CapitalLambda]0^4 - 12384*mN^5*mo^10*Q2^3*\[CapitalLambda]0^4 + 
-    1440*mN^4*mo^11*Q2^3*\[CapitalLambda]0^4 - 96*mN^3*mo^12*Q2^3*
-     \[CapitalLambda]0^4 + 3888*mN^13*Q2^4*\[CapitalLambda]0^4 - 
-    7056*mN^12*mo*Q2^4*\[CapitalLambda]0^4 - 6624*mN^11*mo^2*Q2^4*
-     \[CapitalLambda]0^4 + 19008*mN^10*mo^3*Q2^4*\[CapitalLambda]0^4 - 
-    3168*mN^9*mo^4*Q2^4*\[CapitalLambda]0^4 - 14688*mN^8*mo^5*Q2^4*
-     \[CapitalLambda]0^4 + 10368*mN^7*mo^6*Q2^4*\[CapitalLambda]0^4 + 
-    576*mN^6*mo^7*Q2^4*\[CapitalLambda]0^4 - 4176*mN^5*mo^8*Q2^4*
-     \[CapitalLambda]0^4 + 2160*mN^4*mo^9*Q2^4*\[CapitalLambda]0^4 - 
-    288*mN^3*mo^10*Q2^4*\[CapitalLambda]0^4 + 
-    432*mN^11*Q2^5*\[CapitalLambda]0^4 - 576*mN^10*mo*Q2^5*
-     \[CapitalLambda]0^4 - 1152*mN^9*mo^2*Q2^5*\[CapitalLambda]0^4 + 
-    1728*mN^8*mo^3*Q2^5*\[CapitalLambda]0^4 + 864*mN^7*mo^4*Q2^5*
-     \[CapitalLambda]0^4 - 1728*mN^6*mo^5*Q2^5*\[CapitalLambda]0^4 + 
-    576*mN^4*mo^7*Q2^5*\[CapitalLambda]0^4 - 144*mN^3*mo^8*Q2^5*
-     \[CapitalLambda]0^4 - 384*mN^19*\[CapitalLambda]0^6 + 
-    384*mN^18*mo*\[CapitalLambda]0^6 + 1152*mN^17*mo^2*\[CapitalLambda]0^6 - 
-    1152*mN^16*mo^3*\[CapitalLambda]0^6 - 768*mN^15*mo^4*
-     \[CapitalLambda]0^6 + 768*mN^14*mo^5*\[CapitalLambda]0^6 - 
-    768*mN^13*mo^6*\[CapitalLambda]0^6 + 768*mN^12*mo^7*\[CapitalLambda]0^6 + 
-    1152*mN^11*mo^8*\[CapitalLambda]0^6 - 1152*mN^10*mo^9*
-     \[CapitalLambda]0^6 - 384*mN^9*mo^10*\[CapitalLambda]0^6 + 
-    384*mN^8*mo^11*\[CapitalLambda]0^6 - 36304*mN^17*Q2*\[CapitalLambda]0^6 + 
-    47344*mN^16*mo*Q2*\[CapitalLambda]0^6 - 14064*mN^15*mo^2*Q2*
-     \[CapitalLambda]0^6 + 4944*mN^14*mo^3*Q2*\[CapitalLambda]0^6 + 
-    13792*mN^13*mo^4*Q2*\[CapitalLambda]0^6 - 13984*mN^12*mo^5*Q2*
-     \[CapitalLambda]0^6 - 11744*mN^11*mo^6*Q2*\[CapitalLambda]0^6 + 
-    5792*mN^10*mo^7*Q2*\[CapitalLambda]0^6 + 23280*mN^9*mo^8*Q2*
-     \[CapitalLambda]0^6 - 29520*mN^8*mo^9*Q2*\[CapitalLambda]0^6 + 
-    25040*mN^7*mo^10*Q2*\[CapitalLambda]0^6 - 14576*mN^6*mo^11*Q2*
-     \[CapitalLambda]0^6 - 49760*mN^15*Q2^2*\[CapitalLambda]0^6 + 
-    77648*mN^14*mo*Q2^2*\[CapitalLambda]0^6 - 26080*mN^13*mo^2*Q2^2*
-     \[CapitalLambda]0^6 - 7952*mN^12*mo^3*Q2^2*\[CapitalLambda]0^6 + 
-    12096*mN^11*mo^4*Q2^2*\[CapitalLambda]0^6 - 7392*mN^10*mo^5*Q2^2*
-     \[CapitalLambda]0^6 + 20288*mN^9*mo^6*Q2^2*\[CapitalLambda]0^6 - 
-    20000*mN^8*mo^7*Q2^2*\[CapitalLambda]0^6 + 30496*mN^7*mo^8*Q2^2*
-     \[CapitalLambda]0^6 - 48496*mN^6*mo^9*Q2^2*\[CapitalLambda]0^6 + 
-    12960*mN^5*mo^10*Q2^2*\[CapitalLambda]0^6 + 6192*mN^4*mo^11*Q2^2*
-     \[CapitalLambda]0^6 - 30141*mN^13*Q2^3*\[CapitalLambda]0^6 + 
-    48999*mN^12*mo*Q2^3*\[CapitalLambda]0^6 - 18111*mN^11*mo^2*Q2^3*
-     \[CapitalLambda]0^6 - 8211*mN^10*mo^3*Q2^3*\[CapitalLambda]0^6 + 
-    17886*mN^9*mo^4*Q2^3*\[CapitalLambda]0^6 - 6714*mN^8*mo^5*Q2^3*
-     \[CapitalLambda]0^6 + 15426*mN^7*mo^6*Q2^3*\[CapitalLambda]0^6 - 
-    35046*mN^6*mo^7*Q2^3*\[CapitalLambda]0^6 + 15759*mN^5*mo^8*Q2^3*
-     \[CapitalLambda]0^6 + 963*mN^4*mo^9*Q2^3*\[CapitalLambda]0^6 - 
-    819*mN^3*mo^10*Q2^3*\[CapitalLambda]0^6 + 9*mN^2*mo^11*Q2^3*
-     \[CapitalLambda]0^6 - 10141*mN^11*Q2^4*\[CapitalLambda]0^6 + 
-    15673*mN^10*mo*Q2^4*\[CapitalLambda]0^6 - 3798*mN^9*mo^2*Q2^4*
-     \[CapitalLambda]0^6 - 2982*mN^8*mo^3*Q2^4*\[CapitalLambda]0^6 + 
-    6874*mN^7*mo^4*Q2^4*\[CapitalLambda]0^6 - 10306*mN^6*mo^5*Q2^4*
-     \[CapitalLambda]0^6 + 7480*mN^5*mo^6*Q2^4*\[CapitalLambda]0^6 - 
-    2416*mN^4*mo^7*Q2^4*\[CapitalLambda]0^6 - 405*mN^3*mo^8*Q2^4*
-     \[CapitalLambda]0^6 + 33*mN^2*mo^9*Q2^4*\[CapitalLambda]0^6 - 
-    10*mN*mo^10*Q2^4*\[CapitalLambda]0^6 - 2*mo^11*Q2^4*\[CapitalLambda]0^6 - 
-    1778*mN^9*Q2^5*\[CapitalLambda]0^6 + 2738*mN^8*mo*Q2^5*
-     \[CapitalLambda]0^6 - 280*mN^7*mo^2*Q2^5*\[CapitalLambda]0^6 - 
-    1640*mN^6*mo^3*Q2^5*\[CapitalLambda]0^6 + 2052*mN^5*mo^4*Q2^5*
-     \[CapitalLambda]0^6 - 1092*mN^4*mo^5*Q2^5*\[CapitalLambda]0^6 + 
-    8*mN^3*mo^6*Q2^5*\[CapitalLambda]0^6 - 8*mN^2*mo^7*Q2^5*
-     \[CapitalLambda]0^6 - 2*mN*mo^8*Q2^5*\[CapitalLambda]0^6 + 
-    2*mo^9*Q2^5*\[CapitalLambda]0^6 - 144*mN^7*Q2^6*\[CapitalLambda]0^6 + 
-    192*mN^6*mo*Q2^6*\[CapitalLambda]0^6 + 96*mN^5*mo^2*Q2^6*
-     \[CapitalLambda]0^6 - 192*mN^4*mo^3*Q2^6*\[CapitalLambda]0^6 + 
-    48*mN^3*mo^4*Q2^6*\[CapitalLambda]0^6 + 1152*mN^17*\[CapitalLambda]0^8 - 
-    384*mN^16*mo*\[CapitalLambda]0^8 - 1536*mN^15*mo^2*\[CapitalLambda]0^8 + 
-    768*mN^13*mo^4*\[CapitalLambda]0^8 - 768*mN^12*mo^5*\[CapitalLambda]0^8 - 
-    1536*mN^11*mo^6*\[CapitalLambda]0^8 + 3072*mN^10*mo^7*
-     \[CapitalLambda]0^8 + 1152*mN^9*mo^8*\[CapitalLambda]0^8 - 
-    1920*mN^8*mo^9*\[CapitalLambda]0^8 + 30576*mN^15*Q2*\[CapitalLambda]0^8 - 
-    43408*mN^14*mo*Q2*\[CapitalLambda]0^8 + 29888*mN^13*mo^2*Q2*
-     \[CapitalLambda]0^8 - 40512*mN^12*mo^3*Q2*\[CapitalLambda]0^8 + 
-    5408*mN^11*mo^4*Q2*\[CapitalLambda]0^8 - 7136*mN^10*mo^5*Q2*
-     \[CapitalLambda]0^8 - 26176*mN^9*mo^6*Q2*\[CapitalLambda]0^8 + 
-    14528*mN^8*mo^7*Q2*\[CapitalLambda]0^8 - 15120*mN^7*mo^8*Q2*
-     \[CapitalLambda]0^8 + 2800*mN^6*mo^9*Q2*\[CapitalLambda]0^8 + 
-    41792*mN^13*Q2^2*\[CapitalLambda]0^8 - 67520*mN^12*mo*Q2^2*
-     \[CapitalLambda]0^8 + 44528*mN^11*mo^2*Q2^2*\[CapitalLambda]0^8 - 
-    40592*mN^10*mo^3*Q2^2*\[CapitalLambda]0^8 - 7888*mN^9*mo^4*Q2^2*
-     \[CapitalLambda]0^8 + 7600*mN^8*mo^5*Q2^2*\[CapitalLambda]0^8 - 
-    17712*mN^7*mo^6*Q2^2*\[CapitalLambda]0^8 + 17232*mN^6*mo^7*Q2^2*
-     \[CapitalLambda]0^8 - 5424*mN^5*mo^8*Q2^2*\[CapitalLambda]0^8 - 
-    8880*mN^4*mo^9*Q2^2*\[CapitalLambda]0^8 + 25683*mN^11*Q2^3*
-     \[CapitalLambda]0^8 - 38637*mN^10*mo*Q2^3*\[CapitalLambda]0^8 + 
-    22404*mN^9*mo^2*Q2^3*\[CapitalLambda]0^8 - 10572*mN^8*mo^3*Q2^3*
-     \[CapitalLambda]0^8 - 1470*mN^7*mo^4*Q2^3*\[CapitalLambda]0^8 + 
-    12594*mN^6*mo^5*Q2^3*\[CapitalLambda]0^8 - 4188*mN^5*mo^6*Q2^3*
-     \[CapitalLambda]0^8 - 4812*mN^4*mo^7*Q2^3*\[CapitalLambda]0^8 + 
-    2115*mN^3*mo^8*Q2^3*\[CapitalLambda]0^8 - 45*mN^2*mo^9*Q2^3*
-     \[CapitalLambda]0^8 + 8289*mN^9*Q2^4*\[CapitalLambda]0^8 - 
-    9805*mN^8*mo*Q2^4*\[CapitalLambda]0^8 + 6479*mN^7*mo^2*Q2^4*
-     \[CapitalLambda]0^8 + 1665*mN^6*mo^3*Q2^4*\[CapitalLambda]0^8 + 
-    41*mN^5*mo^4*Q2^4*\[CapitalLambda]0^8 + 175*mN^4*mo^5*Q2^4*
-     \[CapitalLambda]0^8 + 1661*mN^3*mo^6*Q2^4*\[CapitalLambda]0^8 - 
-    109*mN^2*mo^7*Q2^4*\[CapitalLambda]0^8 + 42*mN*mo^8*Q2^4*
-     \[CapitalLambda]0^8 + 10*mo^9*Q2^4*\[CapitalLambda]0^8 + 
-    1442*mN^7*Q2^5*\[CapitalLambda]0^8 - 866*mN^6*mo*Q2^5*
-     \[CapitalLambda]0^8 + 866*mN^5*mo^2*Q2^5*\[CapitalLambda]0^8 + 
-    286*mN^4*mo^3*Q2^5*\[CapitalLambda]0^8 + 566*mN^3*mo^4*Q2^5*
-     \[CapitalLambda]0^8 + 10*mN^2*mo^5*Q2^5*\[CapitalLambda]0^8 + 
-    6*mN*mo^6*Q2^5*\[CapitalLambda]0^8 - 6*mo^7*Q2^5*\[CapitalLambda]0^8 + 
-    96*mN^5*Q2^6*\[CapitalLambda]0^8 + 96*mN^3*mo^2*Q2^6*
-     \[CapitalLambda]0^8 - 768*mN^15*\[CapitalLambda]0^10 - 
-    768*mN^14*mo*\[CapitalLambda]0^10 + 768*mN^13*mo^2*\[CapitalLambda]0^10 - 
-    768*mN^12*mo^3*\[CapitalLambda]0^10 + 768*mN^11*mo^4*
-     \[CapitalLambda]0^10 - 2304*mN^10*mo^5*\[CapitalLambda]0^10 - 
-    768*mN^9*mo^6*\[CapitalLambda]0^10 + 3840*mN^8*mo^7*
-     \[CapitalLambda]0^10 - 15008*mN^13*Q2*\[CapitalLambda]0^10 + 
-    24544*mN^12*mo*Q2*\[CapitalLambda]0^10 - 16288*mN^11*mo^2*Q2*
-     \[CapitalLambda]0^10 + 28384*mN^10*mo^3*Q2*\[CapitalLambda]0^10 + 
-    4640*mN^9*mo^4*Q2*\[CapitalLambda]0^10 + 13728*mN^8*mo^5*Q2*
-     \[CapitalLambda]0^10 + 2080*mN^7*mo^6*Q2*\[CapitalLambda]0^10 + 
-    7072*mN^6*mo^7*Q2*\[CapitalLambda]0^10 - 19984*mN^11*Q2^2*
-     \[CapitalLambda]0^10 + 34000*mN^10*mo*Q2^2*\[CapitalLambda]0^10 - 
-    21728*mN^9*mo^2*Q2^2*\[CapitalLambda]0^10 + 26048*mN^8*mo^3*Q2^2*
-     \[CapitalLambda]0^10 - 6864*mN^7*mo^4*Q2^2*\[CapitalLambda]0^10 + 
-    10320*mN^6*mo^5*Q2^2*\[CapitalLambda]0^10 - 2112*mN^5*mo^6*Q2^2*
-     \[CapitalLambda]0^10 + 7968*mN^4*mo^7*Q2^2*\[CapitalLambda]0^10 - 
-    12402*mN^9*Q2^3*\[CapitalLambda]0^10 + 15270*mN^8*mo*Q2^3*
-     \[CapitalLambda]0^10 - 14682*mN^7*mo^2*Q2^3*\[CapitalLambda]0^10 + 
-    6942*mN^6*mo^3*Q2^3*\[CapitalLambda]0^10 - 5862*mN^5*mo^4*Q2^3*
-     \[CapitalLambda]0^10 + 5346*mN^4*mo^5*Q2^3*\[CapitalLambda]0^10 - 
-    2382*mN^3*mo^6*Q2^3*\[CapitalLambda]0^10 + 90*mN^2*mo^7*Q2^3*
-     \[CapitalLambda]0^10 - 4277*mN^7*Q2^4*\[CapitalLambda]0^10 + 
-    2557*mN^6*mo*Q2^4*\[CapitalLambda]0^10 - 4318*mN^5*mo^2*Q2^4*
-     \[CapitalLambda]0^10 + 1078*mN^4*mo^3*Q2^4*\[CapitalLambda]0^10 - 
-    1801*mN^3*mo^4*Q2^4*\[CapitalLambda]0^10 + 129*mN^2*mo^5*Q2^4*
-     \[CapitalLambda]0^10 - 68*mN*mo^6*Q2^4*\[CapitalLambda]0^10 - 
-    20*mo^7*Q2^4*\[CapitalLambda]0^10 - 718*mN^5*Q2^5*\[CapitalLambda]0^10 + 
-    142*mN^4*mo*Q2^5*\[CapitalLambda]0^10 - 572*mN^3*mo^2*Q2^5*
-     \[CapitalLambda]0^10 - 4*mN^2*mo^3*Q2^5*\[CapitalLambda]0^10 - 
-    6*mN*mo^4*Q2^5*\[CapitalLambda]0^10 + 6*mo^5*Q2^5*\[CapitalLambda]0^10 - 
-    48*mN^3*Q2^6*\[CapitalLambda]0^10 - 768*mN^13*\[CapitalLambda]0^12 + 
-    768*mN^12*mo*\[CapitalLambda]0^12 - 1536*mN^11*mo^2*
-     \[CapitalLambda]0^12 - 768*mN^9*mo^4*\[CapitalLambda]0^12 - 
-    3840*mN^8*mo^5*\[CapitalLambda]0^12 + 3424*mN^11*Q2*
-     \[CapitalLambda]0^12 - 9376*mN^10*mo*Q2*\[CapitalLambda]0^12 + 
-    2240*mN^9*mo^2*Q2*\[CapitalLambda]0^12 - 12864*mN^8*mo^3*Q2*
-     \[CapitalLambda]0^12 + 2272*mN^7*mo^4*Q2*\[CapitalLambda]0^12 - 
-    6688*mN^6*mo^5*Q2*\[CapitalLambda]0^12 + 5968*mN^9*Q2^2*
-     \[CapitalLambda]0^12 - 10480*mN^8*mo*Q2^2*\[CapitalLambda]0^12 + 
-    7664*mN^7*mo^2*Q2^2*\[CapitalLambda]0^12 - 9872*mN^6*mo^3*Q2^2*
-     \[CapitalLambda]0^12 + 3072*mN^5*mo^4*Q2^2*\[CapitalLambda]0^12 - 
-    4416*mN^4*mo^5*Q2^2*\[CapitalLambda]0^12 + 
-    4182*mN^7*Q2^3*\[CapitalLambda]0^12 - 3594*mN^6*mo*Q2^3*
-     \[CapitalLambda]0^12 + 4260*mN^5*mo^2*Q2^3*\[CapitalLambda]0^12 - 
-    2604*mN^4*mo^3*Q2^3*\[CapitalLambda]0^12 + 1398*mN^3*mo^4*Q2^3*
-     \[CapitalLambda]0^12 - 90*mN^2*mo^5*Q2^3*\[CapitalLambda]0^12 + 
-    1261*mN^5*Q2^4*\[CapitalLambda]0^12 - 421*mN^4*mo*Q2^4*
-     \[CapitalLambda]0^12 + 815*mN^3*mo^2*Q2^4*\[CapitalLambda]0^12 - 
-    63*mN^2*mo^3*Q2^4*\[CapitalLambda]0^12 + 52*mN*mo^4*Q2^4*
-     \[CapitalLambda]0^12 + 20*mo^5*Q2^4*\[CapitalLambda]0^12 + 
-    142*mN^3*Q2^5*\[CapitalLambda]0^12 + 2*mN^2*mo*Q2^5*
-     \[CapitalLambda]0^12 + 2*mN*mo^2*Q2^5*\[CapitalLambda]0^12 - 
-    2*mo^3*Q2^5*\[CapitalLambda]0^12 + 1152*mN^11*\[CapitalLambda]0^14 + 
-    384*mN^10*mo*\[CapitalLambda]0^14 + 1152*mN^9*mo^2*\[CapitalLambda]0^14 + 
-    1920*mN^8*mo^3*\[CapitalLambda]0^14 - 144*mN^9*Q2*\[CapitalLambda]0^14 + 
-    2608*mN^8*mo*Q2*\[CapitalLambda]0^14 - 1008*mN^7*mo^2*Q2*
-     \[CapitalLambda]0^14 + 2384*mN^6*mo^3*Q2*\[CapitalLambda]0^14 - 
-    1200*mN^7*Q2^2*\[CapitalLambda]0^14 + 2112*mN^6*mo*Q2^2*
-     \[CapitalLambda]0^14 - 1056*mN^5*mo^2*Q2^2*\[CapitalLambda]0^14 + 
-    1392*mN^4*mo^3*Q2^2*\[CapitalLambda]0^14 - 
-    705*mN^5*Q2^3*\[CapitalLambda]0^14 + 483*mN^4*mo*Q2^3*
-     \[CapitalLambda]0^14 - 399*mN^3*mo^2*Q2^3*\[CapitalLambda]0^14 + 
-    45*mN^2*mo^3*Q2^3*\[CapitalLambda]0^14 - 
-    126*mN^3*Q2^4*\[CapitalLambda]0^14 + 10*mN^2*mo*Q2^4*
-     \[CapitalLambda]0^14 - 18*mN*mo^2*Q2^4*\[CapitalLambda]0^14 - 
-    10*mo^3*Q2^4*\[CapitalLambda]0^14 - 384*mN^9*\[CapitalLambda]0^16 - 
-    384*mN^8*mo*\[CapitalLambda]0^16 + 80*mN^7*Q2*\[CapitalLambda]0^16 - 
-    304*mN^6*mo*Q2*\[CapitalLambda]0^16 + 96*mN^5*Q2^2*\[CapitalLambda]0^16 - 
-    192*mN^4*mo*Q2^2*\[CapitalLambda]0^16 + 
-    39*mN^3*Q2^3*\[CapitalLambda]0^16 - 9*mN^2*mo*Q2^3*\[CapitalLambda]0^16 + 
-    2*mN*Q2^4*\[CapitalLambda]0^16 + 2*mo*Q2^4*\[CapitalLambda]0^16 + 
-    48*mm^14*mN^3*Q2*(24*mN^6 - 168*mN^5*mo - 
-      2*mN^3*mo*(104*mo^2 + 53*Q2 - 72*\[CapitalLambda]0^2) + 
-      mN^2*Q2*(96*mo^2 + 41*Q2 - 60*\[CapitalLambda]0^2) + 
-      mN*mo*Q2*(8*mo^2 - Q2 - 12*\[CapitalLambda]0^2) + 
-      Q2^2*(8*mo^2 + 3*Q2 - 4*\[CapitalLambda]0^2) + 
-      2*mN^4*(8*mo^2 + 31*Q2 + 8*\[CapitalLambda]0^2)) - 
-    48*mm^12*mN^3*Q2*(152*mN^8 - 424*mN^7*mo - 
-      24*mN^5*mo*(36*mo^2 + 21*Q2 - 32*\[CapitalLambda]0^2) + 
-      8*mN^6*(44*mo^2 + 31*Q2 - 16*\[CapitalLambda]0^2) - 
-      2*mN^3*mo*(364*mo^4 + 94*Q2^2 - 243*Q2*\[CapitalLambda]0^2 + 
-        156*\[CapitalLambda]0^4 + mo^2*(338*Q2 - 504*\[CapitalLambda]0^2)) + 
-      mN^2*Q2*(364*mo^4 + 51*Q2^2 - 175*Q2*\[CapitalLambda]0^2 + 
-        126*\[CapitalLambda]0^4 + mo^2*(266*Q2 - 468*\[CapitalLambda]0^2)) + 
-      2*mN^4*(84*mo^4 + 78*Q2^2 - 129*Q2*\[CapitalLambda]0^2 - 
-        28*\[CapitalLambda]0^4 + mo^2*(222*Q2 - 40*\[CapitalLambda]0^2)) + 
-      Q2^2*(28*mo^4 + 3*Q2^2 - 9*Q2*\[CapitalLambda]0^2 + 
-        2*\[CapitalLambda]0^4 + 2*mo^2*(9*Q2 - 14*\[CapitalLambda]0^2)) + 
-      mN*mo*Q2*(28*mo^4 - 2*mo^2*(5*Q2 + 42*\[CapitalLambda]0^2) - 
-        9*(Q2^2 + Q2*\[CapitalLambda]0^2 - 6*\[CapitalLambda]0^4))) + 
-    mm^10*(14208*mN^13*Q2 - 22656*mN^12*mo*Q2 - 9*mN^2*mo*Q2^3*
-       \[CapitalLambda]0^6 + 2*mN*Q2^4*\[CapitalLambda]0^6 + 
-      2*mo*Q2^4*\[CapitalLambda]0^6 - 96*mN^10*mo*Q2*(576*mo^2 + 395*Q2 - 
-        720*\[CapitalLambda]0^2) + 96*mN^11*Q2*(432*mo^2 + 233*Q2 - 
-        336*\[CapitalLambda]0^2) - 48*mN^8*mo*(1656*mo^4*Q2 + 519*Q2^3 - 
-        1884*Q2^2*\[CapitalLambda]0^2 + 1272*Q2*\[CapitalLambda]0^4 + 
-        8*\[CapitalLambda]0^6 + 12*mo^2*Q2*(141*Q2 - 
-          292*\[CapitalLambda]0^2)) + 48*mN^9*(1224*mo^4*Q2 + 311*Q2^3 - 
-        900*Q2^2*\[CapitalLambda]0^2 + 264*Q2*\[CapitalLambda]0^4 - 
-        8*\[CapitalLambda]0^6 + 420*mo^2*Q2*(3*Q2 - 4*\[CapitalLambda]0^2)) + 
-      48*mN^4*mo*Q2^2*(56*mo^6 - 11*Q2^3 + 30*Q2^2*\[CapitalLambda]0^2 + 
-        69*Q2*\[CapitalLambda]0^4 - 129*\[CapitalLambda]0^6 - 
-        3*mo^4*(13*Q2 + 84*\[CapitalLambda]0^2) - 
-        12*mo^2*(4*Q2^2 + 2*Q2*\[CapitalLambda]0^2 - 
-          27*\[CapitalLambda]0^4)) + 3*mN^3*Q2^3*(896*mo^6 + 16*Q2^3 - 
-        96*Q2^2*\[CapitalLambda]0^2 - 48*Q2*\[CapitalLambda]0^4 + 
-        253*\[CapitalLambda]0^6 + 48*mo^4*(15*Q2 - 28*\[CapitalLambda]0^2) + 
-        192*mo^2*(Q2^2 - 4*Q2*\[CapitalLambda]0^2 + \[CapitalLambda]0^4)) + 
-      16*mN^7*Q2*(1680*mo^6 + 309*Q2^3 - 1476*Q2^2*\[CapitalLambda]0^2 + 
-        990*Q2*\[CapitalLambda]0^4 + 335*\[CapitalLambda]0^6 + 
-        18*mo^4*(195*Q2 - 136*\[CapitalLambda]0^2) + 
-        18*mo^2*(107*Q2^2 - 300*Q2*\[CapitalLambda]0^2 + 
-          24*\[CapitalLambda]0^4)) + 48*mN^5*Q2^2*(784*mo^6 + 23*Q2^3 - 
-        162*Q2^2*\[CapitalLambda]0^2 + 243*Q2*\[CapitalLambda]0^4 - 
-        113*\[CapitalLambda]0^6 + 9*mo^4*(79*Q2 - 172*\[CapitalLambda]0^2) + 
-        6*mo^2*(37*Q2^2 - 172*Q2*\[CapitalLambda]0^2 + 
-          146*\[CapitalLambda]0^4)) - 16*mN^6*mo*Q2*(4368*mo^6 + 474*Q2^3 - 
-        2232*Q2^2*\[CapitalLambda]0^2 + 2394*Q2*\[CapitalLambda]0^4 - 
-        911*\[CapitalLambda]0^6 + 18*mo^4*(305*Q2 - 
-          504*\[CapitalLambda]0^2) + 18*mo^2*(143*Q2^2 - 
-          460*Q2*\[CapitalLambda]0^2 + 312*\[CapitalLambda]0^4))) + 
-    mm^8*(-8640*mN^15*Q2 + 2880*mN^14*mo*Q2 - 
-      96*mN^13*Q2*(232*mo^2 + 113*Q2 - 440*\[CapitalLambda]0^2) + 
-      96*mN^12*mo*Q2*(184*mo^2 + 121*Q2 - 360*\[CapitalLambda]0^2) + 
-      5*mN^2*mo*Q2^3*\[CapitalLambda]0^6*(9*mo^2 + 2*Q2 - 
-        9*\[CapitalLambda]0^2) + 10*mo*Q2^4*\[CapitalLambda]0^6*
-       (-mo^2 + \[CapitalLambda]0^2) + 2*mN*Q2^4*\[CapitalLambda]0^6*
-       (-9*mo^2 + 5*\[CapitalLambda]0^2) + 96*mN^10*mo*
-       (324*mo^4*Q2 + 130*Q2^3 - 915*Q2^2*\[CapitalLambda]0^2 + 
-        660*Q2*\[CapitalLambda]0^4 + 4*\[CapitalLambda]0^6 + 
-        8*mo^2*Q2*(47*Q2 - 225*\[CapitalLambda]0^2)) - 
-      96*mN^11*(396*mo^4*Q2 + 65*Q2^3 - 585*Q2^2*\[CapitalLambda]0^2 + 
-        540*Q2*\[CapitalLambda]0^4 - 12*\[CapitalLambda]0^6 + 
-        24*mo^2*Q2*(16*Q2 - 65*\[CapitalLambda]0^2)) + 
-      16*mN^6*mo*Q2*(5460*mo^8 + 138*Q2^4 - 1602*Q2^3*\[CapitalLambda]0^2 + 
-        3060*Q2^2*\[CapitalLambda]0^4 - 1224*Q2*\[CapitalLambda]0^6 + 
-        175*\[CapitalLambda]0^8 + 240*mo^6*(34*Q2 - 63*\[CapitalLambda]0^2) + 
-        18*mo^4*(254*Q2^2 - 1085*Q2*\[CapitalLambda]0^2 + 
-          780*\[CapitalLambda]0^4) + mo^2*(1200*Q2^3 - 
-          9198*Q2^2*\[CapitalLambda]0^2 + 12240*Q2*\[CapitalLambda]0^4 - 
-          4555*\[CapitalLambda]0^6)) - 3*mN^5*Q2^2*(16800*mo^8 + 32*Q2^4 - 
-        816*Q2^3*\[CapitalLambda]0^2 + 1776*Q2^2*\[CapitalLambda]0^4 - 
-        437*Q2*\[CapitalLambda]0^6 + 80*\[CapitalLambda]0^8 + 
-        320*mo^6*(50*Q2 - 141*\[CapitalLambda]0^2) + 
-        48*mo^4*(118*Q2^2 - 813*Q2*\[CapitalLambda]0^2 + 
-          830*\[CapitalLambda]0^4) + 32*mo^2*(27*Q2^3 - 
-          345*Q2^2*\[CapitalLambda]0^2 + 687*Q2*\[CapitalLambda]0^4 - 
-          361*\[CapitalLambda]0^6)) - 16*mN^7*Q2*(2940*mo^8 + 24*Q2^4 - 
-        609*Q2^3*\[CapitalLambda]0^2 + 954*Q2^2*\[CapitalLambda]0^4 + 
-        135*Q2*\[CapitalLambda]0^6 - 415*\[CapitalLambda]0^8 + 
-        240*mo^6*(17*Q2 - 29*\[CapitalLambda]0^2) + 
-        18*mo^4*(120*Q2^2 - 727*Q2*\[CapitalLambda]0^2 + 
-          260*\[CapitalLambda]0^4) + 3*mo^2*(172*Q2^3 - 
-          2070*Q2^2*\[CapitalLambda]0^2 + 2592*Q2*\[CapitalLambda]0^4 - 
-          75*\[CapitalLambda]0^6)) - 48*mN^9*(1680*mo^6*Q2 + 54*Q2^4 - 
-        695*Q2^3*\[CapitalLambda]0^2 + 990*Q2^2*\[CapitalLambda]0^4 - 
-        253*Q2*\[CapitalLambda]0^6 + 40*\[CapitalLambda]0^8 + 
-        12*mo^4*Q2*(143*Q2 - 412*\[CapitalLambda]0^2) + 
-        8*mo^2*(80*Q2^3 - 552*Q2^2*\[CapitalLambda]0^2 + 
-          390*Q2*\[CapitalLambda]0^4 - 3*\[CapitalLambda]0^6)) + 
-      16*mN^8*mo*(3600*mo^6*Q2 + 414*Q2^4 - 4581*Q2^3*\[CapitalLambda]0^2 + 
-        6822*Q2^2*\[CapitalLambda]0^4 - 2141*Q2*\[CapitalLambda]0^6 - 
-        120*\[CapitalLambda]0^8 + 36*mo^4*Q2*(123*Q2 - 
-          500*\[CapitalLambda]0^2) + 24*mo^2*(87*Q2^3 - 
-          726*Q2^2*\[CapitalLambda]0^2 + 642*Q2*\[CapitalLambda]0^4 + 
-          5*\[CapitalLambda]0^6)) - 3*mN^4*mo*Q2^2*(1120*mo^8 - 64*Q2^4 + 
-        624*Q2^3*\[CapitalLambda]0^2 - 336*Q2^2*\[CapitalLambda]0^4 - 
-        2817*Q2*\[CapitalLambda]0^6 + 2960*\[CapitalLambda]0^8 - 
-        320*mo^6*(4*Q2 + 21*\[CapitalLambda]0^2) - 
-        48*mo^4*(34*Q2^2 - 5*Q2*\[CapitalLambda]0^2 - 
-          270*\[CapitalLambda]0^4) - 16*mo^2*(34*Q2^3 - 
-          156*Q2^2*\[CapitalLambda]0^2 - 246*Q2*\[CapitalLambda]0^4 + 
-          645*\[CapitalLambda]0^6)) - 3*mN^3*Q2^3*
-       (1120*mo^8 - 16*Q2^3*\[CapitalLambda]0^2 - 
-        144*Q2^2*\[CapitalLambda]0^4 + 714*Q2*\[CapitalLambda]0^6 - 
-        625*\[CapitalLambda]0^8 + 320*mo^6*(3*Q2 - 7*\[CapitalLambda]0^2) + 
-        48*mo^4*(6*Q2^2 - 35*Q2*\[CapitalLambda]0^2 + 
-          10*\[CapitalLambda]0^4) + mo^2*(32*Q2^3 - 
-          384*Q2^2*\[CapitalLambda]0^2 - 96*Q2*\[CapitalLambda]0^4 + 
-          1285*\[CapitalLambda]0^6))) + 
-    mm^6*(-7296*mN^17*Q2 + 20352*mN^16*mo*Q2 + 288*mN^14*mo*Q2*
-       (8*mo^2 + 103*Q2 - 200*\[CapitalLambda]0^2) - 
-      96*mN^15*Q2*(152*mo^2 + 175*Q2 - 40*\[CapitalLambda]0^2) + 
-      2*mN*Q2^4*\[CapitalLambda]0^6*(26*mo^4 + 10*\[CapitalLambda]0^4 + 
-        mo^2*(Q2 - 36*\[CapitalLambda]0^2)) + 2*mo*Q2^4*\[CapitalLambda]0^6*
-       (10*mo^4 + 10*\[CapitalLambda]0^4 - 
-        mo^2*(Q2 + 20*\[CapitalLambda]0^2)) + 
-      48*mN^12*mo*(176*mo^4*Q2 + 401*Q2^3 - 1092*Q2^2*\[CapitalLambda]0^2 + 
-        1200*Q2*\[CapitalLambda]0^4 + 16*\[CapitalLambda]0^6 + 
-        16*mo^2*Q2*(13*Q2 + 42*\[CapitalLambda]0^2)) - 
-      48*mN^13*(336*mo^4*Q2 + 297*Q2^3 - 396*Q2^2*\[CapitalLambda]0^2 - 
-        560*Q2*\[CapitalLambda]0^4 + 16*\[CapitalLambda]0^6 + 
-        8*mo^2*Q2*(57*Q2 + 92*\[CapitalLambda]0^2)) + 
-      32*mN^10*mo*(672*mo^6*Q2 + 237*Q2^4 - 216*Q2^3*\[CapitalLambda]0^2 - 
-        54*Q2^2*\[CapitalLambda]0^4 - 953*Q2*\[CapitalLambda]0^6 + 
-        48*\[CapitalLambda]0^8 + 6*mo^4*Q2*(143*Q2 + 
-          480*\[CapitalLambda]0^2) + 6*mo^2*Q2*(73*Q2^2 + 
-          456*Q2*\[CapitalLambda]0^2 - 816*\[CapitalLambda]0^4)) + 
-      mN^2*mo*Q2^3*\[CapitalLambda]0^6*(-90*mo^4 - 
-        9*mo^2*(7*Q2 - 20*\[CapitalLambda]0^2) + 
-        2*(Q2^2 + 20*Q2*\[CapitalLambda]0^2 - 45*\[CapitalLambda]0^4)) - 
-      16*mN^11*(2688*mo^6*Q2 + 399*Q2^4 - 1020*Q2^3*\[CapitalLambda]0^2 - 
-        900*Q2^2*\[CapitalLambda]0^4 + 1970*Q2*\[CapitalLambda]0^6 - 
-        288*\[CapitalLambda]0^8 + 12*mo^4*Q2*(229*Q2 + 
-          576*\[CapitalLambda]0^2) + 12*mo^2*(95*Q2^3 + 
-          384*Q2^2*\[CapitalLambda]0^2 - 960*Q2*\[CapitalLambda]0^4 + 
-          8*\[CapitalLambda]0^6)) + mN^4*mo*Q2^2*(2688*mo^10 - 
-        240*mo^8*(19*Q2 + 84*\[CapitalLambda]0^2) - 
-        576*mo^6*(9*Q2^2 - 10*Q2*\[CapitalLambda]0^2 - 
-          90*\[CapitalLambda]0^4) - 48*mo^4*(35*Q2^3 - 
-          300*Q2^2*\[CapitalLambda]0^2 - 294*Q2*\[CapitalLambda]0^4 + 
-          1290*\[CapitalLambda]0^6) + \[CapitalLambda]0^2*
-         (576*Q2^4 - 2304*Q2^3*\[CapitalLambda]0^2 - 
-          1717*Q2^2*\[CapitalLambda]0^4 + 11004*Q2*\[CapitalLambda]0^6 - 
-          7968*\[CapitalLambda]0^8) - 12*mo^2*(16*Q2^4 - 
-          432*Q2^3*\[CapitalLambda]0^2 + 624*Q2^2*\[CapitalLambda]0^4 + 
-          2193*Q2*\[CapitalLambda]0^6 - 2960*\[CapitalLambda]0^8)) + 
-      16*mN^9*(2040*mo^8*Q2 - 75*Q2^5 + 228*Q2^4*\[CapitalLambda]0^2 - 
-        114*Q2^3*\[CapitalLambda]0^4 + 223*Q2^2*\[CapitalLambda]0^6 + 
-        276*Q2*\[CapitalLambda]0^8 - 240*\[CapitalLambda]0^10 + 
-        24*mo^6*Q2*(47*Q2 - 692*\[CapitalLambda]0^2) - 
-        6*mo^4*(11*Q2^3 + 2700*Q2^2*\[CapitalLambda]0^2 - 
-          3768*Q2*\[CapitalLambda]0^4 + 8*\[CapitalLambda]0^6) - 
-        4*mo^2*(33*Q2^4 + 1230*Q2^3*\[CapitalLambda]0^2 - 
-          3924*Q2^2*\[CapitalLambda]0^4 + 2065*Q2*\[CapitalLambda]0^6 - 
-          72*\[CapitalLambda]0^8)) + 16*mN^8*mo*(1080*mo^8*Q2 + 135*Q2^5 + 
-        612*Q2^4*\[CapitalLambda]0^2 - 3438*Q2^3*\[CapitalLambda]0^4 + 
-        1019*Q2^2*\[CapitalLambda]0^6 + 1156*Q2*\[CapitalLambda]0^8 - 
-        240*\[CapitalLambda]0^10 + 216*mo^6*Q2*(13*Q2 + 
-          60*\[CapitalLambda]0^2) + 6*mo^4*(339*Q2^3 + 
-          2484*Q2^2*\[CapitalLambda]0^2 - 3912*Q2*\[CapitalLambda]0^4 - 
-          40*\[CapitalLambda]0^6) + 12*mo^2*(54*Q2^4 + 
-          522*Q2^3*\[CapitalLambda]0^2 - 1680*Q2^2*\[CapitalLambda]0^4 + 
-          689*Q2*\[CapitalLambda]0^6 + 40*\[CapitalLambda]0^8)) - 
-      2*mN^7*Q2*(-24192*mo^10 + 72*Q2^5 - 288*Q2^4*\[CapitalLambda]0^2 + 
-        2352*Q2^3*\[CapitalLambda]0^4 - 12603*Q2^2*\[CapitalLambda]0^6 + 
-        11760*Q2*\[CapitalLambda]0^8 - 2608*\[CapitalLambda]0^10 - 
-        240*mo^8*(45*Q2 - 328*\[CapitalLambda]0^2) + 
-        96*mo^6*(33*Q2^2 + 1152*Q2*\[CapitalLambda]0^2 - 
-          920*\[CapitalLambda]0^4) + 16*mo^4*(162*Q2^3 + 
-          3564*Q2^2*\[CapitalLambda]0^2 - 8874*Q2*\[CapitalLambda]0^4 + 
-          2125*\[CapitalLambda]0^6) + 8*mo^2*(54*Q2^4 + 
-          1464*Q2^3*\[CapitalLambda]0^2 - 6156*Q2^2*\[CapitalLambda]0^4 + 
-          3769*Q2*\[CapitalLambda]0^6 + 300*\[CapitalLambda]0^8)) + 
-      mN^5*Q2^2*(43008*mo^10 - 192*Q2^4*\[CapitalLambda]0^2 + 
-        7453*Q2^2*\[CapitalLambda]0^6 - 12276*Q2*\[CapitalLambda]0^8 + 
-        3552*\[CapitalLambda]0^10 + 240*mo^8*(155*Q2 - 
-          612*\[CapitalLambda]0^2) + 384*mo^6*(30*Q2^2 - 
-          367*Q2*\[CapitalLambda]0^2 + 465*\[CapitalLambda]0^4) + 
-        48*mo^4*(31*Q2^3 - 1044*Q2^2*\[CapitalLambda]0^2 + 
-          2922*Q2*\[CapitalLambda]0^4 - 1758*\[CapitalLambda]0^6) + 
-        12*mo^2*(8*Q2^4 - 624*Q2^3*\[CapitalLambda]0^2 + 
-          2592*Q2^2*\[CapitalLambda]0^4 - 2005*Q2*\[CapitalLambda]0^6 + 
-          512*\[CapitalLambda]0^8)) - 2*mN^6*mo*Q2*(34944*mo^10 - 96*Q2^5 - 
-        2880*Q2^4*\[CapitalLambda]0^2 + 14400*Q2^3*\[CapitalLambda]0^4 - 
-        9627*Q2^2*\[CapitalLambda]0^6 - 8112*Q2*\[CapitalLambda]0^8 + 
-        3536*\[CapitalLambda]0^10 + 240*mo^8*(239*Q2 - 
-          504*\[CapitalLambda]0^2) + 96*mo^6*(319*Q2^2 - 
-          2040*Q2*\[CapitalLambda]0^2 + 1560*\[CapitalLambda]0^4) + 
-        16*mo^4*(399*Q2^3 - 7128*Q2^2*\[CapitalLambda]0^2 + 
-          12510*Q2*\[CapitalLambda]0^4 - 4555*\[CapitalLambda]0^6) + 
-        8*mo^2*(30*Q2^4 - 3744*Q2^3*\[CapitalLambda]0^2 + 
-          11700*Q2^2*\[CapitalLambda]0^4 - 6703*Q2*\[CapitalLambda]0^6 + 
-          700*\[CapitalLambda]0^8)) + mN^3*Q2^3*(2688*mo^10 + 
-        240*mo^8*(9*Q2 - 28*\[CapitalLambda]0^2) + 
-        192*mo^6*(3*Q2^2 - 30*Q2*\[CapitalLambda]0^2 + 
-          10*\[CapitalLambda]0^4) + 2*\[CapitalLambda]0^4*
-         (-96*Q2^3 + 863*Q2^2*\[CapitalLambda]0^2 - 
-          1764*Q2*\[CapitalLambda]0^4 + 1011*\[CapitalLambda]0^6) + 
-        6*mo^4*(8*Q2^3 - 288*Q2^2*\[CapitalLambda]0^2 + 
-          48*Q2*\[CapitalLambda]0^4 + 1305*\[CapitalLambda]0^6) - 
-        mo^2*(192*Q2^3*\[CapitalLambda]0^2 + 576*Q2^2*\[CapitalLambda]0^4 - 
-          6863*Q2*\[CapitalLambda]0^6 + 7740*\[CapitalLambda]0^8))) + 
-    mm^4*(14208*mN^19*Q2 - 22656*mN^18*mo*Q2 + 384*mN^17*Q2*
-       (59*Q2 - 132*\[CapitalLambda]0^2) + 384*mN^16*mo*Q2*
-       (72*mo^2 - 89*Q2 + 252*\[CapitalLambda]0^2) + 
-      2*mN*Q2^4*\[CapitalLambda]0^6*(-mo^2 + \[CapitalLambda]0^2)*
-       (34*mo^4 + 10*\[CapitalLambda]0^4 + 
-        mo^2*(3*Q2 - 44*\[CapitalLambda]0^2)) + 
-      96*mN^14*mo*(36*mo^4*Q2 - 222*Q2^3 + 1479*Q2^2*\[CapitalLambda]0^2 - 
-        1740*Q2*\[CapitalLambda]0^4 - 8*\[CapitalLambda]0^6 + 
-        6*mo^2*Q2*(75*Q2 - 28*\[CapitalLambda]0^2)) - 
-      2*mo*Q2^4*\[CapitalLambda]0^6*(mo^2 - \[CapitalLambda]0^2)*
-       (10*mo^4 + 10*\[CapitalLambda]0^4 - 
-        mo^2*(3*Q2 + 20*\[CapitalLambda]0^2)) - 
-      96*mN^15*(252*mo^4*Q2 - 142*Q2^3 + 909*Q2^2*\[CapitalLambda]0^2 - 
-        660*Q2*\[CapitalLambda]0^4 + 8*\[CapitalLambda]0^6 + 
-        6*mo^2*Q2*(21*Q2 + 76*\[CapitalLambda]0^2)) + 
-      mN^2*mo*Q2^3*\[CapitalLambda]0^6*(90*mo^6 + 
-        3*mo^4*(43*Q2 - 90*\[CapitalLambda]0^2) + 6*\[CapitalLambda]0^2*
-         (Q2^2 + 10*Q2*\[CapitalLambda]0^2 - 15*\[CapitalLambda]0^4) + 
-        mo^2*(-4*Q2^2 - 189*Q2*\[CapitalLambda]0^2 + 
-          270*\[CapitalLambda]0^4)) + 16*mN^12*mo*(960*mo^6*Q2 - 405*Q2^4 + 
-        5481*Q2^3*\[CapitalLambda]0^2 - 12942*Q2^2*\[CapitalLambda]0^4 + 
-        9550*Q2*\[CapitalLambda]0^6 + 144*\[CapitalLambda]0^8 + 
-        36*mo^4*Q2*(35*Q2 + 32*\[CapitalLambda]0^2) + 
-        6*mo^2*(345*Q2^3 - 78*Q2^2*\[CapitalLambda]0^2 - 
-          288*Q2*\[CapitalLambda]0^4 - 8*\[CapitalLambda]0^6)) - 
-      16*mN^13*(2496*mo^6*Q2 - 207*Q2^4 + 3825*Q2^3*\[CapitalLambda]0^2 - 
-        7002*Q2^2*\[CapitalLambda]0^4 + 1946*Q2*\[CapitalLambda]0^6 + 
-        144*\[CapitalLambda]0^8 + 36*mo^4*Q2*(93*Q2 + 
-          32*\[CapitalLambda]0^2) + 6*mo^2*(201*Q2^3 + 
-          606*Q2^2*\[CapitalLambda]0^2 - 288*Q2*\[CapitalLambda]0^4 - 
-          8*\[CapitalLambda]0^6)) - 16*mN^10*mo*(216*mo^8*Q2 + 36*Q2^5 - 
-        1926*Q2^4*\[CapitalLambda]0^2 + 5616*Q2^3*\[CapitalLambda]0^4 - 
-        8899*Q2^2*\[CapitalLambda]0^6 + 5358*Q2*\[CapitalLambda]0^8 - 
-        144*\[CapitalLambda]0^10 - 24*mo^6*Q2*(61*Q2 + 
-          180*\[CapitalLambda]0^2) - 36*mo^4*(44*Q2^3 + 
-          131*Q2^2*\[CapitalLambda]0^2 + 140*Q2*\[CapitalLambda]0^4 - 
-          4*\[CapitalLambda]0^6) - 2*mo^2*Q2*(522*Q2^3 + 
-          594*Q2^2*\[CapitalLambda]0^2 + 828*Q2*\[CapitalLambda]0^4 + 
-          383*\[CapitalLambda]0^6)) - mN^3*Q2^3*(1344*mo^12 + 
-        288*mo^10*(3*Q2 - 14*\[CapitalLambda]0^2) + 
-        144*mo^8*(Q2^2 - 25*Q2*\[CapitalLambda]0^2 + 
-          10*\[CapitalLambda]0^4) + mo^2*\[CapitalLambda]0^6*
-         (2876*Q2^2 - 8781*Q2*\[CapitalLambda]0^2 + 
-          6426*\[CapitalLambda]0^4) + 6*\[CapitalLambda]0^6*
-         (64*Q2^3 - 311*Q2^2*\[CapitalLambda]0^2 + 
-          438*Q2*\[CapitalLambda]0^4 - 193*\[CapitalLambda]0^6) + 
-        mo^6*(-1152*Q2^2*\[CapitalLambda]0^2 + 1152*Q2*\[CapitalLambda]0^4 + 
-          7950*\[CapitalLambda]0^6) + mo^4*(-144*Q2^3*\[CapitalLambda]0^2 + 
-          288*Q2^2*\[CapitalLambda]0^4 + 7705*Q2*\[CapitalLambda]0^6 - 
-          11970*\[CapitalLambda]0^8)) + mN^5*Q2^2*(-22848*mo^12 - 
-        864*mo^10*(17*Q2 - 110*\[CapitalLambda]0^2) - 
-        144*mo^8*(17*Q2^2 - 623*Q2*\[CapitalLambda]0^2 + 
-          1030*\[CapitalLambda]0^4) + 192*mo^6*
-         (165*Q2^2*\[CapitalLambda]0^2 - 738*Q2*\[CapitalLambda]0^4 + 
-          518*\[CapitalLambda]0^6) + \[CapitalLambda]0^6*
-         (-3646*Q2^3 + 13287*Q2^2*\[CapitalLambda]0^2 - 
-          12726*Q2*\[CapitalLambda]0^4 + 2880*\[CapitalLambda]0^6) + 
-        2*mo^2*\[CapitalLambda]0^2*(144*Q2^4 - 3168*Q2^3*\[CapitalLambda]0^
-            2 + 577*Q2^2*\[CapitalLambda]0^4 + 9846*Q2*\[CapitalLambda]0^6 - 
-          4608*\[CapitalLambda]0^8) + 6*mo^4*(840*Q2^3*\[CapitalLambda]0^2 - 
-          8208*Q2^2*\[CapitalLambda]0^4 + 9991*Q2*\[CapitalLambda]0^6 - 
-          2832*\[CapitalLambda]0^8)) + 16*mN^11*(3240*mo^8*Q2 + 27*Q2^5 - 
-        1449*Q2^4*\[CapitalLambda]0^2 + 4806*Q2^3*\[CapitalLambda]0^4 - 
-        4387*Q2^2*\[CapitalLambda]0^6 + 210*Q2*\[CapitalLambda]0^8 + 
-        432*\[CapitalLambda]0^10 + 168*mo^6*Q2*(11*Q2 - 
-          36*\[CapitalLambda]0^2) - 12*mo^4*(27*Q2^3 + 
-          435*Q2^2*\[CapitalLambda]0^2 + 540*Q2*\[CapitalLambda]0^4 - 
-          4*\[CapitalLambda]0^6) + mo^2*(-306*Q2^4 - 
-          2808*Q2^3*\[CapitalLambda]0^2 + 504*Q2^2*\[CapitalLambda]0^4 + 
-          4310*Q2*\[CapitalLambda]0^6 - 288*\[CapitalLambda]0^8)) + 
-      mN^7*Q2*(-29568*mo^12 - 432*Q2^5*\[CapitalLambda]0^2 + 
-        3744*Q2^4*\[CapitalLambda]0^4 - 23141*Q2^3*\[CapitalLambda]0^6 + 
-        43362*Q2^2*\[CapitalLambda]0^8 - 22464*Q2*\[CapitalLambda]0^10 + 
-        2528*\[CapitalLambda]0^12 + 576*mo^10*(39*Q2 + 
-          212*\[CapitalLambda]0^2) + 288*mo^8*(106*Q2^2 + 
-          297*Q2*\[CapitalLambda]0^2 - 660*\[CapitalLambda]0^4) + 
-        32*mo^6*(288*Q2^3 + 306*Q2^2*\[CapitalLambda]0^2 - 
-          8244*Q2*\[CapitalLambda]0^4 + 4025*\[CapitalLambda]0^6) + 
-        48*mo^4*(18*Q2^4 - 108*Q2^3*\[CapitalLambda]0^2 - 
-          2628*Q2^2*\[CapitalLambda]0^4 + 3283*Q2*\[CapitalLambda]0^6 - 
-          530*\[CapitalLambda]0^8) - 6*mo^2*\[CapitalLambda]0^2*
-         (336*Q2^4 + 2592*Q2^3*\[CapitalLambda]0^2 - 
-          1249*Q2^2*\[CapitalLambda]0^4 - 3544*Q2*\[CapitalLambda]0^6 + 
-          1392*\[CapitalLambda]0^8)) - mN^4*mo*Q2^2*
-       (1344*mo^12 - 288*mo^10*(11*Q2 + 42*\[CapitalLambda]0^2) - 
-        144*mo^8*(19*Q2^2 - 55*Q2*\[CapitalLambda]0^2 - 
-          270*\[CapitalLambda]0^4) - 288*mo^6*(2*Q2^3 - 
-          44*Q2^2*\[CapitalLambda]0^2 - 16*Q2*\[CapitalLambda]0^4 + 
-          215*\[CapitalLambda]0^6) + 18*mo^4*(248*Q2^3*\[CapitalLambda]0^2 - 
-          784*Q2^2*\[CapitalLambda]0^4 - 1569*Q2*\[CapitalLambda]0^6 + 
-          2960*\[CapitalLambda]0^8) + \[CapitalLambda]0^4*
-         (-576*Q2^4 + 962*Q2^3*\[CapitalLambda]0^2 + 
-          3279*Q2^2*\[CapitalLambda]0^4 - 7938*Q2*\[CapitalLambda]0^6 + 
-          4416*\[CapitalLambda]0^8) + mo^2*(576*Q2^4*\[CapitalLambda]0^2 - 
-          5760*Q2^3*\[CapitalLambda]0^4 + 650*Q2^2*\[CapitalLambda]0^6 + 
-          26820*Q2*\[CapitalLambda]0^8 - 23904*\[CapitalLambda]0^10)) + 
-      mN^6*mo*Q2*(34944*mo^12 + 576*mo^10*(103*Q2 - 
-          252*\[CapitalLambda]0^2) + 288*mo^8*(74*Q2^2 - 
-          955*Q2*\[CapitalLambda]0^2 + 780*\[CapitalLambda]0^4) - 
-        32*mo^6*(54*Q2^3 + 4950*Q2^2*\[CapitalLambda]0^2 - 
-          12780*Q2*\[CapitalLambda]0^4 + 4555*\[CapitalLambda]0^6) - 
-        48*mo^4*(36*Q2^4 + 750*Q2^3*\[CapitalLambda]0^2 - 
-          5184*Q2^2*\[CapitalLambda]0^4 + 4255*Q2*\[CapitalLambda]0^6 - 
-          350*\[CapitalLambda]0^8) + 6*mo^2*\[CapitalLambda]0^2*
-         (-432*Q2^4 + 10656*Q2^3*\[CapitalLambda]0^2 - 
-          15115*Q2^2*\[CapitalLambda]0^4 - 2536*Q2*\[CapitalLambda]0^6 + 
-          3536*\[CapitalLambda]0^8) + \[CapitalLambda]0^2*
-         (576*Q2^5 + 4032*Q2^4*\[CapitalLambda]0^2 - 
-          8483*Q2^3*\[CapitalLambda]0^4 - 14238*Q2^2*\[CapitalLambda]0^6 + 
-          26208*Q2*\[CapitalLambda]0^8 - 6688*\[CapitalLambda]0^10)) - 
-      2*mN^8*(27648*mo^11*Q2 + 2304*mo^9*Q2*(24*Q2 + 5*\[CapitalLambda]0^2) + 
-        96*mo^7*(321*Q2^3 - 276*Q2^2*\[CapitalLambda]0^2 - 
-          1344*Q2*\[CapitalLambda]0^4 - 20*\[CapitalLambda]0^6) + 
-        48*mo^5*(117*Q2^4 - 621*Q2^3*\[CapitalLambda]0^2 - 
-          2826*Q2^2*\[CapitalLambda]0^4 + 1993*Q2*\[CapitalLambda]0^6 + 
-          120*\[CapitalLambda]0^8) - 32*mo^3*(27*Q2^5 + 
-          279*Q2^4*\[CapitalLambda]0^2 + 1404*Q2^3*\[CapitalLambda]0^4 - 
-          1681*Q2^2*\[CapitalLambda]0^6 - 351*Q2*\[CapitalLambda]0^8 + 
-          180*\[CapitalLambda]0^10) + 3*mo*\[CapitalLambda]0^2*
-         (-1176*Q2^5 + 1680*Q2^4*\[CapitalLambda]0^2 - 
-          4249*Q2^3*\[CapitalLambda]0^4 + 10760*Q2^2*\[CapitalLambda]0^6 - 
-          5680*Q2*\[CapitalLambda]0^8 + 640*\[CapitalLambda]0^10)) + 
-      2*mN^9*(13824*mo^10*Q2 + 2304*mo^8*Q2*(3*Q2 + 19*\[CapitalLambda]0^2) - 
-        96*mo^6*(19*Q2^3 - 252*Q2^2*\[CapitalLambda]0^2 + 
-          1632*Q2*\[CapitalLambda]0^4 + 4*\[CapitalLambda]0^6) - 
-        16*mo^4*(135*Q2^4 - 81*Q2^3*\[CapitalLambda]0^2 + 
-          8730*Q2^2*\[CapitalLambda]0^4 - 7849*Q2*\[CapitalLambda]0^6 + 
-          72*\[CapitalLambda]0^8) - 16*mo^2*(36*Q2^5 + 
-          216*Q2^4*\[CapitalLambda]0^2 + 1332*Q2^3*\[CapitalLambda]0^4 - 
-          2705*Q2^2*\[CapitalLambda]0^6 + 1590*Q2*\[CapitalLambda]0^8 - 
-          216*\[CapitalLambda]0^10) - 3*\[CapitalLambda]0^2*
-         (696*Q2^5 - 3888*Q2^4*\[CapitalLambda]0^2 + 
-          9403*Q2^3*\[CapitalLambda]0^4 - 7064*Q2^2*\[CapitalLambda]0^6 + 
-          144*Q2*\[CapitalLambda]0^8 + 640*\[CapitalLambda]0^10))) + 
-    mm^2*(-8064*mN^21*Q2 + 10368*mN^20*mo*Q2 + 
-      96*mN^19*Q2*(224*mo^2 - 89*Q2 + 416*\[CapitalLambda]0^2) - 
-      96*mN^18*mo*Q2*(368*mo^2 - 139*Q2 + 576*\[CapitalLambda]0^2) + 
-      48*mN^16*mo*(648*mo^4*Q2 + 119*Q2^3 - 1740*Q2^2*\[CapitalLambda]0^2 + 
-        2568*Q2*\[CapitalLambda]0^4 - 8*\[CapitalLambda]0^6 - 
-        4*mo^2*Q2*(271*Q2 - 396*\[CapitalLambda]0^2)) + 
-      48*mN^17*(72*mo^4*Q2 - 55*Q2^3 + 1140*Q2^2*\[CapitalLambda]0^2 - 
-        1656*Q2*\[CapitalLambda]0^4 + 24*\[CapitalLambda]0^6 + 
-        12*mo^2*Q2*(53*Q2 - 44*\[CapitalLambda]0^2)) + 
-      2*mN*Q2^4*\[CapitalLambda]0^6*(mo^2 - \[CapitalLambda]0^2)^2*
-       (21*mo^4 + 5*\[CapitalLambda]0^4 + 
-        mo^2*(3*Q2 - 26*\[CapitalLambda]0^2)) + 2*mo*Q2^4*\[CapitalLambda]0^6*
-       (mo^2 - \[CapitalLambda]0^2)^2*(5*mo^4 + 5*\[CapitalLambda]0^4 - 
-        mo^2*(3*Q2 + 10*\[CapitalLambda]0^2)) + 
-      16*mN^14*mo*(720*mo^6*Q2 + 36*Q2^4 - 3096*Q2^3*\[CapitalLambda]0^2 + 
-        11862*Q2^2*\[CapitalLambda]0^4 - 9373*Q2*\[CapitalLambda]0^6 - 
-        96*\[CapitalLambda]0^8 + 18*mo^4*Q2*(207*Q2 + 
-          8*\[CapitalLambda]0^2) - 18*mo^2*Q2*(95*Q2^2 - 
-          436*Q2*\[CapitalLambda]0^2 + 40*\[CapitalLambda]0^4)) - 
-      48*mN^15*(1200*mo^6*Q2 + 9*Q2^4 - 620*Q2^3*\[CapitalLambda]0^2 + 
-        2502*Q2^2*\[CapitalLambda]0^4 - 1697*Q2*\[CapitalLambda]0^6 + 
-        32*\[CapitalLambda]0^8 + 6*mo^4*Q2*(109*Q2 + 
-          184*\[CapitalLambda]0^2) + mo^2*(-194*Q2^3 + 
-          984*Q2^2*\[CapitalLambda]0^2 + 912*Q2*\[CapitalLambda]0^4 + 
-          32*\[CapitalLambda]0^6)) + mN^2*mo*Q2^3*\[CapitalLambda]0^6*
-       (-45*mo^8 + 6*Q2^2*\[CapitalLambda]0^4 + 40*Q2*\[CapitalLambda]0^6 - 
-        45*\[CapitalLambda]0^8 + mo^6*(-109*Q2 + 180*\[CapitalLambda]0^2) + 
-        2*mo^4*(5*Q2^2 + 129*Q2*\[CapitalLambda]0^2 - 
-          135*\[CapitalLambda]0^4) + mo^2*(-8*Q2^2*\[CapitalLambda]0^2 - 
-          189*Q2*\[CapitalLambda]0^4 + 180*\[CapitalLambda]0^6)) + 
-      mN^3*Q2^3*(384*mo^14 + 48*mo^12*(3*Q2 - 28*\[CapitalLambda]0^2) - 
-        576*mo^10*(2*Q2*\[CapitalLambda]0^2 - \[CapitalLambda]0^4) + 
-        mo^2*\[CapitalLambda]0^6*(192*Q2^3 - 2296*Q2^2*\[CapitalLambda]0^2 + 
-          4461*Q2*\[CapitalLambda]0^4 - 2556*\[CapitalLambda]0^6) + 
-        3*\[CapitalLambda]0^8*(-80*Q2^3 + 286*Q2^2*\[CapitalLambda]0^2 - 
-          312*Q2*\[CapitalLambda]0^4 + 113*\[CapitalLambda]0^6) + 
-        2*mo^4*\[CapitalLambda]0^4*(72*Q2^3 + 571*Q2^2*\[CapitalLambda]0^2 - 
-          3457*Q2*\[CapitalLambda]0^4 + 3393*\[CapitalLambda]0^6) + 
-        mo^8*(-288*Q2^2*\[CapitalLambda]0^2 + 1008*Q2*\[CapitalLambda]0^4 + 
-          4035*\[CapitalLambda]0^6) + mo^6*(576*Q2^2*\[CapitalLambda]0^4 + 
-          3389*Q2*\[CapitalLambda]0^6 - 8220*\[CapitalLambda]0^8)) + 
-      mN^10*mo*(-27648*mo^10*Q2 - 1152*Q2^5*\[CapitalLambda]0^2 + 
-        38880*Q2^4*\[CapitalLambda]0^4 - 109101*Q2^3*\[CapitalLambda]0^6 + 
-        128192*Q2^2*\[CapitalLambda]0^8 - 50016*Q2*\[CapitalLambda]0^10 + 
-        1536*\[CapitalLambda]0^12 - 480*mo^8*Q2*(175*Q2 + 
-          144*\[CapitalLambda]0^2) - 192*mo^6*(235*Q2^3 + 
-          84*Q2^2*\[CapitalLambda]0^2 - 288*Q2*\[CapitalLambda]0^4 - 
-          16*\[CapitalLambda]0^6) + 16*mo^2*Q2*\[CapitalLambda]0^2*
-         (2232*Q2^3 - 180*Q2^2*\[CapitalLambda]0^2 - 
-          4097*Q2*\[CapitalLambda]0^4 + 4988*\[CapitalLambda]0^6) + 
-        32*mo^4*(180*Q2^4 + 504*Q2^3*\[CapitalLambda]0^2 + 
-          1242*Q2^2*\[CapitalLambda]0^4 + 389*Q2*\[CapitalLambda]0^6 - 
-          144*\[CapitalLambda]0^8)) - 16*mN^12*(840*mo^9*Q2 - 
-        96*mo^7*Q2*(10*Q2 + 27*\[CapitalLambda]0^2) + 
-        mo^5*(-3195*Q2^3 - 2124*Q2^2*\[CapitalLambda]0^2 + 
-          432*Q2*\[CapitalLambda]0^4 + 48*\[CapitalLambda]0^6) + 
-        mo*\[CapitalLambda]0^2*(846*Q2^4 - 7335*Q2^3*\[CapitalLambda]0^2 + 
-          13160*Q2^2*\[CapitalLambda]0^4 - 6740*Q2*\[CapitalLambda]0^6 - 
-          144*\[CapitalLambda]0^8) + 12*mo^3*(15*Q2^4 - 
-          480*Q2^3*\[CapitalLambda]0^2 + 129*Q2^2*\[CapitalLambda]0^4 + 
-          431*Q2*\[CapitalLambda]0^6 + 8*\[CapitalLambda]0^8)) + 
-      16*mN^13*(3000*mo^8*Q2 - 120*mo^6*Q2*(Q2 + 20*\[CapitalLambda]0^2) + 
-        mo^4*(-459*Q2^3 - 6084*Q2^2*\[CapitalLambda]0^2 + 
-          720*Q2*\[CapitalLambda]0^4 + 48*\[CapitalLambda]0^6) + 
-        \[CapitalLambda]0^2*(450*Q2^4 - 4815*Q2^3*\[CapitalLambda]0^2 + 
-          7748*Q2^2*\[CapitalLambda]0^4 - 2812*Q2*\[CapitalLambda]0^6 - 
-          144*\[CapitalLambda]0^8) + 2*mo^2*(63*Q2^4 - 
-          1296*Q2^3*\[CapitalLambda]0^2 - 1962*Q2^2*\[CapitalLambda]0^4 + 
-          2206*Q2*\[CapitalLambda]0^6 + 48*\[CapitalLambda]0^8)) + 
-      mN^5*Q2^2*(6912*mo^14 + 48*mo^12*(41*Q2 - 708*\[CapitalLambda]0^2) - 
-        288*mo^10*(Q2^2 + 96*Q2*\[CapitalLambda]0^2 - 
-          226*\[CapitalLambda]0^4) - 48*mo^8*(138*Q2^2*\[CapitalLambda]0^2 - 
-          1419*Q2*\[CapitalLambda]0^4 + 1193*\[CapitalLambda]0^6) + 
-        mo^4*\[CapitalLambda]0^4*(5616*Q2^3 - 16087*Q2^2*\[CapitalLambda]0^
-            2 - 3228*Q2*\[CapitalLambda]0^4 + 7776*\[CapitalLambda]0^6) + 
-        \[CapitalLambda]0^6*(192*Q2^4 - 3020*Q2^3*\[CapitalLambda]0^2 + 
-          7095*Q2^2*\[CapitalLambda]0^4 - 5076*Q2*\[CapitalLambda]0^6 + 
-          912*\[CapitalLambda]0^8) + 12*mo^6*(2304*Q2^2*\[CapitalLambda]0^4 - 
-          4413*Q2*\[CapitalLambda]0^6 + 1376*\[CapitalLambda]0^8) - 
-        2*mo^2*\[CapitalLambda]0^4*(-144*Q2^4 + 287*Q2^3*\[CapitalLambda]0^
-            2 + 5902*Q2^2*\[CapitalLambda]0^4 - 9414*Q2*\[CapitalLambda]0^6 + 
-          2976*\[CapitalLambda]0^8)) + mN^4*mo*Q2^2*
-       (384*mo^14 - 48*mo^12*(25*Q2 + 84*\[CapitalLambda]0^2) - 
-        576*mo^10*(Q2^2 - 8*Q2*\[CapitalLambda]0^2 - 
-          27*\[CapitalLambda]0^4) + 144*mo^8*(34*Q2^2*\[CapitalLambda]0^2 - 
-          17*Q2*\[CapitalLambda]0^4 - 215*\[CapitalLambda]0^6) + 
-        \[CapitalLambda]0^6*(192*Q2^4 + 140*Q2^3*\[CapitalLambda]0^2 - 
-          1983*Q2^2*\[CapitalLambda]0^4 + 3036*Q2*\[CapitalLambda]0^6 - 
-          1392*\[CapitalLambda]0^8) + 12*mo^6*(96*Q2^3*\[CapitalLambda]0^2 - 
-          816*Q2^2*\[CapitalLambda]0^4 - 945*Q2*\[CapitalLambda]0^6 + 
-          2960*\[CapitalLambda]0^8) + 2*mo^2*\[CapitalLambda]0^4*
-         (-288*Q2^4 + 1247*Q2^3*\[CapitalLambda]0^2 + 
-          1366*Q2^2*\[CapitalLambda]0^4 - 6642*Q2*\[CapitalLambda]0^6 + 
-          4416*\[CapitalLambda]0^8) + mo^4*(-3888*Q2^3*\[CapitalLambda]0^4 + 
-          4783*Q2^2*\[CapitalLambda]0^6 + 20628*Q2*\[CapitalLambda]0^8 - 
-          23904*\[CapitalLambda]0^10)) + 
-      mN^7*Q2*(9984*mo^14 - 96*mo^12*(233*Q2 + 520*\[CapitalLambda]0^2) - 
-        288*mo^10*(45*Q2^2 - 44*Q2*\[CapitalLambda]0^2 - 
-          344*\[CapitalLambda]0^4) - 48*mo^8*(15*Q2^3 - 
-          900*Q2^2*\[CapitalLambda]0^2 - 1962*Q2*\[CapitalLambda]0^4 + 
-          1975*\[CapitalLambda]0^6) + mo^2*\[CapitalLambda]0^4*
-         (-1440*Q2^4 + 6095*Q2^3*\[CapitalLambda]0^2 - 
-          37140*Q2^2*\[CapitalLambda]0^4 + 29904*Q2*\[CapitalLambda]0^6 - 
-          4800*\[CapitalLambda]0^8) + 6*mo^4*\[CapitalLambda]0^2*
-         (288*Q2^4 + 1152*Q2^3*\[CapitalLambda]0^2 - 
-          8021*Q2^2*\[CapitalLambda]0^4 + 3328*Q2*\[CapitalLambda]0^6 + 
-          176*\[CapitalLambda]0^8) + 16*mo^6*(1224*Q2^3*\[CapitalLambda]0^2 + 
-          1980*Q2^2*\[CapitalLambda]0^4 - 7851*Q2*\[CapitalLambda]0^6 + 
-          2420*\[CapitalLambda]0^8) + 2*\[CapitalLambda]0^4*
-         (-216*Q2^5 + 2113*Q2^4*\[CapitalLambda]0^2 - 
-          8957*Q2^3*\[CapitalLambda]0^4 + 11601*Q2^2*\[CapitalLambda]0^6 - 
-          4368*Q2*\[CapitalLambda]0^8 + 344*\[CapitalLambda]0^10)) + 
-      mN^9*(-31104*mo^12*Q2 + 576*mo^10*Q2*(29*Q2 + 68*\[CapitalLambda]0^2) + 
-        48*mo^8*(455*Q2^3 + 1020*Q2^2*\[CapitalLambda]0^2 + 
-          1608*Q2*\[CapitalLambda]0^4 + 24*\[CapitalLambda]0^6) + 
-        64*mo^6*(45*Q2^4 + 312*Q2^3*\[CapitalLambda]0^2 + 
-          792*Q2^2*\[CapitalLambda]0^4 - 2413*Q2*\[CapitalLambda]0^6 - 
-          24*\[CapitalLambda]0^8) - 16*mo^4*\[CapitalLambda]0^2*
-         (468*Q2^4 - 1350*Q2^3*\[CapitalLambda]0^2 + 
-          6901*Q2^2*\[CapitalLambda]0^4 - 4540*Q2*\[CapitalLambda]0^6 + 
-          144*\[CapitalLambda]0^8) - 4*mo^2*\[CapitalLambda]0^2*
-         (576*Q2^5 + 2160*Q2^4*\[CapitalLambda]0^2 - 
-          6945*Q2^3*\[CapitalLambda]0^4 + 8704*Q2^2*\[CapitalLambda]0^6 + 
-          624*Q2*\[CapitalLambda]0^8 - 1152*\[CapitalLambda]0^10) - 
-        3*\[CapitalLambda]0^4*(1584*Q2^5 - 8459*Q2^4*\[CapitalLambda]0^2 + 
-          16188*Q2^3*\[CapitalLambda]0^4 - 9520*Q2^2*\[CapitalLambda]0^6 + 
-          320*Q2*\[CapitalLambda]0^8 + 640*\[CapitalLambda]0^10)) - 
-      mN^6*mo*Q2*(9984*mo^14 + 96*mo^12*(173*Q2 - 504*\[CapitalLambda]0^2) - 
-        288*mo^10*(Q2^2 + 356*Q2*\[CapitalLambda]0^2 - 
-          312*\[CapitalLambda]0^4) - 16*mo^8*(180*Q2^3 + 
-          2664*Q2^2*\[CapitalLambda]0^2 - 13050*Q2*\[CapitalLambda]0^4 + 
-          4555*\[CapitalLambda]0^6) + mo^2*\[CapitalLambda]0^4*
-         (3744*Q2^4 - 24897*Q2^3*\[CapitalLambda]0^2 + 
-          2532*Q2^2*\[CapitalLambda]0^4 + 36528*Q2*\[CapitalLambda]0^6 - 
-          13376*\[CapitalLambda]0^8) + 16*mo^6*(72*Q2^3*\[CapitalLambda]0^2 + 
-          8244*Q2^2*\[CapitalLambda]0^4 - 10317*Q2*\[CapitalLambda]0^6 + 
-          700*\[CapitalLambda]0^8) + 6*mo^4*\[CapitalLambda]0^2*
-         (576*Q2^4 + 5616*Q2^3*\[CapitalLambda]0^2 - 17747*Q2^2*
-           \[CapitalLambda]0^4 + 3040*Q2*\[CapitalLambda]0^6 + 
-          3536*\[CapitalLambda]0^8) + 2*\[CapitalLambda]0^4*
-         (-288*Q2^5 + 193*Q2^4*\[CapitalLambda]0^2 - 
-          2413*Q2^3*\[CapitalLambda]0^4 + 7407*Q2^2*\[CapitalLambda]0^6 - 
-          6288*Q2*\[CapitalLambda]0^8 + 1192*\[CapitalLambda]0^10)) + 
-      mN^8*(33408*mo^13*Q2 + 576*mo^11*Q2*(111*Q2 - 76*\[CapitalLambda]0^2) + 
-        48*mo^9*(345*Q2^3 - 3300*Q2^2*\[CapitalLambda]0^2 - 
-          1464*Q2*\[CapitalLambda]0^4 - 40*\[CapitalLambda]0^6) - 
-        64*mo^7*(90*Q2^4 + 1656*Q2^3*\[CapitalLambda]0^2 + 
-          180*Q2^2*\[CapitalLambda]0^4 - 1919*Q2*\[CapitalLambda]0^6 - 
-          120*\[CapitalLambda]0^8) - 16*mo^5*\[CapitalLambda]0^2*
-         (1620*Q2^4 - 1242*Q2^3*\[CapitalLambda]0^2 - 
-          6955*Q2^2*\[CapitalLambda]0^4 + 660*Q2*\[CapitalLambda]0^6 + 
-          720*\[CapitalLambda]0^8) + mo*\[CapitalLambda]0^4*
-         (7632*Q2^5 - 23053*Q2^4*\[CapitalLambda]0^2 + 
-          47388*Q2^3*\[CapitalLambda]0^4 - 48432*Q2^2*\[CapitalLambda]0^6 + 
-          16192*Q2*\[CapitalLambda]0^8 - 1920*\[CapitalLambda]0^10) + 
-        4*mo^3*\[CapitalLambda]0^2*(864*Q2^5 + 1152*Q2^4*\[CapitalLambda]0^
-            2 + 3117*Q2^3*\[CapitalLambda]0^4 + 10864*Q2^2*
-           \[CapitalLambda]0^6 - 11952*Q2*\[CapitalLambda]0^8 + 
-          1920*\[CapitalLambda]0^10)) + mN^11*(13824*mo^10*Q2 + 
-        288*mo^8*Q2*(35*Q2 + 304*\[CapitalLambda]0^2) - 
-        192*mo^6*(55*Q2^3 - 324*Q2^2*\[CapitalLambda]0^2 + 
-          336*Q2*\[CapitalLambda]0^4 + 8*\[CapitalLambda]0^6) - 
-        16*mo^4*(225*Q2^4 + 1404*Q2^3*\[CapitalLambda]0^2 + 
-          1692*Q2^2*\[CapitalLambda]0^4 + 1606*Q2*\[CapitalLambda]0^6 - 
-          96*\[CapitalLambda]0^8) - 16*mo^2*\[CapitalLambda]0^2*
-         (720*Q2^4 + 2808*Q2^3*\[CapitalLambda]0^2 - 
-          5591*Q2^2*\[CapitalLambda]0^4 + 1460*Q2*\[CapitalLambda]0^6 + 
-          288*\[CapitalLambda]0^8) + \[CapitalLambda]0^2*
-         (864*Q2^5 - 26928*Q2^4*\[CapitalLambda]0^2 + 
-          80019*Q2^3*\[CapitalLambda]0^4 - 70784*Q2^2*\[CapitalLambda]0^6 + 
-          11424*Q2*\[CapitalLambda]0^8 + 4608*\[CapitalLambda]0^10))) + 
-    (-96*mN^19*Q2 + 288*mN^18*mo*Q2 - 48*mm^12*mN^3*Q2*(2*mN^2 + Q2)*
-       (mN^2 - 3*mN*mo + Q2) - 144*mN^17*Q2*(-4*mo^2 + Q2 - 
-        4*\[CapitalLambda]0^2) + 144*mm^10*mN^3*Q2*(2*mN^2 + Q2)*
-       (mN^2 - 3*mN*mo + Q2)*(2*mN^2 + 2*mo^2 + Q2 - 2*\[CapitalLambda]0^2) - 
-      144*mN^16*mo*Q2*(12*mo^2 - Q2 + 12*\[CapitalLambda]0^2) + 
-      2*mN*Q2^4*\[CapitalLambda]0^6*(mo^2 - \[CapitalLambda]0^2)*
-       (5*mo^4 + \[CapitalLambda]0^4 + mo^2*(Q2 - 6*\[CapitalLambda]0^2)) + 
-      96*mN^14*mo*(45*mo^4*Q2 - 18*Q2^2*\[CapitalLambda]0^2 + 
-        45*Q2*\[CapitalLambda]0^4 - 4*\[CapitalLambda]0^6 - 
-        9*mo^2*Q2*(Q2 - 6*\[CapitalLambda]0^2)) - 
-      48*mN^15*(30*mo^4*Q2 + Q2^3 - 24*Q2^2*\[CapitalLambda]0^2 + 
-        30*Q2*\[CapitalLambda]0^4 - 8*\[CapitalLambda]0^6 - 
-        18*mo^2*Q2*(Q2 - 2*\[CapitalLambda]0^2)) + 
-      2*mo*Q2^4*\[CapitalLambda]0^6*(mo^2 - \[CapitalLambda]0^2)*
-       (mo^4 + \[CapitalLambda]0^4 - mo^2*(Q2 + 2*\[CapitalLambda]0^2)) + 
-      mN^2*mo*Q2^3*\[CapitalLambda]0^6*(-9*mo^6 - 
-        2*Q2^2*\[CapitalLambda]0^2 - 14*Q2*\[CapitalLambda]0^4 + 
-        9*\[CapitalLambda]0^6 + mo^4*(-29*Q2 + 27*\[CapitalLambda]0^2) + 
-        mo^2*(4*Q2^2 + 43*Q2*\[CapitalLambda]0^2 - 27*\[CapitalLambda]0^4)) + 
-      16*mN^13*(120*mo^6*Q2 + 45*Q2^3*\[CapitalLambda]0^2 - 
-        207*Q2^2*\[CapitalLambda]0^4 + 133*Q2*\[CapitalLambda]0^6 - 
-        24*\[CapitalLambda]0^8 - 9*mo^4*Q2*(15*Q2 - 8*\[CapitalLambda]0^2) + 
-        6*mo^2*(3*Q2^3 - 39*Q2^2*\[CapitalLambda]0^2 + 
-          12*Q2*\[CapitalLambda]0^4 - 4*\[CapitalLambda]0^6)) - 
-      16*mN^12*mo*(360*mo^6*Q2 + 27*Q2^3*\[CapitalLambda]0^2 - 
-        351*Q2^2*\[CapitalLambda]0^4 + 391*Q2*\[CapitalLambda]0^6 + 
-        24*\[CapitalLambda]0^8 - 27*mo^4*Q2*(5*Q2 - 8*\[CapitalLambda]0^2) - 
-        6*mo^2*(63*Q2^2*\[CapitalLambda]0^2 - 36*Q2*\[CapitalLambda]0^4 + 
-          4*\[CapitalLambda]0^6)) + mN^3*Q2^3*(-48*mo^12 + 
-        288*mo^10*\[CapitalLambda]0^2 + 144*mo^8*\[CapitalLambda]0^2*
-         (Q2 - 5*\[CapitalLambda]0^2) + mo^2*\[CapitalLambda]0^6*
-         (284*Q2^2 - 547*Q2*\[CapitalLambda]0^2 + 321*\[CapitalLambda]0^4) + 
-        \[CapitalLambda]0^6*(48*Q2^3 - 142*Q2^2*\[CapitalLambda]0^2 + 
-          122*Q2*\[CapitalLambda]0^4 - 39*\[CapitalLambda]0^6) + 
-        mo^6*(-576*Q2*\[CapitalLambda]0^4 + 1011*\[CapitalLambda]0^6) + 
-        mo^4*(-144*Q2^2*\[CapitalLambda]0^4 + 857*Q2*\[CapitalLambda]0^6 - 
-          813*\[CapitalLambda]0^8)) + mN^5*Q2^2*(-144*mo^12 + 
-        288*mo^10*(Q2 + 3*\[CapitalLambda]0^2) - 432*mo^8*\[CapitalLambda]0^2*
-         (Q2 + 5*\[CapitalLambda]0^2) + \[CapitalLambda]0^6*
-         (434*Q2^3 - 1015*Q2^2*\[CapitalLambda]0^2 + 
-          627*Q2*\[CapitalLambda]0^4 - 96*\[CapitalLambda]0^6) - 
-        96*mo^6*(6*Q2^2*\[CapitalLambda]0^2 + 12*Q2*\[CapitalLambda]0^4 - 
-          31*\[CapitalLambda]0^6) + 2*mo^2*\[CapitalLambda]0^4*
-         (144*Q2^3 + 712*Q2^2*\[CapitalLambda]0^2 - 
-          1221*Q2*\[CapitalLambda]0^4 + 432*\[CapitalLambda]0^6) + 
-        3*mo^4*(48*Q2^2*\[CapitalLambda]0^4 + 1037*Q2*\[CapitalLambda]0^6 - 
-          768*\[CapitalLambda]0^8)) + mN^6*mo*Q2*(288*mo^12 - 
-        864*mo^10*(Q2 + 2*\[CapitalLambda]0^2) + 
-        864*mo^8*(2*Q2*\[CapitalLambda]0^2 + 5*\[CapitalLambda]0^4) + 
-        16*mo^6*(108*Q2^2*\[CapitalLambda]0^2 + 108*Q2*\[CapitalLambda]0^4 - 
-          361*\[CapitalLambda]0^6) + \[CapitalLambda]0^6*
-         (-1177*Q2^3 + 2463*Q2^2*\[CapitalLambda]0^2 - 
-          1728*Q2*\[CapitalLambda]0^4 + 304*\[CapitalLambda]0^6) - 
-        mo^2*\[CapitalLambda]0^4*(864*Q2^3 + 3291*Q2^2*\[CapitalLambda]0^2 - 
-          6128*Q2*\[CapitalLambda]0^4 + 1776*\[CapitalLambda]0^6) - 
-        16*mo^4*(54*Q2^2*\[CapitalLambda]0^4 + 437*Q2*\[CapitalLambda]0^6 - 
-          273*\[CapitalLambda]0^8)) + mN^7*Q2*(-96*mo^12 + 
-        288*mo^10*(3*Q2 + 2*\[CapitalLambda]0^2) - 
-        144*mo^8*(5*Q2^2 + 16*Q2*\[CapitalLambda]0^2 + 
-          10*\[CapitalLambda]0^4) - 16*mo^6*(72*Q2^2*\[CapitalLambda]0^2 - 
-          36*Q2*\[CapitalLambda]0^4 - 139*\[CapitalLambda]0^6) + 
-        mo^2*\[CapitalLambda]0^4*(1440*Q2^3 + 2841*Q2^2*\[CapitalLambda]0^2 - 
-          3536*Q2*\[CapitalLambda]0^4 + 848*\[CapitalLambda]0^6) + 
-        16*mo^4*(54*Q2^3*\[CapitalLambda]0^2 + 108*Q2^2*\[CapitalLambda]0^4 + 
-          212*Q2*\[CapitalLambda]0^6 - 127*\[CapitalLambda]0^8) + 
-        \[CapitalLambda]0^4*(-144*Q2^4 + 1837*Q2^3*\[CapitalLambda]0^2 - 
-          2793*Q2^2*\[CapitalLambda]0^4 + 1008*Q2*\[CapitalLambda]0^6 - 
-          80*\[CapitalLambda]0^8)) - mN^8*mo*(1728*mo^10*Q2 - 
-        432*mo^8*Q2*(5*Q2 + 12*\[CapitalLambda]0^2) - 
-        192*mo^6*(9*Q2^2*\[CapitalLambda]0^2 - 18*Q2*\[CapitalLambda]0^4 - 
-          2*\[CapitalLambda]0^6) + 16*mo^2*\[CapitalLambda]0^4*
-         (216*Q2^3 + 305*Q2^2*\[CapitalLambda]0^2 - 
-          370*Q2*\[CapitalLambda]0^4 + 72*\[CapitalLambda]0^6) + 
-        \[CapitalLambda]0^4*(-432*Q2^4 + 4407*Q2^3*\[CapitalLambda]0^2 - 
-          5392*Q2^2*\[CapitalLambda]0^4 + 2000*Q2*\[CapitalLambda]0^6 - 
-          384*\[CapitalLambda]0^8) + 16*mo^4*(162*Q2^3*\[CapitalLambda]0^2 + 
-          270*Q2^2*\[CapitalLambda]0^4 + 245*Q2*\[CapitalLambda]0^6 - 
-          72*\[CapitalLambda]0^8)) + 16*mN^10*mo*(270*mo^8*Q2 - 
-        36*mo^6*Q2*(5*Q2 + 6*\[CapitalLambda]0^2) - 
-        12*mo^4*(36*Q2^2*\[CapitalLambda]0^2 + 9*Q2*\[CapitalLambda]0^4 - 
-          2*\[CapitalLambda]0^6) + \[CapitalLambda]0^4*
-         (162*Q2^3 - 515*Q2^2*\[CapitalLambda]0^2 + 
-          221*Q2*\[CapitalLambda]0^4 + 24*\[CapitalLambda]0^6) + 
-        mo^2*(108*Q2^3*\[CapitalLambda]0^2 - 324*Q2^2*\[CapitalLambda]0^4 - 
-          155*Q2*\[CapitalLambda]0^6 - 48*\[CapitalLambda]0^8)) - 
-      16*mN^11*(90*mo^8*Q2 - 9*Q2^4*\[CapitalLambda]0^2 + 
-        171*Q2^3*\[CapitalLambda]0^4 - 296*Q2^2*\[CapitalLambda]0^6 + 
-        115*Q2*\[CapitalLambda]0^8 + 24*\[CapitalLambda]0^10 - 
-        36*mo^6*Q2*(5*Q2 + 2*\[CapitalLambda]0^2) + 
-        3*mo^4*(15*Q2^3 - 72*Q2^2*\[CapitalLambda]0^2 - 
-          12*Q2*\[CapitalLambda]0^4 + 8*\[CapitalLambda]0^6) + 
-        mo^2*(162*Q2^3*\[CapitalLambda]0^2 - 180*Q2^2*\[CapitalLambda]0^4 - 
-          65*Q2*\[CapitalLambda]0^6 - 48*\[CapitalLambda]0^8)) + 
-      mN^9*(576*mo^10*Q2 - 432*mo^8*Q2*(5*Q2 + 4*\[CapitalLambda]0^2) + 
-        192*mo^6*(5*Q2^3 + 3*Q2^2*\[CapitalLambda]0^2 + 
-          6*Q2*\[CapitalLambda]0^4 + 2*\[CapitalLambda]0^6) + 
-        16*mo^4*(198*Q2^3*\[CapitalLambda]0^2 + 126*Q2^2*\[CapitalLambda]0^
-            4 + 47*Q2*\[CapitalLambda]0^6 - 24*\[CapitalLambda]0^8) - 
-        32*mo^2*\[CapitalLambda]0^2*(18*Q2^4 - 90*Q2^3*\[CapitalLambda]0^2 - 
-          85*Q2^2*\[CapitalLambda]0^4 + 23*Q2*\[CapitalLambda]0^6 + 
-          12*\[CapitalLambda]0^8) + \[CapitalLambda]0^4*
-         (-1008*Q2^4 + 4173*Q2^3*\[CapitalLambda]0^2 - 
-          3376*Q2^2*\[CapitalLambda]0^4 - 16*Q2*\[CapitalLambda]0^6 + 
-          384*\[CapitalLambda]0^8)) + mN^4*mo*Q2^2*
-       (144*mo^12 - 864*mo^10*\[CapitalLambda]0^2 - 
-        432*mo^8*\[CapitalLambda]0^2*(Q2 - 5*\[CapitalLambda]0^2) - 
-        2*mo^2*\[CapitalLambda]0^6*(406*Q2^2 - 915*Q2*\[CapitalLambda]0^2 + 
-          504*\[CapitalLambda]0^4) + 48*mo^6*(36*Q2*\[CapitalLambda]0^4 - 
-          61*\[CapitalLambda]0^6) + \[CapitalLambda]0^6*
-         (-146*Q2^3 + 395*Q2^2*\[CapitalLambda]0^2 - 
-          465*Q2*\[CapitalLambda]0^4 + 192*\[CapitalLambda]0^6) + 
-        3*mo^4*(144*Q2^2*\[CapitalLambda]0^4 - 887*Q2*\[CapitalLambda]0^6 + 
-          768*\[CapitalLambda]0^8)) - 144*mm^8*mN^3*Q2*
-       (10*mN^8 - 30*mN^7*mo + mN^6*(12*mo^2 + 23*Q2 - 
-          20*\[CapitalLambda]0^2) + mN^5*(-36*mo^3 - 39*mo*Q2 + 
-          60*mo*\[CapitalLambda]0^2) + mN^4*(10*mo^4 + 19*Q2^2 - 
-          40*Q2*\[CapitalLambda]0^2 + 10*\[CapitalLambda]0^4 + 
-          mo^2*(26*Q2 - 20*\[CapitalLambda]0^2)) - 
-        6*mN^3*mo*(5*mo^4 + 3*Q2^2 - 10*Q2*\[CapitalLambda]0^2 + 
-          5*\[CapitalLambda]0^4 + mo^2*(7*Q2 - 10*\[CapitalLambda]0^2)) - 
-        3*mN*mo*Q2*(5*mo^4 + Q2^2 - 5*Q2*\[CapitalLambda]0^2 + 
-          5*\[CapitalLambda]0^4 + 2*mo^2*(2*Q2 - 5*\[CapitalLambda]0^2)) + 
-        Q2^2*(5*mo^4 + Q2^2 - 5*Q2*\[CapitalLambda]0^2 + 
-          5*\[CapitalLambda]0^4 + 2*mo^2*(2*Q2 - 5*\[CapitalLambda]0^2)) + 
-        mN^2*Q2*(15*mo^4 + 7*Q2^2 - 25*Q2*\[CapitalLambda]0^2 + 
-          15*\[CapitalLambda]0^4 + 6*mo^2*(3*Q2 - 5*\[CapitalLambda]0^2))) + 
-      mm^6*(1920*mN^13*Q2 - 5760*mN^12*mo*Q2 + 9*mN^2*mo*Q2^3*
-         \[CapitalLambda]0^6 - 2*mN*Q2^4*\[CapitalLambda]0^6 - 
-        2*mo*Q2^4*\[CapitalLambda]0^6 - 1152*mN^10*mo*Q2*
-         (3*mo^2 + 7*Q2 - 15*\[CapitalLambda]0^2) + 1152*mN^11*Q2*
-         (mo^2 + 4*Q2 - 5*\[CapitalLambda]0^2) + 
-        96*mN^9*(12*mo^4*Q2 + 43*Q2^3 - 138*Q2^2*\[CapitalLambda]0^2 + 
-          60*Q2*\[CapitalLambda]0^4 + 4*\[CapitalLambda]0^6 + 
-          6*mo^2*Q2*(5*Q2 - 12*\[CapitalLambda]0^2)) - 
-        96*mN^8*mo*(36*mo^4*Q2 + 45*Q2^3 - 234*Q2^2*\[CapitalLambda]0^2 + 
-          180*Q2*\[CapitalLambda]0^4 - 4*\[CapitalLambda]0^6 + 
-          54*mo^2*Q2*(Q2 - 4*\[CapitalLambda]0^2)) - 
-        16*mN^6*mo*Q2*(360*mo^6 + 72*Q2^3 - 648*Q2^2*\[CapitalLambda]0^2 + 
-          1080*Q2*\[CapitalLambda]0^4 - 361*\[CapitalLambda]0^6 + 
-          216*mo^4*(2*Q2 - 5*\[CapitalLambda]0^2) + 
-          216*mo^2*(Q2^2 - 7*Q2*\[CapitalLambda]0^2 + 
-            5*\[CapitalLambda]0^4)) + 16*mN^7*Q2*(120*mo^6 + 114*Q2^3 - 
-          684*Q2^2*\[CapitalLambda]0^2 + 720*Q2*\[CapitalLambda]0^4 - 
-          119*\[CapitalLambda]0^6 + 72*mo^4*(3*Q2 - 5*\[CapitalLambda]0^2) + 
-          36*mo^2*(5*Q2^2 - 26*Q2*\[CapitalLambda]0^2 + 
-            10*\[CapitalLambda]0^4)) - 48*mN^4*mo*Q2^2*(60*mo^6 + 3*Q2^3 - 
-          36*Q2^2*\[CapitalLambda]0^2 + 90*Q2*\[CapitalLambda]0^4 - 
-          61*\[CapitalLambda]0^6 + 18*mo^4*(3*Q2 - 10*\[CapitalLambda]0^2) + 
-          18*mo^2*(Q2^2 - 8*Q2*\[CapitalLambda]0^2 + 
-            10*\[CapitalLambda]0^4)) + 3*mN^3*Q2^3*(320*mo^6 + 16*Q2^3 - 
-          192*Q2^2*\[CapitalLambda]0^2 + 480*Q2*\[CapitalLambda]0^4 - 
-          317*\[CapitalLambda]0^6 + 96*mo^4*(3*Q2 - 10*\[CapitalLambda]0^2) + 
-          96*mo^2*(Q2^2 - 8*Q2*\[CapitalLambda]0^2 + 
-            10*\[CapitalLambda]0^4)) + 48*mN^5*Q2^2*(60*mo^6 + 9*Q2^3 - 
-          84*Q2^2*\[CapitalLambda]0^2 + 150*Q2*\[CapitalLambda]0^4 - 
-          59*\[CapitalLambda]0^6 + 6*mo^4*(11*Q2 - 30*\[CapitalLambda]0^2) + 
-          6*mo^2*(5*Q2^2 - 36*Q2*\[CapitalLambda]0^2 + 
-            30*\[CapitalLambda]0^4))) + mm^4*(-1440*mN^15*Q2 + 
-        4320*mN^14*mo*Q2 + 2*mN*Q2^4*\[CapitalLambda]0^6*
-         (7*mo^2 - 3*\[CapitalLambda]0^2) + 6*mo*Q2^4*\[CapitalLambda]0^6*
-         (mo^2 - \[CapitalLambda]0^2) + mN^2*mo*Q2^3*\[CapitalLambda]0^6*
-         (-27*mo^2 - 14*Q2 + 27*\[CapitalLambda]0^2) + 
-        144*mN^13*Q2*(8*mo^2 - 23*Q2 + 40*\[CapitalLambda]0^2) - 
-        432*mN^12*mo*Q2*(8*mo^2 - 13*Q2 + 40*\[CapitalLambda]0^2) - 
-        96*mN^10*mo*(18*mo^4*Q2 - 27*Q2^3 + 252*Q2^2*\[CapitalLambda]0^2 - 
-          270*Q2*\[CapitalLambda]0^4 - 4*\[CapitalLambda]0^6 + 
-          54*mo^2*Q2*(Q2 + 2*\[CapitalLambda]0^2)) + 
-        48*mN^11*(12*mo^4*Q2 - 57*Q2^3 + 288*Q2^2*\[CapitalLambda]0^2 - 
-          180*Q2*\[CapitalLambda]0^4 - 8*\[CapitalLambda]0^6 + 
-          12*mo^2*Q2*(5*Q2 + 6*\[CapitalLambda]0^2)) + 
-        16*mN^9*(72*mo^6*Q2 - 63*Q2^4 + 774*Q2^3*\[CapitalLambda]0^2 - 
-          1242*Q2^2*\[CapitalLambda]0^4 + 323*Q2*\[CapitalLambda]0^6 + 
-          72*\[CapitalLambda]0^8 + 18*mo^4*Q2*(7*Q2 + 
-            12*\[CapitalLambda]0^2) + 12*mo^2*(15*Q2^3 + 
-            45*Q2^2*\[CapitalLambda]0^2 - 54*Q2*\[CapitalLambda]0^4 - 
-            2*\[CapitalLambda]0^6)) - 16*mN^8*mo*(216*mo^6*Q2 - 27*Q2^4 + 
-          810*Q2^3*\[CapitalLambda]0^2 - 2106*Q2^2*\[CapitalLambda]0^4 + 
-          1097*Q2*\[CapitalLambda]0^6 - 72*\[CapitalLambda]0^8 + 
-          54*mo^4*Q2*(5*Q2 + 12*\[CapitalLambda]0^2) + 
-          36*mo^2*(6*Q2^3 + 27*Q2^2*\[CapitalLambda]0^2 - 
-            54*Q2*\[CapitalLambda]0^4 + 2*\[CapitalLambda]0^6)) + 
-        3*mN^5*Q2^2*(-720*mo^8 + 432*Q2^3*\[CapitalLambda]0^2 - 
-          2016*Q2^2*\[CapitalLambda]0^4 + 2369*Q2*\[CapitalLambda]0^6 - 
-          672*\[CapitalLambda]0^8 - 192*mo^6*(2*Q2 - 
-            15*\[CapitalLambda]0^2) + 48*mo^4*(Q2^2 + 
-            66*Q2*\[CapitalLambda]0^2 - 90*\[CapitalLambda]0^4) + 
-          96*mo^2*(Q2^3 + 15*Q2^2*\[CapitalLambda]0^2 - 
-            54*Q2*\[CapitalLambda]0^4 + 30*\[CapitalLambda]0^6)) + 
-        3*mN^4*mo*Q2^2*(720*mo^8 - 144*Q2^3*\[CapitalLambda]0^2 + 
-          864*Q2^2*\[CapitalLambda]0^4 - 1451*Q2*\[CapitalLambda]0^6 + 
-          768*\[CapitalLambda]0^8 + 576*mo^6*(Q2 - 5*\[CapitalLambda]0^2) + 
-          144*mo^4*(Q2^2 - 18*Q2*\[CapitalLambda]0^2 + 
-            30*\[CapitalLambda]0^4) - 48*mo^2*(18*Q2^2*\[CapitalLambda]0^2 - 
-            72*Q2*\[CapitalLambda]0^4 + 61*\[CapitalLambda]0^6)) + 
-        48*mN^6*mo*Q2*(90*mo^8 - 72*Q2^3*\[CapitalLambda]0^2 + 
-          324*Q2^2*\[CapitalLambda]0^4 - 360*Q2*\[CapitalLambda]0^6 + 
-          91*\[CapitalLambda]0^8 + 36*mo^6*(Q2 - 10*\[CapitalLambda]0^2) - 
-          18*mo^4*(Q2^2 + 24*Q2*\[CapitalLambda]0^2 - 
-            30*\[CapitalLambda]0^4) - mo^2*(18*Q2^3 + 
-            216*Q2^2*\[CapitalLambda]0^2 - 756*Q2*\[CapitalLambda]0^4 + 
-            361*\[CapitalLambda]0^6)) - 16*mN^7*Q2*(90*mo^8 + 9*Q2^4 - 
-          342*Q2^3*\[CapitalLambda]0^2 + 1026*Q2^2*\[CapitalLambda]0^4 - 
-          711*Q2*\[CapitalLambda]0^6 + 87*\[CapitalLambda]0^8 - 
-          36*mo^6*(Q2 + 10*\[CapitalLambda]0^2) - 
-          108*mo^4*(Q2^2 + 6*Q2*\[CapitalLambda]0^2 - 
-            5*\[CapitalLambda]0^4) - mo^2*(90*Q2^3 + 540*Q2^2*
-             \[CapitalLambda]0^2 - 1404*Q2*\[CapitalLambda]0^4 + 
-            377*\[CapitalLambda]0^6)) + mN^3*Q2^3*(-720*mo^8 + 
-          144*Q2^3*\[CapitalLambda]0^2 - 864*Q2^2*\[CapitalLambda]0^4 + 
-          1418*Q2*\[CapitalLambda]0^6 - 693*\[CapitalLambda]0^8 - 
-          576*mo^6*(Q2 - 5*\[CapitalLambda]0^2) - 
-          144*mo^4*(Q2^2 - 18*Q2*\[CapitalLambda]0^2 + 
-            30*\[CapitalLambda]0^4) + 3*mo^2*(288*Q2^2*\[CapitalLambda]0^2 - 
-            1152*Q2*\[CapitalLambda]0^4 + 971*\[CapitalLambda]0^6))) + 
-      mm^2*(576*mN^17*Q2 - 1728*mN^16*mo*Q2 + 576*mN^15*Q2*
-         (-3*mo^2 + 2*Q2 - 5*\[CapitalLambda]0^2) + 1728*mN^14*mo*Q2*
-         (3*mo^2 - Q2 + 5*\[CapitalLambda]0^2) + mN^2*mo*Q2^3*
-         \[CapitalLambda]0^6*(27*mo^4 - 2*Q2^2 - 28*Q2*\[CapitalLambda]0^2 + 
-          27*\[CapitalLambda]0^4 + mo^2*(43*Q2 - 54*\[CapitalLambda]0^2)) - 
-        2*mN*Q2^4*\[CapitalLambda]0^6*(11*mo^4 + 3*\[CapitalLambda]0^4 + 
-          mo^2*(Q2 - 14*\[CapitalLambda]0^2)) - 48*mN^12*mo*
-         (72*mo^4*Q2 + 9*Q2^3 - 234*Q2^2*\[CapitalLambda]0^2 + 
-          360*Q2*\[CapitalLambda]0^4 + 8*\[CapitalLambda]0^6 - 
-          18*mo^2*Q2*(7*Q2 - 8*\[CapitalLambda]0^2)) + 
-        2*mo*Q2^4*\[CapitalLambda]0^6*(-3*mo^4 - 3*\[CapitalLambda]0^4 + 
-          mo^2*(Q2 + 6*\[CapitalLambda]0^2)) + 
-        48*mN^13*(24*mo^4*Q2 + 15*Q2^3 - 138*Q2^2*\[CapitalLambda]0^2 + 
-          120*Q2*\[CapitalLambda]0^4 - 8*\[CapitalLambda]0^6 + 
-          6*mo^2*Q2*(-13*Q2 + 8*\[CapitalLambda]0^2)) + 
-        16*mN^11*(72*mo^6*Q2 + 9*Q2^4 - 342*Q2^3*\[CapitalLambda]0^2 + 
-          864*Q2^2*\[CapitalLambda]0^4 - 385*Q2*\[CapitalLambda]0^6 - 
-          48*\[CapitalLambda]0^8 + 72*mo^4*Q2*(3*Q2 + \[CapitalLambda]0^2) - 
-          6*mo^2*(27*Q2^3 - 60*Q2^2*\[CapitalLambda]0^2 - 
-            36*Q2*\[CapitalLambda]0^4 - 8*\[CapitalLambda]0^6)) - 
-        16*mN^10*mo*(216*mo^6*Q2 - 324*Q2^3*\[CapitalLambda]0^2 + 
-          1512*Q2^2*\[CapitalLambda]0^4 - 1031*Q2*\[CapitalLambda]0^6 - 
-          48*\[CapitalLambda]0^8 + 216*mo^4*Q2*(2*Q2 + \[CapitalLambda]0^2) - 
-          12*mo^2*(9*Q2^3 - 54*Q2^2*\[CapitalLambda]0^2 - 
-            54*Q2*\[CapitalLambda]0^4 - 4*\[CapitalLambda]0^6)) - 
-        32*mN^9*(54*mo^8*Q2 - 18*mo^6*Q2*(Q2 + 4*\[CapitalLambda]0^2) - 
-          3*mo^4*(33*Q2^3 + 42*Q2^2*\[CapitalLambda]0^2 + 
-            36*Q2*\[CapitalLambda]0^4 - 4*\[CapitalLambda]0^6) + 
-          \[CapitalLambda]0^2*(63*Q2^4 - 387*Q2^3*\[CapitalLambda]0^2 + 
-            416*Q2^2*\[CapitalLambda]0^4 - 53*Q2*\[CapitalLambda]0^6 - 
-            36*\[CapitalLambda]0^8) + mo^2*(18*Q2^4 - 
-            180*Q2^3*\[CapitalLambda]0^2 - 270*Q2^2*\[CapitalLambda]0^4 + 
-            185*Q2*\[CapitalLambda]0^6 + 24*\[CapitalLambda]0^8)) + 
-        32*mN^8*mo*(162*mo^8*Q2 + 54*mo^6*Q2*(Q2 - 4*\[CapitalLambda]0^2) - 
-          9*mo^4*(9*Q2^3 + 30*Q2^2*\[CapitalLambda]0^2 + 
-            36*Q2*\[CapitalLambda]0^4 - 4*\[CapitalLambda]0^6) + 
-          \[CapitalLambda]0^2*(27*Q2^4 - 405*Q2^3*\[CapitalLambda]0^2 + 
-            695*Q2^2*\[CapitalLambda]0^4 - 287*Q2*\[CapitalLambda]0^6 + 
-            36*\[CapitalLambda]0^8) - mo^2*(216*Q2^3*\[CapitalLambda]0^2 + 
-            486*Q2^2*\[CapitalLambda]0^4 - 671*Q2*\[CapitalLambda]0^6 + 
-            72*\[CapitalLambda]0^8)) + mN^7*Q2*(576*mo^10 - 
-          576*mo^8*(4*Q2 + 5*\[CapitalLambda]0^2) - 
-          1152*mo^6*(Q2^2 - Q2*\[CapitalLambda]0^2 - 5*\[CapitalLambda]0^4) + 
-          16*mo^4*(54*Q2^3 + 216*Q2^2*\[CapitalLambda]0^2 + 
-            648*Q2*\[CapitalLambda]0^4 - 397*\[CapitalLambda]0^6) - 
-          3*\[CapitalLambda]0^2*(96*Q2^4 - 1824*Q2^3*\[CapitalLambda]0^2 + 
-            3667*Q2^2*\[CapitalLambda]0^4 - 1824*Q2*\[CapitalLambda]0^6 + 
-            176*\[CapitalLambda]0^8) + 16*mo^2*
-           (180*Q2^3*\[CapitalLambda]0^2 + 540*Q2^2*\[CapitalLambda]0^4 - 
-            923*Q2*\[CapitalLambda]0^6 + 214*\[CapitalLambda]0^8)) + 
-        mN^6*mo*Q2*(-1728*mo^10 + 1728*mo^8*(Q2 + 5*\[CapitalLambda]0^2) + 
-          1728*mo^6*(Q2^2 + 2*Q2*\[CapitalLambda]0^2 - 
-            10*\[CapitalLambda]0^4) - 48*mo^4*(36*Q2^2*\[CapitalLambda]0^2 + 
-            432*Q2*\[CapitalLambda]0^4 - 361*\[CapitalLambda]0^6) + 
-          3*\[CapitalLambda]0^4*(-1152*Q2^3 + 3413*Q2^2*\[CapitalLambda]0^2 - 
-            2880*Q2*\[CapitalLambda]0^4 + 592*\[CapitalLambda]0^6) - 
-          16*mo^2*(108*Q2^3*\[CapitalLambda]0^2 + 648*Q2^2*\[CapitalLambda]0^
-              4 - 1517*Q2*\[CapitalLambda]0^6 + 546*\[CapitalLambda]0^8)) + 
-        mN^5*Q2^2*(864*mo^10 - 432*mo^8*(Q2 + 10*\[CapitalLambda]0^2) - 
-          576*mo^6*(Q2^2 + 4*Q2*\[CapitalLambda]0^2 - 
-            15*\[CapitalLambda]0^4) + \[CapitalLambda]0^4*
-           (1296*Q2^3 - 4039*Q2^2*\[CapitalLambda]0^2 + 
-            3414*Q2*\[CapitalLambda]0^4 - 720*\[CapitalLambda]0^6) + 
-          144*mo^4*(2*Q2^2*\[CapitalLambda]0^2 + 66*Q2*\[CapitalLambda]0^4 - 
-            61*\[CapitalLambda]0^6) + 6*mo^2*(96*Q2^3*\[CapitalLambda]0^2 + 
-            720*Q2^2*\[CapitalLambda]0^4 - 1703*Q2*\[CapitalLambda]0^6 + 
-            720*\[CapitalLambda]0^8)) + mN^4*mo*Q2^2*(-864*mo^10 - 
-          432*Q2^3*\[CapitalLambda]0^4 + 1691*Q2^2*\[CapitalLambda]0^6 - 
-          2226*Q2*\[CapitalLambda]0^8 + 1008*\[CapitalLambda]0^10 - 
-          432*mo^8*(Q2 - 10*\[CapitalLambda]0^2) + 1728*mo^6*
-           (2*Q2*\[CapitalLambda]0^2 - 5*\[CapitalLambda]0^4) + 
-          144*mo^4*(6*Q2^2*\[CapitalLambda]0^2 - 54*Q2*\[CapitalLambda]0^4 + 
-            61*\[CapitalLambda]0^6) - 6*mo^2*(432*Q2^2*\[CapitalLambda]0^4 - 
-            1169*Q2*\[CapitalLambda]0^6 + 768*\[CapitalLambda]0^8)) + 
-        mN^3*Q2^3*(288*mo^10 + 144*mo^8*(Q2 - 10*\[CapitalLambda]0^2) - 
-          576*mo^6*(2*Q2*\[CapitalLambda]0^2 - 5*\[CapitalLambda]0^4) + 
-          \[CapitalLambda]0^4*(144*Q2^3 - 574*Q2^2*\[CapitalLambda]0^2 + 
-            676*Q2*\[CapitalLambda]0^4 - 261*\[CapitalLambda]0^6) - 
-          3*mo^4*(96*Q2^2*\[CapitalLambda]0^2 - 864*Q2*\[CapitalLambda]0^4 + 
-            991*\[CapitalLambda]0^6) + mo^2*(864*Q2^2*\[CapitalLambda]0^4 - 
-            2275*Q2*\[CapitalLambda]0^6 + 1506*\[CapitalLambda]0^8))))*
+ ((96*mm^16*mN^8*Q2*\[CapitalLambda]0^4 + 1152*mm^14*mN^10*Q2*
+     \[CapitalLambda]0^4 - 7296*mm^12*mN^12*Q2*\[CapitalLambda]0^4 + 
+    14208*mm^10*mN^14*Q2*\[CapitalLambda]0^4 - 8640*mm^8*mN^16*Q2*
+     \[CapitalLambda]0^4 - 7296*mm^6*mN^18*Q2*\[CapitalLambda]0^4 + 
+    14208*mm^4*mN^20*Q2*\[CapitalLambda]0^4 - 8064*mm^2*mN^22*Q2*
+     \[CapitalLambda]0^4 + 1632*mN^24*Q2*\[CapitalLambda]0^4 + 
+    1344*mm^16*mN^7*mo*Q2*\[CapitalLambda]0^4 - 6912*mm^14*mN^9*mo*Q2*
+     \[CapitalLambda]0^4 + 13056*mm^12*mN^11*mo*Q2*\[CapitalLambda]0^4 - 
+    8448*mm^10*mN^13*mo*Q2*\[CapitalLambda]0^4 - 5760*mm^8*mN^15*mo*Q2*
+     \[CapitalLambda]0^4 + 13056*mm^6*mN^17*mo*Q2*\[CapitalLambda]0^4 - 
+    8448*mm^4*mN^19*mo*Q2*\[CapitalLambda]0^4 + 2304*mm^2*mN^21*mo*Q2*
+     \[CapitalLambda]0^4 - 192*mN^23*mo*Q2*\[CapitalLambda]0^4 + 
+    1248*mm^16*mN^6*mo^2*Q2*\[CapitalLambda]0^4 - 7296*mm^14*mN^8*mo^2*Q2*
+     \[CapitalLambda]0^4 + 3456*mm^12*mN^10*mo^2*Q2*\[CapitalLambda]0^4 + 
+    18816*mm^10*mN^12*mo^2*Q2*\[CapitalLambda]0^4 - 
+    19392*mm^8*mN^14*mo^2*Q2*\[CapitalLambda]0^4 + 
+    5760*mm^6*mN^16*mo^2*Q2*\[CapitalLambda]0^4 - 22656*mm^4*mN^18*mo^2*Q2*
+     \[CapitalLambda]0^4 + 31872*mm^2*mN^20*mo^2*Q2*\[CapitalLambda]0^4 - 
+    11808*mN^22*mo^2*Q2*\[CapitalLambda]0^4 - 9216*mm^14*mN^7*mo^3*Q2*
+     \[CapitalLambda]0^4 + 24576*mm^12*mN^9*mo^3*Q2*\[CapitalLambda]0^4 - 
+    13824*mm^10*mN^11*mo^3*Q2*\[CapitalLambda]0^4 - 
+    4608*mm^8*mN^13*mo^3*Q2*\[CapitalLambda]0^4 - 12288*mm^6*mN^15*mo^3*Q2*
+     \[CapitalLambda]0^4 + 27648*mm^4*mN^17*mo^3*Q2*\[CapitalLambda]0^4 - 
+    13824*mm^2*mN^19*mo^3*Q2*\[CapitalLambda]0^4 + 
+    1536*mN^21*mo^3*Q2*\[CapitalLambda]0^4 - 9984*mm^14*mN^6*mo^4*Q2*
+     \[CapitalLambda]0^4 + 33408*mm^12*mN^8*mo^4*Q2*\[CapitalLambda]0^4 + 
+    3456*mm^10*mN^10*mo^4*Q2*\[CapitalLambda]0^4 - 
+    20352*mm^8*mN^12*mo^4*Q2*\[CapitalLambda]0^4 - 
+    13824*mm^6*mN^14*mo^4*Q2*\[CapitalLambda]0^4 + 
+    3456*mm^4*mN^16*mo^4*Q2*\[CapitalLambda]0^4 - 31872*mm^2*mN^18*mo^4*Q2*
+     \[CapitalLambda]0^4 + 35712*mN^20*mo^4*Q2*\[CapitalLambda]0^4 + 
+    26880*mm^12*mN^7*mo^5*Q2*\[CapitalLambda]0^4 - 
+    20736*mm^10*mN^9*mo^5*Q2*\[CapitalLambda]0^4 - 
+    6912*mm^8*mN^11*mo^5*Q2*\[CapitalLambda]0^4 - 7680*mm^6*mN^13*mo^5*Q2*
+     \[CapitalLambda]0^4 - 20736*mm^4*mN^15*mo^5*Q2*\[CapitalLambda]0^4 + 
+    34560*mm^2*mN^17*mo^5*Q2*\[CapitalLambda]0^4 - 
+    5376*mN^19*mo^5*Q2*\[CapitalLambda]0^4 + 34944*mm^12*mN^6*mo^6*Q2*
+     \[CapitalLambda]0^4 - 52608*mm^10*mN^8*mo^6*Q2*\[CapitalLambda]0^4 - 
+    49536*mm^8*mN^10*mo^6*Q2*\[CapitalLambda]0^4 - 
+    34560*mm^6*mN^12*mo^6*Q2*\[CapitalLambda]0^4 - 
+    36480*mm^4*mN^14*mo^6*Q2*\[CapitalLambda]0^4 - 
+    26496*mm^2*mN^16*mo^6*Q2*\[CapitalLambda]0^4 - 
+    56448*mN^18*mo^6*Q2*\[CapitalLambda]0^4 - 43008*mm^10*mN^7*mo^7*Q2*
+     \[CapitalLambda]0^4 - 23040*mm^8*mN^9*mo^7*Q2*\[CapitalLambda]0^4 - 
+    21504*mm^6*mN^11*mo^7*Q2*\[CapitalLambda]0^4 - 
+    24576*mm^4*mN^13*mo^7*Q2*\[CapitalLambda]0^4 - 
+    46080*mm^2*mN^15*mo^7*Q2*\[CapitalLambda]0^4 + 
+    10752*mN^17*mo^7*Q2*\[CapitalLambda]0^4 - 69888*mm^10*mN^6*mo^8*Q2*
+     \[CapitalLambda]0^4 + 10560*mm^8*mN^8*mo^8*Q2*\[CapitalLambda]0^4 + 
+    54144*mm^6*mN^10*mo^8*Q2*\[CapitalLambda]0^4 + 
+    67200*mm^4*mN^12*mo^8*Q2*\[CapitalLambda]0^4 + 
+    59520*mm^2*mN^14*mo^8*Q2*\[CapitalLambda]0^4 + 
+    44352*mN^16*mo^8*Q2*\[CapitalLambda]0^4 + 40320*mm^8*mN^7*mo^9*Q2*
+     \[CapitalLambda]0^4 + 49920*mm^6*mN^9*mo^9*Q2*\[CapitalLambda]0^4 + 
+    48384*mm^4*mN^11*mo^9*Q2*\[CapitalLambda]0^4 + 
+    34560*mm^2*mN^13*mo^9*Q2*\[CapitalLambda]0^4 - 
+    13440*mN^15*mo^9*Q2*\[CapitalLambda]0^4 + 87360*mm^8*mN^6*mo^10*Q2*
+     \[CapitalLambda]0^4 + 65664*mm^6*mN^8*mo^10*Q2*\[CapitalLambda]0^4 + 
+    24192*mm^4*mN^10*mo^10*Q2*\[CapitalLambda]0^4 + 
+    384*mm^2*mN^12*mo^10*Q2*\[CapitalLambda]0^4 - 
+    4032*mN^14*mo^10*Q2*\[CapitalLambda]0^4 - 21504*mm^6*mN^7*mo^11*Q2*
+     \[CapitalLambda]0^4 - 27648*mm^4*mN^9*mo^11*Q2*\[CapitalLambda]0^4 - 
+    13824*mm^2*mN^11*mo^11*Q2*\[CapitalLambda]0^4 + 
+    10752*mN^13*mo^11*Q2*\[CapitalLambda]0^4 - 69888*mm^6*mN^6*mo^12*Q2*
+     \[CapitalLambda]0^4 - 84864*mm^4*mN^8*mo^12*Q2*\[CapitalLambda]0^4 - 
+    58752*mm^2*mN^10*mo^12*Q2*\[CapitalLambda]0^4 - 
+    24192*mN^12*mo^12*Q2*\[CapitalLambda]0^4 + 5376*mm^4*mN^7*mo^13*Q2*
+     \[CapitalLambda]0^4 + 2304*mm^2*mN^9*mo^13*Q2*\[CapitalLambda]0^4 - 
+    5376*mN^11*mo^13*Q2*\[CapitalLambda]0^4 + 34944*mm^4*mN^6*mo^14*Q2*
+     \[CapitalLambda]0^4 + 43392*mm^2*mN^8*mo^14*Q2*\[CapitalLambda]0^4 + 
+    21888*mN^10*mo^14*Q2*\[CapitalLambda]0^4 + 1536*mN^9*mo^15*Q2*
+     \[CapitalLambda]0^4 - 9984*mm^2*mN^6*mo^16*Q2*\[CapitalLambda]0^4 - 
+    8352*mN^8*mo^16*Q2*\[CapitalLambda]0^4 - 192*mN^7*mo^17*Q2*
+     \[CapitalLambda]0^4 + 1248*mN^6*mo^18*Q2*\[CapitalLambda]0^4 - 
+    528*mm^16*mN^6*Q2^2*\[CapitalLambda]0^4 + 2976*mm^14*mN^8*Q2^2*
+     \[CapitalLambda]0^4 - 11904*mm^12*mN^10*Q2^2*\[CapitalLambda]0^4 + 
+    22368*mm^10*mN^12*Q2^2*\[CapitalLambda]0^4 - 10848*mm^8*mN^14*Q2^2*
+     \[CapitalLambda]0^4 - 16800*mm^6*mN^16*Q2^2*\[CapitalLambda]0^4 + 
+    22656*mm^4*mN^18*Q2^2*\[CapitalLambda]0^4 - 8544*mm^2*mN^20*Q2^2*
+     \[CapitalLambda]0^4 + 624*mN^22*Q2^2*\[CapitalLambda]0^4 - 
+    576*mm^16*mN^5*mo*Q2^2*\[CapitalLambda]0^4 - 2112*mm^14*mN^7*mo*Q2^2*
+     \[CapitalLambda]0^4 + 12288*mm^12*mN^9*mo*Q2^2*\[CapitalLambda]0^4 - 
+    15552*mm^10*mN^11*mo*Q2^2*\[CapitalLambda]0^4 + 
+    768*mm^8*mN^13*mo*Q2^2*\[CapitalLambda]0^4 + 12864*mm^6*mN^15*mo*Q2^2*
+     \[CapitalLambda]0^4 - 11520*mm^4*mN^17*mo*Q2^2*\[CapitalLambda]0^4 + 
+    4800*mm^2*mN^19*mo*Q2^2*\[CapitalLambda]0^4 - 
+    960*mN^21*mo*Q2^2*\[CapitalLambda]0^4 - 48*mm^16*mN^4*mo^2*Q2^2*
+     \[CapitalLambda]0^4 - 480*mm^14*mN^6*mo^2*Q2^2*\[CapitalLambda]0^4 + 
+    2880*mm^12*mN^8*mo^2*Q2^2*\[CapitalLambda]0^4 + 
+    22560*mm^10*mN^10*mo^2*Q2^2*\[CapitalLambda]0^4 - 
+    25248*mm^8*mN^12*mo^2*Q2^2*\[CapitalLambda]0^4 + 
+    7776*mm^6*mN^14*mo^2*Q2^2*\[CapitalLambda]0^4 - 
+    46272*mm^4*mN^16*mo^2*Q2^2*\[CapitalLambda]0^4 + 
+    43872*mm^2*mN^18*mo^2*Q2^2*\[CapitalLambda]0^4 - 
+    5040*mN^20*mo^2*Q2^2*\[CapitalLambda]0^4 + 4992*mm^14*mN^5*mo^3*Q2^2*
+     \[CapitalLambda]0^4 + 11136*mm^12*mN^7*mo^3*Q2^2*\[CapitalLambda]0^4 - 
+    20736*mm^10*mN^9*mo^3*Q2^2*\[CapitalLambda]0^4 - 
+    768*mm^8*mN^11*mo^3*Q2^2*\[CapitalLambda]0^4 - 
+    11904*mm^6*mN^13*mo^3*Q2^2*\[CapitalLambda]0^4 + 
+    31104*mm^4*mN^15*mo^3*Q2^2*\[CapitalLambda]0^4 - 
+    21504*mm^2*mN^17*mo^3*Q2^2*\[CapitalLambda]0^4 + 
+    7680*mN^19*mo^3*Q2^2*\[CapitalLambda]0^4 + 384*mm^14*mN^4*mo^4*Q2^2*
+     \[CapitalLambda]0^4 + 14976*mm^12*mN^6*mo^4*Q2^2*\[CapitalLambda]0^4 - 
+    25056*mm^10*mN^8*mo^4*Q2^2*\[CapitalLambda]0^4 - 
+    46272*mm^8*mN^10*mo^4*Q2^2*\[CapitalLambda]0^4 - 
+    33984*mm^6*mN^12*mo^4*Q2^2*\[CapitalLambda]0^4 - 
+    10368*mm^4*mN^14*mo^4*Q2^2*\[CapitalLambda]0^4 - 
+    83424*mm^2*mN^16*mo^4*Q2^2*\[CapitalLambda]0^4 + 
+    17856*mN^18*mo^4*Q2^2*\[CapitalLambda]0^4 - 18816*mm^12*mN^5*mo^5*Q2^2*
+     \[CapitalLambda]0^4 - 31680*mm^10*mN^7*mo^5*Q2^2*\[CapitalLambda]0^4 - 
+    11520*mm^8*mN^9*mo^5*Q2^2*\[CapitalLambda]0^4 - 
+    16512*mm^6*mN^11*mo^5*Q2^2*\[CapitalLambda]0^4 - 
+    33408*mm^4*mN^13*mo^5*Q2^2*\[CapitalLambda]0^4 + 
+    28224*mm^2*mN^15*mo^5*Q2^2*\[CapitalLambda]0^4 - 
+    26880*mN^17*mo^5*Q2^2*\[CapitalLambda]0^4 - 1344*mm^12*mN^4*mo^6*Q2^2*
+     \[CapitalLambda]0^4 - 50208*mm^10*mN^6*mo^6*Q2^2*\[CapitalLambda]0^4 + 
+    5568*mm^8*mN^8*mo^6*Q2^2*\[CapitalLambda]0^4 + 
+    45504*mm^6*mN^10*mo^6*Q2^2*\[CapitalLambda]0^4 + 
+    49728*mm^4*mN^12*mo^6*Q2^2*\[CapitalLambda]0^4 + 
+    57696*mm^2*mN^14*mo^6*Q2^2*\[CapitalLambda]0^4 - 
+    36288*mN^16*mo^6*Q2^2*\[CapitalLambda]0^4 + 40320*mm^10*mN^5*mo^7*Q2^2*
+     \[CapitalLambda]0^4 + 65280*mm^8*mN^7*mo^7*Q2^2*\[CapitalLambda]0^4 + 
+    62976*mm^6*mN^9*mo^7*Q2^2*\[CapitalLambda]0^4 + 
+    52992*mm^4*mN^11*mo^7*Q2^2*\[CapitalLambda]0^4 + 
+    13440*mm^2*mN^13*mo^7*Q2^2*\[CapitalLambda]0^4 + 
+    53760*mN^15*mo^7*Q2^2*\[CapitalLambda]0^4 + 2688*mm^10*mN^4*mo^8*Q2^2*
+     \[CapitalLambda]0^4 + 80160*mm^8*mN^6*mo^8*Q2^2*\[CapitalLambda]0^4 + 
+    66528*mm^6*mN^8*mo^8*Q2^2*\[CapitalLambda]0^4 + 
+    37248*mm^4*mN^10*mo^8*Q2^2*\[CapitalLambda]0^4 + 
+    25440*mm^2*mN^12*mo^8*Q2^2*\[CapitalLambda]0^4 + 
+    46368*mN^14*mo^8*Q2^2*\[CapitalLambda]0^4 - 53760*mm^8*mN^5*mo^9*Q2^2*
+     \[CapitalLambda]0^4 - 93120*mm^6*mN^7*mo^9*Q2^2*\[CapitalLambda]0^4 - 
+    96768*mm^4*mN^9*mo^9*Q2^2*\[CapitalLambda]0^4 - 
+    73920*mm^2*mN^11*mo^9*Q2^2*\[CapitalLambda]0^4 - 
+    67200*mN^13*mo^9*Q2^2*\[CapitalLambda]0^4 - 3360*mm^8*mN^4*mo^10*Q2^2*
+     \[CapitalLambda]0^4 - 71712*mm^6*mN^6*mo^10*Q2^2*\[CapitalLambda]0^4 - 
+    88128*mm^4*mN^8*mo^10*Q2^2*\[CapitalLambda]0^4 - 
+    67296*mm^2*mN^10*mo^10*Q2^2*\[CapitalLambda]0^4 - 
+    38304*mN^12*mo^10*Q2^2*\[CapitalLambda]0^4 + 45696*mm^6*mN^5*mo^11*Q2^2*
+     \[CapitalLambda]0^4 + 81792*mm^4*mN^7*mo^11*Q2^2*\[CapitalLambda]0^4 + 
+    80640*mm^2*mN^9*mo^11*Q2^2*\[CapitalLambda]0^4 + 
+    53760*mN^11*mo^11*Q2^2*\[CapitalLambda]0^4 + 2688*mm^6*mN^4*mo^12*Q2^2*
+     \[CapitalLambda]0^4 + 36480*mm^4*mN^6*mo^12*Q2^2*\[CapitalLambda]0^4 + 
+    41568*mm^2*mN^8*mo^12*Q2^2*\[CapitalLambda]0^4 + 
+    20160*mN^10*mo^12*Q2^2*\[CapitalLambda]0^4 - 24192*mm^4*mN^5*mo^13*Q2^2*
+     \[CapitalLambda]0^4 - 38976*mm^2*mN^7*mo^13*Q2^2*\[CapitalLambda]0^4 - 
+    26880*mN^9*mo^13*Q2^2*\[CapitalLambda]0^4 - 1344*mm^4*mN^4*mo^14*Q2^2*
+     \[CapitalLambda]0^4 - 9696*mm^2*mN^6*mo^14*Q2^2*\[CapitalLambda]0^4 - 
+    6336*mN^8*mo^14*Q2^2*\[CapitalLambda]0^4 + 7296*mm^2*mN^5*mo^15*Q2^2*
+     \[CapitalLambda]0^4 + 7680*mN^7*mo^15*Q2^2*\[CapitalLambda]0^4 + 
+    384*mm^2*mN^4*mo^16*Q2^2*\[CapitalLambda]0^4 + 
+    1008*mN^6*mo^16*Q2^2*\[CapitalLambda]0^4 - 960*mN^5*mo^17*Q2^2*
+     \[CapitalLambda]0^4 - 48*mN^4*mo^18*Q2^2*\[CapitalLambda]0^4 - 
+    48*mm^16*mN^4*Q2^3*\[CapitalLambda]0^4 + 1968*mm^14*mN^6*Q2^3*
+     \[CapitalLambda]0^4 - 7488*mm^12*mN^8*Q2^3*\[CapitalLambda]0^4 + 
+    14928*mm^10*mN^10*Q2^3*\[CapitalLambda]0^4 - 6240*mm^8*mN^12*Q2^3*
+     \[CapitalLambda]0^4 - 14256*mm^6*mN^14*Q2^3*\[CapitalLambda]0^4 + 
+    13632*mm^4*mN^16*Q2^3*\[CapitalLambda]0^4 - 2640*mm^2*mN^18*Q2^3*
+     \[CapitalLambda]0^4 + 144*mN^20*Q2^3*\[CapitalLambda]0^4 - 
+    48*mm^16*mN^3*mo*Q2^3*\[CapitalLambda]0^4 + 1920*mm^14*mN^5*mo*Q2^3*
+     \[CapitalLambda]0^4 + 1536*mm^12*mN^7*mo*Q2^3*\[CapitalLambda]0^4 - 
+    9984*mm^10*mN^9*mo*Q2^3*\[CapitalLambda]0^4 + 6240*mm^8*mN^11*mo*Q2^3*
+     \[CapitalLambda]0^4 + 4992*mm^6*mN^13*mo*Q2^3*\[CapitalLambda]0^4 - 
+    7680*mm^4*mN^15*mo*Q2^3*\[CapitalLambda]0^4 + 3072*mm^2*mN^17*mo*Q2^3*
+     \[CapitalLambda]0^4 - 48*mN^19*mo*Q2^3*\[CapitalLambda]0^4 + 
+    336*mm^14*mN^4*mo^2*Q2^3*\[CapitalLambda]0^4 - 
+    3744*mm^12*mN^6*mo^2*Q2^3*\[CapitalLambda]0^4 + 
+    5904*mm^10*mN^8*mo^2*Q2^3*\[CapitalLambda]0^4 - 
+    18240*mm^8*mN^10*mo^2*Q2^3*\[CapitalLambda]0^4 + 
+    1008*mm^6*mN^12*mo^2*Q2^3*\[CapitalLambda]0^4 - 
+    40608*mm^4*mN^14*mo^2*Q2^3*\[CapitalLambda]0^4 + 
+    15024*mm^2*mN^16*mo^2*Q2^3*\[CapitalLambda]0^4 - 
+    1152*mN^18*mo^2*Q2^3*\[CapitalLambda]0^4 + 384*mm^14*mN^3*mo^3*Q2^3*
+     \[CapitalLambda]0^4 - 12288*mm^12*mN^5*mo^3*Q2^3*\[CapitalLambda]0^4 - 
+    10368*mm^10*mN^7*mo^3*Q2^3*\[CapitalLambda]0^4 + 
+    2688*mm^8*mN^9*mo^3*Q2^3*\[CapitalLambda]0^4 - 
+    4224*mm^6*mN^11*mo^3*Q2^3*\[CapitalLambda]0^4 + 
+    13824*mm^4*mN^13*mo^3*Q2^3*\[CapitalLambda]0^4 - 
+    18048*mm^2*mN^15*mo^3*Q2^3*\[CapitalLambda]0^4 + 
+    384*mN^17*mo^3*Q2^3*\[CapitalLambda]0^4 - 864*mm^12*mN^4*mo^4*Q2^3*
+     \[CapitalLambda]0^4 - 7056*mm^10*mN^6*mo^4*Q2^3*\[CapitalLambda]0^4 - 
+    1152*mm^8*mN^8*mo^4*Q2^3*\[CapitalLambda]0^4 + 
+    12960*mm^6*mN^10*mo^4*Q2^3*\[CapitalLambda]0^4 + 
+    27936*mm^4*mN^12*mo^4*Q2^3*\[CapitalLambda]0^4 - 
+    34704*mm^2*mN^14*mo^4*Q2^3*\[CapitalLambda]0^4 + 
+    4032*mN^16*mo^4*Q2^3*\[CapitalLambda]0^4 - 1344*mm^12*mN^3*mo^5*Q2^3*
+     \[CapitalLambda]0^4 + 32256*mm^10*mN^5*mo^5*Q2^3*\[CapitalLambda]0^4 + 
+    38592*mm^8*mN^7*mo^5*Q2^3*\[CapitalLambda]0^4 + 
+    31488*mm^6*mN^9*mo^5*Q2^3*\[CapitalLambda]0^4 + 
+    20160*mm^4*mN^11*mo^5*Q2^3*\[CapitalLambda]0^4 + 
+    43776*mm^2*mN^13*mo^5*Q2^3*\[CapitalLambda]0^4 - 
+    1344*mN^15*mo^5*Q2^3*\[CapitalLambda]0^4 + 816*mm^10*mN^4*mo^6*Q2^3*
+     \[CapitalLambda]0^4 + 25152*mm^8*mN^6*mo^6*Q2^3*\[CapitalLambda]0^4 + 
+    26208*mm^6*mN^8*mo^6*Q2^3*\[CapitalLambda]0^4 + 
+    21696*mm^4*mN^10*mo^6*Q2^3*\[CapitalLambda]0^4 + 
+    40560*mm^2*mN^12*mo^6*Q2^3*\[CapitalLambda]0^4 - 
+    8064*mN^14*mo^6*Q2^3*\[CapitalLambda]0^4 + 2688*mm^10*mN^3*mo^7*Q2^3*
+     \[CapitalLambda]0^4 - 44160*mm^8*mN^5*mo^7*Q2^3*\[CapitalLambda]0^4 - 
+    67584*mm^6*mN^7*mo^7*Q2^3*\[CapitalLambda]0^4 - 
+    65280*mm^4*mN^9*mo^7*Q2^3*\[CapitalLambda]0^4 - 
+    55680*mm^2*mN^11*mo^7*Q2^3*\[CapitalLambda]0^4 + 
+    2688*mN^13*mo^7*Q2^3*\[CapitalLambda]0^4 + 480*mm^8*mN^4*mo^8*Q2^3*
+     \[CapitalLambda]0^4 - 24048*mm^6*mN^6*mo^8*Q2^3*\[CapitalLambda]0^4 - 
+    31104*mm^4*mN^8*mo^8*Q2^3*\[CapitalLambda]0^4 - 
+    23280*mm^2*mN^10*mo^8*Q2^3*\[CapitalLambda]0^4 + 
+    10080*mN^12*mo^8*Q2^3*\[CapitalLambda]0^4 - 3360*mm^8*mN^3*mo^9*Q2^3*
+     \[CapitalLambda]0^4 + 32640*mm^6*mN^5*mo^9*Q2^3*\[CapitalLambda]0^4 + 
+    51840*mm^4*mN^7*mo^9*Q2^3*\[CapitalLambda]0^4 + 
+    38400*mm^2*mN^9*mo^9*Q2^3*\[CapitalLambda]0^4 - 
+    3360*mN^11*mo^9*Q2^3*\[CapitalLambda]0^4 - 1872*mm^6*mN^4*mo^10*Q2^3*
+     \[CapitalLambda]0^4 + 6624*mm^4*mN^6*mo^10*Q2^3*\[CapitalLambda]0^4 + 
+    3600*mm^2*mN^8*mo^10*Q2^3*\[CapitalLambda]0^4 - 
+    8064*mN^10*mo^10*Q2^3*\[CapitalLambda]0^4 + 2688*mm^6*mN^3*mo^11*Q2^3*
+     \[CapitalLambda]0^4 - 11520*mm^4*mN^5*mo^11*Q2^3*\[CapitalLambda]0^4 - 
+    12672*mm^2*mN^7*mo^11*Q2^3*\[CapitalLambda]0^4 + 
+    2688*mN^9*mo^11*Q2^3*\[CapitalLambda]0^4 + 1824*mm^4*mN^4*mo^12*Q2^3*
+     \[CapitalLambda]0^4 + 2256*mm^2*mN^6*mo^12*Q2^3*\[CapitalLambda]0^4 + 
+    4032*mN^8*mo^12*Q2^3*\[CapitalLambda]0^4 - 1344*mm^4*mN^3*mo^13*Q2^3*
+     \[CapitalLambda]0^4 + 768*mm^2*mN^5*mo^13*Q2^3*\[CapitalLambda]0^4 - 
+    1344*mN^7*mo^13*Q2^3*\[CapitalLambda]0^4 - 816*mm^2*mN^4*mo^14*Q2^3*
+     \[CapitalLambda]0^4 - 1152*mN^6*mo^14*Q2^3*\[CapitalLambda]0^4 + 
+    384*mm^2*mN^3*mo^15*Q2^3*\[CapitalLambda]0^4 + 
+    384*mN^5*mo^15*Q2^3*\[CapitalLambda]0^4 + 144*mN^4*mo^16*Q2^3*
+     \[CapitalLambda]0^4 - 48*mN^3*mo^17*Q2^3*\[CapitalLambda]0^4 + 
+    144*mm^14*mN^4*Q2^4*\[CapitalLambda]0^4 - 2448*mm^12*mN^6*Q2^4*
+     \[CapitalLambda]0^4 + 4944*mm^10*mN^8*Q2^4*\[CapitalLambda]0^4 - 
+    2592*mm^8*mN^10*Q2^4*\[CapitalLambda]0^4 - 6384*mm^6*mN^12*Q2^4*
+     \[CapitalLambda]0^4 + 3312*mm^4*mN^14*Q2^4*\[CapitalLambda]0^4 - 
+    432*mm^2*mN^16*Q2^4*\[CapitalLambda]0^4 + 144*mm^14*mN^3*mo*Q2^4*
+     \[CapitalLambda]0^4 - 2016*mm^12*mN^5*mo*Q2^4*\[CapitalLambda]0^4 - 
+    2640*mm^10*mN^7*mo*Q2^4*\[CapitalLambda]0^4 + 4032*mm^8*mN^9*mo*Q2^4*
+     \[CapitalLambda]0^4 + 1200*mm^6*mN^11*mo*Q2^4*\[CapitalLambda]0^4 - 
+    3168*mm^4*mN^13*mo*Q2^4*\[CapitalLambda]0^4 + 144*mm^2*mN^15*mo*Q2^4*
+     \[CapitalLambda]0^4 - 432*mm^12*mN^4*mo^2*Q2^4*\[CapitalLambda]0^4 + 
+    3072*mm^10*mN^6*mo^2*Q2^4*\[CapitalLambda]0^4 - 
+    1632*mm^8*mN^8*mo^2*Q2^4*\[CapitalLambda]0^4 + 
+    5472*mm^6*mN^10*mo^2*Q2^4*\[CapitalLambda]0^4 - 
+    11376*mm^4*mN^12*mo^2*Q2^4*\[CapitalLambda]0^4 + 
+    2592*mm^2*mN^14*mo^2*Q2^4*\[CapitalLambda]0^4 - 
+    864*mm^12*mN^3*mo^3*Q2^4*\[CapitalLambda]0^4 + 
+    8352*mm^10*mN^5*mo^3*Q2^4*\[CapitalLambda]0^4 + 
+    10944*mm^8*mN^7*mo^3*Q2^4*\[CapitalLambda]0^4 + 
+    8256*mm^6*mN^9*mo^3*Q2^4*\[CapitalLambda]0^4 + 
+    11808*mm^4*mN^11*mo^3*Q2^4*\[CapitalLambda]0^4 - 
+    864*mm^2*mN^13*mo^3*Q2^4*\[CapitalLambda]0^4 - 
+    144*mm^10*mN^4*mo^4*Q2^4*\[CapitalLambda]0^4 + 
+    2208*mm^8*mN^6*mo^4*Q2^4*\[CapitalLambda]0^4 + 
+    5184*mm^6*mN^8*mo^4*Q2^4*\[CapitalLambda]0^4 + 
+    12384*mm^4*mN^10*mo^4*Q2^4*\[CapitalLambda]0^4 - 
+    6480*mm^2*mN^12*mo^4*Q2^4*\[CapitalLambda]0^4 + 
+    2160*mm^10*mN^3*mo^5*Q2^4*\[CapitalLambda]0^4 - 
+    12096*mm^8*mN^5*mo^5*Q2^4*\[CapitalLambda]0^4 - 
+    17952*mm^6*mN^7*mo^5*Q2^4*\[CapitalLambda]0^4 - 
+    15552*mm^4*mN^9*mo^5*Q2^4*\[CapitalLambda]0^4 + 
+    2160*mm^2*mN^11*mo^5*Q2^4*\[CapitalLambda]0^4 + 
+    2016*mm^8*mN^4*mo^6*Q2^4*\[CapitalLambda]0^4 - 
+    1248*mm^6*mN^6*mo^6*Q2^4*\[CapitalLambda]0^4 - 
+    2016*mm^4*mN^8*mo^6*Q2^4*\[CapitalLambda]0^4 + 
+    8640*mm^2*mN^10*mo^6*Q2^4*\[CapitalLambda]0^4 - 
+    2880*mm^8*mN^3*mo^7*Q2^4*\[CapitalLambda]0^4 + 
+    6336*mm^6*mN^5*mo^7*Q2^4*\[CapitalLambda]0^4 + 
+    7488*mm^4*mN^7*mo^7*Q2^4*\[CapitalLambda]0^4 - 
+    2880*mm^2*mN^9*mo^7*Q2^4*\[CapitalLambda]0^4 - 
+    3024*mm^6*mN^4*mo^8*Q2^4*\[CapitalLambda]0^4 - 
+    4176*mm^4*mN^6*mo^8*Q2^4*\[CapitalLambda]0^4 - 
+    6480*mm^2*mN^8*mo^8*Q2^4*\[CapitalLambda]0^4 + 
+    2160*mm^6*mN^3*mo^9*Q2^4*\[CapitalLambda]0^4 + 
+    288*mm^4*mN^5*mo^9*Q2^4*\[CapitalLambda]0^4 + 2160*mm^2*mN^7*mo^9*Q2^4*
+     \[CapitalLambda]0^4 + 1872*mm^4*mN^4*mo^10*Q2^4*\[CapitalLambda]0^4 + 
+    2592*mm^2*mN^6*mo^10*Q2^4*\[CapitalLambda]0^4 - 
+    864*mm^4*mN^3*mo^11*Q2^4*\[CapitalLambda]0^4 - 
+    864*mm^2*mN^5*mo^11*Q2^4*\[CapitalLambda]0^4 - 
+    432*mm^2*mN^4*mo^12*Q2^4*\[CapitalLambda]0^4 + 
+    144*mm^2*mN^3*mo^13*Q2^4*\[CapitalLambda]0^4 - 
+    144*mm^12*mN^4*Q2^5*\[CapitalLambda]0^4 + 1104*mm^10*mN^6*Q2^5*
+     \[CapitalLambda]0^4 - 384*mm^8*mN^8*Q2^5*\[CapitalLambda]0^4 - 
+    1200*mm^6*mN^10*Q2^5*\[CapitalLambda]0^4 + 432*mm^4*mN^12*Q2^5*
+     \[CapitalLambda]0^4 - 144*mm^12*mN^3*mo*Q2^5*\[CapitalLambda]0^4 + 
+    576*mm^10*mN^5*mo*Q2^5*\[CapitalLambda]0^4 + 1824*mm^8*mN^7*mo*Q2^5*
+     \[CapitalLambda]0^4 + 960*mm^6*mN^9*mo*Q2^5*\[CapitalLambda]0^4 - 
+    144*mm^4*mN^11*mo*Q2^5*\[CapitalLambda]0^4 + 48*mm^10*mN^4*mo^2*Q2^5*
+     \[CapitalLambda]0^4 - 384*mm^8*mN^6*mo^2*Q2^5*\[CapitalLambda]0^4 + 
+    1296*mm^6*mN^8*mo^2*Q2^5*\[CapitalLambda]0^4 - 
+    1728*mm^4*mN^10*mo^2*Q2^5*\[CapitalLambda]0^4 + 
+    576*mm^10*mN^3*mo^3*Q2^5*\[CapitalLambda]0^4 - 
+    960*mm^8*mN^5*mo^3*Q2^5*\[CapitalLambda]0^4 - 1344*mm^6*mN^7*mo^3*Q2^5*
+     \[CapitalLambda]0^4 + 576*mm^4*mN^9*mo^3*Q2^5*\[CapitalLambda]0^4 + 
+    768*mm^8*mN^4*mo^4*Q2^5*\[CapitalLambda]0^4 + 1008*mm^6*mN^6*mo^4*Q2^5*
+     \[CapitalLambda]0^4 + 2592*mm^4*mN^8*mo^4*Q2^5*\[CapitalLambda]0^4 - 
+    864*mm^8*mN^3*mo^5*Q2^5*\[CapitalLambda]0^4 - 192*mm^6*mN^5*mo^5*Q2^5*
+     \[CapitalLambda]0^4 - 864*mm^4*mN^7*mo^5*Q2^5*\[CapitalLambda]0^4 - 
+    1104*mm^6*mN^4*mo^6*Q2^5*\[CapitalLambda]0^4 - 
+    1728*mm^4*mN^6*mo^6*Q2^5*\[CapitalLambda]0^4 + 
+    576*mm^6*mN^3*mo^7*Q2^5*\[CapitalLambda]0^4 + 576*mm^4*mN^5*mo^7*Q2^5*
+     \[CapitalLambda]0^4 + 432*mm^4*mN^4*mo^8*Q2^5*\[CapitalLambda]0^4 - 
+    144*mm^4*mN^3*mo^9*Q2^5*\[CapitalLambda]0^4 + 
+    48*mm^10*mN^4*Q2^6*\[CapitalLambda]0^4 - 96*mm^8*mN^6*Q2^6*
+     \[CapitalLambda]0^4 - 144*mm^6*mN^8*Q2^6*\[CapitalLambda]0^4 + 
+    48*mm^10*mN^3*mo*Q2^6*\[CapitalLambda]0^4 + 96*mm^8*mN^5*mo*Q2^6*
+     \[CapitalLambda]0^4 + 48*mm^6*mN^7*mo*Q2^6*\[CapitalLambda]0^4 + 
+    96*mm^8*mN^4*mo^2*Q2^6*\[CapitalLambda]0^4 + 288*mm^6*mN^6*mo^2*Q2^6*
+     \[CapitalLambda]0^4 - 96*mm^8*mN^3*mo^3*Q2^6*\[CapitalLambda]0^4 - 
+    96*mm^6*mN^5*mo^3*Q2^6*\[CapitalLambda]0^4 - 144*mm^6*mN^4*mo^4*Q2^6*
+     \[CapitalLambda]0^4 + 48*mm^6*mN^3*mo^5*Q2^6*\[CapitalLambda]0^4 + 
+    768*mm^14*mN^8*Q2*\[CapitalLambda]0^6 + 6144*mm^12*mN^10*Q2*
+     \[CapitalLambda]0^6 - 32256*mm^10*mN^12*Q2*\[CapitalLambda]0^6 + 
+    42240*mm^8*mN^14*Q2*\[CapitalLambda]0^6 + 3840*mm^6*mN^16*Q2*
+     \[CapitalLambda]0^6 - 50688*mm^4*mN^18*Q2*\[CapitalLambda]0^6 + 
+    39936*mm^2*mN^20*Q2*\[CapitalLambda]0^6 - 
+    9984*mN^22*Q2*\[CapitalLambda]0^6 + 7680*mm^14*mN^7*mo*Q2*
+     \[CapitalLambda]0^6 - 30720*mm^12*mN^9*mo*Q2*\[CapitalLambda]0^6 + 
+    36864*mm^10*mN^11*mo*Q2*\[CapitalLambda]0^6 + 
+    7680*mm^8*mN^13*mo*Q2*\[CapitalLambda]0^6 - 53760*mm^6*mN^15*mo*Q2*
+     \[CapitalLambda]0^6 + 46080*mm^4*mN^17*mo*Q2*\[CapitalLambda]0^6 - 
+    15360*mm^2*mN^19*mo*Q2*\[CapitalLambda]0^6 + 
+    1536*mN^21*mo*Q2*\[CapitalLambda]0^6 + 6912*mm^14*mN^6*mo^2*Q2*
+     \[CapitalLambda]0^6 - 33024*mm^12*mN^8*mo^2*Q2*\[CapitalLambda]0^6 - 
+    11520*mm^10*mN^10*mo^2*Q2*\[CapitalLambda]0^6 + 
+    115200*mm^8*mN^12*mo^2*Q2*\[CapitalLambda]0^6 - 
+    92928*mm^6*mN^14*mo^2*Q2*\[CapitalLambda]0^6 + 
+    52992*mm^4*mN^16*mo^2*Q2*\[CapitalLambda]0^6 - 
+    80640*mm^2*mN^18*mo^2*Q2*\[CapitalLambda]0^6 + 
+    43008*mN^20*mo^2*Q2*\[CapitalLambda]0^6 - 44544*mm^12*mN^7*mo^3*Q2*
+     \[CapitalLambda]0^6 + 87552*mm^10*mN^9*mo^3*Q2*\[CapitalLambda]0^6 - 
+    23040*mm^8*mN^11*mo^3*Q2*\[CapitalLambda]0^6 - 
+    3072*mm^6*mN^13*mo^3*Q2*\[CapitalLambda]0^6 - 59904*mm^4*mN^15*mo^3*Q2*
+     \[CapitalLambda]0^6 + 50688*mm^2*mN^17*mo^3*Q2*\[CapitalLambda]0^6 - 
+    7680*mN^19*mo^3*Q2*\[CapitalLambda]0^6 - 48384*mm^12*mN^6*mo^4*Q2*
+     \[CapitalLambda]0^6 + 129024*mm^10*mN^8*mo^4*Q2*\[CapitalLambda]0^6 + 
+    64512*mm^8*mN^10*mo^4*Q2*\[CapitalLambda]0^6 - 
+    78336*mm^6*mN^12*mo^4*Q2*\[CapitalLambda]0^6 - 
+    34560*mm^4*mN^14*mo^4*Q2*\[CapitalLambda]0^6 + 
+    23040*mm^2*mN^16*mo^4*Q2*\[CapitalLambda]0^6 - 
+    55296*mN^18*mo^4*Q2*\[CapitalLambda]0^6 + 105984*mm^10*mN^7*mo^5*Q2*
+     \[CapitalLambda]0^6 - 50688*mm^8*mN^9*mo^5*Q2*\[CapitalLambda]0^6 - 
+    18432*mm^6*mN^11*mo^5*Q2*\[CapitalLambda]0^6 - 
+    50688*mm^2*mN^15*mo^5*Q2*\[CapitalLambda]0^6 + 
+    13824*mN^17*mo^5*Q2*\[CapitalLambda]0^6 + 145152*mm^10*mN^6*mo^6*Q2*
+     \[CapitalLambda]0^6 - 176640*mm^8*mN^8*mo^6*Q2*\[CapitalLambda]0^6 - 
+    173568*mm^6*mN^10*mo^6*Q2*\[CapitalLambda]0^6 - 
+    78336*mm^4*mN^12*mo^6*Q2*\[CapitalLambda]0^6 - 
+    36096*mm^2*mN^14*mo^6*Q2*\[CapitalLambda]0^6 - 
+    12288*mN^16*mo^6*Q2*\[CapitalLambda]0^6 - 130560*mm^8*mN^7*mo^7*Q2*
+     \[CapitalLambda]0^6 - 58368*mm^6*mN^9*mo^7*Q2*\[CapitalLambda]0^6 - 
+    27648*mm^4*mN^11*mo^7*Q2*\[CapitalLambda]0^6 + 
+    3072*mm^2*mN^13*mo^7*Q2*\[CapitalLambda]0^6 - 
+    7680*mN^15*mo^7*Q2*\[CapitalLambda]0^6 - 241920*mm^8*mN^6*mo^8*Q2*
+     \[CapitalLambda]0^6 + 49920*mm^6*mN^8*mo^8*Q2*\[CapitalLambda]0^6 + 
+    156672*mm^4*mN^10*mo^8*Q2*\[CapitalLambda]0^6 + 
+    129024*mm^2*mN^12*mo^8*Q2*\[CapitalLambda]0^6 + 
+    84480*mN^14*mo^8*Q2*\[CapitalLambda]0^6 + 84480*mm^6*mN^7*mo^9*Q2*
+     \[CapitalLambda]0^6 + 64512*mm^4*mN^9*mo^9*Q2*\[CapitalLambda]0^6 + 
+    18432*mm^2*mN^11*mo^9*Q2*\[CapitalLambda]0^6 - 
+    7680*mN^13*mo^9*Q2*\[CapitalLambda]0^6 + 241920*mm^6*mN^6*mo^10*Q2*
+     \[CapitalLambda]0^6 + 99072*mm^4*mN^8*mo^10*Q2*\[CapitalLambda]0^6 - 
+    29952*mm^2*mN^10*mo^10*Q2*\[CapitalLambda]0^6 - 
+    55296*mN^12*mo^10*Q2*\[CapitalLambda]0^6 - 23040*mm^4*mN^7*mo^11*Q2*
+     \[CapitalLambda]0^6 - 4608*mm^2*mN^9*mo^11*Q2*\[CapitalLambda]0^6 + 
+    13824*mN^11*mo^11*Q2*\[CapitalLambda]0^6 - 145152*mm^4*mN^6*mo^12*Q2*
+     \[CapitalLambda]0^6 - 93696*mm^2*mN^8*mo^12*Q2*\[CapitalLambda]0^6 - 
+    12288*mN^10*mo^12*Q2*\[CapitalLambda]0^6 - 1536*mm^2*mN^7*mo^13*Q2*
+     \[CapitalLambda]0^6 - 7680*mN^9*mo^13*Q2*\[CapitalLambda]0^6 + 
+    48384*mm^2*mN^6*mo^14*Q2*\[CapitalLambda]0^6 + 
+    24576*mN^8*mo^14*Q2*\[CapitalLambda]0^6 + 1536*mN^7*mo^15*Q2*
+     \[CapitalLambda]0^6 - 6912*mN^6*mo^16*Q2*\[CapitalLambda]0^6 - 
+    2880*mm^14*mN^6*Q2^2*\[CapitalLambda]0^6 + 12384*mm^12*mN^8*Q2^2*
+     \[CapitalLambda]0^6 - 43200*mm^10*mN^10*Q2^2*\[CapitalLambda]0^6 + 
+    56160*mm^8*mN^12*Q2^2*\[CapitalLambda]0^6 + 19008*mm^6*mN^14*Q2^2*
+     \[CapitalLambda]0^6 - 87264*mm^4*mN^16*Q2^2*\[CapitalLambda]0^6 + 
+    54720*mm^2*mN^18*Q2^2*\[CapitalLambda]0^6 - 
+    8928*mN^20*Q2^2*\[CapitalLambda]0^6 - 3456*mm^14*mN^5*mo*Q2^2*
+     \[CapitalLambda]0^6 - 10944*mm^12*mN^7*mo*Q2^2*\[CapitalLambda]0^6 + 
+    47232*mm^10*mN^9*mo*Q2^2*\[CapitalLambda]0^6 - 
+    31680*mm^8*mN^11*mo*Q2^2*\[CapitalLambda]0^6 - 
+    33408*mm^6*mN^13*mo*Q2^2*\[CapitalLambda]0^6 + 
+    54720*mm^4*mN^15*mo*Q2^2*\[CapitalLambda]0^6 - 
+    28800*mm^2*mN^17*mo*Q2^2*\[CapitalLambda]0^6 + 
+    6336*mN^19*mo*Q2^2*\[CapitalLambda]0^6 - 576*mm^14*mN^4*mo^2*Q2^2*
+     \[CapitalLambda]0^6 - 864*mm^12*mN^6*mo^2*Q2^2*\[CapitalLambda]0^6 + 
+    4032*mm^10*mN^8*mo^2*Q2^2*\[CapitalLambda]0^6 + 
+    124128*mm^8*mN^10*mo^2*Q2^2*\[CapitalLambda]0^6 - 
+    126144*mm^6*mN^12*mo^2*Q2^2*\[CapitalLambda]0^6 + 
+    83808*mm^4*mN^14*mo^2*Q2^2*\[CapitalLambda]0^6 - 
+    130752*mm^2*mN^16*mo^2*Q2^2*\[CapitalLambda]0^6 + 
+    46368*mN^18*mo^2*Q2^2*\[CapitalLambda]0^6 + 26496*mm^12*mN^5*mo^3*Q2^2*
+     \[CapitalLambda]0^6 + 46080*mm^10*mN^7*mo^3*Q2^2*\[CapitalLambda]0^6 - 
+    66816*mm^8*mN^9*mo^3*Q2^2*\[CapitalLambda]0^6 + 
+    13824*mm^6*mN^11*mo^3*Q2^2*\[CapitalLambda]0^6 - 
+    65664*mm^4*mN^13*mo^3*Q2^2*\[CapitalLambda]0^6 + 
+    78336*mm^2*mN^15*mo^3*Q2^2*\[CapitalLambda]0^6 - 
+    32256*mN^17*mo^3*Q2^2*\[CapitalLambda]0^6 + 4032*mm^12*mN^4*mo^4*Q2^2*
+     \[CapitalLambda]0^6 + 58176*mm^10*mN^6*mo^4*Q2^2*\[CapitalLambda]0^6 - 
+    69408*mm^8*mN^8*mo^4*Q2^2*\[CapitalLambda]0^6 - 
+    171648*mm^6*mN^10*mo^4*Q2^2*\[CapitalLambda]0^6 - 
+    91008*mm^4*mN^12*mo^4*Q2^2*\[CapitalLambda]0^6 + 
+    28224*mm^2*mN^14*mo^4*Q2^2*\[CapitalLambda]0^6 - 
+    90144*mN^16*mo^4*Q2^2*\[CapitalLambda]0^6 - 86400*mm^10*mN^5*mo^5*Q2^2*
+     \[CapitalLambda]0^6 - 103104*mm^8*mN^7*mo^5*Q2^2*\[CapitalLambda]0^6 - 
+    20736*mm^6*mN^9*mo^5*Q2^2*\[CapitalLambda]0^6 - 
+    8064*mm^4*mN^11*mo^5*Q2^2*\[CapitalLambda]0^6 - 
+    63360*mm^2*mN^13*mo^5*Q2^2*\[CapitalLambda]0^6 + 
+    60480*mN^15*mo^5*Q2^2*\[CapitalLambda]0^6 - 12096*mm^10*mN^4*mo^6*Q2^2*
+     \[CapitalLambda]0^6 - 177120*mm^8*mN^6*mo^6*Q2^2*\[CapitalLambda]0^6 + 
+    17280*mm^6*mN^8*mo^6*Q2^2*\[CapitalLambda]0^6 + 
+    123840*mm^4*mN^10*mo^6*Q2^2*\[CapitalLambda]0^6 + 
+    96192*mm^2*mN^12*mo^6*Q2^2*\[CapitalLambda]0^6 + 
+    67104*mN^14*mo^6*Q2^2*\[CapitalLambda]0^6 + 155520*mm^8*mN^5*mo^7*Q2^2*
+     \[CapitalLambda]0^6 + 170496*mm^6*mN^7*mo^7*Q2^2*\[CapitalLambda]0^6 + 
+    101376*mm^4*mN^9*mo^7*Q2^2*\[CapitalLambda]0^6 + 
+    46080*mm^2*mN^11*mo^7*Q2^2*\[CapitalLambda]0^6 - 
+    40320*mN^13*mo^7*Q2^2*\[CapitalLambda]0^6 + 20160*mm^8*mN^4*mo^8*Q2^2*
+     \[CapitalLambda]0^6 + 244800*mm^6*mN^6*mo^8*Q2^2*\[CapitalLambda]0^6 + 
+    138528*mm^4*mN^8*mo^8*Q2^2*\[CapitalLambda]0^6 + 
+    32832*mm^2*mN^10*mo^8*Q2^2*\[CapitalLambda]0^6 + 
+    18720*mN^12*mo^8*Q2^2*\[CapitalLambda]0^6 - 167040*mm^6*mN^5*mo^9*Q2^2*
+     \[CapitalLambda]0^6 - 189504*mm^4*mN^7*mo^9*Q2^2*\[CapitalLambda]0^6 - 
+    109440*mm^2*mN^9*mo^9*Q2^2*\[CapitalLambda]0^6 - 
+    20160*mN^11*mo^9*Q2^2*\[CapitalLambda]0^6 - 20160*mm^6*mN^4*mo^10*Q2^2*
+     \[CapitalLambda]0^6 - 180000*mm^4*mN^6*mo^10*Q2^2*\[CapitalLambda]0^6 - 
+    145728*mm^2*mN^8*mo^10*Q2^2*\[CapitalLambda]0^6 - 
+    65952*mN^10*mo^10*Q2^2*\[CapitalLambda]0^6 + 107136*mm^4*mN^5*mo^11*Q2^2*
+     \[CapitalLambda]0^6 + 115200*mm^2*mN^7*mo^11*Q2^2*\[CapitalLambda]0^6 + 
+    48384*mN^9*mo^11*Q2^2*\[CapitalLambda]0^6 + 12096*mm^4*mN^4*mo^12*Q2^2*
+     \[CapitalLambda]0^6 + 68544*mm^2*mN^6*mo^12*Q2^2*\[CapitalLambda]0^6 + 
+    42912*mN^8*mo^12*Q2^2*\[CapitalLambda]0^6 - 38016*mm^2*mN^5*mo^13*Q2^2*
+     \[CapitalLambda]0^6 - 28224*mN^7*mo^13*Q2^2*\[CapitalLambda]0^6 - 
+    4032*mm^2*mN^4*mo^14*Q2^2*\[CapitalLambda]0^6 - 
+    10656*mN^6*mo^14*Q2^2*\[CapitalLambda]0^6 + 5760*mN^5*mo^15*Q2^2*
+     \[CapitalLambda]0^6 + 576*mN^4*mo^16*Q2^2*\[CapitalLambda]0^6 - 
+    192*mm^14*mN^4*Q2^3*\[CapitalLambda]0^6 + 8400*mm^12*mN^6*Q2^3*
+     \[CapitalLambda]0^6 - 23616*mm^10*mN^8*Q2^3*\[CapitalLambda]0^6 + 
+    33360*mm^8*mN^10*Q2^3*\[CapitalLambda]0^6 + 16320*mm^6*mN^12*Q2^3*
+     \[CapitalLambda]0^6 - 61200*mm^4*mN^14*Q2^3*\[CapitalLambda]0^6 + 
+    29760*mm^2*mN^16*Q2^3*\[CapitalLambda]0^6 - 
+    2832*mN^18*Q2^3*\[CapitalLambda]0^6 - 192*mm^14*mN^3*mo*Q2^3*
+     \[CapitalLambda]0^6 + 8832*mm^12*mN^5*mo*Q2^3*\[CapitalLambda]0^6 + 
+    12096*mm^10*mN^7*mo*Q2^3*\[CapitalLambda]0^6 - 
+    39936*mm^8*mN^9*mo*Q2^3*\[CapitalLambda]0^6 + 9408*mm^6*mN^11*mo*Q2^3*
+     \[CapitalLambda]0^6 + 26496*mm^4*mN^13*mo*Q2^3*\[CapitalLambda]0^6 - 
+    19776*mm^2*mN^15*mo*Q2^3*\[CapitalLambda]0^6 + 
+    3072*mN^17*mo*Q2^3*\[CapitalLambda]0^6 + 1776*mm^12*mN^4*mo^2*Q2^3*
+     \[CapitalLambda]0^6 - 13824*mm^10*mN^6*mo^2*Q2^3*\[CapitalLambda]0^6 + 
+    26064*mm^8*mN^8*mo^2*Q2^3*\[CapitalLambda]0^6 - 
+    85632*mm^6*mN^10*mo^2*Q2^3*\[CapitalLambda]0^6 + 
+    42768*mm^4*mN^12*mo^2*Q2^3*\[CapitalLambda]0^6 - 
+    91008*mm^2*mN^14*mo^2*Q2^3*\[CapitalLambda]0^6 + 
+    16176*mN^16*mo^2*Q2^3*\[CapitalLambda]0^6 + 1344*mm^12*mN^3*mo^3*Q2^3*
+     \[CapitalLambda]0^6 - 50688*mm^10*mN^5*mo^3*Q2^3*\[CapitalLambda]0^6 - 
+    47808*mm^8*mN^7*mo^3*Q2^3*\[CapitalLambda]0^6 + 
+    21504*mm^6*mN^9*mo^3*Q2^3*\[CapitalLambda]0^6 - 
+    25920*mm^4*mN^11*mo^3*Q2^3*\[CapitalLambda]0^6 + 
+    50688*mm^2*mN^13*mo^3*Q2^3*\[CapitalLambda]0^6 - 
+    18240*mN^15*mo^3*Q2^3*\[CapitalLambda]0^6 - 5184*mm^10*mN^4*mo^4*Q2^3*
+     \[CapitalLambda]0^6 - 30096*mm^8*mN^6*mo^4*Q2^3*\[CapitalLambda]0^6 - 
+    13824*mm^6*mN^8*mo^4*Q2^3*\[CapitalLambda]0^6 + 
+    21600*mm^4*mN^10*mo^4*Q2^3*\[CapitalLambda]0^6 + 
+    69696*mm^2*mN^12*mo^4*Q2^3*\[CapitalLambda]0^6 - 
+    37584*mN^14*mo^4*Q2^3*\[CapitalLambda]0^6 - 4032*mm^10*mN^3*mo^5*Q2^3*
+     \[CapitalLambda]0^6 + 116352*mm^8*mN^5*mo^5*Q2^3*\[CapitalLambda]0^6 + 
+    114048*mm^6*mN^7*mo^5*Q2^3*\[CapitalLambda]0^6 + 
+    62208*mm^4*mN^9*mo^5*Q2^3*\[CapitalLambda]0^6 - 
+    6336*mm^2*mN^11*mo^5*Q2^3*\[CapitalLambda]0^6 + 
+    44928*mN^13*mo^5*Q2^3*\[CapitalLambda]0^6 + 6000*mm^8*mN^4*mo^6*Q2^3*
+     \[CapitalLambda]0^6 + 87168*mm^6*mN^6*mo^6*Q2^3*\[CapitalLambda]0^6 + 
+    69408*mm^4*mN^8*mo^6*Q2^3*\[CapitalLambda]0^6 + 
+    36096*mm^2*mN^10*mo^6*Q2^3*\[CapitalLambda]0^6 + 
+    44400*mN^12*mo^6*Q2^3*\[CapitalLambda]0^6 + 6720*mm^8*mN^3*mo^7*Q2^3*
+     \[CapitalLambda]0^6 - 135168*mm^6*mN^5*mo^7*Q2^3*\[CapitalLambda]0^6 - 
+    148608*mm^4*mN^7*mo^7*Q2^3*\[CapitalLambda]0^6 - 
+    86016*mm^2*mN^9*mo^7*Q2^3*\[CapitalLambda]0^6 - 
+    58560*mN^11*mo^7*Q2^3*\[CapitalLambda]0^6 - 960*mm^6*mN^4*mo^8*Q2^3*
+     \[CapitalLambda]0^6 - 68688*mm^4*mN^6*mo^8*Q2^3*\[CapitalLambda]0^6 - 
+    62784*mm^2*mN^8*mo^8*Q2^3*\[CapitalLambda]0^6 - 
+    26160*mN^10*mo^8*Q2^3*\[CapitalLambda]0^6 - 6720*mm^6*mN^3*mo^9*Q2^3*
+     \[CapitalLambda]0^6 + 81792*mm^4*mN^5*mo^9*Q2^3*\[CapitalLambda]0^6 + 
+    85824*mm^2*mN^7*mo^9*Q2^3*\[CapitalLambda]0^6 + 
+    42240*mN^9*mo^9*Q2^3*\[CapitalLambda]0^6 - 3888*mm^4*mN^4*mo^10*Q2^3*
+     \[CapitalLambda]0^6 + 14976*mm^2*mN^6*mo^10*Q2^3*\[CapitalLambda]0^6 + 
+    4752*mN^8*mo^10*Q2^3*\[CapitalLambda]0^6 + 4032*mm^4*mN^3*mo^11*Q2^3*
+     \[CapitalLambda]0^6 - 23040*mm^2*mN^5*mo^11*Q2^3*\[CapitalLambda]0^6 - 
+    15552*mN^7*mo^11*Q2^3*\[CapitalLambda]0^6 + 3264*mm^2*mN^4*mo^12*Q2^3*
+     \[CapitalLambda]0^6 + 2064*mN^6*mo^12*Q2^3*\[CapitalLambda]0^6 - 
+    1344*mm^2*mN^3*mo^13*Q2^3*\[CapitalLambda]0^6 + 
+    1920*mN^5*mo^13*Q2^3*\[CapitalLambda]0^6 - 816*mN^4*mo^14*Q2^3*
+     \[CapitalLambda]0^6 + 192*mN^3*mo^15*Q2^3*\[CapitalLambda]0^6 + 
+    432*mm^12*mN^4*Q2^4*\[CapitalLambda]0^6 - 7776*mm^10*mN^6*Q2^4*
+     \[CapitalLambda]0^6 + 9744*mm^8*mN^8*Q2^4*\[CapitalLambda]0^6 + 
+    3648*mm^6*mN^10*Q2^4*\[CapitalLambda]0^6 - 23184*mm^4*mN^12*Q2^4*
+     \[CapitalLambda]0^6 + 7200*mm^2*mN^14*Q2^4*\[CapitalLambda]0^6 - 
+    432*mN^16*Q2^4*\[CapitalLambda]0^6 + 432*mm^12*mN^3*mo*Q2^4*
+     \[CapitalLambda]0^6 - 6336*mm^10*mN^5*mo*Q2^4*\[CapitalLambda]0^6 - 
+    15888*mm^8*mN^7*mo*Q2^4*\[CapitalLambda]0^6 + 13440*mm^6*mN^9*mo*Q2^4*
+     \[CapitalLambda]0^6 + 7632*mm^4*mN^11*mo*Q2^4*\[CapitalLambda]0^6 - 
+    6336*mm^2*mN^13*mo*Q2^4*\[CapitalLambda]0^6 + 
+    144*mN^15*mo*Q2^4*\[CapitalLambda]0^6 - 864*mm^10*mN^4*mo^2*Q2^4*
+     \[CapitalLambda]0^6 + 7488*mm^8*mN^6*mo^2*Q2^4*\[CapitalLambda]0^6 - 
+    13632*mm^6*mN^8*mo^2*Q2^4*\[CapitalLambda]0^6 + 
+    23904*mm^4*mN^10*mo^2*Q2^4*\[CapitalLambda]0^6 - 
+    25056*mm^2*mN^12*mo^2*Q2^4*\[CapitalLambda]0^6 + 
+    2592*mN^14*mo^2*Q2^4*\[CapitalLambda]0^6 - 2304*mm^10*mN^3*mo^3*Q2^4*
+     \[CapitalLambda]0^6 + 25632*mm^8*mN^5*mo^3*Q2^4*\[CapitalLambda]0^6 + 
+    36480*mm^6*mN^7*mo^3*Q2^4*\[CapitalLambda]0^6 + 
+    10944*mm^4*mN^9*mo^3*Q2^4*\[CapitalLambda]0^6 + 
+    24192*mm^2*mN^11*mo^3*Q2^4*\[CapitalLambda]0^6 - 
+    864*mN^13*mo^3*Q2^4*\[CapitalLambda]0^6 - 2448*mm^8*mN^4*mo^4*Q2^4*
+     \[CapitalLambda]0^6 + 9792*mm^6*mN^6*mo^4*Q2^4*\[CapitalLambda]0^6 + 
+    12672*mm^4*mN^8*mo^4*Q2^4*\[CapitalLambda]0^6 + 
+    28224*mm^2*mN^10*mo^4*Q2^4*\[CapitalLambda]0^6 - 
+    6480*mN^12*mo^4*Q2^4*\[CapitalLambda]0^6 + 5040*mm^8*mN^3*mo^5*Q2^4*
+     \[CapitalLambda]0^6 - 35712*mm^6*mN^5*mo^5*Q2^4*\[CapitalLambda]0^6 - 
+    41184*mm^4*mN^7*mo^5*Q2^4*\[CapitalLambda]0^6 - 
+    33408*mm^2*mN^9*mo^5*Q2^4*\[CapitalLambda]0^6 + 
+    2160*mN^11*mo^5*Q2^4*\[CapitalLambda]0^6 + 8640*mm^6*mN^4*mo^6*Q2^4*
+     \[CapitalLambda]0^6 - 4320*mm^4*mN^6*mo^6*Q2^4*\[CapitalLambda]0^6 - 
+    6336*mm^2*mN^8*mo^6*Q2^4*\[CapitalLambda]0^6 + 
+    8640*mN^10*mo^6*Q2^4*\[CapitalLambda]0^6 - 5760*mm^6*mN^3*mo^7*Q2^4*
+     \[CapitalLambda]0^6 + 19008*mm^4*mN^5*mo^7*Q2^4*\[CapitalLambda]0^6 + 
+    18432*mm^2*mN^7*mo^7*Q2^4*\[CapitalLambda]0^6 - 
+    2880*mN^9*mo^7*Q2^4*\[CapitalLambda]0^6 - 9072*mm^4*mN^4*mo^8*Q2^4*
+     \[CapitalLambda]0^6 - 7776*mm^2*mN^6*mo^8*Q2^4*\[CapitalLambda]0^6 - 
+    6480*mN^8*mo^8*Q2^4*\[CapitalLambda]0^6 + 3600*mm^4*mN^3*mo^9*Q2^4*
+     \[CapitalLambda]0^6 - 1728*mm^2*mN^5*mo^9*Q2^4*\[CapitalLambda]0^6 + 
+    2160*mN^7*mo^9*Q2^4*\[CapitalLambda]0^6 + 3744*mm^2*mN^4*mo^10*Q2^4*
+     \[CapitalLambda]0^6 + 2592*mN^6*mo^10*Q2^4*\[CapitalLambda]0^6 - 
+    1152*mm^2*mN^3*mo^11*Q2^4*\[CapitalLambda]0^6 - 
+    864*mN^5*mo^11*Q2^4*\[CapitalLambda]0^6 - 432*mN^4*mo^12*Q2^4*
+     \[CapitalLambda]0^6 + 144*mN^3*mo^13*Q2^4*\[CapitalLambda]0^6 - 
+    288*mm^10*mN^4*Q2^5*\[CapitalLambda]0^6 + 2448*mm^8*mN^6*Q2^5*
+     \[CapitalLambda]0^6 + 576*mm^6*mN^8*Q2^5*\[CapitalLambda]0^6 - 
+    4176*mm^4*mN^10*Q2^5*\[CapitalLambda]0^6 + 864*mm^2*mN^12*Q2^5*
+     \[CapitalLambda]0^6 - 288*mm^10*mN^3*mo*Q2^5*\[CapitalLambda]0^6 + 
+    576*mm^8*mN^5*mo*Q2^5*\[CapitalLambda]0^6 + 6336*mm^6*mN^7*mo*Q2^5*
+     \[CapitalLambda]0^6 + 2880*mm^4*mN^9*mo*Q2^5*\[CapitalLambda]0^6 - 
+    288*mm^2*mN^11*mo*Q2^5*\[CapitalLambda]0^6 - 720*mm^8*mN^4*mo^2*Q2^5*
+     \[CapitalLambda]0^6 - 1728*mm^6*mN^6*mo^2*Q2^5*\[CapitalLambda]0^6 + 
+    5040*mm^4*mN^8*mo^2*Q2^5*\[CapitalLambda]0^6 - 
+    3456*mm^2*mN^10*mo^2*Q2^5*\[CapitalLambda]0^6 + 
+    1152*mm^8*mN^3*mo^3*Q2^5*\[CapitalLambda]0^6 - 
+    2304*mm^6*mN^5*mo^3*Q2^5*\[CapitalLambda]0^6 - 
+    4608*mm^4*mN^7*mo^3*Q2^5*\[CapitalLambda]0^6 + 
+    1152*mm^2*mN^9*mo^3*Q2^5*\[CapitalLambda]0^6 + 
+    3456*mm^6*mN^4*mo^4*Q2^5*\[CapitalLambda]0^6 + 
+    2448*mm^4*mN^6*mo^4*Q2^5*\[CapitalLambda]0^6 + 
+    5184*mm^2*mN^8*mo^4*Q2^5*\[CapitalLambda]0^6 - 
+    1728*mm^6*mN^3*mo^5*Q2^5*\[CapitalLambda]0^6 + 
+    576*mm^4*mN^5*mo^5*Q2^5*\[CapitalLambda]0^6 - 1728*mm^2*mN^7*mo^5*Q2^5*
+     \[CapitalLambda]0^6 - 3312*mm^4*mN^4*mo^6*Q2^5*\[CapitalLambda]0^6 - 
+    3456*mm^2*mN^6*mo^6*Q2^5*\[CapitalLambda]0^6 + 
+    1152*mm^4*mN^3*mo^7*Q2^5*\[CapitalLambda]0^6 + 
+    1152*mm^2*mN^5*mo^7*Q2^5*\[CapitalLambda]0^6 + 
+    864*mm^2*mN^4*mo^8*Q2^5*\[CapitalLambda]0^6 - 288*mm^2*mN^3*mo^9*Q2^5*
+     \[CapitalLambda]0^6 + 48*mm^8*mN^4*Q2^6*\[CapitalLambda]0^6 - 
+    192*mm^6*mN^6*Q2^6*\[CapitalLambda]0^6 - 432*mm^4*mN^8*Q2^6*
+     \[CapitalLambda]0^6 + 48*mm^8*mN^3*mo*Q2^6*\[CapitalLambda]0^6 + 
+    384*mm^6*mN^5*mo*Q2^6*\[CapitalLambda]0^6 + 144*mm^4*mN^7*mo*Q2^6*
+     \[CapitalLambda]0^6 + 384*mm^6*mN^4*mo^2*Q2^6*\[CapitalLambda]0^6 + 
+    864*mm^4*mN^6*mo^2*Q2^6*\[CapitalLambda]0^6 - 192*mm^6*mN^3*mo^3*Q2^6*
+     \[CapitalLambda]0^6 - 288*mm^4*mN^5*mo^3*Q2^6*\[CapitalLambda]0^6 - 
+    432*mm^4*mN^4*mo^4*Q2^6*\[CapitalLambda]0^6 + 144*mm^4*mN^3*mo^5*Q2^6*
+     \[CapitalLambda]0^6 + 2688*mm^12*mN^8*Q2*\[CapitalLambda]0^8 + 
+    12672*mm^10*mN^10*Q2*\[CapitalLambda]0^8 - 51840*mm^8*mN^12*Q2*
+     \[CapitalLambda]0^8 + 26880*mm^6*mN^14*Q2*\[CapitalLambda]0^8 + 
+    63360*mm^4*mN^16*Q2*\[CapitalLambda]0^8 - 79488*mm^2*mN^18*Q2*
+     \[CapitalLambda]0^8 + 25728*mN^20*Q2*\[CapitalLambda]0^8 + 
+    17664*mm^12*mN^7*mo*Q2*\[CapitalLambda]0^8 - 48384*mm^10*mN^9*mo*Q2*
+     \[CapitalLambda]0^8 + 11520*mm^8*mN^11*mo*Q2*\[CapitalLambda]0^8 + 
+    84480*mm^6*mN^13*mo*Q2*\[CapitalLambda]0^8 - 103680*mm^4*mN^15*mo*Q2*
+     \[CapitalLambda]0^8 + 43776*mm^2*mN^17*mo*Q2*\[CapitalLambda]0^8 - 
+    5376*mN^19*mo*Q2*\[CapitalLambda]0^8 + 14976*mm^12*mN^6*mo^2*Q2*
+     \[CapitalLambda]0^8 - 54144*mm^10*mN^8*mo^2*Q2*\[CapitalLambda]0^8 - 
+    86400*mm^8*mN^10*mo^2*Q2*\[CapitalLambda]0^8 + 
+    241920*mm^6*mN^12*mo^2*Q2*\[CapitalLambda]0^8 - 
+    139392*mm^4*mN^14*mo^2*Q2*\[CapitalLambda]0^8 + 
+    79488*mm^2*mN^16*mo^2*Q2*\[CapitalLambda]0^8 - 
+    56448*mN^18*mo^2*Q2*\[CapitalLambda]0^8 - 82944*mm^10*mN^7*mo^3*Q2*
+     \[CapitalLambda]0^8 + 96768*mm^8*mN^9*mo^3*Q2*\[CapitalLambda]0^8 + 
+    27648*mm^6*mN^11*mo^3*Q2*\[CapitalLambda]0^8 - 
+    55296*mm^2*mN^15*mo^3*Q2*\[CapitalLambda]0^8 + 
+    13824*mN^17*mo^3*Q2*\[CapitalLambda]0^8 - 89856*mm^10*mN^6*mo^4*Q2*
+     \[CapitalLambda]0^8 + 171648*mm^8*mN^8*mo^4*Q2*\[CapitalLambda]0^8 + 
+    205056*mm^6*mN^10*mo^4*Q2*\[CapitalLambda]0^8 - 
+    131328*mm^4*mN^12*mo^4*Q2*\[CapitalLambda]0^8 + 
+    10368*mN^16*mo^4*Q2*\[CapitalLambda]0^8 + 149760*mm^8*mN^7*mo^5*Q2*
+     \[CapitalLambda]0^8 - 13824*mm^6*mN^9*mo^5*Q2*\[CapitalLambda]0^8 - 
+    23040*mm^4*mN^11*mo^5*Q2*\[CapitalLambda]0^8 + 
+    4608*mm^2*mN^13*mo^5*Q2*\[CapitalLambda]0^8 - 
+    6912*mN^15*mo^5*Q2*\[CapitalLambda]0^8 + 224640*mm^8*mN^6*mo^6*Q2*
+     \[CapitalLambda]0^8 - 198912*mm^6*mN^8*mo^6*Q2*\[CapitalLambda]0^8 - 
+    232704*mm^4*mN^10*mo^6*Q2*\[CapitalLambda]0^8 - 
+    71424*mm^2*mN^12*mo^6*Q2*\[CapitalLambda]0^8 + 
+    23424*mN^14*mo^6*Q2*\[CapitalLambda]0^8 - 122880*mm^6*mN^7*mo^7*Q2*
+     \[CapitalLambda]0^8 - 55296*mm^4*mN^9*mo^7*Q2*\[CapitalLambda]0^8 - 
+    9216*mm^2*mN^11*mo^7*Q2*\[CapitalLambda]0^8 - 
+    3072*mN^13*mo^7*Q2*\[CapitalLambda]0^8 - 299520*mm^6*mN^6*mo^8*Q2*
+     \[CapitalLambda]0^8 + 67968*mm^4*mN^8*mo^8*Q2*\[CapitalLambda]0^8 + 
+    132480*mm^2*mN^10*mo^8*Q2*\[CapitalLambda]0^8 + 
+    31104*mN^12*mo^8*Q2*\[CapitalLambda]0^8 + 34560*mm^4*mN^7*mo^9*Q2*
+     \[CapitalLambda]0^8 + 6912*mm^2*mN^9*mo^9*Q2*\[CapitalLambda]0^8 - 
+    6912*mN^11*mo^9*Q2*\[CapitalLambda]0^8 + 224640*mm^4*mN^6*mo^10*Q2*
+     \[CapitalLambda]0^8 + 28800*mm^2*mN^8*mo^10*Q2*\[CapitalLambda]0^8 - 
+    31104*mN^10*mo^10*Q2*\[CapitalLambda]0^8 + 9216*mm^2*mN^7*mo^11*Q2*
+     \[CapitalLambda]0^8 + 13824*mN^9*mo^11*Q2*\[CapitalLambda]0^8 - 
+    89856*mm^2*mN^6*mo^12*Q2*\[CapitalLambda]0^8 - 
+    18048*mN^8*mo^12*Q2*\[CapitalLambda]0^8 - 5376*mN^7*mo^13*Q2*
+     \[CapitalLambda]0^8 + 14976*mN^6*mo^14*Q2*\[CapitalLambda]0^8 - 
+    6048*mm^12*mN^6*Q2^2*\[CapitalLambda]0^8 + 15840*mm^10*mN^8*Q2^2*
+     \[CapitalLambda]0^8 - 47520*mm^8*mN^10*Q2^2*\[CapitalLambda]0^8 + 
+    14400*mm^6*mN^12*Q2^2*\[CapitalLambda]0^8 + 112032*mm^4*mN^14*Q2^2*
+     \[CapitalLambda]0^8 - 120096*mm^2*mN^16*Q2^2*\[CapitalLambda]0^8 + 
+    31392*mN^18*Q2^2*\[CapitalLambda]0^8 - 8640*mm^12*mN^5*mo*Q2^2*
+     \[CapitalLambda]0^8 - 22464*mm^10*mN^7*mo*Q2^2*\[CapitalLambda]0^8 + 
+    61632*mm^8*mN^9*mo*Q2^2*\[CapitalLambda]0^8 + 12672*mm^6*mN^11*mo*Q2^2*
+     \[CapitalLambda]0^8 - 95040*mm^4*mN^13*mo*Q2^2*\[CapitalLambda]0^8 + 
+    69696*mm^2*mN^15*mo*Q2^2*\[CapitalLambda]0^8 - 
+    17856*mN^17*mo*Q2^2*\[CapitalLambda]0^8 - 2592*mm^12*mN^4*mo^2*Q2^2*
+     \[CapitalLambda]0^8 + 3744*mm^10*mN^6*mo^2*Q2^2*\[CapitalLambda]0^8 - 
+    15264*mm^8*mN^8*mo^2*Q2^2*\[CapitalLambda]0^8 + 
+    249408*mm^6*mN^10*mo^2*Q2^2*\[CapitalLambda]0^8 - 
+    199008*mm^4*mN^12*mo^2*Q2^2*\[CapitalLambda]0^8 + 
+    127008*mm^2*mN^14*mo^2*Q2^2*\[CapitalLambda]0^8 - 
+    80352*mN^16*mo^2*Q2^2*\[CapitalLambda]0^8 + 57600*mm^10*mN^5*mo^3*Q2^2*
+     \[CapitalLambda]0^8 + 71424*mm^8*mN^7*mo^3*Q2^2*\[CapitalLambda]0^8 - 
+    71424*mm^6*mN^9*mo^3*Q2^2*\[CapitalLambda]0^8 + 
+    34560*mm^4*mN^11*mo^3*Q2^2*\[CapitalLambda]0^8 - 
+    87552*mm^2*mN^13*mo^3*Q2^2*\[CapitalLambda]0^8 + 
+    50688*mN^15*mo^3*Q2^2*\[CapitalLambda]0^8 + 15552*mm^10*mN^4*mo^4*Q2^2*
+     \[CapitalLambda]0^8 + 76320*mm^8*mN^6*mo^4*Q2^2*\[CapitalLambda]0^8 - 
+    38592*mm^6*mN^8*mo^4*Q2^2*\[CapitalLambda]0^8 - 
+    252864*mm^4*mN^10*mo^4*Q2^2*\[CapitalLambda]0^8 - 
+    51840*mm^2*mN^12*mo^4*Q2^2*\[CapitalLambda]0^8 + 
+    27936*mN^14*mo^4*Q2^2*\[CapitalLambda]0^8 - 158400*mm^8*mN^5*mo^5*Q2^2*
+     \[CapitalLambda]0^8 - 116352*mm^6*mN^7*mo^5*Q2^2*\[CapitalLambda]0^8 - 
+    8064*mm^4*mN^9*mo^5*Q2^2*\[CapitalLambda]0^8 + 
+    12672*mm^2*mN^11*mo^5*Q2^2*\[CapitalLambda]0^8 - 
+    38592*mN^13*mo^5*Q2^2*\[CapitalLambda]0^8 - 38880*mm^8*mN^4*mo^6*Q2^2*
+     \[CapitalLambda]0^8 - 221760*mm^6*mN^6*mo^6*Q2^2*\[CapitalLambda]0^8 + 
+    7488*mm^4*mN^8*mo^6*Q2^2*\[CapitalLambda]0^8 + 
+    90432*mm^2*mN^10*mo^6*Q2^2*\[CapitalLambda]0^8 + 
+    61344*mN^12*mo^6*Q2^2*\[CapitalLambda]0^8 + 230400*mm^6*mN^5*mo^7*Q2^2*
+     \[CapitalLambda]0^8 + 145152*mm^4*mN^7*mo^7*Q2^2*\[CapitalLambda]0^8 + 
+    39168*mm^2*mN^9*mo^7*Q2^2*\[CapitalLambda]0^8 + 
+    4608*mN^11*mo^7*Q2^2*\[CapitalLambda]0^8 + 51840*mm^6*mN^4*mo^8*Q2^2*
+     \[CapitalLambda]0^8 + 260640*mm^4*mN^6*mo^8*Q2^2*\[CapitalLambda]0^8 + 
+    82656*mm^2*mN^8*mo^8*Q2^2*\[CapitalLambda]0^8 - 
+    16416*mN^10*mo^8*Q2^2*\[CapitalLambda]0^8 - 187200*mm^4*mN^5*mo^9*Q2^2*
+     \[CapitalLambda]0^8 - 114624*mm^2*mN^7*mo^9*Q2^2*\[CapitalLambda]0^8 - 
+    21312*mN^9*mo^9*Q2^2*\[CapitalLambda]0^8 - 38880*mm^4*mN^4*mo^10*Q2^2*
+     \[CapitalLambda]0^8 - 143712*mm^2*mN^6*mo^10*Q2^2*\[CapitalLambda]0^8 - 
+    52128*mN^8*mo^10*Q2^2*\[CapitalLambda]0^8 + 80640*mm^2*mN^5*mo^11*Q2^2*
+     \[CapitalLambda]0^8 + 36864*mN^7*mo^11*Q2^2*\[CapitalLambda]0^8 + 
+    15552*mm^2*mN^4*mo^12*Q2^2*\[CapitalLambda]0^8 + 
+    30816*mN^6*mo^12*Q2^2*\[CapitalLambda]0^8 - 14400*mN^5*mo^13*Q2^2*
+     \[CapitalLambda]0^8 - 2592*mN^4*mo^14*Q2^2*\[CapitalLambda]0^8 - 
+    96*mm^12*mN^4*Q2^3*\[CapitalLambda]0^8 + 11664*mm^10*mN^6*Q2^3*
+     \[CapitalLambda]0^8 - 15264*mm^8*mN^8*Q2^3*\[CapitalLambda]0^8 - 
+    1824*mm^6*mN^10*Q2^3*\[CapitalLambda]0^8 + 76896*mm^4*mN^12*Q2^3*
+     \[CapitalLambda]0^8 - 77040*mm^2*mN^14*Q2^3*\[CapitalLambda]0^8 + 
+    16032*mN^16*Q2^3*\[CapitalLambda]0^8 - 96*mm^12*mN^3*mo*Q2^3*
+     \[CapitalLambda]0^8 + 14976*mm^10*mN^5*mo*Q2^3*\[CapitalLambda]0^8 + 
+    33696*mm^8*mN^7*mo*Q2^3*\[CapitalLambda]0^8 - 56832*mm^6*mN^9*mo*Q2^3*
+     \[CapitalLambda]0^8 - 12960*mm^4*mN^11*mo*Q2^3*\[CapitalLambda]0^8 + 
+    40320*mm^2*mN^13*mo*Q2^3*\[CapitalLambda]0^8 - 
+    12192*mN^15*mo*Q2^3*\[CapitalLambda]0^8 + 3888*mm^10*mN^4*mo^2*Q2^3*
+     \[CapitalLambda]0^8 - 16992*mm^8*mN^6*mo^2*Q2^3*\[CapitalLambda]0^8 + 
+    43488*mm^6*mN^8*mo^2*Q2^3*\[CapitalLambda]0^8 - 
+    132480*mm^4*mN^10*mo^2*Q2^3*\[CapitalLambda]0^8 + 
+    72432*mm^2*mN^12*mo^2*Q2^3*\[CapitalLambda]0^8 - 
+    49824*mN^14*mo^2*Q2^3*\[CapitalLambda]0^8 + 576*mm^10*mN^3*mo^3*Q2^3*
+     \[CapitalLambda]0^8 - 77760*mm^8*mN^5*mo^3*Q2^3*\[CapitalLambda]0^8 - 
+    88704*mm^6*mN^7*mo^3*Q2^3*\[CapitalLambda]0^8 + 
+    47232*mm^4*mN^9*mo^3*Q2^3*\[CapitalLambda]0^8 - 
+    47808*mm^2*mN^11*mo^3*Q2^3*\[CapitalLambda]0^8 + 
+    37440*mN^13*mo^3*Q2^3*\[CapitalLambda]0^8 - 13248*mm^8*mN^4*mo^4*Q2^3*
+     \[CapitalLambda]0^8 - 46944*mm^6*mN^6*mo^4*Q2^3*\[CapitalLambda]0^8 - 
+    36288*mm^4*mN^8*mo^4*Q2^3*\[CapitalLambda]0^8 + 
+    18720*mm^2*mN^10*mo^4*Q2^3*\[CapitalLambda]0^8 + 
+    40320*mN^12*mo^4*Q2^3*\[CapitalLambda]0^8 - 1440*mm^8*mN^3*mo^5*Q2^3*
+     \[CapitalLambda]0^8 + 154368*mm^6*mN^5*mo^5*Q2^3*\[CapitalLambda]0^8 + 
+    122688*mm^4*mN^7*mo^5*Q2^3*\[CapitalLambda]0^8 + 
+    41472*mm^2*mN^9*mo^5*Q2^3*\[CapitalLambda]0^8 - 
+    27936*mN^11*mo^5*Q2^3*\[CapitalLambda]0^8 + 16032*mm^6*mN^4*mo^6*Q2^3*
+     \[CapitalLambda]0^8 + 107136*mm^4*mN^6*mo^6*Q2^3*\[CapitalLambda]0^8 + 
+    51552*mm^2*mN^8*mo^6*Q2^3*\[CapitalLambda]0^8 + 
+    16320*mN^10*mo^6*Q2^3*\[CapitalLambda]0^8 + 1920*mm^6*mN^3*mo^7*Q2^3*
+     \[CapitalLambda]0^8 - 146304*mm^4*mN^5*mo^7*Q2^3*\[CapitalLambda]0^8 - 
+    100224*mm^2*mN^7*mo^7*Q2^3*\[CapitalLambda]0^8 - 
+    18816*mN^9*mo^7*Q2^3*\[CapitalLambda]0^8 - 6048*mm^4*mN^4*mo^8*Q2^3*
+     \[CapitalLambda]0^8 - 63792*mm^2*mN^6*mo^8*Q2^3*\[CapitalLambda]0^8 - 
+    33120*mN^8*mo^8*Q2^3*\[CapitalLambda]0^8 - 1440*mm^4*mN^3*mo^9*Q2^3*
+     \[CapitalLambda]0^8 + 65664*mm^2*mN^5*mo^9*Q2^3*\[CapitalLambda]0^8 + 
+    32544*mN^7*mo^9*Q2^3*\[CapitalLambda]0^8 - 1872*mm^2*mN^4*mo^10*Q2^3*
+     \[CapitalLambda]0^8 + 8928*mN^6*mo^10*Q2^3*\[CapitalLambda]0^8 + 
+    576*mm^2*mN^3*mo^11*Q2^3*\[CapitalLambda]0^8 - 
+    10944*mN^5*mo^11*Q2^3*\[CapitalLambda]0^8 + 1344*mN^4*mo^12*Q2^3*
+     \[CapitalLambda]0^8 - 96*mN^3*mo^13*Q2^3*\[CapitalLambda]0^8 - 
+    144*mm^10*mN^4*Q2^4*\[CapitalLambda]0^8 - 5328*mm^8*mN^6*Q2^4*
+     \[CapitalLambda]0^8 - 4704*mm^6*mN^8*Q2^4*\[CapitalLambda]0^8 + 
+    23328*mm^4*mN^10*Q2^4*\[CapitalLambda]0^8 - 26928*mm^2*mN^12*Q2^4*
+     \[CapitalLambda]0^8 + 3888*mN^14*Q2^4*\[CapitalLambda]0^8 - 
+    144*mm^10*mN^3*mo*Q2^4*\[CapitalLambda]0^8 - 4320*mm^8*mN^5*mo*Q2^4*
+     \[CapitalLambda]0^8 - 33504*mm^6*mN^7*mo*Q2^4*\[CapitalLambda]0^8 + 
+    13248*mm^4*mN^9*mo*Q2^4*\[CapitalLambda]0^8 + 11952*mm^2*mN^11*mo*Q2^4*
+     \[CapitalLambda]0^8 - 3168*mN^13*mo*Q2^4*\[CapitalLambda]0^8 + 
+    1296*mm^8*mN^4*mo^2*Q2^4*\[CapitalLambda]0^8 + 
+    2304*mm^6*mN^6*mo^2*Q2^4*\[CapitalLambda]0^8 - 
+    25632*mm^4*mN^8*mo^2*Q2^4*\[CapitalLambda]0^8 + 
+    30240*mm^2*mN^10*mo^2*Q2^4*\[CapitalLambda]0^8 - 
+    13680*mN^12*mo^2*Q2^4*\[CapitalLambda]0^8 + 288*mm^8*mN^3*mo^3*Q2^4*
+     \[CapitalLambda]0^8 + 23616*mm^6*mN^5*mo^3*Q2^4*\[CapitalLambda]0^8 + 
+    48384*mm^4*mN^7*mo^3*Q2^4*\[CapitalLambda]0^8 - 
+    4032*mm^2*mN^9*mo^3*Q2^4*\[CapitalLambda]0^8 + 
+    12384*mN^11*mo^3*Q2^4*\[CapitalLambda]0^8 - 7200*mm^6*mN^4*mo^4*Q2^4*
+     \[CapitalLambda]0^8 + 14688*mm^4*mN^6*mo^4*Q2^4*\[CapitalLambda]0^8 + 
+    11520*mm^2*mN^8*mo^4*Q2^4*\[CapitalLambda]0^8 + 
+    15840*mN^10*mo^4*Q2^4*\[CapitalLambda]0^8 + 288*mm^6*mN^3*mo^5*Q2^4*
+     \[CapitalLambda]0^8 - 35136*mm^4*mN^5*mo^5*Q2^4*\[CapitalLambda]0^8 - 
+    26784*mm^2*mN^7*mo^5*Q2^4*\[CapitalLambda]0^8 - 
+    17856*mN^9*mo^5*Q2^4*\[CapitalLambda]0^8 + 12960*mm^4*mN^4*mo^6*Q2^4*
+     \[CapitalLambda]0^8 - 6048*mm^2*mN^6*mo^6*Q2^4*\[CapitalLambda]0^8 - 
+    4320*mN^8*mo^6*Q2^4*\[CapitalLambda]0^8 - 1152*mm^4*mN^3*mo^7*Q2^4*
+     \[CapitalLambda]0^8 + 17856*mm^2*mN^5*mo^7*Q2^4*\[CapitalLambda]0^8 + 
+    10944*mN^7*mo^7*Q2^4*\[CapitalLambda]0^8 - 8784*mm^2*mN^4*mo^8*Q2^4*
+     \[CapitalLambda]0^8 - 3600*mN^6*mo^8*Q2^4*\[CapitalLambda]0^8 + 
+    1008*mm^2*mN^3*mo^9*Q2^4*\[CapitalLambda]0^8 - 
+    2016*mN^5*mo^9*Q2^4*\[CapitalLambda]0^8 + 1872*mN^4*mo^10*Q2^4*
+     \[CapitalLambda]0^8 - 288*mN^3*mo^11*Q2^4*\[CapitalLambda]0^8 + 
+    432*mm^8*mN^4*Q2^5*\[CapitalLambda]0^8 + 3744*mm^4*mN^8*Q2^5*
+     \[CapitalLambda]0^8 - 4752*mm^2*mN^10*Q2^5*\[CapitalLambda]0^8 + 
+    432*mN^12*Q2^5*\[CapitalLambda]0^8 + 432*mm^8*mN^3*mo*Q2^5*
+     \[CapitalLambda]0^8 - 2304*mm^6*mN^5*mo*Q2^5*\[CapitalLambda]0^8 + 
+    7776*mm^4*mN^7*mo*Q2^5*\[CapitalLambda]0^8 + 2880*mm^2*mN^9*mo*Q2^5*
+     \[CapitalLambda]0^8 - 144*mN^11*mo*Q2^5*\[CapitalLambda]0^8 - 
+    2880*mm^6*mN^4*mo^2*Q2^5*\[CapitalLambda]0^8 - 
+    2304*mm^4*mN^6*mo^2*Q2^5*\[CapitalLambda]0^8 + 
+    6192*mm^2*mN^8*mo^2*Q2^5*\[CapitalLambda]0^8 - 
+    1728*mN^10*mo^2*Q2^5*\[CapitalLambda]0^8 - 576*mm^6*mN^3*mo^3*Q2^5*
+     \[CapitalLambda]0^8 - 576*mm^4*mN^5*mo^3*Q2^5*\[CapitalLambda]0^8 - 
+    5184*mm^2*mN^7*mo^3*Q2^5*\[CapitalLambda]0^8 + 
+    576*mN^9*mo^3*Q2^5*\[CapitalLambda]0^8 + 5472*mm^4*mN^4*mo^4*Q2^5*
+     \[CapitalLambda]0^8 + 1872*mm^2*mN^6*mo^4*Q2^5*\[CapitalLambda]0^8 + 
+    2592*mN^8*mo^4*Q2^5*\[CapitalLambda]0^8 - 288*mm^4*mN^3*mo^5*Q2^5*
+     \[CapitalLambda]0^8 + 1728*mm^2*mN^5*mo^5*Q2^5*\[CapitalLambda]0^8 - 
+    864*mN^7*mo^5*Q2^5*\[CapitalLambda]0^8 - 3312*mm^2*mN^4*mo^6*Q2^5*
+     \[CapitalLambda]0^8 - 1728*mN^6*mo^6*Q2^5*\[CapitalLambda]0^8 + 
+    576*mm^2*mN^3*mo^7*Q2^5*\[CapitalLambda]0^8 + 
+    576*mN^5*mo^7*Q2^5*\[CapitalLambda]0^8 + 432*mN^4*mo^8*Q2^5*
+     \[CapitalLambda]0^8 - 144*mN^3*mo^9*Q2^5*\[CapitalLambda]0^8 - 
+    192*mm^6*mN^4*Q2^6*\[CapitalLambda]0^8 - 432*mm^2*mN^8*Q2^6*
+     \[CapitalLambda]0^8 - 192*mm^6*mN^3*mo*Q2^6*\[CapitalLambda]0^8 + 
+    576*mm^4*mN^5*mo*Q2^6*\[CapitalLambda]0^8 + 144*mm^2*mN^7*mo*Q2^6*
+     \[CapitalLambda]0^8 + 576*mm^4*mN^4*mo^2*Q2^6*\[CapitalLambda]0^8 + 
+    864*mm^2*mN^6*mo^2*Q2^6*\[CapitalLambda]0^8 - 288*mm^2*mN^5*mo^3*Q2^6*
+     \[CapitalLambda]0^8 - 432*mm^2*mN^4*mo^4*Q2^6*\[CapitalLambda]0^8 + 
+    144*mm^2*mN^3*mo^5*Q2^6*\[CapitalLambda]0^8 - 
+    384*mm^10*mN^10*\[CapitalLambda]0^10 + 1152*mm^8*mN^12*
+     \[CapitalLambda]0^10 - 768*mm^6*mN^14*\[CapitalLambda]0^10 - 
+    768*mm^4*mN^16*\[CapitalLambda]0^10 + 1152*mm^2*mN^18*
+     \[CapitalLambda]0^10 - 384*mN^20*\[CapitalLambda]0^10 - 
+    768*mm^10*mN^9*mo*\[CapitalLambda]0^10 + 1536*mm^8*mN^11*mo*
+     \[CapitalLambda]0^10 - 1536*mm^4*mN^15*mo*\[CapitalLambda]0^10 + 
+    768*mm^2*mN^17*mo*\[CapitalLambda]0^10 - 384*mm^10*mN^8*mo^2*
+     \[CapitalLambda]0^10 + 1536*mm^8*mN^10*mo^2*\[CapitalLambda]0^10 - 
+    768*mm^6*mN^12*mo^2*\[CapitalLambda]0^10 - 1920*mm^2*mN^16*mo^2*
+     \[CapitalLambda]0^10 + 1536*mN^18*mo^2*\[CapitalLambda]0^10 + 
+    3072*mm^8*mN^9*mo^3*\[CapitalLambda]0^10 - 1536*mm^6*mN^11*mo^3*
+     \[CapitalLambda]0^10 - 1536*mm^2*mN^15*mo^3*\[CapitalLambda]0^10 + 
+    1920*mm^8*mN^8*mo^4*\[CapitalLambda]0^10 - 768*mm^6*mN^10*mo^4*
+     \[CapitalLambda]0^10 + 768*mm^2*mN^14*mo^4*\[CapitalLambda]0^10 - 
+    1920*mN^16*mo^4*\[CapitalLambda]0^10 - 4608*mm^6*mN^9*mo^5*
+     \[CapitalLambda]0^10 - 1536*mm^4*mN^11*mo^5*\[CapitalLambda]0^10 - 
+    3840*mm^6*mN^8*mo^6*\[CapitalLambda]0^10 - 3072*mm^4*mN^10*mo^6*
+     \[CapitalLambda]0^10 - 2304*mm^2*mN^12*mo^6*\[CapitalLambda]0^10 + 
+    3072*mm^4*mN^9*mo^7*\[CapitalLambda]0^10 + 1536*mm^2*mN^11*mo^7*
+     \[CapitalLambda]0^10 + 3840*mm^4*mN^8*mo^8*\[CapitalLambda]0^10 + 
+    4224*mm^2*mN^10*mo^8*\[CapitalLambda]0^10 + 
+    1920*mN^12*mo^8*\[CapitalLambda]0^10 - 768*mm^2*mN^9*mo^9*
+     \[CapitalLambda]0^10 - 1920*mm^2*mN^8*mo^10*\[CapitalLambda]0^10 - 
+    1536*mN^10*mo^10*\[CapitalLambda]0^10 + 384*mN^8*mo^12*
+     \[CapitalLambda]0^10 + 5360*mm^10*mN^8*Q2*\[CapitalLambda]0^10 + 
+    12144*mm^8*mN^10*Q2*\[CapitalLambda]0^10 - 31520*mm^6*mN^12*Q2*
+     \[CapitalLambda]0^10 - 31136*mm^4*mN^14*Q2*\[CapitalLambda]0^10 + 
+    81456*mm^2*mN^16*Q2*\[CapitalLambda]0^10 - 
+    36304*mN^18*Q2*\[CapitalLambda]0^10 + 19936*mm^10*mN^7*mo*Q2*
+     \[CapitalLambda]0^10 - 22112*mm^8*mN^9*mo*Q2*\[CapitalLambda]0^10 - 
+    62016*mm^6*mN^11*mo*Q2*\[CapitalLambda]0^10 + 121664*mm^4*mN^13*mo*Q2*
+     \[CapitalLambda]0^10 - 68512*mm^2*mN^15*mo*Q2*\[CapitalLambda]0^10 + 
+    11040*mN^17*mo*Q2*\[CapitalLambda]0^10 + 14576*mm^10*mN^6*mo^2*Q2*
+     \[CapitalLambda]0^10 - 30656*mm^8*mN^8*mo^2*Q2*\[CapitalLambda]0^10 - 
+    162656*mm^6*mN^10*mo^2*Q2*\[CapitalLambda]0^10 + 
+    221760*mm^4*mN^12*mo^2*Q2*\[CapitalLambda]0^10 - 
+    79376*mm^2*mN^14*mo^2*Q2*\[CapitalLambda]0^10 + 
+    33280*mN^16*mo^2*Q2*\[CapitalLambda]0^10 - 69280*mm^8*mN^7*mo^3*Q2*
+     \[CapitalLambda]0^10 + 128*mm^6*mN^9*mo^3*Q2*\[CapitalLambda]0^10 + 
+    81216*mm^4*mN^11*mo^3*Q2*\[CapitalLambda]0^10 - 
+    12160*mm^2*mN^13*mo^3*Q2*\[CapitalLambda]0^10 - 
+    9120*mN^15*mo^3*Q2*\[CapitalLambda]0^10 - 72880*mm^8*mN^6*mo^4*Q2*
+     \[CapitalLambda]0^10 + 64288*mm^6*mN^8*mo^4*Q2*\[CapitalLambda]0^10 + 
+    263424*mm^4*mN^10*mo^4*Q2*\[CapitalLambda]0^10 - 
+    108448*mm^2*mN^12*mo^4*Q2*\[CapitalLambda]0^10 + 
+    18736*mN^14*mo^4*Q2*\[CapitalLambda]0^10 + 77760*mm^6*mN^7*mo^5*Q2*
+     \[CapitalLambda]0^10 + 59840*mm^4*mN^9*mo^5*Q2*\[CapitalLambda]0^10 - 
+    13248*mm^2*mN^11*mo^5*Q2*\[CapitalLambda]0^10 - 
+    192*mN^13*mo^5*Q2*\[CapitalLambda]0^10 + 145760*mm^6*mN^6*mo^6*Q2*
+     \[CapitalLambda]0^10 - 62528*mm^4*mN^8*mo^6*Q2*\[CapitalLambda]0^10 - 
+    141984*mm^2*mN^10*mo^6*Q2*\[CapitalLambda]0^10 - 
+    25728*mN^12*mo^6*Q2*\[CapitalLambda]0^10 - 16960*mm^4*mN^7*mo^7*Q2*
+     \[CapitalLambda]0^10 - 31616*mm^2*mN^9*mo^7*Q2*\[CapitalLambda]0^10 - 
+    5952*mN^11*mo^7*Q2*\[CapitalLambda]0^10 - 145760*mm^4*mN^6*mo^8*Q2*
+     \[CapitalLambda]0^10 + 28016*mm^2*mN^8*mo^8*Q2*\[CapitalLambda]0^10 + 
+    29072*mN^10*mo^8*Q2*\[CapitalLambda]0^10 - 21920*mm^2*mN^7*mo^9*Q2*
+     \[CapitalLambda]0^10 - 6240*mN^9*mo^9*Q2*\[CapitalLambda]0^10 + 
+    72880*mm^2*mN^6*mo^10*Q2*\[CapitalLambda]0^10 - 
+    4480*mN^8*mo^10*Q2*\[CapitalLambda]0^10 + 10464*mN^7*mo^11*Q2*
+     \[CapitalLambda]0^10 - 14576*mN^6*mo^12*Q2*\[CapitalLambda]0^10 - 
+    5424*mm^10*mN^6*Q2^2*\[CapitalLambda]0^10 - 2160*mm^8*mN^8*Q2^2*
+     \[CapitalLambda]0^10 + 3568*mm^6*mN^10*Q2^2*\[CapitalLambda]0^10 - 
+    70192*mm^4*mN^12*Q2^2*\[CapitalLambda]0^10 + 123968*mm^2*mN^14*Q2^2*
+     \[CapitalLambda]0^10 - 49760*mN^16*Q2^2*\[CapitalLambda]0^10 - 
+    11616*mm^10*mN^5*mo*Q2^2*\[CapitalLambda]0^10 - 
+    21744*mm^8*mN^7*mo*Q2^2*\[CapitalLambda]0^10 + 
+    19872*mm^6*mN^9*mo*Q2^2*\[CapitalLambda]0^10 + 
+    72192*mm^4*mN^11*mo*Q2^2*\[CapitalLambda]0^10 - 
+    86592*mm^2*mN^13*mo*Q2^2*\[CapitalLambda]0^10 + 
+    27888*mN^15*mo*Q2^2*\[CapitalLambda]0^10 - 6192*mm^10*mN^4*mo^2*Q2^2*
+     \[CapitalLambda]0^10 + 15072*mm^8*mN^6*mo^2*Q2^2*\[CapitalLambda]0^10 - 
+    44000*mm^6*mN^8*mo^2*Q2^2*\[CapitalLambda]0^10 + 
+    228944*mm^4*mN^10*mo^2*Q2^2*\[CapitalLambda]0^10 - 
+    121104*mm^2*mN^12*mo^2*Q2^2*\[CapitalLambda]0^10 + 
+    51568*mN^14*mo^2*Q2^2*\[CapitalLambda]0^10 + 65616*mm^8*mN^5*mo^3*Q2^2*
+     \[CapitalLambda]0^10 + 46944*mm^6*mN^7*mo^3*Q2^2*\[CapitalLambda]0^10 - 
+    21024*mm^4*mN^9*mo^3*Q2^2*\[CapitalLambda]0^10 + 
+    23904*mm^2*mN^11*mo^3*Q2^2*\[CapitalLambda]0^10 - 
+    34032*mN^13*mo^3*Q2^2*\[CapitalLambda]0^10 + 30960*mm^8*mN^4*mo^4*Q2^2*
+     \[CapitalLambda]0^10 + 22864*mm^6*mN^6*mo^4*Q2^2*\[CapitalLambda]0^10 + 
+    50000*mm^4*mN^8*mo^4*Q2^2*\[CapitalLambda]0^10 - 
+    175968*mm^2*mN^10*mo^4*Q2^2*\[CapitalLambda]0^10 + 
+    4144*mN^12*mo^4*Q2^2*\[CapitalLambda]0^10 - 146304*mm^6*mN^5*mo^5*Q2^2*
+     \[CapitalLambda]0^10 - 46656*mm^4*mN^7*mo^5*Q2^2*\[CapitalLambda]0^10 + 
+    864*mm^2*mN^9*mo^5*Q2^2*\[CapitalLambda]0^10 + 
+    4704*mN^11*mo^5*Q2^2*\[CapitalLambda]0^10 - 61920*mm^6*mN^4*mo^6*Q2^2*
+     \[CapitalLambda]0^10 - 104784*mm^4*mN^6*mo^6*Q2^2*\[CapitalLambda]0^10 - 
+    14336*mm^2*mN^8*mo^6*Q2^2*\[CapitalLambda]0^10 + 
+    12896*mN^10*mo^6*Q2^2*\[CapitalLambda]0^10 + 161376*mm^4*mN^5*mo^7*Q2^2*
+     \[CapitalLambda]0^10 + 39456*mm^2*mN^7*mo^7*Q2^2*\[CapitalLambda]0^10 + 
+    288*mN^9*mo^7*Q2^2*\[CapitalLambda]0^10 + 61920*mm^4*mN^4*mo^8*Q2^2*
+     \[CapitalLambda]0^10 + 107808*mm^2*mN^6*mo^8*Q2^2*\[CapitalLambda]0^10 + 
+    10496*mN^8*mo^8*Q2^2*\[CapitalLambda]0^10 - 88224*mm^2*mN^5*mo^9*Q2^2*
+     \[CapitalLambda]0^10 - 18000*mN^7*mo^9*Q2^2*\[CapitalLambda]0^10 - 
+    30960*mm^2*mN^4*mo^10*Q2^2*\[CapitalLambda]0^10 - 
+    35536*mN^6*mo^10*Q2^2*\[CapitalLambda]0^10 + 19152*mN^5*mo^11*Q2^2*
+     \[CapitalLambda]0^10 + 6192*mN^4*mo^12*Q2^2*\[CapitalLambda]0^10 + 
+    759*mm^10*mN^4*Q2^3*\[CapitalLambda]0^10 + 1311*mm^8*mN^6*Q2^3*
+     \[CapitalLambda]0^10 + 25206*mm^6*mN^8*Q2^3*\[CapitalLambda]0^10 - 
+    56418*mm^4*mN^10*Q2^3*\[CapitalLambda]0^10 + 80019*mm^2*mN^12*Q2^3*
+     \[CapitalLambda]0^10 - 30141*mN^14*Q2^3*\[CapitalLambda]0^10 + 
+    750*mm^10*mN^3*mo*Q2^3*\[CapitalLambda]0^10 + 9762*mm^8*mN^5*mo*Q2^3*
+     \[CapitalLambda]0^10 + 44460*mm^6*mN^7*mo*Q2^3*\[CapitalLambda]0^10 - 
+    30924*mm^4*mN^9*mo*Q2^3*\[CapitalLambda]0^10 - 
+    29082*mm^2*mN^11*mo*Q2^3*\[CapitalLambda]0^10 + 
+    18858*mN^13*mo*Q2^3*\[CapitalLambda]0^10 - 9*mm^10*mN^2*mo^2*Q2^3*
+     \[CapitalLambda]0^10 + 4596*mm^8*mN^4*mo^2*Q2^3*\[CapitalLambda]0^10 - 
+    4806*mm^6*mN^6*mo^2*Q2^3*\[CapitalLambda]0^10 + 
+    32988*mm^4*mN^8*mo^2*Q2^3*\[CapitalLambda]0^10 - 
+    81321*mm^2*mN^10*mo^2*Q2^3*\[CapitalLambda]0^10 + 
+    30888*mN^12*mo^2*Q2^3*\[CapitalLambda]0^10 - 3810*mm^8*mN^3*mo^3*Q2^3*
+     \[CapitalLambda]0^10 - 50376*mm^6*mN^5*mo^3*Q2^3*\[CapitalLambda]0^10 - 
+    83196*mm^4*mN^7*mo^3*Q2^3*\[CapitalLambda]0^10 + 
+    40248*mm^2*mN^9*mo^3*Q2^3*\[CapitalLambda]0^10 - 
+    26322*mN^11*mo^3*Q2^3*\[CapitalLambda]0^10 + 45*mm^8*mN^2*mo^4*Q2^3*
+     \[CapitalLambda]0^10 - 18486*mm^6*mN^4*mo^4*Q2^3*\[CapitalLambda]0^10 - 
+    30744*mm^4*mN^6*mo^4*Q2^3*\[CapitalLambda]0^10 - 
+    35658*mm^2*mN^8*mo^4*Q2^3*\[CapitalLambda]0^10 + 
+    9675*mN^10*mo^4*Q2^3*\[CapitalLambda]0^10 + 7740*mm^6*mN^3*mo^5*Q2^3*
+     \[CapitalLambda]0^10 + 88188*mm^4*mN^5*mo^5*Q2^3*\[CapitalLambda]0^10 + 
+    58356*mm^2*mN^7*mo^5*Q2^3*\[CapitalLambda]0^10 + 
+    11172*mN^9*mo^5*Q2^3*\[CapitalLambda]0^10 - 90*mm^6*mN^2*mo^6*Q2^3*
+     \[CapitalLambda]0^10 + 20292*mm^4*mN^4*mo^6*Q2^3*\[CapitalLambda]0^10 + 
+    53526*mm^2*mN^6*mo^6*Q2^3*\[CapitalLambda]0^10 + 
+    8712*mN^8*mo^6*Q2^3*\[CapitalLambda]0^10 - 7860*mm^4*mN^3*mo^7*Q2^3*
+     \[CapitalLambda]0^10 - 64296*mm^2*mN^5*mo^7*Q2^3*\[CapitalLambda]0^10 - 
+    19620*mN^7*mo^7*Q2^3*\[CapitalLambda]0^10 + 90*mm^4*mN^2*mo^8*Q2^3*
+     \[CapitalLambda]0^10 - 7305*mm^2*mN^4*mo^8*Q2^3*\[CapitalLambda]0^10 - 
+    19287*mN^6*mo^8*Q2^3*\[CapitalLambda]0^10 + 3990*mm^2*mN^3*mo^9*Q2^3*
+     \[CapitalLambda]0^10 + 16722*mN^5*mo^9*Q2^3*\[CapitalLambda]0^10 - 
+    45*mm^2*mN^2*mo^10*Q2^3*\[CapitalLambda]0^10 + 
+    144*mN^4*mo^10*Q2^3*\[CapitalLambda]0^10 - 810*mN^3*mo^11*Q2^3*
+     \[CapitalLambda]0^10 + 9*mN^2*mo^12*Q2^3*\[CapitalLambda]0^10 + 
+    2*mm^10*mN^2*Q2^4*\[CapitalLambda]0^10 - 2142*mm^8*mN^4*Q2^4*
+     \[CapitalLambda]0^10 + 7453*mm^6*mN^6*Q2^4*\[CapitalLambda]0^10 - 
+    23141*mm^4*mN^8*Q2^4*\[CapitalLambda]0^10 + 25377*mm^2*mN^10*Q2^4*
+     \[CapitalLambda]0^10 - 10141*mN^12*Q2^4*\[CapitalLambda]0^10 + 
+    4*mm^10*mN*mo*Q2^4*\[CapitalLambda]0^10 - 2132*mm^8*mN^3*mo*Q2^4*
+     \[CapitalLambda]0^10 + 5736*mm^6*mN^5*mo*Q2^4*\[CapitalLambda]0^10 - 
+    31624*mm^4*mN^7*mo*Q2^4*\[CapitalLambda]0^10 + 
+    2324*mm^2*mN^9*mo*Q2^4*\[CapitalLambda]0^10 + 
+    5532*mN^11*mo*Q2^4*\[CapitalLambda]0^10 + 2*mm^10*mo^2*Q2^4*
+     \[CapitalLambda]0^10 - 8*mm^8*mN^2*mo^2*Q2^4*\[CapitalLambda]0^10 + 
+    5146*mm^6*mN^4*mo^2*Q2^4*\[CapitalLambda]0^10 - 
+    7329*mm^4*mN^6*mo^2*Q2^4*\[CapitalLambda]0^10 - 
+    16958*mm^2*mN^8*mo^2*Q2^4*\[CapitalLambda]0^10 + 
+    11875*mN^10*mo^2*Q2^4*\[CapitalLambda]0^10 - 28*mm^8*mN*mo^3*Q2^4*
+     \[CapitalLambda]0^10 + 6800*mm^6*mN^3*mo^3*Q2^4*\[CapitalLambda]0^10 + 
+    504*mm^4*mN^5*mo^3*Q2^4*\[CapitalLambda]0^10 + 
+    30992*mm^2*mN^7*mo^3*Q2^4*\[CapitalLambda]0^10 - 
+    6780*mN^9*mo^3*Q2^4*\[CapitalLambda]0^10 - 10*mm^8*mo^4*Q2^4*
+     \[CapitalLambda]0^10 - 11*mm^6*mN^2*mo^4*Q2^4*\[CapitalLambda]0^10 - 
+    8355*mm^4*mN^4*mo^4*Q2^4*\[CapitalLambda]0^10 + 
+    8810*mm^2*mN^6*mo^4*Q2^4*\[CapitalLambda]0^10 + 
+    3892*mN^8*mo^4*Q2^4*\[CapitalLambda]0^10 + 72*mm^6*mN*mo^5*Q2^4*
+     \[CapitalLambda]0^10 - 7576*mm^4*mN^3*mo^5*Q2^4*\[CapitalLambda]0^10 - 
+    11304*mm^2*mN^5*mo^5*Q2^4*\[CapitalLambda]0^10 - 
+    3432*mN^7*mo^5*Q2^4*\[CapitalLambda]0^10 + 20*mm^6*mo^6*Q2^4*
+     \[CapitalLambda]0^10 + 61*mm^4*mN^2*mo^6*Q2^4*\[CapitalLambda]0^10 + 
+    8172*mm^2*mN^4*mo^6*Q2^4*\[CapitalLambda]0^10 - 
+    2826*mN^6*mo^6*Q2^4*\[CapitalLambda]0^10 - 88*mm^4*mN*mo^7*Q2^4*
+     \[CapitalLambda]0^10 + 3280*mm^2*mN^3*mo^7*Q2^4*\[CapitalLambda]0^10 + 
+    5064*mN^5*mo^7*Q2^4*\[CapitalLambda]0^10 - 20*mm^4*mo^8*Q2^4*
+     \[CapitalLambda]0^10 - 67*mm^2*mN^2*mo^8*Q2^4*\[CapitalLambda]0^10 - 
+    2821*mN^4*mo^8*Q2^4*\[CapitalLambda]0^10 + 52*mm^2*mN*mo^9*Q2^4*
+     \[CapitalLambda]0^10 - 372*mN^3*mo^9*Q2^4*\[CapitalLambda]0^10 + 
+    10*mm^2*mo^10*Q2^4*\[CapitalLambda]0^10 + 23*mN^2*mo^10*Q2^4*
+     \[CapitalLambda]0^10 - 12*mN*mo^11*Q2^4*\[CapitalLambda]0^10 - 
+    2*mo^12*Q2^4*\[CapitalLambda]0^10 + 1726*mm^6*mN^4*Q2^5*
+     \[CapitalLambda]0^10 - 3646*mm^4*mN^6*Q2^5*\[CapitalLambda]0^10 + 
+    4226*mm^2*mN^8*Q2^5*\[CapitalLambda]0^10 - 
+    1778*mN^10*Q2^5*\[CapitalLambda]0^10 + 1728*mm^6*mN^3*mo*Q2^5*
+     \[CapitalLambda]0^10 - 4608*mm^4*mN^5*mo*Q2^5*\[CapitalLambda]0^10 + 
+    3840*mm^2*mN^7*mo*Q2^5*\[CapitalLambda]0^10 + 
+    960*mN^9*mo*Q2^5*\[CapitalLambda]0^10 + 4*mm^6*mN^2*mo^2*Q2^5*
+     \[CapitalLambda]0^10 - 3838*mm^4*mN^4*mo^2*Q2^5*\[CapitalLambda]0^10 - 
+    960*mm^2*mN^6*mo^2*Q2^5*\[CapitalLambda]0^10 + 
+    2458*mN^8*mo^2*Q2^5*\[CapitalLambda]0^10 - 2880*mm^4*mN^3*mo^3*Q2^5*
+     \[CapitalLambda]0^10 + 1920*mm^2*mN^5*mo^3*Q2^5*\[CapitalLambda]0^10 - 
+    1920*mN^7*mo^3*Q2^5*\[CapitalLambda]0^10 - 2*mm^6*mo^4*Q2^5*
+     \[CapitalLambda]0^10 - 10*mm^4*mN^2*mo^4*Q2^5*\[CapitalLambda]0^10 + 
+    3636*mm^2*mN^4*mo^4*Q2^5*\[CapitalLambda]0^10 + 
+    412*mN^6*mo^4*Q2^5*\[CapitalLambda]0^10 + 1152*mm^2*mN^3*mo^5*Q2^5*
+     \[CapitalLambda]0^10 + 960*mN^5*mo^5*Q2^5*\[CapitalLambda]0^10 + 
+    6*mm^4*mo^6*Q2^5*\[CapitalLambda]0^10 + 16*mm^2*mN^2*mo^6*Q2^5*
+     \[CapitalLambda]0^10 - 1084*mN^4*mo^6*Q2^5*\[CapitalLambda]0^10 - 
+    6*mm^2*mo^8*Q2^5*\[CapitalLambda]0^10 - 10*mN^2*mo^8*Q2^5*
+     \[CapitalLambda]0^10 + 2*mo^10*Q2^5*\[CapitalLambda]0^10 - 
+    384*mm^4*mN^4*Q2^6*\[CapitalLambda]0^10 + 192*mm^2*mN^6*Q2^6*
+     \[CapitalLambda]0^10 - 144*mN^8*Q2^6*\[CapitalLambda]0^10 - 
+    384*mm^4*mN^3*mo*Q2^6*\[CapitalLambda]0^10 + 384*mm^2*mN^5*mo*Q2^6*
+     \[CapitalLambda]0^10 + 48*mN^7*mo*Q2^6*\[CapitalLambda]0^10 + 
+    384*mm^2*mN^4*mo^2*Q2^6*\[CapitalLambda]0^10 + 
+    288*mN^6*mo^2*Q2^6*\[CapitalLambda]0^10 + 192*mm^2*mN^3*mo^3*Q2^6*
+     \[CapitalLambda]0^10 - 96*mN^5*mo^3*Q2^6*\[CapitalLambda]0^10 - 
+    144*mN^4*mo^4*Q2^6*\[CapitalLambda]0^10 + 48*mN^3*mo^5*Q2^6*
+     \[CapitalLambda]0^10 - 1920*mm^8*mN^10*\[CapitalLambda]0^12 + 
+    4608*mm^6*mN^12*\[CapitalLambda]0^12 - 2304*mm^4*mN^14*
+     \[CapitalLambda]0^12 - 1536*mm^2*mN^16*\[CapitalLambda]0^12 + 
+    1152*mN^18*\[CapitalLambda]0^12 - 3840*mm^8*mN^9*mo*
+     \[CapitalLambda]0^12 + 6144*mm^6*mN^11*mo*\[CapitalLambda]0^12 - 
+    3072*mm^2*mN^15*mo*\[CapitalLambda]0^12 + 
+    768*mN^17*mo*\[CapitalLambda]0^12 - 1920*mm^8*mN^8*mo^2*
+     \[CapitalLambda]0^12 + 6144*mm^6*mN^10*mo^2*\[CapitalLambda]0^12 - 
+    2304*mm^4*mN^12*mo^2*\[CapitalLambda]0^12 - 
+    1920*mN^16*mo^2*\[CapitalLambda]0^12 + 12288*mm^6*mN^9*mo^3*
+     \[CapitalLambda]0^12 - 4608*mm^4*mN^11*mo^3*\[CapitalLambda]0^12 - 
+    1536*mN^15*mo^3*\[CapitalLambda]0^12 + 7680*mm^6*mN^8*mo^4*
+     \[CapitalLambda]0^12 - 2304*mm^4*mN^10*mo^4*\[CapitalLambda]0^12 + 
+    768*mN^14*mo^4*\[CapitalLambda]0^12 - 13824*mm^4*mN^9*mo^5*
+     \[CapitalLambda]0^12 - 3072*mm^2*mN^11*mo^5*\[CapitalLambda]0^12 - 
+    11520*mm^4*mN^8*mo^6*\[CapitalLambda]0^12 - 6144*mm^2*mN^10*mo^6*
+     \[CapitalLambda]0^12 - 2304*mN^12*mo^6*\[CapitalLambda]0^12 + 
+    6144*mm^2*mN^9*mo^7*\[CapitalLambda]0^12 + 
+    1536*mN^11*mo^7*\[CapitalLambda]0^12 + 7680*mm^2*mN^8*mo^8*
+     \[CapitalLambda]0^12 + 4224*mN^10*mo^8*\[CapitalLambda]0^12 - 
+    768*mN^9*mo^9*\[CapitalLambda]0^12 - 1920*mN^8*mo^10*
+     \[CapitalLambda]0^12 + 6640*mm^8*mN^8*Q2*\[CapitalLambda]0^12 + 
+    4416*mm^6*mN^10*Q2*\[CapitalLambda]0^12 + 3360*mm^4*mN^12*Q2*
+     \[CapitalLambda]0^12 - 44992*mm^2*mN^14*Q2*\[CapitalLambda]0^12 + 
+    30576*mN^16*Q2*\[CapitalLambda]0^12 + 9440*mm^8*mN^7*mo*Q2*
+     \[CapitalLambda]0^12 + 22912*mm^6*mN^9*mo*Q2*\[CapitalLambda]0^12 - 
+    82368*mm^4*mN^11*mo*Q2*\[CapitalLambda]0^12 + 62848*mm^2*mN^13*mo*Q2*
+     \[CapitalLambda]0^12 - 12832*mN^15*mo*Q2*\[CapitalLambda]0^12 + 
+    2800*mm^8*mN^6*mo^2*Q2*\[CapitalLambda]0^12 + 13696*mm^6*mN^8*mo^2*Q2*
+     \[CapitalLambda]0^12 - 136608*mm^4*mN^10*mo^2*Q2*\[CapitalLambda]0^12 + 
+    84480*mm^2*mN^12*mo^2*Q2*\[CapitalLambda]0^12 - 
+    13520*mN^14*mo^2*Q2*\[CapitalLambda]0^12 - 16000*mm^6*mN^7*mo^3*Q2*
+     \[CapitalLambda]0^12 - 73344*mm^4*mN^9*mo^3*Q2*\[CapitalLambda]0^12 + 
+    56448*mm^2*mN^11*mo^3*Q2*\[CapitalLambda]0^12 - 
+    10624*mN^13*mo^3*Q2*\[CapitalLambda]0^12 - 11200*mm^6*mN^6*mo^4*Q2*
+     \[CapitalLambda]0^12 - 47904*mm^4*mN^8*mo^4*Q2*\[CapitalLambda]0^12 + 
+    152448*mm^2*mN^10*mo^4*Q2*\[CapitalLambda]0^12 - 
+    35104*mN^12*mo^4*Q2*\[CapitalLambda]0^12 - 8640*mm^4*mN^7*mo^5*Q2*
+     \[CapitalLambda]0^12 + 62080*mm^2*mN^9*mo^5*Q2*\[CapitalLambda]0^12 - 
+    1728*mN^11*mo^5*Q2*\[CapitalLambda]0^12 + 16800*mm^4*mN^6*mo^6*Q2*
+     \[CapitalLambda]0^12 + 28160*mm^2*mN^8*mo^6*Q2*\[CapitalLambda]0^12 - 
+    33312*mN^10*mo^6*Q2*\[CapitalLambda]0^12 + 27520*mm^2*mN^7*mo^7*Q2*
+     \[CapitalLambda]0^12 - 11648*mN^9*mo^7*Q2*\[CapitalLambda]0^12 - 
+    11200*mm^2*mN^6*mo^8*Q2*\[CapitalLambda]0^12 - 
+    592*mN^8*mo^8*Q2*\[CapitalLambda]0^12 - 12320*mN^7*mo^9*Q2*
+     \[CapitalLambda]0^12 + 2800*mN^6*mo^10*Q2*\[CapitalLambda]0^12 - 
+    240*mm^8*mN^6*Q2^2*\[CapitalLambda]0^12 - 23520*mm^6*mN^8*Q2^2*
+     \[CapitalLambda]0^12 + 42384*mm^4*mN^10*Q2^2*\[CapitalLambda]0^12 - 
+    70784*mm^2*mN^12*Q2^2*\[CapitalLambda]0^12 + 
+    41792*mN^14*Q2^2*\[CapitalLambda]0^12 - 9120*mm^8*mN^5*mo*Q2^2*
+     \[CapitalLambda]0^12 - 7296*mm^6*mN^7*mo*Q2^2*\[CapitalLambda]0^12 - 
+    22176*mm^4*mN^9*mo*Q2^2*\[CapitalLambda]0^12 + 
+    57408*mm^2*mN^11*mo*Q2^2*\[CapitalLambda]0^12 - 
+    25728*mN^13*mo*Q2^2*\[CapitalLambda]0^12 - 8880*mm^8*mN^4*mo^2*Q2^2*
+     \[CapitalLambda]0^12 + 22368*mm^6*mN^6*mo^2*Q2^2*\[CapitalLambda]0^12 - 
+    43296*mm^4*mN^8*mo^2*Q2^2*\[CapitalLambda]0^12 + 
+    93376*mm^2*mN^10*mo^2*Q2^2*\[CapitalLambda]0^12 - 
+    22992*mN^12*mo^2*Q2^2*\[CapitalLambda]0^12 + 41664*mm^6*mN^5*mo^3*Q2^2*
+     \[CapitalLambda]0^12 + 6048*mm^4*mN^7*mo^3*Q2^2*\[CapitalLambda]0^12 + 
+    8640*mm^2*mN^9*mo^3*Q2^2*\[CapitalLambda]0^12 + 
+    3936*mN^11*mo^3*Q2^2*\[CapitalLambda]0^12 + 35520*mm^6*mN^4*mo^4*Q2^2*
+     \[CapitalLambda]0^12 - 32208*mm^4*mN^6*mo^4*Q2^2*\[CapitalLambda]0^12 + 
+    63424*mm^2*mN^8*mo^4*Q2^2*\[CapitalLambda]0^12 - 
+    48480*mN^10*mo^4*Q2^2*\[CapitalLambda]0^12 - 70272*mm^4*mN^5*mo^5*Q2^2*
+     \[CapitalLambda]0^12 + 1728*mm^2*mN^7*mo^5*Q2^2*\[CapitalLambda]0^12 - 
+    288*mN^9*mo^5*Q2^2*\[CapitalLambda]0^12 - 53280*mm^4*mN^4*mo^6*Q2^2*
+     \[CapitalLambda]0^12 - 1728*mm^2*mN^6*mo^6*Q2^2*\[CapitalLambda]0^12 - 
+    10112*mN^8*mo^6*Q2^2*\[CapitalLambda]0^12 + 52032*mm^2*mN^5*mo^7*Q2^2*
+     \[CapitalLambda]0^12 - 480*mN^7*mo^7*Q2^2*\[CapitalLambda]0^12 + 
+    35520*mm^2*mN^4*mo^8*Q2^2*\[CapitalLambda]0^12 + 
+    11808*mN^6*mo^8*Q2^2*\[CapitalLambda]0^12 - 14304*mN^5*mo^9*Q2^2*
+     \[CapitalLambda]0^12 - 8880*mN^4*mo^10*Q2^2*\[CapitalLambda]0^12 + 
+    1875*mm^8*mN^4*Q2^3*\[CapitalLambda]0^12 - 12276*mm^6*mN^6*Q2^3*
+     \[CapitalLambda]0^12 + 43362*mm^4*mN^8*Q2^3*\[CapitalLambda]0^12 - 
+    48564*mm^2*mN^10*Q2^3*\[CapitalLambda]0^12 + 
+    25683*mN^12*Q2^3*\[CapitalLambda]0^12 + 1830*mm^8*mN^3*mo*Q2^3*
+     \[CapitalLambda]0^12 - 1272*mm^6*mN^5*mo*Q2^3*\[CapitalLambda]0^12 + 
+    29124*mm^4*mN^7*mo*Q2^3*\[CapitalLambda]0^12 - 
+    1176*mm^2*mN^9*mo*Q2^3*\[CapitalLambda]0^12 - 
+    12954*mN^11*mo*Q2^3*\[CapitalLambda]0^12 - 45*mm^8*mN^2*mo^2*Q2^3*
+     \[CapitalLambda]0^12 + 3264*mm^6*mN^4*mo^2*Q2^3*\[CapitalLambda]0^12 + 
+    5454*mm^4*mN^6*mo^2*Q2^3*\[CapitalLambda]0^12 + 
+    10248*mm^2*mN^8*mo^2*Q2^3*\[CapitalLambda]0^12 - 
+    16233*mN^10*mo^2*Q2^3*\[CapitalLambda]0^12 - 7560*mm^6*mN^3*mo^3*Q2^3*
+     \[CapitalLambda]0^12 - 7128*mm^4*mN^5*mo^3*Q2^3*\[CapitalLambda]0^12 - 
+    39672*mm^2*mN^7*mo^3*Q2^3*\[CapitalLambda]0^12 + 
+    11832*mN^9*mo^3*Q2^3*\[CapitalLambda]0^12 + 180*mm^6*mN^2*mo^4*Q2^3*
+     \[CapitalLambda]0^12 - 14850*mm^4*mN^4*mo^4*Q2^3*\[CapitalLambda]0^12 - 
+    5760*mm^2*mN^6*mo^4*Q2^3*\[CapitalLambda]0^12 - 
+    12042*mN^8*mo^4*Q2^3*\[CapitalLambda]0^12 + 11700*mm^4*mN^3*mo^5*Q2^3*
+     \[CapitalLambda]0^12 + 17400*mm^2*mN^5*mo^5*Q2^3*\[CapitalLambda]0^12 + 
+    11124*mN^7*mo^5*Q2^3*\[CapitalLambda]0^12 - 270*mm^4*mN^2*mo^6*Q2^3*
+     \[CapitalLambda]0^12 + 12408*mm^2*mN^4*mo^6*Q2^3*\[CapitalLambda]0^12 + 
+    8406*mN^6*mo^6*Q2^3*\[CapitalLambda]0^12 - 8040*mm^2*mN^3*mo^7*Q2^3*
+     \[CapitalLambda]0^12 - 9000*mN^5*mo^7*Q2^3*\[CapitalLambda]0^12 + 
+    180*mm^2*mN^2*mo^8*Q2^3*\[CapitalLambda]0^12 - 
+    2697*mN^4*mo^8*Q2^3*\[CapitalLambda]0^12 + 2070*mN^3*mo^9*Q2^3*
+     \[CapitalLambda]0^12 - 45*mN^2*mo^10*Q2^3*\[CapitalLambda]0^12 + 
+    10*mm^8*mN^2*Q2^4*\[CapitalLambda]0^12 - 3528*mm^6*mN^4*Q2^4*
+     \[CapitalLambda]0^12 + 13287*mm^4*mN^6*Q2^4*\[CapitalLambda]0^12 - 
+    17914*mm^2*mN^8*Q2^4*\[CapitalLambda]0^12 + 
+    8289*mN^10*Q2^4*\[CapitalLambda]0^12 + 20*mm^8*mN*mo*Q2^4*
+     \[CapitalLambda]0^12 - 3488*mm^6*mN^3*mo*Q2^4*\[CapitalLambda]0^12 + 
+    10008*mm^4*mN^5*mo*Q2^4*\[CapitalLambda]0^12 - 
+    13088*mm^2*mN^7*mo*Q2^4*\[CapitalLambda]0^12 - 
+    1516*mN^9*mo*Q2^4*\[CapitalLambda]0^12 + 10*mm^8*mo^2*Q2^4*
+     \[CapitalLambda]0^12 - 32*mm^6*mN^2*mo^2*Q2^4*\[CapitalLambda]0^12 + 
+    5502*mm^4*mN^4*mo^2*Q2^4*\[CapitalLambda]0^12 - 
+    6978*mm^2*mN^6*mo^2*Q2^4*\[CapitalLambda]0^12 - 
+    3326*mN^8*mo^2*Q2^4*\[CapitalLambda]0^12 - 112*mm^6*mN*mo^3*Q2^4*
+     \[CapitalLambda]0^12 + 8592*mm^4*mN^3*mo^3*Q2^4*\[CapitalLambda]0^12 - 
+    9072*mm^2*mN^5*mo^3*Q2^4*\[CapitalLambda]0^12 + 
+    8144*mN^7*mo^3*Q2^4*\[CapitalLambda]0^12 - 40*mm^6*mo^4*Q2^4*
+     \[CapitalLambda]0^12 - 33*mm^4*mN^2*mo^4*Q2^4*\[CapitalLambda]0^12 - 
+    4182*mm^2*mN^4*mo^4*Q2^4*\[CapitalLambda]0^12 + 
+    1706*mN^6*mo^4*Q2^4*\[CapitalLambda]0^12 + 216*mm^4*mN*mo^5*Q2^4*
+     \[CapitalLambda]0^12 - 6656*mm^2*mN^3*mo^5*Q2^4*\[CapitalLambda]0^12 + 
+    216*mN^5*mo^5*Q2^4*\[CapitalLambda]0^12 + 60*mm^4*mo^6*Q2^4*
+     \[CapitalLambda]0^12 + 122*mm^2*mN^2*mo^6*Q2^4*\[CapitalLambda]0^12 + 
+    1836*mN^4*mo^6*Q2^4*\[CapitalLambda]0^12 - 176*mm^2*mN*mo^7*Q2^4*
+     \[CapitalLambda]0^12 + 1552*mN^3*mo^7*Q2^4*\[CapitalLambda]0^12 - 
+    40*mm^2*mo^8*Q2^4*\[CapitalLambda]0^12 - 67*mN^2*mo^8*Q2^4*
+     \[CapitalLambda]0^12 + 52*mN*mo^9*Q2^4*\[CapitalLambda]0^12 + 
+    10*mo^10*Q2^4*\[CapitalLambda]0^12 + 1866*mm^4*mN^4*Q2^5*
+     \[CapitalLambda]0^12 - 3020*mm^2*mN^6*Q2^5*\[CapitalLambda]0^12 + 
+    1442*mN^8*Q2^5*\[CapitalLambda]0^12 + 1872*mm^4*mN^3*mo*Q2^5*
+     \[CapitalLambda]0^12 - 2880*mm^2*mN^5*mo*Q2^5*\[CapitalLambda]0^12 + 
+    576*mN^7*mo*Q2^5*\[CapitalLambda]0^12 + 12*mm^4*mN^2*mo^2*Q2^5*
+     \[CapitalLambda]0^12 - 2156*mm^2*mN^4*mo^2*Q2^5*\[CapitalLambda]0^12 - 
+    2304*mm^2*mN^3*mo^3*Q2^5*\[CapitalLambda]0^12 + 
+    1152*mN^5*mo^3*Q2^5*\[CapitalLambda]0^12 - 6*mm^4*mo^4*Q2^5*
+     \[CapitalLambda]0^12 - 20*mm^2*mN^2*mo^4*Q2^5*\[CapitalLambda]0^12 + 
+    852*mN^4*mo^4*Q2^5*\[CapitalLambda]0^12 + 576*mN^3*mo^5*Q2^5*
+     \[CapitalLambda]0^12 + 12*mm^2*mo^6*Q2^5*\[CapitalLambda]0^12 + 
+    16*mN^2*mo^6*Q2^5*\[CapitalLambda]0^12 - 
+    6*mo^8*Q2^5*\[CapitalLambda]0^12 - 240*mm^2*mN^4*Q2^6*
+     \[CapitalLambda]0^12 + 96*mN^6*Q2^6*\[CapitalLambda]0^12 - 
+    240*mm^2*mN^3*mo*Q2^6*\[CapitalLambda]0^12 + 
+    96*mN^5*mo*Q2^6*\[CapitalLambda]0^12 + 96*mN^4*mo^2*Q2^6*
+     \[CapitalLambda]0^12 + 96*mN^3*mo^3*Q2^6*\[CapitalLambda]0^12 - 
+    3840*mm^6*mN^10*\[CapitalLambda]0^14 + 6912*mm^4*mN^12*
+     \[CapitalLambda]0^14 - 2304*mm^2*mN^14*\[CapitalLambda]0^14 - 
+    768*mN^16*\[CapitalLambda]0^14 - 7680*mm^6*mN^9*mo*\[CapitalLambda]0^14 + 
+    9216*mm^4*mN^11*mo*\[CapitalLambda]0^14 - 
+    1536*mN^15*mo*\[CapitalLambda]0^14 - 3840*mm^6*mN^8*mo^2*
+     \[CapitalLambda]0^14 + 9216*mm^4*mN^10*mo^2*\[CapitalLambda]0^14 - 
+    2304*mm^2*mN^12*mo^2*\[CapitalLambda]0^14 + 18432*mm^4*mN^9*mo^3*
+     \[CapitalLambda]0^14 - 4608*mm^2*mN^11*mo^3*\[CapitalLambda]0^14 + 
+    11520*mm^4*mN^8*mo^4*\[CapitalLambda]0^14 - 2304*mm^2*mN^10*mo^4*
+     \[CapitalLambda]0^14 - 13824*mm^2*mN^9*mo^5*\[CapitalLambda]0^14 - 
+    1536*mN^11*mo^5*\[CapitalLambda]0^14 - 11520*mm^2*mN^8*mo^6*
+     \[CapitalLambda]0^14 - 3072*mN^10*mo^6*\[CapitalLambda]0^14 + 
+    3072*mN^9*mo^7*\[CapitalLambda]0^14 + 3840*mN^8*mo^8*
+     \[CapitalLambda]0^14 + 5216*mm^6*mN^8*Q2*\[CapitalLambda]0^14 - 
+    864*mm^4*mN^10*Q2*\[CapitalLambda]0^14 + 11424*mm^2*mN^12*Q2*
+     \[CapitalLambda]0^14 - 15008*mN^14*Q2*\[CapitalLambda]0^14 - 
+    1856*mm^6*mN^7*mo*Q2*\[CapitalLambda]0^14 + 33216*mm^4*mN^9*mo*Q2*
+     \[CapitalLambda]0^14 - 38592*mm^2*mN^11*mo*Q2*\[CapitalLambda]0^14 + 
+    9536*mN^13*mo*Q2*\[CapitalLambda]0^14 - 7072*mm^6*mN^6*mo^2*Q2*
+     \[CapitalLambda]0^14 + 25728*mm^4*mN^8*mo^2*Q2*\[CapitalLambda]0^14 - 
+    52512*mm^2*mN^10*mo^2*Q2*\[CapitalLambda]0^14 + 
+    8256*mN^12*mo^2*Q2*\[CapitalLambda]0^14 + 12864*mm^4*mN^7*mo^3*Q2*
+     \[CapitalLambda]0^14 - 50304*mm^2*mN^9*mo^3*Q2*\[CapitalLambda]0^14 + 
+    12096*mN^11*mo^3*Q2*\[CapitalLambda]0^14 + 21216*mm^4*mN^6*mo^4*Q2*
+     \[CapitalLambda]0^14 - 46752*mm^2*mN^8*mo^4*Q2*\[CapitalLambda]0^14 + 
+    33024*mN^10*mo^4*Q2*\[CapitalLambda]0^14 - 20160*mm^2*mN^7*mo^5*Q2*
+     \[CapitalLambda]0^14 + 18368*mN^9*mo^5*Q2*\[CapitalLambda]0^14 - 
+    21216*mm^2*mN^6*mo^6*Q2*\[CapitalLambda]0^14 + 
+    15808*mN^8*mo^6*Q2*\[CapitalLambda]0^14 + 9152*mN^7*mo^7*Q2*
+     \[CapitalLambda]0^14 + 7072*mN^6*mo^8*Q2*\[CapitalLambda]0^14 + 
+    3552*mm^6*mN^6*Q2^2*\[CapitalLambda]0^14 - 22464*mm^4*mN^8*Q2^2*
+     \[CapitalLambda]0^14 + 28560*mm^2*mN^10*Q2^2*\[CapitalLambda]0^14 - 
+    19984*mN^12*Q2^2*\[CapitalLambda]0^14 - 4416*mm^6*mN^5*mo*Q2^2*
+     \[CapitalLambda]0^14 + 3744*mm^4*mN^7*mo*Q2^2*\[CapitalLambda]0^14 - 
+    19872*mm^2*mN^9*mo*Q2^2*\[CapitalLambda]0^14 + 
+    14016*mN^11*mo*Q2^2*\[CapitalLambda]0^14 - 7968*mm^6*mN^4*mo^2*Q2^2*
+     \[CapitalLambda]0^14 + 16992*mm^4*mN^6*mo^2*Q2^2*\[CapitalLambda]0^14 - 
+    18528*mm^2*mN^8*mo^2*Q2^2*\[CapitalLambda]0^14 + 
+    12272*mN^10*mo^2*Q2^2*\[CapitalLambda]0^14 + 14688*mm^4*mN^5*mo^3*Q2^2*
+     \[CapitalLambda]0^14 - 6624*mm^2*mN^7*mo^3*Q2^2*\[CapitalLambda]0^14 + 
+    4320*mN^9*mo^3*Q2^2*\[CapitalLambda]0^14 + 23904*mm^4*mN^4*mo^4*Q2^2*
+     \[CapitalLambda]0^14 - 28752*mm^2*mN^6*mo^4*Q2^2*\[CapitalLambda]0^14 + 
+    19184*mN^8*mo^4*Q2^2*\[CapitalLambda]0^14 - 16128*mm^2*mN^5*mo^5*Q2^2*
+     \[CapitalLambda]0^14 + 3456*mN^7*mo^5*Q2^2*\[CapitalLambda]0^14 - 
+    23904*mm^2*mN^4*mo^6*Q2^2*\[CapitalLambda]0^14 + 
+    8208*mN^6*mo^6*Q2^2*\[CapitalLambda]0^14 + 5856*mN^5*mo^7*Q2^2*
+     \[CapitalLambda]0^14 + 7968*mN^4*mo^8*Q2^2*\[CapitalLambda]0^14 + 
+    2022*mm^6*mN^4*Q2^3*\[CapitalLambda]0^14 - 12726*mm^4*mN^6*Q2^3*
+     \[CapitalLambda]0^14 + 23202*mm^2*mN^8*Q2^3*\[CapitalLambda]0^14 - 
+    12402*mN^10*Q2^3*\[CapitalLambda]0^14 + 1932*mm^6*mN^3*mo*Q2^3*
+     \[CapitalLambda]0^14 - 4788*mm^4*mN^5*mo*Q2^3*\[CapitalLambda]0^14 + 
+    8388*mm^2*mN^7*mo*Q2^3*\[CapitalLambda]0^14 + 
+    2868*mN^9*mo*Q2^3*\[CapitalLambda]0^14 - 90*mm^6*mN^2*mo^2*Q2^3*
+     \[CapitalLambda]0^14 + 1512*mm^4*mN^4*mo^2*Q2^3*\[CapitalLambda]0^14 + 
+    4014*mm^2*mN^6*mo^2*Q2^3*\[CapitalLambda]0^14 + 
+    588*mN^8*mo^2*Q2^3*\[CapitalLambda]0^14 - 6156*mm^4*mN^3*mo^3*Q2^3*
+     \[CapitalLambda]0^14 + 5544*mm^2*mN^5*mo^3*Q2^3*\[CapitalLambda]0^14 - 
+    7740*mN^7*mo^3*Q2^3*\[CapitalLambda]0^14 + 270*mm^4*mN^2*mo^4*Q2^3*
+     \[CapitalLambda]0^14 - 6498*mm^2*mN^4*mo^4*Q2^3*\[CapitalLambda]0^14 + 
+    1080*mN^6*mo^4*Q2^3*\[CapitalLambda]0^14 + 6516*mm^2*mN^3*mo^5*Q2^3*
+     \[CapitalLambda]0^14 - 516*mN^5*mo^5*Q2^3*\[CapitalLambda]0^14 - 
+    270*mm^2*mN^2*mo^6*Q2^3*\[CapitalLambda]0^14 + 
+    2964*mN^4*mo^6*Q2^3*\[CapitalLambda]0^14 - 2292*mN^3*mo^7*Q2^3*
+     \[CapitalLambda]0^14 + 90*mN^2*mo^8*Q2^3*\[CapitalLambda]0^14 + 
+    20*mm^6*mN^2*Q2^4*\[CapitalLambda]0^14 - 2628*mm^4*mN^4*Q2^4*
+     \[CapitalLambda]0^14 + 7095*mm^2*mN^6*Q2^4*\[CapitalLambda]0^14 - 
+    4277*mN^8*Q2^4*\[CapitalLambda]0^14 + 40*mm^6*mN*mo*Q2^4*
+     \[CapitalLambda]0^14 - 2568*mm^4*mN^3*mo*Q2^4*\[CapitalLambda]0^14 + 
+    5112*mm^2*mN^5*mo*Q2^4*\[CapitalLambda]0^14 - 
+    1720*mN^7*mo*Q2^4*\[CapitalLambda]0^14 + 20*mm^6*mo^2*Q2^4*
+     \[CapitalLambda]0^14 - 48*mm^4*mN^2*mo^2*Q2^4*\[CapitalLambda]0^14 + 
+    2478*mm^2*mN^4*mo^2*Q2^4*\[CapitalLambda]0^14 - 
+    1761*mN^6*mo^2*Q2^4*\[CapitalLambda]0^14 - 168*mm^4*mN*mo^3*Q2^4*
+     \[CapitalLambda]0^14 + 4272*mm^2*mN^3*mo^3*Q2^4*\[CapitalLambda]0^14 - 
+    3240*mN^5*mo^3*Q2^4*\[CapitalLambda]0^14 - 60*mm^4*mo^4*Q2^4*
+     \[CapitalLambda]0^14 - 33*mm^2*mN^2*mo^4*Q2^4*\[CapitalLambda]0^14 - 
+    723*mN^4*mo^4*Q2^4*\[CapitalLambda]0^14 + 216*mm^2*mN*mo^5*Q2^4*
+     \[CapitalLambda]0^14 - 1672*mN^3*mo^5*Q2^4*\[CapitalLambda]0^14 + 
+    60*mm^2*mo^6*Q2^4*\[CapitalLambda]0^14 + 61*mN^2*mo^6*Q2^4*
+     \[CapitalLambda]0^14 - 88*mN*mo^7*Q2^4*\[CapitalLambda]0^14 - 
+    20*mo^8*Q2^4*\[CapitalLambda]0^14 + 858*mm^2*mN^4*Q2^5*
+     \[CapitalLambda]0^14 - 718*mN^6*Q2^5*\[CapitalLambda]0^14 + 
+    864*mm^2*mN^3*mo*Q2^5*\[CapitalLambda]0^14 - 
+    576*mN^5*mo*Q2^5*\[CapitalLambda]0^14 + 12*mm^2*mN^2*mo^2*Q2^5*
+     \[CapitalLambda]0^14 - 430*mN^4*mo^2*Q2^5*\[CapitalLambda]0^14 - 
+    576*mN^3*mo^3*Q2^5*\[CapitalLambda]0^14 - 6*mm^2*mo^4*Q2^5*
+     \[CapitalLambda]0^14 - 10*mN^2*mo^4*Q2^5*\[CapitalLambda]0^14 + 
+    6*mo^6*Q2^5*\[CapitalLambda]0^14 - 48*mN^4*Q2^6*\[CapitalLambda]0^14 - 
+    48*mN^3*mo*Q2^6*\[CapitalLambda]0^14 - 3840*mm^4*mN^10*
+     \[CapitalLambda]0^16 + 4608*mm^2*mN^12*\[CapitalLambda]0^16 - 
+    768*mN^14*\[CapitalLambda]0^16 - 7680*mm^4*mN^9*mo*\[CapitalLambda]0^16 + 
+    6144*mm^2*mN^11*mo*\[CapitalLambda]0^16 - 3840*mm^4*mN^8*mo^2*
+     \[CapitalLambda]0^16 + 6144*mm^2*mN^10*mo^2*\[CapitalLambda]0^16 - 
+    768*mN^12*mo^2*\[CapitalLambda]0^16 + 12288*mm^2*mN^9*mo^3*
+     \[CapitalLambda]0^16 - 1536*mN^11*mo^3*\[CapitalLambda]0^16 + 
+    7680*mm^2*mN^8*mo^4*\[CapitalLambda]0^16 - 
+    768*mN^10*mo^4*\[CapitalLambda]0^16 - 4608*mN^9*mo^5*
+     \[CapitalLambda]0^16 - 3840*mN^8*mo^6*\[CapitalLambda]0^16 + 
+    2528*mm^4*mN^8*Q2*\[CapitalLambda]0^16 - 960*mm^2*mN^10*Q2*
+     \[CapitalLambda]0^16 + 3424*mN^12*Q2*\[CapitalLambda]0^16 - 
+    4160*mm^4*mN^7*mo*Q2*\[CapitalLambda]0^16 + 15232*mm^2*mN^9*mo*Q2*
+     \[CapitalLambda]0^16 - 5952*mN^11*mo*Q2*\[CapitalLambda]0^16 - 
+    6688*mm^4*mN^6*mo^2*Q2*\[CapitalLambda]0^16 + 11392*mm^2*mN^8*mo^2*Q2*
+     \[CapitalLambda]0^16 - 7136*mN^10*mo^2*Q2*\[CapitalLambda]0^16 + 
+    8576*mm^2*mN^7*mo^3*Q2*\[CapitalLambda]0^16 - 
+    10624*mN^9*mo^3*Q2*\[CapitalLambda]0^16 + 13376*mm^2*mN^6*mo^4*Q2*
+     \[CapitalLambda]0^16 - 10592*mN^8*mo^4*Q2*\[CapitalLambda]0^16 - 
+    4416*mN^7*mo^5*Q2*\[CapitalLambda]0^16 - 6688*mN^6*mo^6*Q2*
+     \[CapitalLambda]0^16 + 2880*mm^4*mN^6*Q2^2*\[CapitalLambda]0^16 - 
+    8736*mm^2*mN^8*Q2^2*\[CapitalLambda]0^16 + 
+    5968*mN^10*Q2^2*\[CapitalLambda]0^16 - 1536*mm^4*mN^5*mo*Q2^2*
+     \[CapitalLambda]0^16 + 3840*mm^2*mN^7*mo*Q2^2*\[CapitalLambda]0^16 - 
+    4512*mN^9*mo*Q2^2*\[CapitalLambda]0^16 - 4416*mm^4*mN^4*mo^2*Q2^2*
+     \[CapitalLambda]0^16 + 6624*mm^2*mN^6*mo^2*Q2^2*\[CapitalLambda]0^16 - 
+    2816*mN^8*mo^2*Q2^2*\[CapitalLambda]0^16 + 2880*mm^2*mN^5*mo^3*Q2^2*
+     \[CapitalLambda]0^16 - 2208*mN^7*mo^3*Q2^2*\[CapitalLambda]0^16 + 
+    8832*mm^2*mN^4*mo^4*Q2^2*\[CapitalLambda]0^16 - 
+    6800*mN^6*mo^4*Q2^2*\[CapitalLambda]0^16 - 1344*mN^5*mo^5*Q2^2*
+     \[CapitalLambda]0^16 - 4416*mN^4*mo^6*Q2^2*\[CapitalLambda]0^16 + 
+    1158*mm^4*mN^4*Q2^3*\[CapitalLambda]0^16 - 5076*mm^2*mN^6*Q2^3*
+     \[CapitalLambda]0^16 + 4182*mN^8*Q2^3*\[CapitalLambda]0^16 + 
+    1068*mm^4*mN^3*mo*Q2^3*\[CapitalLambda]0^16 - 2040*mm^2*mN^5*mo*Q2^3*
+     \[CapitalLambda]0^16 + 588*mN^7*mo*Q2^3*\[CapitalLambda]0^16 - 
+    90*mm^4*mN^2*mo^2*Q2^3*\[CapitalLambda]0^16 + 480*mm^2*mN^4*mo^2*Q2^3*
+     \[CapitalLambda]0^16 + 666*mN^6*mo^2*Q2^3*\[CapitalLambda]0^16 - 
+    2376*mm^2*mN^3*mo^3*Q2^3*\[CapitalLambda]0^16 + 
+    1656*mN^5*mo^3*Q2^3*\[CapitalLambda]0^16 + 180*mm^2*mN^2*mo^4*Q2^3*
+     \[CapitalLambda]0^16 - 1206*mN^4*mo^4*Q2^3*\[CapitalLambda]0^16 + 
+    1308*mN^3*mo^5*Q2^3*\[CapitalLambda]0^16 - 90*mN^2*mo^6*Q2^3*
+     \[CapitalLambda]0^16 + 20*mm^4*mN^2*Q2^4*\[CapitalLambda]0^16 - 
+    936*mm^2*mN^4*Q2^4*\[CapitalLambda]0^16 + 
+    1261*mN^6*Q2^4*\[CapitalLambda]0^16 + 40*mm^4*mN*mo*Q2^4*
+     \[CapitalLambda]0^16 - 896*mm^2*mN^3*mo*Q2^4*\[CapitalLambda]0^16 + 
+    840*mN^5*mo*Q2^4*\[CapitalLambda]0^16 + 20*mm^4*mo^2*Q2^4*
+     \[CapitalLambda]0^16 - 32*mm^2*mN^2*mo^2*Q2^4*\[CapitalLambda]0^16 + 
+    394*mN^4*mo^2*Q2^4*\[CapitalLambda]0^16 - 112*mm^2*mN*mo^3*Q2^4*
+     \[CapitalLambda]0^16 + 752*mN^3*mo^3*Q2^4*\[CapitalLambda]0^16 - 
+    40*mm^2*mo^4*Q2^4*\[CapitalLambda]0^16 - 11*mN^2*mo^4*Q2^4*
+     \[CapitalLambda]0^16 + 72*mN*mo^5*Q2^4*\[CapitalLambda]0^16 + 
+    20*mo^6*Q2^4*\[CapitalLambda]0^16 + 142*mN^4*Q2^5*\[CapitalLambda]0^16 + 
+    144*mN^3*mo*Q2^5*\[CapitalLambda]0^16 + 4*mN^2*mo^2*Q2^5*
+     \[CapitalLambda]0^16 - 2*mo^4*Q2^5*\[CapitalLambda]0^16 - 
+    1920*mm^2*mN^10*\[CapitalLambda]0^18 + 1152*mN^12*\[CapitalLambda]0^18 - 
+    3840*mm^2*mN^9*mo*\[CapitalLambda]0^18 + 
+    1536*mN^11*mo*\[CapitalLambda]0^18 - 1920*mm^2*mN^8*mo^2*
+     \[CapitalLambda]0^18 + 1536*mN^10*mo^2*\[CapitalLambda]0^18 + 
+    3072*mN^9*mo^3*\[CapitalLambda]0^18 + 1920*mN^8*mo^4*
+     \[CapitalLambda]0^18 + 688*mm^2*mN^8*Q2*\[CapitalLambda]0^18 - 
+    144*mN^10*Q2*\[CapitalLambda]0^18 - 1696*mm^2*mN^7*mo*Q2*
+     \[CapitalLambda]0^18 + 2464*mN^9*mo*Q2*\[CapitalLambda]0^18 - 
+    2384*mm^2*mN^6*mo^2*Q2*\[CapitalLambda]0^18 + 
+    1600*mN^8*mo^2*Q2*\[CapitalLambda]0^18 + 1376*mN^7*mo^3*Q2*
+     \[CapitalLambda]0^18 + 2384*mN^6*mo^4*Q2*\[CapitalLambda]0^18 + 
+    912*mm^2*mN^6*Q2^2*\[CapitalLambda]0^18 - 
+    1200*mN^8*Q2^2*\[CapitalLambda]0^18 - 480*mm^2*mN^5*mo*Q2^2*
+     \[CapitalLambda]0^18 + 912*mN^7*mo*Q2^2*\[CapitalLambda]0^18 - 
+    1392*mm^2*mN^4*mo^2*Q2^2*\[CapitalLambda]0^18 + 
+    1056*mN^6*mo^2*Q2^2*\[CapitalLambda]0^18 + 336*mN^5*mo^3*Q2^2*
+     \[CapitalLambda]0^18 + 1392*mN^4*mo^4*Q2^2*\[CapitalLambda]0^18 + 
+    339*mm^2*mN^4*Q2^3*\[CapitalLambda]0^18 - 
+    705*mN^6*Q2^3*\[CapitalLambda]0^18 + 294*mm^2*mN^3*mo*Q2^3*
+     \[CapitalLambda]0^18 - 222*mN^5*mo*Q2^3*\[CapitalLambda]0^18 - 
+    45*mm^2*mN^2*mo^2*Q2^3*\[CapitalLambda]0^18 + 
+    84*mN^4*mo^2*Q2^3*\[CapitalLambda]0^18 - 354*mN^3*mo^3*Q2^3*
+     \[CapitalLambda]0^18 + 45*mN^2*mo^4*Q2^3*\[CapitalLambda]0^18 + 
+    10*mm^2*mN^2*Q2^4*\[CapitalLambda]0^18 - 
+    126*mN^4*Q2^4*\[CapitalLambda]0^18 + 20*mm^2*mN*mo*Q2^4*
+     \[CapitalLambda]0^18 - 116*mN^3*mo*Q2^4*\[CapitalLambda]0^18 + 
+    10*mm^2*mo^2*Q2^4*\[CapitalLambda]0^18 - 8*mN^2*mo^2*Q2^4*
+     \[CapitalLambda]0^18 - 28*mN*mo^3*Q2^4*\[CapitalLambda]0^18 - 
+    10*mo^4*Q2^4*\[CapitalLambda]0^18 - 384*mN^10*\[CapitalLambda]0^20 - 
+    768*mN^9*mo*\[CapitalLambda]0^20 - 384*mN^8*mo^2*\[CapitalLambda]0^20 + 
+    80*mN^8*Q2*\[CapitalLambda]0^20 - 224*mN^7*mo*Q2*\[CapitalLambda]0^20 - 
+    304*mN^6*mo^2*Q2*\[CapitalLambda]0^20 + 
+    96*mN^6*Q2^2*\[CapitalLambda]0^20 - 96*mN^5*mo*Q2^2*
+     \[CapitalLambda]0^20 - 192*mN^4*mo^2*Q2^2*\[CapitalLambda]0^20 + 
+    39*mN^4*Q2^3*\[CapitalLambda]0^20 + 30*mN^3*mo*Q2^3*
+     \[CapitalLambda]0^20 - 9*mN^2*mo^2*Q2^3*\[CapitalLambda]0^20 + 
+    2*mN^2*Q2^4*\[CapitalLambda]0^20 + 4*mN*mo*Q2^4*\[CapitalLambda]0^20 + 
+    2*mo^2*Q2^4*\[CapitalLambda]0^20 - 96*mm^12*mN^8*Q2*\[CapitalLambda]0^4*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    576*mm^10*mN^10*Q2*\[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 1440*mm^8*mN^12*Q2*\[CapitalLambda]0^4*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    1920*mm^6*mN^14*Q2*\[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 1440*mm^4*mN^16*Q2*\[CapitalLambda]0^4*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    576*mm^2*mN^18*Q2*\[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 96*mN^20*Q2*\[CapitalLambda]0^4*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    192*mm^12*mN^7*mo*Q2*\[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 1152*mm^10*mN^9*mo*Q2*\[CapitalLambda]0^4*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    2880*mm^8*mN^11*mo*Q2*\[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 3840*mm^6*mN^13*mo*Q2*\[CapitalLambda]0^4*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    2880*mm^4*mN^15*mo*Q2*\[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 1152*mm^2*mN^17*mo*Q2*\[CapitalLambda]0^4*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    192*mN^19*mo*Q2*\[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 288*mm^12*mN^6*mo^2*Q2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 1152*mm^10*mN^8*mo^2*Q2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 2592*mm^8*mN^10*mo^2*Q2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 4608*mm^6*mN^12*mo^2*Q2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 5472*mm^4*mN^14*mo^2*Q2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 3456*mm^2*mN^16*mo^2*Q2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 864*mN^18*mo^2*Q2*\[CapitalLambda]0^4*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    1152*mm^10*mN^7*mo^3*Q2*\[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 3456*mm^8*mN^9*mo^3*Q2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 2304*mm^6*mN^11*mo^3*Q2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 2304*mm^4*mN^13*mo^3*Q2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 3456*mm^2*mN^15*mo^3*Q2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 1152*mN^17*mo^3*Q2*\[CapitalLambda]0^4*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    1728*mm^10*mN^6*mo^4*Q2*\[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 3744*mm^8*mN^8*mo^4*Q2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 2304*mm^6*mN^10*mo^4*Q2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 2880*mm^4*mN^12*mo^4*Q2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 6336*mm^2*mN^14*mo^4*Q2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 3168*mN^16*mo^4*Q2*\[CapitalLambda]0^4*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    2880*mm^8*mN^7*mo^5*Q2*\[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 2304*mm^6*mN^9*mo^5*Q2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 1152*mm^4*mN^11*mo^5*Q2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 2304*mm^2*mN^13*mo^5*Q2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 2880*mN^15*mo^5*Q2*\[CapitalLambda]0^4*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    4320*mm^8*mN^6*mo^6*Q2*\[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 1536*mm^6*mN^8*mo^6*Q2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 576*mm^4*mN^10*mo^6*Q2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 2304*mm^2*mN^12*mo^6*Q2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 6240*mN^14*mo^6*Q2*\[CapitalLambda]0^4*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    3840*mm^6*mN^7*mo^7*Q2*\[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 2304*mm^4*mN^9*mo^7*Q2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 2304*mm^2*mN^11*mo^7*Q2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 3840*mN^13*mo^7*Q2*\[CapitalLambda]0^4*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    5760*mm^6*mN^6*mo^8*Q2*\[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 4896*mm^4*mN^8*mo^8*Q2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 5184*mm^2*mN^10*mo^8*Q2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 7200*mN^12*mo^8*Q2*\[CapitalLambda]0^4*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    2880*mm^4*mN^7*mo^9*Q2*\[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 3456*mm^2*mN^9*mo^9*Q2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 2880*mN^11*mo^9*Q2*\[CapitalLambda]0^4*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    4320*mm^4*mN^6*mo^10*Q2*\[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 5760*mm^2*mN^8*mo^10*Q2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 4896*mN^10*mo^10*Q2*\[CapitalLambda]0^4*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    1152*mm^2*mN^7*mo^11*Q2*\[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 1152*mN^9*mo^11*Q2*\[CapitalLambda]0^4*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    1728*mm^2*mN^6*mo^12*Q2*\[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 1824*mN^8*mo^12*Q2*\[CapitalLambda]0^4*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    192*mN^7*mo^13*Q2*\[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 288*mN^6*mo^14*Q2*\[CapitalLambda]0^4*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    144*mm^12*mN^6*Q2^2*\[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 1152*mm^10*mN^8*Q2^2*\[CapitalLambda]0^4*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    3312*mm^8*mN^10*Q2^2*\[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 4608*mm^6*mN^12*Q2^2*\[CapitalLambda]0^4*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    3312*mm^4*mN^14*Q2^2*\[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 1152*mm^2*mN^16*Q2^2*\[CapitalLambda]0^4*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    144*mN^18*Q2^2*\[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 576*mm^10*mN^7*mo*Q2^2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 2304*mm^8*mN^9*mo*Q2^2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 3456*mm^6*mN^11*mo*Q2^2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 2304*mm^4*mN^13*mo*Q2^2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 576*mm^2*mN^15*mo*Q2^2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 144*mm^12*mN^4*mo^2*Q2^2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 864*mm^10*mN^6*mo^2*Q2^2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 1872*mm^8*mN^8*mo^2*Q2^2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 5184*mm^6*mN^10*mo^2*Q2^2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 8496*mm^4*mN^12*mo^2*Q2^2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 5472*mm^2*mN^14*mo^2*Q2^2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 1008*mN^16*mo^2*Q2^2*\[CapitalLambda]0^4*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    2304*mm^8*mN^7*mo^3*Q2^2*\[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 2304*mm^6*mN^9*mo^3*Q2^2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 2304*mm^4*mN^11*mo^3*Q2^2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 2304*mm^2*mN^13*mo^3*Q2^2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 864*mm^10*mN^4*mo^4*Q2^2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 3888*mm^8*mN^6*mo^4*Q2^2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 1728*mm^6*mN^8*mo^4*Q2^2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 3168*mm^4*mN^10*mo^4*Q2^2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 9504*mm^2*mN^12*mo^4*Q2^2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 3024*mN^14*mo^4*Q2^2*\[CapitalLambda]0^4*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    3456*mm^6*mN^7*mo^5*Q2^2*\[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 2304*mm^4*mN^9*mo^5*Q2^2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 3456*mm^2*mN^11*mo^5*Q2^2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 2160*mm^8*mN^4*mo^6*Q2^2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 4032*mm^6*mN^6*mo^6*Q2^2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 3744*mm^4*mN^8*mo^6*Q2^2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 6336*mm^2*mN^10*mo^6*Q2^2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 5040*mN^12*mo^6*Q2^2*\[CapitalLambda]0^4*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    2304*mm^4*mN^7*mo^7*Q2^2*\[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 2304*mm^2*mN^9*mo^7*Q2^2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 2880*mm^6*mN^4*mo^8*Q2^2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 432*mm^4*mN^6*mo^8*Q2^2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 576*mm^2*mN^8*mo^8*Q2^2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 5040*mN^10*mo^8*Q2^2*\[CapitalLambda]0^4*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    576*mm^2*mN^7*mo^9*Q2^2*\[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 2160*mm^4*mN^4*mo^10*Q2^2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 2592*mm^2*mN^6*mo^10*Q2^2*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 3024*mN^8*mo^10*Q2^2*\[CapitalLambda]0^4*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    864*mm^2*mN^4*mo^12*Q2^2*\[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 1008*mN^6*mo^12*Q2^2*\[CapitalLambda]0^4*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    144*mN^4*mo^14*Q2^2*\[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 48*mm^12*mN^4*Q2^3*\[CapitalLambda]0^4*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    720*mm^10*mN^6*Q2^3*\[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 2736*mm^8*mN^8*Q2^3*\[CapitalLambda]0^4*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    4128*mm^6*mN^10*Q2^3*\[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 2736*mm^4*mN^12*Q2^3*\[CapitalLambda]0^4*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    720*mm^2*mN^14*Q2^3*\[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 48*mN^16*Q2^3*\[CapitalLambda]0^4*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    48*mm^12*mN^3*mo*Q2^3*\[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 288*mm^10*mN^5*mo*Q2^3*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 144*mm^8*mN^7*mo*Q2^3*\[CapitalLambda]0^4*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    192*mm^6*mN^9*mo*Q2^3*\[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 144*mm^4*mN^11*mo*Q2^3*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 288*mm^2*mN^13*mo*Q2^3*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 48*mN^15*mo*Q2^3*\[CapitalLambda]0^4*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    144*mm^10*mN^4*mo^2*Q2^3*\[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 1440*mm^6*mN^8*mo^2*Q2^3*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 5472*mm^4*mN^10*mo^2*Q2^3*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 3024*mm^2*mN^12*mo^2*Q2^3*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 288*mN^14*mo^2*Q2^3*\[CapitalLambda]0^4*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    288*mm^10*mN^3*mo^3*Q2^3*\[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 864*mm^8*mN^5*mo^3*Q2^3*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 576*mm^6*mN^7*mo^3*Q2^3*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 576*mm^4*mN^9*mo^3*Q2^3*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 864*mm^2*mN^11*mo^3*Q2^3*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 288*mN^13*mo^3*Q2^3*\[CapitalLambda]0^4*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    1008*mm^8*mN^4*mo^4*Q2^3*\[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 288*mm^6*mN^6*mo^4*Q2^3*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 1728*mm^4*mN^8*mo^4*Q2^3*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 4896*mm^2*mN^10*mo^4*Q2^3*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 720*mN^12*mo^4*Q2^3*\[CapitalLambda]0^4*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    720*mm^8*mN^3*mo^5*Q2^3*\[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 576*mm^6*mN^5*mo^5*Q2^3*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 864*mm^4*mN^7*mo^5*Q2^3*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 576*mm^2*mN^9*mo^5*Q2^3*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 720*mN^11*mo^5*Q2^3*\[CapitalLambda]0^4*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    1632*mm^6*mN^4*mo^6*Q2^3*\[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 2016*mm^4*mN^6*mo^6*Q2^3*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 3744*mm^2*mN^8*mo^6*Q2^3*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 960*mN^10*mo^6*Q2^3*\[CapitalLambda]0^4*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    960*mm^6*mN^3*mo^7*Q2^3*\[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 576*mm^4*mN^5*mo^7*Q2^3*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 576*mm^2*mN^7*mo^7*Q2^3*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 960*mN^9*mo^7*Q2^3*\[CapitalLambda]0^4*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    1008*mm^4*mN^4*mo^8*Q2^3*\[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 1296*mm^2*mN^6*mo^8*Q2^3*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 720*mN^8*mo^8*Q2^3*\[CapitalLambda]0^4*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    720*mm^4*mN^3*mo^9*Q2^3*\[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 864*mm^2*mN^5*mo^9*Q2^3*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 720*mN^7*mo^9*Q2^3*\[CapitalLambda]0^4*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    144*mm^2*mN^4*mo^10*Q2^3*\[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 288*mN^6*mo^10*Q2^3*\[CapitalLambda]0^4*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    288*mm^2*mN^3*mo^11*Q2^3*\[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 288*mN^5*mo^11*Q2^3*\[CapitalLambda]0^4*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    48*mN^4*mo^12*Q2^3*\[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 48*mN^3*mo^13*Q2^3*\[CapitalLambda]0^4*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    144*mm^10*mN^4*Q2^4*\[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 1008*mm^8*mN^6*Q2^4*\[CapitalLambda]0^4*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    1824*mm^6*mN^8*Q2^4*\[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 1008*mm^4*mN^10*Q2^4*\[CapitalLambda]0^4*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    144*mm^2*mN^12*Q2^4*\[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 144*mm^10*mN^3*mo*Q2^4*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 576*mm^8*mN^5*mo*Q2^4*\[CapitalLambda]0^4*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    672*mm^6*mN^7*mo*Q2^4*\[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 576*mm^4*mN^9*mo*Q2^4*\[CapitalLambda]0^4*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    144*mm^2*mN^11*mo*Q2^4*\[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 144*mm^8*mN^4*mo^2*Q2^4*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 288*mm^6*mN^6*mo^2*Q2^4*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 1872*mm^4*mN^8*mo^2*Q2^4*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 576*mm^2*mN^10*mo^2*Q2^4*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 576*mm^8*mN^3*mo^3*Q2^4*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 576*mm^6*mN^5*mo^3*Q2^4*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 576*mm^4*mN^7*mo^3*Q2^4*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 576*mm^2*mN^9*mo^3*Q2^4*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 720*mm^4*mN^6*mo^4*Q2^4*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 864*mm^2*mN^8*mo^4*Q2^4*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 864*mm^6*mN^3*mo^5*Q2^4*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 576*mm^4*mN^5*mo^5*Q2^4*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 864*mm^2*mN^7*mo^5*Q2^4*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 144*mm^4*mN^4*mo^6*Q2^4*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 576*mm^2*mN^6*mo^6*Q2^4*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 576*mm^4*mN^3*mo^7*Q2^4*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 576*mm^2*mN^5*mo^7*Q2^4*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 144*mm^2*mN^4*mo^8*Q2^4*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 144*mm^2*mN^3*mo^9*Q2^4*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 144*mm^8*mN^4*Q2^5*\[CapitalLambda]0^4*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    432*mm^6*mN^6*Q2^5*\[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 144*mm^4*mN^8*Q2^5*\[CapitalLambda]0^4*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    144*mm^8*mN^3*mo*Q2^5*\[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 288*mm^6*mN^5*mo*Q2^5*\[CapitalLambda]0^4*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    144*mm^4*mN^7*mo*Q2^5*\[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 144*mm^6*mN^4*mo^2*Q2^5*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 288*mm^4*mN^6*mo^2*Q2^5*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 288*mm^6*mN^3*mo^3*Q2^5*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 288*mm^4*mN^5*mo^3*Q2^5*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 144*mm^4*mN^4*mo^4*Q2^5*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 144*mm^4*mN^3*mo^5*Q2^5*
+     \[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 48*mm^6*mN^4*Q2^6*\[CapitalLambda]0^4*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    48*mm^6*mN^3*mo*Q2^6*\[CapitalLambda]0^4*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 576*mm^10*mN^8*Q2*\[CapitalLambda]0^6*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    2880*mm^8*mN^10*Q2*\[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 5760*mm^6*mN^12*Q2*\[CapitalLambda]0^6*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    5760*mm^4*mN^14*Q2*\[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 2880*mm^2*mN^16*Q2*\[CapitalLambda]0^6*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    576*mN^18*Q2*\[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 1152*mm^10*mN^7*mo*Q2*\[CapitalLambda]0^6*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    5760*mm^8*mN^9*mo*Q2*\[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 11520*mm^6*mN^11*mo*Q2*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 11520*mm^4*mN^13*mo*Q2*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 5760*mm^2*mN^15*mo*Q2*\[CapitalLambda]0^6*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    1152*mN^17*mo*Q2*\[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 1728*mm^10*mN^6*mo^2*Q2*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 5760*mm^8*mN^8*mo^2*Q2*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 10368*mm^6*mN^10*mo^2*Q2*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 13824*mm^4*mN^12*mo^2*Q2*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 10944*mm^2*mN^14*mo^2*Q2*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 3456*mN^16*mo^2*Q2*\[CapitalLambda]0^6*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    5760*mm^8*mN^7*mo^3*Q2*\[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 13824*mm^6*mN^9*mo^3*Q2*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 6912*mm^4*mN^11*mo^3*Q2*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 4608*mm^2*mN^13*mo^3*Q2*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 3456*mN^15*mo^3*Q2*\[CapitalLambda]0^6*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    8640*mm^8*mN^6*mo^4*Q2*\[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 14976*mm^6*mN^8*mo^4*Q2*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 6912*mm^4*mN^10*mo^4*Q2*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 5760*mm^2*mN^12*mo^4*Q2*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 6336*mN^14*mo^4*Q2*\[CapitalLambda]0^6*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    11520*mm^6*mN^7*mo^5*Q2*\[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 6912*mm^4*mN^9*mo^5*Q2*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 2304*mm^2*mN^11*mo^5*Q2*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 2304*mN^13*mo^5*Q2*\[CapitalLambda]0^6*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    17280*mm^6*mN^6*mo^6*Q2*\[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 4608*mm^4*mN^8*mo^6*Q2*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 1152*mm^2*mN^10*mo^6*Q2*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 2304*mN^12*mo^6*Q2*\[CapitalLambda]0^6*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    11520*mm^4*mN^7*mo^7*Q2*\[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 4608*mm^2*mN^9*mo^7*Q2*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 2304*mN^11*mo^7*Q2*\[CapitalLambda]0^6*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    17280*mm^4*mN^6*mo^8*Q2*\[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 9792*mm^2*mN^8*mo^8*Q2*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 5184*mN^10*mo^8*Q2*\[CapitalLambda]0^6*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    5760*mm^2*mN^7*mo^9*Q2*\[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 3456*mN^9*mo^9*Q2*\[CapitalLambda]0^6*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    8640*mm^2*mN^6*mo^10*Q2*\[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 5760*mN^8*mo^10*Q2*\[CapitalLambda]0^6*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    1152*mN^7*mo^11*Q2*\[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 1728*mN^6*mo^12*Q2*\[CapitalLambda]0^6*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    864*mm^10*mN^6*Q2^2*\[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 5760*mm^8*mN^8*Q2^2*\[CapitalLambda]0^6*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    13248*mm^6*mN^10*Q2^2*\[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 13824*mm^4*mN^12*Q2^2*\[CapitalLambda]0^6*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    6624*mm^2*mN^14*Q2^2*\[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 1152*mN^16*Q2^2*\[CapitalLambda]0^6*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    2880*mm^8*mN^7*mo*Q2^2*\[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 9216*mm^6*mN^9*mo*Q2^2*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 10368*mm^4*mN^11*mo*Q2^2*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 4608*mm^2*mN^13*mo*Q2^2*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 576*mN^15*mo*Q2^2*\[CapitalLambda]0^6*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    864*mm^10*mN^4*mo^2*Q2^2*\[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 4320*mm^8*mN^6*mo^2*Q2^2*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 7488*mm^6*mN^8*mo^2*Q2^2*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 15552*mm^4*mN^10*mo^2*Q2^2*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 16992*mm^2*mN^12*mo^2*Q2^2*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 5472*mN^14*mo^2*Q2^2*\[CapitalLambda]0^6*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    9216*mm^6*mN^7*mo^3*Q2^2*\[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 6912*mm^4*mN^9*mo^3*Q2^2*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 4608*mm^2*mN^11*mo^3*Q2^2*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 2304*mN^13*mo^3*Q2^2*\[CapitalLambda]0^6*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    4320*mm^8*mN^4*mo^4*Q2^2*\[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 15552*mm^6*mN^6*mo^4*Q2^2*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 5184*mm^4*mN^8*mo^4*Q2^2*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 6336*mm^2*mN^10*mo^4*Q2^2*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 9504*mN^12*mo^4*Q2^2*\[CapitalLambda]0^6*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    10368*mm^4*mN^7*mo^5*Q2^2*\[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 4608*mm^2*mN^9*mo^5*Q2^2*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 3456*mN^11*mo^5*Q2^2*\[CapitalLambda]0^6*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    8640*mm^6*mN^4*mo^6*Q2^2*\[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 12096*mm^4*mN^6*mo^6*Q2^2*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 7488*mm^2*mN^8*mo^6*Q2^2*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 6336*mN^10*mo^6*Q2^2*\[CapitalLambda]0^6*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    4608*mm^2*mN^7*mo^7*Q2^2*\[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 2304*mN^9*mo^7*Q2^2*\[CapitalLambda]0^6*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    8640*mm^4*mN^4*mo^8*Q2^2*\[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 864*mm^2*mN^6*mo^8*Q2^2*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 576*mN^8*mo^8*Q2^2*\[CapitalLambda]0^6*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    576*mN^7*mo^9*Q2^2*\[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 4320*mm^2*mN^4*mo^10*Q2^2*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 2592*mN^6*mo^10*Q2^2*\[CapitalLambda]0^6*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    864*mN^4*mo^12*Q2^2*\[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 288*mm^10*mN^4*Q2^3*\[CapitalLambda]0^6*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    3600*mm^8*mN^6*Q2^3*\[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 10944*mm^6*mN^8*Q2^3*\[CapitalLambda]0^6*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    12384*mm^4*mN^10*Q2^3*\[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 5472*mm^2*mN^12*Q2^3*\[CapitalLambda]0^6*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    720*mN^14*Q2^3*\[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 288*mm^10*mN^3*mo*Q2^3*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 1440*mm^8*mN^5*mo*Q2^3*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 576*mm^6*mN^7*mo*Q2^3*\[CapitalLambda]0^6*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    576*mm^4*mN^9*mo*Q2^3*\[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 288*mm^2*mN^11*mo*Q2^3*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 288*mN^13*mo*Q2^3*\[CapitalLambda]0^6*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    720*mm^8*mN^4*mo^2*Q2^3*\[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 4320*mm^4*mN^8*mo^2*Q2^3*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 10944*mm^2*mN^10*mo^2*Q2^3*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 3024*mN^12*mo^2*Q2^3*\[CapitalLambda]0^6*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    1440*mm^8*mN^3*mo^3*Q2^3*\[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 3456*mm^6*mN^5*mo^3*Q2^3*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 1728*mm^4*mN^7*mo^3*Q2^3*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 1152*mm^2*mN^9*mo^3*Q2^3*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 864*mN^11*mo^3*Q2^3*\[CapitalLambda]0^6*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    4032*mm^6*mN^4*mo^4*Q2^3*\[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 864*mm^4*mN^6*mo^4*Q2^3*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 3456*mm^2*mN^8*mo^4*Q2^3*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 4896*mN^10*mo^4*Q2^3*\[CapitalLambda]0^6*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    2880*mm^6*mN^3*mo^5*Q2^3*\[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 1728*mm^4*mN^5*mo^5*Q2^3*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 1728*mm^2*mN^7*mo^5*Q2^3*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 576*mN^9*mo^5*Q2^3*\[CapitalLambda]0^6*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    4896*mm^4*mN^4*mo^6*Q2^3*\[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 4032*mm^2*mN^6*mo^6*Q2^3*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 3744*mN^8*mo^6*Q2^3*\[CapitalLambda]0^6*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    2880*mm^4*mN^3*mo^7*Q2^3*\[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 1152*mm^2*mN^5*mo^7*Q2^3*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 576*mN^7*mo^7*Q2^3*\[CapitalLambda]0^6*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    2016*mm^2*mN^4*mo^8*Q2^3*\[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 1296*mN^6*mo^8*Q2^3*\[CapitalLambda]0^6*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    1440*mm^2*mN^3*mo^9*Q2^3*\[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 864*mN^5*mo^9*Q2^3*\[CapitalLambda]0^6*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    144*mN^4*mo^10*Q2^3*\[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 288*mN^3*mo^11*Q2^3*\[CapitalLambda]0^6*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    720*mm^8*mN^4*Q2^4*\[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 4032*mm^6*mN^6*Q2^4*\[CapitalLambda]0^6*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    5472*mm^4*mN^8*Q2^4*\[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 2016*mm^2*mN^10*Q2^4*\[CapitalLambda]0^6*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    144*mN^12*Q2^4*\[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 720*mm^8*mN^3*mo*Q2^4*\[CapitalLambda]0^6*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    2304*mm^6*mN^5*mo*Q2^4*\[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 2016*mm^4*mN^7*mo*Q2^4*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 1152*mm^2*mN^9*mo*Q2^4*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 144*mN^11*mo*Q2^4*\[CapitalLambda]0^6*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    576*mm^6*mN^4*mo^2*Q2^4*\[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 864*mm^4*mN^6*mo^2*Q2^4*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 3744*mm^2*mN^8*mo^2*Q2^4*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 576*mN^10*mo^2*Q2^4*\[CapitalLambda]0^6*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    2304*mm^6*mN^3*mo^3*Q2^4*\[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 1728*mm^4*mN^5*mo^3*Q2^4*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 1152*mm^2*mN^7*mo^3*Q2^4*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 576*mN^9*mo^3*Q2^4*\[CapitalLambda]0^6*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    1440*mm^2*mN^6*mo^4*Q2^4*\[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 864*mN^8*mo^4*Q2^4*\[CapitalLambda]0^6*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    2592*mm^4*mN^3*mo^5*Q2^4*\[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 1152*mm^2*mN^5*mo^5*Q2^4*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 864*mN^7*mo^5*Q2^4*\[CapitalLambda]0^6*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    288*mm^2*mN^4*mo^6*Q2^4*\[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 576*mN^6*mo^6*Q2^4*\[CapitalLambda]0^6*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    1152*mm^2*mN^3*mo^7*Q2^4*\[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 576*mN^5*mo^7*Q2^4*\[CapitalLambda]0^6*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    144*mN^4*mo^8*Q2^4*\[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 144*mN^3*mo^9*Q2^4*\[CapitalLambda]0^6*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    576*mm^6*mN^4*Q2^5*\[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 1296*mm^4*mN^6*Q2^5*\[CapitalLambda]0^6*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    288*mm^2*mN^8*Q2^5*\[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 576*mm^6*mN^3*mo*Q2^5*\[CapitalLambda]0^6*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    864*mm^4*mN^5*mo*Q2^5*\[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 288*mm^2*mN^7*mo*Q2^5*\[CapitalLambda]0^6*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    432*mm^4*mN^4*mo^2*Q2^5*\[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 576*mm^2*mN^6*mo^2*Q2^5*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 864*mm^4*mN^3*mo^3*Q2^5*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 576*mm^2*mN^5*mo^3*Q2^5*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 288*mm^2*mN^4*mo^4*Q2^5*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 288*mm^2*mN^3*mo^5*Q2^5*
+     \[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 144*mm^4*mN^4*Q2^6*\[CapitalLambda]0^6*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    144*mm^4*mN^3*mo*Q2^6*\[CapitalLambda]0^6*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 1440*mm^8*mN^8*Q2*\[CapitalLambda]0^8*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    5760*mm^6*mN^10*Q2*\[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 8640*mm^4*mN^12*Q2*\[CapitalLambda]0^8*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    5760*mm^2*mN^14*Q2*\[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 1440*mN^16*Q2*\[CapitalLambda]0^8*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    2880*mm^8*mN^7*mo*Q2*\[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 11520*mm^6*mN^9*mo*Q2*\[CapitalLambda]0^8*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    17280*mm^4*mN^11*mo*Q2*\[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 11520*mm^2*mN^13*mo*Q2*
+     \[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 2880*mN^15*mo*Q2*\[CapitalLambda]0^8*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    4320*mm^8*mN^6*mo^2*Q2*\[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 11520*mm^6*mN^8*mo^2*Q2*
+     \[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 15552*mm^4*mN^10*mo^2*Q2*
+     \[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 13824*mm^2*mN^12*mo^2*Q2*
+     \[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 5472*mN^14*mo^2*Q2*\[CapitalLambda]0^8*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    11520*mm^6*mN^7*mo^3*Q2*\[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 20736*mm^4*mN^9*mo^3*Q2*
+     \[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 6912*mm^2*mN^11*mo^3*Q2*
+     \[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 2304*mN^13*mo^3*Q2*\[CapitalLambda]0^8*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    17280*mm^6*mN^6*mo^4*Q2*\[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 22464*mm^4*mN^8*mo^4*Q2*
+     \[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 6912*mm^2*mN^10*mo^4*Q2*
+     \[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 2880*mN^12*mo^4*Q2*\[CapitalLambda]0^8*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    17280*mm^4*mN^7*mo^5*Q2*\[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 6912*mm^2*mN^9*mo^5*Q2*
+     \[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 1152*mN^11*mo^5*Q2*\[CapitalLambda]0^8*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    25920*mm^4*mN^6*mo^6*Q2*\[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 4608*mm^2*mN^8*mo^6*Q2*
+     \[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 576*mN^10*mo^6*Q2*\[CapitalLambda]0^8*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    11520*mm^2*mN^7*mo^7*Q2*\[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 2304*mN^9*mo^7*Q2*\[CapitalLambda]0^8*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    17280*mm^2*mN^6*mo^8*Q2*\[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 4896*mN^8*mo^8*Q2*\[CapitalLambda]0^8*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    2880*mN^7*mo^9*Q2*\[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 4320*mN^6*mo^10*Q2*\[CapitalLambda]0^8*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    2160*mm^8*mN^6*Q2^2*\[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 11520*mm^6*mN^8*Q2^2*\[CapitalLambda]0^8*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    19872*mm^4*mN^10*Q2^2*\[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 13824*mm^2*mN^12*Q2^2*\[CapitalLambda]0^8*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    3312*mN^14*Q2^2*\[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 5760*mm^6*mN^7*mo*Q2^2*
+     \[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 13824*mm^4*mN^9*mo*Q2^2*
+     \[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 10368*mm^2*mN^11*mo*Q2^2*
+     \[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 2304*mN^13*mo*Q2^2*\[CapitalLambda]0^8*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    2160*mm^8*mN^4*mo^2*Q2^2*\[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 8640*mm^6*mN^6*mo^2*Q2^2*
+     \[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 11232*mm^4*mN^8*mo^2*Q2^2*
+     \[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 15552*mm^2*mN^10*mo^2*Q2^2*
+     \[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 8496*mN^12*mo^2*Q2^2*\[CapitalLambda]0^8*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    13824*mm^4*mN^7*mo^3*Q2^2*\[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 6912*mm^2*mN^9*mo^3*Q2^2*
+     \[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 2304*mN^11*mo^3*Q2^2*\[CapitalLambda]0^8*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    8640*mm^6*mN^4*mo^4*Q2^2*\[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 23328*mm^4*mN^6*mo^4*Q2^2*
+     \[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 5184*mm^2*mN^8*mo^4*Q2^2*
+     \[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 3168*mN^10*mo^4*Q2^2*\[CapitalLambda]0^8*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    10368*mm^2*mN^7*mo^5*Q2^2*\[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 2304*mN^9*mo^5*Q2^2*\[CapitalLambda]0^8*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    12960*mm^4*mN^4*mo^6*Q2^2*\[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 12096*mm^2*mN^6*mo^6*Q2^2*
+     \[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 3744*mN^8*mo^6*Q2^2*\[CapitalLambda]0^8*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    2304*mN^7*mo^7*Q2^2*\[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 8640*mm^2*mN^4*mo^8*Q2^2*
+     \[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 432*mN^6*mo^8*Q2^2*\[CapitalLambda]0^8*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    2160*mN^4*mo^10*Q2^2*\[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 720*mm^8*mN^4*Q2^3*\[CapitalLambda]0^8*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    7200*mm^6*mN^6*Q2^3*\[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 16416*mm^4*mN^8*Q2^3*\[CapitalLambda]0^8*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    12384*mm^2*mN^10*Q2^3*\[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 2736*mN^12*Q2^3*\[CapitalLambda]0^8*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    720*mm^8*mN^3*mo*Q2^3*\[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 2880*mm^6*mN^5*mo*Q2^3*
+     \[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 864*mm^4*mN^7*mo*Q2^3*\[CapitalLambda]0^8*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    576*mm^2*mN^9*mo*Q2^3*\[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 144*mN^11*mo*Q2^3*\[CapitalLambda]0^8*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    1440*mm^6*mN^4*mo^2*Q2^3*\[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 4320*mm^2*mN^8*mo^2*Q2^3*
+     \[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 5472*mN^10*mo^2*Q2^3*\[CapitalLambda]0^8*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    2880*mm^6*mN^3*mo^3*Q2^3*\[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 5184*mm^4*mN^5*mo^3*Q2^3*
+     \[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 1728*mm^2*mN^7*mo^3*Q2^3*
+     \[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 576*mN^9*mo^3*Q2^3*\[CapitalLambda]0^8*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    6048*mm^4*mN^4*mo^4*Q2^3*\[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 864*mm^2*mN^6*mo^4*Q2^3*
+     \[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 1728*mN^8*mo^4*Q2^3*\[CapitalLambda]0^8*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    4320*mm^4*mN^3*mo^5*Q2^3*\[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 1728*mm^2*mN^5*mo^5*Q2^3*
+     \[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 864*mN^7*mo^5*Q2^3*\[CapitalLambda]0^8*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    4896*mm^2*mN^4*mo^6*Q2^3*\[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 2016*mN^6*mo^6*Q2^3*\[CapitalLambda]0^8*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    2880*mm^2*mN^3*mo^7*Q2^3*\[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 576*mN^5*mo^7*Q2^3*\[CapitalLambda]0^8*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    1008*mN^4*mo^8*Q2^3*\[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 720*mN^3*mo^9*Q2^3*\[CapitalLambda]0^8*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    1440*mm^6*mN^4*Q2^4*\[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 6048*mm^4*mN^6*Q2^4*\[CapitalLambda]0^8*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    5472*mm^2*mN^8*Q2^4*\[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 1008*mN^10*Q2^4*\[CapitalLambda]0^8*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    1440*mm^6*mN^3*mo*Q2^4*\[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 3456*mm^4*mN^5*mo*Q2^4*
+     \[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 2016*mm^2*mN^7*mo*Q2^4*
+     \[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 576*mN^9*mo*Q2^4*\[CapitalLambda]0^8*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    864*mm^4*mN^4*mo^2*Q2^4*\[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 864*mm^2*mN^6*mo^2*Q2^4*
+     \[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 1872*mN^8*mo^2*Q2^4*\[CapitalLambda]0^8*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    3456*mm^4*mN^3*mo^3*Q2^4*\[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 1728*mm^2*mN^5*mo^3*Q2^4*
+     \[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 576*mN^7*mo^3*Q2^4*\[CapitalLambda]0^8*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    720*mN^6*mo^4*Q2^4*\[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 2592*mm^2*mN^3*mo^5*Q2^4*
+     \[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 576*mN^5*mo^5*Q2^4*\[CapitalLambda]0^8*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    144*mN^4*mo^6*Q2^4*\[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 576*mN^3*mo^7*Q2^4*\[CapitalLambda]0^8*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    864*mm^4*mN^4*Q2^5*\[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 1296*mm^2*mN^6*Q2^5*\[CapitalLambda]0^8*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    144*mN^8*Q2^5*\[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 864*mm^4*mN^3*mo*Q2^5*\[CapitalLambda]0^8*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    864*mm^2*mN^5*mo*Q2^5*\[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 144*mN^7*mo*Q2^5*\[CapitalLambda]0^8*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    432*mm^2*mN^4*mo^2*Q2^5*\[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 288*mN^6*mo^2*Q2^5*\[CapitalLambda]0^8*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    864*mm^2*mN^3*mo^3*Q2^5*\[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 288*mN^5*mo^3*Q2^5*\[CapitalLambda]0^8*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    144*mN^4*mo^4*Q2^5*\[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 144*mN^3*mo^5*Q2^5*\[CapitalLambda]0^8*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    144*mm^2*mN^4*Q2^6*\[CapitalLambda]0^8*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 144*mm^2*mN^3*mo*Q2^6*\[CapitalLambda]0^8*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    384*mm^6*mN^10*\[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 384*mm^4*mN^12*\[CapitalLambda]0^10*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    384*mm^2*mN^14*\[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 384*mN^16*\[CapitalLambda]0^10*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    768*mm^6*mN^9*mo*\[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 768*mm^2*mN^13*mo*\[CapitalLambda]0^10*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    384*mm^6*mN^8*mo^2*\[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 384*mm^2*mN^12*mo^2*\[CapitalLambda]0^10*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    768*mN^14*mo^2*\[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 1536*mm^4*mN^9*mo^3*\[CapitalLambda]0^10*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    1152*mm^4*mN^8*mo^4*\[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 1152*mm^2*mN^10*mo^4*\[CapitalLambda]0^10*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    768*mm^2*mN^9*mo^5*\[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 1152*mm^2*mN^8*mo^6*\[CapitalLambda]0^10*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    768*mN^10*mo^6*\[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 384*mN^8*mo^8*\[CapitalLambda]0^10*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    1904*mm^6*mN^8*Q2*\[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 5168*mm^4*mN^10*Q2*\[CapitalLambda]0^10*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    6160*mm^2*mN^12*Q2*\[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 2128*mN^14*Q2*\[CapitalLambda]0^10*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    3872*mm^6*mN^7*mo*Q2*\[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 12384*mm^4*mN^9*mo*Q2*
+     \[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 10336*mm^2*mN^11*mo*Q2*
+     \[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 4128*mN^13*mo*Q2*\[CapitalLambda]0^10*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    5776*mm^6*mN^6*mo^2*Q2*\[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 11520*mm^4*mN^8*mo^2*Q2*
+     \[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 10576*mm^2*mN^10*mo^2*Q2*
+     \[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 5216*mN^12*mo^2*Q2*\[CapitalLambda]0^10*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    11296*mm^4*mN^7*mo^3*Q2*\[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 15552*mm^2*mN^9*mo^3*Q2*
+     \[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 1440*mN^11*mo^3*Q2*\[CapitalLambda]0^10*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    17328*mm^4*mN^6*mo^4*Q2*\[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 15120*mm^2*mN^8*mo^4*Q2*
+     \[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 1728*mN^10*mo^4*Q2*\[CapitalLambda]0^10*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    10976*mm^2*mN^7*mo^5*Q2*\[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 3168*mN^9*mo^5*Q2*\[CapitalLambda]0^10*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    17328*mm^2*mN^6*mo^6*Q2*\[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 1696*mN^8*mo^6*Q2*\[CapitalLambda]0^10*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    3552*mN^7*mo^7*Q2*\[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 5776*mN^6*mo^8*Q2*\[CapitalLambda]0^10*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    2832*mm^6*mN^6*Q2^2*\[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 11376*mm^4*mN^8*Q2^2*\[CapitalLambda]0^10*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    13312*mm^2*mN^10*Q2^2*\[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 4736*mN^12*Q2^2*\[CapitalLambda]0^10*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    96*mm^6*mN^5*mo*Q2^2*\[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 5904*mm^4*mN^7*mo*Q2^2*
+     \[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 8928*mm^2*mN^9*mo*Q2^2*
+     \[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 3504*mN^11*mo*Q2^2*\[CapitalLambda]0^10*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    2928*mm^6*mN^4*mo^2*Q2^2*\[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 8640*mm^4*mN^6*mo^2*Q2^2*
+     \[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 7472*mm^2*mN^8*mo^2*Q2^2*
+     \[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 5520*mN^10*mo^2*Q2^2*\[CapitalLambda]0^10*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    144*mm^4*mN^5*mo^3*Q2^2*\[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 9504*mm^2*mN^7*mo^3*Q2^2*
+     \[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 2160*mN^9*mo^3*Q2^2*\[CapitalLambda]0^10*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    8784*mm^4*mN^4*mo^4*Q2^2*\[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 15488*mm^2*mN^6*mo^4*Q2^2*
+     \[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 1488*mN^8*mo^4*Q2^2*\[CapitalLambda]0^10*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    3600*mN^7*mo^5*Q2^2*\[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 8784*mm^2*mN^4*mo^6*Q2^2*
+     \[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 4016*mN^6*mo^6*Q2^2*\[CapitalLambda]0^10*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    48*mN^5*mo^7*Q2^2*\[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 2928*mN^4*mo^8*Q2^2*\[CapitalLambda]0^10*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    951*mm^6*mN^4*Q2^3*\[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 7107*mm^4*mN^6*Q2^3*\[CapitalLambda]0^10*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    11001*mm^2*mN^8*Q2^3*\[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 4173*mN^10*Q2^3*\[CapitalLambda]0^10*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    942*mm^6*mN^3*mo*Q2^3*\[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 2754*mm^4*mN^5*mo*Q2^3*
+     \[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 762*mm^2*mN^7*mo*Q2^3*
+     \[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 234*mN^9*mo*Q2^3*\[CapitalLambda]0^10*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    9*mm^6*mN^2*mo^2*Q2^3*\[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 1440*mm^4*mN^4*mo^2*Q2^3*
+     \[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 21*mm^2*mN^6*mo^2*Q2^3*
+     \[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 1566*mN^8*mo^2*Q2^3*\[CapitalLambda]0^10*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    2886*mm^4*mN^3*mo^3*Q2^3*\[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 3204*mm^2*mN^5*mo^3*Q2^3*
+     \[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 450*mN^7*mo^3*Q2^3*\[CapitalLambda]0^10*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    27*mm^4*mN^2*mo^4*Q2^3*\[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 4041*mm^2*mN^4*mo^4*Q2^3*
+     \[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 180*mN^6*mo^4*Q2^3*\[CapitalLambda]0^10*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    2946*mm^2*mN^3*mo^5*Q2^3*\[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 450*mN^5*mo^5*Q2^3*\[CapitalLambda]0^10*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    27*mm^2*mN^2*mo^6*Q2^3*\[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 1650*mN^4*mo^6*Q2^3*\[CapitalLambda]0^10*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    1002*mN^3*mo^7*Q2^3*\[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 9*mN^2*mo^8*Q2^3*\[CapitalLambda]0^10*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    2*mm^6*mN^2*Q2^4*\[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 1418*mm^4*mN^4*Q2^4*\[CapitalLambda]0^10*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    4039*mm^2*mN^6*Q2^4*\[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 1837*mN^8*Q2^4*\[CapitalLambda]0^10*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    4*mm^6*mN*mo*Q2^4*\[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 1404*mm^4*mN^3*mo*Q2^4*
+     \[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 2348*mm^2*mN^5*mo*Q2^4*
+     \[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 660*mN^7*mo*Q2^4*\[CapitalLambda]0^10*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    2*mm^6*mo^2*Q2^4*\[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 584*mm^2*mN^4*mo^2*Q2^4*
+     \[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 247*mN^6*mo^2*Q2^4*\[CapitalLambda]0^10*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    20*mm^4*mN*mo^3*Q2^4*\[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 2232*mm^2*mN^3*mo^3*Q2^4*
+     \[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 612*mN^5*mo^3*Q2^4*\[CapitalLambda]0^10*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    6*mm^4*mo^4*Q2^4*\[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 21*mm^2*mN^2*mo^4*Q2^4*
+     \[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 45*mN^4*mo^4*Q2^4*\[CapitalLambda]0^10*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    28*mm^2*mN*mo^5*Q2^4*\[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 828*mN^3*mo^5*Q2^4*\[CapitalLambda]0^10*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    6*mm^2*mo^6*Q2^4*\[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 19*mN^2*mo^6*Q2^4*\[CapitalLambda]0^10*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    12*mN*mo^7*Q2^4*\[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 2*mo^8*Q2^4*\[CapitalLambda]0^10*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    574*mm^2*mN^4*Q2^5*\[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 434*mN^6*Q2^5*\[CapitalLambda]0^10*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    576*mm^2*mN^3*mo*Q2^5*\[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 288*mN^5*mo*Q2^5*\[CapitalLambda]0^10*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    4*mm^2*mN^2*mo^2*Q2^5*\[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 138*mN^4*mo^2*Q2^5*\[CapitalLambda]0^10*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    288*mN^3*mo^3*Q2^5*\[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 2*mm^2*mo^4*Q2^5*\[CapitalLambda]0^10*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    6*mN^2*mo^4*Q2^5*\[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 2*mo^6*Q2^5*\[CapitalLambda]0^10*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    48*mN^4*Q2^6*\[CapitalLambda]0^10*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 48*mN^3*mo*Q2^6*\[CapitalLambda]0^10*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    1152*mm^4*mN^10*\[CapitalLambda]0^12*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 768*mm^2*mN^12*\[CapitalLambda]0^12*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    384*mN^14*\[CapitalLambda]0^12*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 2304*mm^4*mN^9*mo*\[CapitalLambda]0^12*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    768*mN^13*mo*\[CapitalLambda]0^12*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 1152*mm^4*mN^8*mo^2*\[CapitalLambda]0^12*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    384*mN^12*mo^2*\[CapitalLambda]0^12*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 3072*mm^2*mN^9*mo^3*\[CapitalLambda]0^12*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    2304*mm^2*mN^8*mo^4*\[CapitalLambda]0^12*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 1152*mN^10*mo^4*\[CapitalLambda]0^12*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    768*mN^9*mo^5*\[CapitalLambda]0^12*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 1152*mN^8*mo^6*\[CapitalLambda]0^12*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    1392*mm^4*mN^8*Q2*\[CapitalLambda]0^12*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 1696*mm^2*mN^10*Q2*\[CapitalLambda]0^12*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    1840*mN^12*Q2*\[CapitalLambda]0^12*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 2976*mm^4*mN^7*mo*Q2*\[CapitalLambda]0^12*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    7488*mm^2*mN^9*mo*Q2*\[CapitalLambda]0^12*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 1696*mN^11*mo*Q2*\[CapitalLambda]0^12*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    4368*mm^4*mN^6*mo^2*Q2*\[CapitalLambda]0^12*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 5760*mm^2*mN^8*mo^2*Q2*
+     \[CapitalLambda]0^12*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 2800*mN^10*mo^2*Q2*\[CapitalLambda]0^12*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    5312*mm^2*mN^7*mo^3*Q2*\[CapitalLambda]0^12*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 5184*mN^9*mo^3*Q2*\[CapitalLambda]0^12*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    8736*mm^2*mN^6*mo^4*Q2*\[CapitalLambda]0^12*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 3888*mN^8*mo^4*Q2*\[CapitalLambda]0^12*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    2336*mN^7*mo^5*Q2*\[CapitalLambda]0^12*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 4368*mN^6*mo^6*Q2*\[CapitalLambda]0^12*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    2016*mm^4*mN^6*Q2^2*\[CapitalLambda]0^12*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 5472*mm^2*mN^8*Q2^2*\[CapitalLambda]0^12*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    3376*mN^10*Q2^2*\[CapitalLambda]0^12*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 288*mm^4*mN^5*mo*Q2^2*
+     \[CapitalLambda]0^12*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 3168*mm^2*mN^7*mo*Q2^2*
+     \[CapitalLambda]0^12*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 2016*mN^9*mo*Q2^2*\[CapitalLambda]0^12*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    2304*mm^4*mN^4*mo^2*Q2^2*\[CapitalLambda]0^12*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 4320*mm^2*mN^6*mo^2*Q2^2*
+     \[CapitalLambda]0^12*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 1856*mN^8*mo^2*Q2^2*\[CapitalLambda]0^12*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    288*mm^2*mN^5*mo^3*Q2^2*\[CapitalLambda]0^12*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 2592*mN^7*mo^3*Q2^2*\[CapitalLambda]0^12*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    4608*mm^2*mN^4*mo^4*Q2^2*\[CapitalLambda]0^12*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 3824*mN^6*mo^4*Q2^2*\[CapitalLambda]0^12*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    2304*mN^4*mo^6*Q2^2*\[CapitalLambda]0^12*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 693*mm^4*mN^4*Q2^3*\[CapitalLambda]0^12*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    3414*mm^2*mN^6*Q2^3*\[CapitalLambda]0^12*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 2793*mN^8*Q2^3*\[CapitalLambda]0^12*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    666*mm^4*mN^3*mo*Q2^3*\[CapitalLambda]0^12*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 1188*mm^2*mN^5*mo*Q2^3*
+     \[CapitalLambda]0^12*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 330*mN^7*mo*Q2^3*\[CapitalLambda]0^12*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    27*mm^4*mN^2*mo^2*Q2^3*\[CapitalLambda]0^12*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 720*mm^2*mN^4*mo^2*Q2^3*
+     \[CapitalLambda]0^12*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 21*mN^6*mo^2*Q2^3*\[CapitalLambda]0^12*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    1452*mm^2*mN^3*mo^3*Q2^3*\[CapitalLambda]0^12*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 612*mN^5*mo^3*Q2^3*\[CapitalLambda]0^12*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    54*mm^2*mN^2*mo^4*Q2^3*\[CapitalLambda]0^12*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 1017*mN^4*mo^4*Q2^3*\[CapitalLambda]0^12*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    786*mN^3*mo^5*Q2^3*\[CapitalLambda]0^12*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 27*mN^2*mo^6*Q2^3*\[CapitalLambda]0^12*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    6*mm^4*mN^2*Q2^4*\[CapitalLambda]0^12*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 676*mm^2*mN^4*Q2^4*\[CapitalLambda]0^12*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    1015*mN^6*Q2^4*\[CapitalLambda]0^12*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 12*mm^4*mN*mo*Q2^4*\[CapitalLambda]0^12*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    648*mm^2*mN^3*mo*Q2^4*\[CapitalLambda]0^12*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 620*mN^5*mo*Q2^4*\[CapitalLambda]0^12*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    6*mm^4*mo^2*Q2^4*\[CapitalLambda]0^12*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 152*mN^4*mo^2*Q2^4*\[CapitalLambda]0^12*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    40*mm^2*mN*mo^3*Q2^4*\[CapitalLambda]0^12*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 504*mN^3*mo^3*Q2^4*\[CapitalLambda]0^12*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    12*mm^2*mo^4*Q2^4*\[CapitalLambda]0^12*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 21*mN^2*mo^4*Q2^4*\[CapitalLambda]0^12*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    28*mN*mo^5*Q2^4*\[CapitalLambda]0^12*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 6*mo^6*Q2^4*\[CapitalLambda]0^12*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    142*mN^4*Q2^5*\[CapitalLambda]0^12*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 144*mN^3*mo*Q2^5*\[CapitalLambda]0^12*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    4*mN^2*mo^2*Q2^5*\[CapitalLambda]0^12*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 2*mo^4*Q2^5*\[CapitalLambda]0^12*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    1152*mm^2*mN^10*\[CapitalLambda]0^14*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 384*mN^12*\[CapitalLambda]0^14*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    2304*mm^2*mN^9*mo*\[CapitalLambda]0^14*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 1152*mm^2*mN^8*mo^2*\[CapitalLambda]0^14*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    1536*mN^9*mo^3*\[CapitalLambda]0^14*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 1152*mN^8*mo^4*\[CapitalLambda]0^14*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    528*mm^2*mN^8*Q2*\[CapitalLambda]0^14*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 16*mN^10*Q2*\[CapitalLambda]0^14*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    1248*mm^2*mN^7*mo*Q2*\[CapitalLambda]0^14*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 2016*mN^9*mo*Q2*\[CapitalLambda]0^14*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    1776*mm^2*mN^6*mo^2*Q2*\[CapitalLambda]0^14*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 1152*mN^8*mo^2*Q2*\[CapitalLambda]0^14*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    928*mN^7*mo^3*Q2*\[CapitalLambda]0^14*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 1776*mN^6*mo^4*Q2*\[CapitalLambda]0^14*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    720*mm^2*mN^6*Q2^2*\[CapitalLambda]0^14*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 1008*mN^8*Q2^2*\[CapitalLambda]0^14*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    288*mm^2*mN^5*mo*Q2^2*\[CapitalLambda]0^14*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 720*mN^7*mo*Q2^2*\[CapitalLambda]0^14*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    1008*mm^2*mN^4*mo^2*Q2^2*\[CapitalLambda]0^14*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 864*mN^6*mo^2*Q2^2*\[CapitalLambda]0^14*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    144*mN^5*mo^3*Q2^2*\[CapitalLambda]0^14*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 1008*mN^4*mo^4*Q2^2*\[CapitalLambda]0^14*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    261*mm^2*mN^4*Q2^3*\[CapitalLambda]0^14*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 627*mN^6*Q2^3*\[CapitalLambda]0^14*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    234*mm^2*mN^3*mo*Q2^3*\[CapitalLambda]0^14*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 162*mN^5*mo*Q2^3*\[CapitalLambda]0^14*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    27*mm^2*mN^2*mo^2*Q2^3*\[CapitalLambda]0^14*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 144*mN^4*mo^2*Q2^3*\[CapitalLambda]0^14*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    294*mN^3*mo^3*Q2^3*\[CapitalLambda]0^14*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 27*mN^2*mo^4*Q2^3*\[CapitalLambda]0^14*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    6*mm^2*mN^2*Q2^4*\[CapitalLambda]0^14*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 122*mN^4*Q2^4*\[CapitalLambda]0^14*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    12*mm^2*mN*mo*Q2^4*\[CapitalLambda]0^14*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 108*mN^3*mo*Q2^4*\[CapitalLambda]0^14*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    6*mm^2*mo^2*Q2^4*\[CapitalLambda]0^14*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 20*mN*mo^3*Q2^4*\[CapitalLambda]0^14*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    6*mo^4*Q2^4*\[CapitalLambda]0^14*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 384*mN^10*\[CapitalLambda]0^16*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    768*mN^9*mo*\[CapitalLambda]0^16*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 384*mN^8*mo^2*\[CapitalLambda]0^16*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    80*mN^8*Q2*\[CapitalLambda]0^16*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 224*mN^7*mo*Q2*\[CapitalLambda]0^16*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    304*mN^6*mo^2*Q2*\[CapitalLambda]0^16*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 96*mN^6*Q2^2*\[CapitalLambda]0^16*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    96*mN^5*mo*Q2^2*\[CapitalLambda]0^16*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] + 192*mN^4*mo^2*Q2^2*\[CapitalLambda]0^16*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    39*mN^4*Q2^3*\[CapitalLambda]0^16*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 30*mN^3*mo*Q2^3*\[CapitalLambda]0^16*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] + 
+    9*mN^2*mo^2*Q2^3*\[CapitalLambda]0^16*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 2*mN^2*Q2^4*\[CapitalLambda]0^16*
+     Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2] - 
+    4*mN*mo*Q2^4*\[CapitalLambda]0^16*Kallen\[Lambda][mN^2, mo^2, 
+      mm^2 + \[CapitalLambda]0^2] - 2*mo^2*Q2^4*\[CapitalLambda]0^16*
      Kallen\[Lambda][mN^2, mo^2, mm^2 + \[CapitalLambda]0^2])*
    Log[mo^2/(mm^2 + \[CapitalLambda]0^2)])/(192*mN^6*Q2*(4*mN^2 + Q2)^2*
-   (Q2 + \[CapitalLambda]0^2)^2*
-   (mm^4 + mN^4 + mo^4 - 2*mo^2*\[CapitalLambda]0^2 - 
-     Q2*\[CapitalLambda]0^2 + \[CapitalLambda]0^4 - 
-     mm^2*(2*mN^2 + 2*mo^2 + Q2 - 2*\[CapitalLambda]0^2) - 
-     2*mN^2*(mo^2 + \[CapitalLambda]0^2))^3) + 
- ((mN + mo)^2*(mm^4*(8*mN^2 - Q2) + (mN - mo)^2*(8*mN^4 - 6*mN*mo*Q2 + 
-      Q2*(-mo^2 + Q2) + mN^2*(8*mo^2 + 3*Q2)) - 
-    2*mm^2*(8*mN^4 - 8*mN^3*mo - 2*mN*mo*Q2 - mo^2*Q2 + 
-      mN^2*(8*mo^2 + 5*Q2)))*\[CapitalLambda]0^4*ScalarC0[mN^2, mN^2, -Q2, 
-    mo, mm, mo])/((4*mN^2 + Q2)^2*(Q2 + \[CapitalLambda]0^2)^2) - 
- ((mN + mo)^2*(mm^4*(8*mN^2 - Q2) + (mN - mo)^2*(8*mN^4 - 6*mN*mo*Q2 + 
-      Q2*(-mo^2 + Q2) + mN^2*(8*mo^2 + 3*Q2)) - 
-    2*mm^2*(8*mN^4 - 8*mN^3*mo - 2*mN*mo*Q2 - mo^2*Q2 + 
-      mN^2*(8*mo^2 + 5*Q2)))*\[CapitalLambda]0^4*ScalarC0[mN^2, mN^2, -Q2, 
-    mo, Sqrt[mm^2 + \[CapitalLambda]0^2], mo])/
+   (Q2 + \[CapitalLambda]0^2)^2*(mm^4 - 2*mm^2*mN^2 + mN^4 - 2*mm^2*mo^2 - 
+     2*mN^2*mo^2 + mo^4 - mm^2*Q2 + 2*mm^2*\[CapitalLambda]0^2 - 
+     2*mN^2*\[CapitalLambda]0^2 - 2*mo^2*\[CapitalLambda]0^2 - 
+     Q2*\[CapitalLambda]0^2 + \[CapitalLambda]0^4)^3) + 
+ ((mN + mo)^2*(8*mm^4*mN^2 - 16*mm^2*mN^4 + 8*mN^6 + 16*mm^2*mN^3*mo - 
+    16*mN^5*mo - 16*mm^2*mN^2*mo^2 + 16*mN^4*mo^2 - 16*mN^3*mo^3 + 
+    8*mN^2*mo^4 - mm^4*Q2 - 10*mm^2*mN^2*Q2 + 3*mN^4*Q2 + 4*mm^2*mN*mo*Q2 - 
+    12*mN^3*mo*Q2 + 2*mm^2*mo^2*Q2 + 14*mN^2*mo^2*Q2 - 4*mN*mo^3*Q2 - 
+    mo^4*Q2 + mN^2*Q2^2 - 2*mN*mo*Q2^2 + mo^2*Q2^2)*\[CapitalLambda]0^4*
+   ScalarC0[mN^2, mN^2, -Q2, mo, mm, mo])/((4*mN^2 + Q2)^2*
+   (Q2 + \[CapitalLambda]0^2)^2) - 
+ ((mN + mo)^2*(8*mm^4*mN^2 - 16*mm^2*mN^4 + 8*mN^6 + 16*mm^2*mN^3*mo - 
+    16*mN^5*mo - 16*mm^2*mN^2*mo^2 + 16*mN^4*mo^2 - 16*mN^3*mo^3 + 
+    8*mN^2*mo^4 - mm^4*Q2 - 10*mm^2*mN^2*Q2 + 3*mN^4*Q2 + 4*mm^2*mN*mo*Q2 - 
+    12*mN^3*mo*Q2 + 2*mm^2*mo^2*Q2 + 14*mN^2*mo^2*Q2 - 4*mN*mo^3*Q2 - 
+    mo^4*Q2 + mN^2*Q2^2 - 2*mN*mo*Q2^2 + mo^2*Q2^2)*\[CapitalLambda]0^4*
+   ScalarC0[mN^2, mN^2, -Q2, mo, Sqrt[mm^2 + \[CapitalLambda]0^2], mo])/
   ((4*mN^2 + Q2)^2*(Q2 + \[CapitalLambda]0^2)^2)
