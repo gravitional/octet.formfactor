@@ -65,7 +65,7 @@ input`simulation={"C:\\octet.formfactor\\Numeric.series-o1.rencon3
 (*\:5f15\:5165\:547d\:4ee4\:884c\:53c2\:6570, 1 \:7528\:4f5c\:5b9e\:9645\:811a\:672c\:8fd0\:884c, 2\:7528\:4f5c\:8c03\:8bd5*)
 
 
-input`cml={$ScriptCommandLine,input`simulation}[[2]];
+input`cml={$ScriptCommandLine,input`simulation}[[1]];
 
 
 (* ::Text:: *)
