@@ -18,7 +18,7 @@
 
 input`simulation={"C:\\octet.formfactor\\Numeric.series-o1.rencon3
 \\e.Numeric.series-o1.rencon3.strange.sea-valence.mass-limit.wl",
-"o1",0.80,1.0};
+"o1",0.80,1.00};
 
 
 (* ::Text:: *)
@@ -54,7 +54,7 @@ git`root`dir=StringCases[ExpandFileName[file`name],StartOfString~~((WordCharacte
 
 parameter`order`string=ToString[parameter`order];
 parameter`lambda0`string=ToString[NumberForm[parameter`lambda0,{3,2}]];
-parameter`ci`string=ToString[NumberForm[parameter`ci,{2,1}]];
+parameter`ci`string=ToString[NumberForm[parameter`ci,{3,2}]];
 
 
 (* ::Chapter:: *)
@@ -273,8 +273,8 @@ c3 = c2 - c1;
 
 
 config`c1c2=<|
-"1.0"->{c1->1.735615447693526,c2->0.3291941389962671},
-"1.5"->{c1->1.288084560330264,c2->0.4203262639337118}
+"1.00"->{c1->1.735615447693526,c2->0.3291941389962671},
+"1.50"->{c1->1.288084560330264,c2->0.4203262639337118}
 |>;
 
 

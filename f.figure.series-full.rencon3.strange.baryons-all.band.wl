@@ -96,7 +96,7 @@ git`root`dir=StringCases[ExpandFileName[file`name],StartOfString~~((WordCharacte
 
 parameter`order`string=ToString[parameter`order]
 parameter`lambda0`string=ToString[NumberForm[parameter`lambda0,{3,2}]]
-parameter`ci`string=ToString[NumberForm[parameter`ci,{2,1}]]
+parameter`ci`string=ToString[NumberForm[parameter`ci,{3,2}]]
 
 
 (* ::Chapter:: *)
@@ -664,7 +664,7 @@ legend`ps1={
 
 
 fig`baryons`ge`charge=fun`fig`gegm`cn[
-fig`interval`modi[[1,{4,1,3,6},3]],
+fig`interval`modi[[1,{4,3,6,1},3]],
 framelabel`ge,
 legend`t1,
 legend`ps1,
@@ -721,7 +721,7 @@ legend`ps3= {
 
 
 fig`baryons`gm`charge=fun`fig`gegm`cn[
-fig`interval`modi[[2,{4,1,3,6},3]],
+fig`interval`modi[[2,{4,3,6,1},3]],
 framelabel`gm,
 legend`t1,
 legend`ps3,
