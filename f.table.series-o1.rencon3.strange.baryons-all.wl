@@ -58,7 +58,7 @@ NotebookWrite[cell`title,Cell[FileNameSplit[filename][[-1]],"Title"]]
 
 input`simulation={"C:\\octet.formfactor\\Numeric.series-o1.rencon3\\
 f.table.series-o1.rencon3.strange.baryons-all.wl",
-"o1",0.90,1.50};
+"o1",0.80,1.50};
 
 
 (* ::Text:: *)
@@ -69,7 +69,7 @@ f.table.series-o1.rencon3.strange.baryons-all.wl",
 (*\:5f15\:5165\:547d\:4ee4\:884c\:53c2\:6570, 1 \:7528\:4f5c\:5b9e\:9645\:811a\:672c\:8fd0\:884c, 2\:7528\:4f5c\:8c03\:8bd5*)
 
 
-input`cml={$ScriptCommandLine,input`simulation}[[2]];
+input`cml={$ScriptCommandLine,input`simulation}[[1]];
 
 
 (* ::Text:: *)
@@ -89,7 +89,7 @@ ToExpression[input`cml[[4]]]
 Print["----------------------------"];
 
 
-git`root`dir=StringCases[NotebookDirectory[],StartOfString~~((WordCharacter|":"|"\\")..)~~"octet.formfactor"][[1]]
+git`root`dir=StringCases[ExpandFileName[file`name],StartOfString~~((WordCharacter|":"|"\\")..)~~"octet.formfactor"][[1]]
 
 
 parameter`order`string=ToString[parameter`order]
@@ -132,10 +132,17 @@ Module[{tename1},
 mfile`baryons`series=If[
 StringMatchQ[parameter`lambda0`string,"0.90"] && StringMatchQ[parameter`ci`string,("1.00"|"1.50")],
 
-FileNames[StartOfString~~"data`baryons`series-o1`L-"~~parameter`lambda0`group`string~~"`ci-"~~parameter`ci`string~~".m",
+FileNames[StartOfString~~"data.baryons.series-"~~
+parameter`order`string~~
+".L-"~~parameter`lambda0`group`string~~".ci-"~~parameter`ci`string~~".m",
 input`dir],
 
-tename1=First[FileNames[StartOfString~~"data`baryons`series-o1`L-"~~parameter`lambda0`group`string~~"`ci-"~~parameter`ci`string~~".m",input`dir]];
+tename1=First[
+FileNames[StartOfString~~"data.baryons.series-"~~
+parameter`order`string~~
+".L-"~~parameter`lambda0`group`string~~".ci-"~~parameter`ci`string~~".m",
+input`dir]
+];
 {tename1,tename1,tename1}
 
 ]
@@ -195,7 +202,7 @@ gegm=2;io=1;clus=3;(*clus 3 is the calculated total value *)
 data`baryons`series[[All,All,clus]]=Table[
 
 te`data=data`baryons`series`raw[[All,gegm,io,clus]];
-te`data[[2]]\[PlusMinus]Mean[Abs[te`data[[{1,3}]]-te`data[[2]]]]
+PlusMinus[te`data[[2]],Mean[Abs[te`data[[{1,3}]]-te`data[[2]]]]]
 
 ,{gegm,1,2,1}
 ,{io,1,8,1}
@@ -224,6 +231,10 @@ data`baryons`series`trim=Map[NumberForm[Chop[#1,choplimit],{6,3}]&,data`baryons`
 
 (* ::Input:: *)
 (*data`baryons`series`trim//Dimensions*)
+
+
+(* ::DisplayFormula:: *)
+(*data`baryons`series`trim,{2,8,6},{gegm,io,cluster}*)
 
 
 (* ::Section:: *)
@@ -304,7 +315,7 @@ data`background
 ,1
 ]
 ,FontSize->tab`fontsize
-]
+];
 
 
 gegm=2;
@@ -325,35 +336,7 @@ data`background
 ,1
 ]
 ,FontSize->tab`fontsize
-]
-
-
-(* ::Chapter:: *)
-(*export*)
-
-
-output`dir=FileNameJoin[{git`root`dir,"/expression-results/"}]
-
-
-output`name`ge=FileNameJoin[{output`dir,
-"series`"<>
-parameter`order<>
-"`ge`total.ci-"<>
-parameter`ci`string
-<>".pdf"
-}]
-output`name`gm=FileNameJoin[{output`dir,
-"series`"<>
-parameter`order<>
-"`gm`total.ci-"<>
-parameter`ci`string
-<>".pdf"
-}]
-
-
-(* ::Input:: *)
-(*Export[output`name`ge,series`ge`total];*)
-(*Export[output`name`gm,series`gm`total];*)
+];
 
 
 (* ::Chapter:: *)
@@ -363,7 +346,7 @@ parameter`ci`string
 Print["----------------------------","\n","output directory","\n","----------------------------"];
 
 
-output`dir=FileNameJoin[{git`root`dir,"/expression-mfiles/"}]
+output`dir=FileNameJoin[{git`root`dir,"/expression-results/"}]
 
 
 Print["----------------------------","\n","output file name","\n","----------------------------"];
@@ -372,16 +355,22 @@ Print["----------------------------","\n","output file name","\n","-------------
 output`name`list={
 (*++++++++++++++++*)
 FileNameJoin[{output`dir,
-"fig.calc.baryons.ge.tot."<>
-"L-"<>parameter`lambda0`string<>
-".ci-"<>parameter`ci`string<>
-".m"
+"series."<>
+parameter`order<>
+".ge.L-"<>
+parameter`lambda0`string<>
+".ci-"<>
+parameter`ci`string<>
+".pdf"
 }],
 FileNameJoin[{output`dir,
-"fig.calc.baryons.gm.tot."<>
-"L-"<>parameter`lambda0`string<>
-".ci-"<>parameter`ci`string<>
-".m"
+"series."<>
+parameter`order<>
+".gm.L-"<>
+parameter`lambda0`string<>
+".ci-"<>
+parameter`ci`string<>
+".pdf"
 }]
 (*++++++++++++++++*)
 }
@@ -389,8 +378,8 @@ FileNameJoin[{output`dir,
 
 output`file`list={
 (*+++++++++++++++++++++*)
-fig`calc`baryons`ge`total,
-fig`calc`baryons`gm`total
+series`ge`total,
+series`gm`total
 (*+++++++++++++++++++++*)
 };
 
