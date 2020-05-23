@@ -1,8 +1,10 @@
+# parameters: filename, order, lambda0, ci, curveopacity, errobarmarkers, markersopacity
+
 # wolframscript.exe -print "all" -file .\f.figure.series-full.rencon3.strange.baryons-all.band.wl "full" 0.90 1.50 1 "bands" 0.1 
 
 $curveopacity=1
 $markers="Bands"
-$markopacity=0.14 
+$markopacity=0 
 
 ## ordinary configurations
 
