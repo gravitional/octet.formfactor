@@ -8,32 +8,27 @@
 (*initial 1*)
 
 
-(* ::Text:: *)
-(*\:538b\:5236\:62a5\:9519\:ff1a\:6ca1\:6709\:5f00\:542f\:524d\:7aef*)
-
-
-Off[FrontEndObject::notavail]
-
-
-(* ::Text:: *)
+Once[
+If[
+(* if $ScriptCommandLine==={}, the environment is frontend*)
+SameQ[$ScriptCommandLine,{}],
+(*if execute in the frontend mode, refresh the title name*)
+CompoundExpression[
 (*\:6587\:4ef6\:7edd\:5bf9\:8def\:5f84*)
-
-
-filename=NotebookFileName[]
-
-
-(* ::Text:: *)
-(*\:5355\:5143\:5bf9\:8c61\:ff1a\:7b2c\:4e00\:4e2a\:5355\:5143*)
-
-
-cell`title=Cells[][[1]];
-
-
-(* ::Text:: *)
+filename=NotebookFileName[],
+(*\:5355\:5143\:5bf9\:8c61,\:7b2c\:4e00\:4e2a\:5355\:5143*)
+cell`title=Cells[][[1]],
 (*\:5237\:65b0\:7b2c\:4e00\:4e2a\:5355\:5143\:7684\:540d\:5b57*)
-
-
-NotebookWrite[cell`title,Cell[FileNameSplit[filename][[-1]],"Title"]]
+NotebookWrite[cell`title,Cell[FileNameSplit[filename][[-1]],"Title"]],
+(*if execute in commandline mode, print a ready message*)
+git`root`dir=StringCases[NotebookDirectory[],StartOfString~~((WordCharacter|":"|"\\")..)~~"octet.formfactor"][[1]]
+(*add the base git root dir*)
+],
+CompoundExpression[
+Print["Ready to execute this script"]
+]
+]
+]
 
 
 (* ::Text:: *)
@@ -60,9 +55,17 @@ NotebookWrite[cell`title,Cell[FileNameSplit[filename][[-1]],"Title"]]
 (*parameter`marker, "Bars","Fences","Points", "Ellipses","Bands"*)
 
 
+(* ::DisplayFormula:: *)
+(*file`name,parameter`order,parameter`lambda0,parameter`ci,*)
+(*calc`point`opacity,calc`errobar`marker,calc`errobar`opacity,*)
+(*expr`errobar`style,expr`opacity*)
+
+
 input`simulation={"C:\\octet.formfactor\\Numeric.series-o1.rencon3\\
-f.figure.series-full.rencon3.strange.baryons-all.band.wl",
-"full",0.90,1.50,1,"Bands",0.1};
+f.figure.series-full.rencon3.strange.baryons-all.band.wl","full",0.90,1.50,
+1,"Bands",0,
+3,1
+};
 
 
 (* ::Text:: *)
@@ -73,7 +76,13 @@ f.figure.series-full.rencon3.strange.baryons-all.band.wl",
 (*\:5f15\:5165\:547d\:4ee4\:884c\:53c2\:6570, 1 \:7528\:4f5c\:5b9e\:9645\:811a\:672c\:8fd0\:884c, 2\:7528\:4f5c\:8c03\:8bd5*)
 
 
-input`cml={$ScriptCommandLine,input`simulation}[[1]];
+If[
+SameQ[$ScriptCommandLine,{}],
+(*if execute in the frontend mode, refresh the title name*)
+input`cml=input`simulation,
+(*if execute in commandline mode, use $ScriptCommandLine as parameters*)
+input`cml=$ScriptCommandLine
+];
 
 
 (* ::Text:: *)
@@ -84,20 +93,13 @@ Print["----------------------------","\n","the parameter order, lambda, ci is","
 
 
 {
-file`name,
-parameter`order,
-parameter`lambda0,
-parameter`ci,
-curve`opacity,
-parameter`marker,
-mark`opacity
+file`name,parameter`order,parameter`lambda0,parameter`ci,
+calc`point`opacity,calc`errobar`style,calc`errobar`opacity,
+expr`errobar`style,expr`opacity
 }={
-input`cml[[1]],input`cml[[2]],
-ToExpression[input`cml[[3]]],
-ToExpression[input`cml[[4]]],
-ToExpression[input`cml[[5]]],
-ToString[input`cml[[6]]],
-ToExpression[input`cml[[7]]]
+input`cml[[1]],input`cml[[2]],ToExpression[input`cml[[3]]],ToExpression[input`cml[[4]]],
+ToExpression[input`cml[[5]]],ToString[input`cml[[6]]],ToExpression[input`cml[[7]]],
+ToExpression[input`cml[[8]]],ToExpression[input`cml[[9]]]
 }
 
 
@@ -394,6 +396,51 @@ data`precision
 
 
 (* ::Chapter:: *)
+(*experiment*)
+
+
+(* ::Section:: *)
+(*import experiment data*)
+
+
+dir`expr=FileNameJoin[{git`root`dir,"/experiment/"}]
+
+
+Module[{tename1,tename2},
+
+file`list=FileNames[StartOfString~~__~~".m",
+dir`expr
+]
+
+
+];
+(*++++++++++++++++++++display+++++++++++++++++++++*)
+Print["----------------------------","\n",".m files list","\n","----------------------------"];
+StringRiffle[file`list]
+
+
+(assoc`expr`raw=Map[Get,file`list,{-1}]//First);
+
+
+assoc`expr`raw//Dimensions
+
+
+(* ::DisplayFormula:: *)
+(*assoc`expr`raw,{4},{ge.n,ge.p,gm.n,gm.p}*)
+
+
+(* ::Text:: *)
+(*\:6570\:636e\:7684\:6b21\:5e8f\:662f*)
+
+
+(* ::DisplayFormula:: *)
+(*ge.n,ge.p,gm.n,gm.p*)
+
+
+assoc`expr=assoc`expr`raw;
+
+
+(* ::Chapter:: *)
 (*draw*)
 
 
@@ -466,21 +513,14 @@ fontsize`frame`tick=AbsoluteThickness[1.5];
 fig`legend`magni=1;
 
 
-legend`markersize={{50,8}};
+legend`markersize={40,4};
 
 
 (* ::Text:: *)
 (*\:56fe\:4f8b\:7684\:6587\:5b57\:5927\:5c0f*)
 
 
-legend`text`size=14;
-
-
-(* ::Text:: *)
-(*\:9ed8\:8ba4\:7684\:66f2\:7ebf\:95f4\:586b\:5145\:900f\:660e\:5ea6*)
-
-
-style`opacity=Opacity[0];
+legend`text`size=10;
 
 
 (* ::Text:: *)
@@ -520,17 +560,17 @@ fun`style`line[a_,b_,c_]:=Directive[style`line`thick,style`line`type[[a]],style`
 
 style`line=Range[8];
 style`line[[{1,3,4,6}]]={
-(*1*)fun`style`line[3,1,curve`opacity],
-(*3*)fun`style`line[2,2,curve`opacity],
-(*4*)fun`style`line[1,3,curve`opacity],
-(*6*)fun`style`line[4,4,curve`opacity]
+(*1*)fun`style`line[3,1,calc`point`opacity],
+(*3*)fun`style`line[2,2,calc`point`opacity],
+(*4*)fun`style`line[1,3,calc`point`opacity],
+(*6*)fun`style`line[4,4,calc`point`opacity]
 };
 
 style`line[[{2,5,7,8}]]={
-(*2*)fun`style`line[2,2,curve`opacity],
-(*5*)fun`style`line[1,3,curve`opacity],
-(*7*)fun`style`line[4,4,curve`opacity],
-(*8*)fun`style`line[3,1,curve`opacity]
+(*2*)fun`style`line[2,2,calc`point`opacity],
+(*5*)fun`style`line[1,3,calc`point`opacity],
+(*7*)fun`style`line[4,4,calc`point`opacity],
+(*8*)fun`style`line[3,1,calc`point`opacity]
 };
 
 
@@ -585,17 +625,141 @@ Directive[fontsize`frame`tick,FontSize->fontsize`frame`text,Black]
 (************************************)
 
 
+(* ::Text:: *)
+(*\:7ed8\:5236\:5b9e\:9a8c\:6570\:636e\:7684\:6563\:70b9\:56fe\:ff0c\:53ef\:4ee5\:8bbe\:7f6e\:70b9\:7684\:6837\:5f0f*)
+
+
+(* ::DisplayFormula:: *)
+(*assoc`expr,{4}*)
+
+
+(* ::DisplayFormula:: *)
+(*PlotLegends->Placed[*)
+(*(Style[#1,FontFamily->"Times New Roman",FontSize->10]&)/@Keys[assoc`expr[[inde]]],*)
+(*{*)
+(*{0.5,0.5},*)
+(*{0,0}*)
+(*}*)
+
+
+expr`color={Opacity[expr`opacity],Black};
+
+
+marker`expr`point={
+Graphics[Circle[{0,0},1]],
+Graphics[Disk[{0,0},1]],
+Graphics[Line[{{-0.5,-0.5},{0.5,-0.5},{0.5,0.5},{-0.5,0.5},{-0.5,-0.5}}]],
+Graphics[{Sequence@@expr`color,Polygon[{{-0.5,-0.5},{0.5,-0.5},{0.5,0.5},{-0.5,0.5}}]}]
+};
+
+
+marker`exper`errobar=<|
+"WhiskerStyle"->Directive[Sequence@@expr`color,AbsoluteThickness[1.0]],(*\:7ad6\:7ebf\:7684style*)
+"FenceStyle"->Directive[Sequence@@expr`color,AbsoluteThickness[1.0]](*\:6a2a\:7ebffence \:7684style*)
+|>;
+
+
+(* ::Text:: *)
+(*\:56fe\:4f8b\:7684\:4f4d\:7f6e*)
+
+
+legend`position`calc={
+  {0.75,0.65},(*anchor position*)
+  {0.,0.}(*legend anchor*)
+};
+
+
+(* ::Text:: *)
+(*\:6309\:7167 ge.n, ge.p, gm.n, gm.p \:7684\:6b21\:5e8f*)
+
+
+legend`position`expr={
+{
+   {0.40,0.65},(*anchor position*)
+   {0,0}(*legend anchor*)
+},
+
+{
+   {0.256,0.74},(*anchor position*)
+   {0,0}(*legend anchor*)
+},
+
+{
+   {0.40,0.65},(*anchor position*)
+   {0,0}(*legend anchor*)
+},
+
+{
+   {0.40,0.70},(*anchor position*)
+   {0,0}(*legend anchor*)
+}
+
+};
+
+
+(* ::Text:: *)
+(*\:5bf9\:5b9e\:9a8c\:6570\:636e\:4f5c\:56fe*)
+
+
+marker`expr`sequence[style_,inde_]:=
+Part[
+{
+{
+PlotMarkers->{marker`expr`point[[4]],Offset[2]},
+IntervalMarkers->"Fences",
+IntervalMarkersStyle-> marker`exper`errobar
+},
+
+{
+PlotMarkers->Automatic,
+IntervalMarkers->Automatic,
+IntervalMarkersStyle->Automatic
+},
+
+{
+PlotMarkers->Automatic,
+IntervalMarkers->Automatic,
+IntervalMarkersStyle->Automatic,
+PlotLegends->Placed[
+(Style[#1,FontFamily->"Times New Roman",FontSize->10]&)/@Keys[assoc`expr[[inde]]],
+legend`position`expr[[inde]]
+]
+}
+},
+style
+];
+
+
+fig`expr=Table[
+
+ListPlot[
+Values[assoc`expr[[inde]]],
+PlotRange->{Full,Full},
+AxesOrigin->{0,0},
+PlotRangePadding->{{0,0},{Scaled[0.09],Scaled[0.12]}},
+PlotRangeClipping->True,
+ClippingStyle->Automatic,
+Sequence@@marker`expr`sequence[expr`errobar`style,inde]
+]
+
+,{inde,1,4,1}
+];
+
+
+(* ::Text:: *)
+(*\:7ed8\:5236\:8ba1\:7b97\:6570\:636e\:7684\:5e26\:72b6\:56fe\:ff0cerrobar \:53ef\:4ee5\:901a\:8fc7\:8bbe\:7f6e\:900f\:660e\:5ea6\:4e0d\:663e\:793a*)
+
+
 fig`interval=Table[
 
 ListLinePlot[
 data`interval[[gegm,io,trlp]],
 PlotStyle->style`line[[io]],
 PlotRange->{Full,Full},
-PlotRangePadding->{{0,0},{Scaled[0.09],Scaled[0.09]}},
-PlotRangeClipping->True,
-ClippingStyle->Automatic,
-IntervalMarkers->parameter`marker,
-IntervalMarkersStyle-> Directive[Opacity[mark`opacity]]
+AxesOrigin->{0,0},
+PlotRangePadding->{{0,0},{Scaled[0.09],Scaled[0.12]}},
+IntervalMarkers->calc`errobar`style,
+IntervalMarkersStyle-> Directive[Opacity[calc`errobar`opacity]]
 ]
 
 ,{gegm,1,2,1}
@@ -670,7 +834,8 @@ Show[
 (Sequence@@fig`interval`modi),
 (*Show \:63a5\:53d7sequence \:5e8f\:5217*) 
 ImageSize->Large,
-PlotRange->All,
+PlotRange->{{0,1},All},
+AxesOrigin->{0,0},
 PlotRangePadding->{{0,0},{Scaled[0.09],Scaled[0.12]}},
 Frame->True,
 FrameLabel->framelabel,
@@ -712,20 +877,33 @@ legend`ps
 (*\:6309\:7167 ne, \[CapitalSigma]0, \[CapitalLambda], \[CapitalXi]0, {5,2,8,7}*)
 
 
+(* ::Text:: *)
+(*\:56fe\:4f8b\:7684\:4f4d\:7f6e*)
+
+
+(* ::DisplayFormula:: *)
+(*legend`position`calc={*)
+(*  {0.75,0.68},(*anchor position*)*)
+(*  {0.,0.}(*legend anchor*)*)
+(*};*)
+
+
+(* ::Text:: *)
+(*************************************)
+
+
 legend`t1={"p","\!\(\*SuperscriptBox[\(\[CapitalSigma]\), \(+\)]\)","\!\(\*SuperscriptBox[\(\[CapitalSigma]\), \(-\)]\)","\!\(\*SuperscriptBox[\(\[CapitalXi]\), \(-\)]\)"};
 
 
-legend`ps1={
-  {0.78,0.72},(*anchor position*)
-  {0.,0.}(*legend anchor*)
-};
-
-
+inde=2;
 fig`baryons`ge`charge=fun`fig`gegm`cn[
+Join[
 fig`interval`modi[[1,{4,3,6,1},3]],
+{fig`expr[[inde]]}
+],
 framelabel`ge,
 legend`t1,
-legend`ps1,
+legend`position`calc,
 style`legend1
 ];
 
@@ -751,11 +929,15 @@ legend`ps2= {
   };
 
 
+inde=1;
 fig`baryons`ge`neutral=fun`fig`gegm`cn[
+Join[
 fig`interval`modi[[1,{2,5,7,8},3]],
+{fig`expr[[inde]]}
+],
 framelabel`ge,
 legend`t2,
-legend`ps2,
+legend`position`calc,
 style`legend2
 ];
 
@@ -778,11 +960,15 @@ legend`ps3= {
   };
 
 
+inde=4;
 fig`baryons`gm`charge=fun`fig`gegm`cn[
+Join[
 fig`interval`modi[[2,{4,3,6,1},3]],
+{fig`expr[[inde]]}
+],
 framelabel`gm,
 legend`t1,
-legend`ps3,
+legend`position`calc,
 style`legend1
 ];
 
@@ -805,11 +991,15 @@ legend`ps4= {
   };
 
 
+inde=3;
 fig`baryons`gm`neutral=fun`fig`gegm`cn[
+Join[
 fig`interval`modi[[2,{2,5,7,8},3]],
+{fig`expr[[inde]]}
+],
 framelabel`gm,
 legend`t2,
-legend`ps4,
+legend`position`calc,
 style`legend2
 ];
 

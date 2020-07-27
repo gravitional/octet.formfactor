@@ -8,32 +8,27 @@
 (*initial 1*)
 
 
-(* ::Text:: *)
-(*\:538b\:5236\:62a5\:9519\:ff1a\:6ca1\:6709\:5f00\:542f\:524d\:7aef*)
-
-
-Off[FrontEndObject::notavail]
-
-
-(* ::Text:: *)
+Once[
+If[
+(* if $ScriptCommandLine==={}, the environment is frontend*)
+SameQ[$ScriptCommandLine,{}],
+(*if execute in the frontend mode, refresh the title name*)
+CompoundExpression[
 (*\:6587\:4ef6\:7edd\:5bf9\:8def\:5f84*)
-
-
-filename=NotebookFileName[]
-
-
-(* ::Text:: *)
-(*\:5355\:5143\:5bf9\:8c61\:ff1a\:7b2c\:4e00\:4e2a\:5355\:5143*)
-
-
-cell`title=Cells[][[1]];
-
-
-(* ::Text:: *)
+filename=NotebookFileName[],
+(*\:5355\:5143\:5bf9\:8c61,\:7b2c\:4e00\:4e2a\:5355\:5143*)
+cell`title=Cells[][[1]],
 (*\:5237\:65b0\:7b2c\:4e00\:4e2a\:5355\:5143\:7684\:540d\:5b57*)
-
-
-NotebookWrite[cell`title,Cell[FileNameSplit[filename][[-1]],"Title"]]
+NotebookWrite[cell`title,Cell[FileNameSplit[filename][[-1]],"Title"]],
+(*if execute in commandline mode, print a ready message*)
+git`root`dir=StringCases[NotebookDirectory[],StartOfString~~((WordCharacter|":"|"\\")..)~~"octet.formfactor"][[1]]
+(*add the base git root dir*)
+],
+CompoundExpression[
+Print["Ready to execute this script"]
+]
+]
+]
 
 
 (* ::Text:: *)
