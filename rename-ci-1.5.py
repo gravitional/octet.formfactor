@@ -4,13 +4,14 @@ import os,shutil,time,gfm
 user_name='tom'
 # 配置计算结果目录，论文目录，论文压缩文件目录
 originpath=os.getcwd()
+result_path=os.path.join(originpath,'expression-results/')
 paper_path=os.path.join('/home',user_name,'private','paper-2.prd/')
 desk_path=os.path.join('/home',user_name,'Desktop','paper.ff/')
 # 复制计算结果到论文目录
-shutil.copy('fig.baryons.ge.charge.L-0.90.ci-1.50.pdf', paper_path+'fig4.pdf') 
-shutil.copy('fig.baryons.ge.neutral.L-0.90.ci-1.50.pdf', paper_path+'fig5.pdf') 
-shutil.copy('fig.baryons.gm.charge.L-0.90.ci-1.50.pdf', paper_path+'fig2.pdf') 
-shutil.copy('fig.baryons.gm.neutral.L-0.90.ci-1.50.pdf', paper_path+'fig3.pdf') 
+shutil.copy(os.path.join(result_path,'fig.baryons.ge.charge.L-0.90.ci-1.50.pdf'),os.path.join(paper_path,'fig4.pdf')) 
+shutil.copy(os.path.join(result_path,'fig.baryons.ge.neutral.L-0.90.ci-1.50.pdf'),os.path.join(paper_path,'fig5.pdf')) 
+shutil.copy(os.path.join(result_path,'fig.baryons.gm.charge.L-0.90.ci-1.50.pdf'),os.path.join(paper_path,'fig2.pdf')) 
+shutil.copy(os.path.join(result_path,'fig.baryons.gm.neutral.L-0.90.ci-1.50.pdf'),os.path.join(paper_path,'fig3.pdf')) 
 # cd 到论文目录，重新编译论文
 os.chdir(paper_path)
 os.system('./build.sh')

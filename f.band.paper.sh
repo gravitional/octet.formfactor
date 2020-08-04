@@ -9,11 +9,16 @@
 
 curveopacity=1
 markers="Bands"
-markopacity="{0,0,0,0.1,0.1,0,0,0}" 
-expr_marker=3
+markopacity_normal="{0,0,0,0,0,0,0,0}" 
+markopacity_unnormal="{0,0,0,0.2,0.2,0,0,0}" 
+expr_marker=4
 expr_opacity=1
-whether_normal="unnormal"
+normal="normal"
+unnormal="unnormal"
 
 ## ordinary configurations
 
-wolframscript -print "all" -file f.figure.series-full.rencon3.strange.baryons-all.band.wl "full" 0.90 1.50 $curveopacity $markers $markopacity $expr_marker $expr_opacity $whether_normal
+wolframscript -print "all" -file f.figure.series-full.rencon3.strange.baryons-all.band.wl "full" 0.90 1.50 $curveopacity $markers $markopacity_normal $expr_marker $expr_opacity $normal
+
+wolframscript -print "all" -file f.figure.series-full.rencon3.strange.baryons-all.band.wl "full" 0.90 1.50 $curveopacity $markers $markopacity_unnormal $expr_marker $expr_opacity $unnormal
+

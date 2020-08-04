@@ -5,7 +5,7 @@
 
 
 (* ::Chapter:: *)
-(*initial 1*)
+(*initial*)
 
 
 Once[
@@ -31,6 +31,8 @@ Print["Ready to execute this script"]
 ]
 ]
 ]
+(*\:5b9a\:4e49\:4e00\:4e2a\:5e38\:7528\:7684\:6253\:5370\:51fd\:6570*)
+echo[x_]:=Print["----------------------------","\n",ToString[x],"\n","----------------------------"];
 
 
 (* ::Text:: *)
@@ -39,10 +41,6 @@ Print["Ready to execute this script"]
 
 (* ::Text:: *)
 (*series full calc scripts*)
-
-
-(* ::Chapter:: *)
-(*initial parameters*)
 
 
 (* ::Text:: *)
@@ -59,19 +57,11 @@ Print["Ready to execute this script"]
 
 (* ::DisplayFormula:: *)
 (*file`name,parameter`order,parameter`lambda0,parameter`ci,*)
-(*calc`point`opacity,calc`errobar`marker,calc`errobar`opacity,*)
-(*expr`errobar`style,expr`opacity*)
 
 
-input`simulation={"/home/tom/octet.formfactor/Numeric.series-o1.rencon3/
-f.figure.series-full.rencon3.strange.baryons-all.band.wl","full",0.90,1.50,
-1,"Bands","{1,1,1,0.2,0.2,1,1,1}",
-3,1
+input`simulation={"/home/tom/octet.formfactor/f.figure.series-full.rencon3.strange.baryons-all.band.wl",
+"<|\"a\" -> 1, \"b\" -> {323, \"dsf\", 3}|>"
 };
-
-
-(* ::Text:: *)
-(*"test.wl" "full" 0.90 1.50 1 "Bands" "{1,1,1,0.2,0.2,1,1,1}" 3 1*)
 
 
 (* ::Text:: *)
@@ -91,37 +81,24 @@ input`cml=$ScriptCommandLine
 ];
 
 
-(* ::Text:: *)
-(*+++++++++++++++++++++++++++++++++*)
+(*\:6307\:5b9a\:57fa\:672c\:53c2\:6570\:ff0c\:6587\:4ef6\:540d*)
+file`name=If[StringQ[input`cml[[1]]],input`cml[[1]],ToString[input`cml[[1]]]];
 
 
-Print["----------------------------","\n","the parameter order, lambda, ci is","\n","----------------------------"];
+echo["the parameter inputed is"]
 
 
-(* ::Text:: *)
-(*ToExpression \:9ed8\:8ba4\:662f InputForm*)
+input`cml
 
 
-{
-file`name,parameter`order,parameter`lambda0,parameter`ci,
-calc`point`opacity,calc`errobar`style,calc`errobar`opacity,
-expr`errobar`style,expr`opacity
-}={
-input`cml[[1]],input`cml[[2]],ToExpression[input`cml[[3]]],ToExpression[input`cml[[4]]],
-ToExpression[input`cml[[5]]],ToString[input`cml[[6]]],ToExpression[input`cml[[7]]],
-ToExpression[input`cml[[8]]],ToExpression[input`cml[[9]]]
-}
-
-
-Print["----------------------------"];
+echo["the git`local`name is"]
 
 
 git`local`name=FileNameJoin[Append[TakeWhile[FileNameSplit[ExpandFileName[file`name]],UnsameQ[#1,git`remote`name]&],git`remote`name]]
 
 
-parameter`order`string=ToString[parameter`order]
-parameter`lambda0`string=ToString[NumberForm[parameter`lambda0,{3,2}]]
-parameter`ci`string=ToString[NumberForm[parameter`ci,{3,2}]]
+(* ::Chapter:: *)
+(*test*)
 
 
-
+ToExpression[input`cml[[2]],InputForm]
