@@ -31,8 +31,6 @@ Print["Ready to execute this script"]
 ]
 ]
 ]
-(*\:5b9a\:4e49\:4e00\:4e2a\:5e38\:7528\:7684\:6253\:5370\:51fd\:6570*)
-echo[x_]:=Print["----------------------------","\n",ToString[x],"\n","----------------------------"];
 
 
 (* ::Text:: *)
@@ -63,14 +61,12 @@ echo[x_]:=Print["----------------------------","\n",ToString[x],"\n","----------
 (*file`name,parameter`order,parameter`lambda0,parameter`ci,*)
 (*calc`point`opacity,calc`errobar`marker,calc`errobar`opacity,*)
 (*expr`errobar`style,expr`opacity*)
-(*whether`normal*)
 
 
 input`simulation={"/home/tom/octet.formfactor/Numeric.series-o1.rencon3/
 f.figure.series-full.rencon3.strange.baryons-all.band.wl","full",0.90,1.50,
-1,"Bands","{0,0,0,0.1,0.1,0,0,0}",
-3,1,
-"unnormal"(*\:662f\:5426\:5bf9\:6570\:636e\:8fdb\:884c\:5f52\:4e00\:5316*)
+1,"Bands","{0,0,0,0.2,0.2,0,0,0}",
+3,1
 };
 
 
@@ -95,23 +91,21 @@ input`cml=$ScriptCommandLine
 (*+++++++++++++++++++++++++++++++++*)
 
 
-echo["the parameter order, lambda, ci is"]
+Print["----------------------------","\n","the parameter order, lambda, ci is","\n","----------------------------"];
 
 
 {
 file`name,parameter`order,parameter`lambda0,parameter`ci,
 calc`point`opacity,calc`errobar`style,calc`errobar`opacity,
-expr`errobar`style,expr`opacity,
-whether`normal
+expr`errobar`style,expr`opacity
 }={
 input`cml[[1]],input`cml[[2]],ToExpression[input`cml[[3]]],ToExpression[input`cml[[4]]],
 ToExpression[input`cml[[5]]],ToString[input`cml[[6]]],ToExpression[input`cml[[7]]],
-ToExpression[input`cml[[8]]],ToExpression[input`cml[[9]]],
-ToString[input`cml[[10]]]
+ToExpression[input`cml[[8]]],ToExpression[input`cml[[9]]]
 }
 
 
-echo["----------------------------"]
+Print["----------------------------"];
 
 
 git`local`name=FileNameJoin[Append[TakeWhile[FileNameSplit[ExpandFileName[file`name]],UnsameQ[#1,git`remote`name]&],git`remote`name]]
@@ -186,7 +180,7 @@ directory`fig]];
 ]
 ];
 (*++++++++++++++++++++display+++++++++++++++++++++*)
-echo[".m files list"]
+Print["----------------------------","\n",".m files list","\n","----------------------------"];
 StringRiffle[nb`list]
 
 
@@ -195,103 +189,6 @@ StringRiffle[nb`list]
 
 (* ::DisplayFormula:: *)
 (*fig`baryons`origin,{2,3,8,3},{gegm,conf,io,trlp}*)
-
-
-(* ::Section:: *)
-(*import series-o0*)
-
-
-(* ::Text:: *)
-(*\:5bfc\:5165\:96f6\:70b9\:503c\:7684\:6587\:4ef6*)
-
-
-(* ::DisplayFormula:: *)
-(*{\[CapitalLambda], ci}->*)
-
-
-(* ::DisplayFormula:: *)
-(*{0.8,1.0} ,{0.9,1.0} ,*)
-
-
-(* ::DisplayFormula:: *)
-(*{1.0,1.0},{0.8,1.5} ,*)
-
-
-(* ::DisplayFormula:: *)
-(*{0.9,1.5},{1.0,1.5}*)
-
-
-directory`series`o0=FileNameJoin[{git`local`name,"/expression-mfiles/"}]
-
-
-(* ::Text:: *)
-(*parameter`lambda0`group`string =={0.80,0.90,1.00}*)
-
-
-Module[{tename1,tename2},
-
-nb`list=If[parameter`lambda0`string==="0.90"&&parameter`ci`string==="1.50",
-(*\:5982\:679c\:662fpaper\:4e2d\:7684\:914d\:7f6e\:ff0c\:90a3\:4e48\:9700\:8981\:8ba1\:7b97band\:ff0c\:5bfc\:5165\:76f8\:90bb\:914d\:7f6e\:7684\:503c*)
-FileNames[StartOfString~~"data.baryons.series-o0.L-"~~parameter`lambda0`group`string~~".ci-"~~parameter`ci`string~~".m",
-directory`series`o0],
-(*\:5982\:679c\:4e0d\:662fpaper\:4e2d\:7684\:914d\:7f6e\:ff0c\:4e0d\:4e00\:5b9a\:8ba1\:7b97\:4e86band\:ff0c\:6240\:4ee5\:5bfc\:5165\:7684band\:662f\:81ea\:5df1\:ff0c\:6700\:540ebanb\:4e3a0\:5bbd\:5ea6*)
-tename1=First[FileNames[StartOfString~~"data.baryons.series-o0.L-"~~parameter`lambda0`group`string~~".ci-"~~parameter`ci`string~~".m",
-directory`fig]];
-{tename1,tename1,tename1}
-]
-];
-(*++++++++++++++++++++display+++++++++++++++++++++*)
-echo[".m files list"]
-StringRiffle[nb`list]
-
-
-(series`baryons`origin=Map[Get,nb`list,{-1}]);
-
-
-(* ::DisplayFormula:: *)
-(*series`baryons`origin,{3,2,8,6},{conf,gegm,io,clas}*)
-
-
-(* ::Text:: *)
-(*\:6700\:540e\:4e00\:4e2a\:6307\:6807\:662f\:6570\:636e\:7684\:7c7b\:522b\:ff0ctree, loop,total,experiment,\:4ee5\:53ca\:6587\:732e\:91cc\:7684\:6570\:503c*)
-
-
-(* ::Text:: *)
-(*\:63d0\:53d6\:51fa\:5404\:4e2a\:914d\:7f6e\:4e0b\:78c1\:77e9\:7684\:503c\:ff0c\:53ea\:8981\:8ba1\:7b97\:7684total\:503c\:ff0cclass=3*)
-
-
-series`baryons`im1=series`baryons`origin[[All,2,All,(clas=3)]];
-
-
-(* ::Text:: *)
-(*series`baryons`im1,{conf,io},{3,8}*)
-
-
-series`baryons=series`baryons`im1;
-
-
-(* ::Section:: *)
-(*amp`gegm`calc*)
-
-
-(* ::Text:: *)
-(*\:8fd9\:91cc\:7ed9\:51fagegm\:7684\:5e45\:503c\:ff0c\:540e\:9762\:662f\:5426\:5bf9\:56fe\:7684\:6570\:636e\:8fdb\:884c\:5f52\:4e00\:5316\:4f1a\:7528\:5230*)
-
-
-amp`gegm`calc=<|
-"normal"->{
-ConstantArray[1,{3,8}],
-ConstantArray[1,{3,8}]
-},
-"unnormal"->{
-ConstantArray[1,{3,8}],
-Abs[series`baryons]
-}
-|>;
-
-
-(* ::Text:: *)
-(*amp`gegm`calc[whether`normal][[gegm,conf,io]],{2,3,8}*)
 
 
 (* ::Chapter:: *)
@@ -371,10 +268,6 @@ positions`center=data`baryons[[All,2,All,All,All,1]];
 (*positions`center,{2,8,3},{gegm,io,trlp}*)
 
 
-(* ::Text:: *)
-(*\:83b7\:5f97\:8bef\:5dee\:6570\:636e\:7684\:63d2\:503c\:51fd\:6570*)
-
-
 errorbar`interp=Table[
 
 Interpolation[data`baryons[[gegm,conf,io,trlp]]]
@@ -390,37 +283,11 @@ Interpolation[data`baryons[[gegm,conf,io,trlp]]]
 (*errorbar`interp,{2,2,8,3},{gegm,config,io,trlp}*)
 
 
-(* ::Text:: *)
-(*\:83b7\:5f97\:4e2d\:5fc3\:70b9\:7684\:503c*)
-
-
-value`center`im1=data`baryons[[All,2,All,All,All,2]];
+value`center=data`baryons[[All,2,All,All,All,2]];
 
 
 (* ::DisplayFormula:: *)
 (*value`center,{2,8,3},{gegm,io,trlp}*)
-
-
-(* ::Text:: *)
-(*\:5c06\:4e2d\:5fc3\:70b9\:7684\:503c\:4e58\:4e0a\:5f52\:4e00\:5316\:7684\:5e45\:5ea6\:ff0c\:4e2d\:5fc3\:70b9\:7684\:914d\:7f6e\:662f2*)
-
-
-(* ::Text:: *)
-(*amp`gegm`calc[whether`normal],{gegm,conf,io},{2,3,8}*)
-
-
-echo["wheather the calc data normalized, print here"]
-
-
-amp`gegm`calc[whether`normal]
-
-
-value`center=Table[
-amp`gegm`calc[whether`normal][[gegm,2,io]]*value`center`im1[[gegm,io,trlp]]
-,{gegm,1,2,1}
-,{io,1,8,1}
-,{trlp,1,3,1}
-];
 
 
 (* ::Text:: *)
@@ -431,19 +298,12 @@ Off[InterpolatingFunction::dmval]
 
 
 (* ::Text:: *)
-(*\:5bf9\:4e24\:4e2a\:8bef\:5dee\:4e0a\:4e0b\:9650\:ff0c\:8fdb\:884c\:63d2\:503c\:5904\:7406\:ff0c*)
-
-
-(* ::Text:: *)
-(*\:5e76\:4e14\:5c06\:8bef\:5dee\:6570\:636e\:4e58\:4e0a\:5f52\:4e00\:5316\:7684\:5e45\:5ea6\:ff0c\:8bef\:5dee\:6570\:636e\:7684\:914d\:7f6e\:6307\:6807\:662f{1,3},\:7528\:4e0b\:5f0f\:53d6\:51fa\:8bef\:5dee\:6570\:636e\:7684\:5e45\:5ea6*)
-
-
-amp`gegm`calc`error=amp`gegm`calc[whether`normal][[All,{1,3},All]];
+(*\:5bf9\:4e24\:4e2a\:8bef\:5dee\:4e0a\:4e0b\:9650\:ff0c\:8fdb\:884c\:63d2\:503c\:5904\:7406*)
 
 
 value`asy=Table[
 
-amp`gegm`calc`error[[gegm,conf,io]]*(errorbar`interp[[gegm,conf,io,trlp]][positions`center[[gegm,io,trlp]]])
+errorbar`interp[[gegm,conf,io,trlp]][positions`center[[gegm,io,trlp]]]
 
 ,{gegm,1,2,1}
 ,{conf,1,2,1}
@@ -505,28 +365,18 @@ Mean[Abs[errorbar`asy[[gegm,All,io,trlp]]]]
 (*errorbar`asy,{2,8,3},{gegm,io,trlp}*)
 
 
-(* ::Section:: *)
-(*formatting*)
-
-
 data`precision=10^-14;
 
 
-(* ::Text:: *)
-(*\:8fd9\:91cc\:51fa\:73b0\:7684\:662f\:5f52\:4e00\:5316\:4e4b\:540e\:7684\:8ba1\:7b97\:6570\:636e*)
-
-
 Module[{tea},
-data`interval`im1=Table[
-{(*\:6a2a\:5750\:6807\:7684\:6570\:636e\:70b9*)
+data`interval=Table[
+{
 positions`center[[gegm,io,trlp,point]],
-(*\:7eb5\:5750\:6807\:7684\:6570\:636e\:70b9*)
+
 Around[
-(*\:7eb5\:5750\:6807\:7684\:4e2d\:5fc3\:70b9*)
 value`center[[gegm,io,trlp,point]],
 
 tea=errorbar`sym[[gegm,io,trlp,point]];
-(*\:52a0\:5165\:4e00\:4e2a\:5224\:65ad\:ff0c\:5e76\:7ed9\:6570\:636e\:4e58\:4e0a\:5e45\:5ea6*)
 If[tea>data`precision,
 tea,
 data`precision
@@ -544,28 +394,7 @@ data`precision
 
 
 (* ::DisplayFormula:: *)
-(*data`interval`im1,{2,8,3,2},{gegm,io,trlp,point}*)
-
-
-(* ::Text:: *)
-(*\:4e0b\:9762\:4e24\:6bb5\:5c06\:6570\:636e\:6539\:9020\:6210\:5173\:8054\:7684\:5f62\:5f0f\:ff0c\:65b9\:4fbf\:5bf9values\:8fdb\:884c\:64cd\:4f5c*)
-
-
-data`interval`im2=Map[Association[#1[[1]]->#1[[2]]]&,
-data`interval`im1,
-{-3}];
-
-
-data`interval`im3=Map[Merge[#1,First]&,
-data`interval`im2,
-{-4}];
-
-
-(* ::Text:: *)
-(*data`interval`im3,{2,8,3},{gegm,io,conf}*)
-
-
-data`interval=data`interval`im3;
+(*data`interval,{2,8,3,2},{gegm,io,trlp,point}*)
 
 
 (* ::Chapter:: *)
@@ -588,41 +417,19 @@ dir`expr
 
 ];
 (*++++++++++++++++++++display+++++++++++++++++++++*)
-echo["import experiment data"]
+Print["----------------------------","\n","import experiment data","\n","----------------------------"];
 StringRiffle[file`list]
 
 
 (assoc`expr`raw=Map[Get,file`list,{-1}]//First);
 
 
-echo["the dimensions of exper raw data"]
+Print["----------------------------","\n","the dimensions of exper raw data","\n","----------------------------"];
 assoc`expr`raw//Dimensions
 
 
 (* ::DisplayFormula:: *)
 (*assoc`expr`raw,{4},{ge.n,ge.p,gm.n,gm.p}*)
-
-
-(* ::Text:: *)
-(*\:628a\:5b9e\:9a8c\:6587\:732e\:4e2d\:7684\:6570\:636e\:6539\:6210association\:7684\:683c\:5f0f*)
-
-
-assoc`expr`im1=Map[Association[#1[[1]]->#1[[2]]]&,
-assoc`expr`raw,
-{-4}];
-
-
-(* ::Text:: *)
-(*\:628aassociation\:8054\:7ed3\:8d77\:6765*)
-
-
-assoc`expr`im2=Map[Merge[#1,First]&,
-assoc`expr`im1,
-{2}];
-
-
-(* ::Section:: *)
-(*experiment amplitude*)
 
 
 (* ::Text:: *)
@@ -633,34 +440,7 @@ assoc`expr`im1,
 (*ge.n,ge.p,gm.n,gm.p*)
 
 
-(* ::Text:: *)
-(*\:8fd9\:91cc\:7ed9\:51fagegm\:7684\:5e45\:503c\:ff0c\:6765\:4e0d\:5f52\:4e00\:5316\:4f5c\:4f5c\:56fe\:3002*)
-
-
-amp`gegm`expr=<|
-"normal"->{
-1,1,1,1
-},
-"unnormal"->{
-1,1,Abs[\[Minus]1.9130427],Abs[2.7928473446]
-}
-|>;
-
-
-(* ::Text:: *)
-(*\:5728\:8fd9\:91cc\:8bbe\:8ba1\:4e00\:4e2a\:662f\:5426\:8fdb\:884c\:5f52\:4e00\:5316\:7684\:5f00\:5173*)
-
-
-echo["wheather the experiment data normalized, print here"]
-
-
-amp`gegm`expr[whether`normal]
-
-
-assoc`expr=Table[
-amp`gegm`expr[whether`normal][[ord]]*assoc`expr`im2[[ord]]
-,{ord,1,4,1}
-];
+assoc`expr=assoc`expr`raw;
 
 
 (* ::Chapter:: *)
@@ -951,10 +731,6 @@ legend`position`expr[[inde]]
 },
 style
 ];
-
-
-(* ::Text:: *)
-(*\:5bf9\:5b9e\:9a8c\:6570\:636e\:4f5c\:56fe*)
 
 
 fig`expr=Table[

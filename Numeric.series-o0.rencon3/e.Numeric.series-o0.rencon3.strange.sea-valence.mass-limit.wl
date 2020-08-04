@@ -13,6 +13,43 @@
 
 
 (* ::Chapter:: *)
+(*initial 1*)
+
+
+Once[
+git`remote`name="octet.formfactor";
+(*\:7ed9\:51fa\:8fdc\:7a0bgit\:4ed3\:5e93\:7684\:540d\:5b57*)
+If[
+(* if $ScriptCommandLine==={}, the environment is frontend*)
+SameQ[$ScriptCommandLine,{}],
+(*if execute in the frontend mode, refresh the title name*)
+CompoundExpression[
+(*\:6587\:4ef6\:7edd\:5bf9\:8def\:5f84*)
+filename=NotebookFileName[],
+(*\:5355\:5143\:5bf9\:8c61,\:7b2c\:4e00\:4e2a\:5355\:5143*)
+cell`title=(Cells[][[1]]),
+(*\:5237\:65b0\:7b2c\:4e00\:4e2a\:5355\:5143\:7684\:540d\:5b57*)
+NotebookWrite[cell`title,Cell[FileNameSplit[filename][[-1]],"Title"]],
+(*if execute in commandline mode, print a ready message*)
+git`local`name=FileNameJoin[Append[TakeWhile[FileNameSplit[NotebookDirectory[]],UnsameQ[#1,git`remote`name]&],git`remote`name]]
+(*add the base git root dir*)
+],
+CompoundExpression[
+Print["Ready to execute this script"]
+]
+]
+]
+
+
+(* ::Text:: *)
+(*********************************** notebook \:5907\:5fd8\:5f55*)
+
+
+(* ::Text:: *)
+(*series full calc scripts*)
+
+
+(* ::Chapter:: *)
 (*parameters*)
 
 
@@ -26,7 +63,7 @@
 
 input`simulation={"C:\\octet.formfactor\\Numeric.series-o0.rencon3
 \\e.Numeric.series-o0.rencon3.strange.sea-valence.mass-limit.wl",
-"o0",0.80,1.00}
+"o0",1.00,1.50}
 
 
 (* ::Text:: *)
@@ -34,10 +71,16 @@ input`simulation={"C:\\octet.formfactor\\Numeric.series-o0.rencon3
 
 
 (* ::Text:: *)
-(*\:5f15\:5165\:547d\:4ee4\:884c\:53c2\:6570, 1 \:7528\:4f5c\:5b9e\:9645\:811a\:672c\:8fd0\:884c, 2\:7528\:4f5c\:8c03\:8bd5*)
+(*\:5f15\:5165\:547d\:4ee4\:884c\:53c2\:6570, \:81ea\:52a8\:5224\:65ad\:662f\:5728\:547d\:4ee4\:884c\:4e0b\:8fd0\:884c\:ff0c\:8fd8\:662f\:5728\:7b14\:8bb0\:672c\:4e2d\:8fd0\:884c*)
 
 
-input`cml={$ScriptCommandLine,input`simulation}[[1]];
+If[
+SameQ[$ScriptCommandLine,{}],
+(*if execute in the frontend mode, refresh the title name*)
+input`cml=input`simulation,
+(*if execute in commandline mode, use $ScriptCommandLine as parameters*)
+input`cml=$ScriptCommandLine
+];
 
 
 (* ::Text:: *)
@@ -57,7 +100,7 @@ ToExpression[input`cml[[4]]]
 Print["----------------------------"];
 
 
-git`root`dir=StringCases[ExpandFileName[file`name],StartOfString~~((WordCharacter|":"|"\\")..)~~"octet.formfactor"][[1]]
+git`local`name=FileNameJoin[Append[TakeWhile[FileNameSplit[NotebookDirectory[]],UnsameQ[#1,git`remote`name]&],git`remote`name]]
 
 
 parameter`order`string=ToString[parameter`order]
@@ -100,10 +143,10 @@ SetOptions[Simplify,TimeConstraint->1]
 Print["----------------------------","\n","start import analytic and coes ","\n","----------------------------"];
 
 
-analytic`dir=FileNameJoin[{git`root`dir,"analytic-storage.strange.series-"<>parameter`order`string}]
+analytic`dir=FileNameJoin[{git`local`name,"analytic-storage.strange.series-"<>parameter`order`string}]
 
 
-coe`dir=FileNameJoin[{git`root`dir,"expression-coes"}]
+coe`dir=FileNameJoin[{git`local`name,"expression-coes"}]
 
 
 fucoeandmrrlnm={
@@ -792,6 +835,10 @@ octetcharge={
 (*rencon2.13*)
 
 
+(* ::Text:: *)
+(*\:603b\:8d21\:732e=Z*A+loop, Z=1-loop*)
+
+
 rencon=Table[1,{seva,1,13,1},{io,1,8,1}];
 (*+++++++++++++++++renormalized according to charge+++++++++++++*)
 Table[
@@ -1182,7 +1229,7 @@ LightCyan,{None,LightBlue}
 Print["----------------------------","\n","output directory","\n","----------------------------"];
 
 
-output`dir=FileNameJoin[{git`root`dir,"/expression-mfiles/"}]
+output`dir=FileNameJoin[{git`local`name,"/expression-mfiles/"}]
 
 
 Print["----------------------------","\n","output file name","\n","----------------------------"];
