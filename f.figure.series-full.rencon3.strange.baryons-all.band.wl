@@ -61,14 +61,14 @@ echo[x_]:=Print["----------------------------","\n",ToString[x],"\n","----------
 
 (* ::DisplayFormula:: *)
 (*file`name,parameter`order,parameter`lambda0,parameter`ci,*)
-(*calc`point`opacity,calc`errobar`marker,calc`errobar`opacity,*)
+(*calc`point`opacity,calc`errobar`marker,calc`errobar`opacity[[gegm,io]],*)
 (*expr`errobar`style,expr`opacity*)
 (*whether`normal*)
 
 
 input`simulation={"/home/tom/octet.formfactor/f.figure.series-full.rencon3.strange.baryons-all.band.wl",
 "full",0.90,1.50,
-1,"Bands","{0,0,0,0.2,0.2,0,0,0}",
+"{1,1,1,1,1,1,1,1}","Bands","{{0,0,0,0.2,0.2,0,0,0},{0,0,0,0.2,0.2,0,0,0}}",
 4,1,
 "normal"(*\:662f\:5426\:5bf9\:6570\:636e\:8fdb\:884c\:5f52\:4e00\:5316*)
 };
@@ -98,13 +98,13 @@ input`cml=$ScriptCommandLine
 echo["the parameter order, lambda, ci is"]
 
 
-{
-file`name,parameter`order,parameter`lambda0,parameter`ci,
+{file`name,
+parameter`order,parameter`lambda0,parameter`ci,
 calc`point`opacity,calc`errobar`style,calc`errobar`opacity,
 expr`errobar`style,expr`opacity,
 whether`normal
-}={
-input`cml[[1]],input`cml[[2]],ToExpression[input`cml[[3]]],ToExpression[input`cml[[4]]],
+}={input`cml[[1]],
+input`cml[[2]],ToExpression[input`cml[[3]]],ToExpression[input`cml[[4]]],
 ToExpression[input`cml[[5]]],ToString[input`cml[[6]]],ToExpression[input`cml[[7]]],
 ToExpression[input`cml[[8]]],ToExpression[input`cml[[9]]],
 ToString[input`cml[[10]]]
@@ -122,7 +122,7 @@ parameter`lambda0`string=ToString[NumberForm[parameter`lambda0,{3,2}]]
 parameter`ci`string=ToString[NumberForm[parameter`ci,{3,2}]]
 
 
-(* ::Chapter:: *)
+(* ::Chapter::Closed:: *)
 (*import *)
 
 
@@ -294,7 +294,7 @@ Identity[series`baryons]
 (*amp`gegm`calc[whether`normal][[gegm,conf,io]],{2,3,8}*)
 
 
-(* ::Chapter:: *)
+(* ::Chapter::Closed:: *)
 (*extract data*)
 
 
@@ -356,7 +356,7 @@ DeleteDuplicates[data`baryons`raw[[gegm,conf,io,trlp]]/.data`f2->Identity]
 (*data`baryons,{2,3,8,3},{gegm,conf,io,trlp}*)
 
 
-(* ::Chapter:: *)
+(* ::Chapter::Closed:: *)
 (*Interpolation*)
 
 
@@ -485,7 +485,7 @@ Mean[Abs[errorbar`asy[[gegm,All,io,trlp]]]]
 (*errorbar`sym,{2,8,3},{gegm,io,trlp}*)
 
 
-(* ::Chapter:: *)
+(* ::Chapter::Closed:: *)
 (*errorbar*)
 
 
@@ -626,11 +626,7 @@ assoc`expr`im1,
 
 
 (* ::Text:: *)
-(*\:6570\:636e\:7684\:6b21\:5e8f\:662f*)
-
-
-(* ::DisplayFormula:: *)
-(*ge.n,ge.p,gm.n,gm.p*)
+(*\:6570\:636e\:7684\:6b21\:5e8f\:662f ge.n,ge.p,gm.n,gm.p*)
 
 
 (* ::Text:: *)
@@ -658,8 +654,8 @@ amp`gegm`expr[whether`normal]
 
 
 assoc`expr=Table[
-amp`gegm`expr[whether`normal][[ord]]*assoc`expr`im2[[ord]]
-,{ord,1,4,1}
+amp`gegm`expr[whether`normal][[inde]]*assoc`expr`im2[[inde]]
+,{inde,1,4,1}
 ];
 
 
@@ -736,6 +732,10 @@ imagesize=Scaled[.6];
 fontsize`frame`tick=AbsoluteThickness[1.5];
 
 
+(* ::Section:: *)
+(*legend\:56fe\:4f8b\:76f8\:5173*)
+
+
 (* ::Text:: *)
 (*\:56fe\:4f8b\:7684\:7f29\:653e\:6bd4\:4f8b*)
 
@@ -744,18 +744,97 @@ fig`legend`magni=1;
 
 
 (* ::Text:: *)
-(*\:56fe\:4f8b\:7684\:5927\:5c0f*)
-
-
-legend`calc`markersize={28,4};
-
-
-(* ::Text:: *)
-(*\:56fe\:4f8b\:7684\:6587\:5b57\:5927\:5c0f*)
+(*\:56fe\:4f8b\:6587\:5b57\:7684\:5927\:5c0f*)
 
 
 legend`calc`text`size=10;
-legend`expr`text`size=12;
+legend`expr`text`size=10;
+
+
+(* ::Text:: *)
+(*\:5b9e\:9a8c\:56fe\:4f8b\:7684\:5e03\:5c40\:51fd\:6570\:ff0c\:4e00\:822c\:6307\:5b9a\:51e0\:884c\:51e0\:5217\:5373\:53ef\:ff1a*)
+
+
+(* ::DisplayFormula:: *)
+(*SwatchLegend[63,Range[5],LegendLayout->(Map[(If[ListQ[#],Row[#,"  "]]&),Multicolumn[##,4],{3}]&)]*)
+
+
+(*\:4ea7\:751f\:4e00\:4e2a\:51fd\:6570\:ff0c\:53ef\:4ee5\:628a\:56fe\:4f8b\:6392\:5217\:6210n\:5217,\:4f7f\:7528Row\:662f\:56e0\:4e3a\:4f20\:9012\:8fc7\:6765\:7684\:53c2\:6570\:4f1a\:5e26\:6709\:62ec\:53f7\:ff0c\:91cd\:6392\:65f6\:7f3a\:5c11\:7684\:4f1a\:7528\:7a7a\:5b57\:7b26\:8865\:5145\:ff0c\:6ca1\:6709\:5217\:8868\:5934\:90e8*)
+fun`legend`layout[n_]:=(Map[(If[ListQ[#],Row[#,"  "]]&),Multicolumn[##,n,Alignment->Left,Appearance->"Horizontal"],{3}]&)
+
+
+legend`expr`layout={
+fun`legend`layout[3],(*ge.n*)
+fun`legend`layout[3],(*ge.p*)
+fun`legend`layout[3],(*gm.n*)
+fun`legend`layout[3](*gm.p*)
+};
+
+
+(* ::Text:: *)
+(*\:6307\:5b9a\:56fe\:4f8b\:4e2d\:6bcf\:4e2a\:5143\:7d20\:7684\:5927\:5c0f,\:6309\:7167 ge.n, ge.p, gm.n, gm.p \:7684\:6b21\:5e8f\:ff0c*)
+
+
+(* ::Text:: *)
+(*\:8ba1\:7b97\:6570\:636e\:7684\:ff1a*)
+
+
+legend`calc`totalsize={
+{28,2}, (*ge.n*)
+{28,2},(*ge.p*)
+{28,2},(*gm.n*)
+{28,2}(*gm.p*)
+};
+
+
+(* ::Text:: *)
+(*\:5b9e\:9a8c\:6570\:636e\:7684\:ff1a*)
+
+
+legend`expr`totalsize={
+{10,10}, (*ge.n*)
+{10,10},(*ge.p*)
+{10,10},(*gm.n*)
+{10,10}(*gm.p*)
+};
+
+
+(* ::Text:: *)
+(*\:56fe\:4f8b\:7684\:4f4d\:7f6e\:ff0c\:5206\:6210\:81ea\:5df1\:8ba1\:7b97\:7684\:ff0c\:548c\:53c2\:8003\:7684\:5b9e\:9a8c\:6570\:636e\:ff0c\:6309\:7167 ge.n, ge.p, gm.n, gm.p \:7684\:6b21\:5e8f\:ff0c*)
+
+
+(* ::Text:: *)
+(*\:5b9e\:9a8c\:6570\:636e\:7684\:56fe\:4f8b\:ff1a*)
+
+
+legend`position`expr={
+{(*ge.n*) Scaled[{0.40,0.70}],(*anchor position*)
+   {0,0}(*legend anchor*)},
+
+{(*ge.p*)Scaled[{0.40,0.05}],(*anchor position*)
+   {0,0}(*legend anchor*)},
+
+{(*gm.n*){0.05,0.02},(*anchor position*)
+   {0,0}(*legend anchor*)},
+
+{(*gm.p*){0.05,0.05},(*anchor position*)
+   {0,0}(*legend anchor*)}
+   };
+
+
+legend`position`calc={
+{(*ge.n*){0.04,0.65},(*anchor position*)
+   {0,0}(*legend anchor*)},
+
+{(*ge.p*)Scaled[{0.80,0.625}],(*anchor position*)
+   {0,0}(*legend anchor*)},
+
+{(*gm.n*){0.20,0.65},(*anchor position*)
+   {0,0}(*legend anchor*)},
+
+{(*gm.p*){0.20,0.65},(*anchor position*)
+   {0,0}(*legend anchor*)}
+   };
 
 
 (* ::Text:: *)
@@ -790,22 +869,22 @@ fun`style`line[a_,b_,c_]:=Directive[style`line`thick,style`line`type[[a]],style`
 
 
 (* ::Text:: *)
-(*\:8bbe\:5b9a\:516b\:91cd\:6001\:66f2\:7ebfstyle*)
+(*\:8bbe\:5b9a\:516b\:91cd\:6001\:66f2\:7ebfstyle\:ff0c\:5305\:62ec\:900f\:660e\:5ea6\:ff0cstyle`line[[{1,3,4,6}]]\:4e2d\:7684\:662f\:516b\:91cd\:6001\:7f16\:53f7*)
 
 
 style`line=Range[8];
 style`line[[{1,3,4,6}]]={
-(*1*)fun`style`line[3,1,calc`point`opacity],
-(*3*)fun`style`line[2,2,calc`point`opacity],
-(*4*)fun`style`line[1,3,calc`point`opacity],
-(*6*)fun`style`line[4,4,calc`point`opacity]
+(*1*)fun`style`line[3,1,calc`point`opacity[[1]]],
+(*3*)fun`style`line[2,2,calc`point`opacity[[3]]],
+(*4*)fun`style`line[1,3,calc`point`opacity[[4]]],
+(*6*)fun`style`line[4,4,calc`point`opacity[[6]]]
 };
 
 style`line[[{2,5,7,8}]]={
-(*2*)fun`style`line[2,2,calc`point`opacity],
-(*5*)fun`style`line[1,3,calc`point`opacity],
-(*7*)fun`style`line[4,4,calc`point`opacity],
-(*8*)fun`style`line[3,1,calc`point`opacity]
+(*2*)fun`style`line[2,2,calc`point`opacity[[2]]],
+(*5*)fun`style`line[1,3,calc`point`opacity[[5]]],
+(*7*)fun`style`line[4,4,calc`point`opacity[[7]]],
+(*8*)fun`style`line[3,1,calc`point`opacity[[8]]]
 };
 
 
@@ -928,13 +1007,6 @@ marker`exper`errobar=<|
 
 
 (* ::Text:: *)
-(*\:73b0\:5728\:7684\:914d\:7f6e*)
-
-
-legend`position`expr={Below,Below,Below,Below};
-
-
-(* ::Text:: *)
 (*\:5bf9\:5b9e\:9a8c\:6570\:636e\:4f5c\:56fe\:ff0c\:5bf9\:5b9e\:9a8c\:6570\:636e\:4e0a\:6807\:8bb0\:ff0c\:9884\:7f6e\:4e86\:591a\:79cd\:6837\:5f0f*)
 
 
@@ -942,12 +1014,14 @@ legend`position`expr={Below,Below,Below,Below};
 (*\:9996\:5148\:5b9a\:4e00\:4e2a\:5b9e\:9a8c\:6570\:636e\:56fe\:4f8b\:7684\:51fd\:6570*)
 
 
-fun`legend`bg=Framed[#1,RoundingRadius->4,FrameStyle->LightGray,Background->White]&;
+(* ::DisplayFormula:: *)
+(*fun`legend`bg=Framed[#1,RoundingRadius->4,FrameStyle->LightGray,Background->White]&;*)
 
 
-marker`expr`sequence[style_,inde_]:=
-Part[
-{
+fun`legend`bg=Identity;
+
+
+marker`expr`sequence[style_,inde_]:={
 {
 PlotMarkers->{marker`expr`point[[4]],Offset[2]},
 IntervalMarkers->"Fences",
@@ -978,16 +1052,17 @@ IntervalMarkersStyle->Automatic,
 PlotLegends->Placed[
 PointLegend[
 (Style[#1,FontFamily->"Times New Roman",FontSize->legend`expr`text`size]&)/@Keys[assoc`expr[[inde]]],
+(*\:51b3\:5b9a\:56fe\:4f8b\:7684\:6392\:5217\:65b9\:5f0f*)
+LegendLayout->legend`expr`layout[[inde]],
+LegendMarkerSize->legend`expr`totalsize[[inde]],
 LegendFunction->fun`legend`bg
 ],
 (*\:56fe\:4f8b\:51fd\:6570\:ff0c\:5e94\:7528\:5230\:6bcf\:4e2a\:56fe\:4f8b\:4e0a*)
 legend`position`expr[[inde]]
 ]
-
 }
-},
-style
-];
+
+}[[style]];
 
 
 (* ::Text:: *)
@@ -1023,7 +1098,7 @@ PlotRange->{Full,Full},
 AxesOrigin->{0,0},
 PlotRangePadding->{{0,0},{Scaled[0.09],Scaled[0.12]}},
 IntervalMarkers->calc`errobar`style,
-IntervalMarkersStyle-> Directive[Opacity[calc`errobar`opacity[[io]]]]
+IntervalMarkersStyle-> Directive[Opacity[calc`errobar`opacity[[gegm,io]]]]
 ]
 
 ,{gegm,1,2,1}
@@ -1071,20 +1146,68 @@ Table[fig`interval[[All,io,All]]/.rule`curve[[io]],{io,1,8,1}]
 (*\:6a2a\:7eb5\:8f74\:7ebf\:6807\:8bb0*)
 
 
-framelabel`ge={
-{Style["\!\(\*SubsuperscriptBox[\(G\), \(E\), \(B\)]\)(\!\(\*SuperscriptBox[\(Q\), \(2\)]\))",FontFamily->"Times New Roman",
-FontSize->fontsize`frame`text],None},
-{Style["\!\(\*SuperscriptBox[\(Q\), \(2\)]\)(\!\(\*SuperscriptBox[\(GeV\), \(2\)]\))",FontFamily->"Times New Roman",
-FontSize->fontsize`frame`text],None}
-};
+(* ::DisplayFormula:: *)
+(*\*input  \:6784\:5efa\:6765\:81ea input \:7684\:6846\:7b26*)
 
 
-framelabel`gm={
-{Style["\!\(\*SubsuperscriptBox[\(G\), \(M\), \(B\)]\)(\!\(\*SuperscriptBox[\(Q\), \(2\)]\))",FontFamily->"Times New Roman",
+framelabel`gegm=<|
+(*\:6570\:636e\:7684\:6b21\:5e8f\:662f ge.n, ge.p, gm.n, gm.p*)
+(*\:5f52\:4e00\:5316\:7684\:65f6\:5019\:ff0c\:90fd\:662f\:7528GEB GMB*)
+"normal"->{
+{
+{Style["\*SubsuperscriptBox[\(G\), \(E\), \(B\)](\*SuperscriptBox[\(Q\), \(2\)])",FontFamily->"Times New Roman",
 FontSize->fontsize`frame`text],None},
-{Style["\!\(\*SuperscriptBox[\(Q\), \(2\)]\)(\!\(\*SuperscriptBox[\(GeV\), \(2\)]\))",FontFamily->"Times New Roman",
+{Style["\*SuperscriptBox[\(Q\), \(2\)](\*SuperscriptBox[\(GeV\), \(2\)])",FontFamily->"Times New Roman",
 FontSize->fontsize`frame`text],None}
-};
+},
+{
+{Style["\*SubsuperscriptBox[\(G\), \(E\), \(B\)](\*SuperscriptBox[\(Q\), \(2\)])",FontFamily->"Times New Roman",
+FontSize->fontsize`frame`text],None},
+{Style["\*SuperscriptBox[\(Q\), \(2\)](\*SuperscriptBox[\(GeV\), \(2\)])",FontFamily->"Times New Roman",
+FontSize->fontsize`frame`text],None}
+},
+{
+{Style["\*SubsuperscriptBox[\(G\), \(M\), \(B\)](\*SuperscriptBox[\(Q\), \(2\)])",FontFamily->"Times New Roman",
+FontSize->fontsize`frame`text],None},
+{Style["\*SuperscriptBox[\(Q\), \(2\)](\*SuperscriptBox[\(GeV\), \(2\)])",FontFamily->"Times New Roman",
+FontSize->fontsize`frame`text],None}
+},
+{
+{Style["\*SubsuperscriptBox[\(G\), \(M\), \(B\)](\*SuperscriptBox[\(Q\), \(2\)])",FontFamily->"Times New Roman",
+FontSize->fontsize`frame`text],None},
+{Style["\*SuperscriptBox[\(Q\), \(2\)](\*SuperscriptBox[\(GeV\), \(2\)])",FontFamily->"Times New Roman",
+FontSize->fontsize`frame`text],None}
+}
+},
+(*\:4e0d\:5f52\:4e00\:5316\:7684\:65f6\:5019\:ff0c\:7528\:7684\:662fGE/Mp\:548cGE/Mn*)
+(*\:6570\:636e\:7684\:6b21\:5e8f\:662f ge.n, ge.p, gm.n, gm.p*)
+"unnormal"->{
+{
+{Style["\*SubsuperscriptBox[\(G\), \(E\), \(n\)](\*SuperscriptBox[\(Q\), \(2\)])",FontFamily->"Times New Roman",
+FontSize->fontsize`frame`text],None},
+{Style["\*SuperscriptBox[\(Q\), \(2\)](\*SuperscriptBox[\(GeV\), \(2\)])",FontFamily->"Times New Roman",
+FontSize->fontsize`frame`text],None}
+},
+{
+{Style["\*SubsuperscriptBox[\(G\), \(E\), \(p\)](\*SuperscriptBox[\(Q\), \(2\)])",FontFamily->"Times New Roman",
+FontSize->fontsize`frame`text],None},
+{Style["\*SuperscriptBox[\(Q\), \(2\)](\*SuperscriptBox[\(GeV\), \(2\)])",FontFamily->"Times New Roman",
+FontSize->fontsize`frame`text],None}
+},
+{
+{Style["\*SubsuperscriptBox[\(G\), \(M\), \(n\)](\*SuperscriptBox[\(Q\), \(2\)])",FontFamily->"Times New Roman",
+FontSize->fontsize`frame`text],None},
+{Style["\*SuperscriptBox[\(Q\), \(2\)](\*SuperscriptBox[\(GeV\), \(2\)])",FontFamily->"Times New Roman",
+FontSize->fontsize`frame`text],None}
+},
+{
+{Style["\*SubsuperscriptBox[\(G\), \(M\), \(p\)](\*SuperscriptBox[\(Q\), \(2\)])",FontFamily->"Times New Roman",
+FontSize->fontsize`frame`text],None},
+{Style["\*SuperscriptBox[\(Q\), \(2\)](\*SuperscriptBox[\(GeV\), \(2\)])",FontFamily->"Times New Roman",
+FontSize->fontsize`frame`text],None}
+}
+}
+|>;
 
 
 (* ::Text:: *)
@@ -1096,7 +1219,8 @@ fig`interval`modi_,(*function, generate band figure using data of ge or gm *)
 framelabel_,(*framelabel of ge or gm*)
 legend`text_,(*legend text*)
 legend`ps_:legend`position,(*legend position*)
-style`legend_
+style`legend_,
+legend`calc`totalsize_
 ]:=Legended[(*\:8bbe\:7f6e\:8ba1\:7b97\:66f2\:7ebf\:7684\:56fe\:4f8b*)
 Show[
 (Sequence@@fig`interval`modi),
@@ -1115,7 +1239,7 @@ Placed[
 Style[
 LineLegend[style`legend,
 (Style[#1,FontFamily->"Times New Roman",FontSize->legend`calc`text`size]&)/@legend`text,
-LegendMarkerSize->legend`calc`markersize,
+LegendMarkerSize->legend`calc`totalsize,
 (*\:8ba1\:7b97\:6570\:636e\:7684\:56fe\:4f8b\:51fd\:6570*)
 LegendFunction->fun`legend`bg
 ],
@@ -1137,7 +1261,8 @@ legend`ps
 (*framelabel_,(*framelabel of ge or gm*)*)
 (*legend`text_,(*legend text*)*)
 (*legend`ps_:legend`position,(*legend position*)*)
-(*style`legend_*)
+(*style`legend_,*)
+(*legend`calc`totalsize*)
 (*]*)
 
 
@@ -1150,9 +1275,6 @@ legend`ps
 (*  {0.78,0.72},(*anchor position*)*)
 (*  {0.,0.}(*legend anchor*)*)
 (*};*)
-
-
-legend`position`calc=After;
 
 
 (* ::Subsection:: *)
@@ -1190,10 +1312,11 @@ Join[
 fig`interval`modi[[1,{4,3,6,1},3]],
 {fig`expr[[inde]]}
 ],
-framelabel`ge,
+framelabel`gegm[whether`normal][[inde]],
 legend`t1,
-legend`position`calc,
-style`legend1
+legend`position`calc[[inde]],
+style`legend1,
+legend`calc`totalsize[[inde]]
 ];
 
 
@@ -1224,10 +1347,11 @@ Join[
 fig`interval`modi[[1,{2,5,7,8},3]],
 {fig`expr[[inde]]}
 ],
-framelabel`ge,
+framelabel`gegm[whether`normal][[inde]],
 legend`t2,
-legend`position`calc,
-style`legend2
+legend`position`calc[[inde]],
+style`legend2,
+legend`calc`totalsize[[inde]]
 ];
 
 
@@ -1255,10 +1379,11 @@ Join[
 fig`interval`modi[[2,{4,3,6,1},3]],
 {fig`expr[[inde]]}
 ],
-framelabel`gm,
+framelabel`gegm[whether`normal][[inde]],
 legend`t1,
-legend`position`calc,
-style`legend1
+legend`position`calc[[inde]],
+style`legend1,
+legend`calc`totalsize[[inde]]
 ];
 
 
@@ -1286,10 +1411,11 @@ Join[
 fig`interval`modi[[2,{2,5,7,8},3]],
 {fig`expr[[inde]]}
 ],
-framelabel`gm,
+framelabel`gegm[whether`normal][[inde]],
 legend`t2,
-legend`position`calc,
-style`legend2
+legend`position`calc[[inde]],
+style`legend2,
+legend`calc`totalsize[[inde]]
 ];
 
 

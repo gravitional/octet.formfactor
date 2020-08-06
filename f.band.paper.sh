@@ -7,10 +7,12 @@
 
 # 这个文件用来计算论文中使用的特殊配制 0.90 1.50
 
-curveopacity=1
+curveopacity_normal="{1,1,1,1,1,1,1,1}" 
+curveopacity_unnormal="{0,0,0,1,1,0,0,0}" 
 markers="Bands"
-markopacity_normal="{0,0,0,0,0,0,0,0}" 
-markopacity_unnormal="{0,0,0,0.2,0.2,0,0,0}" 
+# 透明度设置，先是ge,后是gm
+markopacity_normal="{{0,0,0,0.3,0.3,0,0,0},{0,0,0,0,0,0,0,0}}" 
+markopacity_unnormal="{{0,0,0,0.3,0.3,0,0,0},{0,0,0,0.3,0.3,0,0,0}}" 
 expr_marker=4
 expr_opacity=1
 normal="normal"
@@ -18,7 +20,6 @@ unnormal="unnormal"
 
 ## ordinary configurations
 
-wolframscript -print "all" -file f.figure.series-full.rencon3.strange.baryons-all.band.wl "full" 0.90 1.50 $curveopacity $markers $markopacity_normal $expr_marker $expr_opacity $normal
-
-wolframscript -print "all" -file f.figure.series-full.rencon3.strange.baryons-all.band.wl "full" 0.90 1.50 $curveopacity $markers $markopacity_unnormal $expr_marker $expr_opacity $unnormal
+wolframscript -print "all" -file f.figure.series-full.rencon3.strange.baryons-all.band.wl "full" 0.90 1.50 "$curveopacity_normal" $markers "$markopacity_normal" $expr_marker $expr_opacity $normal
+wolframscript -print "all" -file f.figure.series-full.rencon3.strange.baryons-all.band.wl "full" 0.90 1.50 "$curveopacity_unnormal" $markers "$markopacity_unnormal" $expr_marker $expr_opacity $unnormal
 

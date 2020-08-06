@@ -2955,12 +2955,12 @@ Legended[Legended[Graphics[
        {}, {}, {}, {}}}, {{}, {}}}}, {ImageSize -> Large, 
     PlotRange -> {{0, 1}, All}, AxesOrigin -> {0, 0}, 
     PlotRangePadding -> {{0, 0}, {Scaled[0.09], Scaled[0.12]}}, 
-    Frame -> True, FrameLabel -> {{Style["\!\(\*SubsuperscriptBox[\(G\), \
-\(M\), \(B\)]\)(\!\(\*SuperscriptBox[\(Q\), \(2\)]\))", 
-        FontFamily -> "Times New Roman", FontSize -> 18], None}, 
-      {Style["\!\(\*SuperscriptBox[\(Q\), \
-\(2\)]\)(\!\(\*SuperscriptBox[\(GeV\), \(2\)]\))", FontFamily -> 
-         "Times New Roman", FontSize -> 18], None}}, 
+    Frame -> True, FrameLabel -> {{Style["\*SubsuperscriptBox[\(G\), \(M\), \
+\(B\)](\*SuperscriptBox[\(Q\), \(2\)])", FontFamily -> "Times New Roman", 
+        FontSize -> 18], None}, 
+      {Style[
+        "\*SuperscriptBox[\(Q\), \(2\)](\*SuperscriptBox[\(GeV\), \(2\)])", 
+        FontFamily -> "Times New Roman", FontSize -> 18], None}}, 
     FrameStyle -> {{Directive[AbsoluteThickness[1.5], FontSize -> 18, 
         GrayLevel[0]], Directive[AbsoluteThickness[1.5], FontSize -> 18, 
         GrayLevel[0]]}, {Directive[AbsoluteThickness[1.5], FontSize -> 18, 
@@ -2995,14 +2995,14 @@ Legended[Legended[Graphics[
        0.102387], AbsoluteThickness[1.6]], 
      Directive[PointSize[0.004583333333333334], RGBColor[0.363898, 0.618501, 
        0.782349], AbsoluteThickness[1.6]]}, 
-    {Style["Janssens1966", FontFamily -> "Times New Roman", FontSize -> 12], 
-     Style["Berger1971", FontFamily -> "Times New Roman", FontSize -> 12], 
-     Style["Price1971", FontFamily -> "Times New Roman", FontSize -> 12], 
-     Style["Hanson1973", FontFamily -> "Times New Roman", FontSize -> 12], 
-     Style["Walker1994", FontFamily -> "Times New Roman", FontSize -> 12], 
-     Style["Bartel1973", FontFamily -> "Times New Roman", FontSize -> 12], 
+    {Style["Janssens1966", FontFamily -> "Times New Roman", FontSize -> 10], 
+     Style["Berger1971", FontFamily -> "Times New Roman", FontSize -> 10], 
+     Style["Price1971", FontFamily -> "Times New Roman", FontSize -> 10], 
+     Style["Hanson1973", FontFamily -> "Times New Roman", FontSize -> 10], 
+     Style["Walker1994", FontFamily -> "Times New Roman", FontSize -> 10], 
+     Style["Bartel1973", FontFamily -> "Times New Roman", FontSize -> 10], 
      Style["Arrington2007", FontFamily -> "Times New Roman", 
-      FontSize -> 12]}, LegendMarkers -> 
+      FontSize -> 10]}, LegendMarkers -> 
      {{Graphics[{EdgeForm[], Disk[{0, 0}]}], Offset[6.272]}, 
       {Graphics[{EdgeForm[], Polygon[{{-1, -1}, {1, -1}, {1, 1}, {-1, 1}}]}], 
        Offset[6.72]}, {Graphics[{EdgeForm[], Polygon[{{0, 1}, {1, 0}, 
@@ -3014,9 +3014,10 @@ Legended[Legended[Graphics[
        Offset[7.168]}, {Graphics[{EdgeForm[Thickness[Medium]], FaceForm[], 
          Line[{{-1, -1}, {1, -1}, {1, 1}, {-1, 1}, {-1, -1}}]}], 
        Offset[7.168]}}, Joined -> {False, False, False, False, False, False, 
-      False}, LabelStyle -> {}, LegendFunction -> 
-     (Framed[#1, RoundingRadius -> 4, FrameStyle -> LightGray, 
-       Background -> White] & ), LegendLayout -> "Row"], Below, Identity]], 
+      False}, LabelStyle -> {}, LegendLayout -> 
+     (Map[If[ListQ[#1], Row[#1, "  "]] & , Multicolumn[##1, 3, 
+        Alignment -> Left, Appearance -> "Horizontal"], {3}] & ), 
+    LegendMarkerSize -> {10, 10}], {{0.05, 0.05}, {0, 0}}, Identity]], 
  Placed[Style[LineLegend[{Directive[AbsoluteThickness[2], 
       AbsoluteDashing[{}], RGBColor[1, 0, 0], Opacity[1]], 
      Directive[AbsoluteThickness[2], AbsoluteDashing[6], RGBColor[0, 1, 0], 
@@ -3030,6 +3031,5 @@ Legended[Legended[Graphics[
       FontFamily -> "Times New Roman", FontSize -> 10], 
      Style["\!\(\*SuperscriptBox[\(\[CapitalXi]\), \(-\)]\)", 
       FontFamily -> "Times New Roman", FontSize -> 10]}, 
-    LegendMarkerSize -> {28, 4}, LegendFunction -> 
-     (Framed[#1, RoundingRadius -> 4, FrameStyle -> LightGray, 
-       Background -> White] & )], Magnification -> 1], After]]
+    LegendMarkerSize -> {28, 2}, LegendFunction -> Identity], 
+   Magnification -> 1], {{0.2, 0.65}, {0, 0}}]]

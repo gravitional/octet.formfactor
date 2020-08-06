@@ -1858,12 +1858,12 @@ Legended[Legended[Graphics[
      {{}, {}}}}, {ImageSize -> Large, PlotRange -> {{0, 1}, All}, 
     AxesOrigin -> {0, 0}, PlotRangePadding -> 
      {{0, 0}, {Scaled[0.09], Scaled[0.12]}}, Frame -> True, 
-    FrameLabel -> {{Style["\!\(\*SubsuperscriptBox[\(G\), \(M\), \
-\(B\)]\)(\!\(\*SuperscriptBox[\(Q\), \(2\)]\))", FontFamily -> 
-         "Times New Roman", FontSize -> 18], None}, 
-      {Style["\!\(\*SuperscriptBox[\(Q\), \
-\(2\)]\)(\!\(\*SuperscriptBox[\(GeV\), \(2\)]\))", FontFamily -> 
-         "Times New Roman", FontSize -> 18], None}}, 
+    FrameLabel -> {{Style["\*SubsuperscriptBox[\(G\), \(M\), \
+\(B\)](\*SuperscriptBox[\(Q\), \(2\)])", FontFamily -> "Times New Roman", 
+        FontSize -> 18], None}, 
+      {Style[
+        "\*SuperscriptBox[\(Q\), \(2\)](\*SuperscriptBox[\(GeV\), \(2\)])", 
+        FontFamily -> "Times New Roman", FontSize -> 18], None}}, 
     FrameStyle -> {{Directive[AbsoluteThickness[1.5], FontSize -> 18, 
         GrayLevel[0]], Directive[AbsoluteThickness[1.5], FontSize -> 18, 
         GrayLevel[0]]}, {Directive[AbsoluteThickness[1.5], FontSize -> 18, 
@@ -1903,16 +1903,16 @@ Legended[Legended[Graphics[
       RGBColor[0.647624, 0.37816, 0.614037], AbsoluteThickness[1.6]], 
      Directive[PointSize[0.007333333333333334], RGBColor[0.571589, 0.586483, 
        0.], AbsoluteThickness[1.6]]}, 
-    {Style["Golak2001", FontFamily -> "Times New Roman", FontSize -> 12], 
-     Style["Bartel1973", FontFamily -> "Times New Roman", FontSize -> 12], 
-     Style["Markowitz1993", FontFamily -> "Times New Roman", FontSize -> 12], 
-     Style["Anklin1994", FontFamily -> "Times New Roman", FontSize -> 12], 
-     Style["Bruins1995", FontFamily -> "Times New Roman", FontSize -> 12], 
-     Style["Anklin1998", FontFamily -> "Times New Roman", FontSize -> 12], 
-     Style["Xu2000", FontFamily -> "Times New Roman", FontSize -> 12], 
-     Style["Kubon2002", FontFamily -> "Times New Roman", FontSize -> 12], 
-     Style["Madey2003", FontFamily -> "Times New Roman", FontSize -> 12], 
-     Style["Xu2003", FontFamily -> "Times New Roman", FontSize -> 12]}, 
+    {Style["Golak2001", FontFamily -> "Times New Roman", FontSize -> 10], 
+     Style["Bartel1973", FontFamily -> "Times New Roman", FontSize -> 10], 
+     Style["Markowitz1993", FontFamily -> "Times New Roman", FontSize -> 10], 
+     Style["Anklin1994", FontFamily -> "Times New Roman", FontSize -> 10], 
+     Style["Bruins1995", FontFamily -> "Times New Roman", FontSize -> 10], 
+     Style["Anklin1998", FontFamily -> "Times New Roman", FontSize -> 10], 
+     Style["Xu2000", FontFamily -> "Times New Roman", FontSize -> 10], 
+     Style["Kubon2002", FontFamily -> "Times New Roman", FontSize -> 10], 
+     Style["Madey2003", FontFamily -> "Times New Roman", FontSize -> 10], 
+     Style["Xu2003", FontFamily -> "Times New Roman", FontSize -> 10]}, 
     LegendMarkers -> {{Graphics[{EdgeForm[], Disk[{0, 0}]}], Offset[6.272]}, 
       {Graphics[{EdgeForm[], Polygon[{{-1, -1}, {1, -1}, {1, 1}, {-1, 1}}]}], 
        Offset[6.72]}, {Graphics[{EdgeForm[], Polygon[{{0, 1}, {1, 0}, 
@@ -1931,9 +1931,10 @@ Legended[Legended[Graphics[
          Line[{{0, -1}, {-1, -1 + Sqrt[3]}, {1, -1 + Sqrt[3]}, {0, -1}}]}], 
        Offset[8.192]}}, Joined -> {False, False, False, False, False, False, 
       False, False, False, False}, LabelStyle -> {}, 
-    LegendFunction -> (Framed[#1, RoundingRadius -> 4, 
-       FrameStyle -> LightGray, Background -> White] & ), 
-    LegendLayout -> "Row"], Below, Identity]], 
+    LegendLayout -> (Map[If[ListQ[#1], Row[#1, "  "]] & , 
+       Multicolumn[##1, 3, Alignment -> Left, Appearance -> "Horizontal"], 
+       {3}] & ), LegendMarkerSize -> {10, 10}], {{0.05, 0.02}, {0, 0}}, 
+   Identity]], 
  Placed[Style[LineLegend[{Directive[AbsoluteThickness[2], 
       AbsoluteDashing[{}], RGBColor[1, 0, 0], Opacity[1]], 
      Directive[AbsoluteThickness[2], AbsoluteDashing[6], RGBColor[0, 1, 0], 
@@ -1947,6 +1948,5 @@ Legended[Legended[Graphics[
       FontSize -> 10], 
      Style["\!\(\*SuperscriptBox[\(\[CapitalXi]\), \(0\)]\)", 
       FontFamily -> "Times New Roman", FontSize -> 10]}, 
-    LegendMarkerSize -> {28, 4}, LegendFunction -> 
-     (Framed[#1, RoundingRadius -> 4, FrameStyle -> LightGray, 
-       Background -> White] & )], Magnification -> 1], After]]
+    LegendMarkerSize -> {28, 2}, LegendFunction -> Identity], 
+   Magnification -> 1], {{0.2, 0.65}, {0, 0}}]]

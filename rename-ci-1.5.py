@@ -14,6 +14,8 @@ shutil.copy(os.path.join(result_path,'fig.baryons.gm.charge.L-0.90.ci-1.50.pdf')
 shutil.copy(os.path.join(result_path,'fig.baryons.gm.neutral.L-0.90.ci-1.50.pdf'),os.path.join(paper_path,'fig3.pdf')) 
 # cd 到论文目录，重新编译论文
 os.chdir(paper_path)
+# 清楚之前的编译结果，重新编译
+os.system('latexmk -C')
 os.system('./build.sh')
 # 如果桌面有压缩文件目录，就删除，shutil.copytree需要目标不存在
 if  os.path.isdir(desk_path):
@@ -33,7 +35,7 @@ print("+++++++\ndelete auxilary files\n +++++++")
 rm_list=['*.aux','*.lof','*.log','*.lot','*.fls','*.out',
 '*.toc', '*.fmt','*.fot','*.cb','*.cb2','*.ptc','*.xdv','*.fdb_latexmk',
 '*.synctex.gz','*.swp','*.ps1','*.sh','*.bib','*.bbl','*.blg',
-'*.py','*.pyc','__pycache__'
+'*.py','*.pyc','__pycache__','old'
 ]
 
 for aux in rm_list:
@@ -43,6 +45,6 @@ print("+++++++\nthe file left in",os.getcwd(),"\n+++++++")
 os.listdir(desk_path)
 
 # 产生论文压缩文件
-os.system(('7z a ../paper.7z '+desk_path))
+os.system(('7z a -u ../paper.7z '+desk_path))
 # 回到原来的文件夹
 os.listdir(originpath)
