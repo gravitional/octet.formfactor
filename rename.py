@@ -14,37 +14,27 @@ shutil.copy(os.path.join(result_path,'fig.baryons.gm.charge.L-0.90.ci-1.50.pdf')
 shutil.copy(os.path.join(result_path,'fig.baryons.gm.neutral.L-0.90.ci-1.50.pdf'),os.path.join(paper_path,'fig3.pdf')) 
 # cd 到论文目录，重新编译论文
 os.chdir(paper_path)
-# 清楚之前的编译结果，重新编译
+# 清除之前的编译结果，重新编译
 os.system('latexmk -C')
 os.system('./build.sh')
 # 如果桌面有压缩文件目录，就删除，shutil.copytree需要目标不存在
+src_list=['fig1.pdf','fig2.pdf','fig3.pdf','fig4.pdf','fig5.pdf','octetFF.tex','octetFF.pdf']
+# 把论文目录的东西复制到桌面目录中
 if  os.path.isdir(desk_path):
-    shutil.rmtree(desk_path)
-    # 把论文目录的东西复制到桌面目录中
-    shutil.copytree('.',desk_path)
+    for src in src_list:
+        shutil.copy2(src,desk_path)
 else:
-    shutil.copytree('.',desk_path)
-
-print("+++++++\nthe file copied from paper_path\n+++++++")
-os.listdir(desk_path)
+    os.mkdir(desk_path)
+    for src in src_list:
+        shutil.copy2(src,desk_path)
 
 ## 切换到桌面整理目录
-os.chdir(desk_path )
-print("+++++++\ndelete auxilary files\n +++++++")
-
-rm_list=['*.aux','*.lof','*.log','*.lot','*.fls','*.out',
-'*.toc', '*.fmt','*.fot','*.cb','*.cb2','*.ptc','*.xdv','*.fdb_latexmk',
-'*.synctex.gz','*.swp','*.ps1','*.sh','*.bib','*.bbl','*.blg',
-'*.py','*.pyc','__pycache__','old'
-]
-
-for aux in rm_list:
-    gfm.rma('.',aux)
+os.chdir(desk_path)
 
 print("+++++++\nthe file left in",os.getcwd(),"\n+++++++")
 os.listdir(desk_path)
 
 # 产生论文压缩文件
-os.system(('7z a -u ../paper.7z '+desk_path))
+os.system('rm ../paper.7z; 7z a ../paper.7z '+desk_path)
 # 回到原来的文件夹
 os.listdir(originpath)
