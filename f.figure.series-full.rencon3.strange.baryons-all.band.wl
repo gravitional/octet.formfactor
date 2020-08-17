@@ -485,7 +485,7 @@ Mean[Abs[errorbar`asy[[gegm,All,io,trlp]]]]
 (*errorbar`sym,{2,8,3},{gegm,io,trlp}*)
 
 
-(* ::Chapter::Closed:: *)
+(* ::Chapter:: *)
 (*errorbar*)
 
 
@@ -838,6 +838,50 @@ legend`position`calc={
 
 
 (* ::Text:: *)
+(*\:6307\:5b9a\:7eb5\:8f74\:8303\:56f4\:ff0ccalc and expr \:90fd\:751f\:6548*)
+
+
+fig`range=<|
+"normal"->{
+{{0,1},All},(*ge.n*)
+{{0,1},All},(*ge.p*)
+{{0,1},All},(*gm.n*)
+{{0,1},All}(*gm.p*)
+},
+"unnormal"->{
+{{0,1},All},(*ge.n*)
+{{0,1},All},(*ge.p*)
+{{0,1},{-2.5,0}},(*gm.n*)
+{{0,1},{0,3.2}}(*gm.p*)
+}
+|>;
+
+
+(* ::Text:: *)
+(*\:6307\:5b9a\:56fe\:50cf\:7a7a\:767d\:586b\:5145\:8303\:56f4\:ff0ccalc and expr \:90fd\:751f\:6548*)
+
+
+fig`padding=<|
+"normal"->{
+{{0,0},{Scaled[0.09],Scaled[0.12]}},(*ge.n*)
+{{0,0},{Scaled[0.09],Scaled[0.12]}},(*ge.p*)
+{{0,0},{Scaled[0.09],Scaled[0.12]}},(*gm.n*)
+{{0,0},{Scaled[0.09],Scaled[0.12]}}(*gm.p*)
+},
+"unnormal"->{
+{{0,0},{0,0}},(*ge.n*)
+{{0,0},{0,0}},(*ge.p*)
+{{0,0},{0,0}},(*gm.n*)
+{{0,0},{0,0}}(*gm.p*)
+}
+|>;
+
+
+(* ::Section:: *)
+(*others*)
+
+
+(* ::Text:: *)
 (*\:9ed8\:8ba4\:7ebf\:5bbd*)
 
 
@@ -1089,7 +1133,7 @@ Sequence@@marker`expr`sequence[expr`errobar`style,inde]
 (*\:7ed8\:5236\:8ba1\:7b97\:6570\:636e\:7684\:5e26\:72b6\:56fe\:ff0cerrobar \:53ef\:4ee5\:901a\:8fc7\:8bbe\:7f6e\:900f\:660e\:5ea6\:4e0d\:663e\:793a*)
 
 
-fig`interval=Table[
+fig`calc`interval`im1=Table[
 
 ListLinePlot[
 data`interval[[gegm,io,trlp]],
@@ -1128,14 +1172,14 @@ rule`curve={
 };
 
 
-fig`interval`modi=Transpose[
-Table[fig`interval[[All,io,All]]/.rule`curve[[io]],{io,1,8,1}]
+fig`calc`interval=Transpose[
+Table[fig`calc`interval`im1[[All,io,All]]/.rule`curve[[io]],{io,1,8,1}]
 ,{2,1,3}
 ];
 
 
 (* ::DisplayFormula:: *)
-(*fig`interval`modi,{2,8,3},{gegm,conf,trlp}*)
+(*fig`calc`interval,{2,8,3},{gegm,conf,trlp}*)
 
 
 (* ::Text:: *)
@@ -1215,20 +1259,22 @@ FontSize->fontsize`frame`text],None}
 
 
 fun`fig`gegm`cn[
-fig`interval`modi_,(*function, generate band figure using data of ge or gm *)
+fig`calc`interval_,(*function, generate band figure using data of ge or gm *)
 framelabel_,(*framelabel of ge or gm*)
 legend`text_,(*legend text*)
 legend`ps_:legend`position,(*legend position*)
 style`legend_,
-legend`calc`totalsize_
+legend`calc`totalsize_,
+fig`range_,
+fig`padding_
 ]:=Legended[(*\:8bbe\:7f6e\:8ba1\:7b97\:66f2\:7ebf\:7684\:56fe\:4f8b*)
 Show[
-(Sequence@@fig`interval`modi),
+(Sequence@@fig`calc`interval),
 (*Show \:63a5\:53d7sequence \:5e8f\:5217*) 
 ImageSize->Large,
-PlotRange->{{0,1},All},
+PlotRange->fig`range,
 AxesOrigin->{0,0},
-PlotRangePadding->{{0,0},{Scaled[0.09],Scaled[0.12]}},
+PlotRangePadding->fig`padding,
 Frame->True,
 FrameLabel->framelabel,
 FrameStyle->style`frame
@@ -1257,7 +1303,7 @@ legend`ps
 
 (* ::DisplayFormula:: *)
 (*fun`fig`gegm`cn[*)
-(*fig`interval`modi_,(*function, generate band figure using data of ge or gm *)*)
+(*fig`calc`interval_,(*function, generate band figure using data of ge or gm *)*)
 (*framelabel_,(*framelabel of ge or gm*)*)
 (*legend`text_,(*legend text*)*)
 (*legend`ps_:legend`position,(*legend position*)*)
@@ -1309,14 +1355,16 @@ legend`ps1= {
 inde=2;
 fig`baryons`ge`charge=fun`fig`gegm`cn[
 Join[
-fig`interval`modi[[1,{4,3,6,1},3]],
+fig`calc`interval[[1,{4,3,6,1},3]],
 {fig`expr[[inde]]}
 ],
 framelabel`gegm[whether`normal][[inde]],
 legend`t1,
 legend`position`calc[[inde]],
 style`legend1,
-legend`calc`totalsize[[inde]]
+legend`calc`totalsize[[inde]],
+fig`range[whether`normal][[inde]],
+fig`padding[whether`normal][[inde]]
 ];
 
 
@@ -1344,14 +1392,16 @@ legend`ps2= {
 inde=1;
 fig`baryons`ge`neutral=fun`fig`gegm`cn[
 Join[
-fig`interval`modi[[1,{2,5,7,8},3]],
+fig`calc`interval[[1,{2,5,7,8},3]],
 {fig`expr[[inde]]}
 ],
 framelabel`gegm[whether`normal][[inde]],
 legend`t2,
 legend`position`calc[[inde]],
 style`legend2,
-legend`calc`totalsize[[inde]]
+legend`calc`totalsize[[inde]],
+fig`range[whether`normal][[inde]],
+fig`padding[whether`normal][[inde]]
 ];
 
 
@@ -1376,14 +1426,16 @@ legend`ps3= {
 inde=4;
 fig`baryons`gm`charge=fun`fig`gegm`cn[
 Join[
-fig`interval`modi[[2,{4,3,6,1},3]],
+fig`calc`interval[[2,{4,3,6,1},3]],
 {fig`expr[[inde]]}
 ],
 framelabel`gegm[whether`normal][[inde]],
 legend`t1,
 legend`position`calc[[inde]],
 style`legend1,
-legend`calc`totalsize[[inde]]
+legend`calc`totalsize[[inde]],
+fig`range[whether`normal][[inde]],
+fig`padding[whether`normal][[inde]]
 ];
 
 
@@ -1408,14 +1460,16 @@ legend`ps4= {
 inde=3;
 fig`baryons`gm`neutral=fun`fig`gegm`cn[
 Join[
-fig`interval`modi[[2,{2,5,7,8},3]],
+fig`calc`interval[[2,{2,5,7,8},3]],
 {fig`expr[[inde]]}
 ],
 framelabel`gegm[whether`normal][[inde]],
 legend`t2,
 legend`position`calc[[inde]],
 style`legend2,
-legend`calc`totalsize[[inde]]
+legend`calc`totalsize[[inde]],
+fig`range[whether`normal][[inde]],
+fig`padding[whether`normal][[inde]]
 ];
 
 

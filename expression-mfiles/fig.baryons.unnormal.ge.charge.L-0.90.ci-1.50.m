@@ -3517,9 +3517,8 @@ Legended[Legended[Graphics[
        {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, 
        {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}}}, 
      {{}, {}}}}, {ImageSize -> Large, PlotRange -> {{0, 1}, All}, 
-    AxesOrigin -> {0, 0}, PlotRangePadding -> 
-     {{0, 0}, {Scaled[0.09], Scaled[0.12]}}, Frame -> True, 
-    FrameLabel -> {{Style["\*SubsuperscriptBox[\(G\), \(E\), \
+    AxesOrigin -> {0, 0}, PlotRangePadding -> {{0, 0}, {0, 0}}, 
+    Frame -> True, FrameLabel -> {{Style["\*SubsuperscriptBox[\(G\), \(E\), \
 \(p\)](\*SuperscriptBox[\(Q\), \(2\)])", FontFamily -> "Times New Roman", 
         FontSize -> 12], None}, 
       {Style[

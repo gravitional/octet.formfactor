@@ -252,9 +252,26 @@ x_Graphics,
 (*fun`inset[base_,inset_,pos`infun_,inset`pos_,inset`opos_,inset`size_]*)
 
 
-inset`pos=Scaled[{.5,.5}];
-inset`opos=Scaled[{0,0}];
-inset`size=Scaled[{.62,.62}];
+(* ::DisplayFormula:: *)
+(*\:63d2\:5165\:4f4d\:7f6e\:ff0c\:951a\:70b9\:4f4d\:7f6e\:ff0c\:56fe\:50cf\:5927\:5c0f*)
+
+
+inset`pos=<|
+"gm_charge"->Scaled[{.5,.5}],
+"gm_neutral"->Scaled[{.52,.5}]
+|>;
+
+
+inset`opos=<|
+"gm_charge"->Scaled[{0,0}],
+"gm_neutral"->Scaled[{0,0}]
+|>;
+
+
+inset`size=<|
+"gm_charge"->Scaled[{.61,.62}],
+"gm_neutral"->Scaled[{.62,.62}]
+|>;
 
 
 (* ::Section:: *)
@@ -274,9 +291,9 @@ fun`extrct`graph[fig`inset],
 (*\:8ba1\:7b97\:51fainset\:8981\:63d2\:5165\:7684\:4f4d\:7f6e*)
 Join[fun`pos`graph[fig`base],{1,1}],
 (*\:4e0b\:9762\:7ed9\:51fa\:63d2\:5165\:7684\:5177\:4f53\:4f4d\:7f6e\:548c\:5927\:5c0f*)
-inset`pos,
-inset`opos,
-inset`size
+inset`pos[name],
+inset`opos[name],
+inset`size[name]
 ]
 ];
 
@@ -298,9 +315,9 @@ fun`extrct`graph[fig`inset],
 (*\:8ba1\:7b97\:51fainset\:8981\:63d2\:5165\:7684\:4f4d\:7f6e*)
 Join[fun`pos`graph[fig`base],{1,1}],
 (*\:4e0b\:9762\:7ed9\:51fa\:63d2\:5165\:7684\:5177\:4f53\:4f4d\:7f6e\:548c\:5927\:5c0f*)
-inset`pos,
-inset`opos,
-inset`size
+inset`pos[name],
+inset`opos[name],
+inset`size[name]
 ]
 ];
 
