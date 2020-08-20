@@ -1211,13 +1211,13 @@ FontSize->fontsize`frame`text],None},
 FontSize->fontsize`frame`text],None}
 },
 {
-{Style["\*SubsuperscriptBox[\(G\), \(M\), \(B\)](\*SuperscriptBox[\(Q\), \(2\)])",FontFamily->"Times New Roman",
+{Style["\!\(\*SubsuperscriptBox[\(G\), \(M\), \(B\)]\)(\!\(\*SuperscriptBox[\(Q\), \(2\)]\))/\!\(\*SubscriptBox[\(\[Mu]\), \(B\)]\)",FontFamily->"Times New Roman",
 FontSize->fontsize`frame`text],None},
 {Style["\*SuperscriptBox[\(Q\), \(2\)](\*SuperscriptBox[\(GeV\), \(2\)])",FontFamily->"Times New Roman",
 FontSize->fontsize`frame`text],None}
 },
 {
-{Style["\*SubsuperscriptBox[\(G\), \(M\), \(B\)](\*SuperscriptBox[\(Q\), \(2\)])",FontFamily->"Times New Roman",
+{Style["\!\(\*SubsuperscriptBox[\(G\), \(M\), \(B\)]\)(\!\(\*SuperscriptBox[\(Q\), \(2\)]\))/\!\(\*SubscriptBox[\(\[Mu]\), \(B\)]\)",FontFamily->"Times New Roman",
 FontSize->fontsize`frame`text],None},
 {Style["\*SuperscriptBox[\(Q\), \(2\)](\*SuperscriptBox[\(GeV\), \(2\)])",FontFamily->"Times New Roman",
 FontSize->fontsize`frame`text],None}

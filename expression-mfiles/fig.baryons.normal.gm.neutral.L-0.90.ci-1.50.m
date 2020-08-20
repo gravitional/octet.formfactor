@@ -1858,9 +1858,9 @@ Legended[Legended[Graphics[
      {{}, {}}}}, {ImageSize -> Large, PlotRange -> {{0, 1}, All}, 
     AxesOrigin -> {0, 0}, PlotRangePadding -> 
      {{0, 0}, {Scaled[0.09], Scaled[0.12]}}, Frame -> True, 
-    FrameLabel -> {{Style["\*SubsuperscriptBox[\(G\), \(M\), \
-\(B\)](\*SuperscriptBox[\(Q\), \(2\)])", FontFamily -> "Times New Roman", 
-        FontSize -> 18], None}, 
+    FrameLabel -> {{Style["\!\(\*SubsuperscriptBox[\(G\), \(M\), \
+\(B\)]\)(\!\(\*SuperscriptBox[\(Q\), \(2\)]\))/\!\(\*SubscriptBox[\(\[Mu]\), \
+\(B\)]\)", FontFamily -> "Times New Roman", FontSize -> 18], None}, 
       {Style[
         "\*SuperscriptBox[\(Q\), \(2\)](\*SuperscriptBox[\(GeV\), \(2\)])", 
         FontFamily -> "Times New Roman", FontSize -> 18], None}}, 
