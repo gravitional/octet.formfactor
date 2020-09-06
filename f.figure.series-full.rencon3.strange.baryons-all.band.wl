@@ -122,7 +122,7 @@ parameter`lambda0`string=ToString[NumberForm[parameter`lambda0,{3,2}]]
 parameter`ci`string=ToString[NumberForm[parameter`ci,{3,2}]]
 
 
-(* ::Chapter::Closed:: *)
+(* ::Chapter:: *)
 (*import *)
 
 
@@ -579,9 +579,17 @@ data`interval=data`interval`im3;
 dir`expr=FileNameJoin[{git`local`name,"/experiment/"}]
 
 
+(* ::Text:: *)
+(*\:6309\:7167\:53c2\:8003\:6587\:732e\:51fa\:73b0\:987a\:5e8f\:4f5c\:4e3alabel\:7684\:6570\:636e*)
+
+
+(* ::Text:: *)
+(*nucleon_assoc _data _ref _order.m*)
+
+
 Module[{tename1,tename2},
 
-file`list=FileNames[StartOfString~~__~~".m",
+file`list=FileNames[StartOfString~~__~~"ref"~~__~~".m",
 dir`expr
 ]
 
