@@ -122,11 +122,11 @@ parameter`lambda0`string=ToString[NumberForm[parameter`lambda0,{3,2}]]
 parameter`ci`string=ToString[NumberForm[parameter`ci,{3,2}]]
 
 
-(* ::Chapter:: *)
+(* ::Chapter::Closed:: *)
 (*import *)
 
 
-(* ::Section:: *)
+(* ::Section::Closed:: *)
 (*import origin figs*)
 
 
@@ -197,7 +197,7 @@ StringRiffle[nb`list]
 (*fig`baryons`origin,{2,3,8,3},{gegm,conf,io,trlp}*)
 
 
-(* ::Section:: *)
+(* ::Section::Closed:: *)
 (*import series-o0*)
 
 
@@ -270,7 +270,7 @@ series`baryons`im1=series`baryons`origin[[All,2,All,(clas=3)]];
 series`baryons=series`baryons`im1;
 
 
-(* ::Section:: *)
+(* ::Section::Closed:: *)
 (*amp`gegm`calc*)
 
 
@@ -485,7 +485,7 @@ Mean[Abs[errorbar`asy[[gegm,All,io,trlp]]]]
 (*errorbar`sym,{2,8,3},{gegm,io,trlp}*)
 
 
-(* ::Chapter:: *)
+(* ::Chapter::Closed:: *)
 (*errorbar*)
 
 
@@ -505,7 +505,7 @@ Mean[Abs[errorbar`asy[[gegm,All,io,trlp]]]]
 (*errorbar`asy,{2,8,3},{gegm,io,trlp}*)
 
 
-(* ::Section:: *)
+(* ::Section::Closed:: *)
 (*formatting*)
 
 
@@ -584,12 +584,13 @@ dir`expr=FileNameJoin[{git`local`name,"/experiment/"}]
 
 
 (* ::Text:: *)
-(*nucleon_assoc _data _ref _order.m*)
+(*nucleon_assoc _data _reforder.m*)
+(*nucleon_assoc_data_authyear.m*)
 
 
 Module[{tename1,tename2},
 
-file`list=FileNames[StartOfString~~__~~"ref"~~__~~".m",
+file`list=FileNames[StartOfString~~__~~"data_authyear.m",
 dir`expr
 ]
 
