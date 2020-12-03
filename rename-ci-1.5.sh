@@ -13,7 +13,7 @@ cp "fig.baryons.gm.charge.L-0.90.ci-1.50.pdf" ${paperpath}"fig2.pdf"
 cp "fig.baryons.gm.neutral.L-0.90.ci-1.50.pdf" ${paperpath}"fig3.pdf"
 # cd 到论文目录，重新编译论文
 cd $paperpath
-./build.sh
+texbuild
 # 如果桌面还没有压缩文件目录，就创建一个
 if [ ! -d $deskpath ];then
       mkdir -p $deskpath
