@@ -16,6 +16,7 @@ shutil.copy(os.path.join(result_path,'fig.baryons.gm.neutral.L-0.90.ci-1.50.pdf'
 os.chdir(paper_path)
 # 清除之前的编译结果，重新编译
 os.system('latexmk -C')
+# 这个是我自己写的xelatex编译脚本
 os.system('texbuild')
 # 如果桌面有压缩文件目录，就删除，shutil.copytree需要目标不存在
 src_list=['fig1.pdf','fig2.pdf','fig3.pdf','fig4.pdf','fig5.pdf','octetFF.tex','octetFF.pdf']
