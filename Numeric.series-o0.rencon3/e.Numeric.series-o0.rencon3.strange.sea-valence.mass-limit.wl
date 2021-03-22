@@ -12,41 +12,60 @@
 (*\:6570\:503c\:8ba1\:7b97\:6587\:4ef6  series-o0*)
 
 
-(* ::Chapter:: *)
-(*initial 1*)
+(* ::Title:: *)
+(*initial*)
 
 
-Once[
-git`remote`name="octet.formfactor";
-(*\:7ed9\:51fa\:8fdc\:7a0bgit\:4ed3\:5e93\:7684\:540d\:5b57*)
-If[
+(* ::Text:: *)
+(*\:5b9a\:4e49\:4e00\:4e9b\:5e38\:7528\:7684\:51fd\:6570*)
+
+
+forcestr[x__]:=StringJoin[ToString[#1]&/@Flatten[{x}]](*\:5b9a\:4e49\:4e00\:4e2a\:786e\:4fdd\:5b57\:7b26\:4e32\:7684\:51fd\:6570*)
+
+
+echo[x__]:=Print["----------------------------","\n\033[1;44m\033[1;37m",forcestr[x],"\033[0;0m\n","----------------------------"];(*\:5b9a\:4e49\:4e00\:4e2a\:6253\:5370\:51fd\:6570*)
+
+
+(* ::Text:: *)
+(*\:8ba1\:7b97\:73af\:5883\:53c2\:91cf\:ff0c\:6bd4\:5982\:8def\:5f84*)
+
+
+git`remote`name="octet.formfactor";(*\:7ed9\:51fa\:8fdc\:7a0bgit\:4ed3\:5e93\:7684\:540d\:5b57*)
+boole`incmd=Not[$Notebooks];(*\:811a\:672c\:7684\:8fd0\:884c\:6a21\:5f0f\:5224\:65ad\:ff0cTrue\:4ee3\:8868\:547d\:4ee4\:884c\:ff0cFalse\:4ee3\:8868\:524d\:7aef*)
+
+
+filename=If[Not[boole`incmd],NotebookFileName[],$ScriptCommandLine[[1]]](*\:7ed9\:51fa\:7b14\:8bb0\:672c\:7684\:7edd\:5bf9\:8def\:5f84*)
+
+
+(*\:5982\:679c\:5728\:524d\:7aef\:6267\:884c\:ff0c\:5c31\:5237\:65b0\:7b14\:8bb0\:672c\:7684\:540d\:5b57*)
+Once[If[
 (* if $ScriptCommandLine==={}, the environment is frontend*)
-SameQ[$ScriptCommandLine,{}],
+Not[boole`incmd],
 (*if execute in the frontend mode, refresh the title name*)
 CompoundExpression[
-(*\:6587\:4ef6\:7edd\:5bf9\:8def\:5f84*)
-filename=NotebookFileName[],
-(*\:5355\:5143\:5bf9\:8c61,\:7b2c\:4e00\:4e2a\:5355\:5143*)
-cell`title=(Cells[][[1]]),
-(*\:5237\:65b0\:7b2c\:4e00\:4e2a\:5355\:5143\:7684\:540d\:5b57*)
-NotebookWrite[cell`title,Cell[FileNameSplit[filename][[-1]],"Title"]],
-(*if execute in commandline mode, print a ready message*)
-git`local`name=FileNameJoin[Append[TakeWhile[FileNameSplit[NotebookDirectory[]],UnsameQ[#1,git`remote`name]&],git`remote`name]]
-(*add the base git root dir*)
-],
-CompoundExpression[
-Print["Ready to execute this script"]
+cell`title=(Cells[][[1]]),(*\:5355\:5143\:5bf9\:8c61,\:7b2c\:4e00\:4e2a\:5355\:5143*)
+NotebookWrite[cell`title,Cell[FileNameSplit[filename][[-1]],"Title"]](*\:5237\:65b0\:7b2c\:4e00\:4e2a\:5355\:5143\:7684\:540d\:5b57*)
 ]
-]
-]
+]];
+If[boole`incmd,echo["Ready to execute this script"]](*\:5982\:679c\:5728\:547d\:4ee4\:884c\:6267\:884c\:ff0c\:5c31\:6253\:5370\:63d0\:793a\:4fe1\:606f*)
 
 
 (* ::Text:: *)
-(*********************************** notebook \:5907\:5fd8\:5f55*)
+(*\:5b9a\:4e49\:672c\:5730git\:76ee\:5f55\:ff0c\:4e5f\:5c31\:662f\:7a0b\:5e8f\:7684\:6839\:76ee\:5f55*)
+
+
+echo["the git`local`name is"]
+
+
+git`local`name=FileNameJoin[Append[TakeWhile[FileNameSplit[ExpandFileName[filename]],UnsameQ[#1,git`remote`name]&],git`remote`name]]
 
 
 (* ::Text:: *)
-(*series full calc scripts*)
+(*\:5982\:679c\:5728\:547d\:4ee4\:884c\:6267\:884c\:ff0c\:5c31\:76f4\:63a5\:63a5\:53d7\:547d\:4ee4\:884c\:53d8\:91cf*)
+
+
+(* ::Text:: *)
+(*\:5982\:679c\:5728\:524d\:7aef\:6267\:884c\:ff0c\:5c31\:6a21\:62df\:547d\:4ee4\:884c\:8f93\:5165\:ff0c\:8ba1\:7b97\:6a21\:62df\:53d8\:91cf\:7684\:5b57\:7b26\:4e32\:5f62\:5f0f\:3002\:56e0\:4e3a\:547d\:4ee4\:884c\:4f20\:5165\:7684\:4e00\:822c\:662f\:5b57\:7b26\:4e32\:ff0c\:8fd9\:6837\:53ef\:4ee5\:7edf\:4e00\:5f62\:5f0f\:3002*)
 
 
 (* ::Chapter:: *)
@@ -61,9 +80,9 @@ Print["Ready to execute this script"]
 (*\:6a21\:62df\:547d\:4ee4\:884c\:8f93\:5165\:ff0c\:8c03\:8bd5\:4f7f\:7528*)
 
 
-input`simulation={"C:\\octet.formfactor\\Numeric.series-o0.rencon3
-\\e.Numeric.series-o0.rencon3.strange.sea-valence.mass-limit.wl",
-"o0",1.00,1.50}
+input`simulation={
+"/home/tom/octet.formfactor/Numeric.series-o0.rencon3/e.Numeric.series-o0.rencon3.strange.sea-valence.mass-limit.wl"
+,"o1",0.80,1.00};
 
 
 (* ::Text:: *)
@@ -87,20 +106,15 @@ input`cml=$ScriptCommandLine
 (*+++++++++++++++++++++++++++++++++*)
 
 
-Print["----------------------------","\n","the parameter order, lambda, ci is","\n","----------------------------"];
-
-
-{file`name,parameter`order,parameter`lambda0,parameter`ci}={
+{filename,parameter`order,parameter`lambda0,parameter`ci}={
 input`cml[[1]],input`cml[[2]],
 ToExpression[input`cml[[3]]],
 ToExpression[input`cml[[4]]]
-}
+};
 
 
-Print["----------------------------"];
-
-
-git`local`name=FileNameJoin[Append[TakeWhile[FileNameSplit[NotebookDirectory[]],UnsameQ[#1,git`remote`name]&],git`remote`name]]
+echo["the parameter order, lambda, ci, and the root directory"];
+git`local`name=FileNameJoin[Append[TakeWhile[FileNameSplit[$InputFileName],UnsameQ[#1,git`remote`name]&],git`remote`name]](*\:672c\:5730\:6839\:76ee\:5f55*)
 
 
 parameter`order`string=ToString[parameter`order]
@@ -122,7 +136,7 @@ Get["X`"]
 choplimit=10^-8;
 
 
-Print["----------------------------","\n","the configuration of Simplify","\n","----------------------------"];
+echo["the configuration of Simplify"];
 
 
 SetOptions[Simplify,TimeConstraint->1]
@@ -140,7 +154,7 @@ SetOptions[Simplify,TimeConstraint->1]
 (*coe list and mass rule get*)
 
 
-Print["----------------------------","\n","start import analytic and coes ","\n","----------------------------"];
+echo["start import analytic and coes "];
 
 
 analytic`dir=FileNameJoin[{git`local`name,"analytic-storage.strange.series-"<>parameter`order`string}]
@@ -272,7 +286,7 @@ fucoepresign={
 (*1 for fitting, 2 for calc/test,*)
 
 
-Print["----------------------------","\n","start combine coes and presigns","\n","----------------------------"];
+echo["start combine coes and presigns"];
 
 
 (*fucoeandmrrlraw [consti,figure,octet][4*11*8]*)
@@ -638,7 +652,7 @@ FileNameJoin[{analytic`dir,"f2."<>"analytic."<>ToString[if]<>".m"}]
 (*diagff=11[diagram]*2[ff1,ff2]*many(contri terms)*)
 
 
-Print["----------------------------","\n","start numeric, separate`nuff1 separate`nuff2 ","\n","----------------------------"];
+echo["start numeric, separate`nuff1 separate`nuff2 "];
 
 
 Module[{order=0},
@@ -670,7 +684,7 @@ Module[{order=0},
 separate`nuff2=Table[
 
 order++;
-If[IntegerQ[order/400],Print[seva,",",io,",",if,",",coe]
+If[IntegerQ[order/400],Print[seva,",",io,",",if,",",coe](*\:7528\:6765\:663e\:793a\:8ba1\:7b97\:8fdb\:5ea6\:ff0c\:4ee5400 \:4e2a\:9879\:76ee\:4e3a\:8ba1\:6570\:5355\:4f4d*)
 ];
 
 Simplify[
@@ -862,7 +876,7 @@ rencon\[LeftDoubleBracket]4,5\[RightDoubleBracket]=1;*)
 
 
 (*++++++++++++++++++++display+++++++++++++++++++++*)
-Print["----------------------------","\n","calculated renormalization constants","\n","----------------------------"];
+echo["calculated renormalization constants"];
 StringRiffle[rencon]
 
 
@@ -1000,17 +1014,17 @@ Re[Cancel[Chop[nugegm,choplimit]]/.Q2->0]
 
 rearrange`seva`gegm=Transpose[
 {
-tree`gegm[[All,1,All]],(* 1;tree flavor total *)
+tree`gegm[[All,1,All]],(* 1;tree uds total*)
 tree`gegm[[All,2,All]],(*2;u*)
 tree`gegm[[All,3,All]],(*3;d*)
 tree`gegm[[All,4,All]],(*4;s*)
 
-tree`gegm`rencon3[[All,1,All]]+loop`gegm[[All,1,All]],(*5; loop flavor total *)
+tree`gegm`rencon3[[All,1,All]]+loop`gegm[[All,1,All]],(*5; loop uds total *)
 tree`gegm`rencon3[[All,2,All]]+loop`gegm[[All,2,All]],(*6;u*)
 tree`gegm`rencon3[[All,3,All]]+loop`gegm[[All,3,All]],(*7;d*)
 tree`gegm`rencon3[[All,4,All]]+loop`gegm[[All,4,All]],(*8;s*)
 
-tree`gegm`rencon2[[All,1,All]]+loop`gegm[[All,1,All]],(*9; tree+loop flavor total *)
+tree`gegm`rencon2[[All,1,All]]+loop`gegm[[All,1,All]],(*9; tree+loop uds total *)
 tree`gegm`rencon2[[All,2,All]]+loop`gegm[[All,2,All]],(*10;u*)
 tree`gegm`rencon2[[All,3,All]]+loop`gegm[[All,3,All]],(*11;d*)
 tree`gegm`rencon2[[All,4,All]]+loop`gegm[[All,4,All]],(*12;s*)
@@ -1060,7 +1074,7 @@ names`horizontal(* prepend names aligned in horizontal, should +1, for vertical 
 (*\:4ee5\:514d\:4ea7\:751f\:4e0d\:826f\:8868\:8fbe\:5f0f\:ff0c\:5e76\:80fd\:591f\:4e0e\:6b63\:5e38\:7684\:8868\:8fbe\:5f0f\:7edf\:4e00*)
 
 
-parameter`ghost=Sqrt[2];
+parameter`ghost=Sqrt[2];(*\:53d6\:975e\:6574\:6570\:503c\:ff0c\:66f4\:5bb9\:6613\:53d1\:73b0\:5f02\:5e38*)
 
 
 names`legend={"Ge.loop.quench-sea-valence","Gm.loop.quench-sea-valence"};
@@ -1130,19 +1144,12 @@ fun`exp["-0.867","0.074"]
 
 
 data`list[gegm_]:=Transpose[
+Join[
+rearrange`seva`gegm[[gegm]],
 {
-rearrange`seva`gegm[[gegm,1]],(*tree*)
-
-rearrange`seva`gegm[[gegm,5]],(*flavor valence total, include tree level*)
-
-rearrange`seva`gegm[[gegm,9]],(*flavor valence total, include tree level*)
-
-data`exp[[gegm]],
-
-data`lat[[gegm]],
-
-data`paper[[gegm]]
+data`exp[[gegm]],data`lat[[gegm]],data`paper[[gegm]]
 }
+]
 ,{2,1}
 ];
 
@@ -1155,12 +1162,20 @@ names`vertical={"\[CapitalSigma]m","\[CapitalSigma]0","\[CapitalSigma]p","pr","n
 
 
 names`horizontal={
-{
-"Ge","tree","loop","total",
+{"Ge",
+"tree all","tree u","tree d","tree s",
+"loop all","loop u","loop d","loop s",
+"all all","all u","all d","all s",
+"val u","val d","val s",
+"sea u","sea d","sea s",
 "exp.","Lattice","paper"
 },
-{
-"\[Mu]","tree","loop","total",
+{"\[Mu]",
+"tree all","tree u","tree d","tree s",
+"loop all","loop u","loop d","loop s",
+"all all","all u","all d","all s",
+"val u","val d","val s",
+"sea u","sea d","sea s",
 "exp.","Lattice","paper"
 }
 };
@@ -1176,9 +1191,10 @@ LightCyan,{None,LightBlue}
 
 (* ::DisplayFormula:: *)
 (*fun`Q2table`rearrange=Function[{names`horizontal,names`vertical,data`list,background},*)
+(*\:4e0b\:9762\:53ef\:4ee5\:521d\:6b65\:67e5\:770b\:6570\:636e\:5217\:8868*)
 
 
-(* ::DisplayFormula:: *)
+(* ::Input:: *)
 (*gegm=1;*)
 (*tab`moment`ge`total=Style[*)
 (*Multicolumn[*)
@@ -1200,7 +1216,7 @@ LightCyan,{None,LightBlue}
 (*]*)
 
 
-(* ::DisplayFormula:: *)
+(* ::Input:: *)
 (*gegm=2;*)
 (*tab`moment`gm`total=Style[*)
 (*Multicolumn[*)
@@ -1226,13 +1242,13 @@ LightCyan,{None,LightBlue}
 (*export*)
 
 
-Print["----------------------------","\n","output directory","\n","----------------------------"];
+echo["output directory"];
 
 
 output`dir=FileNameJoin[{git`local`name,"/expression-mfiles/"}]
 
 
-Print["----------------------------","\n","output file name","\n","----------------------------"];
+echo["output file name"];
 
 
 output`name=FileNameJoin[{output`dir,"data.baryons."<>
@@ -1243,7 +1259,7 @@ output`name=FileNameJoin[{output`dir,"data.baryons."<>
 }]
 
 
-Print["----------------------------","\n","output status","\n","----------------------------"];
+echo["output status"];
 
 
 Export[
