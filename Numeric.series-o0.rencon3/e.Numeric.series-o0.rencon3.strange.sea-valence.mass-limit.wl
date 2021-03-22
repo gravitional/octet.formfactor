@@ -12,8 +12,17 @@
 (*\:6570\:503c\:8ba1\:7b97\:6587\:4ef6  series-o0*)
 
 
-(* ::Title:: *)
+(* ::Chapter:: *)
 (*initial*)
+
+
+(* ::Text:: *)
+(*\:8ba1\:7b97\:73af\:5883\:53c2\:91cf\:ff0c\:6bd4\:5982\:8def\:5f84*)
+
+
+git`remote`name="octet.formfactor";(*\:7ed9\:51fa\:8fdc\:7a0bgit\:4ed3\:5e93\:7684\:540d\:5b57*)
+boole`incmd=Not[$Notebooks];(*\:811a\:672c\:7684\:8fd0\:884c\:6a21\:5f0f\:5224\:65ad\:ff0cTrue\:4ee3\:8868\:547d\:4ee4\:884c\:ff0cFalse\:4ee3\:8868\:524d\:7aef*)
+filename=If[Not[boole`incmd],NotebookFileName[],$InputFileName](*\:7ed9\:51fa\:7b14\:8bb0\:672c\:7684\:7edd\:5bf9\:8def\:5f84*)
 
 
 (* ::Text:: *)
@@ -23,18 +32,10 @@
 forcestr[x__]:=StringJoin[ToString[#1]&/@Flatten[{x}]](*\:5b9a\:4e49\:4e00\:4e2a\:786e\:4fdd\:5b57\:7b26\:4e32\:7684\:51fd\:6570*)
 
 
-echo[x__]:=Print["----------------------------","\n\033[1;44m\033[1;37m",forcestr[x],"\033[0;0m\n","----------------------------"];(*\:5b9a\:4e49\:4e00\:4e2a\:6253\:5370\:51fd\:6570*)
-
-
-(* ::Text:: *)
-(*\:8ba1\:7b97\:73af\:5883\:53c2\:91cf\:ff0c\:6bd4\:5982\:8def\:5f84*)
-
-
-git`remote`name="octet.formfactor";(*\:7ed9\:51fa\:8fdc\:7a0bgit\:4ed3\:5e93\:7684\:540d\:5b57*)
-boole`incmd=Not[$Notebooks];(*\:811a\:672c\:7684\:8fd0\:884c\:6a21\:5f0f\:5224\:65ad\:ff0cTrue\:4ee3\:8868\:547d\:4ee4\:884c\:ff0cFalse\:4ee3\:8868\:524d\:7aef*)
-
-
-filename=If[Not[boole`incmd],NotebookFileName[],$ScriptCommandLine[[1]]](*\:7ed9\:51fa\:7b14\:8bb0\:672c\:7684\:7edd\:5bf9\:8def\:5f84*)
+If[boole`incmd,
+echo[x__]:=Print["----------------------------","\n\033[1;44m\033[1;37m",forcestr[x],"\033[0;0m\n","----------------------------"],(*\:5b9a\:4e49\:7ec8\:7aef\:7684\:6253\:5370\:51fd\:6570*)
+echo[x__]:=Print[x](*\:5b9a\:4e49\:7b14\:8bb0\:672c\:7684\:6253\:5370\:51fd\:6570*)
+]
 
 
 (*\:5982\:679c\:5728\:524d\:7aef\:6267\:884c\:ff0c\:5c31\:5237\:65b0\:7b14\:8bb0\:672c\:7684\:540d\:5b57*)
@@ -55,8 +56,6 @@ If[boole`incmd,echo["Ready to execute this script"]](*\:5982\:679c\:5728\:547d\:
 
 
 echo["the git`local`name is"]
-
-
 git`local`name=FileNameJoin[Append[TakeWhile[FileNameSplit[ExpandFileName[filename]],UnsameQ[#1,git`remote`name]&],git`remote`name]]
 
 
@@ -93,12 +92,9 @@ input`simulation={
 (*\:5f15\:5165\:547d\:4ee4\:884c\:53c2\:6570, \:81ea\:52a8\:5224\:65ad\:662f\:5728\:547d\:4ee4\:884c\:4e0b\:8fd0\:884c\:ff0c\:8fd8\:662f\:5728\:7b14\:8bb0\:672c\:4e2d\:8fd0\:884c*)
 
 
-If[
-SameQ[$ScriptCommandLine,{}],
-(*if execute in the frontend mode, refresh the title name*)
-input`cml=input`simulation,
-(*if execute in commandline mode, use $ScriptCommandLine as parameters*)
-input`cml=$ScriptCommandLine
+If[boole`incmd,
+input`cml=$ScriptCommandLine,(*\:5982\:679c\:5728\:547d\:4ee4\:884c\:6267\:884c\:ff0c\:5c31\:91c7\:7528\:547d\:4ee4\:884c\:53c2\:6570*)
+input`cml=input`simulation(*\:5982\:679c\:5728\:7b14\:8bb0\:672c\:6267\:884c\:ff0c\:5c31\:91c7\:7528\:6a21\:62df\:53c2\:6570*)
 ];
 
 
@@ -113,8 +109,7 @@ ToExpression[input`cml[[4]]]
 };
 
 
-echo["the parameter order, lambda, ci, and the root directory"];
-git`local`name=FileNameJoin[Append[TakeWhile[FileNameSplit[$InputFileName],UnsameQ[#1,git`remote`name]&],git`remote`name]](*\:672c\:5730\:6839\:76ee\:5f55*)
+echo["the parameter order, lambda, ci"];
 
 
 parameter`order`string=ToString[parameter`order]
@@ -1033,7 +1028,7 @@ tree`gegm`rencon2[[All,2,All]]+loop`gegm[[All,5,All]]+loop`gegm[[All,8,All]],(*1
 tree`gegm`rencon2[[All,3,All]]+loop`gegm[[All,6,All]]+loop`gegm[[All,9,All]],(*14 valence-total, d*)
 tree`gegm`rencon2[[All,4,All]]+loop`gegm[[All,7,All]]+loop`gegm[[All,10,All]],(*15 valence-total, s*)
 
-loop`gegm[[All,11,All]],loop`gegm[[All,12,All]],loop`gegm[[All,13,All]](*16 sea u, sea d, sea s*)
+loop`gegm[[All,11,All]],loop`gegm[[All,12,All]],loop`gegm[[All,13,All]](*16sea u, 17sea d,18sea s*)
 
 }
 ,{2,1,3}

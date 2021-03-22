@@ -4,6 +4,61 @@
 (*e.Numeric.series-o1.rencon3.strange.sea-valence.mass-limit.wl*)
 
 
+(* ::Title:: *)
+(*initial*)
+
+
+(* ::Text:: *)
+(*\:8ba1\:7b97\:73af\:5883\:53c2\:91cf\:ff0c\:6bd4\:5982\:8def\:5f84*)
+
+
+git`remote`name="octet.formfactor";(*\:7ed9\:51fa\:8fdc\:7a0bgit\:4ed3\:5e93\:7684\:540d\:5b57*)
+boole`incmd=Not[$Notebooks];(*\:811a\:672c\:7684\:8fd0\:884c\:6a21\:5f0f\:5224\:65ad\:ff0cTrue\:4ee3\:8868\:547d\:4ee4\:884c\:ff0cFalse\:4ee3\:8868\:524d\:7aef*)
+filename=If[Not[boole`incmd],NotebookFileName[],$InputFileName](*\:7ed9\:51fa\:7b14\:8bb0\:672c\:7684\:7edd\:5bf9\:8def\:5f84*)
+
+
+(* ::Text:: *)
+(*\:5b9a\:4e49\:4e00\:4e9b\:5e38\:7528\:7684\:51fd\:6570*)
+
+
+forcestr[x__]:=StringJoin[ToString[#1]&/@Flatten[{x}]](*\:5b9a\:4e49\:4e00\:4e2a\:786e\:4fdd\:5b57\:7b26\:4e32\:7684\:51fd\:6570*)
+
+
+If[boole`incmd,
+echo[x__]:=Print["----------------------------","\n\033[1;44m\033[1;37m",forcestr[x],"\033[0;0m\n","----------------------------"],(*\:5b9a\:4e49\:7ec8\:7aef\:7684\:6253\:5370\:51fd\:6570*)
+echo[x__]:=Print[x](*\:5b9a\:4e49\:7b14\:8bb0\:672c\:7684\:6253\:5370\:51fd\:6570*)
+]
+
+
+(*\:5982\:679c\:5728\:524d\:7aef\:6267\:884c\:ff0c\:5c31\:5237\:65b0\:7b14\:8bb0\:672c\:7684\:540d\:5b57*)
+Once[If[
+(* if $ScriptCommandLine==={}, the environment is frontend*)
+Not[boole`incmd],
+(*if execute in the frontend mode, refresh the title name*)
+CompoundExpression[
+cell`title=(Cells[][[1]]),(*\:5355\:5143\:5bf9\:8c61,\:7b2c\:4e00\:4e2a\:5355\:5143*)
+NotebookWrite[cell`title,Cell[FileNameSplit[filename][[-1]],"Title"]](*\:5237\:65b0\:7b2c\:4e00\:4e2a\:5355\:5143\:7684\:540d\:5b57*)
+]
+]];
+If[boole`incmd,echo["Ready to execute this script"]](*\:5982\:679c\:5728\:547d\:4ee4\:884c\:6267\:884c\:ff0c\:5c31\:6253\:5370\:63d0\:793a\:4fe1\:606f*)
+
+
+(* ::Text:: *)
+(*\:5b9a\:4e49\:672c\:5730git\:76ee\:5f55\:ff0c\:4e5f\:5c31\:662f\:7a0b\:5e8f\:7684\:6839\:76ee\:5f55*)
+
+
+echo["the git`local`name is"]
+git`local`name=FileNameJoin[Append[TakeWhile[FileNameSplit[ExpandFileName[filename]],UnsameQ[#1,git`remote`name]&],git`remote`name]]
+
+
+(* ::Text:: *)
+(*\:5982\:679c\:5728\:547d\:4ee4\:884c\:6267\:884c\:ff0c\:5c31\:76f4\:63a5\:63a5\:53d7\:547d\:4ee4\:884c\:53d8\:91cf*)
+
+
+(* ::Text:: *)
+(*\:5982\:679c\:5728\:524d\:7aef\:6267\:884c\:ff0c\:5c31\:6a21\:62df\:547d\:4ee4\:884c\:8f93\:5165\:ff0c\:8ba1\:7b97\:6a21\:62df\:53d8\:91cf\:7684\:5b57\:7b26\:4e32\:5f62\:5f0f\:3002\:56e0\:4e3a\:547d\:4ee4\:884c\:4f20\:5165\:7684\:4e00\:822c\:662f\:5b57\:7b26\:4e32\:ff0c\:8fd9\:6837\:53ef\:4ee5\:7edf\:4e00\:5f62\:5f0f\:3002*)
+
+
 (* ::Chapter:: *)
 (*parameters*)
 
@@ -16,8 +71,7 @@
 (*\:6a21\:62df\:547d\:4ee4\:884c\:8f93\:5165\:ff0c\:8c03\:8bd5\:4f7f\:7528*)
 
 
-input`simulation={"C:\\octet.formfactor\\Numeric.series-o1.rencon3
-\\e.Numeric.series-o1.rencon3.strange.sea-valence.mass-limit.wl",
+input`simulation={"/home/tom/octet.formfactor/Numeric.series-o1.rencon3/e.Numeric.series-o1.rencon3.strange.sea-valence.mass-limit.wl",
 "o1",0.80,1.00};
 
 
@@ -25,36 +79,29 @@ input`simulation={"C:\\octet.formfactor\\Numeric.series-o1.rencon3
 (*++++++++++++++++++++++++++++++++++++++++*)
 
 
-(* ::Text:: *)
-(*\:5f15\:5165\:547d\:4ee4\:884c\:53c2\:6570, 1 \:7528\:4f5c\:5b9e\:9645\:811a\:672c\:8fd0\:884c, 2\:7528\:4f5c\:8c03\:8bd5*)
-
-
-input`cml={$ScriptCommandLine,input`simulation}[[1]];
+If[boole`incmd,
+input`cml=$ScriptCommandLine,(*\:5982\:679c\:5728\:547d\:4ee4\:884c\:6267\:884c\:ff0c\:5c31\:91c7\:7528\:547d\:4ee4\:884c\:53c2\:6570*)
+input`cml=input`simulation(*\:5982\:679c\:5728\:7b14\:8bb0\:672c\:6267\:884c\:ff0c\:5c31\:91c7\:7528\:6a21\:62df\:53c2\:6570*)
+];
 
 
 (* ::Text:: *)
 (*+++++++++++++++++++++++++++++++++*)
 
 
-Print["----------------------------","\n","the parameter order, lambda, ci is","\n","----------------------------"];
-
-
 {file`name,parameter`order,parameter`lambda0,parameter`ci}={
 input`cml[[1]],input`cml[[2]],
 ToExpression[input`cml[[3]]],
 ToExpression[input`cml[[4]]]
-}
+};
 
 
-Print["----------------------------"];
+echo["the parameter order, lambda, ci,"];
 
 
-git`root`dir=StringCases[ExpandFileName[file`name],StartOfString~~((WordCharacter|":"|"\\")..)~~"octet.formfactor"][[1]]
-
-
-parameter`order`string=ToString[parameter`order];
-parameter`lambda0`string=ToString[NumberForm[parameter`lambda0,{3,2}]];
-parameter`ci`string=ToString[NumberForm[parameter`ci,{3,2}]];
+parameter`order`string=ToString[parameter`order]
+parameter`lambda0`string=ToString[NumberForm[parameter`lambda0,{3,2}]]
+parameter`ci`string=ToString[NumberForm[parameter`ci,{3,2}]]
 
 
 (* ::Chapter:: *)
@@ -71,7 +118,7 @@ Get["X`"]
 choplimit=10^-8;
 
 
-Print["----------------------------","\n","the configuration of Simplify","\n","----------------------------"];
+echo["the configuration of Simplify"];
 
 
 SetOptions[Simplify,TimeConstraint->1]
@@ -89,13 +136,13 @@ SetOptions[Simplify,TimeConstraint->1]
 (*coe list and mass rule get*)
 
 
-Print["----------------------------","\n","start import analytic and coes ","\n","----------------------------"];
+echo["start import analytic and coes "];
 
 
-analytic`dir=FileNameJoin[{git`root`dir,"analytic-storage.strange.series-"<>parameter`order`string}]
+analytic`dir=FileNameJoin[{git`local`name,"analytic-storage.strange.series-"<>parameter`order`string}]
 
 
-coe`dir=FileNameJoin[{git`root`dir,"expression-coes"}]
+coe`dir=FileNameJoin[{git`local`name,"expression-coes"}]
 
 
 fucoeandmrrlnm={
@@ -221,7 +268,7 @@ fucoepresign={
 (*1 for fitting, 2 for calc/test,*)
 
 
-Print["----------------------------","\n","start combine coes and presigns","\n","----------------------------"];
+echo["start combine coes and presigns"];
 
 
 (*fucoeandmrrlraw [consti,figure,octet][4*11*8]*)
@@ -587,7 +634,7 @@ FileNameJoin[{analytic`dir,"f2."<>"analytic."<>ToString[if]<>".m"}]
 (*diagff=11[diagram]*2[ff1,ff2]*many(contri terms)*)
 
 
-Print["----------------------------","\n","start numeric, separate`nuff1 separate`nuff2 ","\n","----------------------------"];
+echo["start numeric, separate`nuff1 separate`nuff2 "];
 
 
 (* ::Section:: *)
@@ -624,7 +671,7 @@ fucoe[[seva,if,io,coe]]*ff1`series[[if]]
 ]
 
 (*,{series,1,2,1}(*series order 0 1 *)*)
-,{seva,1,4,1}
+,{seva,1,13,1}
 ,{io,1,8,1}(*the outest level is the octet order*)
 ,{if,1,11,1}(*the if contris should be summed*)
 ,{coe,1,Length[fucoe[[seva,if,io]]],1}(*the coe contris should be summed*)
@@ -649,7 +696,7 @@ fucoe[[seva,if,io,coe]]*ff2`series[[if]]
 ]
 
 (*,{series,1,2,1}(*series order 0 1 *)*)
-,{seva,1,4,1}
+,{seva,1,13,1}
 ,{io,1,8,1}(*the outest level is the octet order*)
 ,{if,1,11,1}(*the if contris should be summed*)
 ,{coe,1,Length[fucoe[[seva,if,io]]],1}(*the coe contris should be summed*)
@@ -700,12 +747,12 @@ octetname={"1\[CapitalSigma]m","2\[CapitalSigma]0","3\[CapitalSigma]p","4pr","5n
 
 loop`if`gegm`value=Table[
 Chop[
-SeriesCoefficient[nugegm[[gegm,seva,io,if]],series]/.Q2->0,
+SeriesCoefficient[nugegm[[gegm,seva,io,if]],{Q2,0,series}]/.Q2->0,
 choplimit
 ]
 ,{gegm,1,2,1}
 ,{series,0,1,1}(*series order 0 1 *)
-,{seva,1,4,1}
+,{seva,1,13,1}
 ,{io,1,8,1}(*the outest level is the octet order*)
 ,{if,1,11,1}(*the if contris should be summed*)
 ];
@@ -881,7 +928,7 @@ octetmageton={
 (*{gegm,order,seva,io}*)
 
 
-rencon=Table[1,{seva,1,4,1},{io,1,8,1}];
+rencon=Table[1,{seva,1,13,1},{io,1,8,1}];
 (*+++++++++++++++++renormalized according to charge+++++++++++++*)
 Table[
 rencon[[;;,i]]=Abs[octetcharge[[i]]-Re[(Cancel[Chop[loop`gegm`value[[1,1,1,i]],choplimit]]/.Q2->0)]]
@@ -904,7 +951,7 @@ rencon\[LeftDoubleBracket]4,5\[RightDoubleBracket]=1;*)
 
 
 (*++++++++++++++++++++display+++++++++++++++++++++*)
-Print["----------------------------","\n","calculated renormalization constants","\n","----------------------------"];
+echo["calculated renormalization constants"];
 StringRiffle[rencon]
 
 
@@ -1130,22 +1177,22 @@ tree`gegm`rencon3[[All,All,4,All]]+loop`gegm`value[[All,All,4,All]],(*8;"all", s
 tree`gegm`rencon2[[All,All,1,All]]+loop`gegm`value[[All,All,1,All]],(*9;"all", all*)
 tree`gegm`rencon2[[All,All,2,All]]+loop`gegm`value[[All,All,2,All]],(*10;"all", u*)
 tree`gegm`rencon2[[All,All,3,All]]+loop`gegm`value[[All,All,3,All]],(*11;"all", d*)
-tree`gegm`rencon2[[All,All,4,All]]+loop`gegm`value[[All,All,4,All]](*12;"all", s*)
-(*+++++++++++++++++++++++++ loop +++++++++++++++*)
+tree`gegm`rencon2[[All,All,4,All]]+loop`gegm`value[[All,All,4,All]],(*12;"all", s*)
+(*+++++++++++++++++++++++++ total +++++++++++++++*)
 
-(*tree`gegm`rencon\[LeftDoubleBracket]All,All,2,All\[RightDoubleBracket]+loop`gegm`value\[LeftDoubleBracket]All,All,5,All\[RightDoubleBracket]+loop`gegm`value\[LeftDoubleBracket]All,All,8,All\[RightDoubleBracket],(*5 valence-total, u*)
-tree`gegm`rencon\[LeftDoubleBracket]All,All,3,All\[RightDoubleBracket]+loop`gegm`value\[LeftDoubleBracket]All,All,6,All\[RightDoubleBracket]+loop`gegm`value\[LeftDoubleBracket]All,All,9,All\[RightDoubleBracket],(*6 valence-total, d*)
-tree`gegm`rencon\[LeftDoubleBracket]All,All,4,All\[RightDoubleBracket]+loop`gegm`value\[LeftDoubleBracket]All,All,7,All\[RightDoubleBracket]+loop`gegm`value\[LeftDoubleBracket]All,All,10,All\[RightDoubleBracket],(*7 valence-total, s*)
+tree`gegm`rencon2[[All,All,2,All]]+loop`gegm`value[[All,All,5,All]]+loop`gegm`value[[All,All,8,All]],(*13 valence-total, u*)
+tree`gegm`rencon2[[All,All,3,All]]+loop`gegm`value[[All,All,6,All]]+loop`gegm`value[[All,All,9,All]],(*14 valence-total, d*)
+tree`gegm`rencon2[[All,All,4,All]]+loop`gegm`value[[All,All,7,All]]+loop`gegm`value[[All,All,10,All]],(*15 valence-total, s*)
 
-loop`gegm`value\[LeftDoubleBracket]All,All,11,All\[RightDoubleBracket],loop`gegm`value\[LeftDoubleBracket]All,All,12,All\[RightDoubleBracket],loop`gegm`value\[LeftDoubleBracket]All,All,13,All\[RightDoubleBracket](*8 sea, u d s*)*)
+loop`gegm`value[[All,All,11,All]],loop`gegm`value[[All,All,12,All]],loop`gegm`value[[All,All,13,All]](*16,17,18 sea, u d s*)
 
 }
 ,{3,1,2,4}
 ];
 
 
-(* ::DisplayFormula:: *)
-(*rearrange`seva`gegm//Dimensions*)
+(* ::Text:: *)
+(*rearrange`seva`gegm // Dimensions*)
 
 
 (* ::Section:: *)
@@ -1212,7 +1259,7 @@ Abs[(rearrange`seva`gegm[[gegm,1,seva`total,io]]-0)]<=equallimit(*condition,deri
 ,{gegm,1,2,1}
 
 (************************************* start the cycle range ******************************)
-,{seva,1,12,1}
+,{seva,1,18,1}
 ,{io,1,8,1}
 
 (************************************* end the cycle range ******************************)
@@ -1226,7 +1273,7 @@ Abs[(rearrange`seva`gegm[[gegm,1,seva`total,io]]-0)]<=equallimit(*condition,deri
 
 
 (* ::DisplayFormula:: *)
-(*rearrange`seva`gegm,{2,2,12,8},{gegm,order,seva,io}*)
+(*rearrange`seva`gegm,{2,2,18,8},{gegm,order,seva,io}*)
 
 
 (* ::DisplayFormula:: *)
@@ -1270,13 +1317,6 @@ Abs[(rearrange`seva`gegm[[gegm,1,seva`total,io]]-0)]<=equallimit(*condition,deri
 
 (* ::Section:: *)
 (*style 2*)
-
-
-head`table={
-"total","u-total","d-total","s-total",
-"u-valence-total","d-valence-total","s-valence-total",
-"u-sea","d-sea","s-sea"
-};
 
 
 octetname`prefix[gegm_]:={{"re2","rm2"}[[gegm]],"\[CapitalSigma]m","\[CapitalSigma]0","\[CapitalSigma]p","pr","ne","\[CapitalXi]m","\[CapitalXi]0","\[CapitalLambda]"};
@@ -1347,10 +1387,7 @@ fun`lat[0.347,24]
 };
 
 
-(* ::Text:: *)
 (*\:7528\:6765\:5728\:6b64\:6587\:4ef6\:4e2d\:753b\:56fe\:7684\:51fd\:6570*)
-
-
 data`radius[gegm_,seva_,Q2_]:=Transpose[
 Prepend[(*for prepend names horizontal*)
 MapThread[Prepend,(*for prepend names vertical*)
@@ -1358,11 +1395,11 @@ MapThread[Prepend,(*for prepend names vertical*)
 (*start the data to display*)
 Chop[
 Join[
-rearrange`radius2`gegm`seva[[gegm,seva]],
+rearrange`radius2`gegm`seva[[gegm]],
 {radius`gegm`exp[[gegm]]},
 {radius`gegm`lat[[gegm]]},
 {radius`gegm`paper[[gegm]]}
-]/.Q2->0,
+][[seva]]/.Q2->0,
 choplimit],
 (*end the data to display*)
 (*start prepend names vertical*)
@@ -1384,11 +1421,11 @@ octetname`prefix[gegm]
 data`radius`storage[gegm_,seva_,Q2_]:=Transpose[
 Chop[
 Join[
-rearrange`radius2`gegm`seva[[gegm,seva]],
+rearrange`radius2`gegm`seva[[gegm]],
 {radius`gegm`exp[[gegm]]},
 {radius`gegm`lat[[gegm]]},
 {radius`gegm`paper[[gegm]]}
-]/.Q2->0,
+][[seva]]/.Q2->0,
 choplimit]
 ];
 
@@ -1439,22 +1476,39 @@ None,(* color x direction: x1, x2, x3...*)
 (*\:9009\:62e9\:7ed8\:5236\:7684\:6570\:636e\:8303\:56f4\:ff0c\:7528Span[]\:6216\:8005\:5217\:8868\:6307\:5b9a*)
 
 
-(* ::DisplayFormula:: *)
-(*table`radius[gegm,seva,Q2]*)
+(* ::Text:: *)
+(*gegm = 1; seva = 1;*)
+(*table`radius[gegm, seva, Q2]*)
 
 
-data`vtitle={"tree","loop","total","Exp.","Lattice","paper"};
+seva={1,5,9,19,20,21};
+data`vtitle={
+"tree all","tree u","tree d","tree s",
+"loop all","loop u","loop d","loop s",
+"tot all","tot u","tot d","tot s",
+"val u","val d","val s",
+"sea u","sea d","sea s",
+"Exp.","Lattice","paper"
+}[[seva]];
 {
-tab`radius`ge=table`radius[1,{1,5,9},Q2](*total*)
+tab`radius`ge=table`radius[1,seva,Q2](*total*)
 (*,table`radius[2](*u total*),
 table`radius[5](*u valence total*),
 table`radius[8](*sea*)*)
 }//TableForm;
 
 
-data`vtitle={"tree","loop","total","Exp.","Lattice","paper"};
+seva={1,5,9,10,19,20,21};
+data`vtitle={
+"tree all","tree u","tree d","tree s",
+"loop all","loop u","loop d","loop s",
+"tot all","tot u","tot d","tot s",
+"val u","val d","val s",
+"sea u","sea d","sea s",
+"Exp.","Lattice","paper"
+}[[seva]];
 {
-tab`radius`gm=table`radius[2,{1,5,9},Q2](*total*)
+tab`radius`gm=table`radius[2,seva,Q2](*total*)
 (*,table`radius[2](*u total*),
 table`radius[5](*u valence total*),
 table`radius[8](*sea*)*)
@@ -1465,13 +1519,13 @@ table`radius[8](*sea*)*)
 (*export*)
 
 
-Print["----------------------------","\n","output directory","\n","----------------------------"];
+echo["output directory"]
 
 
-output`dir=FileNameJoin[{git`root`dir,"/expression-mfiles/"}]
+output`dir=FileNameJoin[{git`local`name,"/expression-mfiles/"}]
 
 
-Print["----------------------------","\n","output file name","\n","----------------------------"];
+echo["output file name"]
 
 
 output`name=FileNameJoin[{output`dir,"data.baryons."<>
@@ -1482,10 +1536,10 @@ output`name=FileNameJoin[{output`dir,"data.baryons."<>
 }]
 
 
-Print["----------------------------","\n","output status","\n","----------------------------"];
+echo["output status"]
 
 
 Export[
 output`name,
-{data`radius`storage[1,{1,5,9},Q2],data`radius`storage[2,{1,5,9},Q2]}
+{data`radius`storage[1,All,Q2],data`radius`storage[2,All,Q2]}
 ]
