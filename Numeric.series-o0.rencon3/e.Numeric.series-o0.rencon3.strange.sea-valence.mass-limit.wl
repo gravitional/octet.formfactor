@@ -81,7 +81,7 @@ git`local`name=FileNameJoin[Append[TakeWhile[FileNameSplit[ExpandFileName[filena
 
 input`simulation={
 "/home/tom/octet.formfactor/Numeric.series-o0.rencon3/e.Numeric.series-o0.rencon3.strange.sea-valence.mass-limit.wl"
-,"o1",0.80,1.00};
+,"o0",0.90,1.50};
 
 
 (* ::Text:: *)
@@ -975,11 +975,7 @@ tree`gegm
 ];
 
 
-(* ::Text:: *)
-(*\:8ba1\:7b97 loop \:8d21\:732e\:65f6\:ff0c\:7528\:8fd9\:4e2a\:66f4\:65b9\:4fbf*)
-
-
-tree`gegm`rencon3=Transpose[
+tree`gegm`rencon3=Transpose[(*\:8ba1\:7b97 loop \:8d21\:732e\:65f6\:ff0c\:7528\:8fd9\:4e2a\:66f4\:65b9\:4fbf*)
 (
 Transpose[
 tree`gegm

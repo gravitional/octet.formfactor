@@ -261,7 +261,7 @@ fucoepresign={
 (*+++++++++++++++++++333++++++++++++++++++++++++++++++++++++++*)
 {1,1,1,(*3*)
 -1,(*4*)-1,(*5*)
-1,1,-1,(*8*)1,(*9*)
+1,1,-1,(*8*)-1,(*9*)
 1,1(*11*)}(*fch's sign*)
 }[[3]];
 
@@ -1066,118 +1066,178 @@ fig`leadersize=4;
 
 
 (* ::Section:: *)
-(*ge*)
+(*\:91cd\:65b0\:7ec4\:5408\:6570\:636e*)
 
 
-fig`calc`baryons`ge=Table[0,{seva,1,13,1},{io,1,8,1}];
-(*seva=1;*)(*io=5;*)gegm=1;
+tree`gegm`rencon2=Transpose[(*\:8ba1\:7b97 total \:8d21\:732e\:65f6\:ff0c\:7528\:8fd9\:4e2a\:66f4\:65b9\:4fbf*)
+Transpose[trgegm,{2,3,1}]*rencon[[1]]
+,{3,1,2}
+];
+
+
+tree`gegm`rencon3=Transpose[(*\:8ba1\:7b97 loop \:8d21\:732e\:65f6\:ff0c\:7528\:8fd9\:4e2a\:66f4\:65b9\:4fbf*)
+Transpose[trgegm,{2,3,1}]*(rencon[[1]]-1)
+,{3,1,2}
+];
+
+
+loop`gegm=Table[(*\:6574\:7406\:6570\:636e\:ff0c\:5bf9\:96f6\:70b9\:9644\:8fd1\:4f5c\:7a33\:5b9a*)
+Piecewise[
+{
+{zero`gegm`value[[gegm,seva,io]],Q2<=fig`cutlimit},
+{Re[nugegm[[gegm,seva,io]]],Q2>fig`cutlimit}
+}
+]
+,{gegm,1,2,1}
+,{seva,1,13,1}
+,{io,1,8,1}
+];
+
+
+(* ::DisplayFormula:: *)
+(*loop`gegm//Dimensions*)
+(*{2,13,8}*)
+
+
+(* ::DisplayFormula:: *)
+(*total = tree +(Z-1)*tree+loop*)
+
+
+total`gegm=Table[
+Piecewise[
+{
+{(tree`gegm`rencon2[[gegm,seva,io]]/.Q2->0)+zero`gegm`value[[gegm,seva,io]],Q2<=fig`cutlimit},
+{(tree`gegm`rencon2[[gegm,seva,io]])+Re[nugegm[[gegm,seva,io]]],Q2>fig`cutlimit}
+}
+]
+,{gegm,1,2,1}
+,{seva,1,4,1}
+,{io,1,8,1}
+];
+
+
+(* ::DisplayFormula:: *)
+(*total`gegm//Dimensions*)
+(*{2,4,8}*)
+
+
+(* ::Text:: *)
+(*\:8ba1\:7b97 loop \:8d21\:732e\:65f6\:ff0c\:7528\:8fd9\:4e2a\:66f4\:65b9\:4fbf*)
+
+
+loop`rencon3`gegm=Table[
+Piecewise[
+{
+{(tree`gegm`rencon3[[gegm,seva,io]]/.Q2->0)+zero`gegm`value[[gegm,seva,io]],Q2<=fig`cutlimit},
+{(tree`gegm`rencon3[[gegm,seva,io]])+Re[nugegm[[gegm,seva,io]]],Q2>fig`cutlimit}
+}
+]
+,{gegm,1,2,1}
+,{seva,1,4,1}
+,{io,1,8,1}
+];
+
+
+(* ::DisplayFormula:: *)
+(*loop`re3`gegm//Dimensions*)
+(*{2,4,8}*)
+
+
+(* ::DisplayFormula:: *)
+(*total = tree +(Z-1)*tree+loop*)
+
+
+rearrange`seva`gegm=Transpose[
+{
+trgegm[[All,1,All]]/nmlz`gegm,(* 1;tree uds total*)
+trgegm[[All,2,All]],(*2;u*)
+trgegm[[All,3,All]],(*3;d*)
+trgegm[[All,4,All]],(*4;s*)
+
+loop`gegm[[All,1,All]],(*5; loop total*)
+loop`gegm[[All,2,All]],(*6;u*)
+loop`gegm[[All,3,All]],(*7;d*)
+loop`gegm[[All,4,All]],(*8;s*)
+
+loop`rencon3`gegm[[All,1,All]],(*9;(Z-1)*tree+loop, loop recon 3 total*)
+loop`rencon3`gegm[[All,2,All]],(*10;u*)
+loop`rencon3`gegm[[All,3,All]],(*11;d*)
+loop`rencon3`gegm[[All,4,All]],(*12;s*)
+
+total`gegm[[All,1,All]],(*13;tree+loop total*)
+total`gegm[[All,2,All]],(*14;u*)
+total`gegm[[All,3,All]],(*15;d*)
+total`gegm[[All,4,All]],(*16;s*)
+
+loop`gegm[[All,5,All]],(*17 quench, u*)
+loop`gegm[[All,6,All]],(*18 quench, d*)
+loop`gegm[[All,7,All]],(*19 quench, s*)
+
+loop`gegm[[All,8,All]],(*20 valence, u*)
+loop`gegm[[All,9,All]],(*21 valence, d*)
+loop`gegm[[All,10,All]],(*22 valence, s*)
+
+tree`gegm`rencon2[[All,2,All]]+loop`gegm[[All,5,All]]+loop`gegm[[All,8,All]],(*23 valence-total, u*)
+tree`gegm`rencon2[[All,3,All]]+loop`gegm[[All,6,All]]+loop`gegm[[All,9,All]],(*24 valence-total, d*)
+tree`gegm`rencon2[[All,4,All]]+loop`gegm[[All,7,All]]+loop`gegm[[All,10,All]],(*25 valence-total, s*)
+
+loop`gegm[[All,11,All]],(*26 sea u,*)
+loop`gegm[[All,12,All]],(*27 sea d*)
+loop`gegm[[All,13,All]](*28 sea s*)
+
+}
+,{2,1,3}
+];
+
+
+(* ::DisplayFormula:: *)
+(*rearrange`seva`gegm//Dimensions*)
+(*{2,28,8}*)
+
+
+nmlz`gegm={(*\:5f52\:4e00\:5316\:56e0\:5b50*)
+ConstantArray[1,8],(*ge \:7684\:5f52\:4e00\:5316\:56e0\:5b50\:90fd\:662f1*)
+total`gegm[[2,1]]/.Q2->0(*gm \:7684\:5f52\:4e00\:5316\:56e0\:5b50\:662f\:96f6\:70b9\:503c*)
+};
+
+
+(* ::DisplayFormula:: *)
+(*nmlz`gegm//Dimensions*)
+(*{2,8}*)
+
+
+(* ::Section:: *)
+(*gegm*)
+
+
+fig`calc`baryons`gegm=Table[0,{gegm,1,2,1},{seva,1,28,1},{io,1,8,1}];
+gegm=1;(*seva=1;*)(*io=5;*)
 (*+++++++++++++++++++++++++++*)
 Module[{order=0},
 (*+++++++++++++++++++++++++++*)
 Table[
 (*+++++++++++++++++++++++++++*)
 order++;
-If[IntegerQ[order/2],Print[
+If[IntegerQ[order/16],Print[
 "gegm=",gegm,
 ",seva=",seva,
 ",io=",io
 ]
 ];
 (*+++++++++++++++++++++++++++*)
-(fig`calc`baryons`ge[[seva,io]]=(Plot[
-#1,
-{Q2,0,1},
+fig`calc`baryons`gegm[[gegm,seva,io]]=Plot[
+Evaluate[rearrange`seva`gegm[[gegm,seva,io]]/nmlz`gegm[[gegm,io]]](*\:8fd9\:91cc\:9664\:4ee5\:5f52\:4e00\:5316\:56e0\:5b50\:ff0c\:4f7f\:7528 Evaluate \:5148\:8ba1\:7b97\:8868\:8fbe\:5f0f*)
+,{Q2,0,1},
 AxesOrigin->{0,0},
 PlotRange->{{0,1},Automatic},
 PlotRangePadding->{Automatic,Scaled[0.09]},
 ImageSize->Scaled[0.5],
 AspectRatio->1/GoldenRatio,
 Frame->True
-]&/@
-(*=====================================================*)
-{
-rencon[[seva,io]]*trgegm[[gegm,seva,io]],(*"Tree"*)
-(*+++++++++++++++++++++++++++++++++++++++++++++++++*)
-Piecewise[
-{
-{zero`gegm`value[[gegm,seva,io]],Q2<=fig`cutlimit},
-{Re[nugegm[[gegm,seva,io]]],Q2>fig`cutlimit}
-}
-],
-(*"Loop"*)
-(*+++++++++++++++++++++++++++++++++++++++++++++++++*)
-Piecewise[
-{
-{rencon[[seva,io]]*(trgegm[[gegm,seva,io]]/.Q2->0)+zero`gegm`value[[gegm,seva,io]],Q2<=fig`cutlimit},
-{rencon[[seva,io]]*trgegm[[gegm,seva,io]]+Re[nugegm[[gegm,seva,io]]],Q2>fig`cutlimit}
-}
 ]
-(*"Total"*)
-(*+++++++++++++++++++++++++++++++++++++++++++++++++*)
-}
-)
-)
-,{seva,1,13,1}
-,{io,1,8,1}
-]
-(*+++++++++++++++++++++++++++*)
-];
 
-
-(* ::Section:: *)
-(*gm*)
-
-
-fig`calc`baryons`gm=Table[0,{seva,1,13,1},{io,1,8,1}];
-(*seva=1;*)(*io=5;*)gegm=2;
-(*+++++++++++++++++++++++++++*)
-Module[{order=0,te`zero`gm},
-(*+++++++++++++++++++++++++++*)
-Table[
-(*+++++++++++++++++++++++++++*)
-order++;
-If[IntegerQ[order/2],Print[
-"gegm=",gegm,
-",seva=",seva,
-",io=",io
-]
-];
-(*+++++++++++++++++++++++++++*)
-te`zero`gm=rencon[[seva,io]]*(trgegm[[gegm,seva,io]]/.Q2->0)+zero`gegm`value[[gegm,seva,io]];
-(fig`calc`baryons`gm[[seva,io]]=(Plot[
-#1,
-{Q2,0,1},
-AxesOrigin->{0,0},
-PlotRange->{{0,1},Automatic},
-PlotRangePadding->{Automatic,Scaled[0.09]},
-ImageSize->Scaled[0.5],
-AspectRatio->1/GoldenRatio,
-Frame->True
-]&/@
-(*=====================================================*)
-{
-Abs[rencon[[seva,io]]*trgegm[[gegm,seva,io]]/te`zero`gm],(*"Tree"*)
-(*+++++++++++++++++++++++++++++++++++++++++++++++++*)
-Piecewise[
-{
-{Abs[zero`gegm`value[[gegm,seva,io]]/te`zero`gm],Q2<=fig`cutlimit},
-{Abs[Re[nugegm[[gegm,seva,io]]]/te`zero`gm],Q2>fig`cutlimit}
-}
-],
-(*"Loop"*)
-(*+++++++++++++++++++++++++++++++++++++++++++++++++*)
-Piecewise[
-{
-{Abs[(rencon[[seva,io]]*(trgegm[[gegm,seva,io]]/.Q2->0)+zero`gegm`value[[gegm,seva,io]])/te`zero`gm],Q2<=fig`cutlimit},
-{Abs[(rencon[[seva,io]]*trgegm[[gegm,seva,io]]+Re[nugegm[[gegm,seva,io]]])/te`zero`gm],Q2>fig`cutlimit}
-}
-]
-(*"Total"*)
-(*+++++++++++++++++++++++++++++++++++++++++++++++++*)
-}
-)
-)
-,{seva,1,13,1}
+,{gegm,1,2,1}
+,{seva,1,28,1}
 ,{io,1,8,1}
 ]
 (*+++++++++++++++++++++++++++*)
@@ -1189,47 +1249,16 @@ Piecewise[
 
 
 echo["output directory"];
-
-
 output`dir=FileNameJoin[{git`local`name,"/expression-mfiles/"}]
 
 
-echo["output file name"];
-
-
-output`name`list={
+echo["files to export"];(*\:8981\:5bfc\:51fa\:7684\:6587\:4ef6,\:5173\:8054\:7684\:5f62\:5f0f\:ff0c\:4fdd\:5b58\:7528\:7684\:6587\:4ef6\:540d\[Rule]\:5bf9\:5e94\:7684\:6587\:4ef6*)
+output`assoc=<|
 (*++++++++++++++++*)
-FileNameJoin[{output`dir,
-"fig.calc.baryons.ge."<>
-"L-"<>parameter`lambda0`string<>
-".ci-"<>parameter`ci`string<>
-".m"
-}],
-FileNameJoin[{output`dir,
-"fig.calc.baryons.gm."<>
-"L-"<>parameter`lambda0`string<>
-".ci-"<>parameter`ci`string<>
-".m"
-}]
+FileNameJoin[{output`dir,"fig_calc_baryons_ge_"<>"L-"<>parameter`lambda0`string<>"_ci-"<>parameter`ci`string<>".m"}]->fig`calc`baryons`gegm
 (*++++++++++++++++*)
-}
-
-
-output`file`list={
-(*+++++++++++++++++++++*)
-fig`calc`baryons`ge,
-fig`calc`baryons`gm
-(*+++++++++++++++++++++*)
-};
-
-
-(* ::Text:: *)
-(*********************************************************************************)
+|>;
 
 
 echo["output status"];
-
-
-Table[
-Export[output`name`list[[i]],output`file`list[[i]]]
-,{i,1,Length[output`file`list],1}]
+KeyValueMap[Export,output`assoc]
