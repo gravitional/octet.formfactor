@@ -72,7 +72,7 @@ git`local`name=FileNameJoin[Append[TakeWhile[FileNameSplit[ExpandFileName[filena
 
 
 input`simulation={"/home/tom/octet.formfactor/Numeric.series-o1.rencon3/e.Numeric.series-o1.rencon3.strange.sea-valence.mass-limit.wl",
-"o1",0.80,1.00};
+"o1",0.90,1.50};
 
 
 (* ::Text:: *)
@@ -758,11 +758,11 @@ choplimit
 ];
 
 
-loop`gegm`value=Total[loop`if`gegm`value,{5}];
+loop`gegm=Total[loop`if`gegm`value,{5}];
 
 
 (* ::DisplayFormula:: *)
-(*loop`gegm`value,{2,2,4,8},{gegm,series,seva,io}*)
+(*loop`gegm,{2,2,4,8},{gegm,series,seva,io}*)
 
 
 (* ::Chapter:: *)
@@ -834,7 +834,7 @@ trf1f2={
 (*(*trf1f2 is [consti,octet,treef1f2][4*8*2]*)*)
 
 
-tree`gegm=Transpose[
+tree`gegm`Q2=Transpose[
 Table[
 Simplify[
 {
@@ -848,14 +848,14 @@ trf1f2[[;;,i,1]]+trf1f2[[;;,i,2]]
 
 
 (* ::DisplayFormula:: *)
-(*tree`gegm//Dimensions *)
+(*tree`gegm`Q2//Dimensions *)
 
 
 (* ::Subsection:: *)
 (*tree`gegm`d0*)
 
 
-tree`gegm`d0=Chop[tree`gegm/.Q2->0,choplimit];
+tree`gegm`d0=Chop[tree`gegm`Q2/.Q2->0,choplimit];
 
 
 (* ::DisplayFormula:: *)
@@ -866,7 +866,7 @@ tree`gegm`d0=Chop[tree`gegm/.Q2->0,choplimit];
 (*tree`gegm`d1*)
 
 
-(tree`gegm`d1=D[Chop[tree`gegm,choplimit],{Q2,1}]/.Q2->0);
+(tree`gegm`d1=D[Chop[tree`gegm`Q2,choplimit],{Q2,1}]/.Q2->0);
 
 
 (* ::DisplayFormula:: *)
@@ -874,21 +874,21 @@ tree`gegm`d0=Chop[tree`gegm/.Q2->0,choplimit];
 
 
 (* ::Section:: *)
-(*tree`gegm`value*)
+(*tree`gegm*)
 
 
-tree`gegm`value=Transpose[
+tree`gegm=Transpose[
 {tree`gegm`d0,tree`gegm`d1}
 ,{2,1,3,4}
 ];
 
 
 (* ::DisplayFormula:: *)
-(*tree`gegm`value//Dimensions*)
+(*tree`gegm//Dimensions*)
 
 
 (* ::DisplayFormula:: *)
-(*tree`gegm`value,{2,2,4,8},{gegm,order,seva,io}*)
+(*tree`gegm,{2,2,4,8},{gegm,order,seva,io}*)
 
 
 (* ::Chapter:: *)
@@ -924,19 +924,19 @@ octetmageton={
 
 
 (* ::DisplayFormula:: *)
-(*loop`gegm`value*)
+(*loop`gegm*)
 (*{gegm,order,seva,io}*)
 
 
 rencon=Table[1,{seva,1,13,1},{io,1,8,1}];
 (*+++++++++++++++++renormalized according to charge+++++++++++++*)
 Table[
-rencon[[;;,i]]=Abs[octetcharge[[i]]-Re[(Cancel[Chop[loop`gegm`value[[1,1,1,i]],choplimit]]/.Q2->0)]]
+rencon[[;;,i]]=Abs[octetcharge[[i]]-Re[(Cancel[Chop[loop`gegm[[1,1,1,i]],choplimit]]/.Q2->0)]]
 ,{i,{1,3,4,6}}];
 rencon[[;;,2]]=rencon[[;;,3]];
 rencon[[;;,5]]=rencon[[;;,4]];
 rencon[[;;,7]]=rencon[[;;,6]];
-rencon[[;;,8]]=Abs[1-Re[(Cancel[Chop[loop`gegm`value[[1,1,2,8]],choplimit]]/.Q2->0)]];
+rencon[[;;,8]]=Abs[1-Re[(Cancel[Chop[loop`gegm[[1,1,2,8]],choplimit]]/.Q2->0)]];
 (*++++++++++++++++++++no renormalized+++++++++++++++++++++*)
 (*rencon\[LeftDoubleBracket]2,1\[RightDoubleBracket]=1;
 rencon\[LeftDoubleBracket]2,6\[RightDoubleBracket]=1;
@@ -1117,7 +1117,7 @@ StringRiffle[rencon]
 tree`gegm`rencon2=Transpose[
 (
 Transpose[
-tree`gegm`value
+tree`gegm
 ,{2,3,4,1}
 ]*rencon[[1]]
 )
@@ -1132,7 +1132,7 @@ tree`gegm`value
 tree`gegm`rencon3=Transpose[
 (
 Transpose[
-tree`gegm`value
+tree`gegm
 ,{2,3,4,1}
 ]*(rencon[[1]]-1)
 )
@@ -1151,7 +1151,7 @@ tree`gegm`value
 (* ::DisplayFormula:: *)
 (*tree`gegm`rencon2//Dimensions*)
 (*tree`gegm`rencon3//Dimensions*)
-(*loop`gegm`value//Dimensions*)
+(*loop`gegm//Dimensions*)
 
 
 (* ::Text:: *)
@@ -1160,31 +1160,42 @@ tree`gegm`value
 
 rearrange`seva`gegm=Transpose[
 {
-(*+++++++++++++++++++++++++ tree +++++++++++++++*)
-tree`gegm`value[[All,All,1,All]],(*1;"all", all*)
-tree`gegm`value[[All,All,2,All]],(*2;"all", u*)
-tree`gegm`value[[All,All,3,All]],(*3;"all", d*)
-tree`gegm`value[[All,All,4,All]],(*4;"all", s*)
-(*+++++++++++++++++++++++++ tree +++++++++++++++*)
-(*+++++++++++++++++++++++++ loop +++++++++++++++*)
-tree`gegm`rencon3[[All,All,1,All]]+loop`gegm`value[[All,All,1,All]],(*5;"all", all*)
-tree`gegm`rencon3[[All,All,2,All]]+loop`gegm`value[[All,All,2,All]],(*6;"all", u*)
-tree`gegm`rencon3[[All,All,3,All]]+loop`gegm`value[[All,All,3,All]],(*7;"all", d*)
-tree`gegm`rencon3[[All,All,4,All]]+loop`gegm`value[[All,All,4,All]],(*8;"all", s*)
 
-(*+++++++++++++++++++++++++ loop +++++++++++++++*)
-(*+++++++++++++++++++++++++ total +++++++++++++++*)
-tree`gegm`rencon2[[All,All,1,All]]+loop`gegm`value[[All,All,1,All]],(*9;"all", all*)
-tree`gegm`rencon2[[All,All,2,All]]+loop`gegm`value[[All,All,2,All]],(*10;"all", u*)
-tree`gegm`rencon2[[All,All,3,All]]+loop`gegm`value[[All,All,3,All]],(*11;"all", d*)
-tree`gegm`rencon2[[All,All,4,All]]+loop`gegm`value[[All,All,4,All]],(*12;"all", s*)
-(*+++++++++++++++++++++++++ total +++++++++++++++*)
+tree`gegm[[All,All,1,All]],(* 1;tree uds total*)
+tree`gegm[[All,All,2,All]],(*2;u*)
+tree`gegm[[All,All,3,All]],(*3;d*)
+tree`gegm[[All,All,4,All]],(*4;s*)
 
-tree`gegm`rencon2[[All,All,2,All]]+loop`gegm`value[[All,All,5,All]]+loop`gegm`value[[All,All,8,All]],(*13 valence-total, u*)
-tree`gegm`rencon2[[All,All,3,All]]+loop`gegm`value[[All,All,6,All]]+loop`gegm`value[[All,All,9,All]],(*14 valence-total, d*)
-tree`gegm`rencon2[[All,All,4,All]]+loop`gegm`value[[All,All,7,All]]+loop`gegm`value[[All,All,10,All]],(*15 valence-total, s*)
+loop`gegm[[All,All,1,All]],(*5; loop uds total*)
+loop`gegm[[All,All,2,All]],(*6;u*)
+loop`gegm[[All,All,3,All]],(*7;d*)
+loop`gegm[[All,All,4,All]],(*8;s*)
 
-loop`gegm`value[[All,All,11,All]],loop`gegm`value[[All,All,12,All]],loop`gegm`value[[All,All,13,All]](*16,17,18 sea, u d s*)
+tree`gegm`rencon3[[All,All,1,All]]+loop`gegm[[All,All,1,All]],(*9;rencon3,(Z-1)*tree+loop, uds*)
+tree`gegm`rencon3[[All,All,2,All]]+loop`gegm[[All,All,2,All]],(*10;u*)
+tree`gegm`rencon3[[All,All,3,All]]+loop`gegm[[All,All,3,All]],(*11;d*)
+tree`gegm`rencon3[[All,All,4,All]]+loop`gegm[[All,All,4,All]],(*12;s*)
+
+tree`gegm`rencon2[[All,All,1,All]]+loop`gegm[[All,All,1,All]],(*13; tree+loop rencon2 uds total *)
+tree`gegm`rencon2[[All,All,2,All]]+loop`gegm[[All,All,2,All]],(*14;u*)
+tree`gegm`rencon2[[All,All,3,All]]+loop`gegm[[All,All,3,All]],(*15;d*)
+tree`gegm`rencon2[[All,All,4,All]]+loop`gegm[[All,All,4,All]],(*16;s*)
+
+loop`gegm[[All,All,5,All]],(*17 quench, u*)
+loop`gegm[[All,All,6,All]],(*18 quench, d*)
+loop`gegm[[All,All,7,All]],(*19 quench, s*)
+
+loop`gegm[[All,All,8,All]],(*20 valence, u*)
+loop`gegm[[All,All,9,All]],(*21 valence, d*)
+loop`gegm[[All,All,10,All]],(*22 valence, s*)
+
+tree`gegm`rencon2[[All,All,2,All]]+loop`gegm[[All,All,5,All]]+loop`gegm[[All,All,8,All]],(*23 valence-total, u*)
+tree`gegm`rencon2[[All,All,3,All]]+loop`gegm[[All,All,6,All]]+loop`gegm[[All,All,9,All]],(*24 valence-total, d*)
+tree`gegm`rencon2[[All,All,4,All]]+loop`gegm[[All,All,7,All]]+loop`gegm[[All,All,10,All]],(*25 valence-total, s*)
+
+loop`gegm[[All,All,11,All]],(*26 sea u,*)
+loop`gegm[[All,All,12,All]],(*27 sea d*)
+loop`gegm[[All,All,13,All]](*28 sea s*)
 
 }
 ,{3,1,2,4}
@@ -1200,20 +1211,10 @@ loop`gegm`value[[All,All,11,All]],loop`gegm`value[[All,All,12,All]],loop`gegm`va
 
 
 (* ::DisplayFormula:: *)
-(*rearrange`seva`gegm{2,2,12,8}{gegm,order,seva2,io}*)
+(*rearrange`seva`gegm{2,2,28,8}{gegm,order,seva2,io}*)
 
 
-(* ::DisplayFormula:: *)
-(*{seva2}{*)
-(*tree;1"all",2"u",3"d",4"s",*)
-(*loop;5"all",6"u",7"d",8"s",*)
-(*total;9"all",10"u",11"d",12"s",*)
-(*13"u-valence-total",14"d-valence-total",15"s-valence-total",*)
-(*16"u-sea",17"d-sea",18"s-sea"*)
-(*}*)
-
-
-rearrange`radius2`gegm`seva=Table[Indeterminate,{gegm,1,2,1},{seva,1,18,1},{io,1,8,1}];
+rearrange`radius2`gegm`seva=Table[Indeterminate,{gegm,1,2,1},{seva,1,28,1},{io,1,8,1}];
 
 
 equallimit=0.0000001;
@@ -1238,10 +1239,10 @@ unit`trans`gev=0.197326;
 
 
 (* ::Text:: *)
-(*\:4f5c\:4e3a\:534a\:5f84\:671f\:671b\:516c\:5f0f\:5206\:6bcd\:7684seva \:9879\:76ee*)
+(*\:4f5c\:4e3a\:534a\:5f84\:671f\:671b\:516c\:5f0f\:5206\:6bcd\:7684 seva \:9879\:76ee\:ff0c\:4e00\:822c\:662ftree+loop\:603b\:8d21\:732e*)
 
 
-seva`total=9;
+seva`total=13;
 
 
 Table[
@@ -1259,7 +1260,7 @@ Abs[(rearrange`seva`gegm[[gegm,1,seva`total,io]]-0)]<=equallimit(*condition,deri
 ,{gegm,1,2,1}
 
 (************************************* start the cycle range ******************************)
-,{seva,1,18,1}
+,{seva,1,28,1}
 ,{io,1,8,1}
 
 (************************************* end the cycle range ******************************)
@@ -1273,11 +1274,11 @@ Abs[(rearrange`seva`gegm[[gegm,1,seva`total,io]]-0)]<=equallimit(*condition,deri
 
 
 (* ::DisplayFormula:: *)
-(*rearrange`seva`gegm,{2,2,18,8},{gegm,order,seva,io}*)
+(*rearrange`seva`gegm,{2,2,28,8},{gegm,order,seva,io}*)
 
 
 (* ::DisplayFormula:: *)
-(*rearrange`radius2`gegm`seva,{2,18,8},{gegm,seva,io}*)
+(*rearrange`radius2`gegm`seva,{2,28,8},{gegm,seva,io}*)
 
 
 (* ::Section:: *)
@@ -1285,11 +1286,11 @@ Abs[(rearrange`seva`gegm[[gegm,1,seva`total,io]]-0)]<=equallimit(*condition,deri
 
 
 (* ::DisplayFormula:: *)
-(*tree`gegm`value,{2,2,4,8},{gegm,order,seva1,io}*)
+(*tree`gegm,{2,2,4,8},{gegm,order,seva1,io}*)
 
 
 (* ::DisplayFormula:: *)
-(*loop`gegm`value,{2,2,13,8},{gegm,order,seva1,io}*)
+(*loop`gegm,{2,2,13,8},{gegm,order,seva1,io}*)
 
 
 (* ::DisplayFormula:: *)
@@ -1483,12 +1484,15 @@ None,(* color x direction: x1, x2, x3...*)
 
 seva={1,5,9,19,20,21};
 data`vtitle={
-"tree all","tree u","tree d","tree s",
-"loop all","loop u","loop d","loop s",
-"tot all","tot u","tot d","tot s",
-"val u","val d","val s",
-"sea u","sea d","sea s",
-"Exp.","Lattice","paper"
+"tr uds","tr u","tr d","tr s",(*1,4*)
+"lo,re2,uds","lo,re2,u","lo,re2,d","lo,re2,s",(*5,8*)
+"lo,re3,uds","lo,re3,u","lo,re3,d","lo,re3,s",(*9,12*)
+"lt uds","lt u","lt d","tot s",(*13,16*)
+"qch u","qch d","qch s",(*17,19*)
+"val u","val d","val s",(*20,22*)
+"valtot u","valtot d","valtot s",(*23,25*)
+"sea u","sea d","sea s",(*26,28*)
+"exp.","Lattice","paper"(*29,31*)
 }[[seva]];
 {
 tab`radius`ge=table`radius[1,seva,Q2](*total*)
@@ -1500,12 +1504,15 @@ table`radius[8](*sea*)*)
 
 seva={1,5,9,10,19,20,21};
 data`vtitle={
-"tree all","tree u","tree d","tree s",
-"loop all","loop u","loop d","loop s",
-"tot all","tot u","tot d","tot s",
-"val u","val d","val s",
-"sea u","sea d","sea s",
-"Exp.","Lattice","paper"
+"tr uds","tr u","tr d","tr s",(*1,4*)
+"lo,re2,uds","lo,re2,u","lo,re2,d","lo,re2,s",(*5,8*)
+"lo,re3,uds","lo,re3,u","lo,re3,d","lo,re3,s",(*9,12*)
+"lt uds","lt u","lt d","tot s",(*13,16*)
+"qch u","qch d","qch s",(*17,19*)
+"val u","val d","val s",(*20,22*)
+"valtot u","valtot d","valtot s",(*23,25*)
+"sea u","sea d","sea s",(*26,28*)
+"exp.","Lattice","paper"(*29,31*)
 }[[seva]];
 {
 tab`radius`gm=table`radius[2,seva,Q2](*total*)
@@ -1519,27 +1526,17 @@ table`radius[8](*sea*)*)
 (*export*)
 
 
-echo["output directory"]
-
-
+echo["output directory"];
 output`dir=FileNameJoin[{git`local`name,"/expression-mfiles/"}]
 
 
-echo["output file name"]
+echo["files to export"];(*\:8981\:5bfc\:51fa\:7684\:6587\:4ef6,\:5173\:8054\:7684\:5f62\:5f0f\:ff0c\:4fdd\:5b58\:7528\:7684\:6587\:4ef6\:540d\[Rule]\:5bf9\:5e94\:7684\:6587\:4ef6*)
+output`assoc=<|
+(*++++++++++++++++*)
+FileNameJoin[{output`dir,"data.baryons."<>"series-"<>parameter`order`string<>".L-"<>parameter`lambda0`string<>".ci-"<>parameter`ci`string<>".m"}]->{data`radius`storage[1,All,Q2],data`radius`storage[2,All,Q2]}
+(*++++++++++++++++*)
+|>;
 
 
-output`name=FileNameJoin[{output`dir,"data.baryons."<>
-"series-"<>parameter`order`string
-<>".L-"<>parameter`lambda0`string
-<>".ci-"<>parameter`ci`string
-<>".m"
-}]
-
-
-echo["output status"]
-
-
-Export[
-output`name,
-{data`radius`storage[1,All,Q2],data`radius`storage[2,All,Q2]}
-]
+echo["output status"];
+KeyValueMap[Export,output`assoc]

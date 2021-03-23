@@ -119,7 +119,7 @@ parameter`ci`string=ToString[NumberForm[parameter`ci,{3,2}]]
 <<X`
 
 
-choplimit=10^-8;
+choplimit=10^-10;
 
 
 (* ::Chapter:: *)
@@ -203,26 +203,26 @@ Transpose[chpt`qfa`sea`coemass`masslimit,{2,3,1}]
 
 
 {conm\[Pi],conmKi,conm\[Eta],conmEtas}={
-0.1381,
-0.4956,
-0.5693,
-0.9452
+0.1381`20,
+0.4956`20,
+0.5693`20,
+0.9452`20
 };
 
 
 {conm\[CapitalSigma],conmN,conm\[CapitalXi],conm\[CapitalLambda],conm\[CapitalLambda]\[CapitalSigma],
 conmUUU,conmDDD,conmSSS(* the symmetric terms *)
 }={
-1.193,0.939,1.315,1.116,1.155,
-0.939,0.939,1.315
+1.193`20,0.939`20,1.315`20,1.116`20,1.155`20,
+0.939`20,0.939`20,1.315`20
 };
 
 
 {conm\[CapitalDelta],conm\[CapitalSigma]s,conm\[CapitalXi]s,conm\[CapitalOmega]}={
-1.232,
-1.385,
-1.530,
-1.672
+1.232`20,
+1.385`20,
+1.530`20,
+1.672`20
 };
 
 
@@ -365,11 +365,11 @@ config`c1c2=<|
 
 baselist2=Join[
 {
-f->0.093,
+f->0.093`20,
 zi->-1,
-di->0.76,fi->0.50,
-ci->parameter`ci,
-\[CapitalLambda]0->parameter`lambda0
+di->0.76`20,fi->0.50`20,
+ci->SetPrecision[parameter`ci,20],
+\[CapitalLambda]0->SetPrecision[parameter`lambda0,20]
 },
 config`c1c2[{parameter`lambda0`string,parameter`ci`string}]
 ];
@@ -1042,10 +1042,10 @@ octetnameabbr=
 
 
 (* ::Section:: *)
-(*fun`graph`octet*)
+(*\:91cd\:65b0\:7ec4\:5408\:6570\:636e*)
 
 
-fig`cutlimit=0.00001;
+fig`cutlimit=0.00036`16;
 fig`leadersize=4;
 
 
@@ -1065,10 +1065,6 @@ fig`leadersize=4;
 (*zero`gegm`value=zero`nugegm/.Q2->0;*)
 
 
-(* ::Section:: *)
-(*\:91cd\:65b0\:7ec4\:5408\:6570\:636e*)
-
-
 tree`gegm`rencon2=Transpose[(*\:8ba1\:7b97 total \:8d21\:732e\:65f6\:ff0c\:7528\:8fd9\:4e2a\:66f4\:65b9\:4fbf*)
 Transpose[trgegm,{2,3,1}]*rencon[[1]]
 ,{3,1,2}
@@ -1085,7 +1081,7 @@ loop`gegm=Table[(*\:6574\:7406\:6570\:636e\:ff0c\:5bf9\:96f6\:70b9\:9644\:8fd1\:
 Piecewise[
 {
 {zero`gegm`value[[gegm,seva,io]],Q2<=fig`cutlimit},
-{Re[nugegm[[gegm,seva,io]]],Q2>fig`cutlimit}
+{Re[Chop[nugegm[[gegm,seva,io]],choplimit]],Q2>fig`cutlimit}
 }
 ]
 ,{gegm,1,2,1}
@@ -1107,7 +1103,7 @@ total`gegm=Table[
 Piecewise[
 {
 {(tree`gegm`rencon2[[gegm,seva,io]]/.Q2->0)+zero`gegm`value[[gegm,seva,io]],Q2<=fig`cutlimit},
-{(tree`gegm`rencon2[[gegm,seva,io]])+Re[nugegm[[gegm,seva,io]]],Q2>fig`cutlimit}
+{(tree`gegm`rencon2[[gegm,seva,io]])+Re[Chop[nugegm[[gegm,seva,io]],choplimit]],Q2>fig`cutlimit}
 }
 ]
 ,{gegm,1,2,1}
@@ -1129,7 +1125,7 @@ loop`rencon3`gegm=Table[
 Piecewise[
 {
 {(tree`gegm`rencon3[[gegm,seva,io]]/.Q2->0)+zero`gegm`value[[gegm,seva,io]],Q2<=fig`cutlimit},
-{(tree`gegm`rencon3[[gegm,seva,io]])+Re[nugegm[[gegm,seva,io]]],Q2>fig`cutlimit}
+{(tree`gegm`rencon3[[gegm,seva,io]])+Re[Chop[nugegm[[gegm,seva,io]],choplimit]],Q2>fig`cutlimit}
 }
 ]
 ,{gegm,1,2,1}
@@ -1149,22 +1145,22 @@ Piecewise[
 
 rearrange`seva`gegm=Transpose[
 {
-trgegm[[All,1,All]]/nmlz`gegm,(* 1;tree uds total*)
+trgegm[[All,1,All]],(* 1;tree uds total*)
 trgegm[[All,2,All]],(*2;u*)
 trgegm[[All,3,All]],(*3;d*)
 trgegm[[All,4,All]],(*4;s*)
 
-loop`gegm[[All,1,All]],(*5; loop total*)
+loop`gegm[[All,1,All]],(*5; loop uds total*)
 loop`gegm[[All,2,All]],(*6;u*)
 loop`gegm[[All,3,All]],(*7;d*)
 loop`gegm[[All,4,All]],(*8;s*)
 
-loop`rencon3`gegm[[All,1,All]],(*9;(Z-1)*tree+loop, loop recon 3 total*)
+loop`rencon3`gegm[[All,1,All]],(*9;rencon3,(Z-1)*tree+loop, uds*)
 loop`rencon3`gegm[[All,2,All]],(*10;u*)
 loop`rencon3`gegm[[All,3,All]],(*11;d*)
 loop`rencon3`gegm[[All,4,All]],(*12;s*)
 
-total`gegm[[All,1,All]],(*13;tree+loop total*)
+total`gegm[[All,1,All]],(*13; tree+loop rencon2 uds total *)
 total`gegm[[All,2,All]],(*14;u*)
 total`gegm[[All,3,All]],(*15;d*)
 total`gegm[[All,4,All]],(*16;s*)
@@ -1255,7 +1251,7 @@ output`dir=FileNameJoin[{git`local`name,"/expression-mfiles/"}]
 echo["files to export"];(*\:8981\:5bfc\:51fa\:7684\:6587\:4ef6,\:5173\:8054\:7684\:5f62\:5f0f\:ff0c\:4fdd\:5b58\:7528\:7684\:6587\:4ef6\:540d\[Rule]\:5bf9\:5e94\:7684\:6587\:4ef6*)
 output`assoc=<|
 (*++++++++++++++++*)
-FileNameJoin[{output`dir,"fig_calc_baryons_ge_"<>"L-"<>parameter`lambda0`string<>"_ci-"<>parameter`ci`string<>".m"}]->fig`calc`baryons`gegm
+FileNameJoin[{output`dir,"fig_calc_baryons_gegm_"<>"L-"<>parameter`lambda0`string<>"_ci-"<>parameter`ci`string<>".m"}]->fig`calc`baryons`gegm
 (*++++++++++++++++*)
 |>;
 
