@@ -122,11 +122,11 @@ parameter`lambda0`string=ToString[NumberForm[parameter`lambda0,{3,2}]]
 parameter`ci`string=ToString[NumberForm[parameter`ci,{3,2}]]
 
 
-(* ::Chapter::Closed:: *)
+(* ::Chapter:: *)
 (*import *)
 
 
-(* ::Section::Closed:: *)
+(* ::Section:: *)
 (*import origin figs*)
 
 
@@ -197,7 +197,7 @@ StringRiffle[nb`list]
 (*fig`baryons`origin,{2,3,8,3},{gegm,conf,io,trlp}*)
 
 
-(* ::Section::Closed:: *)
+(* ::Section:: *)
 (*import series-o0*)
 
 
@@ -270,7 +270,7 @@ series`baryons`im1=series`baryons`origin[[All,2,All,(clas=3)]];
 series`baryons=series`baryons`im1;
 
 
-(* ::Section::Closed:: *)
+(* ::Section:: *)
 (*amp`gegm`calc*)
 
 
@@ -294,7 +294,7 @@ Identity[series`baryons]
 (*amp`gegm`calc[whether`normal][[gegm,conf,io]],{2,3,8}*)
 
 
-(* ::Chapter::Closed:: *)
+(* ::Chapter:: *)
 (*extract data*)
 
 
@@ -356,7 +356,7 @@ DeleteDuplicates[data`baryons`raw[[gegm,conf,io,trlp]]/.data`f2->Identity]
 (*data`baryons,{2,3,8,3},{gegm,conf,io,trlp}*)
 
 
-(* ::Chapter::Closed:: *)
+(* ::Chapter:: *)
 (*Interpolation*)
 
 
@@ -485,7 +485,7 @@ Mean[Abs[errorbar`asy[[gegm,All,io,trlp]]]]
 (*errorbar`sym,{2,8,3},{gegm,io,trlp}*)
 
 
-(* ::Chapter::Closed:: *)
+(* ::Chapter:: *)
 (*errorbar*)
 
 
@@ -505,7 +505,7 @@ Mean[Abs[errorbar`asy[[gegm,All,io,trlp]]]]
 (*errorbar`asy,{2,8,3},{gegm,io,trlp}*)
 
 
-(* ::Section::Closed:: *)
+(* ::Section:: *)
 (*formatting*)
 
 
@@ -1512,42 +1512,10 @@ ext`export=".m";
 
 (
 output`name`list={
-FileNameJoin[{output`dir,
-"fig.baryons."<>
-whether`normal<>
-".ge.charge.L-"<>
-parameter`lambda0`string<>
-".ci-"<>
-parameter`ci`string<>
-ext`export
-}],
-FileNameJoin[{output`dir,
-"fig.baryons."<>
-whether`normal<>
-".ge.neutral.L-"<>
-parameter`lambda0`string<>
-".ci-"<>
-parameter`ci`string<>
-ext`export
-}],
-FileNameJoin[{output`dir,
-"fig.baryons."<>
-whether`normal<>
-".gm.charge.L-"<>
-parameter`lambda0`string<>
-".ci-"<>
-parameter`ci`string<>
-ext`export
-}],
-FileNameJoin[{output`dir,
-"fig.baryons."<>
-whether`normal<>
-".gm.neutral.L-"<>
-parameter`lambda0`string<>
-".ci-"<>
-parameter`ci`string<>
-ext`export
-}]
+FileNameJoin[{output`dir,"fig.baryons."<>whether`normal<>".ge.charge.L-"<>parameter`lambda0`string<>".ci-"<>parameter`ci`string<>ext`export}],
+FileNameJoin[{output`dir,"fig.baryons."<>whether`normal<>".ge.neutral.L-"<>parameter`lambda0`string<>".ci-"<>parameter`ci`string<>ext`export}],
+FileNameJoin[{output`dir,"fig.baryons."<>whether`normal<>".gm.charge.L-"<>parameter`lambda0`string<>".ci-"<>parameter`ci`string<>ext`export}],
+FileNameJoin[{output`dir,"fig.baryons."<>whether`normal<>".gm.neutral.L-"<>parameter`lambda0`string<>".ci-"<>parameter`ci`string<>ext`export}]
 }
 )
 

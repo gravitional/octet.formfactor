@@ -5,38 +5,58 @@
 
 
 (* ::Chapter:: *)
-(*initial 1*)
+(*initial*)
 
 
-Once[
-If[
+(* ::Text:: *)
+(*\:8ba1\:7b97\:73af\:5883\:53c2\:91cf\:ff0c\:6bd4\:5982\:8def\:5f84*)
+
+
+git`remote`name="octet.formfactor";(*\:7ed9\:51fa\:8fdc\:7a0bgit\:4ed3\:5e93\:7684\:540d\:5b57*)
+boole`incmd=Not[$Notebooks];(*\:811a\:672c\:7684\:8fd0\:884c\:6a21\:5f0f\:5224\:65ad\:ff0cTrue\:4ee3\:8868\:547d\:4ee4\:884c\:ff0cFalse\:4ee3\:8868\:524d\:7aef*)
+filename=If[Not[boole`incmd],NotebookFileName[],$InputFileName](*\:7ed9\:51fa\:7b14\:8bb0\:672c\:7684\:7edd\:5bf9\:8def\:5f84*)
+
+
+(* ::Text:: *)
+(*\:5b9a\:4e49\:4e00\:4e9b\:5e38\:7528\:7684\:51fd\:6570*)
+
+
+forcestr[x__]:=StringJoin[ToString[#1]&/@Flatten[{x}]](*\:5b9a\:4e49\:4e00\:4e2a\:786e\:4fdd\:5b57\:7b26\:4e32\:7684\:51fd\:6570*)
+
+
+If[boole`incmd,
+echo[x__]:=Print["----------------------------","\n\033[1;44m\033[1;37m",forcestr[x],"\033[0;0m\n","----------------------------"],(*\:5b9a\:4e49\:7ec8\:7aef\:7684\:6253\:5370\:51fd\:6570*)
+echo[x__]:=Print[x](*\:5b9a\:4e49\:7b14\:8bb0\:672c\:7684\:6253\:5370\:51fd\:6570*)
+]
+
+
+(*\:5982\:679c\:5728\:524d\:7aef\:6267\:884c\:ff0c\:5c31\:5237\:65b0\:7b14\:8bb0\:672c\:7684\:540d\:5b57*)
+Once[If[
 (* if $ScriptCommandLine==={}, the environment is frontend*)
-SameQ[$ScriptCommandLine,{}],
+Not[boole`incmd],
 (*if execute in the frontend mode, refresh the title name*)
 CompoundExpression[
-(*\:6587\:4ef6\:7edd\:5bf9\:8def\:5f84*)
-filename=NotebookFileName[],
-(*\:5355\:5143\:5bf9\:8c61,\:7b2c\:4e00\:4e2a\:5355\:5143*)
-cell`title=Cells[][[1]],
-(*\:5237\:65b0\:7b2c\:4e00\:4e2a\:5355\:5143\:7684\:540d\:5b57*)
-NotebookWrite[cell`title,Cell[FileNameSplit[filename][[-1]],"Title"]],
-(*if execute in commandline mode, print a ready message*)
-git`root`dir=StringCases[NotebookDirectory[],StartOfString~~((WordCharacter|":"|"\\")..)~~"octet.formfactor"][[1]]
-(*add the base git root dir*)
-],
-CompoundExpression[
-Print["Ready to execute this script"]
+cell`title=(Cells[][[1]]),(*\:5355\:5143\:5bf9\:8c61,\:7b2c\:4e00\:4e2a\:5355\:5143*)
+NotebookWrite[cell`title,Cell[FileNameSplit[filename][[-1]],"Title"]](*\:5237\:65b0\:7b2c\:4e00\:4e2a\:5355\:5143\:7684\:540d\:5b57*)
 ]
-]
-]
+]];
+If[boole`incmd,echo["Ready to execute this script"]](*\:5982\:679c\:5728\:547d\:4ee4\:884c\:6267\:884c\:ff0c\:5c31\:6253\:5370\:63d0\:793a\:4fe1\:606f*)
 
 
 (* ::Text:: *)
-(*********************************** notebook \:5907\:5fd8\:5f55*)
+(*\:5b9a\:4e49\:672c\:5730git\:76ee\:5f55\:ff0c\:4e5f\:5c31\:662f\:7a0b\:5e8f\:7684\:6839\:76ee\:5f55*)
+
+
+echo["the git`local`name is"]
+git`local`name=FileNameJoin[Append[TakeWhile[FileNameSplit[ExpandFileName[filename]],UnsameQ[#1,git`remote`name]&],git`remote`name]]
 
 
 (* ::Text:: *)
-(*series full calc scripts*)
+(*\:5982\:679c\:5728\:547d\:4ee4\:884c\:6267\:884c\:ff0c\:5c31\:76f4\:63a5\:63a5\:53d7\:547d\:4ee4\:884c\:53d8\:91cf*)
+
+
+(* ::Text:: *)
+(*\:5982\:679c\:5728\:524d\:7aef\:6267\:884c\:ff0c\:5c31\:6a21\:62df\:547d\:4ee4\:884c\:8f93\:5165\:ff0c\:8ba1\:7b97\:6a21\:62df\:53d8\:91cf\:7684\:5b57\:7b26\:4e32\:5f62\:5f0f\:3002\:56e0\:4e3a\:547d\:4ee4\:884c\:4f20\:5165\:7684\:4e00\:822c\:662f\:5b57\:7b26\:4e32\:ff0c\:8fd9\:6837\:53ef\:4ee5\:7edf\:4e00\:5f62\:5f0f\:3002*)
 
 
 (* ::Chapter:: *)
@@ -51,27 +71,22 @@ Print["Ready to execute this script"]
 (*\:6a21\:62df\:547d\:4ee4\:884c\:8f93\:5165\:ff0c\:8c03\:8bd5\:4f7f\:7528*)
 
 
-input`simulation={"C:\\octet.formfactor\\Numeric.series-o1.rencon3\\
-f.table.series-o1.rencon3.strange.baryons-all.wl",
-"o1",0.80,1.50};
+input`simulation={"/home/tom/octet.formfactor/f.table.series-o1.rencon3.strange.baryons-all.wl",
+"o1",0.90,1.00};
 
 
 (* ::Text:: *)
 (*++++++++++++++++++++++++++++++++++++++++*)
 
 
-(* ::Text:: *)
-(*\:5f15\:5165\:547d\:4ee4\:884c\:53c2\:6570, 1 \:7528\:4f5c\:5b9e\:9645\:811a\:672c\:8fd0\:884c, 2\:7528\:4f5c\:8c03\:8bd5*)
-
-
-input`cml={$ScriptCommandLine,input`simulation}[[1]];
+If[boole`incmd,
+input`cml=$ScriptCommandLine,(*\:5982\:679c\:5728\:547d\:4ee4\:884c\:6267\:884c\:ff0c\:5c31\:91c7\:7528\:547d\:4ee4\:884c\:53c2\:6570*)
+input`cml=input`simulation(*\:5982\:679c\:5728\:7b14\:8bb0\:672c\:6267\:884c\:ff0c\:5c31\:91c7\:7528\:6a21\:62df\:53c2\:6570*)
+];
 
 
 (* ::Text:: *)
 (*+++++++++++++++++++++++++++++++++*)
-
-
-Print["----------------------------","\n","the parameter order, lambda, ci is","\n","----------------------------"];
 
 
 {file`name,parameter`order,parameter`lambda0,parameter`ci}={
@@ -81,10 +96,7 @@ ToExpression[input`cml[[4]]]
 }
 
 
-Print["----------------------------"];
-
-
-git`root`dir=StringCases[ExpandFileName[file`name],StartOfString~~((WordCharacter|":"|"\\")..)~~"octet.formfactor"][[1]]
+echo["the parameter order, lambda, ci,"];
 
 
 parameter`order`string=ToString[parameter`order]
@@ -100,7 +112,7 @@ parameter`ci`string=ToString[NumberForm[parameter`ci,{3,2}]]
 (*import origin data*)
 
 
-input`dir=FileNameJoin[{git`root`dir,"/expression-mfiles/"}]
+input`dir=FileNameJoin[{git`local`name,"/expression-mfiles/"}]
 
 
 parameter`lambda0`group`string=If[
@@ -116,10 +128,6 @@ ToString[NumberForm[parameter`lambda0,{3,2}]],
 ToString[NumberForm[parameter`lambda0,{3,2}]]
 }
 ]
-
-
-(* ::DisplayFormula:: *)
-(*C:\\ octet.formfactor\\ expression-mfiles \\ data`baryons`series-o1`L-0.90`ci-1.50.m*)
 
 
 Module[{tename1},
@@ -143,18 +151,16 @@ input`dir]
 ]
 ];
 (*++++++++++++++++++++display+++++++++++++++++++++*)
-Print["----------------------------","\n",".m files list","\n","----------------------------"];
-StringRiffle[mfile`baryons`series]
+echo[".m files list"];
+echo[mfile`baryons`series]
 
 
 (data`baryons`series`raw=Map[Get,mfile`baryons`series,{-1}]);
 
 
-data`baryons`series`raw//Dimensions
-
-
 (* ::DisplayFormula:: *)
-(*data`baryons`series`raw,{3,2,8,6},{conf,gegm,io,clus}*)
+(*data`baryons`series`raw//Dimensions*)
+(*{3,2,8,31}*)
 
 
 (* ::Chapter:: *)
@@ -183,20 +189,17 @@ data`center=2;
 data`baryons`series=data`baryons`series`raw[[data`center]];
 
 
-(* ::Input:: *)
-(*data`baryons`series//Dimensions*)
-
-
 (* ::DisplayFormula:: *)
-(*data`baryons`series,{2,8,6},{gegm,io,clus}*)
+(*data`baryons`series//Dimensions*)
+(*{2,8,31}*)
 
 
-Module[{te`data},
+Module[{te`data},(*\:5bf9\:4e8e\:603b\:8d21\:732e\:7684seva\:ff0c\:6539\:5199\:6210\:6709\:8bef\:5dee\:5e26\:7684\:5f62\:5f0f*)
 
-gegm=2;io=1;clus=3;(*clus 3 is the calculated total value *)
-data`baryons`series[[All,All,clus]]=Table[
+gegm=2;io=1;seva=13;(*seva 13 \:662f\:603b\:8d21\:732e\:7684\:4f4d\:7f6e*)
+data`baryons`series[[All,All,seva]]=Table[
 
-te`data=data`baryons`series`raw[[All,gegm,io,clus]];
+te`data=data`baryons`series`raw[[All,gegm,io,seva]];
 PlusMinus[te`data[[2]],Mean[Abs[te`data[[{1,3}]]-te`data[[2]]]]]
 
 ,{gegm,1,2,1}
@@ -211,7 +214,7 @@ PlusMinus[te`data[[2]],Mean[Abs[te`data[[{1,3}]]-te`data[[2]]]]]
 
 
 (* ::DisplayFormula:: *)
-(*data`baryons`series,{2,8,6},{gegm,io,cluster}*)
+(*data`baryons`series,{2,8,31},{gegm,io,sevater}*)
 
 
 (* ::Text:: *)
@@ -224,12 +227,9 @@ choplimit=10^-8;
 data`baryons`series`trim=Map[NumberForm[Chop[#1,choplimit],{6,3}]&,data`baryons`series,{-1}];
 
 
-(* ::Input:: *)
-(*data`baryons`series`trim//Dimensions*)
-
-
 (* ::DisplayFormula:: *)
-(*data`baryons`series`trim,{2,8,6},{gegm,io,cluster}*)
+(*data`baryons`series`trim//Dimensions*)
+(*{2,8,31}*)
 
 
 (* ::Section:: *)
@@ -250,6 +250,7 @@ names`horizontal(* prepend names aligned in horizontal, should +1, for vertical 
 ,Frame->{All,All}
 ,Spacings->{2,2}
 ,Background->background
+,ItemSize->Full
 ](*grid end*)
 ];
 
@@ -258,13 +259,27 @@ names`vertical={"\[CapitalSigma]m","\[CapitalSigma]0","\[CapitalSigma]p","pr","n
 
 
 names`horizontal={
-{
-"\!\(\*SuperscriptBox[\(re\), \(2\)]\)","tree","loop","total",
-"exp.","Lattice","paper"
+{"Ge",
+"tr uds","tr u","tr d","tr s",(*1,4*)
+"lo,re2,uds","lo,re2,u","lo,re2,d","lo,re2,s",(*5,8*)
+"lo,re3,uds","lo,re3,u","lo,re3,d","lo,re3,s",(*9,12*)
+"lt uds","lt u","lt d","lt s",(*13,16*)
+"qch u","qch d","qch s",(*17,19*)
+"val u","val d","val s",(*20,22*)
+"valtot u","valtot d","valtot s",(*23,25*)
+"sea u","sea d","sea s",(*26,28*)
+"exp.","Lattice","paper"(*29,31*)
 },
-{
-"\!\(\*SuperscriptBox[\(rm\), \(2\)]\)","tree","loop","total",
-"exp.","Lattice","paper"
+{"\[Mu]",
+"tr uds","tr u","tr d","tr s",(*1,4*)
+"lo,re2,uds","lo,re2,u","lo,re2,d","lo,re2,s",(*5,8*)
+"lo,re3,uds","lo,re3,u","lo,re3,d","lo,re3,s",(*9,12*)
+"lt uds","lt u","lt d","lt s",(*13,16*)
+"qch u","qch d","qch s",(*17,19*)
+"val u","val d","val s",(*20,22*)
+"valtot u","valtot d","valtot s",(*23,25*)
+"sea u","sea d","sea s",(*26,28*)
+"exp.","Lattice","paper"(*29,31*)
 }
 };
 
@@ -282,7 +297,7 @@ LightCyan,{None,LightBlue}
 
 
 (* ::DisplayFormula:: *)
-(*data`baryons`series,{2,8,6},{gegm,io,cluster}*)
+(*data`baryons`series,{2,8,6},{gegm,io,sevater}*)
 
 
 (* ::Text:: *)
@@ -338,54 +353,18 @@ data`background
 (*storage*)
 
 
-Print["----------------------------","\n","output directory","\n","----------------------------"];
+echo["output directory"];
+output`dir=FileNameJoin[{git`local`name,"/expression-results/"}]
 
 
-output`dir=FileNameJoin[{git`root`dir,"/expression-results/"}]
-
-
-Print["----------------------------","\n","output file name","\n","----------------------------"];
-
-
-output`name`list={
+echo["files to export"];(*\:8981\:5bfc\:51fa\:7684\:6587\:4ef6,\:5173\:8054\:7684\:5f62\:5f0f\:ff0c\:4fdd\:5b58\:7528\:7684\:6587\:4ef6\:540d\[Rule]\:5bf9\:5e94\:7684\:6587\:4ef6*)
+output`assoc=<|
 (*++++++++++++++++*)
-FileNameJoin[{output`dir,
-"series."<>
-parameter`order<>
-".ge.L-"<>
-parameter`lambda0`string<>
-".ci-"<>
-parameter`ci`string<>
-".pdf"
-}],
-FileNameJoin[{output`dir,
-"series."<>
-parameter`order<>
-".gm.L-"<>
-parameter`lambda0`string<>
-".ci-"<>
-parameter`ci`string<>
-".pdf"
-}]
+FileNameJoin[{output`dir,"series."<>parameter`order<>".ge.L-"<>parameter`lambda0`string<>".ci-"<>parameter`ci`string<>".pdf"}]->series`ge`total,
+FileNameJoin[{output`dir,"series."<>parameter`order<>".gm.L-"<>parameter`lambda0`string<>".ci-"<>parameter`ci`string<>".pdf"}]->series`gm`total
 (*++++++++++++++++*)
-}
+|>;
 
 
-output`file`list={
-(*+++++++++++++++++++++*)
-series`ge`total,
-series`gm`total
-(*+++++++++++++++++++++*)
-};
-
-
-(* ::Text:: *)
-(*********************************************************************************)
-
-
-Print["----------------------------","\n","output status","\n","----------------------------"];
-
-
-Table[
-Export[output`name`list[[i]],output`file`list[[i]]]
-,{i,1,Length[output`file`list],1}]
+echo["output status"];
+KeyValueMap[Export,output`assoc]
