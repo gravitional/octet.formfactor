@@ -119,7 +119,8 @@ parameter`ci`string=ToString[NumberForm[parameter`ci,{3,2}]]
 <<X`
 
 
-choplimit=10^-10;
+choplimit=10^-10;(*cut\:7cbe\:5ea6*)
+precision=16;(*\:7cbe\:786e\:5ea6*)
 
 
 (* ::Chapter:: *)
@@ -202,28 +203,28 @@ Transpose[chpt`qfa`sea`coemass`masslimit,{2,3,1}]
 (*assign value*)
 
 
-{conm\[Pi],conmKi,conm\[Eta],conmEtas}={
-0.1381`20,
-0.4956`20,
-0.5693`20,
-0.9452`20
-};
+{conm\[Pi],conmKi,conm\[Eta],conmEtas}=SetPrecision[{
+0.1381,
+0.4956,
+0.5693,
+0.9452
+},precision];
 
 
 {conm\[CapitalSigma],conmN,conm\[CapitalXi],conm\[CapitalLambda],conm\[CapitalLambda]\[CapitalSigma],
-conmUUU,conmDDD,conmSSS(* the symmetric terms *)
-}={
-1.193`20,0.939`20,1.315`20,1.116`20,1.155`20,
-0.939`20,0.939`20,1.315`20
-};
+conmUUU,conmDDD,conmSSS(* \:865a\:62df\:7684\:5bf9\:79f0\:91cd\:5b50 *)
+}=SetPrecision[{
+1.193,0.939,1.315,1.116,1.155,
+0.939,0.939,1.315
+},precision];
 
 
-{conm\[CapitalDelta],conm\[CapitalSigma]s,conm\[CapitalXi]s,conm\[CapitalOmega]}={
-1.232`20,
-1.385`20,
-1.530`20,
-1.672`20
-};
+{conm\[CapitalDelta],conm\[CapitalSigma]s,conm\[CapitalXi]s,conm\[CapitalOmega]}=SetPrecision[{
+1.232,
+1.385,
+1.530,
+1.672
+},precision];
 
 
 (* ::DisplayFormula:: *)
@@ -363,16 +364,17 @@ config`c1c2=<|
 |>;
 
 
-baselist2=Join[
+baselist2=SetPrecision[
+Join[
 {
-f->0.093`20,
+f->0.093,
 zi->-1,
-di->0.76`20,fi->0.50`20,
-ci->SetPrecision[parameter`ci,20],
-\[CapitalLambda]0->SetPrecision[parameter`lambda0,20]
+di->0.76,fi->0.50,
+ci->parameter`ci,
+\[CapitalLambda]0->parameter`lambda0
 },
 config`c1c2[{parameter`lambda0`string,parameter`ci`string}]
-];
+],precision];
 
 
 (* ::Text:: *)
@@ -383,203 +385,6 @@ baselist=Table[
 Join[baselist1[[io]],baselist2]
 ,{io,1,8,1}
 ];
-
-
-(* ::Section::Closed:: *)
-(*para-c1c2.sum-square.all-baryons.rencon2*)
-
-
-(* ::Text:: *)
-(***********************************************************************)
-
-
-(* ::DisplayFormula:: *)
-(*ci->1,\[CapitalLambda]0->0.7,*)
-(*{0.140654,{c1->2.01272,c2->0.477586}}*)
-
-
-(* ::DisplayFormula:: *)
-(*ci->1,\[CapitalLambda]0->0.75,*)
-(*{0.132188,{c1->1.95069,c2->0.441996}}*)
-
-
-(* ::DisplayFormula:: *)
-(*ci->1,\[CapitalLambda]0->0.8,*)
-(*{0.126797,{c1->1.88383,c2->0.405126}}*)
-
-
-(* ::DisplayFormula:: *)
-(*ci->1,\[CapitalLambda]0->0.85,*)
-(*{0.123918,{c1->1.81213,c2->0.36732}}*)
-
-
-(* ::DisplayFormula:: *)
-(*ci->1,\[CapitalLambda]0->0.90,*)
-(*{0.123053,{c1->1.73562,c2->0.329194}}*)
-
-
-(* ::DisplayFormula:: *)
-(*ci->1,\[CapitalLambda]0->0.95,*)
-(*{0.123788,{c1->1.65425,c2->0.291768}}*)
-
-
-(* ::DisplayFormula:: *)
-(*ci->1,\[CapitalLambda]0->1.0,*)
-(*{0.125804,{c1->1.56783,c2->0.256696}}*)
-
-
-(* ::DisplayFormula:: *)
-(*ci->1,\[CapitalLambda]0->1.05,*)
-(*{0.128887,{c1->1.4758,c2->0.226666}}*)
-
-
-(* ::DisplayFormula:: *)
-(*ci->1,\[CapitalLambda]0->1.1,*)
-(*{0.132961,{c1->1.37675,c2->0.206175}}*)
-
-
-(* ::Text:: *)
-(************************************************************************************)
-
-
-(* ::DisplayFormula:: *)
-(*ci->1,\[CapitalLambda]0->0.90,*)
-(*{0.123053,{c1->1.73562,c2->0.329194}}*)
-
-
-(* ::DisplayFormula:: *)
-(*\[CapitalLambda]0->0.90,ci->1.05,*)
-(*{0.114994,{c1->1.69533,c2->0.331066}}*)
-
-
-(* ::DisplayFormula:: *)
-(*\[CapitalLambda]0->0.90,ci->1.1,*)
-(*{0.107251,{c1->1.65427,c2->0.334366}}*)
-
-
-(* ::DisplayFormula:: *)
-(*\[CapitalLambda]0->0.90,ci->1.15,*)
-(*{0.099849,{c1->1.61237,c2->0.339155}}*)
-
-
-(* ::DisplayFormula:: *)
-(*\[CapitalLambda]0->0.90,ci->1.2,*)
-
-
-(* ::DisplayFormula:: *)
-(*{0.0928122,{c1->1.56956,c2->0.345494}}*)
-
-
-(* ::DisplayFormula:: *)
-(*\[CapitalLambda]0->0.90,ci->1.25,*)
-(*{0.0861669,{c1->1.52573,c2->0.353452}}*)
-
-
-(* ::DisplayFormula:: *)
-(*\[CapitalLambda]0->0.90,ci->1.3,*)
-(*{0.0799395,{c1->1.48082,c2->0.363103}}*)
-
-
-(* ::DisplayFormula:: *)
-(*\[CapitalLambda]0->0.90,ci->1.35,*)
-
-
-(* ::DisplayFormula:: *)
-(*{0.0741573,{c1->1.43471,c2->0.374525}}*)
-
-
-(* ::DisplayFormula:: *)
-(*\[CapitalLambda]0->0.90,ci->1.40,*)
-(*{0.0688482,{c1->1.38729,c2->0.387806}}*)
-
-
-(* ::DisplayFormula:: *)
-(*\[CapitalLambda]0->0.90,ci->1.45,*)
-(*{0.0640414,{c1->1.33846,c2->0.403039}}*)
-
-
-(* ::DisplayFormula:: *)
-(*\[CapitalLambda]0->0.90,ci->1.5,*)
-(*{0.0597673,{c1->1.28808,c2->0.420326}}*)
-
-
-(* ::Text:: *)
-(***************************************************************************)
-
-
-(* ::DisplayFormula:: *)
-(*\[CapitalLambda]0->0.80,ci->1,*)
-(*{0.126797,{c1->1.88383,c2->0.405126}}*)
-
-
-(* ::DisplayFormula:: *)
-(*\[CapitalLambda]0->0.80,ci->1.05,*)
-(*{0.119196,{c1->1.85488,c2->0.403562}}*)
-
-
-(* ::DisplayFormula:: *)
-(*\[CapitalLambda]0->0.80,ci->1.1,*)
-(*{0.111782,{c1->1.82541,c2->0.402675}}*)
-
-
-(* ::DisplayFormula:: *)
-(*\[CapitalLambda]0->0.80,ci->1.15,*)
-(*{0.104581,{c1->1.79539,c2->0.402487}}*)
-
-
-(* ::DisplayFormula:: *)
-(*\[CapitalLambda]0->0.80,ci->1.2,*)
-
-
-(* ::DisplayFormula:: *)
-(*{0.097619,{c1->1.7648,c2->0.403024}}*)
-
-
-(* ::DisplayFormula:: *)
-(*\[CapitalLambda]0->0.80,ci->1.25,*)
-(*{0.0909201,{c1->1.73361,c2->0.40431}}*)
-
-
-(* ::DisplayFormula:: *)
-(*\[CapitalLambda]0->0.80,ci->1.3,*)
-(*{0.0845108,{c1->1.70178,c2->0.406373}}*)
-
-
-(* ::DisplayFormula:: *)
-(*\[CapitalLambda]0->0.80,ci->1.35,*)
-
-
-(* ::DisplayFormula:: *)
-(*{0.0784171,{c1->1.6693,c2->0.409241}}*)
-
-
-(* ::DisplayFormula:: *)
-(*\[CapitalLambda]0->0.80,ci->1.40,*)
-(*{0.0726658,{c1->1.63611,c2->0.412944}}*)
-
-
-(* ::DisplayFormula:: *)
-(*\[CapitalLambda]0->0.80,ci->1.45,*)
-(*{0.0672835,{c1->1.60219,c2->0.417514}}*)
-
-
-(* ::DisplayFormula:: *)
-(*\[CapitalLambda]0->0.80,ci->1.5,*)
-(*{0.0622978,{c1->1.56749,c2->0.422984}}*)
-
-
-(* ::Text:: *)
-(**************************************************************)
-
-
-(* ::DisplayFormula:: *)
-(*\[CapitalLambda]0->0.85,ci->1.5,*)
-(*{0.0597742,{c1->1.43562,c2->0.412794}}*)
-
-
-(* ::DisplayFormula:: *)
-(*\[CapitalLambda]0->1,ci->1.5,*)
-(*{0.0654518,{c1->0.917221,c2->0.539694}}*)
 
 
 (* ::Section:: *)
@@ -655,13 +460,13 @@ Print[
 ]
 ];
 
-Simplify[
+SetPrecision[Simplify[Chop[
 (
 (
 fucoe[[seva,if,io,coe]]*ff1[[if]]
 )/.baselist[[io]]
 )/.fumass[[seva,if,io,coe]]
-]
+,choplimit]],precision]
 
 (*,{series,1,2,1}(*series order 0 1 *)*)
 ,{seva,1,13,1}
@@ -686,13 +491,13 @@ Print[
 ]
 ];
 
-Simplify[
+SetPrecision[Simplify[Chop[
 (
 (
 fucoe[[seva,if,io,coe]]*ff2[[if]]
 )/.baselist[[io]]
 )/.fumass[[seva,if,io,coe]]
-]
+,choplimit]],precision]
 
 (*,{series,1,2,1}(*series order 0 1 *)*)
 ,{seva,1,13,1}
@@ -740,13 +545,13 @@ order++;
 If[IntegerQ[order/200],Print[seva,",",io,",",if,",",coe]
 ];
 
-Simplify[
+SetPrecision[Simplify[Chop[
 (
 (
 fucoe[[seva,if,io,coe]]*zero`ff1[[if]]
 )/.baselist[[io]]
 )/.fumass[[seva,if,io,coe]]
-]
+,choplimit]],precision]
 
 (*,{series,1,2,1}(*series order 0 1 *)*)
 ,{seva,1,13,1}
@@ -765,13 +570,13 @@ order++;
 If[IntegerQ[order/200],Print[seva,",",io,",",if,",",coe]
 ];
 
-Simplify[
+SetPrecision[Simplify[Chop[
 (
 (
 fucoe[[seva,if,io,coe]]*zero`ff2[[if]]
 )/.baselist[[io]]
 )/.fumass[[seva,if,io,coe]]
-]
+,choplimit]],precision]
 
 (*,{series,1,2,1}(*series order 0 1 *)*)
 ,{seva,1,13,1}
@@ -906,10 +711,12 @@ octetcharge={
 };
 
 
-octetmageton={(*1*) \[Minus]1.160,(*2*) 0.60,(*3*)2.458,
+octetmageton=SetPrecision[{
+(*1*) \[Minus]1.160,(*2*) 0.60,(*3*)2.458,
   (*4*)2.7928473446, (*5*)\[Minus]1.9130427,
   (*6*)\[Minus]0.6507,(*7*)\[Minus]1.250,
- (*8*)\[Minus]0.613};
+ (*8*)\[Minus]0.613}
+ ,precision];
 
 
 (* ::Section:: *)
@@ -1045,7 +852,7 @@ octetnameabbr=
 (*\:91cd\:65b0\:7ec4\:5408\:6570\:636e*)
 
 
-fig`cutlimit=0.00036`16;
+fig`cutlimit=0.00001`16;
 fig`leadersize=4;
 
 
@@ -1229,7 +1036,8 @@ PlotRange->{{0,1},Automatic},
 PlotRangePadding->{Automatic,Scaled[0.09]},
 ImageSize->Scaled[0.5],
 AspectRatio->1/GoldenRatio,
-Frame->True
+Frame->True,
+WorkingPrecision->precision-1
 ]
 
 ,{gegm,1,2,1}
