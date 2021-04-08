@@ -120,7 +120,7 @@ parameter`ci`string=ToString[NumberForm[parameter`ci,{3,2}]]
 
 
 choplimit=10^-10;(*cut\:7cbe\:5ea6*)
-precision=16;(*\:7cbe\:786e\:5ea6*)
+precision=20;(*\:7cbe\:786e\:5ea6*)
 
 
 (* ::Chapter:: *)
@@ -428,9 +428,8 @@ FileNameJoin[{zero`directory,"f2."<>"analytic."<>ToString[if]<>".m"}]
 
 
 echo["start numeric, separate`nuff1 separate`nuff2 "];
-
-
 SetOptions[Simplify,TimeConstraint->1];
+DiscBChop[x__]:=Hold[Chop[DiscB[x],choplimit]]
 
 
 (* ::DisplayFormula:: *)
@@ -459,14 +458,8 @@ Print[
 ",coe=",coe
 ]
 ];
-
-SetPrecision[Simplify[Chop[
-(
-(
-fucoe[[seva,if,io,coe]]*ff1[[if]]
-)/.baselist[[io]]
-)/.fumass[[seva,if,io,coe]]
-,choplimit]],precision]
+(*\:907f\:514dDiscB\:5e26\:6765\:7684\:5fae\:5c0f\:5047\:865a\:90e8*)
+fucoe[[seva,if,io,coe]]*ff1[[if]]/.DiscB->DiscBChop/.baselist[[io]]/.fumass[[seva,if,io,coe]]//ReleaseHold//Cancel
 
 (*,{series,1,2,1}(*series order 0 1 *)*)
 ,{seva,1,13,1}
@@ -491,13 +484,7 @@ Print[
 ]
 ];
 
-SetPrecision[Simplify[Chop[
-(
-(
-fucoe[[seva,if,io,coe]]*ff2[[if]]
-)/.baselist[[io]]
-)/.fumass[[seva,if,io,coe]]
-,choplimit]],precision]
+fucoe[[seva,if,io,coe]]*ff2[[if]]/.DiscB->DiscBChop/.baselist[[io]]/.fumass[[seva,if,io,coe]]//ReleaseHold//Cancel
 
 (*,{series,1,2,1}(*series order 0 1 *)*)
 ,{seva,1,13,1}
@@ -545,13 +532,13 @@ order++;
 If[IntegerQ[order/200],Print[seva,",",io,",",if,",",coe]
 ];
 
-SetPrecision[Simplify[Chop[
+Simplify[Chop[
 (
 (
 fucoe[[seva,if,io,coe]]*zero`ff1[[if]]
 )/.baselist[[io]]
 )/.fumass[[seva,if,io,coe]]
-,choplimit]],precision]
+,choplimit]]
 
 (*,{series,1,2,1}(*series order 0 1 *)*)
 ,{seva,1,13,1}
@@ -570,13 +557,13 @@ order++;
 If[IntegerQ[order/200],Print[seva,",",io,",",if,",",coe]
 ];
 
-SetPrecision[Simplify[Chop[
+Simplify[Chop[
 (
 (
 fucoe[[seva,if,io,coe]]*zero`ff2[[if]]
 )/.baselist[[io]]
 )/.fumass[[seva,if,io,coe]]
-,choplimit]],precision]
+,choplimit]]
 
 (*,{series,1,2,1}(*series order 0 1 *)*)
 ,{seva,1,13,1}
@@ -950,7 +937,7 @@ Piecewise[
 (*total = tree +(Z-1)*tree+loop*)
 
 
-rearrange`seva`gegm=Transpose[
+rearrange`seva`gegm=SetPrecision[Transpose[
 {
 trgegm[[All,1,All]],(* 1;tree uds total*)
 trgegm[[All,2,All]],(*2;u*)
@@ -990,7 +977,7 @@ loop`gegm[[All,13,All]](*28 sea s*)
 
 }
 ,{2,1,3}
-];
+],precision];
 
 
 (* ::DisplayFormula:: *)
@@ -1000,7 +987,7 @@ loop`gegm[[All,13,All]](*28 sea s*)
 
 nmlz`gegm={(*\:5f52\:4e00\:5316\:56e0\:5b50*)
 ConstantArray[1,8],(*ge \:7684\:5f52\:4e00\:5316\:56e0\:5b50\:90fd\:662f1*)
-total`gegm[[2,1]]/.Q2->0(*gm \:7684\:5f52\:4e00\:5316\:56e0\:5b50\:662f\:96f6\:70b9\:503c*)
+SetPrecision[total`gegm[[2,1]]/.Q2->0,precision](*gm \:7684\:5f52\:4e00\:5316\:56e0\:5b50\:662f\:96f6\:70b9\:503c*)
 };
 
 
@@ -1037,7 +1024,7 @@ PlotRangePadding->{Automatic,Scaled[0.09]},
 ImageSize->Scaled[0.5],
 AspectRatio->1/GoldenRatio,
 Frame->True,
-WorkingPrecision->precision-1
+WorkingPrecision->precision
 ]
 
 ,{gegm,1,2,1}
