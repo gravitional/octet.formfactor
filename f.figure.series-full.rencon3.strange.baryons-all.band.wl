@@ -84,7 +84,7 @@ git`local`name=FileNameJoin[Append[TakeWhile[FileNameSplit[ExpandFileName[filena
 
 input`simulation={"/home/tom/octet.formfactor/f.figure.series-full.rencon3.strange.baryons-all.band.wl",
 "full",0.90,1.50,
-"{1,1,1,1,1,1,1,1}","Bands","{{0,0,0,0.2,0.2,0,0,0},{0,0,0,0.2,0.2,0,0,0}}",
+"{1,1,1,1,1,1,1,1}","Bands","{{0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2},{0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2}}",
 4,1,
 "normal"(*\:662f\:5426\:5bf9\:6570\:636e\:8fdb\:884c\:5f52\:4e00\:5316*)
 };
@@ -376,8 +376,8 @@ Interpolation[data`baryons[[conf,gegm,seva,io]]]
 
 value`center`im1=data`baryons[[
 2,All,All,All,
-All,1(*\:8fd9\:4e2a\:6307\:6807\:63d0\:53d6\:5230\:7684\:662f\:4e2d\:5fc3\:70b9\:7684\:7eb5\:5750\:6807*)
-]];;
+All,2(*\:8fd9\:4e2a\:6307\:6807\:63d0\:53d6\:5230\:7684\:662f\:4e2d\:5fc3\:70b9\:7684\:7eb5\:5750\:6807*)
+]];
 
 
 (* ::DisplayFormula:: *)
@@ -544,7 +544,7 @@ data`interval`im3=Map[Merge[#1,First]&,data`interval`im2,{-4}];
 data`interval=data`interval`im3;
 
 
-(* ::Chapter:: *)
+(* ::Chapter::Closed:: *)
 (*experiment*)
 
 

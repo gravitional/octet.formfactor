@@ -429,6 +429,7 @@ FileNameJoin[{zero`directory,"f2."<>"analytic."<>ToString[if]<>".m"}]
 echo["start numeric, separate`nuff1 separate`nuff2 "];
 SetOptions[Simplify,TimeConstraint->1];
 DiscBChop[x__]:=Chop[DiscB[x],choplimit]/;And@@NumericQ/@{x}(*\:5f53\:8f93\:5165\:662f\:6570\:5b57\:7684\:65f6\:5019\:ff0c\:624d\:8fdb\:884cchop*)
+ScalarC0Chop[x__]:=Chop[ScalarC0[x],choplimit]/;And@@NumericQ/@{x}(*\:5f53\:8f93\:5165\:662f\:6570\:5b57\:7684\:65f6\:5019\:ff0c\:624d\:8fdb\:884cchop*)
 
 
 (* ::DisplayFormula:: *)
@@ -458,7 +459,7 @@ Print[
 ]
 ];
 (*\:907f\:514dDiscB\:5e26\:6765\:7684\:5fae\:5c0f\:5047\:865a\:90e8*)
-fucoe[[seva,if,io,coe]]*ff1[[if]]/.DiscB->DiscBChop/.baselist[[io]]/.fumass[[seva,if,io,coe]]//Cancel
+fucoe[[seva,if,io,coe]]*ff1[[if]]/.{DiscB->DiscBChop,ScalarC0->ScalarC0Chop}/.baselist[[io]]/.fumass[[seva,if,io,coe]]//Cancel
 
 (*,{series,1,2,1}(*series order 0 1 *)*)
 ,{seva,1,13,1}
@@ -483,7 +484,7 @@ Print[
 ]
 ];
 
-fucoe[[seva,if,io,coe]]*ff2[[if]]/.DiscB->DiscBChop/.baselist[[io]]/.fumass[[seva,if,io,coe]]//Cancel
+fucoe[[seva,if,io,coe]]*ff2[[if]]/.{DiscB->DiscBChop,ScalarC0->ScalarC0Chop}/.baselist[[io]]/.fumass[[seva,if,io,coe]]//Cancel
 
 (*,{series,1,2,1}(*series order 0 1 *)*)
 ,{seva,1,13,1}
@@ -502,7 +503,7 @@ nuff2=Total[separate`nuff2,{3,4}];
 nugegm=Transpose[(* 8*2*1 transpose into 2*4*8*11 *)
 Table[
 -1/(16\[Pi]^2) {
-nuff1[[All,io]]-Q2/(4constmo[[io]]^2) nuff2[[All,io]],
+nuff1[[All,io]]-Q2/(4constmo[[io]]^2)nuff2[[All,io]],
 nuff1[[All,io]]+nuff2[[All,io]]
 }
 ,{io,1,8,1}
@@ -531,7 +532,7 @@ order++;
 If[IntegerQ[order/200],Print[seva,",",io,",",if,",",coe]
 ];
 
-fucoe[[seva,if,io,coe]]*zero`ff1[[if]]/.DiscB->DiscBChop/.baselist[[io]]/.fumass[[seva,if,io,coe]]//Cancel
+Chop[fucoe[[seva,if,io,coe]]*zero`ff1[[if]]/.{DiscB->DiscBChop,ScalarC0->ScalarC0Chop}/.baselist[[io]]/.fumass[[seva,if,io,coe]],choplimit]
 
 (*,{series,1,2,1}(*series order 0 1 *)*)
 ,{seva,1,13,1}
@@ -550,7 +551,7 @@ order++;
 If[IntegerQ[order/200],Print[seva,",",io,",",if,",",coe]
 ];
 
-fucoe[[seva,if,io,coe]]*zero`ff2[[if]]/.DiscB->DiscBChop/.baselist[[io]]/.fumass[[seva,if,io,coe]]//Cancel
+Chop[fucoe[[seva,if,io,coe]]*zero`ff2[[if]]/.{DiscB->DiscBChop,ScalarC0->ScalarC0Chop}/.baselist[[io]]/.fumass[[seva,if,io,coe]],choplimit]
 
 (*,{series,1,2,1}(*series order 0 1 *)*)
 ,{seva,1,13,1}
@@ -649,15 +650,15 @@ trf1f2={
 (*(*trf1f2 is [consti,octet,treef1f2][4*8*2]*)*)
 
 
-trgegm=Transpose[
-Table[
-Simplify[
+trgegm=Transpose[Chop[Table[Cancel[
 {
 trf1f2[[All,io,1]]-Q2/(4constmo[[io]]^2) trf1f2[[All,io,2]],
 trf1f2[[All,io,1]]+trf1f2[[All,io,2]]
 }/.baselist[[io]]
 ]
 ,{io,1,8,1}]
+,choplimit
+]
 ,{3,1,2}];//AbsoluteTiming
 
 
@@ -728,7 +729,7 @@ rencon\[LeftDoubleBracket]4,5\[RightDoubleBracket]=1;*)
 
 (*++++++++++++++++++++display+++++++++++++++++++++*)
 echo["calculated renormalization constants"];
-StringRiffle[rencon]
+echo[rencon]
 
 
 (* ::Chapter:: *)
@@ -826,7 +827,7 @@ octetnameabbr=
 (*\:91cd\:65b0\:7ec4\:5408\:6570\:636e*)
 
 
-fig`cutlimit=0.00001`16;
+fig`cutlimit=0.00001`20;
 fig`leadersize=4;
 
 
@@ -862,7 +863,7 @@ loop`gegm=Table[(*\:6574\:7406\:6570\:636e\:ff0c\:5bf9\:96f6\:70b9\:9644\:8fd1\:
 Piecewise[
 {
 {zero`gegm`value[[gegm,seva,io]],Q2<=fig`cutlimit},
-{Re[Chop[nugegm[[gegm,seva,io]],choplimit]],Q2>fig`cutlimit}
+{nugegm[[gegm,seva,io]],Q2>fig`cutlimit}
 }
 ]
 ,{gegm,1,2,1}
@@ -884,7 +885,7 @@ total`gegm=Table[
 Piecewise[
 {
 {(tree`gegm`rencon2[[gegm,seva,io]]/.Q2->0)+zero`gegm`value[[gegm,seva,io]],Q2<=fig`cutlimit},
-{(tree`gegm`rencon2[[gegm,seva,io]])+Re[Chop[nugegm[[gegm,seva,io]],choplimit]],Q2>fig`cutlimit}
+{(tree`gegm`rencon2[[gegm,seva,io]])+nugegm[[gegm,seva,io]],Q2>fig`cutlimit}
 }
 ]
 ,{gegm,1,2,1}
@@ -906,7 +907,7 @@ loop`rencon3`gegm=Table[
 Piecewise[
 {
 {(tree`gegm`rencon3[[gegm,seva,io]]/.Q2->0)+zero`gegm`value[[gegm,seva,io]],Q2<=fig`cutlimit},
-{(tree`gegm`rencon3[[gegm,seva,io]])+Re[Chop[nugegm[[gegm,seva,io]],choplimit]],Q2>fig`cutlimit}
+{(tree`gegm`rencon3[[gegm,seva,io]])+nugegm[[gegm,seva,io]],Q2>fig`cutlimit}
 }
 ]
 ,{gegm,1,2,1}
@@ -924,7 +925,7 @@ Piecewise[
 (*total = tree +(Z-1)*tree+loop*)
 
 
-rearrange`seva`gegm=SetPrecision[Transpose[
+rearrange`seva`gegm=Transpose[
 {
 trgegm[[All,1,All]],(* 1;tree uds total*)
 trgegm[[All,2,All]],(*2;u*)
@@ -964,7 +965,7 @@ loop`gegm[[All,13,All]](*28 sea s*)
 
 }
 ,{2,1,3}
-],precision];
+];
 
 
 (* ::DisplayFormula:: *)
@@ -990,7 +991,7 @@ SetPrecision[total`gegm[[2,1]]/.Q2->0,precision](*gm \:7684\:5f52\:4e00\:5316\:5
 fig`calc`baryons`gegm=Table[0,{gegm,1,2,1},{seva,1,28,1},{io,1,8,1}];
 gegm=1;(*seva=1;*)(*io=5;*)
 (*+++++++++++++++++++++++++++*)
-Module[{order=0},
+Module[{order=0,teff},
 (*+++++++++++++++++++++++++++*)
 Table[
 (*+++++++++++++++++++++++++++*)
@@ -1002,16 +1003,17 @@ If[IntegerQ[order/16],Print[
 ]
 ];
 (*+++++++++++++++++++++++++++*)
+teff=rearrange`seva`gegm[[gegm,seva,io]]/nmlz`gegm[[gegm,io]];
 fig`calc`baryons`gegm[[gegm,seva,io]]=Plot[
-Evaluate[rearrange`seva`gegm[[gegm,seva,io]]/nmlz`gegm[[gegm,io]]](*\:8fd9\:91cc\:9664\:4ee5\:5f52\:4e00\:5316\:56e0\:5b50\:ff0c\:4f7f\:7528 Evaluate \:5148\:8ba1\:7b97\:8868\:8fbe\:5f0f*)
+teff(*\:8fd9\:91cc\:9664\:4ee5\:5f52\:4e00\:5316\:56e0\:5b50\:ff0c\:4f7f\:7528 Evaluate \:5148\:8ba1\:7b97\:8868\:8fbe\:5f0f*)
 ,{Q2,0,1},
 AxesOrigin->{0,0},
 PlotRange->{{0,1},Automatic},
 PlotRangePadding->{Automatic,Scaled[0.09]},
 ImageSize->Scaled[0.5],
 AspectRatio->1/GoldenRatio,
-Frame->True,
-WorkingPrecision->precision
+Frame->True
+(*,WorkingPrecision->precision*)
 ]
 
 ,{gegm,1,2,1}
