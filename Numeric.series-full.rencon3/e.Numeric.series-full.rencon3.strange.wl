@@ -116,7 +116,7 @@ parameter`ci`string=ToString[NumberForm[parameter`ci,{3,2}]]
 (*inital by hand*)
 
 
-<<X`
+Needs["X`"]
 
 
 choplimit=10^-10;(*cut\:7cbe\:5ea6*)
@@ -446,7 +446,7 @@ ScalarC0Chop[x__]:=Chop[ScalarC0[x],choplimit]/;And@@NumericQ/@{x}(*\:5f53\:8f93
 
 Module[{order=0},
 
-separate`nuff1=Table[
+separate`nuff1=ParallelTable[
 
 (*\:8ba1\:6570\:5668\:ff0c\:7528\:6765\:663e\:793a\:8ba1\:7b97\:8fdb\:5ea6\:ff0c\:4ee5 200 \:4e2a\:9879\:76ee\:4e3a\:8ba1\:6570\:5355\:4f4d*)
 order++;
@@ -466,13 +466,13 @@ fucoe[[seva,if,io,coe]]*ff1[[if]]/.{DiscB->DiscBChop,ScalarC0->ScalarC0Chop}/.ba
 ,{io,1,8,1}(*the outest level is the octet order*)
 ,{if,1,11,1}(*the if contris should be summed*)
 ,{coe,1,Length[fucoe[[seva,if,io]]],1}(*the coe contris should be summed*)
-];
+,DistributedContexts->Automatic];
 ]//AbsoluteTiming
 
 
 Module[{order=0},
 
-separate`nuff2=Table[
+separate`nuff2=ParallelTable[
 
 order++;
 If[IntegerQ[order/50],
@@ -491,7 +491,7 @@ fucoe[[seva,if,io,coe]]*ff2[[if]]/.{DiscB->DiscBChop,ScalarC0->ScalarC0Chop}/.ba
 ,{io,1,8,1}(*the outest level is the octet order*)
 ,{if,1,11,1}(*the if contris should be summed*)
 ,{coe,1,Length[fucoe[[seva,if,io]]],1}(*the coe contris should be summed*)
-];
+,DistributedContexts->Automatic];
 ]//AbsoluteTiming
 
 
@@ -525,7 +525,7 @@ echo["start numeric, separate`nuff1 separate`nuff2, zero order"];
 
 Module[{order=0},
 
-zero`separate`nuff1=Table[
+zero`separate`nuff1=ParallelTable[
 
 (*\:8ba1\:6570\:5668\:ff0c\:7528\:6765\:663e\:793a\:8ba1\:7b97\:8fdb\:5ea6\:ff0c\:4ee5 200 \:4e2a\:9879\:76ee\:4e3a\:8ba1\:6570\:5355\:4f4d*)
 order++;
@@ -539,13 +539,13 @@ Chop[fucoe[[seva,if,io,coe]]*zero`ff1[[if]]/.{DiscB->DiscBChop,ScalarC0->ScalarC
 ,{io,1,8,1}(*the outest level is the octet order*)
 ,{if,1,11,1}(*the if contris should be summed*)
 ,{coe,1,Length[fucoe[[seva,if,io]]],1}(*the coe contris should be summed*)
-];
+,DistributedContexts->Automatic];
 ]//AbsoluteTiming
 
 
 Module[{order=0},
 
-zero`separate`nuff2=Table[
+zero`separate`nuff2=ParallelTable[
 
 order++;
 If[IntegerQ[order/200],Print[seva,",",io,",",if,",",coe]
@@ -558,7 +558,7 @@ Chop[fucoe[[seva,if,io,coe]]*zero`ff2[[if]]/.{DiscB->DiscBChop,ScalarC0->ScalarC
 ,{io,1,8,1}(*the outest level is the octet order*)
 ,{if,1,11,1}(*the if contris should be summed*)
 ,{coe,1,Length[fucoe[[seva,if,io]]],1}(*the coe contris should be summed*)
-];
+,DistributedContexts->Automatic];
 ]//AbsoluteTiming
 
 
@@ -989,11 +989,13 @@ SetPrecision[total`gegm[[2,1]]/.Q2->0,precision](*gm \:7684\:5f52\:4e00\:5316\:5
 
 
 fig`calc`baryons`gegm=Table[0,{gegm,1,2,1},{seva,1,28,1},{io,1,8,1}];
+
+
 gegm=1;(*seva=1;*)(*io=5;*)
 (*+++++++++++++++++++++++++++*)
 Module[{order=0,teff},
 (*+++++++++++++++++++++++++++*)
-Table[
+ParallelDo[
 (*+++++++++++++++++++++++++++*)
 order++;
 If[IntegerQ[order/16],Print[
@@ -1019,9 +1021,9 @@ Frame->True
 ,{gegm,1,2,1}
 ,{seva,1,28,1}
 ,{io,1,8,1}
-]
+,DistributedContexts->Automatic]
 (*+++++++++++++++++++++++++++*)
-];
+];//AbsoluteTiming
 
 
 (* ::Chapter:: *)
