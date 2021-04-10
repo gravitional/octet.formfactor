@@ -4,7 +4,7 @@
 (*e.Numeric.series-full.rencon3.strange.wl*)
 
 
-(* ::Title:: *)
+(* ::Chapter:: *)
 (*initial*)
 
 
@@ -12,9 +12,9 @@
 (*\:8ba1\:7b97\:73af\:5883\:53c2\:91cf\:ff0c\:6bd4\:5982\:8def\:5f84*)
 
 
-git`remote`name="octet.formfactor";(*\:7ed9\:51fa\:8fdc\:7a0bgit\:4ed3\:5e93\:7684\:540d\:5b57*)
-boole`incmd=Not[$Notebooks];(*\:811a\:672c\:7684\:8fd0\:884c\:6a21\:5f0f\:5224\:65ad\:ff0cTrue\:4ee3\:8868\:547d\:4ee4\:884c\:ff0cFalse\:4ee3\:8868\:524d\:7aef*)
-filename=If[Not[boole`incmd],NotebookFileName[],$InputFileName](*\:7ed9\:51fa\:7b14\:8bb0\:672c\:7684\:7edd\:5bf9\:8def\:5f84*)
+GitRemoteName="octet.formfactor";(*\:7ed9\:51fa\:8fdc\:7a0bgit\:4ed3\:5e93\:7684\:540d\:5b57*)
+cmdQ=Not[$Notebooks];(*\:811a\:672c\:7684\:8fd0\:884c\:6a21\:5f0f\:5224\:65ad\:ff0cTrue\:4ee3\:8868\:547d\:4ee4\:884c\:ff0cFalse\:4ee3\:8868\:524d\:7aef*)
+filename=If[Not[cmdQ],NotebookFileName[],$InputFileName](*\:7ed9\:51fa\:7b14\:8bb0\:672c\:7684\:7edd\:5bf9\:8def\:5f84*)
 
 
 (* ::Text:: *)
@@ -24,7 +24,7 @@ filename=If[Not[boole`incmd],NotebookFileName[],$InputFileName](*\:7ed9\:51fa\:7
 forcestr[x__]:=StringJoin[ToString[#1]&/@Flatten[{x}]](*\:5b9a\:4e49\:4e00\:4e2a\:786e\:4fdd\:5b57\:7b26\:4e32\:7684\:51fd\:6570*)
 
 
-If[boole`incmd,
+If[cmdQ,
 echo[x__]:=Print["----------------------------","\n\033[1;44m\033[1;37m",forcestr[x],"\033[0;0m\n","----------------------------"],(*\:5b9a\:4e49\:7ec8\:7aef\:7684\:6253\:5370\:51fd\:6570*)
 echo[x__]:=Print[x](*\:5b9a\:4e49\:7b14\:8bb0\:672c\:7684\:6253\:5370\:51fd\:6570*)
 ]
@@ -33,22 +33,22 @@ echo[x__]:=Print[x](*\:5b9a\:4e49\:7b14\:8bb0\:672c\:7684\:6253\:5370\:51fd\:657
 (*\:5982\:679c\:5728\:524d\:7aef\:6267\:884c\:ff0c\:5c31\:5237\:65b0\:7b14\:8bb0\:672c\:7684\:540d\:5b57*)
 Once[If[
 (* if $ScriptCommandLine==={}, the environment is frontend*)
-Not[boole`incmd],
+Not[cmdQ],
 (*if execute in the frontend mode, refresh the title name*)
 CompoundExpression[
-cell`title=(Cells[][[1]]),(*\:5355\:5143\:5bf9\:8c61,\:7b2c\:4e00\:4e2a\:5355\:5143*)
-NotebookWrite[cell`title,Cell[FileNameSplit[filename][[-1]],"Title"]](*\:5237\:65b0\:7b2c\:4e00\:4e2a\:5355\:5143\:7684\:540d\:5b57*)
+celltitle=(Cells[][[1]]),(*\:5355\:5143\:5bf9\:8c61,\:7b2c\:4e00\:4e2a\:5355\:5143*)
+NotebookWrite[celltitle,Cell[FileNameSplit[filename][[-1]],"Title"]](*\:5237\:65b0\:7b2c\:4e00\:4e2a\:5355\:5143\:7684\:540d\:5b57*)
 ]
 ]];
-If[boole`incmd,echo["Ready to execute this script"]](*\:5982\:679c\:5728\:547d\:4ee4\:884c\:6267\:884c\:ff0c\:5c31\:6253\:5370\:63d0\:793a\:4fe1\:606f*)
+If[cmdQ,echo["Ready to execute this script"]](*\:5982\:679c\:5728\:547d\:4ee4\:884c\:6267\:884c\:ff0c\:5c31\:6253\:5370\:63d0\:793a\:4fe1\:606f*)
 
 
 (* ::Text:: *)
 (*\:5b9a\:4e49\:672c\:5730git\:76ee\:5f55\:ff0c\:4e5f\:5c31\:662f\:7a0b\:5e8f\:7684\:6839\:76ee\:5f55*)
 
 
-echo["the git`local`name is"]
-git`local`name=FileNameJoin[Append[TakeWhile[FileNameSplit[ExpandFileName[filename]],UnsameQ[#1,git`remote`name]&],git`remote`name]]
+echo["the GitLocalName is"]
+GitLocalName=FileNameJoin[Append[TakeWhile[FileNameSplit[ExpandFileName[filename]],UnsameQ[#1,GitRemoteName]&],GitRemoteName]]
 
 
 (* ::Text:: *)
@@ -71,7 +71,7 @@ git`local`name=FileNameJoin[Append[TakeWhile[FileNameSplit[ExpandFileName[filena
 (*\:6a21\:62df\:547d\:4ee4\:884c\:8f93\:5165\:ff0c\:8c03\:8bd5\:4f7f\:7528*)
 
 
-input`simulation={"/home/tom/octet.formfactor/Numeric.series-full.rencon3/e.Numeric.series-full.rencon3.strange.wl",
+InputSim={"/home/tom/octet.formfactor/Numeric.series-full.rencon3/e.Numeric.series-full.rencon3.strange.wl",
 "full",0.90`20,1.50`20};
 
 
@@ -83,9 +83,9 @@ input`simulation={"/home/tom/octet.formfactor/Numeric.series-full.rencon3/e.Nume
 (*\:5f15\:5165\:547d\:4ee4\:884c\:53c2\:6570, 1 \:7528\:4f5c\:5b9e\:9645\:811a\:672c\:8fd0\:884c, 2\:7528\:4f5c\:8c03\:8bd5*)
 
 
-If[boole`incmd,
-input`cml=$ScriptCommandLine,(*\:5982\:679c\:5728\:547d\:4ee4\:884c\:6267\:884c\:ff0c\:5c31\:91c7\:7528\:547d\:4ee4\:884c\:53c2\:6570*)
-input`cml=input`simulation(*\:5982\:679c\:5728\:7b14\:8bb0\:672c\:6267\:884c\:ff0c\:5c31\:91c7\:7528\:6a21\:62df\:53c2\:6570*)
+If[cmdQ,
+InCml=$ScriptCommandLine,(*\:5982\:679c\:5728\:547d\:4ee4\:884c\:6267\:884c\:ff0c\:5c31\:91c7\:7528\:547d\:4ee4\:884c\:53c2\:6570*)
+InCml=InputSim(*\:5982\:679c\:5728\:7b14\:8bb0\:672c\:6267\:884c\:ff0c\:5c31\:91c7\:7528\:6a21\:62df\:53c2\:6570*)
 ];
 
 
@@ -93,30 +93,30 @@ input`cml=input`simulation(*\:5982\:679c\:5728\:7b14\:8bb0\:672c\:6267\:884c\:ff
 (*+++++++++++++++++++++++++++++++++*)
 
 
-{file`name,parameter`order,parameter`lambda0,parameter`ci}={
-input`cml[[1]],input`cml[[2]],
-ToExpression[input`cml[[3]]],(*\:8f6c\:6362\:6210\:8868\:8fbe\:5f0f*)
-ToExpression[input`cml[[4]]]
+{filename,parOrder,parLambda0,parci}={
+InCml[[1]],InCml[[2]],
+ToExpression[InCml[[3]]],(*\:8f6c\:6362\:6210\:8868\:8fbe\:5f0f*)
+ToExpression[InCml[[4]]]
 };
 
 
 echo["the parameter order, lambda, ci,"];
 
 
-parameter`order`string=ToString[parameter`order]
-parameter`lambda0`string=ToString[NumberForm[parameter`lambda0,{3,2}]]
-parameter`ci`string=ToString[NumberForm[parameter`ci,{3,2}]]
+parOrderStr=ToString[parOrder]
+parLambda0Str=ToString[NumberForm[parLambda0,{3,2}]]
+parciStr=ToString[NumberForm[parci,{3,2}]]
 
 
-(* ::Chapter:: *)
-(*Initial*)
+(* ::Section:: *)
+(*Initial2*)
 
 
 (* ::Text:: *)
 (*inital by hand*)
 
 
-Needs["X`"]
+Needs["X`"];ParallelNeeds["X`"];LaunchKernels[];
 
 
 choplimit=10^-10;(*cut\:7cbe\:5ea6*)
@@ -138,26 +138,26 @@ precision=20;(*\:7cbe\:786e\:5ea6*)
 echo["start import analytic and coes "];
 
 
-analytic`dir=FileNameJoin[{git`local`name,"analytic-storage.strange.series-"<>parameter`order`string}]
+analyticDir=FileNameJoin[{GitLocalName,"analytic-storage.strange.series-"<>parOrderStr}]
 
 
-zero`directory=FileNameJoin[{git`local`name,"analytic-storage.strange.series-o0"}]
+zeroDir=FileNameJoin[{GitLocalName,"analytic-storage.strange.series-o0"}]
 
 
-coe`directory=FileNameJoin[{git`local`name,"expression-coes"}]
+coeDir=FileNameJoin[{GitLocalName,"expression-coes"}]
 
 
 fucoeandmrrlnm={
-FileNameJoin[{coe`directory,"fu.coeandmassrrl.consti.all.m"}],
-FileNameJoin[{coe`directory,"fu.coeandmassrrl.consti.u.m"}],
-FileNameJoin[{coe`directory,"fu.coeandmassrrl.consti.d.m"}],
-FileNameJoin[{coe`directory,"fu.coeandmassrrl.consti.s.m"}]
+FileNameJoin[{coeDir,"fu.coeandmassrrl.consti.all.m"}],
+FileNameJoin[{coeDir,"fu.coeandmassrrl.consti.u.m"}],
+FileNameJoin[{coeDir,"fu.coeandmassrrl.consti.d.m"}],
+FileNameJoin[{coeDir,"fu.coeandmassrrl.consti.s.m"}]
 };
 
 
-Once[chpt`qfb`quench`coemass`masslimit=Get[FileNameJoin[{coe`directory,"chpt`qfb`quench`coemass`masslimit.m"}]]];
-Once[chpt`qfa`sea`coemass`masslimit=Get[FileNameJoin[{coe`directory,"chpt`qfa`sea`coemass`masslimit.m"}]]];
-Once[chpt`qfa`valence`coemass`masslimit=Get[FileNameJoin[{coe`directory,"chpt`qfa`valence`coemass`masslimit.m"}]]];
+Once[chptQfbQuenchCoemassMasslimit=Get[FileNameJoin[{coeDir,"chpt`qfb`quench`coemass`masslimit.m"}]]];
+Once[chptQfaSeaCoemassMasslimit=Get[FileNameJoin[{coeDir,"chpt`qfa`sea`coemass`masslimit.m"}]]];
+Once[ChptQfaValenceCoemassMasslimit=Get[FileNameJoin[{coeDir,"chpt`qfa`valence`coemass`masslimit.m"}]]];
 
 
 Once[
@@ -167,9 +167,9 @@ fucoeandmrrlraw=Map[Get,fucoeandmrrlnm,1]
 
 Once[
 fucoeandmrrl=Join[fucoeandmrrlraw,
-Transpose[chpt`qfb`quench`coemass`masslimit,{2,3,1}],
-Transpose[chpt`qfa`valence`coemass`masslimit,{2,3,1}],
-Transpose[chpt`qfa`sea`coemass`masslimit,{2,3,1}]
+Transpose[chptQfbQuenchCoemassMasslimit,{2,3,1}],
+Transpose[ChptQfaValenceCoemassMasslimit,{2,3,1}],
+Transpose[chptQfaSeaCoemassMasslimit,{2,3,1}]
 ]
 ];
 
@@ -326,7 +326,7 @@ baselist1={
 c3 = c2 - c1;
 
 
-config`c1c2=<|
+configc1c2=<|
 (*here is the test configuration*)
 {"0.90","1.05"}->{c1->1.6953280353951576`20,c2->0.3310658564719022`20},
 {"0.90","1.10"}->{c1->1.6542713327732161`20,c2->0.33436637472152625`20},
@@ -369,10 +369,10 @@ baselist2=Join[
 f->0.093`20,
 zi->-1,
 di->0.76`20,fi->0.5`20,
-ci->parameter`ci,
-\[CapitalLambda]0->parameter`lambda0
+ci->parci,
+\[CapitalLambda]0->parLambda0
 },
-config`c1c2[{parameter`lambda0`string,parameter`ci`string}]
+configc1c2[{parLambda0Str,parciStr}]
 ];
 
 
@@ -392,14 +392,14 @@ Join[baselist1[[io]],baselist2]
 
 ff1=Table[
 Get[
-FileNameJoin[{analytic`dir,"f1."<>"analytic."<>ToString[if]<>".m"}]
+FileNameJoin[{analyticDir,"f1."<>"analytic."<>ToString[if]<>".m"}]
 ]
 ,{if,1,11,1}];//AbsoluteTiming
 
 
 ff2=Table[
 Get[
-FileNameJoin[{analytic`dir,"f2."<>"analytic."<>ToString[if]<>".m"}]
+FileNameJoin[{analyticDir,"f2."<>"analytic."<>ToString[if]<>".m"}]
 ]
 ,{if,1,11,1}];//AbsoluteTiming
 
@@ -408,16 +408,16 @@ FileNameJoin[{analytic`dir,"f2."<>"analytic."<>ToString[if]<>".m"}]
 (*zero ff1 ff2*)
 
 
-zero`ff1=Table[
+zeroff1=Table[
 Get[
-FileNameJoin[{zero`directory,"f1."<>"analytic."<>ToString[if]<>".m"}]
+FileNameJoin[{zeroDir,"f1."<>"analytic."<>ToString[if]<>".m"}]
 ]
 ,{if,1,11,1}];//AbsoluteTiming
 
 
-zero`ff2=Table[
+zeroff2=Table[
 Get[
-FileNameJoin[{zero`directory,"f2."<>"analytic."<>ToString[if]<>".m"}]
+FileNameJoin[{zeroDir,"f2."<>"analytic."<>ToString[if]<>".m"}]
 ]
 ,{if,1,11,1}];//AbsoluteTiming
 
@@ -446,18 +446,11 @@ ScalarC0Chop[x__]:=Chop[ScalarC0[x],choplimit]/;And@@NumericQ/@{x}(*\:5f53\:8f93
 
 Module[{order=0},
 
-separate`nuff1=ParallelTable[
+SeparateNuff1=ParallelTable[
 
 (*\:8ba1\:6570\:5668\:ff0c\:7528\:6765\:663e\:793a\:8ba1\:7b97\:8fdb\:5ea6\:ff0c\:4ee5 200 \:4e2a\:9879\:76ee\:4e3a\:8ba1\:6570\:5355\:4f4d*)
 order++;
-If[IntegerQ[order/50],
-Print[
-"seva=",seva,
-",io=",io,
-",if=",if,
-",coe=",coe
-]
-];
+If[IntegerQ[order/50],Print["seva=",seva,",io=",io,",if=",if,",coe=",coe]];
 (*\:907f\:514dDiscB\:5e26\:6765\:7684\:5fae\:5c0f\:5047\:865a\:90e8*)
 fucoe[[seva,if,io,coe]]*ff1[[if]]/.{DiscB->DiscBChop,ScalarC0->ScalarC0Chop}/.baselist[[io]]/.fumass[[seva,if,io,coe]]//Cancel
 
@@ -472,17 +465,10 @@ fucoe[[seva,if,io,coe]]*ff1[[if]]/.{DiscB->DiscBChop,ScalarC0->ScalarC0Chop}/.ba
 
 Module[{order=0},
 
-separate`nuff2=ParallelTable[
+SeparateNuff2=ParallelTable[
 
 order++;
-If[IntegerQ[order/50],
-Print[
-"seva=",seva,
-",io=",io,
-",if=",if,
-",coe=",coe
-]
-];
+If[IntegerQ[order/50],Print["seva=",seva,",io=",io,",if=",if,",coe=",coe]];
 
 fucoe[[seva,if,io,coe]]*ff2[[if]]/.{DiscB->DiscBChop,ScalarC0->ScalarC0Chop}/.baselist[[io]]/.fumass[[seva,if,io,coe]]//Cancel
 
@@ -495,8 +481,8 @@ fucoe[[seva,if,io,coe]]*ff2[[if]]/.{DiscB->DiscBChop,ScalarC0->ScalarC0Chop}/.ba
 ]//AbsoluteTiming
 
 
-nuff1=Total[separate`nuff1,{3,4}];
-nuff2=Total[separate`nuff2,{3,4}];
+nuff1=Total[SeparateNuff1,{3,4}];
+nuff2=Total[SeparateNuff2,{3,4}];
 
 
 (* nuff1,nuff2 is 1*8 *)
@@ -517,22 +503,21 @@ nuff1[[All,io]]+nuff2[[All,io]]
 
 
 (* ::Section:: *)
-(*zero`nuff1 zero`nuff2*)
+(*zeronuff1 zeronuff2*)
 
 
-echo["start numeric, separate`nuff1 separate`nuff2, zero order"];
+echo["start numeric, SeparateNuff1 SeparateNuff2, zero order"];
 
 
 Module[{order=0},
 
-zero`separate`nuff1=ParallelTable[
+zeroSeparateNuff1=ParallelTable[
 
 (*\:8ba1\:6570\:5668\:ff0c\:7528\:6765\:663e\:793a\:8ba1\:7b97\:8fdb\:5ea6\:ff0c\:4ee5 200 \:4e2a\:9879\:76ee\:4e3a\:8ba1\:6570\:5355\:4f4d*)
 order++;
-If[IntegerQ[order/200],Print[seva,",",io,",",if,",",coe]
-];
+If[IntegerQ[order/200],Print[seva,",",io,",",if,",",coe]];
 
-Chop[fucoe[[seva,if,io,coe]]*zero`ff1[[if]]/.{DiscB->DiscBChop,ScalarC0->ScalarC0Chop}/.baselist[[io]]/.fumass[[seva,if,io,coe]],choplimit]
+Chop[fucoe[[seva,if,io,coe]]*zeroff1[[if]]/.{DiscB->DiscBChop,ScalarC0->ScalarC0Chop}/.baselist[[io]]/.fumass[[seva,if,io,coe]],choplimit]
 
 (*,{series,1,2,1}(*series order 0 1 *)*)
 ,{seva,1,13,1}
@@ -545,13 +530,12 @@ Chop[fucoe[[seva,if,io,coe]]*zero`ff1[[if]]/.{DiscB->DiscBChop,ScalarC0->ScalarC
 
 Module[{order=0},
 
-zero`separate`nuff2=ParallelTable[
+zeroSeparateNuff2=ParallelTable[
 
 order++;
-If[IntegerQ[order/200],Print[seva,",",io,",",if,",",coe]
-];
+If[IntegerQ[order/200],Print[seva,",",io,",",if,",",coe]];
 
-Chop[fucoe[[seva,if,io,coe]]*zero`ff2[[if]]/.{DiscB->DiscBChop,ScalarC0->ScalarC0Chop}/.baselist[[io]]/.fumass[[seva,if,io,coe]],choplimit]
+Chop[fucoe[[seva,if,io,coe]]*zeroff2[[if]]/.{DiscB->DiscBChop,ScalarC0->ScalarC0Chop}/.baselist[[io]]/.fumass[[seva,if,io,coe]],choplimit]
 
 (*,{series,1,2,1}(*series order 0 1 *)*)
 ,{seva,1,13,1}
@@ -562,15 +546,15 @@ Chop[fucoe[[seva,if,io,coe]]*zero`ff2[[if]]/.{DiscB->DiscBChop,ScalarC0->ScalarC
 ]//AbsoluteTiming
 
 
-zero`nuff1=Total[zero`separate`nuff1,{3,4}];
-zero`nuff2=Total[zero`separate`nuff2,{3,4}];
+zeroNuff1=Total[zeroSeparateNuff1,{3,4}];
+zeroNuff2=Total[zeroSeparateNuff2,{3,4}];
 
 
-zero`nugegm=Transpose[(*8*4*2 transpose into 4*8*2*)
+zeroNugegm=Transpose[(*8*4*2 transpose into 4*8*2*)
 Table[
 -1/(16\[Pi]^2) {
-zero`nuff1[[All,io]]-Q2/(4constmo[[io]]^2) zero`nuff2[[All,io]],
-zero`nuff1[[All,io]]+zero`nuff2[[All,io]]
+zeroNuff1[[All,io]]-Q2/(4constmo[[io]]^2) zeroNuff2[[All,io]],
+zeroNuff1[[All,io]]+zeroNuff2[[All,io]]
 }
 ,{io,1,8,1}]
 ,{3,1,2}
@@ -578,7 +562,7 @@ zero`nuff1[[All,io]]+zero`nuff2[[All,io]]
 
 
 (* ::DisplayFormula:: *)
-(*zero`nugegm,{2,4,8},{gegm,seva,io}*)
+(*zeroNugegm,{2,4,8},{gegm,seva,io}*)
 
 
 (* ::Chapter:: *)
@@ -699,21 +683,21 @@ octetmageton=SetPrecision[{
 
 
 (* ::DisplayFormula:: *)
-(*zero`nugegm,{2,4,8},{gegm,seva,io}*)
+(*zeroNugegm,{2,4,8},{gegm,seva,io}*)
 
 
-zero`gegm`value=Cancel[Chop[zero`nugegm,choplimit]]/.Q2->0;
+zeroGegmValue=Cancel[Chop[zeroNugegm,choplimit]]/.Q2->0;
 
 
 rencon=Table[1,{seva,1,13,1},{io,1,8,1}];
 (*+++++++++++++++++renormalized according to charge+++++++++++++*)
 Table[
-rencon[[All,io]]=Abs[octetcharge[[io]]-Re[(Cancel[Chop[zero`gegm`value[[1,1,io]],choplimit]]/.Q2->0)]]
+rencon[[All,io]]=Abs[octetcharge[[io]]-Re[(Cancel[Chop[zeroGegmValue[[1,1,io]],choplimit]]/.Q2->0)]]
 ,{io,{1,3,4,6}}];
 rencon[[All,2]]=rencon[[All,3]];
 rencon[[All,5]]=rencon[[All,4]];
 rencon[[All,7]]=rencon[[All,6]];
-rencon[[All,8]]=Abs[1-Re[(Cancel[Chop[zero`gegm`value[[1,2,8]],choplimit]]/.Q2->0)]];
+rencon[[All,8]]=Abs[1-Re[(Cancel[Chop[zeroGegmValue[[1,2,8]],choplimit]]/.Q2->0)]];
 (*++++++++++++++++++++no renormalized+++++++++++++++++++++*)
 (*rencon\[LeftDoubleBracket]2,1\[RightDoubleBracket]=1;
 rencon\[LeftDoubleBracket]2,6\[RightDoubleBracket]=1;
@@ -729,7 +713,7 @@ rencon\[LeftDoubleBracket]4,5\[RightDoubleBracket]=1;*)
 
 (*++++++++++++++++++++display+++++++++++++++++++++*)
 echo["calculated renormalization constants"];
-echo[rencon]
+StringRiffle[rencon]
 
 
 (* ::Chapter:: *)
@@ -827,8 +811,8 @@ octetnameabbr=
 (*\:91cd\:65b0\:7ec4\:5408\:6570\:636e*)
 
 
-fig`cutlimit=0.00001`20;
-fig`leadersize=4;
+figCutlimit=0.00001`20;
+figLeadersize=4;
 
 
 (* ::DisplayFormula:: *)
@@ -840,30 +824,30 @@ fig`leadersize=4;
 
 
 (* ::DisplayFormula:: *)
-(*zero`nugegm,{2,4,8},{gegm,seva,io}*)
+(*zeroNugegm,{2,4,8},{gegm,seva,io}*)
 
 
 (* ::DisplayFormula:: *)
-(*zero`gegm`value=zero`nugegm/.Q2->0;*)
+(*zeroGegmValue=zeroNugegm/.Q2->0;*)
 
 
-tree`gegm`rencon2=Transpose[(*\:8ba1\:7b97 total \:8d21\:732e\:65f6\:ff0c\:7528\:8fd9\:4e2a\:66f4\:65b9\:4fbf*)
+treeGegmRencon2=Transpose[(*\:8ba1\:7b97 total \:8d21\:732e\:65f6\:ff0c\:7528\:8fd9\:4e2a\:66f4\:65b9\:4fbf*)
 Transpose[trgegm,{2,3,1}]*rencon[[1]]
 ,{3,1,2}
 ];
 
 
-tree`gegm`rencon3=Transpose[(*\:8ba1\:7b97 loop \:8d21\:732e\:65f6\:ff0c\:7528\:8fd9\:4e2a\:66f4\:65b9\:4fbf*)
+treeGegmRencon3=Transpose[(*\:8ba1\:7b97 loop \:8d21\:732e\:65f6\:ff0c\:7528\:8fd9\:4e2a\:66f4\:65b9\:4fbf*)
 Transpose[trgegm,{2,3,1}]*(rencon[[1]]-1)
 ,{3,1,2}
 ];
 
 
-loop`gegm=Table[(*\:6574\:7406\:6570\:636e\:ff0c\:5bf9\:96f6\:70b9\:9644\:8fd1\:4f5c\:7a33\:5b9a*)
+loopGegm=Table[(*\:6574\:7406\:6570\:636e\:ff0c\:5bf9\:96f6\:70b9\:9644\:8fd1\:4f5c\:7a33\:5b9a*)
 Piecewise[
 {
-{zero`gegm`value[[gegm,seva,io]],Q2<=fig`cutlimit},
-{nugegm[[gegm,seva,io]],Q2>fig`cutlimit}
+{zeroGegmValue[[gegm,seva,io]],Q2<=figCutlimit},
+{nugegm[[gegm,seva,io]],Q2>figCutlimit}
 }
 ]
 ,{gegm,1,2,1}
@@ -873,7 +857,7 @@ Piecewise[
 
 
 (* ::DisplayFormula:: *)
-(*loop`gegm//Dimensions*)
+(*loopGegm//Dimensions*)
 (*{2,13,8}*)
 
 
@@ -881,11 +865,11 @@ Piecewise[
 (*total = tree +(Z-1)*tree+loop*)
 
 
-total`gegm=Table[
+totalGegm=Table[
 Piecewise[
 {
-{(tree`gegm`rencon2[[gegm,seva,io]]/.Q2->0)+zero`gegm`value[[gegm,seva,io]],Q2<=fig`cutlimit},
-{(tree`gegm`rencon2[[gegm,seva,io]])+nugegm[[gegm,seva,io]],Q2>fig`cutlimit}
+{(treeGegmRencon2[[gegm,seva,io]]/.Q2->0)+zeroGegmValue[[gegm,seva,io]],Q2<=figCutlimit},
+{(treeGegmRencon2[[gegm,seva,io]])+nugegm[[gegm,seva,io]],Q2>figCutlimit}
 }
 ]
 ,{gegm,1,2,1}
@@ -895,7 +879,7 @@ Piecewise[
 
 
 (* ::DisplayFormula:: *)
-(*total`gegm//Dimensions*)
+(*totalGegm//Dimensions*)
 (*{2,4,8}*)
 
 
@@ -903,11 +887,11 @@ Piecewise[
 (*\:8ba1\:7b97 loop \:8d21\:732e\:65f6\:ff0c\:7528\:8fd9\:4e2a\:66f4\:65b9\:4fbf*)
 
 
-loop`rencon3`gegm=Table[
+loopRencon3Gegm=Table[
 Piecewise[
 {
-{(tree`gegm`rencon3[[gegm,seva,io]]/.Q2->0)+zero`gegm`value[[gegm,seva,io]],Q2<=fig`cutlimit},
-{(tree`gegm`rencon3[[gegm,seva,io]])+nugegm[[gegm,seva,io]],Q2>fig`cutlimit}
+{(treeGegmRencon3[[gegm,seva,io]]/.Q2->0)+zeroGegmValue[[gegm,seva,io]],Q2<=figCutlimit},
+{(treeGegmRencon3[[gegm,seva,io]])+nugegm[[gegm,seva,io]],Q2>figCutlimit}
 }
 ]
 ,{gegm,1,2,1}
@@ -925,62 +909,62 @@ Piecewise[
 (*total = tree +(Z-1)*tree+loop*)
 
 
-rearrange`seva`gegm=Transpose[
+reaSevaGegm=Chop[Transpose[
 {
 trgegm[[All,1,All]],(* 1;tree uds total*)
 trgegm[[All,2,All]],(*2;u*)
 trgegm[[All,3,All]],(*3;d*)
 trgegm[[All,4,All]],(*4;s*)
 
-loop`gegm[[All,1,All]],(*5; loop uds total*)
-loop`gegm[[All,2,All]],(*6;u*)
-loop`gegm[[All,3,All]],(*7;d*)
-loop`gegm[[All,4,All]],(*8;s*)
+loopGegm[[All,1,All]],(*5; loop uds total*)
+loopGegm[[All,2,All]],(*6;u*)
+loopGegm[[All,3,All]],(*7;d*)
+loopGegm[[All,4,All]],(*8;s*)
 
-loop`rencon3`gegm[[All,1,All]],(*9;rencon3,(Z-1)*tree+loop, uds*)
-loop`rencon3`gegm[[All,2,All]],(*10;u*)
-loop`rencon3`gegm[[All,3,All]],(*11;d*)
-loop`rencon3`gegm[[All,4,All]],(*12;s*)
+loopRencon3Gegm[[All,1,All]],(*9;rencon3,(Z-1)*tree+loop, uds*)
+loopRencon3Gegm[[All,2,All]],(*10;u*)
+loopRencon3Gegm[[All,3,All]],(*11;d*)
+loopRencon3Gegm[[All,4,All]],(*12;s*)
 
-total`gegm[[All,1,All]],(*13; tree+loop rencon2 uds total *)
-total`gegm[[All,2,All]],(*14;u*)
-total`gegm[[All,3,All]],(*15;d*)
-total`gegm[[All,4,All]],(*16;s*)
+totalGegm[[All,1,All]],(*13; tree+loop rencon2 uds total *)
+totalGegm[[All,2,All]],(*14;u*)
+totalGegm[[All,3,All]],(*15;d*)
+totalGegm[[All,4,All]],(*16;s*)
 
-loop`gegm[[All,5,All]],(*17 quench, u*)
-loop`gegm[[All,6,All]],(*18 quench, d*)
-loop`gegm[[All,7,All]],(*19 quench, s*)
+loopGegm[[All,5,All]],(*17 quench, u*)
+loopGegm[[All,6,All]],(*18 quench, d*)
+loopGegm[[All,7,All]],(*19 quench, s*)
 
-loop`gegm[[All,8,All]],(*20 valence, u*)
-loop`gegm[[All,9,All]],(*21 valence, d*)
-loop`gegm[[All,10,All]],(*22 valence, s*)
+loopGegm[[All,8,All]],(*20 valence, u*)
+loopGegm[[All,9,All]],(*21 valence, d*)
+loopGegm[[All,10,All]],(*22 valence, s*)
 
-tree`gegm`rencon2[[All,2,All]]+loop`gegm[[All,5,All]]+loop`gegm[[All,8,All]],(*23 valence-total, u*)
-tree`gegm`rencon2[[All,3,All]]+loop`gegm[[All,6,All]]+loop`gegm[[All,9,All]],(*24 valence-total, d*)
-tree`gegm`rencon2[[All,4,All]]+loop`gegm[[All,7,All]]+loop`gegm[[All,10,All]],(*25 valence-total, s*)
+treeGegmRencon2[[All,2,All]]+loopGegm[[All,5,All]]+loopGegm[[All,8,All]],(*23 valence-total, u*)
+treeGegmRencon2[[All,3,All]]+loopGegm[[All,6,All]]+loopGegm[[All,9,All]],(*24 valence-total, d*)
+treeGegmRencon2[[All,4,All]]+loopGegm[[All,7,All]]+loopGegm[[All,10,All]],(*25 valence-total, s*)
 
-loop`gegm[[All,11,All]],(*26 sea u,*)
-loop`gegm[[All,12,All]],(*27 sea d*)
-loop`gegm[[All,13,All]](*28 sea s*)
+loopGegm[[All,11,All]],(*26 sea u,*)
+loopGegm[[All,12,All]],(*27 sea d*)
+loopGegm[[All,13,All]](*28 sea s*)
 
 }
 ,{2,1,3}
-];
+],choplimit];
 
 
 (* ::DisplayFormula:: *)
-(*rearrange`seva`gegm//Dimensions*)
+(*reaSevaGegm//Dimensions*)
 (*{2,28,8}*)
 
 
-nmlz`gegm={(*\:5f52\:4e00\:5316\:56e0\:5b50*)
+nmlzGegm={(*\:5f52\:4e00\:5316\:56e0\:5b50*)
 ConstantArray[1,8],(*ge \:7684\:5f52\:4e00\:5316\:56e0\:5b50\:90fd\:662f1*)
-SetPrecision[total`gegm[[2,1]]/.Q2->0,precision](*gm \:7684\:5f52\:4e00\:5316\:56e0\:5b50\:662f\:96f6\:70b9\:503c*)
+SetPrecision[totalGegm[[2,1]]/.Q2->0,precision](*gm \:7684\:5f52\:4e00\:5316\:56e0\:5b50\:662f\:96f6\:70b9\:503c*)
 };
 
 
 (* ::DisplayFormula:: *)
-(*nmlz`gegm//Dimensions*)
+(*nmlzGegm//Dimensions*)
 (*{2,8}*)
 
 
@@ -988,25 +972,22 @@ SetPrecision[total`gegm[[2,1]]/.Q2->0,precision](*gm \:7684\:5f52\:4e00\:5316\:5
 (*gegm*)
 
 
-fig`calc`baryons`gegm=Table[0,{gegm,1,2,1},{seva,1,28,1},{io,1,8,1}];
+figCalcBaryonsGegm=Table[0,{gegm,1,2,1},{seva,1,28,1},{io,1,8,1}];
+precsn[Q2_]:=SetPrecision[Q2,11]/;NumericQ[Q2]
 
 
-gegm=1;(*seva=1;*)(*io=5;*)
+(*gegm=1;seva=1;io=5;*)
 (*+++++++++++++++++++++++++++*)
 Module[{order=0,teff},
 (*+++++++++++++++++++++++++++*)
-ParallelDo[
+figCalcBaryonsGegm=ParallelTable[
 (*+++++++++++++++++++++++++++*)
 order++;
-If[IntegerQ[order/16],Print[
-"gegm=",gegm,
-",seva=",seva,
-",io=",io
-]
+If[IntegerQ[order/16],Print["gegm=",gegm,",seva=",seva,",io=",io]
 ];
 (*+++++++++++++++++++++++++++*)
-teff=rearrange`seva`gegm[[gegm,seva,io]]/nmlz`gegm[[gegm,io]];
-fig`calc`baryons`gegm[[gegm,seva,io]]=Plot[
+teff=reaSevaGegm[[gegm,seva,io]]/nmlzGegm[[gegm,io]]/.{Q2->precsn[Q2]};
+Plot[
 teff(*\:8fd9\:91cc\:9664\:4ee5\:5f52\:4e00\:5316\:56e0\:5b50\:ff0c\:4f7f\:7528 Evaluate \:5148\:8ba1\:7b97\:8868\:8fbe\:5f0f*)
 ,{Q2,0,1},
 AxesOrigin->{0,0},
@@ -1015,13 +996,13 @@ PlotRangePadding->{Automatic,Scaled[0.09]},
 ImageSize->Scaled[0.5],
 AspectRatio->1/GoldenRatio,
 Frame->True
-(*,WorkingPrecision->precision*)
 ]
 
 ,{gegm,1,2,1}
 ,{seva,1,28,1}
 ,{io,1,8,1}
-,DistributedContexts->Automatic]
+,DistributedContexts->Automatic
+]
 (*+++++++++++++++++++++++++++*)
 ];//AbsoluteTiming
 
@@ -1031,16 +1012,16 @@ Frame->True
 
 
 echo["output directory"];
-output`dir=FileNameJoin[{git`local`name,"/expression-mfiles/"}]
+outputdir=FileNameJoin[{GitLocalName,"/expression-mfiles/"}]
 
 
 echo["files to export"];(*\:8981\:5bfc\:51fa\:7684\:6587\:4ef6,\:5173\:8054\:7684\:5f62\:5f0f\:ff0c\:4fdd\:5b58\:7528\:7684\:6587\:4ef6\:540d\[Rule]\:5bf9\:5e94\:7684\:6587\:4ef6*)
-output`assoc=<|
+outputAssoc=<|
 (*++++++++++++++++*)
-FileNameJoin[{output`dir,"fig_calc_baryons_gegm_"<>"L-"<>parameter`lambda0`string<>"_ci-"<>parameter`ci`string<>".m"}]->fig`calc`baryons`gegm
+FileNameJoin[{outputdir,"fig_calc_baryons_gegm_"<>"L-"<>parLambda0Str<>"_ci-"<>parciStr<>".m"}]->figCalcBaryonsGegm
 (*++++++++++++++++*)
 |>;
 
 
 echo["output status"];
-KeyValueMap[Export,output`assoc]
+KeyValueMap[Export,outputAssoc]
