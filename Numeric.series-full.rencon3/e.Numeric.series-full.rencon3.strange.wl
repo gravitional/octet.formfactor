@@ -101,8 +101,6 @@ ToExpression[InCml[[4]]]
 
 
 echo["the parameter order, lambda, ci,"];
-
-
 parOrderStr=ToString[parOrder]
 parLambda0Str=ToString[NumberForm[parLambda0,{3,2}]]
 parciStr=ToString[NumberForm[parci,{3,2}]]
@@ -136,14 +134,8 @@ precision=20;(*\:7cbe\:786e\:5ea6*)
 
 
 echo["start import analytic and coes "];
-
-
 analyticDir=FileNameJoin[{GitLocalName,"analytic-storage.strange.series-"<>parOrderStr}]
-
-
 zeroDir=FileNameJoin[{GitLocalName,"analytic-storage.strange.series-o0"}]
-
-
 coeDir=FileNameJoin[{GitLocalName,"expression-coes"}]
 
 
