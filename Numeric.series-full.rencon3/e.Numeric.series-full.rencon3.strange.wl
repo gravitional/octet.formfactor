@@ -843,11 +843,12 @@ Transpose[trgegm,{2,3,1}]*(rencon[[1]]-1)
 ];
 
 
+precsn[Q2_]:=SetPrecision[Q2,10]/;NumericQ[Q2](*\:8fd9\:4e2a\:51fd\:6570\:5bf9\:8f93\:5165\:7684Q2\:8c03\:8282\:7cbe\:5ea6*)
 loopGegm=Table[(*\:6574\:7406\:6570\:636e\:ff0c\:5bf9\:96f6\:70b9\:9644\:8fd1\:4f5c\:7a33\:5b9a*)
 Piecewise[
 {
 {zeroGegmValue[[gegm,seva,io]],Q2<=figCutlimit},
-{nugegm[[gegm,seva,io]],Q2>figCutlimit}
+{nugegm[[gegm,seva,io]]/.{Q2->precsn[Q2]},Q2>figCutlimit}
 }
 ]
 ,{gegm,1,2,1}
@@ -869,7 +870,7 @@ totalGegm=Table[
 Piecewise[
 {
 {(treeGegmRencon2[[gegm,seva,io]]/.Q2->0)+zeroGegmValue[[gegm,seva,io]],Q2<=figCutlimit},
-{(treeGegmRencon2[[gegm,seva,io]])+nugegm[[gegm,seva,io]],Q2>figCutlimit}
+{(treeGegmRencon2[[gegm,seva,io]])+nugegm[[gegm,seva,io]]/.{Q2->precsn[Q2]},Q2>figCutlimit}
 }
 ]
 ,{gegm,1,2,1}
@@ -891,7 +892,7 @@ loopRencon3Gegm=Table[
 Piecewise[
 {
 {(treeGegmRencon3[[gegm,seva,io]]/.Q2->0)+zeroGegmValue[[gegm,seva,io]],Q2<=figCutlimit},
-{(treeGegmRencon3[[gegm,seva,io]])+nugegm[[gegm,seva,io]],Q2>figCutlimit}
+{(treeGegmRencon3[[gegm,seva,io]])+nugegm[[gegm,seva,io]]/.{Q2->precsn[Q2]},Q2>figCutlimit}
 }
 ]
 ,{gegm,1,2,1}
@@ -973,7 +974,6 @@ SetPrecision[totalGegm[[2,1]]/.Q2->0,precision](*gm \:7684\:5f52\:4e00\:5316\:56
 
 
 figCalcBaryonsGegm=Table[0,{gegm,1,2,1},{seva,1,28,1},{io,1,8,1}];
-precsn[Q2_]:=SetPrecision[Q2,11]/;NumericQ[Q2]
 
 
 (*gegm=1;seva=1;io=5;*)
@@ -986,7 +986,7 @@ order++;
 If[IntegerQ[order/16],Print["gegm=",gegm,",seva=",seva,",io=",io]
 ];
 (*+++++++++++++++++++++++++++*)
-teff=reaSevaGegm[[gegm,seva,io]]/nmlzGegm[[gegm,io]]/.{Q2->precsn[Q2]};
+teff=reaSevaGegm[[gegm,seva,io]]/nmlzGegm[[gegm,io]];
 Plot[
 teff(*\:8fd9\:91cc\:9664\:4ee5\:5f52\:4e00\:5316\:56e0\:5b50\:ff0c\:4f7f\:7528 Evaluate \:5148\:8ba1\:7b97\:8868\:8fbe\:5f0f*)
 ,{Q2,0,1},
