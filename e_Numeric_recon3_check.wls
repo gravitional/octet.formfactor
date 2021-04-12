@@ -511,10 +511,10 @@ cccReslt=AssociationThread[
 "{4,5}",
 "{4,6}",
 "{6,7}",
-"{1-5}",
-"{1-7}",
-"{1-5,8}",
-"{1-8}"
+"{1,3,4,5}",
+"{1,3,4,5,6,7}",
+"{1,3,4,5,8}",
+"{1,3,4,5,6,7,8}"
 },
 Table[
 NMinimize[
@@ -542,7 +542,7 @@ Total[((rencon*magc1c2c3+magNum-octmagNum)^2)[[config]]],
 ]
 ];
 cccReslt["ci"]=parci;
-cccReslt["\[CapitalLambda]"]=parLambda0;
+cccReslt["\[CapitalLambda]0"]=parLambda0;
 
 
 (* ::Chapter:: *)
