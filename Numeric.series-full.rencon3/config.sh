@@ -31,9 +31,9 @@ wlscript='./e.Numeric.series-full.rencon3.strange.wl'
 #wolframscript -print "all" -file  $wlscript   $order   '0.82`'${prcs}   '1.50`'${prcs}
 #wolframscript -print "all" -file  $wlscript   $order   '0.84`'${prcs}   '1.50`'${prcs}
 #wolframscript -print "all" -file  $wlscript   $order   '0.86`'${prcs}   '1.50`'${prcs}
-#wolframscript -print "all" -file  $wlscript   $order   '0.88`'${prcs}   '1.50`'${prcs}
-wolframscript -print "all" -file  $wlscript   $order   '0.92`'${prcs}   '1.50`'${prcs}
-wolframscript -print "all" -file  $wlscript   $order   '0.94`'${prcs}   '1.50`'${prcs}
-wolframscript -print "all" -file  $wlscript   $order   '0.96`'${prcs}   '1.50`'${prcs}
-wolframscript -print "all" -file  $wlscript   $order   '0.98`'${prcs}   '1.50`'${prcs}
-wolframscript -print "all" -file  $wlscript   $order   '1.00`'${prcs}   '1.50`'${prcs}
+wolframscript -print "all" -file  $wlscript   $order   '0.88`'${prcs}   '1.50`'${prcs}
+#wolframscript -print "all" -file  $wlscript   $order   '0.92`'${prcs}   '1.50`'${prcs}
+#wolframscript -print "all" -file  $wlscript   $order   '0.94`'${prcs}   '1.50`'${prcs}
+#wolframscript -print "all" -file  $wlscript   $order   '0.96`'${prcs}   '1.50`'${prcs}
+#wolframscript -print "all" -file  $wlscript   $order   '0.98`'${prcs}   '1.50`'${prcs}
+#wolframscript -print "all" -file  $wlscript   $order   '1.00`'${prcs}   '1.50`'${prcs}
