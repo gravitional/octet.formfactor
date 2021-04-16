@@ -74,7 +74,7 @@ Print[configc1c2=Get[cFittingDir][cFitting]//Last];
 
 (*\:8f7d\:5165 package-X*)
 Needs["X`"];ParallelNeeds["X`"];LaunchKernels[];
-choplimit=10^-10;(*cut\:7cbe\:5ea6*)
+chopLimit=10^-10;(*cut\:7cbe\:5ea6*)
 precision=20;(*\:7cbe\:786e\:5ea6*)
 
 
@@ -305,8 +305,8 @@ FileNameJoin[{analyticDir,"f2."<>"analytic."<>ToString[if]<>".m"}]
 
 echo["start numeric, separate`nuff1 separate`nuff2 "];
 SetOptions[Simplify,TimeConstraint->1];
-DiscBChop[x__]:=Chop[DiscB[x],choplimit]/;And@@NumericQ/@{x}(*\:5f53\:8f93\:5165\:662f\:6570\:5b57\:7684\:65f6\:5019\:ff0c\:624d\:8fdb\:884cchop*)
-ScalarC0Chop[x__]:=Chop[ScalarC0[x],choplimit]/;And@@NumericQ/@{x}(*\:5f53\:8f93\:5165\:662f\:6570\:5b57\:7684\:65f6\:5019\:ff0c\:624d\:8fdb\:884cchop*)
+DiscBChop[x__]:=Chop[DiscB[x],chopLimit]/;And@@NumericQ/@{x}(*\:5f53\:8f93\:5165\:662f\:6570\:5b57\:7684\:65f6\:5019\:ff0c\:624d\:8fdb\:884cchop*)
+ScalarC0Chop[x__]:=Chop[ScalarC0[x],chopLimit]/;And@@NumericQ/@{x}(*\:5f53\:8f93\:5165\:662f\:6570\:5b57\:7684\:65f6\:5019\:ff0c\:624d\:8fdb\:884cchop*)
 
 
 (* ::DisplayFormula:: *)
@@ -453,7 +453,7 @@ trf1f2[[All,io,1]]+trf1f2[[All,io,2]]
 }/.baselist[[io]]
 ]
 ,{io,1,8,1}]
-,choplimit
+,chopLimit
 ]
 ,{3,1,2}];//AbsoluteTiming
 
@@ -498,23 +498,22 @@ octetCharge={
 (*6*)-1,(*7*)0,
 (*8*)0
 };
-octetMageton=SetPrecision[{
-(*1*) \[Minus]1.160,(*2*) 0.60,(*3*)2.458,
-  (*4*)2.7928473446, (*5*)\[Minus]1.9130427,
-  (*6*)\[Minus]0.6507,(*7*)\[Minus]1.250,
- (*8*)\[Minus]0.613}
- ,precision];
+octetMageton={
+(*1*) \[Minus]1.160`20,(*2*) 0.60`20,(*3*)2.458`20,
+  (*4*)2.7928473446`20, (*5*)\[Minus]1.9130427`20,
+  (*6*)\[Minus]0.6507`20,(*7*)\[Minus]1.250`20,
+ (*8*)\[Minus]0.613`20};
 
 
 rencon=Table[1,{seva,1,13,1},{io,1,8,1}];
 (*+++++++++++++++++renormalized according to charge+++++++++++++*)
 Table[
-rencon[[All,io]]=Abs[octetCharge[[io]]-Re[(Cancel[Chop[zeroGegmValue[[1,1,io]],choplimit]]/.Q2->0)]]
+rencon[[All,io]]=Abs[octetCharge[[io]]-Re[(Cancel[Chop[zeroGegmValue[[1,1,io]],chopLimit]]/.Q2->0)]]
 ,{io,{1,3,4,6}}];
 rencon[[All,2]]=rencon[[All,3]];
 rencon[[All,5]]=rencon[[All,4]];
 rencon[[All,7]]=rencon[[All,6]];
-rencon[[All,8]]=Abs[1-Re[(Cancel[Chop[zeroGegmValue[[1,2,8]],choplimit]]/.Q2->0)]];
+rencon[[All,8]]=Abs[1-Re[(Cancel[Chop[zeroGegmValue[[1,2,8]],chopLimit]]/.Q2->0)]];
 (*++++++++++++++++++++no renormalized+++++++++++++++++++++*)
 (*rencon\[LeftDoubleBracket]2,1\[RightDoubleBracket]=1;
 rencon\[LeftDoubleBracket]2,6\[RightDoubleBracket]=1;
@@ -763,7 +762,7 @@ treeGegmRencon3[[All,3,All]]+loopGegm[[All,6,All]]+loopGegm[[All,9,All]],(*33;(Z
 treeGegmRencon3[[All,4,All]]+loopGegm[[All,7,All]]+loopGegm[[All,10,All]](*34;(Z-1)tree+quench+valence,s*)
 }
 ,{2,1,3}
-],choplimit];
+],chopLimit];
 (*reaSevaGegm//Dimensions
 {2,28,8}*)
 
