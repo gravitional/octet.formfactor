@@ -466,24 +466,39 @@ trf1f2[[All,io,1]]+trf1f2[[All,io,2]]
 (*rencon calc*)
 
 
+namesHorizontal={
+(*1:*)"tree,uds",(*2:*)"tree,u",(*3:*)"tree,d",(*4:*)"tree,s",
+(*5:*)"loop,uds",(*6:*)"loop,u",(*7:*)"loop,d",(*8:*)"loop,s",
+(*9:*)"tree+loop,uds",(*10:*)"tree+loop,u",(*11:*)"tree+loop,d",(*12:*)"tree+loop,s",
+(*13:*)"quench,u",(*14:*)"quench d",(*15:*)"quench,s",
+(*16:*)"valence,u",(*17:*)"valence,d",(*18:*)"valence,s",
+(*19:*)"sea,u",(*20:*)"sea,d",(*21:*)"sea,s",
+(*22:*)"quench+valence,u",(*23:*)"quench+valence,d",(*24:*)"quench+valence,s",
+(*25:*)"tree+quench+valence,u",(*26:*)"tree+quench+valence,d",(*27:*)"tree+quench+valence,s",
+(*28:*)"(Z-1)tree+loop,uds",(*29:*)"(Z-1)tree+loop,u",(*30:*)"(Z-1)tree+loop,d",(*31:*)"(Z-1)tree+loop,s",
+(*32:*)"(Z-1)tree+quench+valence,u",(*33:*)"(Z-1)tree+quench+valence,d",(*34:*)"(Z-1)tree+quench+valence,s",
+(*35:*)"exprmt.",(*36:*)"lattice",(*37:*)"paper"
+};
+
+
 seriesO0dataPath=FileNameJoin[{gitLocalName,"/expression-mfiles/",StringJoin["data_fit_",cFittingStr,"_",errorbarQStr,"_series_o0_L_",parLambda0Str,"_ci_",parciStr,".m"]}]
 seriesO0data=Get[seriesO0dataPath];
-zeroGegmValue=seriesO0data[[All,All,{5,6,7,8,13,14,15,16,17,18,19,20,21}]]
+(*seriesO0data//Dimensions
+{2,8,37},{gegm,io,seva}*)
+(*\:63d0\:53d6\:51faseriesO0data\:4e2d\:5708\:56fe\:90e8\:5206\:7684\:503c*)
+loopSpan=Range[5,8]~Join~Range[13,21];
+zeroGegmValue=Transpose[seriesO0data[[All,All,loopSpan]],{1,3,2}];
+(*zeroGegmValue//Dimensions
+{2,13,8},{gegm,seva,io}*)
 
 
-(* ::Text:: *)
-(* octetmagetonc1={(*1*)-(c1/3),(*2*)c1/3,(*3*)c1,(*4*)c1,(*5*)-((2 c1)/3),(*6*)-(c1/3),(*7*)-((2 c1)/3),(*8*)-(c1/3)};*)
-
-
-octetcharge={
+octetCharge={
 (*1*)-1,(*2*)0,(*3*)1,
 (*4*)1,(*5*)0,
 (*6*)-1,(*7*)0,
 (*8*)0
 };
-
-
-octetmageton=SetPrecision[{
+octetMageton=SetPrecision[{
 (*1*) \[Minus]1.160,(*2*) 0.60,(*3*)2.458,
   (*4*)2.7928473446, (*5*)\[Minus]1.9130427,
   (*6*)\[Minus]0.6507,(*7*)\[Minus]1.250,
@@ -491,17 +506,10 @@ octetmageton=SetPrecision[{
  ,precision];
 
 
-(* ::DisplayFormula:: *)
-(*zeroNugegm,{2,4,8},{gegm,seva,io}*)
-
-
-zeroGegmValue=Cancel[Chop[zeroNugegm,choplimit]]/.Q2->0;
-
-
 rencon=Table[1,{seva,1,13,1},{io,1,8,1}];
 (*+++++++++++++++++renormalized according to charge+++++++++++++*)
 Table[
-rencon[[All,io]]=Abs[octetcharge[[io]]-Re[(Cancel[Chop[zeroGegmValue[[1,1,io]],choplimit]]/.Q2->0)]]
+rencon[[All,io]]=Abs[octetCharge[[io]]-Re[(Cancel[Chop[zeroGegmValue[[1,1,io]],choplimit]]/.Q2->0)]]
 ,{io,{1,3,4,6}}];
 rencon[[All,2]]=rencon[[All,3]];
 rencon[[All,5]]=rencon[[All,4]];
@@ -514,12 +522,6 @@ rencon\[LeftDoubleBracket]3,3\[RightDoubleBracket]=1;
 rencon\[LeftDoubleBracket]3,7\[RightDoubleBracket]=1;
 rencon\[LeftDoubleBracket]4,4\[RightDoubleBracket]=1;
 rencon\[LeftDoubleBracket]4,5\[RightDoubleBracket]=1;*)
-
-
-(* ::DisplayFormula:: *)
-(*TableForm[rencon,TableHeadings->{Automatic,None}]*)
-
-
 (*++++++++++++++++++++display+++++++++++++++++++++*)
 echo["calculated renormalization constants"];
 StringRiffle[rencon]
@@ -583,8 +585,6 @@ StringRiffle[rencon]
 
 octetname=
 {"1\[CapitalSigma]m","2\[CapitalSigma]0","3\[CapitalSigma]p","4pr","5ne" ,"6\[CapitalXi]m","7\[CapitalXi]0","8\[CapitalLambda]"};
-
-
 octetnameabbr=
 {"\[CapitalSigma]m","\[CapitalSigma]0","\[CapitalSigma]p","pr","ne","\[CapitalXi]m","\[CapitalXi]0","\[CapitalLambda]"};
 
@@ -764,22 +764,21 @@ treeGegmRencon3[[All,4,All]]+loopGegm[[All,7,All]]+loopGegm[[All,10,All]](*34;(Z
 }
 ,{2,1,3}
 ],choplimit];
+(*reaSevaGegm//Dimensions
+{2,28,8}*)
 
 
 (* ::DisplayFormula:: *)
-(*reaSevaGegm//Dimensions*)
-(*{2,28,8}*)
-
-
-nmlzGegm={(*\:5f52\:4e00\:5316\:56e0\:5b50*)
-ConstantArray[1,8],(*ge \:7684\:5f52\:4e00\:5316\:56e0\:5b50\:90fd\:662f1*)
-SetPrecision[totalGegm[[2,1]]/.Q2->0,precision](*gm \:7684\:5f52\:4e00\:5316\:56e0\:5b50\:662f\:96f6\:70b9\:503c*)
-};
+(**)
 
 
 (* ::DisplayFormula:: *)
-(*nmlzGegm//Dimensions*)
-(*{2,8}*)
+(*nmlzGegm={(*\:5f52\:4e00\:5316\:56e0\:5b50*)*)
+(*ConstantArray[1,8],(*ge \:7684\:5f52\:4e00\:5316\:56e0\:5b50\:90fd\:662f1*)*)
+(*SetPrecision[totalGegm[[2,1]]/.Q2->0,precision](*gm \:7684\:5f52\:4e00\:5316\:56e0\:5b50\:662f\:96f6\:70b9\:503c*)*)
+(*};*)
+(*(*nmlzGegm//Dimensions*)
+(*{2,8}*)*)
 
 
 (* ::Section:: *)
@@ -799,7 +798,7 @@ order++;
 If[IntegerQ[order/16],Print["gegm=",gegm,",seva=",seva,",io=",io]
 ];
 (*+++++++++++++++++++++++++++*)
-teff=reaSevaGegm[[gegm,seva,io]]/nmlzGegm[[gegm,io]];
+teff=reaSevaGegm[[gegm,seva,io]];
 Plot[
 teff(*\:8fd9\:91cc\:9664\:4ee5\:5f52\:4e00\:5316\:56e0\:5b50\:ff0c\:4f7f\:7528 Evaluate \:5148\:8ba1\:7b97\:8868\:8fbe\:5f0f*)
 ,{Q2,0,1},
@@ -825,16 +824,12 @@ Frame->True
 
 
 echo["output directory"];
-outputdir=FileNameJoin[{gitLocalName,"/expression-mfiles/"}]
-
-
-echo["files to export"];(*\:8981\:5bfc\:51fa\:7684\:6587\:4ef6,\:5173\:8054\:7684\:5f62\:5f0f\:ff0c\:4fdd\:5b58\:7528\:7684\:6587\:4ef6\:540d\[Rule]\:5bf9\:5e94\:7684\:6587\:4ef6*)
+outputDir=FileNameJoin[{gitLocalName,"/expression-mfiles/"}]
+(*\:8981\:5bfc\:51fa\:7684\:6587\:4ef6,\:5173\:8054\:7684\:5f62\:5f0f\:ff0c\:4fdd\:5b58\:7528\:7684\:6587\:4ef6\:540d\[Rule]\:5bf9\:5e94\:7684\:6587\:4ef6*)
 outputAssoc=<|
 (*++++++++++++++++*)
-FileNameJoin[{outputdir,"fig_calc_baryons_gegm_"<>"L-"<>parLambda0Str<>"_ci-"<>parciStr<>".m"}]->figCalcBaryonsGegm
+FileNameJoin[{outputDir,StringJoin["data_fit_",cFittingStr,"_",errorbarQStr,"_series_",parOrderStr,"_L_",parLambda0Str,"_ci_",parciStr,".m"]}]->figCalcBaryonsGegm
 (*++++++++++++++++*)
 |>;
-
-
 echo["output status"];
 KeyValueMap[Export,outputAssoc]
