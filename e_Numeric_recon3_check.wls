@@ -504,17 +504,17 @@ StringRiffle[rencon]
 magNum=nugegmZero[[2,1]];(*\:8ba1\:7b97\:51fa\:7684octet\:78c1\:77e9*)
 cccReslt=AssociationThread[
 {
-"{1,3}",
-"{1,2,3}",
+"Sigma1",
+"Sigma2",
 "{1,4}",
 "{1,6}",
-"{4,5}",
+"Nucleon",
 "{4,6}",
-"{6,7}",
+"Cascade",
 "{1,3,4,5}",
 "{1,3,4,5,6,7}",
 "{1,3,4,5,8}",
-"{1,3,4,5,6,7,8}"
+"Baryons"
 },
 Table[
 NMinimize[
@@ -556,7 +556,7 @@ outputdir=FileNameJoin[{GitLocalName,"/expression-mfiles/"}]
 echo["files to export"];(*\:8981\:5bfc\:51fa\:7684\:6587\:4ef6,\:5173\:8054\:7684\:5f62\:5f0f\:ff0c\:4fdd\:5b58\:7528\:7684\:6587\:4ef6\:540d\[Rule]\:5bf9\:5e94\:7684\:6587\:4ef6*)
 outputAssoc=<|
 (*++++++++++++++++*)
-FileNameJoin[{outputdir,"c1c2_magfit_"<>"L-"<>parLambda0Str<>"_ci-"<>parciStr<>".m"}]->cccReslt
+FileNameJoin[{outputdir,"c1c2_magfit_L_"<>parLambda0Str<>"_ci_"<>parciStr<>".m"}]->cccReslt
 (*++++++++++++++++*)
 |>;
 
