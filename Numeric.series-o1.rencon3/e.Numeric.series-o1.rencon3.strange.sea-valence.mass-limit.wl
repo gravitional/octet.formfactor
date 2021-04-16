@@ -251,7 +251,7 @@ di->0.76,fi->0.50,
 ci->parci,
 \[CapitalLambda]0->parLambda0
 },
-SetPrecision[configc1c2,20]
+configc1c2
 ];
 baselist=Table[
 Join[baselist1[[io]],baselist2]

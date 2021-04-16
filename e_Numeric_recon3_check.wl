@@ -1,8 +1,7 @@
-#!/usr/bin/env wolframscript
 (* ::Package:: *)
 
 (* ::Title:: *)
-(*e.Numeric.rencon3.check.fch.nb*)
+(*e_Numeric_recon3_check.wls*)
 
 
 (* ::Chapter:: *)
@@ -73,7 +72,7 @@ GitLocalName=FileNameJoin[Append[TakeWhile[FileNameSplit[ExpandFileName[filename
 
 
 InputSim={"/home/tom/octet.formfactor/Numeric.series-o0.rencon3/e.Numeric.series-o0.rencon3.strange.sea-valence.mass-limit.wl",
-"o0",0.90`20,1.5`20};
+"o0",0.90`28,1.5`28};
 
 
 (* ::Text:: *)
@@ -119,7 +118,7 @@ Needs["X`"];ParallelNeeds["X`"];
 
 
 choplimit=10^-10;(*cut\:7cbe\:5ea6*)
-precision=20;(*\:7cbe\:786e\:5ea6*)
+precision=25;(*\:7cbe\:786e\:5ea6*)
 
 
 (* ::Chapter:: *)
@@ -196,26 +195,26 @@ Transpose[chptQfaSeaCoemassMasslimit,{2,3,1}]
 
 
 {conm\[Pi],conmKi,conm\[Eta],conmEtas}={
-0.1381`20,
-0.4956`20,
-0.5693`20,
-0.9452`20
+0.1381`28,
+0.4956`28,
+0.5693`28,
+0.9452`28
 };
 
 
 {conm\[CapitalSigma],conmN,conm\[CapitalXi],conm\[CapitalLambda],conm\[CapitalLambda]\[CapitalSigma],
 conmUUU,conmDDD,conmSSS(* \:865a\:62df\:7684\:5bf9\:79f0\:91cd\:5b50 *)
 }={
-1.193`20,0.939`20,1.315`20,1.116`20,1.155`20,
-0.939`20,0.939`20,1.315`20
+1.193`28,0.939`28,1.315`28,1.116`28,1.155`28,
+0.939`28,0.939`28,1.315`28
 };
 
 
 {conm\[CapitalDelta],conm\[CapitalSigma]s,conm\[CapitalXi]s,conm\[CapitalOmega]}={
-1.232`20,
-1.385`20,
-1.530`20,
-1.672`20
+1.232`28,
+1.385`28,
+1.530`28,
+1.672`28
 };
 
 
@@ -320,16 +319,16 @@ c3 = c2 - c1;
 
 configc1c2=<|
 (*here is the test configuration*)
-{"0.90","1.05"}->{c1->1.6953280353951576`20,c2->0.3310658564719022`20},
-{"0.90","1.10"}->{c1->1.6542713327732161`20,c2->0.33436637472152625`20}
+{"0.90","1.05"}->{c1->1.6953280353951576`28,c2->0.3310658564719022`28},
+{"0.90","1.10"}->{c1->1.6542713327732161`28,c2->0.33436637472152625`28}
 |>;
 
 
 baselist2=Join[
 {
-f->0.093`20,
+f->0.093`28,
 zi->-1,
-di->0.76`20,fi->0.5`20,
+di->0.76`28,fi->0.5`28,
 ci->parci,
 \[CapitalLambda]0->parLambda0
 },
@@ -472,10 +471,10 @@ magc1c2c3={
 
 
 octmagNum={
-(*1*)\[Minus]1.160`20,(*2*)0.60`20,(*3*)2.458`20,
-(*4*)2.7928473446`20,(*5*)\[Minus]1.9130427`20,
-(*6*)\[Minus]0.6507`20,(*7*)\[Minus]1.250`20,
-(*8*)\[Minus]0.613`20
+(*1*)\[Minus]1.160`28,(*2*)0.60`28,(*3*)2.458`28,
+(*4*)2.7928473446`28,(*5*)\[Minus]1.9130427`28,
+(*6*)\[Minus]0.6507`28,(*7*)\[Minus]1.250`28,
+(*8*)\[Minus]0.613`28
 };
 
 
@@ -523,6 +522,7 @@ Total[((rencon*magc1c2c3+magNum-octmagNum)^2)[[config]]],
 {c1,c2}\[Element]Reals
 },
 {c1,c2}
+,WorkingPrecision->20
 ],
 {config,
 {
