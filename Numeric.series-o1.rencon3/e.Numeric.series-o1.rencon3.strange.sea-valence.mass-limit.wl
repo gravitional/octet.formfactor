@@ -70,7 +70,8 @@ Print[configc1c2=Get[cFittingDir][cFitting]//Last];
 
 (*\:8f7d\:5165 package-X*)
 Get["X`"]
-choplimit=10^-8;
+chopLimit=10^-10;(*cut\:7cbe\:5ea6*)
+precision=20;(*\:7cbe\:786e\:5ea6*)
 echo["the configuration of Simplify"];
 SetOptions[Simplify,TimeConstraint->1]
 (*SetOptions[EvaluationNotebook[],ShowCellLabel->True];*)
@@ -137,26 +138,26 @@ fucoeandmrrl//Dimensions*)
 
 
 {conm\[Pi],conmKi,conm\[Eta],conmEtas}={
-0.1381,
-0.4956,
-0.5693,
-0.9452
+0.1381`20,
+0.4956`20,
+0.5693`20,
+0.9452`20
 };
 
 
 {conm\[CapitalSigma],conmN,conm\[CapitalXi],conm\[CapitalLambda],conm\[CapitalLambda]\[CapitalSigma],
 conmUUU,conmDDD,conmSSS(* the symmetric terms *)
 }={
-1.193,0.939,1.315,1.116,1.155,
-0.939,0.939,1.315
+1.193`20,0.939`20,1.315`20,1.116`20,1.155`20,
+0.939`20,0.939`20,1.315`20
 };
 
 
 {conm\[CapitalDelta],conm\[CapitalSigma]s,conm\[CapitalXi]s,conm\[CapitalOmega]}={
-1.232,
-1.385,
-1.530,
-1.672
+1.232`20,
+1.385`20,
+1.530`20,
+1.672`20
 };
 
 
@@ -245,13 +246,13 @@ baselist1={
 
 baselist2=Join[
 {
-f->0.093,
+f->0.093`20,
 zi->-1,
-di->0.76,fi->0.50,
+di->0.76`20,fi->0.50`20,
 ci->parci,
 \[CapitalLambda]0->parLambda0
 },
-SetPrecision[configc1c2,20]
+configc1c2
 ];
 baselist=Table[
 Join[baselist1[[io]],baselist2]
@@ -419,7 +420,7 @@ octetname={"1\[CapitalSigma]m","2\[CapitalSigma]0","3\[CapitalSigma]p","4pr","5n
 loopIfGegmValue=Table[
 Chop[
 SeriesCoefficient[nugegm[[gegm,seva,io,if]],{Q2,0,series}]/.Q2->0,
-choplimit
+chopLimit
 ]
 ,{gegm,1,2,1}
 ,{series,0,1,1}(*series order 0 1 *)
@@ -526,7 +527,7 @@ trf1f2[[;;,i,1]]+trf1f2[[;;,i,2]]
 (*tree`gegm`d0*)
 
 
-treeGegmD0=Chop[treeGegmQ2/.Q2->0,choplimit];
+treeGegmD0=Chop[treeGegmQ2/.Q2->0,chopLimit];
 
 
 (* ::DisplayFormula:: *)
@@ -537,7 +538,7 @@ treeGegmD0=Chop[treeGegmQ2/.Q2->0,choplimit];
 (*tree`gegm`d1*)
 
 
-(treeGegmD1=D[Chop[treeGegmQ2,choplimit],{Q2,1}]/.Q2->0);
+(treeGegmD1=D[Chop[treeGegmQ2,chopLimit],{Q2,1}]/.Q2->0);
 
 
 (* ::DisplayFormula:: *)
@@ -574,7 +575,7 @@ treeGegm=Transpose[
 (* octetmagetonc1={(*1*)-(c1/3),(*2*)c1/3,(*3*)c1,(*4*)c1,(*5*)-((2 c1)/3),(*6*)-(c1/3),(*7*)-((2 c1)/3),(*8*)-(c1/3)};*)
 
 
-octetcharge={
+octetCharge={
 (*1*)-1,(*2*)0,(*3*)1,
 (*4*)1,(*5*)0,
 (*6*)-1,(*7*)0,
@@ -582,11 +583,11 @@ octetcharge={
 };
 
 
-octetmageton={
-(*1*) \[Minus]1.160,(*2*) 0.60,(*3*)2.458,
-  (*4*)2.7928473446, (*5*)\[Minus]1.9130427,
-  (*6*)\[Minus]0.6507,(*7*)\[Minus]1.250,
- (*8*)\[Minus]0.613
+octetMageton={
+(*1*) \[Minus]1.160`20,(*2*) 0.60`20,(*3*)2.458`20,
+  (*4*)2.7928473446`20, (*5*)\[Minus]1.9130427`20,
+  (*6*)\[Minus]0.6507`20,(*7*)\[Minus]1.250`20,
+ (*8*)\[Minus]0.613`20
  };
 
 
@@ -602,12 +603,12 @@ octetmageton={
 rencon=Table[1,{seva,1,13,1},{io,1,8,1}];
 (*+++++++++++++++++renormalized according to charge+++++++++++++*)
 Table[
-rencon[[;;,i]]=Abs[octetcharge[[i]]-Re[(Cancel[Chop[loopGegm[[1,1,1,i]],choplimit]]/.Q2->0)]]
+rencon[[;;,i]]=Abs[octetCharge[[i]]-Re[(Cancel[Chop[loopGegm[[1,1,1,i]],chopLimit]]/.Q2->0)]]
 ,{i,{1,3,4,6}}];
 rencon[[;;,2]]=rencon[[;;,3]];
 rencon[[;;,5]]=rencon[[;;,4]];
 rencon[[;;,7]]=rencon[[;;,6]];
-rencon[[;;,8]]=Abs[1-Re[(Cancel[Chop[loopGegm[[1,1,2,8]],choplimit]]/.Q2->0)]];
+rencon[[;;,8]]=Abs[1-Re[(Cancel[Chop[loopGegm[[1,1,2,8]],chopLimit]]/.Q2->0)]];
 (*++++++++++++++++++++no renormalized+++++++++++++++++++++*)
 (*rencon\[LeftDoubleBracket]2,1\[RightDoubleBracket]=1;
 rencon\[LeftDoubleBracket]2,6\[RightDoubleBracket]=1;
@@ -894,8 +895,8 @@ equallimit=0.0000001;
 (*\:81ea\:7136\:5355\:4f4d\:5236\:4e2d\:ff0c\:4eceMeV \:5230 fm \:7684\:8f6c\:6362
 GeV^-2=0.0389376fm^-2
 GeV^-2=0.197326fm^-2*)
-unitTransGev2=0.038937550276;
-unitTransGev=0.197326;
+unitTransGev2=0.038937550276`20;
+unitTransGev=0.197326`20;
 (*\:4f5c\:4e3a\:534a\:5f84\:671f\:671b\:516c\:5f0f\:5206\:6bcd\:7684 seva \:9879\:76ee\:ff0c\:4e00\:822c\:662ftree+loop\:603b\:8d21\:732e*)
 sevaTotal=9;
 
@@ -1042,7 +1043,7 @@ rearrangeRadius2GegmSeva[[gegm]],
 {radiusGegmLat[[gegm]]},
 {radiusGegmPaper[[gegm]]}
 ][[seva]]/.Q2->0,
-choplimit],
+chopLimit],
 (*end the data to display*)
 (*start prepend names vertical*)
 dataVtitle
@@ -1087,7 +1088,7 @@ rearrangeRadius2GegmSeva[[gegm]],
 {radiusGegmLat[[gegm]]},
 {radiusGegmPaper[[gegm]]}
 ][[seva]]/.Q2->0,
-choplimit]
+chopLimit]
 ];
 
 

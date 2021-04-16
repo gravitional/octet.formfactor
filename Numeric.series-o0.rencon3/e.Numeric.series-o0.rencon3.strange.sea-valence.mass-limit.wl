@@ -86,7 +86,8 @@ Print[configc1c2=Get[cFittingDir][cFitting]//Last];
 
 (*\:8f7d\:5165 package-X*)
 Get["X`"]
-chopLimit=10^-8;
+chopLimit=10^-10;(*cut\:7cbe\:5ea6*)
+precision=20;(*\:7cbe\:786e\:5ea6*)
 echo["the configuration of Simplify"];
 SetOptions[Simplify,TimeConstraint->1]
 (*SetOptions[EvaluationNotebook[],ShowCellLabel->True];*)
@@ -147,26 +148,26 @@ fucoeandmrrl//Dimensions*)
 
 
 {conm\[Pi],conmKi,conm\[Eta],conmEtas}={
-0.1381,
-0.4956,
-0.5693,
-0.9452
+0.1381`20,
+0.4956`20,
+0.5693`20,
+0.9452`20
 };
 
 
 {conm\[CapitalSigma],conmN,conm\[CapitalXi],conm\[CapitalLambda],conm\[CapitalLambda]\[CapitalSigma],
 conmUUU,conmDDD,conmSSS(* the symmetric terms *)
 }={
-1.193,0.939,1.315,1.116,1.155,
-0.939,0.939,1.315
+1.193`20,0.939`20,1.315`20,1.116`20,1.155`20,
+0.939`20,0.939`20,1.315`20
 };
 
 
 {conm\[CapitalDelta],conm\[CapitalSigma]s,conm\[CapitalXi]s,conm\[CapitalOmega]}={
-1.232,
-1.385,
-1.530,
-1.672
+1.232`20,
+1.385`20,
+1.530`20,
+1.672`20
 };
 
 
@@ -255,9 +256,9 @@ baselist1={
 
 baselist2=Join[
 {
-f->0.093,
+f->0.093`20,
 zi->-1,
-di->0.76,fi->0.50,
+di->0.76`20,fi->0.50`20,
 ci->parci,
 \[CapitalLambda]0->parLambda0
 },
@@ -492,7 +493,7 @@ trf1f2[[;;,i,1]]+trf1f2[[;;,i,2]]
 octetname={"1\[CapitalSigma]m","2\[CapitalSigma]0","3\[CapitalSigma]p","4pr","5ne" ,"6\[CapitalXi]m","7\[CapitalXi]0","8\[CapitalLambda]"};
 
 
-octetcharge={
+octetCharge={
 (*1*)-1,(*2*)0,(*3*)1,
 (*4*)1,(*5*)0,
 (*6*)-1,(*7*)0,
@@ -520,7 +521,7 @@ octetcharge={
 rencon=Table[1,{seva,1,13,1},{io,1,8,1}];
 (*+++++++++++++++++renormalized according to charge+++++++++++++*)
 Table[
-rencon[[;;,io]]=Abs[octetcharge[[io]]-Re[(Cancel[Chop[nugegm[[1,io,1]],chopLimit]]/.Q2->0)]]
+rencon[[;;,io]]=Abs[octetCharge[[io]]-Re[(Cancel[Chop[nugegm[[1,io,1]],chopLimit]]/.Q2->0)]]
 ,{io,{1,3,4,6}}];
 rencon[[;;,2]]=rencon[[;;,3]];
 rencon[[;;,5]]=rencon[[;;,4]];
@@ -565,10 +566,10 @@ octetGegmExpriment={
 (*8*)0
 },
 {
-(*1*)\[Minus]1.160,(*2*)0.60,(*3*)2.458,
-(*4*)2.7928473446,(*5*)\[Minus]1.9130427,
-(*6*)\[Minus]0.6507,(*7*)\[Minus]1.250,
-(*8*)\[Minus]0.613
+(*1*)\[Minus]1.160`20,(*2*)0.60`20,(*3*)2.458`20,
+(*4*)2.7928473446`20,(*5*)\[Minus]1.9130427`20,
+(*6*)\[Minus]0.6507`20,(*7*)\[Minus]1.250`20,
+(*8*)\[Minus]0.613`20
 }
 };
 
@@ -924,11 +925,10 @@ dataBackground
 
 echo["output directory"];
 outputDir=FileNameJoin[{gitLocalName,"/expression-mfiles/"}]
-echo["files to export"];(*\:8981\:5bfc\:51fa\:7684\:6587\:4ef6,\:5173\:8054\:7684\:5f62\:5f0f\:ff0c\:4fdd\:5b58\:7528\:7684\:6587\:4ef6\:540d\[Rule]\:5bf9\:5e94\:7684\:6587\:4ef6*)
+(*\:8981\:5bfc\:51fa\:7684\:6587\:4ef6,\:5173\:8054\:7684\:5f62\:5f0f\:ff0c\:4fdd\:5b58\:7528\:7684\:6587\:4ef6\:540d\[Rule]\:5bf9\:5e94\:7684\:6587\:4ef6*)
 outputAssoc=<|
 (*++++++++++++++++*)
-FileNameJoin[{outputDir,StringJoin["data_fit_",cFittingStr,"_",errorbarQStr,"_series_",parOrderStr,"_L_",parLambda0Str,"_ci_",parciStr,".m"]}]->{dataList[1],dataList[2]},
-FileNameJoin[{outputDir,StringJoin["rencon_fit_",cFittingStr,"_L_",parLambda0Str,"_ci_",parciStr,".m"]}]->rencon
+FileNameJoin[{outputDir,StringJoin["data_fit_",cFittingStr,"_",errorbarQStr,"_series_",parOrderStr,"_L_",parLambda0Str,"_ci_",parciStr,".m"]}]->{dataList[1],dataList[2]}
 (*++++++++++++++++*)
 |>;
 echo["output status"];
