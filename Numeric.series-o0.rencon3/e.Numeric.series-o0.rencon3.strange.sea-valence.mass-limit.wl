@@ -53,18 +53,17 @@ If[cmdQ,
 inputCml=$ScriptCommandLine,(*\:5982\:679c\:5728\:547d\:4ee4\:884c\:6267\:884c\:ff0c\:5c31\:91c7\:7528\:547d\:4ee4\:884c\:53c2\:6570*)
 inputCml=inputSim(*\:5982\:679c\:5728\:7b14\:8bb0\:672c\:6267\:884c\:ff0c\:5c31\:91c7\:7528\:6a21\:62df\:53c2\:6570*)
 ];
+echo["the parameter:order,lambda,ci,fitting"];(*\:5c55\:793a\:63a5\:53d7\:5230\:7684\:53c2\:6570*)
 {fileName,parOrder,parLambda0,parci,cFitting,errorbarQ}={
 inputCml[[1]],inputCml[[2]],
 ToExpression[inputCml[[3]]],ToExpression[inputCml[[4]]],
 inputCml[[5]],inputCml[[6]]
-};
-(*\:5c55\:793a\:63a5\:53d7\:5230\:7684\:53c2\:6570*)
-echo["the parameter:order,lambda,ci,fitting"];
-parOrderStr=ToString[parOrder]
-parLambda0Str=ToString[NumberForm[parLambda0,{3,2}]]
-parciStr=ToString[NumberForm[parci,{3,2}]]
-cFittingStr=enString[cFitting]
-errorbarQStr=enString[errorbarQ]
+}
+parOrderStr=ToString[parOrder];
+parLambda0Str=ToString[NumberForm[parLambda0,{3,2}]];
+parciStr=ToString[NumberForm[parci,{3,2}]];
+cFittingStr=enString[cFitting];
+errorbarQStr=enString[errorbarQ];
 (*\:68c0\:67e5\:8f93\:5165\:7684\:53c2\:6570\:662f\:5426\:5408\:6cd5*)
 If[Not[StringMatchQ[cFittingStr,{"Sigma1","Sigma2","Nucleon","Cascade","Baryons"}]&&StringMatchQ[errorbarQStr,{"notbar" ,"L_"~~NumberString~~"_ci_"~~NumberString}]],
 echo["Please check the input parameters"];Abort[]

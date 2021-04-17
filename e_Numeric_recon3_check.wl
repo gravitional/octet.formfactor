@@ -93,17 +93,17 @@ InCml=InputSim(*\:5982\:679c\:5728\:7b14\:8bb0\:672c\:6267\:884c\:ff0c\:5c31\:91
 (*+++++++++++++++++++++++++++++++++*)
 
 
+echo["the parameter order, lambda, ci,"];
 {filename,parOrder,parLambda0,parci}={
 InCml[[1]],InCml[[2]],
 ToExpression[InCml[[3]]],(*\:8f6c\:6362\:6210\:8868\:8fbe\:5f0f*)
 ToExpression[InCml[[4]]]
-};
+}
 
 
-echo["the parameter order, lambda, ci,"];
-parOrderStr=ToString[parOrder]
-parLambda0Str=ToString[NumberForm[parLambda0,{3,2}]]
-parciStr=ToString[NumberForm[parci,{3,2}]]
+parOrderStr=ToString[parOrder];
+parLambda0Str=ToString[NumberForm[parLambda0,{3,2}]];
+parciStr=ToString[NumberForm[parci,{3,2}]];
 
 
 (* ::Section:: *)
