@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+## 开始主要测试
 order='full'
 prcs='`20'
 wlscript='./e.Numeric.series-full.rencon3.strange.wl'
@@ -7,12 +8,32 @@ fitting='Baryons'
 errobarQ='notbar'
 
 ## start the ci=1.0 numeric
-declare -a lambdaList=('0.80' '0.82' '0.84' '0.86' '0.88' '0.90' '0.92' '0.94' '0.96' '0.98' '1.00')
+declare -a lambdaList=('0.80' '0.90' '1.00')
 
 for lambda in "${lambdaList[@]}"; do
     wolframscript -print 'all' -file $wlscript $order ${lambda}${prcs} '1.00'${prcs} ${fitting} ${errobarQ}
     sleep 2
 done
+
+# start the ci=1.5 numeric
+for lambda in "${lambdaList[@]}"; do
+    wolframscript -print 'all' -file $wlscript $order ${lambda}${prcs} '1.50'${prcs} ${fitting} ${errobarQ}
+    sleep 2
+done
+
+# order='full'
+# prcs='`20'
+# wlscript='./e.Numeric.series-full.rencon3.strange.wl'
+# fitting='Baryons'
+# errobarQ='notbar'
+
+# ## start the ci=1.0 numeric
+# declare -a lambdaList=('0.80' '0.82' '0.84' '0.86' '0.88' '0.90' '0.92' '0.94' '0.96' '0.98' '1.00')
+
+# for lambda in "${lambdaList[@]}"; do
+#     wolframscript -print 'all' -file $wlscript $order ${lambda}${prcs} '1.00'${prcs} ${fitting} ${errobarQ}
+#     sleep 2
+# done
 
 ## start the ci=1.5 numeric
 # for lambda in "${lambdaList[@]}"; do

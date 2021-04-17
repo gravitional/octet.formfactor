@@ -53,6 +53,7 @@ cFittingStr=enString[cFitting];
 errorbarQStr=enString[errorbarQ];
 (*\:68c0\:67e5\:8f93\:5165\:7684\:53c2\:6570\:662f\:5426\:5408\:6cd5*)
 If[Not[StringMatchQ[cFittingStr,{"Sigma1","Sigma2","Nucleon","Cascade","Baryons"}]&&StringMatchQ[errorbarQStr,{"notbar" ,"L_"~~NumberString~~"_ci_"~~NumberString}]],
+(*eg."L_0.90_ci_1.50"*)
 echo["Please check the input parameters"];Abort[]
 ]
 
