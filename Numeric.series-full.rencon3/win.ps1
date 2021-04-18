@@ -11,13 +11,13 @@ $errobarQ = 'L_0.90_ci_1.50'
 ${lambdaList} = @('0.80', '0.90', '1.00')
 
 foreach (${lambda} in $lambdaList) {
-    wolframscript -print 'all' -file $wlscript $order (${lambda} + ${prcs}) ('1.00' + ${prcs}) ${fitting} ${errobarQ}
+    wolframscript.exe -print 'all' -file $wlscript $order (${lambda} + ${prcs}) ('1.00' + ${prcs}) ${fitting} ${errobarQ}
     Start-Sleep -Seconds 2
 }
 
 ## start the ci=1.5 numeric
 foreach (${lambda} in $lambdaList) {
-    wolframscript -print 'all' -file $wlscript $order (${lambda} + ${prcs})   ('1.50' + ${prcs})  ${fitting} ${errobarQ}
+    wolframscript.exe -print 'all' -file $wlscript $order (${lambda} + ${prcs})   ('1.50' + ${prcs})  ${fitting} ${errobarQ}
     Start-Sleep -Seconds 2
 }
 
