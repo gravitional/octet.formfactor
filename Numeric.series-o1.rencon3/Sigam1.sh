@@ -6,15 +6,16 @@ wlscript='./e.Numeric.series-o1.rencon3.strange.sea-valence.mass-limit.wl'
 fitting='Sigma1'
 errobarQ='notbar'
 
-## start the ci=1.0 numeric
-declare -a lambdaList=('0.80' '0.90' '1.00')
+# ## start the ci=1.0 numeric
+# declare -a lambdaList=('0.80' '0.90' '1.00')
 
-for lambda in "${lambdaList[@]}"; do
-    wolframscript -print 'all' -file $wlscript $order ${lambda}${prcs} '1.00'${prcs} ${fitting} ${errobarQ}
-    sleep 2
-done
+# for lambda in "${lambdaList[@]}"; do
+#     wolframscript -print 'all' -file $wlscript $order ${lambda}${prcs} '1.00'${prcs} ${fitting} ${errobarQ}
+#     sleep 2
+# done
 
 ## start the ci=1.5 numeric
+declare -a lambdaList=('0.80' '0.90' '1.00')
 for lambda in "${lambdaList[@]}"; do
     wolframscript -print 'all' -file $wlscript $order ${lambda}${prcs} '1.50'${prcs} ${fitting} ${errobarQ}
     sleep 2
