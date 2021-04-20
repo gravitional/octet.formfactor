@@ -480,7 +480,7 @@ namesHorizontal={
 };
 
 
-seriesO0dataPath=FileNameJoin[{gitLocalName,"/expression-mfiles/",StringJoin["data_fit_",cFittingStr,"_",errorbarQStr,"_series_o0_L_",parLambda0Str,"_ci_",parciStr,".m"]}]
+seriesO0dataPath=FileNameJoin[{gitLocalName,"/expression-mfiles/",StringJoin["data_fit_",cFittingStr,"_rela_",errorbarQStr,"_series_o0_L_",parLambda0Str,"_ci_",parciStr,".m"]}]
 seriesO0data=Get[seriesO0dataPath];
 (*seriesO0data//Dimensions
 {2,8,37},{gegm,io,seva}*)
@@ -826,7 +826,7 @@ outputDir=FileNameJoin[{gitLocalName,"/expression-mfiles/"}]
 (*\:8981\:5bfc\:51fa\:7684\:6587\:4ef6,\:5173\:8054\:7684\:5f62\:5f0f\:ff0c\:4fdd\:5b58\:7528\:7684\:6587\:4ef6\:540d\[Rule]\:5bf9\:5e94\:7684\:6587\:4ef6*)
 outputAssoc=<|
 (*++++++++++++++++*)
-FileNameJoin[{outputDir,StringJoin["data_fit_",cFittingStr,"_",errorbarQStr,"_series_",parOrderStr,"_L_",parLambda0Str,"_ci_",parciStr,".m"]}]->figCalcBaryonsGegm
+FileNameJoin[{outputDir,StringJoin["data_fit_",cFittingStr,"_rela_",errorbarQStr,"_series_",parOrderStr,"_L_",parLambda0Str,"_ci_",parciStr,".m"]}]->figCalcBaryonsGegm
 (*++++++++++++++++*)
 |>;
 echo["output status"];

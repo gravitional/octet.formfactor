@@ -1148,7 +1148,7 @@ outputDir=FileNameJoin[{gitLocalName,"/expression-mfiles/"}]
 echo["files to export"];(*\:8981\:5bfc\:51fa\:7684\:6587\:4ef6,\:5173\:8054\:7684\:5f62\:5f0f\:ff0c\:4fdd\:5b58\:7528\:7684\:6587\:4ef6\:540d\[Rule]\:5bf9\:5e94\:7684\:6587\:4ef6*)
 outputAssoc=<|
 (*++++++++++++++++*)
-FileNameJoin[{outputDir,StringJoin["data_fit_",cFittingStr,"_",errorbarQStr,"_series_",parOrderStr,"_L_",parLambda0Str,"_ci_",parciStr,".m"]}]->
+FileNameJoin[{outputDir,StringJoin["data_fit_",cFittingStr,"_rela_",errorbarQStr,"_series_",parOrderStr,"_L_",parLambda0Str,"_ci_",parciStr,".m"]}]->
 {dataRadiusStorage[1,All,Q2],dataRadiusStorage[2,All,Q2]}
 (*++++++++++++++++*)
 |>;

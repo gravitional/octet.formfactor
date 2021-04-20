@@ -13,7 +13,7 @@ cmdQ=Not[$Notebooks];(*\:811a\:672c\:7684\:8fd0\:884c\:6a21\:5f0f\:5224\:65ad\:f
 fileName=If[Not[cmdQ],NotebookFileName[],$InputFileName](*\:7ed9\:51fa\:7b14\:8bb0\:672c\:7684\:7edd\:5bf9\:8def\:5f84*)
 enString[x__]:=StringJoin[ToString[#1]&/@Flatten[{x}]](*\:5b9a\:4e49\:4e00\:4e2a\:786e\:4fdd\:5b57\:7b26\:4e32\:7684\:51fd\:6570*)
 If[cmdQ,
-echo[x__]:=Print["----------------------------","\n\033[1;44m\033[1;37m",enStr[x],"\033[0;0m\n","----------------------------"],(*\:5b9a\:4e49\:7ec8\:7aef\:7684\:6253\:5370\:51fd\:6570*)
+echo[x__]:=Print["----------------------------","\n\033[1;44m\033[1;37m",enString[x],"\033[0;0m\n","----------------------------"],(*\:5b9a\:4e49\:7ec8\:7aef\:7684\:6253\:5370\:51fd\:6570*)
 echo[x__]:=Print[x](*\:5b9a\:4e49\:7b14\:8bb0\:672c\:7684\:6253\:5370\:51fd\:6570*)
 ]
 (*\:5982\:679c\:5728\:524d\:7aef\:6267\:884c\:ff0c\:5c31\:5237\:65b0\:7b14\:8bb0\:672c\:7684\:540d\:5b57*)
@@ -82,8 +82,8 @@ inputDir=FileNameJoin[{gitLocalName,"/expression-mfiles/"}]
 echo[".m files list"];
 mfileSeries=Module[{temp},
 If[centerQ,
-FileNames[StringExpression["data_fit_",cFittingStr,"_",errorbarQStr,"_series_",parOrderStr,"_L_",parLambda0GroupStr,"_ci_",parciStr,".m"],inputDir],
-{temp=FileNames[StringExpression["data_fit_",cFittingStr,"_",errorbarQStr,"_series_",parOrderStr,"_L_",parLambda0GroupStr,"_ci_",parciStr,".m"],inputDir]//First,
+FileNames[StringExpression["data_fit_",cFittingStr,"_rela_",errorbarQStr,"_series_",parOrderStr,"_L_",parLambda0GroupStr,"_ci_",parciStr,".m"],inputDir],
+{temp=FileNames[StringExpression["data_fit_",cFittingStr,"_rela_",errorbarQStr,"_series_",parOrderStr,"_L_",parLambda0GroupStr,"_ci_",parciStr,".m"],inputDir]//First,
 temp,temp}(*\:5f3a\:884c\:5199\:6210\:4e09\:7ec4\:6570\:636e\:5e76\:5217\:7684\:5f62\:5f0f\:ff0c\:65b9\:4fbf\:7edf\:4e00\:5904\:7406*)
 ]
 ]
@@ -243,8 +243,8 @@ outputDir=FileNameJoin[{gitLocalName,"/expression-results/"}]
 echo["files to export"];(*\:8981\:5bfc\:51fa\:7684\:6587\:4ef6,\:5173\:8054\:7684\:5f62\:5f0f\:ff0c\:4fdd\:5b58\:7528\:7684\:6587\:4ef6\:540d\[Rule]\:5bf9\:5e94\:7684\:6587\:4ef6*)
 outputAssoc=<|
 (*++++++++++++++++*)
-FileNameJoin[{outputDir,StringJoin[{"Ge_",cFittingStr,"_",errorbarQStr,"_series_",parOrderStr,"_L_",parLambda0Str,"_ci_",parciStr,".pdf"}]}]->seriesGeTotal,
-FileNameJoin[{outputDir,StringJoin[{"Gm_",cFittingStr,"_",errorbarQStr,"_series_",parOrderStr,"_L_",parLambda0Str,"_ci_",parciStr,".pdf"}]}]->seriesGmTotal
+FileNameJoin[{outputDir,StringJoin[{"Ge_",cFittingStr,"_rela_",errorbarQStr,"_series_",parOrderStr,"_L_",parLambda0Str,"_ci_",parciStr,".pdf"}]}]->seriesGeTotal,
+FileNameJoin[{outputDir,StringJoin[{"Gm_",cFittingStr,"_rela_",errorbarQStr,"_series_",parOrderStr,"_L_",parLambda0Str,"_ci_",parciStr,".pdf"}]}]->seriesGmTotal
 (*++++++++++++++++*)
 |>;
 echo["output status"];

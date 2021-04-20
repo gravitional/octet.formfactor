@@ -83,8 +83,8 @@ inputDir=FileNameJoin[{gitLocalName,"/expression-mfiles/"}]
 echo[".m files list"];
 mfileSeries=Module[{temp},
 If[centerQ,
-FileNames[StringExpression["data_fit_",cFittingStr,"_",errorbarQStr,"_series_",parOrderStr,"_L_",parLambda0GroupStr,"_ci_",parciStr,".m"],inputDir],
-{temp=FileNames[StringExpression["data_fit_",cFittingStr,"_",errorbarQStr,"_series_",parOrderStr,"_L_",parLambda0GroupStr,"_ci_",parciStr,".m"],inputDir]//First,
+FileNames[StringExpression["data_fit_",cFittingStr,"_rela_",errorbarQStr,"_series_",parOrderStr,"_L_",parLambda0GroupStr,"_ci_",parciStr,".m"],inputDir],
+{temp=FileNames[StringExpression["data_fit_",cFittingStr,"_rela_",errorbarQStr,"_series_",parOrderStr,"_L_",parLambda0GroupStr,"_ci_",parciStr,".m"],inputDir]//First,
 temp,temp}(*\:5f3a\:884c\:5199\:6210\:4e09\:7ec4\:6570\:636e\:5e76\:5217\:7684\:5f62\:5f0f\:ff0c\:65b9\:4fbf\:7edf\:4e00\:5904\:7406*)
 ]
 ]
@@ -248,8 +248,8 @@ outputDir=FileNameJoin[{gitLocalName,"/expression-results/"}]
 echo["files to export"];(*\:8981\:5bfc\:51fa\:7684\:6587\:4ef6,\:5173\:8054\:7684\:5f62\:5f0f\:ff0c\:4fdd\:5b58\:7528\:7684\:6587\:4ef6\:540d\[Rule]\:5bf9\:5e94\:7684\:6587\:4ef6*)
 outputAssoc=<|
 (*++++++++++++++++*)
-FileNameJoin[{outputDir,StringJoin[{"Ge_",cFittingStr,"_",errorbarQStr,"_series_",parOrderStr,"_L_",parLambda0Str,"_ci_",parciStr,".pdf"}]}]->seriesGeTotal,
-FileNameJoin[{outputDir,StringJoin[{"Gm_",cFittingStr,"_",errorbarQStr,"_series_",parOrderStr,"_L_",parLambda0Str,"_ci_",parciStr,".pdf"}]}]->seriesGmTotal
+FileNameJoin[{outputDir,StringJoin[{"Ge_",cFittingStr,"_rela_",errorbarQStr,"_series_",parOrderStr,"_L_",parLambda0Str,"_ci_",parciStr,".pdf"}]}]->seriesGeTotal,
+FileNameJoin[{outputDir,StringJoin[{"Gm_",cFittingStr,"_rela_",errorbarQStr,"_series_",parOrderStr,"_L_",parLambda0Str,"_ci_",parciStr,".pdf"}]}]->seriesGmTotal
 (*++++++++++++++++*)
 |>;
 echo["output status"];
