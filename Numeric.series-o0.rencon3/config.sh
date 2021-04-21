@@ -11,13 +11,13 @@ declare -a lambdaList=('0.80' '0.82' '0.84' '0.86' '0.88' '0.90' '0.92' '0.94' '
 
 for lambda in "${lambdaList[@]}"; do
     wolframscript -print 'all' -file $wlscript $order ${lambda}${prcs} '1.00'${prcs} ${fitting} ${errobarQ}
-    sleep 2
+    echo $(date)
 done
 
 ## start the ci=1.5 numeric
 for lambda in "${lambdaList[@]}"; do
     wolframscript -print 'all' -file $wlscript $order ${lambda}${prcs} '1.50'${prcs} ${fitting} ${errobarQ}
-    sleep 2
+    echo $(date)
 done
 
 # ## 对ci 变动的测试
