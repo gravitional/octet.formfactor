@@ -34,7 +34,7 @@ gitLocalName=FileNameJoin[Append[TakeWhile[FileNameSplit[ExpandFileName[fileName
 
 
 InputSim={"/home/tom/octet.formfactor/Numeric.series-full.rencon3/e.Numeric.series-full.rencon3.strange.wl",
-"full",0.80`20,1.50`20,"Baryons","L_0.90_ci_1.50"};
+"full",0.80`20,1.00`20,"Baryons","L_0.90_ci_1.00"};
 (*\:5982\:679c\:5728\:547d\:4ee4\:884c\:6267\:884c\:ff0c\:5c31\:91c7\:7528\:547d\:4ee4\:884c\:53c2\:6570*)
 If[cmdQ,
 inputCml=$ScriptCommandLine,(*\:5982\:679c\:5728\:547d\:4ee4\:884c\:6267\:884c\:ff0c\:5c31\:91c7\:7528\:547d\:4ee4\:884c\:53c2\:6570*)
