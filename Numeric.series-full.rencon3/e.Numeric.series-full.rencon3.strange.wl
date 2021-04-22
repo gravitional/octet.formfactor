@@ -34,7 +34,7 @@ gitLocalName=FileNameJoin[Append[TakeWhile[FileNameSplit[ExpandFileName[fileName
 
 
 InputSim={"/home/tom/octet.formfactor/Numeric.series-full.rencon3/e.Numeric.series-full.rencon3.strange.wl",
-"full",0.90`20,1.50`20,"Baryons","notbar"};
+"full",0.80`20,1.50`20,"Baryons","L_0.90_ci_1.50"};
 (*\:5982\:679c\:5728\:547d\:4ee4\:884c\:6267\:884c\:ff0c\:5c31\:91c7\:7528\:547d\:4ee4\:884c\:53c2\:6570*)
 If[cmdQ,
 inputCml=$ScriptCommandLine,(*\:5982\:679c\:5728\:547d\:4ee4\:884c\:6267\:884c\:ff0c\:5c31\:91c7\:7528\:547d\:4ee4\:884c\:53c2\:6570*)
@@ -72,7 +72,7 @@ Print[configc1c2=Get[cFittingDir][cFitting]//Last];
 
 
 (*\:8f7d\:5165 package-X*)
-Needs["X`"];ParallelNeeds["X`"];LaunchKernels[];
+Needs["X`"];ParallelNeeds["X`"];CloseKernels[];LaunchKernels[];
 chopLimit=10^-10;(*cut\:7cbe\:5ea6*)
 precision=20;(*\:7cbe\:786e\:5ea6*)
 
@@ -370,10 +370,12 @@ nuff1[[All,io]]+nuff2[[All,io]]
 ]
 ,{3,1,2}
 ];
+(*nugegm//Dimensions
+nugegm,{2,1,8},{gegm,seva,io}*)
 
 
 (* ::DisplayFormula:: *)
-(*nugegm,{2,1,8},{gegm,seva,io}*)
+(**)
 
 
 (* ::Chapter:: *)
@@ -618,39 +620,20 @@ octetnameabbr=
 (*\:91cd\:65b0\:7ec4\:5408\:6570\:636e*)
 
 
-figCutlimit=0.00001`20;
+figCutlimit=0.0001;
 figLeadersize=4;
-
-
-(* ::DisplayFormula:: *)
-(*trgegm,{2,4,8},{gegm,seva,io}*)
-
-
-(* ::DisplayFormula:: *)
-(*nugegm,{2,1,8},{gegm,seva,io}*)
-
-
-(* ::DisplayFormula:: *)
-(*zeroNugegm,{2,4,8},{gegm,seva,io}*)
-
-
-(* ::DisplayFormula:: *)
-(*zeroGegmValue=zeroNugegm/.Q2->0;*)
-
-
 treeGegmRencon2=Transpose[(*\:8ba1\:7b97 total \:8d21\:732e\:65f6\:ff0c\:7528\:8fd9\:4e2a\:66f4\:65b9\:4fbf*)
 Transpose[trgegm,{2,3,1}]*rencon[[1]]
 ,{3,1,2}
 ];
-
-
 treeGegmRencon3=Transpose[(*\:8ba1\:7b97 loop \:8d21\:732e\:65f6\:ff0c\:7528\:8fd9\:4e2a\:66f4\:65b9\:4fbf*)
 Transpose[trgegm,{2,3,1}]*(rencon[[1]]-1)
 ,{3,1,2}
 ];
 
 
-precsn[Q2_]:=SetPrecision[Q2,10]/;NumericQ[Q2](*\:8fd9\:4e2a\:51fd\:6570\:5bf9\:8f93\:5165\:7684Q2\:8c03\:8282\:7cbe\:5ea6*)
+
+precsn[Q2_]:=SetPrecision[Q2,16]/;NumericQ[Q2](*\:8fd9\:4e2a\:51fd\:6570\:5bf9\:8f93\:5165\:7684Q2\:8c03\:8282\:7cbe\:5ea6*)
 loopGegm=Table[(*\:6574\:7406\:6570\:636e\:ff0c\:5bf9\:96f6\:70b9\:9644\:8fd1\:4f5c\:7a33\:5b9a*)
 Piecewise[
 {
@@ -662,17 +645,9 @@ Piecewise[
 ,{seva,1,13,1}
 ,{io,1,8,1}
 ];
-
-
-(* ::DisplayFormula:: *)
-(*loopGegm//Dimensions*)
-(*{2,13,8}*)
-
-
-(* ::DisplayFormula:: *)
-(*total = tree +(Z-1)*tree+loop*)
-
-
+(*loopGegm//Dimensions
+{2,13,8}*)
+(*+++++++++++++++++++\:603b\:8d21\:732e++++++++++++++++++*)
 totalGegm=Table[
 Piecewise[
 {
@@ -684,14 +659,7 @@ Piecewise[
 ,{seva,1,4,1}
 ,{io,1,8,1}
 ];
-
-
-(* ::DisplayFormula:: *)
-(*totalGegm//Dimensions*)
-(*{2,4,8}*)
-
-
-(*\:8ba1\:7b97 loop \:8d21\:732e\:65f6\:ff0c\:7528\:8fd9\:4e2a\:66f4\:65b9\:4fbf*)
+(*+++++++++++++++++++\:8ba1\:7b97 loop \:8d21\:732e\:65f6\:ff0c\:7528\:8fd9\:4e2a\:66f4\:65b9\:4fbf++++++++++++++++++*)
 loopRencon3Gegm=Table[
 Piecewise[
 {
@@ -703,15 +671,6 @@ Piecewise[
 ,{seva,1,4,1}
 ,{io,1,8,1}
 ];
-
-
-(* ::DisplayFormula:: *)
-(*loop`re3`gegm//Dimensions*)
-(*{2,4,8}*)
-
-
-(* ::DisplayFormula:: *)
-(*total = tree +(Z-1)*tree+loop*)
 
 
 reaSevaGegm=Chop[Transpose[
@@ -767,10 +726,6 @@ treeGegmRencon3[[All,4,All]]+loopGegm[[All,7,All]]+loopGegm[[All,10,All]](*34;(Z
 
 
 (* ::DisplayFormula:: *)
-(**)
-
-
-(* ::DisplayFormula:: *)
 (*nmlzGegm={(*\:5f52\:4e00\:5316\:56e0\:5b50*)*)
 (*ConstantArray[1,8],(*ge \:7684\:5f52\:4e00\:5316\:56e0\:5b50\:90fd\:662f1*)*)
 (*SetPrecision[totalGegm[[2,1]]/.Q2->0,precision](*gm \:7684\:5f52\:4e00\:5316\:56e0\:5b50\:662f\:96f6\:70b9\:503c*)*)
@@ -784,8 +739,6 @@ treeGegmRencon3[[All,4,All]]+loopGegm[[All,7,All]]+loopGegm[[All,10,All]](*34;(Z
 
 
 figCalcBaryonsGegm=Table[0,{gegm,1,2,1},{seva,1,34,1},{io,1,8,1}];
-
-
 (*gegm=1;seva=1;io=5;*)
 (*+++++++++++++++++++++++++++*)
 Module[{order=0,teff},
