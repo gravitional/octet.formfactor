@@ -21,12 +21,5 @@ for lambda in "${lambdaList[@]}"; do
     sleep 2
 done
 
-# ## 对ci 变动的测试
-# declare -a ciList=('1.05' '1.10' '1.15' '1.20' '1.25' '1.30' '1.35' '1.40' '1.45')
-# for ci in "${ciList[@]}"; do
-#     wolframscript -print 'all' -file $wlscript $order '0.90'${prcs} ${ci}${prcs} ${fitting} ${errobarQ}
-#     sleep 2
-# done
-
 ## 原型
-## wolframscript -print 'all' -file './e.Numeric.series-o0.rencon3.strange.sea-valence.mass-limit.wl' 'o0' '0.90`20' '1.00`20' 'Baryons' 'notbar'
+## wolframscript -print 'all' -file './e.Numeric.series-o0.rencon3.strange.sea-valence.mass-limit.wl' 'o0' '0.90`20' '1.00`20' 'Sigma1' 'notbar'

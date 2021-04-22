@@ -17,6 +17,7 @@ done
 
 # start the ci=1.5 numeric
 errobarQ='L_0.90_ci_1.50'
+declare -a lambdaList=('0.80' '1.00')
 for lambda in "${lambdaList[@]}"; do
     wolframscript -print 'all' -file $wlscript $order ${lambda}${prcs} '1.50'${prcs} ${fitting} ${errobarQ}
     sleep 2

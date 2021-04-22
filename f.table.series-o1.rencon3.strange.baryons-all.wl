@@ -38,7 +38,7 @@ gitLocalName=FileNameJoin[Append[TakeWhile[FileNameSplit[ExpandFileName[fileName
 
 (*\:6a21\:62df\:547d\:4ee4\:884c\:8f93\:5165\:ff0c\:8c03\:8bd5\:4f7f\:7528*)
 inputSim={"/home/tom/octet.formfactor/f.table.series-o1.rencon3.strange.baryons-all.wl",
-"o1",0.80`20,1.50`20,"Baryons","notbar"};
+"o1",0.90`20,1.50`20,"Baryons","L_0.90_ci_1.50"};
 If[cmdQ,
 inputCml=$ScriptCommandLine,(*\:5982\:679c\:5728\:547d\:4ee4\:884c\:6267\:884c\:ff0c\:5c31\:91c7\:7528\:547d\:4ee4\:884c\:53c2\:6570*)
 inputCml=inputSim(*\:5982\:679c\:5728\:7b14\:8bb0\:672c\:6267\:884c\:ff0c\:5c31\:91c7\:7528\:6a21\:62df\:53c2\:6570*)
@@ -65,35 +65,34 @@ echo["Please check the input parameters"];Abort[]
 (*import *)
 
 
-centerQ=StringMatchQ[parLambda0Str,"0.90"] && StringMatchQ[parciStr,("1.00"|"1.50")];(*\:662f\:5426\:662f\:7279\:5b9a\:7684\:4e2d\:5fc3\:914d\:7f6e*)
+centerQ=StringMatchQ[parLambda0Str,"0.90"] && StringMatchQ[parciStr,("1.00"|"1.50")];(*\:6d4b\:8bd5\:662f\:5426\:4e3a\:4e2d\:5fc3\:914d\:7f6e\:ff1a\[CapitalLambda]==0.90*)
 parLambda0GroupStr=If[centerQ,
-{
-ToString[NumberForm[parLambda0-0.1,{3,2}]],(*\:76f8\:5dee\[PlusMinus]0.1\:7684\:914d\:7f6e*)
-ToString[NumberForm[parLambda0,{3,2}]],
-ToString[NumberForm[parLambda0+0.1,{3,2}]]
-},
-{
-ToString[NumberForm[parLambda0,{3,2}]],
-ToString[NumberForm[parLambda0,{3,2}]],
-ToString[NumberForm[parLambda0,{3,2}]]
-}
+ToString[NumberForm[#,{3,2}]]&/@{parLambda0-0.1,parLambda0,parLambda0+0.1},(*\:5982\:679c\[CapitalLambda]\[Equal]0.90\:ff0c\:52a0\:4e0a\:8bef\:5dee\:5e26*)
+ToString[NumberForm[#,{3,2}]]&/@{parLambda0,parLambda0,parLambda0}(*\:5982\:679c\[CapitalLambda]\[NotEqual]0.90\:ff0c\:4fdd\:6301\:5f62\:5f0f\:4e00\:81f4*)
 ]
 (*++++++++++++++++++++\:5bfc\:5165\:6570\:636e+++++++++++++++++++++*)
-inputDir=FileNameJoin[{gitLocalName,"/expression-mfiles/"}]
+inputDir=FileNameJoin[{gitLocalName,"/expression-mfiles/"}](*\:56fe\:7247\:6240\:5728\:7684\:76ee\:5f55*)
 echo[".m files list"];
+(*\:5236\:5907\:9700\:8981\:5bfc\:5165\:7684\:6587\:4ef6\:5217\:8868*)
 mfileSeries=Module[{temp},
 If[centerQ,
-FileNames[StringExpression["data_fit_",cFittingStr,"_rela_",errorbarQStr,"_series_",parOrderStr,"_L_",parLambda0GroupStr,"_ci_",parciStr,".m"],inputDir],
-{temp=FileNames[StringExpression["data_fit_",cFittingStr,"_rela_",errorbarQStr,"_series_",parOrderStr,"_L_",parLambda0GroupStr,"_ci_",parciStr,".m"],inputDir]//First,
-temp,temp}(*\:5f3a\:884c\:5199\:6210\:4e09\:7ec4\:6570\:636e\:5e76\:5217\:7684\:5f62\:5f0f\:ff0c\:65b9\:4fbf\:7edf\:4e00\:5904\:7406*)
+(*\:5982\:679c\[CapitalLambda]\[Equal]0.90\:ff0c\:4e24\:8fb9\:9009\:53d6 rela_L_0.90_ci_1.0\:ff0c\:4e2d\:95f4\:9009\:53d6 rela_notbar \:5373\:53ef*)
+First[FileNames[#1//Echo,inputDir]]&/@{
+StringExpression["data_fit_",cFittingStr,"_rela_",errorbarQStr,"_series_",parOrderStr,"_L_",parLambda0GroupStr[[1]],"_ci_",parciStr,".m"],
+StringExpression["data_fit_",cFittingStr,"_rela_","notbar","_series_",parOrderStr,"_L_",parLambda0GroupStr[[2]],"_ci_",parciStr,".m"],
+StringExpression["data_fit_",cFittingStr,"_rela_",errorbarQStr,"_series_",parOrderStr,"_L_",parLambda0GroupStr[[3]],"_ci_",parciStr,".m"]
+},
+(*\:5982\:679c\[CapitalLambda]\[NotEqual]0.90\:ff0c\:5f3a\:884c\:5199\:6210\:4e09\:7ec4\:6570\:636e\:5e76\:5217\:7684\:5f62\:5f0f\:ff0c\:65b9\:4fbf\:7edf\:4e00\:5904\:7406*)
+temp=FileNames[StringExpression["data_fit_",cFittingStr,"_rela_",errorbarQStr,"_series_",parOrderStr,"_L_",parLambda0GroupStr[[1]],"_ci_",parciStr,".m"]//Echo,inputDir]//First;
+{temp,temp,temp}
 ]
-]
+]//QuietEcho
 (dataSeriesRaw=Map[Get,mfileSeries,{-1}]);
 (*dataSeriesRaw//Dimensions
 dataSeriesRaw,{3,2,8,37},{conf,gegm,io,seva}*)
 
 
-(* ::Chapter:: *)
+(* ::Section:: *)
 (*formatting*)
 
 
@@ -125,7 +124,7 @@ dataSeriesTrim=Map[NumberForm[Chop[#1,choplimit],{6,3}]&,dataSeries,{-1}];
 {2,8,37}*)
 
 
-(* ::Section:: *)
+(* ::Chapter:: *)
 (*Q2tableStyle 2*)
 
 

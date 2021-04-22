@@ -4,7 +4,7 @@
 $order = 'full'
 $prcs = '`20'
 $wlscript = '.\e.Numeric.series-full.rencon3.strange.wl'
-$fitting = 'Baryons'
+$fitting = 'Sigma2'
 
 ## start the ci=1.0 numeric
 $errobarQ = 'L_0.90_ci_1.00'
@@ -21,12 +21,5 @@ foreach (${lambda} in $lambdaList) {
     Start-Sleep -Seconds 2
 }
 
-## 对ci 变动的测试
-#$ciList=@( '1.05','1.10','1.15','1.20','1.25','1.30','1.35','1.40','1.45' )
-#foreach ($ci in ${ciList}){
-#    wolframscript -print 'all' -file $wlscript   $order  ('0.90'+${prcs})  (${ci}+${prcs}) ${fitting} ${errobarQ}
-# Start-Sleep -Seconds 2
-#}
-
 ## 原型
-# #wolframscript -print 'all' -file '.\e.Numeric.series-full.rencon3.strange.wl'  'full' ('0.90'+'`20')  ('1.00'+'`20') 'Baryons'  'notbar'
+# #wolframscript -print 'all' -file '.\e.Numeric.series-full.rencon3.strange.wl'  'full' ('0.90'+'`20')  ('1.00'+'`20') 'Sigma2'  'notbar'
