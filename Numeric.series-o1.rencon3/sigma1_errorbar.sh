@@ -3,7 +3,7 @@
 ## 开始主要测试
 order='o0'
 prcs='`20'
-wlscript='./e.Numeric.series-o0.rencon3.strange.sea-valence.mass-limit.wl'
+wlscript='./e.Numeric.series-o1.rencon3.strange.sea-valence.mass-limit.wl'
 fitting='Sigma1'
 
 ## start the ci=1.0 numeric
@@ -24,4 +24,4 @@ for lambda in "${lambdaList[@]}"; do
 done
 
 ## 原型
-## wolframscript -print 'all' -file './e.Numeric.series-o0.rencon3.strange.sea-valence.mass-limit.wl' 'o0' '0.80`20' '1.00`20' 'Baryons' ''L_0.90_ci_1.00''
+## wolframscript -print 'all' -file './e.Numeric.series-o1.rencon3.strange.sea-valence.mass-limit.wl' 'o0' '0.80`20' '1.00`20' 'Baryons' ''L_0.90_ci_1.00''
