@@ -79,10 +79,7 @@ SetOptions[Simplify,TimeConstraint->1]
 (*coefficients & mass constants*)
 
 
-(* ::Section:: *)
-(*coe list and mass rule get*)
-
-
+(*\:5bfc\:5165\:7cfb\:6570\:6570\:7ec4\:548c\:8d28\:91cf\:6570\:7ec4*)
 echo["start import analytic and coes "];
 analyticDir=FileNameJoin[{gitLocalName,"analytic-storage.strange.series-"<>parOrderStr}]
 coeDir=FileNameJoin[{gitLocalName,"expression-coes"}]
@@ -94,17 +91,17 @@ FileNameJoin[{coeDir,"fu.coeandmassrrl.consti.u.m"}],
 FileNameJoin[{coeDir,"fu.coeandmassrrl.consti.d.m"}],
 FileNameJoin[{coeDir,"fu.coeandmassrrl.consti.s.m"}]
 };
-Once[chpt`qfb`quench`coemass`masslimit=Get[FileNameJoin[{coeDir,"chpt`qfb`quench`coemass`masslimit.m"}]]];
-Once[chpt`qfa`sea`coemass`masslimit=Get[FileNameJoin[{coeDir,"chpt`qfa`sea`coemass`masslimit.m"}]]];
-Once[chpt`qfa`valence`coemass`masslimit=Get[FileNameJoin[{coeDir,"chpt`qfa`valence`coemass`masslimit.m"}]]];
 Once[
 fucoeandmrrlraw=Map[Get,fucoeandmrrlnm,1]
 ];
+Once[chptQfbQuenchCoemassMasslimit=Get[FileNameJoin[{coeDir,"chpt_qfb_quench_coemass_masslimit.m"}]]];
+Once[chptQfaSeaCoemassMasslimit=Get[FileNameJoin[{coeDir,"chpt_qfa_sea_coemass_masslimit.m"}]]];
+Once[ChptQfaValenceCoemassMasslimit=Get[FileNameJoin[{coeDir,"chpt_qfa_valence_coemass_masslimit.m"}]]];
 Once[
 fucoeandmrrl=Join[fucoeandmrrlraw,
-Transpose[chpt`qfb`quench`coemass`masslimit,{2,3,1}],
-Transpose[chpt`qfa`valence`coemass`masslimit,{2,3,1}],
-Transpose[chpt`qfa`sea`coemass`masslimit,{2,3,1}]
+Transpose[chptQfbQuenchCoemassMasslimit,{2,3,1}],
+Transpose[ChptQfaValenceCoemassMasslimit,{2,3,1}],
+Transpose[chptQfaSeaCoemassMasslimit,{2,3,1}]
 ]
 ];
 (*fucoeandmrrlraw//Dimensions
@@ -167,18 +164,6 @@ conmUUU,conmDDD,conmSSS(* the symmetric terms *)
 (*fu Coefficients mass rules reduce*)
 
 
-(* ::Subsection:: *)
-(*fu Coefficients*)
-
-
-(* ::DisplayFormula:: *)
-(*in {4,9} external sign[-]*)
-
-
-(* ::DisplayFormula:: *)
-(*fusign8,fusign9*)
-
-
 fucoepresign={
 (*+++++++++++++++++++111++++++++++++++++++++++++++++++++++++++*)
 {1,1,1,
@@ -198,24 +183,16 @@ fucoepresign={
 }[[3]];
 
 
+(*\:7cfb\:6570\:548c\:8d28\:91cf\:6570\:7ec4*)
 fucoe=Table[
 Simplify[
 fucoepresign*Values[fucoeandmrrl[[i]]]
 ]
 ,{i,1,13,1}
 ];
-
-
-(* ::Subsection:: *)
-(*fu mass rules*)
-
-
 fumass=Keys[fucoeandmrrl];
-
-
-(* ::DisplayFormula:: *)
-(*fucoe//Dimensions*)
-(*fumass//Dimensions*)
+(*fucoe//Dimensions
+fumass//Dimensions*)
 
 
 (* ::Section:: *)
