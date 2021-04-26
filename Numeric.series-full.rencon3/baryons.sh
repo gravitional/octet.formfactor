@@ -7,18 +7,18 @@ wlscript='./e.Numeric.series-full.rencon3.strange.wl'
 fitting='Baryons'
 errobarQ='notbar'
 
+echo -e "\n\n$(date)"
 ## start the ci=1.0 numeric
 declare -a lambdaList=('0.80' '0.90' '1.00')
-
 for lambda in "${lambdaList[@]}"; do
     wolframscript -print 'all' -file $wlscript $order ${lambda}${prcs} '1.00'${prcs} ${fitting} ${errobarQ}
-    sleep 2
+    echo -e "\n\n$(date)"
 done
 
 # start the ci=1.5 numeric
 for lambda in "${lambdaList[@]}"; do
     wolframscript -print 'all' -file $wlscript $order ${lambda}${prcs} '1.50'${prcs} ${fitting} ${errobarQ}
-    sleep 2
+    echo -e "\n\n$(date)"
 done
 
 ## 原型
