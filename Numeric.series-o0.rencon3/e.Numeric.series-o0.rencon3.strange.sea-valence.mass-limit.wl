@@ -573,43 +573,6 @@ octetGegmExpriment={
 };
 
 
-getree=Re[trgegm[[;;,;;,1]]/.Q2->0];
-
-
-gmtree=Re[trgegm[[;;,;;,2]]/.Q2->0];
-
-
-gegmtree=Re[trgegm/.Q2->0];
-
-
-(* ::DisplayFormula:: *)
-(*getree is [consti,octet,][4*8]*)
-
-
-(* ::DisplayFormula:: *)
-(*gmtree is [consti,octet,][4*8]*)
-
-
-(* ::DisplayFormula:: *)
-(*gegmtree is [consti,octet,treegegem][4*8*2]*)
-
-
-geconstiname={"Ge.all","Ge.u","Ge.d","Ge.s"};
-gmconstiname={"Gm.all","Gm.u","Gm.d","Gm.s"};
-
-
-(* ::DisplayFormula:: *)
-(*loopged0{13,8}{seva,io}*)
-
-
-(* ::DisplayFormula:: *)
-(*loopgmd0{13,8}{seva,io}*)
-
-
-(* ::DisplayFormula:: *)
-(*trgegm{4,8,2}{seva,io,gegm}*)
-
-
 (* ::DisplayFormula:: *)
 (*{seva}{*)
 (*1;"all","u","d","s",*)
@@ -625,14 +588,8 @@ Re[trgegm/.Q2->0],
 ];
 
 
-(* ::DisplayFormula:: *)
 (*total = tree +(Z-1)*tree+loop*)
-
-
-(* ::Text:: *)
 (*\:8ba1\:7b97 total \:8d21\:732e\:65f6\:ff0c\:7528\:8fd9\:4e2a\:66f4\:65b9\:4fbf*)
-
-
 treeGegmRencon2=Transpose[
 (
 Transpose[
@@ -661,18 +618,11 @@ Re[Cancel[Chop[nugegm,chopLimit]]/.Q2->0]
 ,chopLimit]
 ,{2,3,1}
 ];
-(*gives loop zero term, choose loopged0 or loopgmd0*)
+(*\:7ed9\:51fa\:5708\:56fe\:7684\:96f6\:70b9\:503c,total = tree +(Z-1)*tree+loop
+loopGegm,{gegm,seva,io},{2,13,8}*)
 
 
-(* ::DisplayFormula:: *)
-(*loopGegm,{gegm,seva,io},{2,13,8}*)
-
-
-(* ::DisplayFormula:: *)
-(*total = tree +(Z-1)*tree+loop*)
-
-
-rearrangeSevaGegm=Transpose[
+reSevaGegm=Chop[Transpose[
 {
 treeGegm[[All,1,All]],(*1;tree,uds*)
 treeGegm[[All,2,All]],(*2;tree,u*)
@@ -684,46 +634,24 @@ loopGegm[[All,2,All]],(*6;loop,u*)
 loopGegm[[All,3,All]],(*7;loop,d*)
 loopGegm[[All,4,All]],(*8;loop,s*)
 
-treeGegmRencon2[[All,1,All]]+loopGegm[[All,1,All]],(*9;tree+loop,uds total *)
-treeGegmRencon2[[All,2,All]]+loopGegm[[All,2,All]],(*10;tree+loop,u*)
-treeGegmRencon2[[All,3,All]]+loopGegm[[All,3,All]],(*11;tree+loop,d*)
-treeGegmRencon2[[All,4,All]]+loopGegm[[All,4,All]],(*12;tree+loop,s*)
+loopGegm[[All,5,All]],(*9;quench,u*)
+loopGegm[[All,6,All]],(*10;quench,d*)
+loopGegm[[All,7,All]],(*11;quench,s*)
 
-loopGegm[[All,5,All]],(*13;quench,u*)
-loopGegm[[All,6,All]],(*14;quench,d*)
-loopGegm[[All,7,All]],(*15;quench,s*)
+loopGegm[[All,8,All]],(*12;valence,u*)
+loopGegm[[All,9,All]],(*13;valence,d*)
+loopGegm[[All,10,All]],(*14;valence,s*)
 
-loopGegm[[All,8,All]],(*16;valence,u*)
-loopGegm[[All,9,All]],(*17;valence,d*)
-loopGegm[[All,10,All]],(*18;valence,s*)
+loopGegm[[All,11,All]],(*15;sea,u,*)
+loopGegm[[All,12,All]],(*16;sea,d*)
+loopGegm[[All,13,All]],(*17;sea,s*)
 
-loopGegm[[All,11,All]],(*19;sea,u,*)
-loopGegm[[All,12,All]],(*20;sea,d*)
-loopGegm[[All,13,All]],(*21;sea,s*)
-
-loopGegm[[All,5,All]]+loopGegm[[All,8,All]],(*22;quench+valence,u*)
-loopGegm[[All,6,All]]+loopGegm[[All,9,All]],(*23;quench+valence,d*)
-loopGegm[[All,7,All]]+loopGegm[[All,10,All]],(*24;quench+valence,s*)
-
-treeGegmRencon2[[All,2,All]]+loopGegm[[All,5,All]]+loopGegm[[All,8,All]],(*25;tree+quench+valence,u*)
-treeGegmRencon2[[All,3,All]]+loopGegm[[All,6,All]]+loopGegm[[All,9,All]],(*26;tree+quench+valence,d*)
-treeGegmRencon2[[All,4,All]]+loopGegm[[All,7,All]]+loopGegm[[All,10,All]],(*27;tree+quench+valence,s*)
-
-treeGegmRencon3[[All,1,All]]+loopGegm[[All,1,All]],(*28;(Z-1)tree+loop,uds*)
-treeGegmRencon3[[All,2,All]]+loopGegm[[All,2,All]],(*29;(Z-1)tree+loop,u*)
-treeGegmRencon3[[All,3,All]]+loopGegm[[All,3,All]],(*30;(Z-1)tree+loop,d*)
-treeGegmRencon3[[All,4,All]]+loopGegm[[All,4,All]],(*31;(Z-1)tree+loop,s*)
-
-treeGegmRencon3[[All,2,All]]+loopGegm[[All,5,All]]+loopGegm[[All,8,All]],(*32;(Z-1)tree+quench+valence,u*)
-treeGegmRencon3[[All,3,All]]+loopGegm[[All,6,All]]+loopGegm[[All,9,All]],(*33;(Z-1)tree+quench+valence,d*)
-treeGegmRencon3[[All,4,All]]+loopGegm[[All,7,All]]+loopGegm[[All,10,All]](*34;(Z-1)tree+quench+valence,s*)
+treeGegmRencon2[[All,1,All]]+loopGegm[[All,1,All]](*18;tree+loop,uds total*)
 }
 ,{2,1,3}
-];
-
-
-(* ::DisplayFormula:: *)
-(*rearrangeSevaGegm,{2,18,8},{gegm,seva,io}*)
+],chopLimit];
+(*reSevaGegm//Dimensions
+{gegm,seva,io},{2,17,8}*)
 
 
 (* ::Section:: *)
@@ -818,7 +746,7 @@ funExprmt["-0.867","0.074"]
 
 dataList[gegm_]:=Transpose[
 Join[
-rearrangeSevaGegm[[gegm]],
+reSevaGegm[[gegm]],
 {
 dataExprmt[[gegm]],dataLattice[[gegm]],dataPaper[[gegm]]
 }

@@ -438,7 +438,7 @@ trf1f2={
 (*(*trf1f2 is [consti,octet,treef1f2][4*8*2]*)*)
 
 
-trgegm=Transpose[Chop[Table[Cancel[
+treeGegm=Transpose[Chop[Table[Cancel[
 {
 trf1f2[[All,io,1]]-Q2/(4constmo[[io]]^2) trf1f2[[All,io,2]],
 trf1f2[[All,io,1]]+trf1f2[[All,io,2]]
@@ -451,7 +451,7 @@ trf1f2[[All,io,1]]+trf1f2[[All,io,2]]
 
 
 (* ::DisplayFormula:: *)
-(*trgegm,{2,4,8},{gegm,seva,io}*)
+(*treeGegm,{2,4,8},{gegm,seva,io}*)
 
 
 (* ::Chapter:: *)
@@ -473,17 +473,6 @@ namesHorizontal={
 };
 
 
-seriesO0dataPath=FileNameJoin[{gitLocalName,"/expression-mfiles/",StringJoin["data_fit_",cFittingStr,"_rela_",errorbarQStr,"_series_o0_L_",parLambda0Str,"_ci_",parciStr,".m"]}]
-seriesO0data=Get[seriesO0dataPath];
-(*seriesO0data//Dimensions
-{2,8,37},{gegm,io,seva}*)
-(*\:63d0\:53d6\:51faseriesO0data\:4e2d\:5708\:56fe\:90e8\:5206\:7684\:503c*)
-loopSpan=Range[5,8]~Join~Range[13,21];
-zeroGegmValue=Transpose[seriesO0data[[All,All,loopSpan]],{1,3,2}];
-(*zeroGegmValue//Dimensions
-{2,13,8},{gegm,seva,io}*)
-
-
 octetCharge={
 (*1*)-1,(*2*)0,(*3*)1,
 (*4*)1,(*5*)0,
@@ -497,25 +486,37 @@ octetMageton={
  (*8*)\[Minus]0.613`20};
 
 
-rencon=Table[1,{seva,1,13,1},{io,1,8,1}];
-(*+++++++++++++++++renormalized according to charge+++++++++++++*)
-Table[
-rencon[[All,io]]=Abs[octetCharge[[io]]-Re[(Cancel[Chop[zeroGegmValue[[1,1,io]],chopLimit]]/.Q2->0)]]
-,{io,{1,3,4,6}}];
-rencon[[All,2]]=rencon[[All,3]];
-rencon[[All,5]]=rencon[[All,4]];
-rencon[[All,7]]=rencon[[All,6]];
-rencon[[All,8]]=Abs[1-Re[(Cancel[Chop[zeroGegmValue[[1,2,8]],chopLimit]]/.Q2->0)]];
-(*++++++++++++++++++++no renormalized+++++++++++++++++++++*)
-(*rencon\[LeftDoubleBracket]2,1\[RightDoubleBracket]=1;
-rencon\[LeftDoubleBracket]2,6\[RightDoubleBracket]=1;
-rencon\[LeftDoubleBracket]3,3\[RightDoubleBracket]=1;
-rencon\[LeftDoubleBracket]3,7\[RightDoubleBracket]=1;
-rencon\[LeftDoubleBracket]4,4\[RightDoubleBracket]=1;
-rencon\[LeftDoubleBracket]4,5\[RightDoubleBracket]=1;*)
-(*++++++++++++++++++++display+++++++++++++++++++++*)
-echo["calculated renormalization constants"];
-StringRiffle[rencon]
+(* ::DisplayFormula:: *)
+(*(*0\:9636\:7ed3\:679c\:7684\:4f4d\:7f6e*)*)
+(*seriesO0dataPath=FileNameJoin[{gitLocalName,"/expression-mfiles/",StringJoin["data_fit_",cFittingStr,"_rela_",errorbarQStr,"_series_o0_L_",parLambda0Str,"_ci_",parciStr,".m"]}];*)
+(*seriesO0data=Get[seriesO0dataPath];*)
+(*(*seriesO0data//Dimensions*)
+(*{2,8,37},{gegm,io,seva}*)*)
+(*(*\:63d0\:53d6\:51faseriesO0data\:4e2d\:5708\:56fe\:90e8\:5206\:7684\:503c*)*)
+(*loopSpan=Range[5,8]~Join~Range[13,21];*)
+(*zeroGegmValue=Transpose[seriesO0data[[All,All,loopSpan]],{1,3,2}];*)
+(*(*zeroGegmValue//Dimensions*)
+(*{2,13,8},{gegm,seva,io}*)*)
+(*(*\:5f00\:59cb\:8ba1\:7b97\:91cd\:6574\:5316\:5e38\:6570*)*)
+(*rencon=Table[1,{seva,1,13,1},{io,1,8,1}];*)
+(*(*+++++++++++++++++renormalized according to charge+++++++++++++*)*)
+(*Table[*)
+(*rencon[[All,io]]=Abs[octetCharge[[io]]-Re[(Cancel[Chop[zeroGegmValue[[1,1,io]],chopLimit]]/.Q2->0)]]*)
+(*,{io,{1,3,4,6}}];*)
+(*rencon[[All,2]]=rencon[[All,3]];*)
+(*rencon[[All,5]]=rencon[[All,4]];*)
+(*rencon[[All,7]]=rencon[[All,6]];*)
+(*rencon[[All,8]]=Abs[1-Re[(Cancel[Chop[zeroGegmValue[[1,2,8]],chopLimit]]/.Q2->0)]];*)
+(*(*++++++++++++++++++++no renormalized+++++++++++++++++++++*)*)
+(*(*rencon\[LeftDoubleBracket]2,1\[RightDoubleBracket]=1;*)
+(*rencon\[LeftDoubleBracket]2,6\[RightDoubleBracket]=1;*)
+(*rencon\[LeftDoubleBracket]3,3\[RightDoubleBracket]=1;*)
+(*rencon\[LeftDoubleBracket]3,7\[RightDoubleBracket]=1;*)
+(*rencon\[LeftDoubleBracket]4,4\[RightDoubleBracket]=1;*)
+(*rencon\[LeftDoubleBracket]4,5\[RightDoubleBracket]=1;*)*)
+(*(*++++++++++++++++++++display+++++++++++++++++++++*)*)
+(*echo["calculated renormalization constants"];*)
+(*StringRiffle[rencon]*)
 
 
 (* ::Chapter:: *)
@@ -613,15 +614,6 @@ octetnameabbr=
 
 figCutlimit=0.0001;
 figLeadersize=4;
-treeGegmRencon2=Transpose[(*\:8ba1\:7b97 total \:8d21\:732e\:65f6\:ff0c\:7528\:8fd9\:4e2a\:66f4\:65b9\:4fbf*)
-Transpose[trgegm,{2,3,1}]*rencon[[1]]
-,{3,1,2}
-];
-treeGegmRencon3=Transpose[(*\:8ba1\:7b97 loop \:8d21\:732e\:65f6\:ff0c\:7528\:8fd9\:4e2a\:66f4\:65b9\:4fbf*)
-Transpose[trgegm,{2,3,1}]*(rencon[[1]]-1)
-,{3,1,2}
-];
-
 
 
 precsn[Q2_]:=SetPrecision[Q2,16]/;NumericQ[Q2](*\:8fd9\:4e2a\:51fd\:6570\:5bf9\:8f93\:5165\:7684Q2\:8c03\:8282\:7cbe\:5ea6*)
@@ -638,82 +630,37 @@ Piecewise[
 ];
 (*loopGegm//Dimensions
 {2,13,8}*)
-(*+++++++++++++++++++\:603b\:8d21\:732e++++++++++++++++++*)
-totalGegm=Table[
-Piecewise[
-{
-{(treeGegmRencon2[[gegm,seva,io]]/.Q2->0)+zeroGegmValue[[gegm,seva,io]],Q2<=figCutlimit},
-{(treeGegmRencon2[[gegm,seva,io]])+nugegm[[gegm,seva,io]]/.{Q2->precsn[Q2]},Q2>figCutlimit}
-}
-]
-,{gegm,1,2,1}
-,{seva,1,4,1}
-,{io,1,8,1}
-];
-(*+++++++++++++++++++\:8ba1\:7b97 loop \:8d21\:732e\:65f6\:ff0c\:7528\:8fd9\:4e2a\:66f4\:65b9\:4fbf++++++++++++++++++*)
-loopRencon3Gegm=Table[
-Piecewise[
-{
-{(treeGegmRencon3[[gegm,seva,io]]/.Q2->0)+zeroGegmValue[[gegm,seva,io]],Q2<=figCutlimit},
-{(treeGegmRencon3[[gegm,seva,io]])+nugegm[[gegm,seva,io]]/.{Q2->precsn[Q2]},Q2>figCutlimit}
-}
-]
-,{gegm,1,2,1}
-,{seva,1,4,1}
-,{io,1,8,1}
-];
 
 
-reaSevaGegm=Chop[Transpose[
+reSevaGegm=Chop[Transpose[
 {
-trgegm[[All,1,All]],(*1;tree,uds*)
-trgegm[[All,2,All]],(*2;tree,u*)
-trgegm[[All,3,All]],(*3;tree,d*)
-trgegm[[All,4,All]],(*4;tree,s*)
+treeGegm[[All,1,All]],(*1;tree,uds*)
+treeGegm[[All,2,All]],(*2;tree,u*)
+treeGegm[[All,3,All]],(*3;tree,d*)
+treeGegm[[All,4,All]],(*4;tree,s*)
 
 loopGegm[[All,1,All]],(*5;loop,uds*)
 loopGegm[[All,2,All]],(*6;loop,u*)
 loopGegm[[All,3,All]],(*7;loop,d*)
 loopGegm[[All,4,All]],(*8;loop,s*)
 
-totalGegm[[All,1,All]],(*9;tree+loop,uds total *)
-totalGegm[[All,2,All]],(*10;tree+loop,u*)
-totalGegm[[All,3,All]],(*11;tree+loop,d*)
-totalGegm[[All,4,All]],(*12;tree+loop,s*)
+loopGegm[[All,5,All]],(*9;quench,u*)
+loopGegm[[All,6,All]],(*10;quench,d*)
+loopGegm[[All,7,All]],(*11;quench,s*)
 
-loopGegm[[All,5,All]],(*13;quench,u*)
-loopGegm[[All,6,All]],(*14;quench,d*)
-loopGegm[[All,7,All]],(*15;quench,s*)
+loopGegm[[All,8,All]],(*12;valence,u*)
+loopGegm[[All,9,All]],(*13;valence,d*)
+loopGegm[[All,10,All]],(*14;valence,s*)
 
-loopGegm[[All,8,All]],(*16;valence,u*)
-loopGegm[[All,9,All]],(*17;valence,d*)
-loopGegm[[All,10,All]],(*18;valence,s*)
+loopGegm[[All,11,All]],(*15;sea,u,*)
+loopGegm[[All,12,All]],(*16;sea,d*)
+loopGegm[[All,13,All]](*17;sea,s*)
 
-loopGegm[[All,11,All]],(*19;sea,u,*)
-loopGegm[[All,12,All]],(*20;sea,d*)
-loopGegm[[All,13,All]],(*21;sea,s*)
-
-loopGegm[[All,5,All]]+loopGegm[[All,8,All]],(*22;quench+valence,u*)
-loopGegm[[All,6,All]]+loopGegm[[All,9,All]],(*23;quench+valence,d*)
-loopGegm[[All,7,All]]+loopGegm[[All,10,All]],(*24;quench+valence,s*)
-
-treeGegmRencon2[[All,2,All]]+loopGegm[[All,5,All]]+loopGegm[[All,8,All]],(*25;tree+quench+valence,u*)
-treeGegmRencon2[[All,3,All]]+loopGegm[[All,6,All]]+loopGegm[[All,9,All]],(*26;tree+quench+valence,d*)
-treeGegmRencon2[[All,4,All]]+loopGegm[[All,7,All]]+loopGegm[[All,10,All]],(*27;tree+quench+valence,s*)
-
-loopRencon3Gegm[[All,1,All]],(*28;(Z-1)tree+loop,uds*)
-loopRencon3Gegm[[All,2,All]],(*29;(Z-1)tree+loop,u*)
-loopRencon3Gegm[[All,3,All]],(*30;(Z-1)tree+loop,d*)
-loopRencon3Gegm[[All,4,All]],(*31;(Z-1)tree+loop,s*)
-
-treeGegmRencon3[[All,2,All]]+loopGegm[[All,5,All]]+loopGegm[[All,8,All]],(*32;(Z-1)tree+quench+valence,u*)
-treeGegmRencon3[[All,3,All]]+loopGegm[[All,6,All]]+loopGegm[[All,9,All]],(*33;(Z-1)tree+quench+valence,d*)
-treeGegmRencon3[[All,4,All]]+loopGegm[[All,7,All]]+loopGegm[[All,10,All]](*34;(Z-1)tree+quench+valence,s*)
 }
 ,{2,1,3}
 ],chopLimit];
-(*reaSevaGegm//Dimensions
-{2,28,8}*)
+(*reSevaGegm//Dimensions
+{2,17,8}*)
 
 
 (* ::DisplayFormula:: *)
@@ -729,7 +676,7 @@ treeGegmRencon3[[All,4,All]]+loopGegm[[All,7,All]]+loopGegm[[All,10,All]](*34;(Z
 (*gegm*)
 
 
-figCalcBaryonsGegm=Table[0,{gegm,1,2,1},{seva,1,34,1},{io,1,8,1}];
+figCalcBaryonsGegm=Table[0,{gegm,1,2,1},{seva,1,17,1},{io,1,8,1}];
 (*gegm=1;seva=1;io=5;*)
 (*+++++++++++++++++++++++++++*)
 Module[{order=0,teff},
@@ -740,7 +687,7 @@ order++;
 If[IntegerQ[order/16],Print["gegm=",gegm,",seva=",seva,",io=",io]
 ];
 (*+++++++++++++++++++++++++++*)
-teff=reaSevaGegm[[gegm,seva,io]];
+teff=reSevaGegm[[gegm,seva,io]];
 Plot[
 teff(*\:8fd9\:91cc\:9664\:4ee5\:5f52\:4e00\:5316\:56e0\:5b50\:ff0c\:4f7f\:7528 Evaluate \:5148\:8ba1\:7b97\:8868\:8fbe\:5f0f*)
 ,{Q2,0,1},
@@ -753,7 +700,7 @@ Frame->True
 ]
 
 ,{gegm,1,2,1}
-,{seva,1,34,1}
+,{seva,1,17,1}
 ,{io,1,8,1}
 ,DistributedContexts->Automatic
 ]
