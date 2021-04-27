@@ -486,44 +486,35 @@ octetMageton={
  (*8*)\[Minus]0.613`20};
 
 
-(* ::DisplayFormula:: *)
-(*(*0\:9636\:7ed3\:679c\:7684\:4f4d\:7f6e*)*)
-(*seriesO0dataPath=FileNameJoin[{gitLocalName,"/expression-mfiles/",StringJoin["data_fit_",cFittingStr,"_rela_",errorbarQStr,"_series_o0_L_",parLambda0Str,"_ci_",parciStr,".m"]}];*)
-(*seriesO0data=Get[seriesO0dataPath];*)
-(*(*seriesO0data//Dimensions*)
-(*{2,8,37},{gegm,io,seva}*)*)
-(*(*\:63d0\:53d6\:51faseriesO0data\:4e2d\:5708\:56fe\:90e8\:5206\:7684\:503c*)*)
-(*loopSpan=Range[5,8]~Join~Range[13,21];*)
-(*zeroGegmValue=Transpose[seriesO0data[[All,All,loopSpan]],{1,3,2}];*)
-(*(*zeroGegmValue//Dimensions*)
-(*{2,13,8},{gegm,seva,io}*)*)
-(*(*\:5f00\:59cb\:8ba1\:7b97\:91cd\:6574\:5316\:5e38\:6570*)*)
-(*rencon=Table[1,{seva,1,13,1},{io,1,8,1}];*)
-(*(*+++++++++++++++++renormalized according to charge+++++++++++++*)*)
-(*Table[*)
-(*rencon[[All,io]]=Abs[octetCharge[[io]]-Re[(Cancel[Chop[zeroGegmValue[[1,1,io]],chopLimit]]/.Q2->0)]]*)
-(*,{io,{1,3,4,6}}];*)
-(*rencon[[All,2]]=rencon[[All,3]];*)
-(*rencon[[All,5]]=rencon[[All,4]];*)
-(*rencon[[All,7]]=rencon[[All,6]];*)
-(*rencon[[All,8]]=Abs[1-Re[(Cancel[Chop[zeroGegmValue[[1,2,8]],chopLimit]]/.Q2->0)]];*)
-(*(*++++++++++++++++++++no renormalized+++++++++++++++++++++*)*)
-(*(*rencon\[LeftDoubleBracket]2,1\[RightDoubleBracket]=1;*)
-(*rencon\[LeftDoubleBracket]2,6\[RightDoubleBracket]=1;*)
-(*rencon\[LeftDoubleBracket]3,3\[RightDoubleBracket]=1;*)
-(*rencon\[LeftDoubleBracket]3,7\[RightDoubleBracket]=1;*)
-(*rencon\[LeftDoubleBracket]4,4\[RightDoubleBracket]=1;*)
-(*rencon\[LeftDoubleBracket]4,5\[RightDoubleBracket]=1;*)*)
-(*(*++++++++++++++++++++display+++++++++++++++++++++*)*)
-(*echo["calculated renormalization constants"];*)
-(*StringRiffle[rencon]*)
+(*\:5bfc\:51650\:9636\:7ed3\:679c*)
+seriesO0dataPath=FileNameJoin[{gitLocalName,"/expression-mfiles/",StringJoin["data_fit_",cFittingStr,"_rela_",errorbarQStr,"_series_o0_L_",parLambda0Str,"_ci_",parciStr,".m"]}];
+seriesO0data=Get[seriesO0dataPath];
+(*seriesO0data//Dimensions
+{2,8,37},{gegm,io,seva}*)
+loopSpan=Range[5,17];(*\:63d0\:53d6\:51faseriesO0data\:4e2d\:5708\:56fe\:90e8\:5206\:7684\:503c*)
+zeroGegmValue=Transpose[seriesO0data[[All,All,loopSpan]],{1,3,2}];
+(*zeroGegmValue//Dimensions
+{2,13,8},{gegm,seva,io}*)
+(*\:5f00\:59cb\:8ba1\:7b97\:91cd\:6574\:5316\:5e38\:6570*)
+rencon=Table[1,{seva,1,13,1},{io,1,8,1}];
+(*+++++++++++++++++renormalized according to charge+++++++++++++*)
+Table[
+rencon[[All,io]]=Abs[octetCharge[[io]]-Re[(Cancel[Chop[zeroGegmValue[[1,1,io]],chopLimit]]/.Q2->0)]]
+,{io,{1,3,4,6}}];
+rencon[[All,2]]=rencon[[All,3]];
+rencon[[All,5]]=rencon[[All,4]];
+rencon[[All,7]]=rencon[[All,6]];
+rencon[[All,8]]=Abs[1-Re[(Cancel[Chop[zeroGegmValue[[1,2,8]],chopLimit]]/.Q2->0)]];
+(*++++++++++++++++++++display+++++++++++++++++++++*)
+echo["calculated renormalization constants"];
+StringRiffle[rencon]
 
 
 (* ::Chapter:: *)
 (*graphics automatic & optimize*)
 
 
-(* ::Section:: *)
+(* ::Section::Closed:: *)
 (*experimental value*)
 
 
@@ -571,14 +562,11 @@ octetMageton={
 (*\[CapitalXi]m \[Mu]=\[Minus]0.6507\[PlusMinus]0.0025 \[Mu]N*)
 
 
-(* ::Section:: *)
-(*name*)
-
-
-octetname=
-{"1\[CapitalSigma]m","2\[CapitalSigma]0","3\[CapitalSigma]p","4pr","5ne" ,"6\[CapitalXi]m","7\[CapitalXi]0","8\[CapitalLambda]"};
-octetnameabbr=
-{"\[CapitalSigma]m","\[CapitalSigma]0","\[CapitalSigma]p","pr","ne","\[CapitalXi]m","\[CapitalXi]0","\[CapitalLambda]"};
+(* ::DisplayFormula:: *)
+(*octetname=*)
+(*{"1\[CapitalSigma]m","2\[CapitalSigma]0","3\[CapitalSigma]p","4pr","5ne" ,"6\[CapitalXi]m","7\[CapitalXi]0","8\[CapitalLambda]"};*)
+(*octetnameabbr=*)
+(*{"\[CapitalSigma]m","\[CapitalSigma]0","\[CapitalSigma]p","pr","ne","\[CapitalXi]m","\[CapitalXi]0","\[CapitalLambda]"};*)
 
 
 (* ::DisplayFormula:: *)

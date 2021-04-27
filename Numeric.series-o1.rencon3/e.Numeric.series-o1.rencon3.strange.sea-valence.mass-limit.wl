@@ -30,7 +30,7 @@ gitLocalName=FileNameJoin[Append[TakeWhile[FileNameSplit[ExpandFileName[fileName
 
 
 inputSim={"/home/tom/octet.formfactor/Numeric.series-o1.rencon3/e.Numeric.series-o1.rencon3.strange.sea-valence.mass-limit.wl",
-"o1","0.90","1.50","Baryons","notbar"};
+"o1","0.80`20","1.00`20","Sigma1","L_0.90_ci_1.00"};
 (*\:5982\:679c\:5728\:547d\:4ee4\:884c\:6267\:884c\:ff0c\:5c31\:91c7\:7528\:547d\:4ee4\:884c\:53c2\:6570*)
 If[cmdQ,
 inputCml=$ScriptCommandLine,
@@ -382,16 +382,8 @@ nuff1[[All,io,All]]+nuff2[[All,io,All]]
 
 
 octetname={"1\[CapitalSigma]m","2\[CapitalSigma]0","3\[CapitalSigma]p","4pr","5ne" ,"6\[CapitalXi]m","7\[CapitalXi]0","8\[CapitalLambda]"};
-
-
-(* ::Section:: *)
-(*loop derivative coefficient*)
-
-
-(* ::DisplayFormula:: *)
-(*nugegm,{2,4,8,11},{gegm,seva,io,if}*)
-
-
+(*nugegm,{2,4,8,11},{gegm,seva,io,if}
+\:5708\:56fe\:5bfc\:6570\:9879\:7684\:7cfb\:6570*)
 loopIfGegmValue=Table[
 Chop[
 SeriesCoefficient[nugegm[[gegm,seva,io,if]],{Q2,0,series}]/.Q2->0,
@@ -795,27 +787,6 @@ reRadius2GegmSeva,{2,28,8},{gegm,seva,io}
 
 (* ::Section:: *)
 (*show radius*)
-
-
-(* ::DisplayFormula:: *)
-(*treeGegm,{2,2,4,8},{gegm,order,seva1,io}*)
-
-
-(* ::DisplayFormula:: *)
-(*loopGegm,{2,2,13,8},{gegm,order,seva1,io}*)
-
-
-(* ::DisplayFormula:: *)
-(****************************************************)
-
-
-(* ::DisplayFormula:: *)
-(*reSevaGegm,{2,2,18,8},{gegm,order,seva2,io}*)
-(*reRadius2GegmSeva,{2,18,8},{gegm,seva2,io}*)
-
-
-(* ::DisplayFormula:: *)
-(****************************************************)
 
 
 (* ::DisplayFormula:: *)
