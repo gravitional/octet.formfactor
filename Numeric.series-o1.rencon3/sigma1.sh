@@ -15,6 +15,7 @@ for lambda in "${lambdaList[@]}"; do
 done
 
 ## start the ci=1.5 numeric
+declare -a lambdaList=('0.80' '0.90' '1.00')
 for lambda in "${lambdaList[@]}"; do
     wolframscript -print 'all' -file $wlscript $order ${lambda}${prcs} '1.50'${prcs} ${fitting} ${errobarQ}
     echo -e "\n\n$(date)"
