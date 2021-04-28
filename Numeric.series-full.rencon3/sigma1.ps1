@@ -6,19 +6,21 @@ $prcs = '`20'
 $wlscript = '.\e.Numeric.series-full.rencon3.strange.wl'
 $fitting = 'Sigma1'
 
+Get-Date
 ## start the ci=1.0 numeric
-$errobarQ = 'notbar'
-${lambdaList} = @('0.80', '0.90', '1.00')
-foreach (${lambda} in $lambdaList) {
-    wolframscript.exe -print 'all' -file $wlscript $order (${lambda} + ${prcs}) ('1.00' + ${prcs}) ${fitting} ${errobarQ}
-    Start-Sleep -Seconds 2
-}
+# $errobarQ = 'notbar'
+# ${lambdaList} = @('0.80', '0.90', '1.00')
+# foreach (${lambda} in $lambdaList) {
+#     wolframscript.exe -print 'all' -file $wlscript $order (${lambda} + ${prcs}) ('1.00' + ${prcs}) ${fitting} ${errobarQ}
+#     Get-Date
+# }
 
 ## start the ci=1.5 numeric
 $errobarQ = 'notbar'
+${lambdaList} = @('0.80', '0.90', '1.00')
 foreach (${lambda} in $lambdaList) {
     wolframscript.exe -print 'all' -file $wlscript $order (${lambda} + ${prcs})   ('1.50' + ${prcs})  ${fitting} ${errobarQ}
-    Start-Sleep -Seconds 2
+    Get-Date
 }
 
 ## 原型
