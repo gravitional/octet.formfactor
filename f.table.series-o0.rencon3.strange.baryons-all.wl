@@ -31,7 +31,7 @@ echo["the gitLocalName is"]
 gitLocalName=FileNameJoin[Append[TakeWhile[FileNameSplit[ExpandFileName[fileName]],UnsameQ[#1,gitRemoteName]&],gitRemoteName]](*\:5b9a\:4e49\:672c\:5730git\:76ee\:5f55\:ff0c\:4e5f\:5c31\:662f\:7a0b\:5e8f\:7684\:6839\:76ee\:5f55*)
 
 
-(* ::Chapter:: *)
+(* ::Section:: *)
 (*initial parameters*)
 
 
@@ -60,7 +60,7 @@ echo["Please check the input parameters"];Abort[]
 ]
 
 
-(* ::Chapter:: *)
+(* ::Section:: *)
 (*import *)
 
 
@@ -92,7 +92,117 @@ dataSeriesRaw,{3,2,8,37},{conf,gegm,io,seva}*)
 
 
 (* ::Chapter:: *)
-(*formatting*)
+(*\:91cd\:7ec4\:6570\:636e*)
+
+
+(* ::Section:: *)
+(*rencon2.13*)
+
+
+octetCharge={
+(*1*)-1,(*2*)0,(*3*)1,
+(*4*)1,(*5*)0,
+(*6*)-1,(*7*)0,
+(*8*)0
+};
+rencon=Table[1,{conf,1,3,1},{io,1,8,1}];
+(*+++++++++++++++++renormalized according to charge+++++++++++++*)
+Do[
+rencon[[conf,io]]=Abs[octetCharge[[io]]-dataSeriesRaw[[conf,gegm=1,io,seva=5]]]
+,{conf,1,3,1},{io,{1,3,4,6}}
+];
+rencon[[All,2]]=rencon[[All,3]];
+rencon[[All,5]]=rencon[[All,4]];
+rencon[[All,7]]=rencon[[All,6]];
+rencon[[All,8]]=Abs[1-dataSeriesRaw[[conf=All,gegm=1,io=8,seva=6]]];
+(*++++++++++++++++++++display+++++++++++++++++++++*)
+echo["calculated renormalization constants"];
+StringRiffle[rencon]
+
+
+treeGegm=dataSeriesRaw[[conf=All,gegm=All,io=All,seva=1;;4]];
+(*\:8ba1\:7b97 total \:8d21\:732e\:65f6\:ff0c\:7528treeGegmRencon2\:66f4\:65b9\:4fbf*)
+treeGegmRencon2=Table[
+treeGegm[[conf,gegm,io,seva]]*rencon[[conf,io]]
+,{conf,1,3,1}
+,{gegm,1,2,1}
+,{io,1,8,1}
+,{seva,1,4,1}
+];
+(*\:8ba1\:7b97 loop \:8d21\:732e\:65f6\:ff0c\:7528treeGegmRencon3\:66f4\:65b9\:4fbf*)
+treeGegmRencon3=Table[
+treeGegm[[conf,gegm,io,seva]]*(rencon[[conf,io]]-1)
+,{conf,1,3,1}
+,{gegm,1,2,1}
+,{io,1,8,1}
+,{seva,1,4,1}
+];
+(*\:5708\:56fe\:7684\:503c\:ff0c\:6309\:7167loop,quench, sea, valence \:6392\:5e8f*)
+loopGegm=dataSeriesRaw[[conf=All,gegm=All,io=All,seva=5;;17]];
+(*\:7ed9\:51fa\:5708\:56fe\:7684\:96f6\:70b9\:503c,total = tree +(Z-1)*tree+loop*)
+(*treeGegm//Dimensions
+treeGegmRencon2//Dimensions
+treeGegmRencon3//Dimensions
+loopGegm//Dimensions*)
+
+
+reSevaGegm=Transpose[{
+treeGegm[[All,All,All,1]],(*1;tree,uds*)
+treeGegm[[All,All,All,2]],(*2;tree,u*)
+treeGegm[[All,All,All,3]],(*3;tree,d*)
+treeGegm[[All,All,All,4]],(*4;tree,s*)
+
+loopGegm[[All,All,All,1]],(*5;loop,uds*)
+loopGegm[[All,All,All,2]],(*6;loop,u*)
+loopGegm[[All,All,All,3]],(*7;loop,d*)
+loopGegm[[All,All,All,4]],(*8;loop,s*)
+
+loopGegm[[All,All,All,5]],(*9;quench,u*)
+loopGegm[[All,All,All,6]],(*10;quench,d*)
+loopGegm[[All,All,All,7]],(*11;quench,s*)
+
+loopGegm[[All,All,All,8]],(*12;valence,u*)
+loopGegm[[All,All,All,9]],(*13;valence,d*)
+loopGegm[[All,All,All,10]],(*14;valence,s*)
+
+loopGegm[[All,All,All,11]],(*15;sea,u,*)
+loopGegm[[All,All,All,12]],(*16;sea,d*)
+loopGegm[[All,All,All,13]],(*17;sea,s*)
+
+treeGegmRencon2[[All,All,All,1]]+loopGegm[[All,All,All,1]],(*18;Z*tree+loop,uds total*)
+treeGegmRencon2[[All,All,All,2]]+loopGegm[[All,All,All,2]],(*19;Z*tree+loop,u*)
+treeGegmRencon2[[All,All,All,3]]+loopGegm[[All,All,All,3]],(*20;Z*tree+loop,d*)
+treeGegmRencon2[[All,All,All,4]]+loopGegm[[All,All,All,4]],(*21;Z*tree+loop,s*)
+
+treeGegmRencon3[[All,All,All,1]]+loopGegm[[All,All,All,1]],(*22;(Z-1)tree+loop,uds total*)
+treeGegmRencon3[[All,All,All,2]]+loopGegm[[All,All,All,2]],(*23;(Z-1)tree+loop,u*)
+treeGegmRencon3[[All,All,All,3]]+loopGegm[[All,All,All,3]],(*24;(Z-1)tree+loop,d*)
+treeGegmRencon3[[All,All,All,4]]+loopGegm[[All,All,All,4]],(*25;(Z-1)tree+loop,s*)
+
+loopGegm[[All,All,All,5]]+loopGegm[[All,All,All,8]],(*26;quench+valence,u,*)
+loopGegm[[All,All,All,6]]+loopGegm[[All,All,All,9]],(*27;quench+valence,d,*)
+loopGegm[[All,All,All,7]]+loopGegm[[All,All,All,10]],(*28;quench+valence,s,*)
+
+treeGegmRencon2[[All,All,All,2]]+loopGegm[[All,All,All,5]]+loopGegm[[All,All,All,8]],(*29;Z*tree+quench+loop,u*)
+treeGegmRencon2[[All,All,All,3]]+loopGegm[[All,All,All,6]]+loopGegm[[All,All,All,9]],(*30;Z*tree+quench+loop,d*)
+treeGegmRencon2[[All,All,All,4]]+loopGegm[[All,All,All,7]]+loopGegm[[All,All,All,10]],(*31;Z*tree+quench+loop,s*)
+
+treeGegmRencon3[[All,All,All,2]]+loopGegm[[All,All,All,5]]+loopGegm[[All,All,All,8]],(*32;Z*tree+quench+loop,u*)
+treeGegmRencon3[[All,All,All,3]]+loopGegm[[All,All,All,6]]+loopGegm[[All,All,All,9]],(*33;Z*tree+quench+loop,d*)
+treeGegmRencon3[[All,All,All,4]]+loopGegm[[All,All,All,7]]+loopGegm[[All,All,All,10]],(*34;Z*tree+quench+loop,s*)
+
+dataSeriesRaw[[All,All,All,19]],(*35,exprmt*)
+dataSeriesRaw[[All,All,All,20]],(*36,lattice*)
+dataSeriesRaw[[All,All,All,21]](*37,paper*)
+}
+,{4,1,2,3}
+];
+(*reSevaGegm//Dimensions
+{gegm,seva,io},{2,17,8}*)
+
+
+(* ::Section:: *)
+(*\:8ba1\:7b97\:8bef\:5dee*)
 
 
 (*dataSeriesRaw,{3,2,8,37},{conf,gegm,io,seva}
@@ -100,13 +210,13 @@ dataSeriesRaw,{3,2,8,37},{conf,gegm,io,seva}*)
 \:6307\:5b9a\:4e2d\:5fc3\:6570\:636e\:70b9\:ff0c\:7136\:540e\:7ed9\:5b83\:52a0\:4e0a\:4e0b errorbar
 \:4e2d\:5fc3\:6570\:636e\:70b9\:7684\:6307\:6807\:4e3a2*)
 dataCenter=2;
-dataSeries=dataSeriesRaw[[dataCenter]];
+dataSeries=reSevaGegm[[dataCenter]];
 (*dataSeries//Dimensions
 dataSeries,{2,8,37},{gegm,io,seva}*)
 
 
 Module[{teData},(*\:5bf9\:4e8e\:603b\:8d21\:732e\:7684seva\:ff0c\:6539\:5199\:6210\:6709\:8bef\:5dee\:5e26\:7684\:5f62\:5f0f*)
-gegm=2;io=1;seva=9;(*seva 9 \:662f\:603b\:8d21\:732e\:7684\:4f4d\:7f6e*)
+gegm=2;io=1;seva=18;(*seva 18 \:662f\:603b\:8d21\:732e\:7684\:4f4d\:7f6e*)
 dataSeries[[All,All,seva]]=Table[
 teData=dataSeriesRaw[[All,gegm,io,seva]];
 PlusMinus[teData[[2]],Mean[Abs[teData[[{1,3}]]-teData[[2]]]]]
@@ -114,9 +224,8 @@ PlusMinus[teData[[2]],Mean[Abs[teData[[{1,3}]]-teData[[2]]]]]
 ,{io,1,8,1}
 ];
 ]
-
-
-choplimit=10^-8;(*\:5bf9\:6570\:636e\:663e\:793a\:683c\:5f0f\:5316\:7684\:7cbe\:786e\:5ea6\:63a7\:5236*)
+(*\:5bf9\:6570\:636e\:663e\:793a\:683c\:5f0f\:5316\:7684\:7cbe\:786e\:5ea6\:63a7\:5236*)
+choplimit=10^-8;
 dataSeriesTrim=Map[NumberForm[Chop[#1,choplimit],{6,3}]&,dataSeries,{-1}];
 (*dataSeriesTrim//Dimensions
 {2,8,37}*)
@@ -143,50 +252,26 @@ namesHorizontal(*\:6a2a\:7740\:7684\:540d\:79f0\:ff0c\:5e94\:8be5+1\:ff0c\:4ee5\
 
 
 namesVertical={"\[CapitalSigma]m","\[CapitalSigma]0","\[CapitalSigma]p","pr","ne","\[CapitalXi]m","\[CapitalXi]0","\[CapitalLambda]"};(*octet \:540d\:79f0\:7f29\:5199*)
-namesHorizontal={
-{"Ge",
+namesHorizontal1={
 (*1:*)"tree,uds",(*2:*)"tree,u",(*3:*)"tree,d",(*4:*)"tree,s",
 (*5:*)"loop,uds",(*6:*)"loop,u",(*7:*)"loop,d",(*8:*)"loop,s",
-(*9:*)"tree+loop,uds",(*10:*)"tree+loop,u",(*11:*)"tree+loop,d",(*12:*)"tree+loop,s",
-(*13:*)"quench,u",(*14:*)"quench d",(*15:*)"quench,s",
-(*16:*)"valence,u",(*17:*)"valence,d",(*18:*)"valence,s",
-(*19:*)"sea,u",(*20:*)"sea,d",(*21:*)"sea,s",
-(*22:*)"quench+valence,u",(*23:*)"quench+valence,d",(*24:*)"quench+valence,s",
-(*25:*)"tree+quench+valence,u",(*26:*)"tree+quench+valence,d",(*27:*)"tree+quench+valence,s",
-(*28:*)"(Z-1)tree+loop,uds",(*29:*)"(Z-1)tree+loop,u",(*30:*)"(Z-1)tree+loop,d",(*31:*)"(Z-1)tree+loop,s",
+(*9:*)"quench,u",(*10:*)"quench d",(*11:*)"quench,s",
+(*12:*)"valence,u",(*13:*)"valence,d",(*14:*)"valence,s",
+(*15:*)"sea,u",(*16:*)"sea,d",(*17:*)"sea,s",
+(*18:*)"Z*tree+loop,uds",(*19:*)"Z*tree+loop,u",(*20:*)"Z*tree+loop,d",(*21:*)"Z*tree+loop,s",
+(*22:*)"(Z-1)tree+loop,uds",(*23:*)"(Z-1)tree+loop,u",(*24:*)"(Z-1)tree+loop,d",(*25:*)"(Z-1)tree+loop,s",
+(*26:*)"quench+valence,u",(*27:*)"quench+valence,d",(*28:*)"quench+valence,s",
+(*29:*)"Z*tree+quench+valence,u",(*30:*)"Z*tree+quench+valence,d",(*31:*)"Z*tree+quench+valence,s",
 (*32:*)"(Z-1)tree+quench+valence,u",(*33:*)"(Z-1)tree+quench+valence,d",(*34:*)"(Z-1)tree+quench+valence,s",
 (*35:*)"exprmt.",(*36:*)"lattice",(*37:*)"paper"
-},
-{"\[Mu]",
-(*1:*)"tree,uds",(*2:*)"tree,u",(*3:*)"tree,d",(*4:*)"tree,s",
-(*5:*)"loop,uds",(*6:*)"loop,u",(*7:*)"loop,d",(*8:*)"loop,s",
-(*9:*)"tree+loop,uds",(*10:*)"tree+loop,u",(*11:*)"tree+loop,d",(*12:*)"tree+loop,s",
-(*13:*)"quench,u",(*14:*)"quench d",(*15:*)"quench,s",
-(*16:*)"valence,u",(*17:*)"valence,d",(*18:*)"valence,s",
-(*19:*)"sea,u",(*20:*)"sea,d",(*21:*)"sea,s",
-(*22:*)"quench+valence,u",(*23:*)"quench+valence,d",(*24:*)"quench+valence,s",
-(*25:*)"tree+quench+valence,u",(*26:*)"tree+quench+valence,d",(*27:*)"tree+quench+valence,s",
-(*28:*)"(Z-1)tree+loop,uds",(*29:*)"(Z-1)tree+loop,u",(*30:*)"(Z-1)tree+loop,d",(*31:*)"(Z-1)tree+loop,s",
-(*32:*)"(Z-1)tree+quench+valence,u",(*33:*)"(Z-1)tree+quench+valence,d",(*34:*)"(Z-1)tree+quench+valence,s",
-(*35:*)"exprmt.",(*36:*)"lattice",(*37:*)"paper"
-}
 };
-
-
+namesHorizontal={Join[{"Ge"},namesHorizontal1],Join[{"\[Mu]"},namesHorizontal1]};
 dataBackground={
 None,(* color horizontal: x1, x2, x3...*)
 {
 LightCyan,{None,LightBlue}
 }(* color vertical: y1, y2, y3...*)
 };
-
-
-(* ::DisplayFormula:: *)
-(*Q2tableRearrange=Function[{namesHorizontal,namesHorizontal,dataList,backGround},*)
-
-
-(* ::DisplayFormula:: *)
-(*dataSeries,{2,8,6},{gegm,io,seva}*)
 
 
 tabFontsize=12;(*\:8868\:683c\:5b57\:4f53\:5c3a\:5bf8*)gegm=1;
