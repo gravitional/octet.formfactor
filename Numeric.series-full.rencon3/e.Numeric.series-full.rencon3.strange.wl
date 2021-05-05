@@ -420,24 +420,7 @@ trf1f2={
 {((12 mo^2+(3+4 c1+3 c3) Q2) \[CapitalLambda]0^4)/(3 (4 mo^2+Q2) (Q2+\[CapitalLambda]0^2)^2),(4 (4 c1+3 c3) mo^2 \[CapitalLambda]0^4)/(3 (4 mo^2+Q2) (Q2+\[CapitalLambda]0^2)^2)}}
 }/.mo->mN;
 (*trf1f2 is [consti,octet,treef1f2][4*8*2]*)
-
-
-(* ::Section:: *)
 (*gegm*)
-
-
-(* ::DisplayFormula:: *)
-(*-I el  (4 mN^2+c1 Q2)/(4 mN^2+Q2) ,-(-el /(2mN)) (4 (c1-1) mN^2)/(4 mN^2+Q2)*)
-
-
-(* ::DisplayFormula:: *)
-(*netrf1f2[[4]]={ (4 mN^2+c1 Q2)/(4 mN^2+Q2) \[CapitalLambda]^4/(\[CapitalLambda]^2+Q2)^2,(4 (c1-1) mN^2)/(4 mN^2+Q2) \[CapitalLambda]^4/(\[CapitalLambda]^2+Q2)^2}/.baselist*)
-
-
-(* ::Input:: *)
-(*(*trf1f2 is [consti,octet,treef1f2][4*8*2]*)*)
-
-
 treeGegm=Transpose[Chop[Table[Cancel[
 {
 trf1f2[[All,io,1]]-Q2/(4constmo[[io]]^2) trf1f2[[All,io,2]],
@@ -448,9 +431,6 @@ trf1f2[[All,io,1]]+trf1f2[[All,io,2]]
 ,chopLimit
 ]
 ,{3,1,2}];//AbsoluteTiming
-
-
-(* ::DisplayFormula:: *)
 (*treeGegm,{2,4,8},{gegm,seva,io}*)
 
 
