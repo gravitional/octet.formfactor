@@ -147,10 +147,10 @@ loopGegm//Dimensions*)
 
 
 reSevaGegm=Transpose[{
-treeGegm[[All,All,All,1]],(*1;tree,uds*)
-treeGegm[[All,All,All,2]],(*2;tree,u*)
-treeGegm[[All,All,All,3]],(*3;tree,d*)
-treeGegm[[All,All,All,4]],(*4;tree,s*)
+treeGegmRencon2[[All,All,All,1]],(*1;Z*tree,uds*)
+treeGegmRencon2[[All,All,All,2]],(*2;Z*tree,u*)
+treeGegmRencon2[[All,All,All,3]],(*3;Z*tree,d*)
+treeGegmRencon2[[All,All,All,4]],(*4;Z*tree,s*)
 
 loopGegm[[All,All,All,1]],(*5;loop,uds*)
 loopGegm[[All,All,All,2]],(*6;loop,u*)
@@ -253,7 +253,7 @@ namesHorizontal(*\:6a2a\:7740\:7684\:540d\:79f0\:ff0c\:5e94\:8be5+1\:ff0c\:4ee5\
 
 namesVertical={"\[CapitalSigma]m","\[CapitalSigma]0","\[CapitalSigma]p","pr","ne","\[CapitalXi]m","\[CapitalXi]0","\[CapitalLambda]"};(*octet \:540d\:79f0\:7f29\:5199*)
 namesHorizontal1={
-(*1:*)"tree,uds",(*2:*)"tree,u",(*3:*)"tree,d",(*4:*)"tree,s",
+(*1:*)"Z*tree,uds",(*2:*)"Z*tree,u",(*3:*)"Z*tree,d",(*4:*)"Z*tree,s",
 (*5:*)"loop,uds",(*6:*)"loop,u",(*7:*)"loop,d",(*8:*)"loop,s",
 (*9:*)"quench,u",(*10:*)"quench d",(*11:*)"quench,s",
 (*12:*)"valence,u",(*13:*)"valence,d",(*14:*)"valence,s",
@@ -265,7 +265,7 @@ namesHorizontal1={
 (*32:*)"(Z-1)tree+quench+valence,u",(*33:*)"(Z-1)tree+quench+valence,d",(*34:*)"(Z-1)tree+quench+valence,s",
 (*35:*)"exprmt.",(*36:*)"lattice",(*37:*)"paper"
 };
-namesHorizontal={Join[{"Ge"},namesHorizontal1],Join[{"\[Mu]"},namesHorizontal1]};
+namesHorizontal[gegm_,seva_]:=Join[{{"Ge"},{"\[Mu]"}}[[gegm]],namesHorizontal1[[seva]]];
 dataBackground={
 None,(* color horizontal: x1, x2, x3...*)
 {
@@ -274,16 +274,16 @@ LightCyan,{None,LightBlue}
 };
 
 
-tabFontsize=12;(*\:8868\:683c\:5b57\:4f53\:5c3a\:5bf8*)gegm=1;
+tabFontsize=12;(*\:8868\:683c\:5b57\:4f53\:5c3a\:5bf8*)gegm=1;io=All;seva={1,5,18,15,16,17,26,27,28,35};
 seriesGeTotal=Style[
 Multicolumn[
 {(* Multicolumn\:7684\:53c2\:6570\:9700\:8981\:4e00\:4e2a{}*)
 (*+++++++++++++++++++++++++sea-valence part  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*)
 Q2tableRearrange[
-namesHorizontal[[gegm]],(*\:6a2a\:7740\:7684\:540d\:79f0*)
+namesHorizontal[gegm,seva],(*\:6a2a\:7740\:7684\:540d\:79f0*)
 namesVertical,(*\:7ad6\:7740\:7684\:540d\:79f0*)
 (*****************************data list start********************************)
-dataSeriesTrim[[gegm]],
+dataSeriesTrim[[gegm,io,seva]],(*\:8ba1\:7b97\:51fa\:7684\:6570\:636e\:ff0cgegm,io,seva*)
 (********************************start backGround*******************************************)
 dataBackground
 ]
@@ -296,16 +296,16 @@ dataBackground
 If[!cmdQ,Print[seriesGeTotal]]
 
 
-gegm=2;
+tabFontsize=12;(*\:8868\:683c\:5b57\:4f53\:5c3a\:5bf8*)gegm=2;io=All;seva={1,5,18,15,16,17,26,27,28,35};
 seriesGmTotal=Style[
 Multicolumn[
 {(* paras of column need an {} *)
 (*+++++++++++++++++++++++++sea-valence part  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*)
 Q2tableRearrange[(*legend name*)
-namesHorizontal[[gegm]],(*column name*)
-namesVertical,(*row name*)
+namesHorizontal[gegm,seva],(*\:6a2a\:7740\:7684\:540d\:79f0*)
+namesVertical,(*\:7ad6\:7740\:7684\:540d\:79f0*)
 (*****************************data list start********************************)
-dataSeriesTrim[[gegm]],
+dataSeriesTrim[[gegm,io,seva]],(*\:8ba1\:7b97\:51fa\:7684\:6570\:636e\:ff0cgegm,io,seva*)
 (********************************start backGround*******************************************)
 dataBackground
 ]
