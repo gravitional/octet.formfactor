@@ -944,15 +944,10 @@ chopLimit]
 dataVtitle={
 (*1:*)"tree,uds",(*2:*)"tree,u",(*3:*)"tree,d",(*4:*)"tree,s",
 (*5:*)"loop,uds",(*6:*)"loop,u",(*7:*)"loop,d",(*8:*)"loop,s",
-(*9:*)"tree+loop,uds",(*10:*)"tree+loop,u",(*11:*)"tree+loop,d",(*12:*)"tree+loop,s",
-(*13:*)"quench,u",(*14:*)"quench d",(*15:*)"quench,s",
-(*16:*)"valence,u",(*17:*)"valence,d",(*18:*)"valence,s",
-(*19:*)"sea,u",(*20:*)"sea,d",(*21:*)"sea,s",
-(*22:*)"quench+valence,u",(*23:*)"quench+valence,d",(*24:*)"quench+valence,s",
-(*25:*)"tree+quench+valence,u",(*26:*)"tree+quench+valence,d",(*27:*)"tree+quench+valence,s",
-(*28:*)"(Z-1)tree+loop,uds",(*29:*)"(Z-1)tree+loop,u",(*30:*)"(Z-1)tree+loop,d",(*31:*)"(Z-1)tree+loop,s",
-(*32:*)"(Z-1)tree+quench+valence,u",(*33:*)"(Z-1)tree+quench+valence,d",(*34:*)"(Z-1)tree+quench+valence,s",
-(*35:*)"exprmt.",(*36:*)"lattice",(*37:*)"paper"
+(*9:*)"quench,u",(*10*)"quench d",(*11:*)"quench,s",
+(*12:*)"valence,u",(*13:*)"valence,d",(*14:*)"valence,s",
+(*15:*)"sea,u",(*16:*)"sea,d",(*17:*)"sea,s",(*18:*)"tree+loop,uds",
+(*19:*)"exprmt.",(*20:*)"lattice",(*21:*)"paper"
 };
 (*\:9009\:62e9\:7ed8\:5236\:7684\:6570\:636e\:8303\:56f4\:ff0c\:7528Span[]\:6216\:8005\:5217\:8868\:6307\:5b9a,gegm = 1; seva = 1;tableRadius[gegm, seva, Q2]*)
 seva={1,5,9,10};

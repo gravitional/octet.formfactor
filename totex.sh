@@ -19,6 +19,9 @@ cp ${rstPath}'sigma_Fig10.pdf' ${paperPath}"fig10.pdf"
 # 复制表格
 cp ${rstPath}'Ge_Baryons_rela_L_0.90_ci_1.50_series_o0_L_0.90_ci_1.50.pdf' ${paperPath}"fig21.pdf"
 cp ${rstPath}'Gm_Baryons_rela_L_0.90_ci_1.50_series_o0_L_0.90_ci_1.50.pdf' ${paperPath}"fig22.pdf"
+cp ${rstPath}'Ge_Baryons_rela_L_0.90_ci_1.50_series_o1_L_0.90_ci_1.50.pdf' ${paperPath}"fig23.pdf"
+cp ${rstPath}'Gm_Baryons_rela_L_0.90_ci_1.50_series_o1_L_0.90_ci_1.50.pdf' ${paperPath}"fig24.pdf"
+
 
 # cd $paperPath                # cd 到论文目录
 # lyx --export xetex sigma.lyx # 将 lyx 文档导出成xetex 格式
