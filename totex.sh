@@ -22,21 +22,20 @@ cp ${rstPath}'Gm_Baryons_rela_L_0.90_ci_1.50_series_o0_L_0.90_ci_1.50.pdf' ${pap
 cp ${rstPath}'Ge_Baryons_rela_L_0.90_ci_1.50_series_o1_L_0.90_ci_1.50.pdf' ${paperPath}"fig23.pdf"
 cp ${rstPath}'Gm_Baryons_rela_L_0.90_ci_1.50_series_o1_L_0.90_ci_1.50.pdf' ${paperPath}"fig24.pdf"
 
+cd $paperPath                # cd 到论文目录
+lyx --export xetex sigma.lyx # 将 lyx 文档导出成xetex 格式
+texbuild sigma               #重新编译论文, texbuild 是我自己写的 xelatex 编译脚本
 
-# cd $paperPath                # cd 到论文目录
-# lyx --export xetex sigma.lyx # 将 lyx 文档导出成xetex 格式
-# texbuild sigma               #重新编译论文, texbuild 是我自己写的 xelatex 编译脚本
-
-##++++++下面是复制不要文件到 ~/Documents 目录 +++++++++++++++++++++++++++
-# # 如果桌面还没有压缩文件目录，就创建一个
-# if [ ! -d $archPath ]; then
-#     mkdir -p $archPath
-# fi
-# # 把论文目录的东西复制到桌面目录中
-# declare -a src_list=('io-1_ge_sea.pdf' 'io-1_ge_valence.pdf' 'io-1_gm_sea.pdf' 'io-1_gm_valence.pdf' 'sigma.tex' 'sigma.pdf')
-# cp -t $archPath "$src_list{@}"
-# # 进入桌面目录，产生论文压缩文件
-# cd $archPath
-# tar -vczf ./paper.tar.gz $archPath
-# # 回到原来的文件夹
-# cd $originPath
+#++++++下面是复制不要文件到 ~/Documents 目录 +++++++++++++++++++++++++++
+# 如果桌面还没有压缩文件目录，就创建一个
+if [ ! -d $archPath ]; then
+    mkdir -p $archPath
+fi
+# 把论文目录的东西复制到桌面目录中
+declare -a src_list=(fig*.pdf 'sigma.lyx' 'sigma.tex' 'sigma.pdf')
+cp -t $archPath ${src_list[@]}
+# 进入桌面目录，产生论文压缩文件
+cd $archPath
+tar -vczf paper.tgz ${src_list[@]}
+# 回到原来的文件夹
+cd $originPath
