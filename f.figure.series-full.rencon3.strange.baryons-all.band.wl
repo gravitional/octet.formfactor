@@ -1,1514 +1,699 @@
 (* ::Package:: *)
 
 (* ::Title:: *)
-(*f.figure.series-full.rencon3.strange.baryons-all.band.wl*)
+(*f.figure.series-full.rencon3.strange.baryons-all.band.nb*)
 
 
 (* ::Chapter:: *)
 (*initial 1*)
 
 
-(* ::Text:: *)
 (*\:8ba1\:7b97\:73af\:5883\:53c2\:91cf\:ff0c\:6bd4\:5982\:8def\:5f84*)
-
-
-git`remote`name="octet.formfactor";(*\:7ed9\:51fa\:8fdc\:7a0bgit\:4ed3\:5e93\:7684\:540d\:5b57*)
-boole`incmd=Not[$Notebooks];(*\:811a\:672c\:7684\:8fd0\:884c\:6a21\:5f0f\:5224\:65ad\:ff0cTrue\:4ee3\:8868\:547d\:4ee4\:884c\:ff0cFalse\:4ee3\:8868\:524d\:7aef*)
-filename=If[Not[boole`incmd],NotebookFileName[],$InputFileName](*\:7ed9\:51fa\:7b14\:8bb0\:672c\:7684\:7edd\:5bf9\:8def\:5f84*)
-
-
-(* ::Text:: *)
+gitRemoteName="octet.formfactor";(*\:7ed9\:51fa\:8fdc\:7a0bgit\:4ed3\:5e93\:7684\:540d\:5b57*)
+cmdQ=Not[$Notebooks];(*\:811a\:672c\:7684\:8fd0\:884c\:6a21\:5f0f\:5224\:65ad\:ff0cTrue\:4ee3\:8868\:547d\:4ee4\:884c\:ff0cFalse\:4ee3\:8868\:524d\:7aef*)
+fileName=If[Not[cmdQ],NotebookFileName[],$InputFileName](*\:7ed9\:51fa\:7b14\:8bb0\:672c\:7684\:7edd\:5bf9\:8def\:5f84*)
 (*\:5b9a\:4e49\:4e00\:4e9b\:5e38\:7528\:7684\:51fd\:6570*)
-
-
-forcestr[x__]:=StringJoin[ToString[#1]&/@Flatten[{x}]](*\:5b9a\:4e49\:4e00\:4e2a\:786e\:4fdd\:5b57\:7b26\:4e32\:7684\:51fd\:6570*)
-
-
-If[boole`incmd,
-echo[x__]:=Print["----------------------------","\n\033[1;44m\033[1;37m",forcestr[x],"\033[0;0m\n","----------------------------"],(*\:5b9a\:4e49\:7ec8\:7aef\:7684\:6253\:5370\:51fd\:6570*)
+enList[x__]:=Replace[{x},{{y__}}:>{y},{0}](*\:5b9a\:4e49\:4e00\:4e2a\:786e\:4fdd\:5217\:8868\:7684\:51fd\:6570*)
+enString[x__]:=StringJoin[ToString[#1]&/@enList[x]](*\:5b9a\:4e49\:4e00\:4e2a\:786e\:4fdd\:5b57\:7b26\:4e32\:7684\:51fd\:6570*)
+If[cmdQ,
+echo[x__]:=Print["----------------------------","\n\033[1;44m\033[1;37m",enString[x],"\033[0;0m\n","----------------------------"],(*\:5b9a\:4e49\:7ec8\:7aef\:7684\:6253\:5370\:51fd\:6570*)
 echo[x__]:=Print[x](*\:5b9a\:4e49\:7b14\:8bb0\:672c\:7684\:6253\:5370\:51fd\:6570*)
 ]
-
-
 (*\:5982\:679c\:5728\:524d\:7aef\:6267\:884c\:ff0c\:5c31\:5237\:65b0\:7b14\:8bb0\:672c\:7684\:540d\:5b57*)
 Once[If[
 (* if $ScriptCommandLine==={}, the environment is frontend*)
-Not[boole`incmd],
+Not[cmdQ],
 (*if execute in the frontend mode, refresh the title name*)
 CompoundExpression[
-cell`title=(Cells[][[1]]),(*\:5355\:5143\:5bf9\:8c61,\:7b2c\:4e00\:4e2a\:5355\:5143*)
-NotebookWrite[cell`title,Cell[FileNameSplit[filename][[-1]],"Title"]](*\:5237\:65b0\:7b2c\:4e00\:4e2a\:5355\:5143\:7684\:540d\:5b57*)
+cellTitle=(Cells[][[1]]),(*\:5355\:5143\:5bf9\:8c61,\:7b2c\:4e00\:4e2a\:5355\:5143*)
+NotebookWrite[cellTitle,Cell[FileNameSplit[fileName][[-1]],"Title"]](*\:5237\:65b0\:7b2c\:4e00\:4e2a\:5355\:5143\:7684\:540d\:5b57*)
 ]
 ]];
-If[boole`incmd,echo["Ready to execute this script"]](*\:5982\:679c\:5728\:547d\:4ee4\:884c\:6267\:884c\:ff0c\:5c31\:6253\:5370\:63d0\:793a\:4fe1\:606f*)
-
-
-(* ::Text:: *)
+If[cmdQ,echo["Ready to execute this script"]](*\:5982\:679c\:5728\:547d\:4ee4\:884c\:6267\:884c\:ff0c\:5c31\:6253\:5370\:63d0\:793a\:4fe1\:606f*)
 (*\:5b9a\:4e49\:672c\:5730git\:76ee\:5f55\:ff0c\:4e5f\:5c31\:662f\:7a0b\:5e8f\:7684\:6839\:76ee\:5f55*)
+echo["the gitLocalName is"]
+gitLocalName=FileNameJoin[Append[TakeWhile[FileNameSplit[ExpandFileName[fileName]],UnsameQ[#1,gitRemoteName]&],gitRemoteName]]
 
 
-echo["the git`local`name is"]
-git`local`name=FileNameJoin[Append[TakeWhile[FileNameSplit[ExpandFileName[filename]],UnsameQ[#1,git`remote`name]&],git`remote`name]]
-
-
-(* ::Text:: *)
-(*********************************** notebook \:5907\:5fd8\:5f55*)
-
-
-(* ::Text:: *)
-(*series full calc scripts*)
-
-
-(* ::Chapter:: *)
+(* ::Section:: *)
 (*initial parameters*)
 
 
-(* ::Text:: *)
-(*++++++++++++++++++++++++++++++++++++++++++++*)
-
-
-(* ::Text:: *)
 (*\:6a21\:62df\:547d\:4ee4\:884c\:8f93\:5165,\:8c03\:8bd5\:4f7f\:7528*)
-
-
-(* ::Text:: *)
-(*parameter`marker, "Bars","Fences","Points", "Ellipses","Bands"*)
-
-
-(* ::DisplayFormula:: *)
-(*file`name,parameter`order,parameter`lambda0,parameter`ci,*)
-(*calc`point`opacity,calc`errobar`marker,calc`errobar`opacity[[gegm,io]],*)
-(*expr`errobar`style,expr`opacity*)
-(*whether`normal*)
-
-
-input`simulation={"/home/tom/octet.formfactor/f.figure.series-full.rencon3.strange.baryons-all.band.wl",
-"full",0.90,1.50,
-"{1,1,1,1,1,1,1,1}","Bands","{{0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2},{0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2}}",
-4,1,
-"normal"(*\:662f\:5426\:5bf9\:6570\:636e\:8fdb\:884c\:5f52\:4e00\:5316*)
-};
-
-
-(* ::Text:: *)
-(*++++++++++++++++++++++++++++++++++++++++*)
-
-
-(* ::Text:: *)
-(*\:5f15\:5165\:547d\:4ee4\:884c\:53c2\:6570, \:81ea\:52a8\:5224\:65ad\:662f\:5728\:547d\:4ee4\:884c\:4e0b\:8fd0\:884c\:ff0c\:8fd8\:662f\:5728\:7b14\:8bb0\:672c\:4e2d\:8fd0\:884c*)
-
-
-If[boole`incmd,
-input`cml=$ScriptCommandLine,(*\:5982\:679c\:5728\:547d\:4ee4\:884c\:6267\:884c\:ff0c\:5c31\:91c7\:7528\:547d\:4ee4\:884c\:53c2\:6570*)
-input`cml=input`simulation(*\:5982\:679c\:5728\:7b14\:8bb0\:672c\:6267\:884c\:ff0c\:5c31\:91c7\:7528\:6a21\:62df\:53c2\:6570*)
+(*parMarker:"Bars","Fences","Points", "Ellipses","Bands"*)
+inputSim={"/home/tom/octet.formfactor/f.figure.series-full.rencon3.strange.baryons-all.band.nb",
+"full",0.90`20,1.50`20,
+(*calcPointOpacity=*)"{0.8,0.8,0.8,1,1,1,1,1,1,1,1,1}",(*errobarMarker=*)"Bands",
+(*calcErrorbarOpacity=*)"{{0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1},{0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1}}",
+(*exprErrobarStyle=*)4,(*exprOpacity*)1,
+(*cFitting*)"Baryons",(*errorbarQ*)"L_0.90_ci_1.50"};
+If[cmdQ,
+inputCml=$ScriptCommandLine,(*\:5982\:679c\:5728\:547d\:4ee4\:884c\:6267\:884c\:ff0c\:5c31\:91c7\:7528\:547d\:4ee4\:884c\:53c2\:6570*)
+inputCml=inputSim(*\:5982\:679c\:5728\:7b14\:8bb0\:672c\:6267\:884c\:ff0c\:5c31\:91c7\:7528\:6a21\:62df\:53c2\:6570*)
 ];
-
-
-(* ::Text:: *)
-(*+++++++++++++++++++++++++++++++++*)
-
-
-echo["the parameter order, lambda, ci is"]
-
-
-{file`name,
-parameter`order,parameter`lambda0,parameter`ci,
-calc`point`opacity,calc`errobar`style,calc`errobar`opacity,
-expr`errobar`style,expr`opacity,
-whether`normal
-}={input`cml[[1]],
-input`cml[[2]],ToExpression[input`cml[[3]]],ToExpression[input`cml[[4]]],
-ToExpression[input`cml[[5]]],ToString[input`cml[[6]]],ToExpression[input`cml[[7]]],
-ToExpression[input`cml[[8]]],ToExpression[input`cml[[9]]],
-ToString[input`cml[[10]]]
+echo["the parameter:order,lambda,ci,fitting"];(*\:5c55\:793a\:63a5\:53d7\:5230\:7684\:53c2\:6570*)
+{fileName,
+parOrder,parLambda0,parci,
+calcPointOpacity,calcErrobarStyle,calcErrobarOpacity,
+exprErrobarStyle,exprOpacity,
+cFitting,errorbarQ}={
+inputCml[[1]],
+inputCml[[2]],ToExpression[inputCml[[3]]],ToExpression[inputCml[[4]]],
+ToExpression[inputCml[[5]]],ToString[inputCml[[6]]],ToExpression[inputCml[[7]]],
+ToExpression[inputCml[[8]]],ToExpression[inputCml[[9]]],
+inputCml[[10]],inputCml[[11]]
 }
-
-
-echo["the parameter order, lambda, ci,"];
-
-
-parameter`order`string=ToString[parameter`order]
-parameter`lambda0`string=ToString[NumberForm[parameter`lambda0,{3,2}]]
-parameter`ci`string=ToString[NumberForm[parameter`ci,{3,2}]]
+(*\:53c2\:6570\:5904\:7406*)
+parOrderStr=ToString[parOrder];
+parLambda0Str=ToString[NumberForm[parLambda0,{3,2}]];
+parciStr=ToString[NumberForm[parci,{3,2}]];
+cFittingStr=enString[cFitting];
+errorbarQStr=enString[errorbarQ];
+(*\:68c0\:67e5\:8f93\:5165\:7684\:53c2\:6570\:662f\:5426\:5408\:6cd5*)
+If[Not[StringMatchQ[cFittingStr,{"Sigma1","Sigma2","Nucleon","Cascade","Baryons"}]&&StringMatchQ[errorbarQStr,{"notbar" ,"L_"~~NumberString~~"_ci_"~~NumberString}]],
+(*eg."L_0.90_ci_1.50"*)
+echo["Please check the input parameters"];Abort[]
+]
 
 
 (* ::Section:: *)
-(*import origin figs*)
+(*import data full and o0*)
 
 
-(* ::DisplayFormula:: *)
-(*{\[CapitalLambda], ci}->*)
-
-
-(* ::DisplayFormula:: *)
-(*{0.8,1.0} ,{0.9,1.0} ,*)
-
-
-(* ::DisplayFormula:: *)
-(*{1.0,1.0},{0.8,1.5} ,*)
-
-
-(* ::DisplayFormula:: *)
-(*{0.9,1.5},{1.0,1.5}*)
-
-
-directory`fig=FileNameJoin[{git`local`name,"/expression-mfiles/"}]
-
-
-parameter`lambda0`group`string=If[parameter`lambda0`string==="0.90"&&parameter`ci`string==="1.50",(*\:5bf9\:4e8e\:4e2d\:5fc3\:503c\:7684\:60c5\:5f62\:ff0c\:52a0\:4e0a\:8bef\:5dee\:5e26*)
-{
-ToString[NumberForm[parameter`lambda0-0.1,{3,2}]],
-ToString[NumberForm[parameter`lambda0,{3,2}]],
-ToString[NumberForm[parameter`lambda0+0.1,{3,2}]]
+(*\:5bfc\:5165 full \:7cfb\:5217\:7684\:6570\:636e\:ff0c\:56fe\:5f62\:7684\:5f62\:5f0f*)
+centerQ=StringMatchQ[parLambda0Str,"0.90"] && StringMatchQ[parciStr,("1.00"|"1.50")];(*\:6d4b\:8bd5\:662f\:5426\:4e3a\:4e2d\:5fc3\:914d\:7f6e\:ff1a\[CapitalLambda]==0.90*)
+parLambda0GroupStr=If[centerQ,
+ToString[NumberForm[#,{3,2}]]&/@{parLambda0-0.1,parLambda0,parLambda0+0.1},(*\:5982\:679c\[CapitalLambda]\[Equal]0.90\:ff0c\:52a0\:4e0a\:8bef\:5dee\:5e26*)
+ToString[NumberForm[#,{3,2}]]&/@{parLambda0,parLambda0,parLambda0}(*\:5982\:679c\[CapitalLambda]\[NotEqual]0.90\:ff0c\:4fdd\:6301\:5f62\:5f0f\:4e00\:81f4*)
+]
+(*++++++++++++++++++++\:5bfc\:5165\:6570\:636e+++++++++++++++++++++*)
+inputDir=FileNameJoin[{gitLocalName,"/expression-mfiles/"}](*\:56fe\:7247\:6240\:5728\:7684\:76ee\:5f55*)
+echo[".m files list"];
+(*\:5236\:5907\:9700\:8981\:5bfc\:5165\:7684\:6587\:4ef6\:5217\:8868*)
+mfileSeries=Module[{temp},
+If[centerQ,
+(*\:5982\:679c\[CapitalLambda]\[Equal]0.90\:ff0c\:4e24\:8fb9\:9009\:53d6 rela_L_0.90_ci_1.0\:ff0c\:4e2d\:95f4\:9009\:53d6 rela_notbar \:5373\:53ef*)
+First[FileNames[#1//Echo,inputDir]]&/@{
+StringExpression["data_fit_",cFittingStr,"_rela_",errorbarQStr,"_series_",parOrderStr,"_L_",parLambda0GroupStr[[1]],"_ci_",parciStr,".m"],
+StringExpression["data_fit_",cFittingStr,"_rela_","notbar","_series_",parOrderStr,"_L_",parLambda0GroupStr[[2]],"_ci_",parciStr,".m"],
+StringExpression["data_fit_",cFittingStr,"_rela_",errorbarQStr,"_series_",parOrderStr,"_L_",parLambda0GroupStr[[3]],"_ci_",parciStr,".m"]
 },
-{
-ToString[NumberForm[parameter`lambda0,{3,2}]],
-ToString[NumberForm[parameter`lambda0,{3,2}]],
-ToString[NumberForm[parameter`lambda0,{3,2}]]
-}
+(*\:5982\:679c\[CapitalLambda]\[NotEqual]0.90\:ff0c\:5f3a\:884c\:5199\:6210\:4e09\:7ec4\:6570\:636e\:5e76\:5217\:7684\:5f62\:5f0f\:ff0c\:65b9\:4fbf\:7edf\:4e00\:5904\:7406*)
+temp=FileNames[StringExpression["data_fit_",cFittingStr,"_rela_",errorbarQStr,"_series_",parOrderStr,"_L_",parLambda0GroupStr[[1]],"_ci_",parciStr,".m"]//Echo,inputDir]//First;
+{temp,temp,temp}
 ]
+]//QuietEcho
+(dataSeriesRaw=Map[Get,mfileSeries,{-1}]);
+(*dataSeriesRaw//Dimensions
+dataSeriesRaw,{3,2,17,8},{conf,gegm,seva,io}*)
 
 
-Module[{tename1,tename2},
-
-nb`list=If[parameter`lambda0`string==="0.90"&&parameter`ci`string==="1.50",(*\:5bf9\:4e8e\:4e2d\:5fc3\:503c\:7684\:60c5\:5f62\:ff0c\:505a\:6210\:4e09\:91cd\:6570\:636e\:5e76\:5217\:7684\:683c\:5f0f*)
-FileNames[StartOfString~~"fig_calc_baryons_gegm_L-"~~parameter`lambda0`group`string~~"_ci-"~~parameter`ci`string~~".m",directory`fig],
-
-tename1=First[FileNames[StartOfString~~"fig_calc_baryons_gegm_L-"~~parameter`lambda0`group`string~~"_ci-"~~parameter`ci`string~~".m",directory`fig]];
-{tename1,tename1,tename1}(*\:5bf9\:4e8e\:975e\:4e2d\:5fc3\:503c\:7684\:60c5\:5f62\:ff0c\:4e5f\:505a\:6210\:4e09\:91cd\:6570\:636e\:5e76\:5217\:7684\:683c\:5f0f*)
+(*\:5bfc\:5165o0\:7cfb\:5217\:ff0c\:4e5f\:5c31\:662f\:96f6\:70b9\:503c\:7684\:6587\:4ef6*)(*parLambda0GroupStr =={0.80,0.90,1.00}*)
+dirSeriesO0=FileNameJoin[{gitLocalName,"/expression-mfiles/"}]
+echo["Series,O0.m files list"];
+(*\:5236\:5907\:9700\:8981\:5bfc\:5165\:7684\:6587\:4ef6\:5217\:8868*)
+mfileSeriesO0=Module[{temp},
+If[centerQ,
+(*\:5982\:679c\[CapitalLambda]\[Equal]0.90\:ff0c\:4e24\:8fb9\:9009\:53d6 rela_L_0.90_ci_1.0\:ff0c\:4e2d\:95f4\:9009\:53d6 rela_notbar \:5373\:53ef*)
+First[FileNames[#1//Echo,dirSeriesO0]]&/@{
+StringExpression["data_fit_",cFittingStr,"_rela_",errorbarQStr,"_series_o0_L_",parLambda0GroupStr[[1]],"_ci_",parciStr,".m"],
+StringExpression["data_fit_",cFittingStr,"_rela_","notbar","_series_o0_L_",parLambda0GroupStr[[2]],"_ci_",parciStr,".m"],
+StringExpression["data_fit_",cFittingStr,"_rela_",errorbarQStr,"_series_o0_L_",parLambda0GroupStr[[3]],"_ci_",parciStr,".m"]
+}//QuietEcho,
+(*\:5982\:679c\[CapitalLambda]\[NotEqual]0.90\:ff0c\:5f3a\:884c\:5199\:6210\:4e09\:7ec4\:6570\:636e\:5e76\:5217\:7684\:5f62\:5f0f\:ff0c\:65b9\:4fbf\:7edf\:4e00\:5904\:7406*)
+temp=FileNames[StringExpression["data_fit_",cFittingStr,"_rela_",errorbarQStr,"_series_o0_L_",parLambda0GroupStr[[1]],"_ci_",parciStr,".m"]//Echo,inputDir]//First;
+{temp,temp,temp}
 ]
+]
+(*++++++++++++++\:5bfc\:5165\:6570\:636e+++++++++++++++++++++++++++*)
+(dataSeriesO0Raw=Map[Get,mfileSeriesO0,{-1}]);
+(*\:63d0\:53d6\:51fa\:5404\:4e2a\:914d\:7f6e\:4e0b\:78c1\:77e9\:7684\:503c\:ff0c\:53ea\:8981\:8ba1\:7b97\:7684total\:503c\:ff0cseva=18*)
+dataSeriesO0=dataSeriesO0Raw[[conf=All,gegm=2,io=All,seva=18]];
+(*dataSeriesO0//Dimensions
+{3,8}*)
+(*++++++++++++++\:8fd9\:91cc\:7ed9\:51fagegm\:7684\:5e45\:503c\:ff0c\:540e\:9762\:662f\:5426\:5bf9\:56fe\:7684\:6570\:636e\:8fdb\:884c\:5f52\:4e00\:5316\:4f1a\:7528\:5230+++++++++++++++++++++++++++*)
+ampGegmCalc={
+{ConstantArray[1,{3,8}],ConstantArray[1,{3,8}]},(*\:4e0d\:5f52\:4e00\:5316\:7684\:96f6\:70b9\:503c*)
+{ConstantArray[1,{3,8}],dataSeriesO0}(*\:5f52\:4e00\:5316\:7684\:96f6\:70b9\:503c*)
+};
+(*ampGegmCalc//Dimensions
+{2,2,3,8}*)
+
+
+(* ::Subsection:: *)
+(*rencon2.13*)
+
+
+octetCharge={
+(*1*)-1,(*2*)0,(*3*)1,
+(*4*)1,(*5*)0,
+(*6*)-1,(*7*)0,
+(*8*)0
+};
+rencon=Table[1,{conf,1,3,1},{io,1,8,1}];
+(*+++++++++++++++++renormalized according to charge+++++++++++++*)
+Do[
+rencon[[conf,io]]=Abs[octetCharge[[io]]-dataSeriesO0Raw[[conf,gegm=1,io,seva=5]]]
+,{conf,1,3,1},{io,{1,3,4,6}}
 ];
+rencon[[All,2]]=rencon[[All,3]];
+rencon[[All,5]]=rencon[[All,4]];
+rencon[[All,7]]=rencon[[All,6]];
+rencon[[All,8]]=Abs[1-dataSeriesO0Raw[[conf=All,gegm=1,io=8,seva=6]]];
 (*++++++++++++++++++++display+++++++++++++++++++++*)
-echo[".m files list"]
-echo[nb`list]
-
-
-(fig`baryons`origin=Map[Get,nb`list,{-1}]);
-
-
-(* ::DisplayFormula:: *)
-(*fig`baryons`origin//Dimensions*)
-(*{3,2,28,8},{conf,gegm,seva,io}*)
+echo["calculated renormalization constants"];
+StringRiffle[rencon]
 
 
 (* ::Section:: *)
-(*import series-o0*)
+(*\:8ba1\:7b97\:6570\:636e\:5904\:7406*)
 
 
-(* ::Text:: *)
-(*\:5bfc\:5165\:96f6\:70b9\:503c\:7684\:6587\:4ef6*)
-
-
-(* ::DisplayFormula:: *)
-(*{\[CapitalLambda], ci}->*)
-
-
-(* ::DisplayFormula:: *)
-(*{0.8,1.0} ,{0.9,1.0} ,*)
-
-
-(* ::DisplayFormula:: *)
-(*{1.0,1.0},{0.8,1.5} ,*)
-
-
-(* ::DisplayFormula:: *)
-(*{0.9,1.5},{1.0,1.5}*)
-
-
-directory`series`o0=FileNameJoin[{git`local`name,"/expression-mfiles/"}]
-
-
-(* ::Text:: *)
-(*parameter`lambda0`group`string =={0.80,0.90,1.00}*)
-
-
-Module[{tename1,tename2},
-
-nb`list=If[parameter`lambda0`string==="0.90"&&parameter`ci`string==="1.50",
-(*\:5982\:679c\:662fpaper\:4e2d\:7684\:914d\:7f6e\:ff0c\:90a3\:4e48\:9700\:8981\:8ba1\:7b97band\:ff0c\:5bfc\:5165\:76f8\:90bb\:914d\:7f6e\:7684\:503c*)
-FileNames[StartOfString~~"data.baryons.series-o0.L-"~~parameter`lambda0`group`string~~".ci-"~~parameter`ci`string~~".m",
-directory`series`o0],
-(*\:5982\:679c\:4e0d\:662fpaper\:4e2d\:7684\:914d\:7f6e\:ff0c\:4e0d\:4e00\:5b9a\:8ba1\:7b97\:4e86band\:ff0c\:6240\:4ee5\:5bfc\:5165\:7684band\:662f\:81ea\:5df1\:ff0c\:6700\:540ebanb\:4e3a0\:5bbd\:5ea6*)
-tename1=First[FileNames[StartOfString~~"data.baryons.series-o0.L-"~~parameter`lambda0`group`string~~".ci-"~~parameter`ci`string~~".m",
-directory`fig]];
-{tename1,tename1,tename1}
-]
-];
-(*++++++++++++++++++++display+++++++++++++++++++++*)
-echo[".m files list"]
-StringRiffle[nb`list]
-
-
-(series`baryons`origin=Map[Get,nb`list,{-1}]);
-
-
-(* ::DisplayFormula:: *)
-(*series`baryons`origin//Dimensions*)
-(*{3,2,8,31}\:ff0c{conf,gegm,io,seva}*)
-(*\:6700\:540e\:4e00\:4e2a\:6307\:6807\:662f\:6570\:636e\:7684\:7c7b\:522b\:ff0ctree,loop,total,experiment,\:4ee5\:53ca\:6587\:732e\:91cc\:7684\:6570\:503c*)
-
-
-(* ::Text:: *)
-(*\:63d0\:53d6\:51fa\:5404\:4e2a\:914d\:7f6e\:4e0b\:78c1\:77e9\:7684\:503c\:ff0c\:53ea\:8981\:8ba1\:7b97\:7684total\:503c\:ff0cseva=13*)
-
-
-series`baryons`im1=series`baryons`origin[[All,2,All,(seva=13)]];
-series`baryons=series`baryons`im1;
-
-
-(* ::DisplayFormula:: *)
-(*series`baryons//Dimensions*)
-(*{3,8}*)
-
-
-(* ::Section:: *)
-(*gegm \:5f52\:4e00\:5316*)
-
-
-(* ::Text:: *)
-(*\:8fd9\:91cc\:7ed9\:51fagegm\:7684\:5e45\:503c\:ff0c\:540e\:9762\:662f\:5426\:5bf9\:56fe\:7684\:6570\:636e\:8fdb\:884c\:5f52\:4e00\:5316\:4f1a\:7528\:5230*)
-
-
-amp`gegm`calc=<|
-"normal"->{ConstantArray[1,{3,8}],ConstantArray[1,{3,8}]},(*\:5f52\:4e00\:5316\:7684\:96f6\:70b9\:503c*)
-"unnormal"->{ConstantArray[1,{3,8}],Identity[series`baryons]}(*\:4e0d\:5f52\:4e00\:5316\:7684\:96f6\:70b9\:503c*)
-|>;
-
-
-(* ::DisplayFormula:: *)
-(*amp`gegm`calc[whether`normal]//Dimensions*)
-(*{2,3,8},[[gegm,conf,io]]*)
-
-
-(* ::Section:: *)
-(*extract data*)
-
-
-(* ::DisplayFormula:: *)
-(*fig`baryons`origin//Dimensions*)
-(*{3,2,28,8},{conf,gegm,seva,io}*)
-
-
-fun`data`extract[fig`baryons`origin_]:=Table[
-
-(data@@Cases[fig`baryons`origin[[conf,gegm,seva,io]],_Line,Infinity])/.Line->Apply[Sequence]
+(*dataSeriesRaw//Dimensions
+{3,2,28,8},{conf,gegm,seva,io}*)
+dataExtract[dataSeriesRaw_]:=Table[
+(data@@Cases[dataSeriesRaw[[conf,gegm,seva,io]],_Line,Infinity])/.Line->Apply[Sequence]
 (*\:63d0\:53d6\:51fa\:753b\:56fe\:4f7f\:7528\:7684\:5ea7\:6807\:70b9\:ff0c\:5c06\:5934\:90e8\:7684Line \:66ff\:6362\:6210 Sequence,\:6700\:5916\:5c42\:4f7f\:7528 data \:4fdd\:62a4*)
 ,{conf,1,3,1}
 ,{gegm,1,2,1}
-,{seva,1,28,1}
+,{seva,1,17,1}
 ,{io,1,8,1}
 ](*\:63d0\:53d6\:51fa\:539f\:59cb\:56fe\:5f62\:6570\:636e\:4e2d\:7684\:5ea7\:6807\:70b9\:4f4d\:7f6e*)
+dataBaryonsRaw=dataExtract[dataSeriesRaw];
+(*dataBaryonsRaw//Dimensions
+{3,2,28,8},{conf,gegm,seva,io}*)
 
 
-data`baryons`raw=fun`data`extract[fig`baryons`origin];
-
-
-(* ::DisplayFormula:: *)
-(*data`baryons`raw//Dimensions*)
-(*{3,2,28,8},{conf,gegm,seva,io}*)
-
-
-(* ::Text:: *)
-(*\:53bb\:9664\:91cd\:590d\:7684\:91c7\:6837\:70b9*)
-
-
-data`baryons=Table[
-
-DeleteDuplicates[data`baryons`raw[[conf,gegm,seva,io]]/.data->List](*\:5229\:7528data`f2\:89c4\:8303\:6570\:636e\:683c\:5f0f*)
+dataBaryons=Table[(*\:53bb\:9664\:91cd\:590d\:7684\:91c7\:6837\:70b9*)
+DeleteDuplicates[dataBaryonsRaw[[conf,gegm,seva,io]]/.data->List](*\:89c4\:8303\:6570\:636e\:683c\:5f0f*)
 
 ,{conf,1,3,1}
 ,{gegm,1,2,1}
-,{seva,1,28,1}
+,{seva,1,17,1}
 ,{io,1,8,1}
 ];
+(*dataBaryons//Dimensions
+{3,2,28,8},{conf,gegm,seva,io}*)
 
 
-(* ::DisplayFormula:: *)
-(*data`baryons//Dimensions*)
-(*{3,2,28,8},{conf,gegm,seva,io}*)
-
-
-(* ::Chapter:: *)
-(*Interpolation*)
-
-
-(* ::Text:: *)
-(*\:5bf9\:6570\:636e\:4f5c\:5185\:63d2\:662f\:56e0\:4e3a\:4e2d\:5fc3\:503c\:548c\:8bef\:5dee\:5e26\:7684\:91c7\:70b9\:4f4d\:7f6e\:5e76\:4e0d\:76f8\:540c \:ff0c\:6240\:4ee5\:9700\:8981\:6309\:7167\:4e2d\:5fc3\:503c\:6570\:636e\:70b9\:7684\:4f4d\:7f6e\:4f5c\:5185\:63d2\:3002*)
-
-
-(* ::DisplayFormula:: *)
-(*data`baryons//Dimensions*)
-(*{3,2,28,8},{conf,gegm,seva,io}*)
-
-
-positions`center=data`baryons[[
-2,All,All,All,(*\:4e2d\:5fc3\:914d\:7f6e*)
-All,1(*\:8fd9\:4e2a\:6307\:6807\:63d0\:53d6\:5230\:7684\:662f\:4e2d\:5fc3\:70b9\:7684\:6a2a\:5750\:6807*)
-]];
-
-
-(* ::DisplayFormula:: *)
-(*positions`center//Dimensions*)
-(*{2,28,8},{gegm,seva,io}*)
-
-
-(* ::Text:: *)
-(*\:83b7\:5f97\:8bef\:5dee\:6570\:636e\:7684\:63d2\:503c\:51fd\:6570*)
-
-
-errorbar`interp=Table[
-Interpolation[data`baryons[[conf,gegm,seva,io]]]
-,{conf,{1,3}}
+(*\:5bf9\:6570\:636e\:4f5c\:5185\:63d2\:662f\:56e0\:4e3a\:4e2d\:5fc3\:503c\:548c\:8bef\:5dee\:5e26\:7684\:91c7\:70b9\:4f4d\:7f6e\:5e76\:4e0d\:76f8\:540c\:3002\:6570\:7ec4\:8fd8\:9700\:8981\:4f5c\:91cd\:7ec4\:3002*)
+dataInterp=Table[
+(Interpolation[dataBaryons[[conf,gegm,seva,io]]]/ampGegmCalc[[norm,gegm,conf,io]])@Q2(*\:5bf9\:6570\:636e\:4f5c\:5f52\:4e00\:5316*)
+,{norm,1,2,1}
+,{conf,1,3,1}
 ,{gegm,1,2,1}
-,{seva,1,28,1}
 ,{io,1,8,1}
+,{seva,1,17,1}
 ];
+(*dataInterp//Dimensions
+{2,3,2,8,17},{norm,conf,gegm,io,seva}*)
 
 
-(* ::DisplayFormula:: *)
-(*errorbar`interp//Dimensions*)
-(*{2,2,28,8},{conf,gegm,seva,io}*)
-
-
-(* ::Text:: *)
-(*\:83b7\:5f97\:4e2d\:5fc3\:70b9\:7684\:503c*)
-
-
-value`center`im1=data`baryons[[
-2,All,All,All,
-All,2(*\:8fd9\:4e2a\:6307\:6807\:63d0\:53d6\:5230\:7684\:662f\:4e2d\:5fc3\:70b9\:7684\:7eb5\:5750\:6807*)
-]];
-
-
-(* ::DisplayFormula:: *)
-(*value`center`im1//Dimensions*)
-(*{2,28,8},{gegm,seva,io}*)
-
-
-(* ::Text:: *)
-(*\:5c06\:4e2d\:5fc3\:70b9\:7684\:503c\:4e58\:4e0a\:5f52\:4e00\:5316\:7684\:5e45\:5ea6\:ff0c\:4e2d\:5fc3\:70b9\:7684config\:662f2*)
-
-
-(* ::Text:: *)
-(*amp`gegm`calc[whether`normal],{gegm,conf,io},{2,3,8}*)
-
-
-echo["wheather the calc data normalized"]
-amp`gegm`calc[whether`normal]
-
-
-value`center=Table[
-amp`gegm`calc[whether`normal][[gegm,(conf=2),io]]*value`center`im1[[gegm,seva,io]]
+(*\:63d0\:53d6\:51fa\:6811\:56fe\:7684\:63d2\:503c\:51fd\:6570*)
+treeGegm=dataInterp[[norm=All,conf=All,gegm=All,io=All,seva=1;;4]];
+(*\:8ba1\:7b97 total \:8d21\:732e\:65f6\:ff0c\:7528treeGegmRencon2\:66f4\:65b9\:4fbf*)
+treeGegmRencon2=Table[
+treeGegm[[norm,conf,gegm,io,seva]]*rencon[[conf,io]]
+,{norm,1,2,1}
+,{conf,1,3,1}
 ,{gegm,1,2,1}
-,{seva,1,28,1}
 ,{io,1,8,1}
+,{seva,1,4,1}
 ];
-
-
-(* ::Text:: *)
-(*\:5173\:95ed\:5916\:63d2\:6cd5\:63d0\:793a*)
-
-
-Off[InterpolatingFunction::dmval]
-
-
-(* ::Text:: *)
-(*\:5bf9\:4e24\:4e2a\:8bef\:5dee\:4e0a\:4e0b\:9650\:ff0c\:8fdb\:884c\:63d2\:503c\:5904\:7406\:ff0c*)
-
-
-(* ::Text:: *)
-(*\:5e76\:4e14\:5c06\:8bef\:5dee\:6570\:636e\:4e58\:4e0a\:5f52\:4e00\:5316\:7684\:5e45\:5ea6\:ff0c\:8bef\:5dee\:6570\:636e\:7684\:914d\:7f6e\:6307\:6807\:662f{1,3},\:7528\:4e0b\:5f0f\:53d6\:51fa\:8bef\:5dee\:6570\:636e\:7684\:5e45\:5ea6*)
-
-
-amp`gegm`calc`error=amp`gegm`calc[whether`normal][[All,{1,3},All]];
-
-
-value`asy=Table[
-
-amp`gegm`calc`error[[gegm,conf,io]]*(errorbar`interp[[conf,gegm,seva,io]][positions`center[[gegm,seva,io]]])
-
-,{conf,1,2,1}
+(*\:8ba1\:7b97 loop \:8d21\:732e\:65f6\:ff0c\:7528treeGegmRencon3\:66f4\:65b9\:4fbf*)
+treeGegmRencon3=Table[
+treeGegm[[norm,conf,gegm,io,seva]]*(rencon[[conf,io]]-1)
+,{norm,1,2,1}
+,{conf,1,3,1}
 ,{gegm,1,2,1}
-,{seva,1,28,1}
 ,{io,1,8,1}
+,{seva,1,4,1}
 ];
+(*\:5708\:56fe\:7684\:503c\:ff0c\:6309\:7167loop,quench, sea, valence \:6392\:5e8f*)
+loopGegm=dataInterp[[norm=All,conf=All,gegm=All,io=All,seva=5;;17]];
+(*\:7ed9\:51fa\:5708\:56fe\:7684\:96f6\:70b9\:503c,total = tree +(Z-1)*tree+loop*)
+(*treeGegm//Dimensions
+treeGegmRencon2//Dimensions
+treeGegmRencon3//Dimensions
+loopGegm//Dimensions*)
 
 
-(* ::DisplayFormula:: *)
-(*value`asy//Dimensions*)
-(*{2,2,28,8},{conf,gegm,seva,io}*)
+reSevaGegm1={
+treeGegm[[All,All,All,All,1]],(*1;tree,uds*)
+treeGegm[[All,All,All,All,2]],(*2;tree,u*)
+treeGegm[[All,All,All,All,3]],(*3;tree,d*)
+treeGegm[[All,All,All,All,4]],(*4;tree,s*)
+
+loopGegm[[All,All,All,All,1]],(*5;loop,uds*)
+loopGegm[[All,All,All,All,2]],(*6;loop,u*)
+loopGegm[[All,All,All,All,3]],(*7;loop,d*)
+loopGegm[[All,All,All,All,4]],(*8;loop,s*)
+
+loopGegm[[All,All,All,All,5]],(*9;quench,u*)
+loopGegm[[All,All,All,All,6]],(*10;quench,d*)
+loopGegm[[All,All,All,All,7]],(*11;quench,s*)
+
+loopGegm[[All,All,All,All,8]],(*12;valence,u*)
+loopGegm[[All,All,All,All,9]],(*13;valence,d*)
+loopGegm[[All,All,All,All,10]],(*14;valence,s*)
+
+loopGegm[[All,All,All,All,11]],(*15;sea,u,*)
+loopGegm[[All,All,All,All,12]],(*16;sea,d*)
+loopGegm[[All,All,All,All,13]],(*17;sea,s*)
+
+treeGegmRencon2[[All,All,All,All,1]]+loopGegm[[All,All,All,All,1]],(*18;Z*tree+loop,uds total*)
+treeGegmRencon2[[All,All,All,All,2]]+loopGegm[[All,All,All,All,2]],(*19;Z*tree+loop,u*)
+treeGegmRencon2[[All,All,All,All,3]]+loopGegm[[All,All,All,All,3]],(*20;Z*tree+loop,d*)
+treeGegmRencon2[[All,All,All,All,4]]+loopGegm[[All,All,All,All,4]],(*21;Z*tree+loop,s*)
+
+treeGegmRencon3[[All,All,All,All,1]]+loopGegm[[All,All,All,All,1]],(*22;(Z-1)tree+loop,uds total*)
+treeGegmRencon3[[All,All,All,All,2]]+loopGegm[[All,All,All,All,2]],(*23;(Z-1)tree+loop,u*)
+treeGegmRencon3[[All,All,All,All,3]]+loopGegm[[All,All,All,All,3]],(*24;(Z-1)tree+loop,d*)
+treeGegmRencon3[[All,All,All,All,4]]+loopGegm[[All,All,All,All,4]],(*25;(Z-1)tree+loop,s*)
+
+loopGegm[[All,All,All,All,5]]+loopGegm[[All,All,All,All,8]],(*26;quench+valence,u,*)
+loopGegm[[All,All,All,All,6]]+loopGegm[[All,All,All,All,9]],(*27;quench+valence,d,*)
+loopGegm[[All,All,All,All,7]]+loopGegm[[All,All,All,All,10]],(*28;quench+valence,s,*)
+
+treeGegmRencon2[[All,All,All,All,2]]+loopGegm[[All,All,All,All,5]]+loopGegm[[All,All,All,All,8]],(*29;Z*tree+quench+loop,u*)
+treeGegmRencon2[[All,All,All,All,3]]+loopGegm[[All,All,All,All,6]]+loopGegm[[All,All,All,All,9]],(*30;Z*tree+quench+loop,d*)
+treeGegmRencon2[[All,All,All,All,4]]+loopGegm[[All,All,All,All,7]]+loopGegm[[All,All,All,All,10]],(*31;Z*tree+quench+loop,s*)
+
+treeGegmRencon3[[All,All,All,All,2]]+loopGegm[[All,All,All,All,5]]+loopGegm[[All,All,All,All,8]],(*32;Z*tree+quench+loop,u*)
+treeGegmRencon3[[All,All,All,All,3]]+loopGegm[[All,All,All,All,6]]+loopGegm[[All,All,All,All,9]],(*33;Z*tree+quench+loop,d*)
+treeGegmRencon3[[All,All,All,All,4]]+loopGegm[[All,All,All,All,7]]+loopGegm[[All,All,All,All,10]](*34;Z*tree+quench+loop,s*)
+
+};
+(*reSevaGegm1//Dimensions
+{norm,conf,gegm,io,seva},{2,3,2,8,34}*)
 
 
-errorbar`asy=Table[
-
-value`asy[[conf,gegm,seva,io]]-value`center[[gegm,seva,io]]
-
-,{conf,1,2,1}
-,{gegm,1,2,1}
-,{seva,1,28,1}
-,{io,1,8,1}
-];
-
-
-(* ::DisplayFormula:: *)
-(*errorbar`asy//Dimensions*)
-(*{2,2,28,8},{conf,gegm,seva,io}*)
-
-
-errorbar`sym=Table[
-
-Mean[Abs[errorbar`asy[[All,gegm,seva,io]]]]
-
-,{gegm,1,2,1}
-,{seva,1,28,1}
-,{io,1,8,1}
-];
-
-
-(* ::DisplayFormula:: *)
-(*errorbar`sym//Dimensions*)
-(*{2,28,8},{gegm,seva,io}*)
-
-
-(* ::Chapter:: *)
-(*errorbar*)
-
-
-(* ::Text:: *)
-(*\:6307\:5b9a\:4e2d\:5fc3\:6570\:636e\:70b9,\:7136\:540e\:7ed9\:5b83\:52a0\:4e0a Errobar*)
-
-
-(* ::DisplayFormula:: *)
-(*positions`center,{2,28,8},{gegm,seva,io}*)
-(*value`center,{2,28,3},{gegm,seva,io}*)
-(*errorbar`sym,{2,28,8},{gegm,seva,io}*)
-
-
-(* ::Section:: *)
-(*\:8ba1\:7b97\:6570\:636e\:683c\:5f0f\:5316*)
-
-
-data`precision=10^(-14);
-
-
-(* ::Text:: *)
-(*\:8fd9\:91cc\:51fa\:73b0\:7684\:662f\:5f52\:4e00\:5316\:4e4b\:540e\:7684\:8ba1\:7b97\:6570\:636e*)
-
-
-Module[{tea},
-data`interval`im1=Table[
-{(*\:6a2a\:5750\:6807\:7684\:6570\:636e\:70b9*)
-positions`center[[gegm,seva,io,point]],
-(*\:7eb5\:5750\:6807\:7684\:6570\:636e\:70b9*)
-Around[
-(*\:7eb5\:5750\:6807\:7684\:4e2d\:5fc3\:70b9*)
-value`center[[gegm,seva,io,point]],
-
-tea=errorbar`sym[[gegm,seva,io,point]];
-(*\:52a0\:5165\:4e00\:4e2a\:5224\:65ad\:ff0c\:5e76\:7ed9\:6570\:636e\:4e58\:4e0a\:5e45\:5ea6*)
-If[tea>data`precision,
-tea,
-data`precision
-]
-(*\:5982\:679c\:8bef\:5dee\:4e3a0\:7684\:8bdd\:ff0c\:4e3a\:4e86\:907f\:514daround\:81ea\:52a8\:53bb\:6389\:ff0c\:628a\:8bef\:5dee\:6539\:6210\:4e00\:4e2a\:975e\:5e38\:5c0f\:7684\:6570\:5b57*)
-]
-}
-
-,{gegm,1,2,1}
-,{seva,1,28,1}
-,{io,1,8,1}
-,{point,1,Length[positions`center[[gegm,seva,io]]],1}
-];
-];
-
-
-(* ::DisplayFormula:: *)
-(*data`interval`im1//Dimensions*)
-(*{2,28,8},{gegm,seva,io,points}*)
-
-
-(* ::Text:: *)
-(*\:4e0b\:9762\:4e24\:6bb5\:5c06\:6570\:636e\:6539\:9020\:6210\:5173\:8054\:7684\:5f62\:5f0f\:ff0c\:65b9\:4fbf\:5bf9values\:8fdb\:884c\:64cd\:4f5c*)
-
-
-data`interval`im2=Map[Association[#1[[1]]->#1[[2]]]&,data`interval`im1,{-3}];
-
-
-data`interval`im3=Map[Merge[#1,First]&,data`interval`im2,{-4}];
-
-
-(* ::Text:: *)
-(*data`interval`im3,{2,8,3},{gegm,io,conf}*)
-
-
-data`interval=data`interval`im3;
-
-
-(* ::Chapter::Closed:: *)
-(*experiment*)
-
-
-(* ::Section:: *)
-(*import experiment data*)
-
-
-dir`expr=FileNameJoin[{git`local`name,"/experiment/"}]
-
-
-(* ::Text:: *)
-(*\:6309\:7167\:53c2\:8003\:6587\:732e\:51fa\:73b0\:987a\:5e8f\:4f5c\:4e3alabel\:7684\:6570\:636e*)
-
-
-(* ::Text:: *)
-(*nucleon_assoc _data _reforder.m*)
-(*nucleon_assoc_data_authyear.m*)
-
-
-Module[{tename1,tename2},
-
-file`list=FileNames[StartOfString~~__~~"data_authyear.m",
-dir`expr
+(*\:5c06\:4e0d\:5bf9\:79f0\:7684\:8bef\:5dee\:5206\:5e03\:8f6c\:6362\:6210\:5bf9\:79f0\:7684\:8bef\:5dee\:5206\:5e03*)
+barAsy=reSevaGegm1[[All,All,3]]-reSevaGegm1[[All,All,1]];(*\[CapitalLambda]1.00-\[CapitalLambda]0.80,\:9996\:5148\:8ba1\:7b97\:51fa\:8bef\:5dee\:7684\:5e45\:5ea6*)
+Module[{temp},
+temp=reSevaGegm1[[All,All,conf=2]];(*\:5c06\:8bef\:5dee\:5e45\:5ea6\:5e73\:5747*)
+reSevaGegm=Transpose[{temp-1/2*barAsy,temp,temp+1/2*barAsy},{2,5,1,3,4}];(*\:4ea7\:751f\:4e0a\:4e0b\:8bef\:5dee\:9650*)
 ]
 
 
-];
-(*++++++++++++++++++++display+++++++++++++++++++++*)
-echo["import experiment data"]
-StringRiffle[file`list]
-
-
-(assoc`expr`raw=Map[Get,file`list,{-1}]//First);
-
-
-echo["the dimensions of exper raw data"]
-assoc`expr`raw//Dimensions
-
-
-(* ::DisplayFormula:: *)
-(*assoc`expr`raw,{4},{ge.n,ge.p,gm.n,gm.p}*)
-
-
-(* ::Text:: *)
-(*\:628a\:5b9e\:9a8c\:6587\:732e\:4e2d\:7684\:6570\:636e\:6539\:6210association\:7684\:683c\:5f0f*)
-
-
-assoc`expr`im1=Map[Association[#1[[1]]->#1[[2]]]&,
-assoc`expr`raw,
-{-4}];
-
-
-(* ::Text:: *)
-(*\:628aassociation\:8054\:7ed3\:8d77\:6765*)
-
-
-assoc`expr`im2=Map[Merge[#1,First]&,
-assoc`expr`im1,
-{2}];
-
-
-(* ::Section:: *)
-(*experiment amplitude*)
-
-
-(* ::Text:: *)
-(*\:6570\:636e\:7684\:6b21\:5e8f\:662f ge.n,ge.p,gm.n,gm.p*)
-
-
-(* ::Text:: *)
-(*\:8fd9\:91cc\:7ed9\:51fagegm\:7684\:5e45\:503c\:ff0c\:6765\:4e0d\:5f52\:4e00\:5316\:4f5c\:4f5c\:56fe\:3002*)
-
-
-amp`gegm`expr=<|
-"normal"->{
-1,1,1,1
-},
-"unnormal"->{
-1,1,Identity[\[Minus]1.9130427],Identity[2.7928473446]
-}
-|>;
-
-
-(* ::Text:: *)
-(*\:5728\:8fd9\:91cc\:8bbe\:8ba1\:4e00\:4e2a\:662f\:5426\:8fdb\:884c\:5f52\:4e00\:5316\:7684\:5f00\:5173*)
-
-
-echo["wheather the experiment data normalized, print here"]
-
-
-amp`gegm`expr[whether`normal]
-
-
-assoc`expr=Table[
-amp`gegm`expr[whether`normal][[inde]]*assoc`expr`im2[[inde]]
-,{inde,1,4,1}
-];
-
-
 (* ::Chapter:: *)
-(*draw*)
+(*Draw*)
 
 
 (* ::Section:: *)
-(*initial*)
+(*\:8ba1\:7b97\:6570\:636e\:5355\:4e2a\:4f5c\:56fe*)
 
 
-(* ::Text:: *)
-(*\:7ed9\:5b9a\:989c\:8272\:548c\:7ebf\:578b\:65b9\:6848,\:5e26\:7535\:7c92\:5b504\:4e2a,\:4e2d\:6027\:7c92\:5b504\:4e2a,\:540c\:6837\:7684\:6392\:5217*)
-
-
-(* ::Text:: *)
 (*mma \:9ed8\:8ba4\:7684\:56fe\:5f62\:989c\:8272*)
+mmalineDefault={AbsoluteThickness[_]->AbsoluteThickness[.8],PointSize[_]->PointSize[0.02]};
+mmacolorDefault=RGBColor[0.368417, 0.506779, 0.709798];
 
 
-style`exp={
-AbsoluteThickness[_]-> AbsoluteThickness[.8],
-PointSize[_]->PointSize[0.02]
+(*\:8bbe\:5b9a\:516b\:91cd\:6001\:66f2\:7ebfstyle*)
+dataVtitle1={
+(*1:*)"tree,uds",(*2:*)"tree,u",(*3:*)"tree,d",(*4:*)"tree,s",
+(*5:*)"loop,uds",(*6:*)"loop,u",(*7:*)"loop,d",(*8:*)"loop,s",
+(*9:*)"quench,u",(*10:*)"quench d",(*11:*)"quench,s",
+(*12:*)"valence,u",(*13:*)"valence,d",(*14:*)"valence,s",
+(*15:*)"sea,u",(*16:*)"sea,d",(*17:*)"sea,s",
+(*18:*)"Z*tree+loop,uds",(*19:*)"Z*tree+loop,u",(*20:*)"Z*tree+loop,d",(*21:*)"Z*tree+loop,s",
+(*22:*)"(Z-1)tree+loop,uds",(*23:*)"(Z-1)tree+loop,u",(*24:*)"(Z-1)tree+loop,d",(*25:*)"(Z-1)tree+loop,s",
+(*26:*)"quench+valence,u",(*27:*)"quench+valence,d",(*28:*)"quench+valence,s",
+(*29:*)"Z*tree+quench+valence,u",(*30:*)"Z*tree+quench+valence,d",(*31:*)"Z*tree+quench+valence,s",
+(*32:*)"(Z-1)tree+quench+valence,u",(*33:*)"(Z-1)tree+quench+valence,d",(*34:*)"(Z-1)tree+quench+valence,s",
+(*35:*)"exprmt.",(*36:*)"lattice",(*37:*)"paper"
 };
-
-
-color`default = RGBColor[0.368417, 0.506779, 0.709798];
-
-
-(* ::DisplayFormula:: *)
-(*1,3,4,6;2,5,7,8*)
-
-
-style`colors`theme={Blue,Green,Red,Black};
-
-
-(* ::DisplayFormula:: *)
-(*style`colors = {*)
-(*(*1*)style`colors`theme[[1]],*)
-(*(*2*)style`colors`theme[[1]],*)
-(*(*3*)style`colors`theme[[2]],*)
-(*(*4*)style`colors`theme[[3]],*)
-(*(*5*)style`colors`theme[[2]],*)
-(*(*6*)style`colors`theme[[4]],*)
-(*(*7*)style`colors`theme[[3]],*)
-(*(*8*)style`colors`theme[[4]]*)
-(*};*)
-
-
-(* ::Text:: *)
-(*\:8ba1\:7b97\:6570\:636e\:8fb9\:6846\:6587\:5b57\:7684\:5927\:5c0f*)
-
-
-font`whether`nomral=<|"normal"->18,"unnormal"->12|>;
-
-
-(* ::Text:: *)
-(*\:6839\:636e\:662f\:5426\:4f5c\:56fe\:6570\:636e\:662f\:5426\:5f52\:4e00\:5316\:ff0c\:9009\:62e9\:6587\:5b57\:7684\:5927\:5c0f*)
-
-
-fontsize`frame`text=font`whether`nomral[whether`normal];
-
-
-(* ::Text:: *)
-(*\:56fe\:50cf\:7684\:5927\:5c0f*)
-
-
-imagesize=Scaled[.6];
-
-
-(* ::Text:: *)
-(*\:8fb9\:6846\:523b\:5ea6\:7ebf\:7684\:7c97\:7ec6*)
-
-
-fontsize`frame`tick=AbsoluteThickness[1.5];
-
-
-(* ::Section:: *)
-(*legend\:56fe\:4f8b\:76f8\:5173*)
-
-
-(* ::Text:: *)
-(*\:56fe\:4f8b\:7684\:7f29\:653e\:6bd4\:4f8b*)
-
-
-fig`legend`magni=1;
-
-
-(* ::Text:: *)
-(*\:56fe\:4f8b\:6587\:5b57\:7684\:5927\:5c0f*)
-
-
-legend`calc`text`size=10;
-legend`expr`text`size=10;
-
-
-(* ::Text:: *)
-(*\:5b9e\:9a8c\:56fe\:4f8b\:7684\:5e03\:5c40\:51fd\:6570\:ff0c\:4e00\:822c\:6307\:5b9a\:51e0\:884c\:51e0\:5217\:5373\:53ef\:ff1a*)
-
-
-(* ::DisplayFormula:: *)
-(*SwatchLegend[63,Range[5],LegendLayout->(Map[(If[ListQ[#],Row[#,"  "]]&),Multicolumn[##,4],{3}]&)]*)
-
-
-(*\:4ea7\:751f\:4e00\:4e2a\:51fd\:6570\:ff0c\:53ef\:4ee5\:628a\:56fe\:4f8b\:6392\:5217\:6210n\:5217,\:4f7f\:7528Row\:662f\:56e0\:4e3a\:4f20\:9012\:8fc7\:6765\:7684\:53c2\:6570\:4f1a\:5e26\:6709\:62ec\:53f7\:ff0c\:91cd\:6392\:65f6\:7f3a\:5c11\:7684\:4f1a\:7528\:7a7a\:5b57\:7b26\:8865\:5145\:ff0c\:6ca1\:6709\:5217\:8868\:5934\:90e8*)
-fun`legend`layout[n_]:=(Map[(If[ListQ[#],Row[#,"  "]]&),Multicolumn[##,n,Alignment->Left,Appearance->"Horizontal"],{3}]&)
-
-
-legend`expr`layout={
-fun`legend`layout[3],(*ge.n*)
-fun`legend`layout[3],(*ge.p*)
-fun`legend`layout[3],(*gm.n*)
-fun`legend`layout[3](*gm.p*)
-};
-
-
-(* ::Text:: *)
-(*\:6307\:5b9a\:56fe\:4f8b\:4e2d\:6bcf\:4e2a\:5143\:7d20\:7684\:5927\:5c0f,\:6309\:7167 ge.n, ge.p, gm.n, gm.p \:7684\:6b21\:5e8f\:ff0c*)
-
-
-(* ::Text:: *)
-(*\:8ba1\:7b97\:6570\:636e\:7684\:ff1a*)
-
-
-legend`calc`totalsize={
-{28,2}, (*ge.n*)
-{28,2},(*ge.p*)
-{28,2},(*gm.n*)
-{28,2}(*gm.p*)
-};
-
-
-(* ::Text:: *)
-(*\:5b9e\:9a8c\:6570\:636e\:7684\:ff1a*)
-
-
-legend`expr`totalsize={
-{10,10}, (*ge.n*)
-{10,10},(*ge.p*)
-{10,10},(*gm.n*)
-{10,10}(*gm.p*)
-};
-
-
-(* ::Text:: *)
-(*\:56fe\:4f8b\:7684\:4f4d\:7f6e\:ff0c\:5206\:6210\:81ea\:5df1\:8ba1\:7b97\:7684\:ff0c\:548c\:53c2\:8003\:7684\:5b9e\:9a8c\:6570\:636e\:ff0c\:6309\:7167 ge.n, ge.p, gm.n, gm.p \:7684\:6b21\:5e8f\:ff0c*)
-
-
-(* ::Text:: *)
-(*\:5b9e\:9a8c\:6570\:636e\:7684\:56fe\:4f8b\:ff1a*)
-
-
-legend`position`expr={
-{(*ge.n*) Scaled[{0.40,0.70}],(*anchor position*)
-   {0,0}(*legend anchor*)},
-
-{(*ge.p*)Scaled[{0.40,0.05}],(*anchor position*)
-   {0,0}(*legend anchor*)},
-
-{(*gm.n*){0.05,0.02},(*anchor position*)
-   {0,0}(*legend anchor*)},
-
-{(*gm.p*){0.05,0.05},(*anchor position*)
-   {0,0}(*legend anchor*)}
-   };
-
-
-legend`position`calc={
-{(*ge.n*){0.04,0.65},(*anchor position*)
-   {0,0}(*legend anchor*)},
-
-{(*ge.p*)Scaled[{0.80,0.625}],(*anchor position*)
-   {0,0}(*legend anchor*)},
-
-{(*gm.n*){0.20,0.65},(*anchor position*)
-   {0,0}(*legend anchor*)},
-
-{(*gm.p*){0.20,0.65},(*anchor position*)
-   {0,0}(*legend anchor*)}
-   };
-
-
-(* ::Text:: *)
-(*\:6307\:5b9a\:7eb5\:8f74\:8303\:56f4\:ff0ccalc and expr \:90fd\:751f\:6548*)
-
-
-fig`range=<|
-"normal"->{
-{{0,1},All},(*ge.n*)
-{{0,1},All},(*ge.p*)
-{{0,1},All},(*gm.n*)
-{{0,1},All}(*gm.p*)
-},
-"unnormal"->{
-{{0,1},All},(*ge.n*)
-{{0,1},All},(*ge.p*)
-{{0,1},{-2.5,0}},(*gm.n*)
-{{0,1},{0,3.2}}(*gm.p*)
-}
-|>;
-
-
-(* ::Text:: *)
-(*\:6307\:5b9a\:56fe\:50cf\:7a7a\:767d\:586b\:5145\:8303\:56f4\:ff0ccalc and expr \:90fd\:751f\:6548*)
-
-
-fig`padding=<|
-"normal"->{
-{{0,0},{Scaled[0.09],Scaled[0.12]}},(*ge.n*)
-{{0,0},{Scaled[0.09],Scaled[0.12]}},(*ge.p*)
-{{0,0},{Scaled[0.09],Scaled[0.12]}},(*gm.n*)
-{{0,0},{Scaled[0.09],Scaled[0.12]}}(*gm.p*)
-},
-"unnormal"->{
-{{0,0},{0,0}},(*ge.n*)
-{{0,0},{0,0}},(*ge.p*)
-{{0,0},{0,0}},(*gm.n*)
-{{0,0},{0,0}}(*gm.p*)
-}
-|>;
-
-
-(* ::Section:: *)
-(*others*)
-
-
-(* ::Text:: *)
-(*\:9ed8\:8ba4\:7ebf\:5bbd*)
-
-
-style`line`thick=AbsoluteThickness[2];
-
-
-(* ::Text:: *)
-(*\:7ebf\:578b,Dashing[{}]\:6307\:5b9a\:7ebf\:4e3a\:5b9e\:7ebf*)
-
-
-style`line`type={AbsoluteDashing[{}],AbsoluteDashing[6],AbsoluteDashing[{1,6}],
-AbsoluteDashing[{1,6,6,6}]
-};
-
-
-(* ::Text:: *)
-(*\:7ebf\:578b\:548c\:989c\:8272\:7ec4\:5408*)
-
-
-(* ::DisplayFormula:: *)
-(*style`line`type={Dashing[{}],Dashing[Medium],Dotted,DotDashed};*)
-
-
-(* ::DisplayFormula:: *)
-(*style`colors`theme={Blue,Green,Red,Black};*)
-
-
-fun`style`line[a_,b_,c_]:=Directive[style`line`thick,style`line`type[[a]],style`colors`theme[[b]],Opacity[c]]
-
-
-(* ::Text:: *)
-(*\:8bbe\:5b9a\:516b\:91cd\:6001\:66f2\:7ebfstyle\:ff0c\:5305\:62ec\:900f\:660e\:5ea6\:ff0cstyle`line[[{1,3,4,6}]]\:4e2d\:7684\:662f\:516b\:91cd\:6001\:7f16\:53f7*)
-
-
-style`line=Range[8];
-style`line[[{1,3,4,6}]]={
-(*1*)fun`style`line[3,1,calc`point`opacity[[1]]],
-(*3*)fun`style`line[2,2,calc`point`opacity[[3]]],
-(*4*)fun`style`line[1,3,calc`point`opacity[[4]]],
-(*6*)fun`style`line[4,4,calc`point`opacity[[6]]]
-};
-
-style`line[[{2,5,7,8}]]={
-(*2*)fun`style`line[2,2,calc`point`opacity[[2]]],
-(*5*)fun`style`line[1,3,calc`point`opacity[[5]]],
-(*7*)fun`style`line[4,4,calc`point`opacity[[7]]],
-(*8*)fun`style`line[3,1,calc`point`opacity[[8]]]
-};
-
-
-
-(* ::Text:: *)
-(******************************************************  legend*)
-
-
-(* ::Text:: *)
-(*\:8bbe\:7f6e\:56fe\:4f8b\:6837\:5f0f*)
-
-
-(* ::Text:: *)
-(*\:6309\:7167 pr, \[CapitalSigma]p, \[CapitalSigma]m, \[CapitalXi]m, {4,3,1,6}*)
-
-
-(* ::Text:: *)
-(*\:6309\:7167 ne, \[CapitalSigma]0, \[CapitalLambda], \[CapitalXi]0, {5,2,8,7}*)
-
-
-style`legend1=style`line[[{4,3,1,6}]];
-
-
-style`legend2=style`line[[{5,2,8,7}]];
-
-
-(* ::Text:: *)
-(*\:8bbe\:7f6e\:6846\:67b6\:6837\:5f0f*)
-
-
-style`frame={
+(*\:7ebf\:578b\:548c\:989c\:8272\:7ec4\:5408\:ff0c\:7ed9\:5b9a\:4e00\:7ec4\:914d\:8272\:65b9\:6848*)
+lineThick=AbsoluteThickness[2];
+(*\:6307\:5b9a\:7ebf\:578b\:65b9\:6848*)
+lineDashTheme1={
+AbsoluteDashing[{}],AbsoluteDashing[{16,4,4,4}],AbsoluteDashing[{4,4}],AbsoluteDashing[{24,4,12,4}]
+};(*\:7ebf\:578b,Dashing[{}]\:6307\:5b9a\:7ebf\:4e3a\:5b9e\:7ebf,12\:4e2a*)
+(*\:5faa\:73af\:523037\:79cd\:ff0c\:4e5f\:5c31\:662fseva\:7684\:6570\:91cf*)
+lineDashTheme=PadRight[
 {
-Directive[fontsize`frame`tick,FontSize->fontsize`frame`text,Black],
-Directive[fontsize`frame`tick,FontSize->fontsize`frame`text,Black]
+AbsoluteDashing[{}],AbsoluteDashing[{16,4,4,4}],AbsoluteDashing[{4,4}],AbsoluteDashing[{24,4,12,4}],
+AbsoluteDashing[{}],AbsoluteDashing[{16,4,4,4}],AbsoluteDashing[{4,4}],AbsoluteDashing[{24,4,12,4}],
+AbsoluteDashing[{}],AbsoluteDashing[{16,4,4,4}],AbsoluteDashing[{4,4}],
+AbsoluteDashing[{}],AbsoluteDashing[{16,4,4,4}],AbsoluteDashing[{4,4}],
+AbsoluteDashing[{}],AbsoluteDashing[{16,4,4,4}],AbsoluteDashing[{4,4}],
+AbsoluteDashing[{}],AbsoluteDashing[{16,4,4,4}],AbsoluteDashing[{4,4}],AbsoluteDashing[{24,4,12,4}],
+AbsoluteDashing[{}],AbsoluteDashing[{16,4,4,4}],AbsoluteDashing[{4,4}],AbsoluteDashing[{24,4,12,4}],
+AbsoluteDashing[{}],AbsoluteDashing[{16,4,4,4}],AbsoluteDashing[{4,4}]
 },
-{
-Directive[fontsize`frame`tick,FontSize->fontsize`frame`text,Black],
-Directive[fontsize`frame`tick,FontSize->fontsize`frame`text,Black]
-}
-};
-
-
-(* ::Section:: *)
-(*functions to draw*)
-
-
-(* ::DisplayFormula:: *)
-(*data`interval,{2,8,3,2},{gegm,io,trlp,point}*)
-
-
-(* ::Text:: *)
-(************************************)
-
-
-(* ::Text:: *)
-(*\:7ed8\:5236\:5b9e\:9a8c\:6570\:636e\:7684\:6563\:70b9\:56fe\:ff0c\:53ef\:4ee5\:8bbe\:7f6e\:70b9\:7684\:6837\:5f0f*)
-
-
-(* ::DisplayFormula:: *)
-(*assoc`expr,{4}*)
-
-
-(* ::DisplayFormula:: *)
-(*PlotLegends->Placed[*)
-(*(Style[#1,FontFamily->"Times New Roman",FontSize->10]&)/@Keys[assoc`expr[[inde]]],*)
-(*{*)
-(*{0.5,0.5},*)
-(*{0,0}*)
-(*}*)
-
-
-expr`color={Opacity[expr`opacity],Black};
-
-
-marker`expr`point={
-Graphics[Circle[{0,0},1]],
-Graphics[Disk[{0,0},1]],
-Graphics[Line[{{-0.5,-0.5},{0.5,-0.5},{0.5,0.5},{-0.5,0.5},{-0.5,-0.5}}]],
-Graphics[{Sequence@@expr`color,Polygon[{{-0.5,-0.5},{0.5,-0.5},{0.5,0.5},{-0.5,0.5}}]}]
-};
-
-
-marker`exper`errobar=<|
-"WhiskerStyle"->Directive[Sequence@@expr`color,AbsoluteThickness[1.0]],(*\:7ad6\:7ebf\:7684style*)
-"FenceStyle"->Directive[Sequence@@expr`color,AbsoluteThickness[1.0]](*\:6a2a\:7ebffence \:7684style*)
-|>;
-
-
-(* ::Text:: *)
-(*\:5b9e\:9a8c\:6570\:636e\:7684\:56fe\:4f8b\:ff0c\:6309\:7167 ge.n, ge.p, gm.n, gm.p \:7684\:6b21\:5e8f\:ff0c*)
-
-
-(* ::Text:: *)
-(*\:4e4b\:524d\:7684\:914d\:7f6e*)
-
-
-(* ::DisplayFormula:: *)
-(*legend`position`expr={*)
-(*{*)
-(*   {0.40,0.65},(*anchor position*)*)
-(*   {0,0}(*legend anchor*)*)
-(*},*)
-(**)
-(*{*)
-(*   {0.256,0.74},(*anchor position*)*)
-(*   {0,0}(*legend anchor*)*)
-(*},*)
-(**)
-(*{*)
-(*   {0.40,0.65},(*anchor position*)*)
-(*   {0,0}(*legend anchor*)*)
-(*},*)
-(**)
-(*{*)
-(*   {0.40,0.70},(*anchor position*)*)
-(*   {0,0}(*legend anchor*)*)
-(*}*)
-(**)
-(*};*)
-
-
-(* ::Text:: *)
-(*\:5bf9\:5b9e\:9a8c\:6570\:636e\:4f5c\:56fe\:ff0c\:5bf9\:5b9e\:9a8c\:6570\:636e\:4e0a\:6807\:8bb0\:ff0c\:9884\:7f6e\:4e86\:591a\:79cd\:6837\:5f0f*)
-
-
-(* ::Text:: *)
-(*\:9996\:5148\:5b9a\:4e00\:4e2a\:5b9e\:9a8c\:6570\:636e\:56fe\:4f8b\:7684\:51fd\:6570*)
-
-
-(* ::DisplayFormula:: *)
-(*fun`legend`bg=Framed[#1,RoundingRadius->4,FrameStyle->LightGray,Background->White]&;*)
-
-
-fun`legend`bg=Identity;
-
-
-marker`expr`sequence[style_,inde_]:={
-{
-PlotMarkers->{marker`expr`point[[4]],Offset[2]},
-IntervalMarkers->"Fences",
-IntervalMarkersStyle-> marker`exper`errobar
-},
-
-{
-PlotMarkers->Automatic,
-IntervalMarkers->Automatic,
-IntervalMarkersStyle->Automatic
-},
-
-(*\:4e0b\:9762\:662f\:4e4b\:524d\:5e94\:7528\:6210\:529f\:7684\:56fe\:4f8b*)
-{
-PlotMarkers->Automatic,
-IntervalMarkers->Automatic,
-IntervalMarkersStyle->Automatic,
-PlotLegends->Placed[
-(Style[#1,FontFamily->"Times New Roman",FontSize->legend`expr`text`size]&)/@Keys[assoc`expr[[inde]]],
-legend`position`expr[[inde]]
-]
-},
-
-{
-PlotMarkers->Automatic,
-IntervalMarkers->Automatic,
-IntervalMarkersStyle->Automatic,
-PlotLegends->Placed[
-PointLegend[
-(Style[#1,FontFamily->"Times New Roman",FontSize->legend`expr`text`size]&)/@Keys[assoc`expr[[inde]]],
-(*\:51b3\:5b9a\:56fe\:4f8b\:7684\:6392\:5217\:65b9\:5f0f*)
-LegendLayout->legend`expr`layout[[inde]],
-LegendMarkerSize->legend`expr`totalsize[[inde]],
-LegendFunction->fun`legend`bg
-],
-(*\:56fe\:4f8b\:51fd\:6570\:ff0c\:5e94\:7528\:5230\:6bcf\:4e2a\:56fe\:4f8b\:4e0a*)
-legend`position`expr[[inde]]
-]
-}
-
-}[[style]];
-
-
-(* ::Text:: *)
-(*\:5bf9\:5b9e\:9a8c\:6570\:636e\:4f5c\:56fe*)
-
-
-fig`expr=Table[
-
-ListPlot[
-Values[assoc`expr[[inde]]],
-PlotRange->{Full,Full},
-AxesOrigin->{0,0},
-PlotRangePadding->{{0,0},{Scaled[0.09],Scaled[0.12]}},
-PlotRangeClipping->True,
-ClippingStyle->Automatic,
-Sequence@@marker`expr`sequence[expr`errobar`style,inde]
-]
-
-,{inde,1,4,1}
-];
-
-
-(* ::Text:: *)
-(*\:7ed8\:5236\:8ba1\:7b97\:6570\:636e\:7684\:5e26\:72b6\:56fe\:ff0cerrobar \:53ef\:4ee5\:901a\:8fc7\:8bbe\:7f6e\:900f\:660e\:5ea6\:4e0d\:663e\:793a*)
-
-
-fig`calc`interval`im1=Table[
-
-ListLinePlot[
-data`interval[[gegm,io,trlp]],
-PlotStyle->style`line[[io]],
-PlotRange->{Full,Full},
-AxesOrigin->{0,0},
-PlotRangePadding->{{0,0},{Scaled[0.09],Scaled[0.12]}},
-IntervalMarkers->calc`errobar`style,
-IntervalMarkersStyle-> Directive[Opacity[calc`errobar`opacity[[gegm,io]]]]
-]
-
-,{gegm,1,2,1}
+37,lineDashTheme1];
+(*\:6307\:5b9a\:914d\:8272\:65b9\:6848*)
+colorTheme1={
+RGBColor["#FF99FF"],RGBColor["#FFA500"],RGBColor["#0099FF"],
+RGBColor["#009900"],RGBColor["#A52A2A"],RGBColor["#00FFFF"],
+RGBColor["#0000FF"],RGBColor["#FAEBD7"],RGBColor["#FF1493"],
+RGBColor["#F0F8FF"],RGBColor["#8A2BE2"],RGBColor["#7FFFD4"]
+};(*\:914d\:8272\:65b9\:6848\:ff0c12\:4e2a*)
+(*\:5faa\:73af\:52308\:79cd\:ff0c\:4e5f\:5c31\:662fio\:7684\:6570\:91cf*)
+colorTheme=PadRight[{},8,colorTheme1];
+(* \:4ea7\:751f\:5e94\:7528\:5230\:540e\:9762\:66f2\:7ebf\:7684\:914d\:8272\:548c\:7ebf\:578b\:65b9\:6848 *)
+lineStyleTable=Table[
+Directive[lineThick,colorTheme[[io]],lineDashTheme[[seva]],Opacity[calcPointOpacity[[io]]]]
+,{seva,1,34,1}
 ,{io,1,8,1}
-,{trlp,1,3,1}
-];
-
-
-(* ::Text:: *)
-(*****************************************)
-
-
-(* ::Text:: *)
-(*\:5bf9octet FF \:66f2\:7ebf\:4e2d\:7684\:70b9\:7684\:540e\:7eed\:5904\:7406*)
-
-
-(* ::DisplayFormula:: *)
-(*{AbsoluteThickness[_]->AbsoluteThickness[2.5]}*)
-(*{PointSize[_]->PointSize[0.007],Line->Point},*)
-
-
-rule`curve={
-{(*PointSize[_]\[Rule]PointSize[0.007],Line\[Rule]Point*)},{},{},
-{},{},
-{},{},
-{(*PointSize[_]\[Rule]PointSize[0.007],Line\[Rule]Point*)}
-};
-
-
-fig`calc`interval=Transpose[
-Table[fig`calc`interval`im1[[All,io,All]]/.rule`curve[[io]],{io,1,8,1}]
-,{2,1,3}
 ];
 
 
 (* ::DisplayFormula:: *)
-(*fig`calc`interval,{2,8,3},{gegm,conf,trlp}*)
+(*lineDashTheme1={*)
+(*AbsoluteDashing[{}],AbsoluteDashing[{4,4}],AbsoluteDashing[{6,6}],AbsoluteDashing[{8,4,4,4}],*)
+(*AbsoluteDashing[{8,8}],AbsoluteDashing[{10,4,4,4,4}],AbsoluteDashing[{24,4,12,4}],*)
+(*AbsoluteDashing[{24,4,4,4}],AbsoluteDashing[{8,8}],AbsoluteDashing[{20,10,4,4}],*)
+(*AbsoluteDashing[{24,6,20,6}],AbsoluteDashing[{10,10}],AbsoluteDashing[{24,6,6,6,6,6}]};(*\:7ebf\:578b,Dashing[{}]\:6307\:5b9a\:7ebf\:4e3a\:5b9e\:7ebf,12\:4e2a*)*)
+(*(*\:5faa\:73af\:523037\:79cd\:ff0c\:4e5f\:5c31\:662fseva\:7684\:6570\:91cf*)*)
+(*lineDashTheme=PadRight[{},37,lineDashTheme1];*)
+(*lineStyle[a_,b_,c_]:=Directive[lineThick,colorTheme[[a]],lineDashTheme[[b]],Opacity[calcPointOpacity[[c]]]](*\:4e00\:4e2a\:4ea7\:751f\:7ebf\:578b\:7684\:51fd\:6570,\:6700\:540e\:4e00\:4e2a\:53c2\:6570\:662f\:900f\:660e\:5ea6*)*)
+(*lineStyleTable1={*)
+(*lineStyle[1,1,1],lineStyle[2,2,2],lineStyle[3,3,3],lineStyle[4,4,4],(*1,4*)*)
+(*lineStyle[5,5,5],lineStyle[6,6,6],lineStyle[7,7,7],lineStyle[8,8,8],(*5,8*)*)
+(*lineStyle[9,9,9],lineStyle[10,10,10],lineStyle[11,11,11],lineStyle[12,12,12],(*9,12*)*)
+(*lineStyle[1,1,1],lineStyle[2,2,2],lineStyle[3,3,3],(*13,15*)*)
+(*lineStyle[4,4,4],lineStyle[5,5,5],lineStyle[6,6,6],(*16,18*)*)
+(*lineStyle[7,7,7],lineStyle[8,8,8],lineStyle[9,9,9],(*19,21*)*)
+(*lineStyle[10,10,10],lineStyle[11,11,11],lineStyle[12,12,12],(*22,24*)*)
+(*lineStyle[1,1,1],lineStyle[2,2,2],lineStyle[3,3,3],(*25,27*)*)
+(*lineStyle[4,4,4],lineStyle[5,5,5],lineStyle[6,6,6],lineStyle[7,7,7],(*28,31*)*)
+(*lineStyle[8,8,8],lineStyle[9,9,9],lineStyle[10,10,10](*32,34*)*)
+(*};*)
+(*lineStyleTable=Transpose[*)
+(*Table[*)
+(*RotateLeft[lineStyleTable1,4*io]*)
+(*,{io,1,8,1}*)
+(*]*)
+(*,{2,1}];*)
 
 
-(* ::Text:: *)
-(*******************************************)
+(*\:7ed8\:5236\:8ba1\:7b97\:6570\:636e\:7684\:5e26\:72b6\:56fe\:ff0cerrobar \:53ef\:4ee5\:901a\:8fc7\:8bbe\:7f6e\:900f\:660e\:5ea6\:4e0d\:663e\:793a*)
+Module[{term=0,teFig},
+figCalc=Table[
+If[Divisible[++term,70],echo[term]];(*\:4e00\:4e2a\:7b80\:5355\:7684\:6307\:793a\:5668*)
+(*echo[{norm,conf=All,gegm,io,seva}];*)
+teFig=reSevaGegm[[norm,conf=All,gegm,io,seva]];
+Plot[
+teFig,{Q2,0,1},
+PlotRange->{Full,Full},
+AxesOrigin->{0,0},Axes->True,
+PlotRangePadding->{{0,0},{Scaled[0.09],Scaled[0.12]}}, 
+PlotStyle->{
+Directive[lineStyleTable[[seva,io,2]],Opacity[calcErrobarOpacity[[gegm,io]]]],(*\:4e0a\:4e0b\:8bef\:5dee\:5e26\:8fb9\:7f18\:7684\:6837\:5f0f\:ff0clineStyleTable[[seva,io,2]\:7ed9\:51fa\:989c\:8272*)
+lineStyleTable[[seva,io]],
+Directive[lineStyleTable[[seva,io,2]],Opacity[calcErrobarOpacity[[gegm,io]]]]
+},(*\:66f2\:7ebf\:7684\:6837\:5f0f*)
+Filling->{1->{2},3->{2}},
+FillingStyle->Directive[lineStyleTable[[seva,io,2]],Opacity[calcErrobarOpacity[[gegm,io]]]](*\:900f\:660e\:5ea6*)
+]
+
+,{norm,1,2,1}
+,{gegm,1,2,1}
+,{seva,1,34,1}
+,{io,1,8,1}
+]
+];//AbsoluteTiming
+(*figCalc//Dimensions
+{2,2,28,8},{norm,gegm,seva,io}*)
 
 
-(* ::Text:: *)
-(*\:6a2a\:7eb5\:8f74\:7ebf\:6807\:8bb0*)
+(* ::Section:: *)
+(*\:8ba1\:7b97\:6570\:636eGroup*)
 
 
-(* ::DisplayFormula:: *)
-(*\*input  \:6784\:5efa\:6765\:81ea input \:7684\:6846\:7b26*)
-
-
-framelabel`gegm=<|
-(*\:6570\:636e\:7684\:6b21\:5e8f\:662f ge.n, ge.p, gm.n, gm.p*)
-(*\:5f52\:4e00\:5316\:7684\:65f6\:5019\:ff0c\:90fd\:662f\:7528GEB GMB*)
-"normal"->{
-{
-{Style["\*SubsuperscriptBox[\(G\), \(E\), \(B\)](\*SuperscriptBox[\(Q\), \(2\)])",FontFamily->"Times New Roman",
-FontSize->fontsize`frame`text],None},
-{Style["\*SuperscriptBox[\(Q\), \(2\)](\*SuperscriptBox[\(GeV\), \(2\)])",FontFamily->"Times New Roman",
-FontSize->fontsize`frame`text],None}
-},
-{
-{Style["\*SubsuperscriptBox[\(G\), \(E\), \(B\)](\*SuperscriptBox[\(Q\), \(2\)])",FontFamily->"Times New Roman",
-FontSize->fontsize`frame`text],None},
-{Style["\*SuperscriptBox[\(Q\), \(2\)](\*SuperscriptBox[\(GeV\), \(2\)])",FontFamily->"Times New Roman",
-FontSize->fontsize`frame`text],None}
-},
-{
-{Style["\!\(\*SubsuperscriptBox[\(G\), \(M\), \(B\)]\)(\!\(\*SuperscriptBox[\(Q\), \(2\)]\))/\!\(\*SubscriptBox[\(\[Mu]\), \(B\)]\)",FontFamily->"Times New Roman",
-FontSize->fontsize`frame`text],None},
-{Style["\*SuperscriptBox[\(Q\), \(2\)](\*SuperscriptBox[\(GeV\), \(2\)])",FontFamily->"Times New Roman",
-FontSize->fontsize`frame`text],None}
-},
-{
-{Style["\!\(\*SubsuperscriptBox[\(G\), \(M\), \(B\)]\)(\!\(\*SuperscriptBox[\(Q\), \(2\)]\))/\!\(\*SubscriptBox[\(\[Mu]\), \(B\)]\)",FontFamily->"Times New Roman",
-FontSize->fontsize`frame`text],None},
-{Style["\*SuperscriptBox[\(Q\), \(2\)](\*SuperscriptBox[\(GeV\), \(2\)])",FontFamily->"Times New Roman",
-FontSize->fontsize`frame`text],None}
-}
-},
-(*\:4e0d\:5f52\:4e00\:5316\:7684\:65f6\:5019\:ff0c\:7528\:7684\:662fGE/Mp\:548cGE/Mn*)
-(*\:6570\:636e\:7684\:6b21\:5e8f\:662f ge.n, ge.p, gm.n, gm.p*)
-"unnormal"->{
-{
-{Style["\*SubsuperscriptBox[\(G\), \(E\), \(n\)](\*SuperscriptBox[\(Q\), \(2\)])",FontFamily->"Times New Roman",
-FontSize->fontsize`frame`text],None},
-{Style["\*SuperscriptBox[\(Q\), \(2\)](\*SuperscriptBox[\(GeV\), \(2\)])",FontFamily->"Times New Roman",
-FontSize->fontsize`frame`text],None}
-},
-{
-{Style["\*SubsuperscriptBox[\(G\), \(E\), \(p\)](\*SuperscriptBox[\(Q\), \(2\)])",FontFamily->"Times New Roman",
-FontSize->fontsize`frame`text],None},
-{Style["\*SuperscriptBox[\(Q\), \(2\)](\*SuperscriptBox[\(GeV\), \(2\)])",FontFamily->"Times New Roman",
-FontSize->fontsize`frame`text],None}
-},
-{
-{Style["\*SubsuperscriptBox[\(G\), \(M\), \(n\)](\*SuperscriptBox[\(Q\), \(2\)])",FontFamily->"Times New Roman",
-FontSize->fontsize`frame`text],None},
-{Style["\*SuperscriptBox[\(Q\), \(2\)](\*SuperscriptBox[\(GeV\), \(2\)])",FontFamily->"Times New Roman",
-FontSize->fontsize`frame`text],None}
-},
-{
-{Style["\*SubsuperscriptBox[\(G\), \(M\), \(p\)](\*SuperscriptBox[\(Q\), \(2\)])",FontFamily->"Times New Roman",
-FontSize->fontsize`frame`text],None},
-{Style["\*SuperscriptBox[\(Q\), \(2\)](\*SuperscriptBox[\(GeV\), \(2\)])",FontFamily->"Times New Roman",
-FontSize->fontsize`frame`text],None}
-}
-}
-|>;
-
-
-(* ::Text:: *)
-(*\:5bf9\:56fe\:5f62\:7684\:7ec6\:8282\:8fdb\:884c\:8c03\:6574*)
-
-
-fun`fig`gegm`cn[
-fig`calc`interval_,(*function, generate band figure using data of ge or gm *)
-framelabel_,(*framelabel of ge or gm*)
-legend`text_,(*legend text*)
-legend`ps_:legend`position,(*legend position*)
-style`legend_,
-legend`calc`totalsize_,
-fig`range_,
-fig`padding_
-]:=Legended[(*\:8bbe\:7f6e\:8ba1\:7b97\:66f2\:7ebf\:7684\:56fe\:4f8b*)
+(*figGroup\:7528\:4e00\:4e2a\:5173\:8054Assoc \:4f20\:5165\:53c2\:6570\:ff0c\:4e0b\:9762\:662f\:9700\:8981\:4f20\:5165\:7684\:53c2\:6570\:540d\:79f0.
+Assoc["Data"],\:4f5c\:56fe\:7528\:7684\:6570\:636e
+Assoc["PlotRange"],\:4f5c\:56fe\:8303\:56f4
+PlotRangePadding\[Rule]Assoc["PlotRangePadding"],\:4f5c\:56fe\:8303\:56f4\:586b\:5145
+Assoc["FrameLabel"],FrameLabel,
+Assoc["FrameStyle"],FrameStyle,
+Assoc["LegendText"],\:56fe\:4f8b\:6587\:5b57
+Assoc["LegendPositon"],\:56fe\:4f8b\:4f4d\:7f6e
+Assoc["LegendStyle"],\:56fe\:4f8b\:6837\:5f0f,
+Assoc["LegendMarkerSize"],\:56fe\:4f8b\:8bb0\:53f7\:5927\:5c0f*)
+figGroup[figAssoc_]:=Legended[(*\:8bbe\:7f6e\:8ba1\:7b97\:66f2\:7ebf\:7684\:56fe\:4f8b*)
 Show[
-(Sequence@@fig`calc`interval),
-(*Show \:63a5\:53d7sequence \:5e8f\:5217*) 
+figAssoc["Data"],(*Show\:7684\:53c2\:6570\:662f\:5e8f\:5217*) 
 ImageSize->Large,
-PlotRange->fig`range,
-AxesOrigin->{0,0},
-PlotRangePadding->fig`padding,
+PlotRange->figAssoc["PlotRange"],
+AxesOrigin->{0,0},Axes->True,
+PlotRangePadding->figAssoc["PlotRangePadding"],
 Frame->True,
-FrameLabel->framelabel,
-FrameStyle->style`frame
-
+FrameLabel->figAssoc["FrameLabel"],
+FrameStyle->figAssoc["FrameStyle"](*\:8fb9\:6846\:7684\:6837\:5f0f\:ff0c\:5728\:4e0b\:9762\:8be6\:7ec6\:6307\:5b9a*)
 ],
-(*++++++++++++++++++++++++++++++*)
-Placed[
+Placed[(*+++\:56fe\:4f8b\:90e8\:5206++++++++*)
 Style[
-LineLegend[style`legend,
-(Style[#1,FontFamily->"Times New Roman",FontSize->legend`calc`text`size]&)/@legend`text,
-LegendMarkerSize->legend`calc`totalsize,
-(*\:8ba1\:7b97\:6570\:636e\:7684\:56fe\:4f8b\:51fd\:6570*)
-LegendFunction->fun`legend`bg
+LineLegend[figAssoc["LegendStyle"],Style[#1,FontFamily->"Times New Roman",FontSize->10(*\:56fe\:4f8b\:6587\:5b57\:7684\:5927\:5c0f*)]&/@figAssoc["LegendText"],
+LegendMarkerSize->figAssoc["LegendMarkerSize"],
+LegendFunction->Identity(*\:4f5c\:7528\:5230\:56fe\:4f8b\:4e0a\:7684\:51fd\:6570*)
 ],
-(*\:8ba1\:7b97\:6570\:636e\:56fe\:4f8b\:7684\:653e\:5927\:500d\:6570*)
-Magnification->fig`legend`magni
+Magnification->1(*\:8ba1\:7b97\:6570\:636e\:56fe\:4f8b\:7684\:653e\:5927\:500d\:6570*)
 ],
-legend`ps
+figAssoc["LegendPositon"]
 ]
 ];
 
 
 (* ::Section:: *)
-(*fun apply*)
+(*\:683c\:5f0f\:7684\:516c\:5171\:90e8\:5206*)
 
 
-(* ::DisplayFormula:: *)
-(*fun`fig`gegm`cn[*)
-(*fig`calc`interval_,(*function, generate band figure using data of ge or gm *)*)
-(*framelabel_,(*framelabel of ge or gm*)*)
-(*legend`text_,(*legend text*)*)
-(*legend`ps_:legend`position,(*legend position*)*)
-(*style`legend_,*)
-(*legend`calc`totalsize*)
-(*]*)
+figArrayInit=0;(*\:7528\:6765\:4f5c\:56fe\:7684\:5404\:9879\:6570\:636e\:7684\:5360\:4f4d\:7b26*)
+figAssoc=<|
+"PlotRange"->figArrayInit,(*\:4f5c\:56fe\:8303\:56f4*)
+"PlotRangePadding"->figArrayInit,(*\:4f5c\:56fe\:7a7a\:767d\:586b\:5145*)
+"FrameLabel"->figArrayInit,(*\:5750\:6807\:8f74\:6807\:8bb0*)
+"FrameStyle"->figArrayInit,(*\:5750\:6807\:8f74\:98ce\:683c*)
+"LegendPositon"->figArrayInit,(*\:6574\:5757\:56fe\:4f8b\:7684\:4f4d\:7f6e*)
+(*\:4e0a\:9762\:7684\:662f\:516c\:6709\:90e8\:5206\:ff0c\:4e0b\:9762\:7684\:9700\:8981\:548c\:6570\:636e\:4e00\:4e00\:5bf9\:5e94*)
+"Data"->figArrayInit,(*\:4f5c\:56fe\:6570\:636e*)
+"LegendText"->figArrayInit,(*\:56fe\:4f8b\:6587\:5b57*)
+"LegendStyle"->figArrayInit,(*\:56fe\:4f8b\:98ce\:683c*)
+"LegendMarkerSize"->figArrayInit (*\:56fe\:4f8b\:8bb0\:53f7*)
+|>;(*\:7528\:6765\:753b\:56fe\:7684\:5173\:8054*)
 
 
-(* ::Text:: *)
-(*\:56fe\:4f8b\:7684\:4f4d\:7f6e\:ff0c\:4e4b\:524d\:7684\:4f4d\:7f6e*)
+frameTick=AbsoluteThickness[1.5];(*\:8fb9\:6846\:523b\:5ea6\:7ebf\:7684\:7c97\:7ec6*)
+frameText=18;(*\:8fb9\:6846\:6587\:5b57\:5927\:5c0f*)(*<|"normalized"\[Rule]18,"unormalized"\[Rule]12|>*)
+(*\:8bbe\:7f6eFrame \:7684\:6837\:5f0f,\:56db\:4e2a\:8fb9\:53ef\:4ee5\:5206\:522b\:6307\:5b9a*)
+figAssoc["FrameStyle"]={
+{
+Directive[frameTick,FontSize->frameText,Black],(*\:5de6\:8fb9*)
+Directive[frameTick,FontSize->frameText,Black](*\:53f3\:8fb9*)
+},
+{
+Directive[frameTick,FontSize->frameText,Black],(*\:5e95\:90e8*)
+Directive[frameTick,FontSize->frameText,Black](*\:9876\:90e8*)
+}
+};
 
 
-(* ::DisplayFormula:: *)
-(*legend`position`calc={*)
-(*  {0.78,0.72},(*anchor position*)*)
-(*  {0.,0.}(*legend anchor*)*)
-(*};*)
+octNameTeX={"\!\(\*SuperscriptBox[\(\[CapitalSigma]\), \(-\)]\)","\!\(\*SuperscriptBox[\(\[CapitalSigma]\), \(0\)]\)","\!\(\*SuperscriptBox[\(\[CapitalSigma]\), \(+\)]\)","p","n","\!\(\*SuperscriptBox[\(\[CapitalXi]\), \(-\)]\)","\!\(\*SuperscriptBox[\(\[CapitalXi]\), \(0\)]\)","\[CapitalLambda]"};
+dataVtitle1={
+(*1:*)"tree,uds",(*2:*)"tree,u",(*3:*)"tree,d",(*4:*)"tree,s",
+(*5:*)"loop,uds",(*6:*)"loop,u",(*7:*)"loop,d",(*8:*)"loop,s",
+(*9:*)"quench,u",(*10:*)"quench d",(*11:*)"quench,s",
+(*12:*)"valence,u",(*13:*)"valence,d",(*14:*)"valence,s",
+(*15:*)"sea,u",(*16:*)"sea,d",(*17:*)"sea,s",
+(*18:*)"Z*tree+loop,uds",(*19:*)"Z*tree+loop,u",(*20:*)"Z*tree+loop,d",(*21:*)"Z*tree+loop,s",
+(*22:*)"(Z-1)tree+loop,uds",(*23:*)"(Z-1)tree+loop,u",(*24:*)"(Z-1)tree+loop,d",(*25:*)"(Z-1)tree+loop,s",
+(*26:*)"quench+valence,u",(*27:*)"quench+valence,d",(*28:*)"quench+valence,s",
+(*29:*)"Z*tree+quench+valence,u",(*30:*)"Z*tree+quench+valence,d",(*31:*)"Z*tree+quench+valence,s",
+(*32:*)"(Z-1)tree+quench+valence,u",(*33:*)"(Z-1)tree+quench+valence,d",(*34:*)"(Z-1)tree+quench+valence,s",
+(*35:*)"exprmt.",(*36:*)"lattice",(*37:*)"paper"
+};
+dataVtitle=Transpose[Table[StringJoin[octNameTeX[[io]],",",#]&/@dataVtitle1,{io,1,8,1}],{2,1}];
+frameLabel={
+{{Style["\!\(\*SubsuperscriptBox[\(G\), \(E\), \(\[CapitalSigma]\)]\)(\!\(\*SuperscriptBox[\(Q\), \(2\)]\))",FontFamily->"Times New Roman",FontSize->frameText],None},
+{Style["\!\(\*SuperscriptBox[\(Q\), \(2\)]\)(\!\(\*SuperscriptBox[\(GeV\), \(2\)]\))",FontFamily->"Times New Roman",FontSize->frameText],None}},
+{{Style["\!\(\*SubsuperscriptBox[\(G\), \(M\), \(\[CapitalSigma]\)]\)(\!\(\*SuperscriptBox[\(Q\), \(2\)]\))",FontFamily->"Times New Roman",FontSize->frameText],None},
+{Style["\!\(\*SuperscriptBox[\(Q\), \(2\)]\)(\!\(\*SuperscriptBox[\(GeV\), \(2\)]\))",FontFamily->"Times New Roman",FontSize->frameText],None}}
+};(*\:5750\:6807Frame\:7684\:6807\:7b7e*)
 
 
-(* ::Subsection:: *)
-(*ge`charge*)
+(* ::Section:: *)
+(*figures*)
 
 
-(* ::Text:: *)
-(*legend text and legend position*)
-
-
-(* ::Text:: *)
-(*\:6309\:7167 pr, \[CapitalSigma]p, \[CapitalSigma]m, \[CapitalXi]m, {4,3,1,6}*)
-
-
-(* ::Text:: *)
-(*\:6309\:7167 ne, \[CapitalSigma]0, \[CapitalLambda], \[CapitalXi]0, {5,2,8,7}*)
-
-
-(* ::Text:: *)
-(*************************************)
-
-
-legend`t1={"p","\!\(\*SuperscriptBox[\(\[CapitalSigma]\), \(+\)]\)","\!\(\*SuperscriptBox[\(\[CapitalSigma]\), \(-\)]\)","\!\(\*SuperscriptBox[\(\[CapitalXi]\), \(-\)]\)"};
-
-
-legend`ps1= {
-  {0.78,0.72},(*anchor position*)
-  {0.,0.}(*legend anchor*)
-  };
-
-
-inde=2;
-fig`baryons`ge`charge=fun`fig`gegm`cn[
-Join[
-fig`calc`interval[[1,{4,3,6,1},3]],
-{fig`expr[[inde]]}
-],
-framelabel`gegm[whether`normal][[inde]],
-legend`t1,
-legend`position`calc[[inde]],
-style`legend1,
-legend`calc`totalsize[[inde]],
-fig`range[whether`normal][[inde]],
-fig`padding[whether`normal][[inde]]
-];
+seriesFig=<||>;(*\:521d\:59cb\:5316,\:7528\:6765\:5b58\:50a8\:56fe\:50cf*)
 
 
 (* ::Subsection:: *)
-(*ge`neutral*)
+(*\[CapitalSigma]p*)
 
 
-(* ::Text:: *)
-(*legend text and legend position*)
+figOrder=Flatten[Transpose[#]]&;(*\:7528\:6765\:7ed9\:56fe\:50cf\:6392\:5e8f\:7684\:51fd\:6570,\:4f5c\:8f6c\:7f6e\:4e4b\:540e\:ff0c\:5c31\:5148\:6309io\:6392\:5e8f\:ff0c\:518d\:6309seva\:6392\:5e8f\:4e86*)
+(*\:8981\:4f5c\:56fe\:7684\:6570\:636e*)
+norm=1;gegm=1;seva=15;;17;io=3;
+figAssoc["Data"]=figCalc[[norm,gegm,seva,io]]//figOrder;
+
+figAssoc["PlotRange"]={{0,1},All};(*\:6307\:5b9a\:7eb5\:8f74\:8303\:56f4*)
+figAssoc["PlotRangePadding"]={{0,0},{Scaled[0.09],Scaled[0.12]}};(*\:6307\:5b9a\:56fe\:50cf\:7a7a\:767d\:586b\:5145\:8303\:56f4\:ff0ccalc and expr \:90fd\:751f\:6548*)
+figAssoc["FrameLabel"]=frameLabel[[gegm]];
+
+figAssoc["LegendStyle"]=lineStyleTable[[seva,io]]//figOrder;(*\:6307\:5b9a\:56fe\:4f8b\:989c\:8272\:ff0c\:6837\:5f0f*)
+figAssoc["LegendText"]=dataVtitle[[seva,io]]//figOrder;(*\:6307\:5b9a\:56fe\:4f8b\:6587\:5b57*)
+figAssoc["LegendMarkerSize"]={40,2};(*\:6307\:5b9a\:56fe\:4f8b\:4e2d\:7b26\:53f7\:7684\:5927\:5c0f.w,h*)
+figAssoc["LegendPositon"]={{0.6,0.70},(*\:951a\:70b9\:4f4d\:7f6e*){0,0}(*\:56fe\:7684\:951a\:70b9*)};(*\:6307\:5b9a\:56fe\:4f8b\:4f4d\:7f6e*)
+seriesFig[{"norm_"<>ToString[norm],"gegm_"<>ToString[gegm],"seva_"<>ToString[seva],"io_"<>ToString[io]}]=figGroup[figAssoc];
+If[!cmdQ,echo[seriesFig[{"norm_"<>ToString[norm],"gegm_"<>ToString[gegm],"seva_"<>ToString[seva],"io_"<>ToString[io]}]]]
 
 
-(* ::Text:: *)
-(*\:6309\:7167 ne, \[CapitalSigma]0, \[CapitalLambda], \[CapitalXi]0, {5,2,8,7}*)
+figOrder=Flatten[Transpose[#]]&;(*\:7528\:6765\:7ed9\:56fe\:50cf\:6392\:5e8f\:7684\:51fd\:6570*)
+norm=1;gegm=1;seva=26;;28;io=3;(*\:8981\:4f5c\:56fe\:7684\:6570\:636e*)
+figAssoc["Data"]=figCalc[[norm,gegm,seva,io]]//figOrder;
+
+figAssoc["PlotRange"]={{0,1},All};(*\:6307\:5b9a\:7eb5\:8f74\:8303\:56f4*)
+figAssoc["PlotRangePadding"]={{0,0},{Scaled[0.09],Scaled[0.12]}};(*\:6307\:5b9a\:56fe\:50cf\:7a7a\:767d\:586b\:5145\:8303\:56f4\:ff0ccalc and expr \:90fd\:751f\:6548*)
+figAssoc["FrameLabel"]=frameLabel[[gegm]];
+
+figAssoc["LegendStyle"]=lineStyleTable[[seva,io]]//figOrder;(*\:6307\:5b9a\:56fe\:4f8b\:989c\:8272\:ff0c\:6837\:5f0f*)
+figAssoc["LegendText"]=dataVtitle[[seva,io]]//figOrder;(*\:6307\:5b9a\:56fe\:4f8b\:6587\:5b57*)
+figAssoc["LegendMarkerSize"]={40,2};(*\:6307\:5b9a\:56fe\:4f8b\:4e2d\:7b26\:53f7\:7684\:5927\:5c0f.w,h*)
+figAssoc["LegendPositon"]={{0.6,0.70},(*\:951a\:70b9\:4f4d\:7f6e*){0,0}(*\:56fe\:7684\:951a\:70b9*)};(*\:6307\:5b9a\:56fe\:4f8b\:4f4d\:7f6e*)
+seriesFig[{"norm_"<>ToString[norm],"gegm_"<>ToString[gegm],"seva_"<>ToString[seva],"io_"<>ToString[io]}]=figGroup[figAssoc];
+If[!cmdQ,echo[seriesFig[{"norm_"<>ToString[norm],"gegm_"<>ToString[gegm],"seva_"<>ToString[seva],"io_"<>ToString[io]}]]]
 
 
-legend`t2={"n","\!\(\*SuperscriptBox[\(\[CapitalSigma]\), \(0\)]\)","\[CapitalLambda]","\!\(\*SuperscriptBox[\(\[CapitalXi]\), \(0\)]\)"};
+figOrder=Flatten[Transpose[#]]&;(*\:7528\:6765\:7ed9\:56fe\:50cf\:6392\:5e8f\:7684\:51fd\:6570*)
+norm=1;gegm=2;seva=15;;17;io=3;(*\:8981\:4f5c\:56fe\:7684\:6570\:636e*)
+figAssoc["Data"]=figCalc[[norm,gegm,seva,io]]//figOrder;
+
+figAssoc["PlotRange"]={{0,1},All};(*\:6307\:5b9a\:7eb5\:8f74\:8303\:56f4*)
+figAssoc["PlotRangePadding"]={{0,0},{0,0}};(*\:6307\:5b9a\:56fe\:50cf\:7a7a\:767d\:586b\:5145\:8303\:56f4\:ff0ccalc and expr \:90fd\:751f\:6548*)
+figAssoc["FrameLabel"]=frameLabel[[gegm]];
+
+figAssoc["LegendStyle"]=lineStyleTable[[seva,io]]//figOrder;(*\:6307\:5b9a\:56fe\:4f8b\:989c\:8272\:ff0c\:6837\:5f0f*)
+figAssoc["LegendText"]=dataVtitle[[seva,io]]//figOrder;(*\:6307\:5b9a\:56fe\:4f8b\:6587\:5b57*)
+figAssoc["LegendMarkerSize"]={40,2};(*\:6307\:5b9a\:56fe\:4f8b\:4e2d\:7b26\:53f7\:7684\:5927\:5c0f.w,h*)
+figAssoc["LegendPositon"]={{0.6,0.5},(*\:951a\:70b9\:4f4d\:7f6e*){0,0}(*\:56fe\:7684\:951a\:70b9*)};(*\:6307\:5b9a\:56fe\:4f8b\:4f4d\:7f6e*)
+seriesFig[{"norm_"<>ToString[norm],"gegm_"<>ToString[gegm],"seva_"<>ToString[seva],"io_"<>ToString[io]}]=figGroup[figAssoc];
+If[!cmdQ,echo[seriesFig[{"norm_"<>ToString[norm],"gegm_"<>ToString[gegm],"seva_"<>ToString[seva],"io_"<>ToString[io]}]]]
 
 
-legend`ps2= {
-  {0.78,0.72},(*anchor position*)
-  {0.,0.}(*legend anchor*)
-  };
+figOrder=Flatten[Transpose[#]]&;(*\:7528\:6765\:7ed9\:56fe\:50cf\:6392\:5e8f\:7684\:51fd\:6570*)
+norm=1;gegm=2;seva=26;;28;io=3;(*\:8981\:4f5c\:56fe\:7684\:6570\:636e*)
+figAssoc["Data"]=figCalc[[norm,gegm,seva,io]]//figOrder;
 
+figAssoc["PlotRange"]={{0,1},All};(*\:6307\:5b9a\:7eb5\:8f74\:8303\:56f4*)
+figAssoc["PlotRangePadding"]={{0,0},{0,0}};(*\:6307\:5b9a\:56fe\:50cf\:7a7a\:767d\:586b\:5145\:8303\:56f4\:ff0ccalc and expr \:90fd\:751f\:6548*)
+figAssoc["FrameLabel"]=frameLabel[[gegm]];
 
-inde=1;
-fig`baryons`ge`neutral=fun`fig`gegm`cn[
-Join[
-fig`calc`interval[[1,{2,5,7,8},3]],
-{fig`expr[[inde]]}
-],
-framelabel`gegm[whether`normal][[inde]],
-legend`t2,
-legend`position`calc[[inde]],
-style`legend2,
-legend`calc`totalsize[[inde]],
-fig`range[whether`normal][[inde]],
-fig`padding[whether`normal][[inde]]
-];
+figAssoc["LegendStyle"]=lineStyleTable[[seva,io]]//figOrder;(*\:6307\:5b9a\:56fe\:4f8b\:989c\:8272\:ff0c\:6837\:5f0f*)
+figAssoc["LegendText"]=dataVtitle[[seva,io]]//figOrder;(*\:6307\:5b9a\:56fe\:4f8b\:6587\:5b57*)
+figAssoc["LegendMarkerSize"]={40,2};(*\:6307\:5b9a\:56fe\:4f8b\:4e2d\:7b26\:53f7\:7684\:5927\:5c0f.w,h*)
+figAssoc["LegendPositon"]={{0.6,0.5},(*\:951a\:70b9\:4f4d\:7f6e*){0,0}(*\:56fe\:7684\:951a\:70b9*)};(*\:6307\:5b9a\:56fe\:4f8b\:4f4d\:7f6e*)
+seriesFig[{"norm_"<>ToString[norm],"gegm_"<>ToString[gegm],"seva_"<>ToString[seva],"io_"<>ToString[io]}]=figGroup[figAssoc];
+If[!cmdQ,echo[seriesFig[{"norm_"<>ToString[norm],"gegm_"<>ToString[gegm],"seva_"<>ToString[seva],"io_"<>ToString[io]}]]]
 
 
 (* ::Subsection:: *)
-(*gm`charge*)
+(*\[CapitalSigma]0*)
 
 
-(* ::Text:: *)
-(*gm`charge: octet: 1 3 4 6, line, Dashing, Dotted, DotDashed*)
+figOrder=Flatten[Transpose[#]]&;(*\:7528\:6765\:7ed9\:56fe\:50cf\:6392\:5e8f\:7684\:51fd\:6570*)
+norm=1;gegm=1;seva=15;;17;io=2;(*\:8981\:4f5c\:56fe\:7684\:6570\:636e*)
+figAssoc["Data"]=figCalc[[norm,gegm,seva,io]]//figOrder;
+
+figAssoc["PlotRange"]={{0,1},All};(*\:6307\:5b9a\:7eb5\:8f74\:8303\:56f4*)
+figAssoc["PlotRangePadding"]={{0,0},{0,0}};(*\:6307\:5b9a\:56fe\:50cf\:7a7a\:767d\:586b\:5145\:8303\:56f4\:ff0ccalc and expr \:90fd\:751f\:6548*)
+figAssoc["FrameLabel"]=frameLabel[[gegm]];
+
+figAssoc["LegendStyle"]=lineStyleTable[[seva,io]]//figOrder;(*\:6307\:5b9a\:56fe\:4f8b\:989c\:8272\:ff0c\:6837\:5f0f*)
+figAssoc["LegendText"]=dataVtitle[[seva,io]]//figOrder;(*\:6307\:5b9a\:56fe\:4f8b\:6587\:5b57*)
+figAssoc["LegendMarkerSize"]={40,2};(*\:6307\:5b9a\:56fe\:4f8b\:4e2d\:7b26\:53f7\:7684\:5927\:5c0f.w,h*)
+figAssoc["LegendPositon"]={{0.6,0.1},(*\:951a\:70b9\:4f4d\:7f6e*){0,0}(*\:56fe\:7684\:951a\:70b9*)};(*\:6307\:5b9a\:56fe\:4f8b\:4f4d\:7f6e*)
+seriesFig[{"norm_"<>ToString[norm],"gegm_"<>ToString[gegm],"seva_"<>ToString[seva],"io_"<>ToString[io]}]=figGroup[figAssoc];
+If[!cmdQ,echo[seriesFig[{"norm_"<>ToString[norm],"gegm_"<>ToString[gegm],"seva_"<>ToString[seva],"io_"<>ToString[io]}]]]
 
 
-(* ::DisplayFormula:: *)
-(*legend`t1={"\!\(\*SuperscriptBox[\(\[CapitalSigma]\), \(-\)]\)","\!\(\*SuperscriptBox[\(\[CapitalSigma]\), \(+\)]\)","p","\!\(\*SuperscriptBox[\(\[CapitalXi]\), \(-\)]\)"};*)
+figOrder=Flatten[Transpose[#]]&;(*\:7528\:6765\:7ed9\:56fe\:50cf\:6392\:5e8f\:7684\:51fd\:6570*)
+norm=1;gegm=1;seva=26;;28;io=2;(*\:8981\:4f5c\:56fe\:7684\:6570\:636e*)
+figAssoc["Data"]=figCalc[[norm,gegm,seva,io]]//figOrder;
+
+figAssoc["PlotRange"]={{0,1},All};(*\:6307\:5b9a\:7eb5\:8f74\:8303\:56f4*)
+figAssoc["PlotRangePadding"]={{0,0},{0,0}};(*\:6307\:5b9a\:56fe\:50cf\:7a7a\:767d\:586b\:5145\:8303\:56f4\:ff0ccalc and expr \:90fd\:751f\:6548*)
+figAssoc["FrameLabel"]=frameLabel[[gegm]];
+
+figAssoc["LegendStyle"]=lineStyleTable[[seva,io]]//figOrder;(*\:6307\:5b9a\:56fe\:4f8b\:989c\:8272\:ff0c\:6837\:5f0f*)
+figAssoc["LegendText"]=dataVtitle[[seva,io]]//figOrder;(*\:6307\:5b9a\:56fe\:4f8b\:6587\:5b57*)
+figAssoc["LegendMarkerSize"]={40,2};(*\:6307\:5b9a\:56fe\:4f8b\:4e2d\:7b26\:53f7\:7684\:5927\:5c0f.w,h*)
+figAssoc["LegendPositon"]={{0.6,0.65},(*\:951a\:70b9\:4f4d\:7f6e*){0,0}(*\:56fe\:7684\:951a\:70b9*)};(*\:6307\:5b9a\:56fe\:4f8b\:4f4d\:7f6e*)
+seriesFig[{"norm_"<>ToString[norm],"gegm_"<>ToString[gegm],"seva_"<>ToString[seva],"io_"<>ToString[io]}]=figGroup[figAssoc];
+If[!cmdQ,echo[seriesFig[{"norm_"<>ToString[norm],"gegm_"<>ToString[gegm],"seva_"<>ToString[seva],"io_"<>ToString[io]}]]]
 
 
-legend`ps3= {
-  {0.78,0.72},(*anchor position*)
-  {0.,0.}(*legend anchor*)
-  };
+figOrder=Flatten[Transpose[#]]&;(*\:7528\:6765\:7ed9\:56fe\:50cf\:6392\:5e8f\:7684\:51fd\:6570*)
+norm=1;gegm=2;seva=15;;17;io=2;(*\:8981\:4f5c\:56fe\:7684\:6570\:636e*)
+figAssoc["Data"]=figCalc[[norm,gegm,seva,io]]//figOrder;
+
+figAssoc["PlotRange"]={{0,1},All};(*\:6307\:5b9a\:7eb5\:8f74\:8303\:56f4*)
+figAssoc["PlotRangePadding"]={{0,0},{0,0}};(*\:6307\:5b9a\:56fe\:50cf\:7a7a\:767d\:586b\:5145\:8303\:56f4\:ff0ccalc and expr \:90fd\:751f\:6548*)
+figAssoc["FrameLabel"]=frameLabel[[gegm]];
+
+figAssoc["LegendStyle"]=lineStyleTable[[seva,io]]//figOrder;(*\:6307\:5b9a\:56fe\:4f8b\:989c\:8272\:ff0c\:6837\:5f0f*)
+figAssoc["LegendText"]=dataVtitle[[seva,io]]//figOrder;(*\:6307\:5b9a\:56fe\:4f8b\:6587\:5b57*)
+figAssoc["LegendMarkerSize"]={40,2};(*\:6307\:5b9a\:56fe\:4f8b\:4e2d\:7b26\:53f7\:7684\:5927\:5c0f.w,h*)
+figAssoc["LegendPositon"]={{0.6,0.2},(*\:951a\:70b9\:4f4d\:7f6e*){0,0}(*\:56fe\:7684\:951a\:70b9*)};(*\:6307\:5b9a\:56fe\:4f8b\:4f4d\:7f6e*)
+seriesFig[{"norm_"<>ToString[norm],"gegm_"<>ToString[gegm],"seva_"<>ToString[seva],"io_"<>ToString[io]}]=figGroup[figAssoc];
+If[!cmdQ,echo[seriesFig[{"norm_"<>ToString[norm],"gegm_"<>ToString[gegm],"seva_"<>ToString[seva],"io_"<>ToString[io]}]]]
 
 
-inde=4;
-fig`baryons`gm`charge=fun`fig`gegm`cn[
-Join[
-fig`calc`interval[[2,{4,3,6,1},3]],
-{fig`expr[[inde]]}
-],
-framelabel`gegm[whether`normal][[inde]],
-legend`t1,
-legend`position`calc[[inde]],
-style`legend1,
-legend`calc`totalsize[[inde]],
-fig`range[whether`normal][[inde]],
-fig`padding[whether`normal][[inde]]
-];
+figOrder=Flatten[Transpose[#]]&;(*\:7528\:6765\:7ed9\:56fe\:50cf\:6392\:5e8f\:7684\:51fd\:6570*)
+norm=1;gegm=2;seva=26;;28;io=2;(*\:8981\:4f5c\:56fe\:7684\:6570\:636e*)
+figAssoc["Data"]=figCalc[[norm,gegm,seva,io]]//figOrder;
 
+figAssoc["PlotRange"]={{0,1},All};(*\:6307\:5b9a\:7eb5\:8f74\:8303\:56f4*)
+figAssoc["PlotRangePadding"]={{0,0},{0,0}};(*\:6307\:5b9a\:56fe\:50cf\:7a7a\:767d\:586b\:5145\:8303\:56f4\:ff0ccalc and expr \:90fd\:751f\:6548*)
+figAssoc["FrameLabel"]=frameLabel[[gegm]];
 
-(* ::Subsection:: *)
-(*gm`neutral*)
-
-
-(* ::Text:: *)
-(*gm`neutral: octet: 2 5 7 8, line, Dashing, Dotted, DotDashed*)
-
-
-(* ::DisplayFormula:: *)
-(*legend`t2={"\!\(\*SuperscriptBox[\(\[CapitalSigma]\), \(0\)]\)","n","\!\(\*SuperscriptBox[\(\[CapitalXi]\), \(0\)]\)","\[CapitalLambda]"};*)
-
-
-legend`ps4= {
-  {0.78,0.72},(*anchor position*)
-  {0.,0.}(*legend anchor*)
-  };
-
-
-inde=3;
-fig`baryons`gm`neutral=fun`fig`gegm`cn[
-Join[
-fig`calc`interval[[2,{2,5,7,8},3]],
-{fig`expr[[inde]]}
-],
-framelabel`gegm[whether`normal][[inde]],
-legend`t2,
-legend`position`calc[[inde]],
-style`legend2,
-legend`calc`totalsize[[inde]],
-fig`range[whether`normal][[inde]],
-fig`padding[whether`normal][[inde]]
-];
+figAssoc["LegendStyle"]=lineStyleTable[[seva,io]]//figOrder;(*\:6307\:5b9a\:56fe\:4f8b\:989c\:8272\:ff0c\:6837\:5f0f*)
+figAssoc["LegendText"]=dataVtitle[[seva,io]]//figOrder;(*\:6307\:5b9a\:56fe\:4f8b\:6587\:5b57*)
+figAssoc["LegendMarkerSize"]={40,2};(*\:6307\:5b9a\:56fe\:4f8b\:4e2d\:7b26\:53f7\:7684\:5927\:5c0f.w,h*)
+figAssoc["LegendPositon"]={{0.6,0.65},(*\:951a\:70b9\:4f4d\:7f6e*){0,0}(*\:56fe\:7684\:951a\:70b9*)};(*\:6307\:5b9a\:56fe\:4f8b\:4f4d\:7f6e*)
+seriesFig[{"norm_"<>ToString[norm],"gegm_"<>ToString[gegm],"seva_"<>ToString[seva],"io_"<>ToString[io]}]=figGroup[figAssoc];
+If[!cmdQ,echo[seriesFig[{"norm_"<>ToString[norm],"gegm_"<>ToString[gegm],"seva_"<>ToString[seva],"io_"<>ToString[io]}]]]
 
 
 (* ::Chapter:: *)
-(*export*)
+(*storage*)
+
+
+echo["files to export"];(*\:8981\:5bfc\:51fa\:7684\:6587\:4ef6,\:5173\:8054\:7684\:5f62\:5f0f\:ff0c\:4fdd\:5b58\:7528\:7684\:6587\:4ef6\:540d\[Rule]\:5bf9\:5e94\:7684\:6587\:4ef6*)
+outputDir=FileNameJoin[{gitLocalName,"/expression-results/"}]
+outputAssoc=<|
+(*++++++++++++++++*)
+norm=1;gegm=1;seva=15;;17;io=3;
+(*StringJoin[{"norm_"<>ToString[norm],"_gegm_"<>ToString[gegm],"_seva_"<>ToString[seva],"_io_"<>ToString[io],"_fit_",cFittingStr,"_rela_",errorbarQStr,"_series_",parOrderStr,"_L_",parLambda0Str,"_ci_",parciStr,".pdf"}]*)
+FileNameJoin[{outputDir,"sigma_Fig3.pdf"}]->seriesFig[{"norm_"<>ToString[norm],"gegm_"<>ToString[gegm],"seva_"<>ToString[seva],"io_"<>ToString[io]}],
+(*+++++*)
+norm=1;gegm=1;seva=26;;28;io=3;
+FileNameJoin[{outputDir,"sigma_Fig4.pdf"}]->seriesFig[{"norm_"<>ToString[norm],"gegm_"<>ToString[gegm],"seva_"<>ToString[seva],"io_"<>ToString[io]}],
+(*+++++*)
+norm=1;gegm=2;seva=15;;17;io=3;
+FileNameJoin[{outputDir,"sigma_Fig5.pdf"}]->seriesFig[{"norm_"<>ToString[norm],"gegm_"<>ToString[gegm],"seva_"<>ToString[seva],"io_"<>ToString[io]}],
+(*+++++*)
+norm=1;gegm=2;seva=26;;28;io=3;
+FileNameJoin[{outputDir,"sigma_Fig6.pdf"}]->seriesFig[{"norm_"<>ToString[norm],"gegm_"<>ToString[gegm],"seva_"<>ToString[seva],"io_"<>ToString[io]}],
+(*+++++*)
+norm=1;gegm=1;seva=15;;17; io=2;
+FileNameJoin[{outputDir,"sigma_Fig7.pdf"}]->seriesFig[{"norm_"<>ToString[norm],"gegm_"<>ToString[gegm],"seva_"<>ToString[seva],"io_"<>ToString[io]}],
+(*+++++*)
+norm=1;gegm=1;seva=26;;28; io=2;
+FileNameJoin[{outputDir,"sigma_Fig8.pdf"}]->seriesFig[{"norm_"<>ToString[norm],"gegm_"<>ToString[gegm],"seva_"<>ToString[seva],"io_"<>ToString[io]}],
+(*+++++*)
+norm=1;gegm=2;seva=15;;17; io=2;
+FileNameJoin[{outputDir,"sigma_Fig9.pdf"}]->seriesFig[{"norm_"<>ToString[norm],"gegm_"<>ToString[gegm],"seva_"<>ToString[seva],"io_"<>ToString[io]}],
+(*+++++*)
+norm=1;gegm=2;seva=26;;28; io=2;
+FileNameJoin[{outputDir,"sigma_Fig10.pdf"}]->seriesFig[{"norm_"<>ToString[norm],"gegm_"<>ToString[gegm],"seva_"<>ToString[seva],"io_"<>ToString[io]}]
+(*++++++++++++++++*)
+|>;
+echo["output status"];
+KeyValueMap[Export,outputAssoc]
 
 
 (* ::DisplayFormula:: *)
-(*parameter`ci`string*)
-(*parameter`lambda0`string*)
-
-
-echo["does the outputdir exists?"]
-
-
-output`dir=FileNameJoin[{git`local`name,"/expression-mfiles/"}]
-
-
-DirectoryQ[output`dir]
-
-
-echo["the output name list"]
-
-
-(* ::Text:: *)
-(*export \:4f1a\:81ea\:52a8\:8bc6\:522b\:6587\:4ef6\:7684\:62d3\:5c55\:540d*)
-
-
-ext`export=".m";
-
-
-(
-output`name`list={
-FileNameJoin[{output`dir,"fig.baryons."<>whether`normal<>".ge.charge.L-"<>parameter`lambda0`string<>".ci-"<>parameter`ci`string<>ext`export}],
-FileNameJoin[{output`dir,"fig.baryons."<>whether`normal<>".ge.neutral.L-"<>parameter`lambda0`string<>".ci-"<>parameter`ci`string<>ext`export}],
-FileNameJoin[{output`dir,"fig.baryons."<>whether`normal<>".gm.charge.L-"<>parameter`lambda0`string<>".ci-"<>parameter`ci`string<>ext`export}],
-FileNameJoin[{output`dir,"fig.baryons."<>whether`normal<>".gm.neutral.L-"<>parameter`lambda0`string<>".ci-"<>parameter`ci`string<>ext`export}]
-}
-)
-
-
-output`file`list={fig`baryons`ge`charge,fig`baryons`ge`neutral,fig`baryons`gm`charge,fig`baryons`gm`neutral};
-
-
-echo["output status"]
-
-
-Block[{leng},
-leng=Length[output`file`list];
-Do[
-Export[output`name`list[[i]],output`file`list[[i]]];
-If[i==leng,
-Return["Done"]
-]
-,{i,1,leng,1}
-]
-]
+(*Run[FileNameJoin[{gitLocalName,"totex.sh"}]]*)
