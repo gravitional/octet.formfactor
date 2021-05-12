@@ -5,7 +5,7 @@
 
 
 (* ::Text:: *)
-(*\:7528\:6765\:8ba1\:7b97\:7cfb\:6570\:4e2d\:5355\:72ec\:67d0\:4e00\:9879\:7684\:8d21\:732e\:ff0c\:5bf9\:4e8e\:7279\:5b9a\:7684\:4e2d\:95f4\:91cd\:5b50\:548c\:4ecb\:5b50\:3002*)
+(*\:7528\:6765\:8ba1\:7b97\:7cfb\:6570\:4e2d\:5355\:72ec\:67d0\:4e00\:9879\:7684\:8d21\:732e\:ff0c\:5bf9\:4e8e\:7279\:5b9a\:7684\:4e2d\:95f4\:91cd\:5b50\:548c\:4ecb\:5b50\:3002\:5e76\:4f7f\:7528\:4e24\:79cd\:91cd\:6574\:5316\:5e38\:6570\:8ba1\:7b97\:65b9\:6848\:3002*)
 
 
 (* ::Chapter:: *)
@@ -37,17 +37,9 @@ gitLocalName=FileNameJoin[Append[TakeWhile[FileNameSplit[ExpandFileName[fileName
 (*parameters*)
 
 
-(* ::Text:: *)
-(*++++++++++++++++++++++++++++++++++++++++++++*)
-
-
-(* ::Text:: *)
-(*\:6a21\:62df\:547d\:4ee4\:884c\:8f93\:5165\:ff0c\:8c03\:8bd5\:4f7f\:7528*)
-
-
 inputSim={
 "/home/tom/octet.formfactor/Numeric.series-o0.rencon3/e.Numeric.series-o0.rencon3.strange.sea-valence.mass-limit.wl",
-"o0","0.90","1.50","Baryons","notbar"};
+"o0","0.90","1.00","Baryons","notbar"};
 If[cmdQ,
 inputCml=$ScriptCommandLine,(*\:5982\:679c\:5728\:547d\:4ee4\:884c\:6267\:884c\:ff0c\:5c31\:91c7\:7528\:547d\:4ee4\:884c\:53c2\:6570*)
 inputCml=inputSim(*\:5982\:679c\:5728\:7b14\:8bb0\:672c\:6267\:884c\:ff0c\:5c31\:91c7\:7528\:6a21\:62df\:53c2\:6570*)
@@ -75,10 +67,10 @@ echo["c1,c2 configuration"]
 If[errorbarQStr==="notbar",
 (*\:5982\:679c\:4e0d\:662f\:4e3a\:4e86\:8ba1\:7b97Error\:ff0c\:5c31\:4f7f\:7528\:5339\:914d\:7684c1c2\:8fdb\:884c\:8ba1\:7b97*)
 Print[cFittingDir=FileNameJoin[{gitLocalName,"expression-mfiles","c1c2_magfit_L_"<>parLambda0Str<>"_ci_"<>parciStr<>".m"}]];
-Print[configc1c2=Get[cFittingDir][cFitting]//Last];,
+Print[configc1c2=Get[cFittingDir][cFitting][[All,2]]];,
 (*\:5982\:679c\:662f\:4e3a\:4e86\:8ba1\:7b97Error\:ff0c\:5c31\:4f7f\:7528\:6307\:5b9a \[CapitalLambda],ci \:5bf9\:5e94\:7684c1c2\:8fdb\:884c\:8ba1\:7b97*)
 Print[cFittingDir=FileNameJoin[{gitLocalName,"expression-mfiles","c1c2_magfit_"<>errorbarQStr<>".m"}]];
-Print[configc1c2=Get[cFittingDir][cFitting]//Last];
+Print[configc1c2=Get[cFittingDir][cFitting][[All,2]]];
 ]
 
 
@@ -227,32 +219,30 @@ constmo={
 };
 
 
+(*c1->2.081,c2->(2/3 c1-1),c3->(-1/3 c1-1)*)
 baselist1={
 {mN->conm\[CapitalSigma]},{mN->conm\[CapitalSigma]},{mN->conm\[CapitalSigma]},
 {mN->conmN},{mN->conmN},
 {mN->conm\[CapitalXi]},{mN->conm\[CapitalXi]},
 {mN->conm\[CapitalLambda]}
 };
-
-
-(* ::DisplayFormula:: *)
-(*c1->2.081,c2->(2/3 c1-1),c3->(-1/3 c1-1)*)
-
-
-baselist2=Join[
+(*\:4f7f\:7528\:4e24\:79cd\:91cd\:6574\:5316\:65b9\:6848\:8ba1\:7b97*)
+baselist2=Table[
+Join[
 {
-f->0.093`20,
-zi->-1,
-di->0.76`20,fi->0.50`20,
-ci->parci,
-\[CapitalLambda]0->parLambda0
+f->0.093`20,zi->-1,di->0.76`20,fi->0.50`20,
+ci->parci,\[CapitalLambda]0->parLambda0
 },
-configc1c2
+configc1c2[[ren]]
+]
+,{ren,2}
 ];
 baselist=Table[
-Join[baselist1[[io]],baselist2]
-,{io,1,8,1}
+Join[baselist1[[io]],baselist2[[ren]]]
+,{ren,2}
+,{io,8}
 ];
+(*baselist//Dimensions,{2,8,9},{ren,io,terms}*)
 
 
 (* ::Chapter:: *)
@@ -318,16 +308,16 @@ separateNuff1=Table[
 
 (*\:8ba1\:6570\:5668\:ff0c\:7528\:6765\:663e\:793a\:8ba1\:7b97\:8fdb\:5ea6\:ff0c\:4ee5400 \:4e2a\:9879\:76ee\:4e3a\:8ba1\:6570\:5355\:4f4d*)
 order++;
-If[IntegerQ[order/400],Print[seva,",",io,",",if,",",coe]
-];
+If[IntegerQ[order/400],Print[ren,seva,",",io,",",if,",",coe]];
 
 Simplify[
 (
 (
 fucoe[[seva,if,io,coe]]*ff1[[if]]
-)/.baselist[[io]]
+)/.baselist[[ren,io]]
 )/.fumass[[seva,if,io,coe]]
 ]
+,{ren,2}
 ,{seva,1,13,1}
 ,{io,1,8,1}(*the outest level is the octet order*)
 ,{if,1,11,1}(*the figures contris should be summed*)
@@ -341,16 +331,16 @@ Module[{order=0},
 separateNuff2=Table[
 
 order++;
-If[IntegerQ[order/400],Print[seva,",",io,",",if,",",coe](*\:7528\:6765\:663e\:793a\:8ba1\:7b97\:8fdb\:5ea6\:ff0c\:4ee5400 \:4e2a\:9879\:76ee\:4e3a\:8ba1\:6570\:5355\:4f4d*)
-];
+If[IntegerQ[order/400],Print[ren,seva,",",io,",",if,",",coe]];(*\:7528\:6765\:663e\:793a\:8ba1\:7b97\:8fdb\:5ea6\:ff0c\:4ee5400 \:4e2a\:9879\:76ee\:4e3a\:8ba1\:6570\:5355\:4f4d*)
 
 Simplify[
 (
 (
 fucoe[[seva,if,io,coe]]*ff2[[if]]
-)/.baselist[[io]]/.baselist[[io]]
+)/.baselist[[ren,io]]
 )/.fumass[[seva,if,io,coe]]
 ]
+,{ren,2}
 ,{seva,1,13,1}
 ,{io,1,8,1}(*the outest level is the octet order*)
 ,{if,1,11,1}(*the figures contris should be summed*)
@@ -362,29 +352,30 @@ fucoe[[seva,if,io,coe]]*ff2[[if]]
 separateNugegm=Transpose[
 Table[
 -1/(16\[Pi]^2) {
-separateNuff1[[All,io]]-Q2/(4constmo[[io]]^2)separateNuff2[[All,io]],
-separateNuff1[[All,io]]+separateNuff2[[All,io]]
+separateNuff1[[All,All,io]]-Q2/(4constmo[[io]]^2)separateNuff2[[All,All,io]],
+separateNuff1[[All,All,io]]+separateNuff2[[All,All,io]]
 }
-,{io,1,8,1}]
-,{2,3,1,4}
+,{io,8}]
+,{3,4,1,2,5}
 ];
 (*separateNugegm//Dimensions
-{13,8,2,11},{seva,io,gegm,if}*)
+{2,13,8,2,11},{ren,seva,io,gegm,if}*)
 (*\:5bf9\:4e0d\:540c\:4e2d\:95f4\:91cd\:5b50\:548c\:4ecb\:5b50\:7684\:9879\:76ee\:6c42\:548c*)
-nuff1=Total[separateNuff1,{3,4}];
-nuff2=Total[separateNuff2,{3,4}];
-(*nuff1,nuff2 is 13*8*)
-nugegm=Transpose[(*8*13*2 transpose into 13*8*2*)
+nuff1=Total[separateNuff1,{4,5}];
+nuff2=Total[separateNuff2,{4,5}];
+(*nuff1//Dimensions,{2,13,8},{ren,seva,io}*)
+nugegm=Transpose[
 Table[
 -1/(16\[Pi]^2) {
-nuff1[[;;,io]]-Q2/(4constmo[[io]]^2) nuff2[[;;,io]],
-nuff1[[;;,io]]+nuff2[[;;,io]]
+nuff1[[All,All,io]]-Q2/(4constmo[[io]]^2) nuff2[[All,All,io]],
+nuff1[[All,All,io]]+nuff2[[All,All,io]]
 }
-,{io,1,8,1}]
-,{2,3,1}
+,{io,1,8,1}
+]
+,{3,4,1,2}
 ];
 (*nugegm//Dimensions
-{13,8,2},{seva,io,gegm}*)
+{2,13,8,2},{ren,seva,io,gegm}*)
 
 
 (* ::Chapter:: *)
@@ -460,84 +451,54 @@ trgegm=Transpose[
 Table[
 Simplify[
 {
-trf1f2[[;;,i,1]]-Q2/(4constmo[[i]]^2) trf1f2[[;;,i,2]],
-trf1f2[[;;,i,1]]+trf1f2[[;;,i,2]]
-}/.baselist[[i]]
+trf1f2[[All,io,1]]-Q2/(4constmo[[io]]^2) trf1f2[[All,io,2]],
+trf1f2[[All,io,1]]+trf1f2[[All,io,2]]
+}/.baselist[[ren,io]]
 ]
-,{i,1,8,1}]
-,{2,3,1}];
-(*trgegm is [consti,octet,treegegem][4*8*2]*)
-
-
-(* ::DisplayFormula:: *)
-(*trgegm//Dimensions *)
+,{ren,2}
+,{io,8}
+]
+,{1,3,4,2}
+];
+(*trgegm//Dimensions,{2,4,8,2},{ren,seva,io,gegm}*)
 
 
 (* ::Chapter:: *)
 (*rencon calc*)
 
 
-(* ::Section:: *)
-(*constants*)
-
-
-(* ::DisplayFormula:: *)
-(* octetmagetonc1={(*1*)-(c1/3),(*2*)c1/3,(*3*)c1,(*4*)c1,(*5*)-((2 c1)/3),(*6*)-(c1/3),(*7*)-((2 c1)/3),(*8*)-(c1/3)};*)
-
-
+(*octetmagetonc1={(*1*)-(c1/3),(*2*)c1/3,(*3*)c1,(*4*)c1,(*5*)-((2 c1)/3),(*6*)-(c1/3),(*7*)-((2 c1)/3),(*8*)-(c1/3)};*)
 octetname={"1\[CapitalSigma]m","2\[CapitalSigma]0","3\[CapitalSigma]p","4pr","5ne" ,"6\[CapitalXi]m","7\[CapitalXi]0","8\[CapitalLambda]"};
-
-
 octetCharge={
 (*1*)-1,(*2*)0,(*3*)1,
 (*4*)1,(*5*)0,
 (*6*)-1,(*7*)0,
 (*8*)0
 };
+octetmageton={
+(*1*) \[Minus]1.160,(*2*) 0.60,(*3*)2.458,
+  (*4*)2.7928473446, (*5*)\[Minus]1.9130427,
+  (*6*)\[Minus]0.6507,(*7*)\[Minus]1.250,
+ (*8*)\[Minus]0.613
+ };
 
 
-(* ::DisplayFormula:: *)
-(*octetmageton={*)
-(*(*1*) \[Minus]1.160,(*2*) 0.60,(*3*)2.458,*)
-(*  (*4*)2.7928473446, (*5*)\[Minus]1.9130427,*)
-(*  (*6*)\[Minus]0.6507,(*7*)\[Minus]1.250,*)
-(* (*8*)\[Minus]0.613*)
-(* };*)
-
-
-(* ::Section:: *)
-(*rencon2.13*)
-
-
-(* ::Text:: *)
-(*\:603b\:8d21\:732e=Z*A+loop, Z=1-loop*)
-
-
-rencon=Table[1,{seva,1,13,1},{io,1,8,1}];
-(*+++++++++++++++++renormalized according to charge+++++++++++++*)
-Table[
-rencon[[;;,io]]=Abs[octetCharge[[io]]-Re[(Cancel[Chop[nugegm[[seva=1,io,gegm=1]],chopLimit]]/.Q2->0)]]
-,{io,{1,3,4,6}}];
-rencon[[;;,2]]=rencon[[;;,3]];
-rencon[[;;,5]]=rencon[[;;,4]];
-rencon[[;;,7]]=rencon[[;;,6]];
-rencon[[;;,8]]=Abs[1-Re[(Cancel[Chop[nugegm[[2,8,1]],chopLimit]]/.Q2->0)]];
-(*++++++++++++++++++++no renormalized+++++++++++++++++++++*)
-(*rencon\[LeftDoubleBracket]2,1\[RightDoubleBracket]=1;
-rencon\[LeftDoubleBracket]2,6\[RightDoubleBracket]=1;
-rencon\[LeftDoubleBracket]3,3\[RightDoubleBracket]=1;
-rencon\[LeftDoubleBracket]3,7\[RightDoubleBracket]=1;
-rencon\[LeftDoubleBracket]4,4\[RightDoubleBracket]=1;
-rencon\[LeftDoubleBracket]4,5\[RightDoubleBracket]=1;*)
-
-
-(* ::DisplayFormula:: *)
-(*TableForm[rencon,TableHeadings->{Automatic,None}]*)
-
-
-(*++++++++++++++++++++display+++++++++++++++++++++*)
-echo["calculated renormalization constants"];
-StringRiffle[rencon]
+(*rencon2 & c1c2 calc sum-square cp1*)(*\:8ba1\:7b97\:6ce2\:51fd\:6570\:91cd\:6574\:5316\:5e38\:6570*)
+nugegmZero=Chop[(Cancel[Chop[nugegm,chopLimit]]/.Q2->0),chopLimit];
+(*nugegmZero//Dimensions,{2,13,8,2},{ren,seva,io,gegm}*)
+rencon=Table[1,{ren,1,2,1},{io,1,8,1}];
+(*\:6309\:7167\:7b2c\:4e00\:79cd\:65b9\:5f0f\:8ba1\:7b97\:7684\:91cd\:6574\:5316\:5e38\:6570 Z*(tree+loop)*)
+Table[rencon[[ren=1,io]]=octetCharge[[io]]/(octetCharge[[io]]+nugegmZero[[ren=1,seva=1,io,gegm=1]]),{io,{1,3,4,6}}];
+rencon[[ren=1,8]]=1/(1+nugegmZero[[ren=1,seva=2,io=8,gegm=1]]);
+(*\:6309\:7167\:7b2c\:4e8c\:79cd\:65b9\:5f0f\:8ba1\:7b97\:7684\:91cd\:6574\:5316\:5e38\:6570 Z*tree+loop*)
+Table[rencon[[ren=2,io]]=Abs[octetCharge[[io]]-nugegmZero[[ren=2,seva=1,io,gegm=1]]],{io,{1,3,4,6}}];
+rencon[[ren=2,8]]=Abs[1-nugegmZero[[ren=2,seva=2,io=8,gegm=1]]];
+(*+++++++++++++++renormalized isospin+++++++++++++++++++++*)
+rencon[[All,2]]=rencon[[All,3]];
+rencon[[All,5]]=rencon[[All,4]];
+rencon[[All,7]]=rencon[[All,6]];
+echo["wave renormalization constants"]
+StringRiffle[N[rencon,3]]
 
 
 (* ::Chapter:: *)
@@ -558,58 +519,39 @@ octetGegmExpriment={
 (*8*)\[Minus]0.613`20
 }
 };
+(*{seva},{
+1;"all","u","d","s",
+5;"u-quench","d-quench","s-quench",
+8;"u-valence","d-valence","s-valence",
+11;"u-sea","d-sea","s-sea"
+}*)
 
 
-(* ::DisplayFormula:: *)
-(*{seva}{*)
-(*1;"all","u","d","s",*)
-(*5;"u-quench","d-quench","s-quench",*)
-(*8;"u-valence","d-valence","s-valence",*)
-(*11;"u-sea","d-sea","s-sea"*)
-(*}*)
-
-
-treeGegm=Transpose[
-Re[trgegm/.Q2->0],
-{2,3,1}
+treeGegm=Transpose[Re[trgegm/.Q2->0],{1,3,4,2}];
+(*treeGegm//Dimensions,{2,2,4,8},{ren,gegm,seva,io}*)
+(*total = tree +(Z-1)*tree+loop, \:8ba1\:7b97 total \:8d21\:732e\:65f6\:ff0c\:7528\:8fd9\:4e2a\:66f4\:65b9\:4fbf*)
+treeGegmRencon2=Table[
+treeGegm[[ren,gegm,seva,io]]*rencon[[ren,io]]
+,{ren,1,2,1}
+,{gegm,1,2,1}
+,{seva,1,4,1}
+,{io,1,8,1}
 ];
-(*total = tree +(Z-1)*tree+loop*)
-(*\:8ba1\:7b97 total \:8d21\:732e\:65f6\:ff0c\:7528\:8fd9\:4e2a\:66f4\:65b9\:4fbf*)
-treeGegmRencon2=Transpose[
-(
-Transpose[
-treeGegm
-,{2,3,1}
-]*rencon[[1]]
-)
-,{3,1,2}
+treeGegmRencon3=Table[(*\:8ba1\:7b97 loop \:8d21\:732e\:65f6\:ff0c\:7528\:8fd9\:4e2a\:66f4\:65b9\:4fbf*)
+treeGegm[[ren,gegm,seva,io]]*(rencon[[ren,io]]-1)
+,{ren,1,2,1}
+,{gegm,1,2,1}
+,{seva,1,4,1}
+,{io,1,8,1}
 ];
-treeGegmRencon3=Transpose[(*\:8ba1\:7b97 loop \:8d21\:732e\:65f6\:ff0c\:7528\:8fd9\:4e2a\:66f4\:65b9\:4fbf*)
-(
-Transpose[
-treeGegm
-,{2,3,1}
-]*(rencon[[1]]-1)
-)
-,{3,1,2}
-];
+(*treeGegmRencon2//Dimensions,{2,2,4,8},{ren,gegm,seva,io}*)
 
 
-loopGegm=Transpose[
-Chop[
-Re[Cancel[Chop[nugegm,chopLimit]]/.Q2->0]
-,chopLimit]
-,{2,3,1}
-];
+loopGegm=Transpose[Chop[Re[Cancel[Chop[nugegm,chopLimit]]/.Q2->0],chopLimit],{1,3,4,2}];
 (*\:7ed9\:51fa\:5708\:56fe\:7684\:96f6\:70b9\:503c,total = tree +(Z-1)*tree+loop
-loopGegm,{gegm,seva,io},{2,13,8}*)
-indLoopGegm=Transpose[
-Chop[
-Re[Cancel[Chop[separateNugegm,chopLimit]]/.Q2->0]
-,chopLimit]
-,{2,3,1,4}
-];
-(*indLoopGegm//Dimensions,{2,13,8,11},{gegm,seva,io,if}*)
+loopGegm,{2,2,13,8},{ren,gegm,seva,io}*)
+indLoopGegm=Transpose[Chop[Re[Cancel[Chop[separateNugegm,chopLimit]]/.Q2->0],chopLimit],{1,3,4,2,5}];
+(*indLoopGegm//Dimensions,{2,2,13,8,11},{ren,gegm,seva,io,if}*)
 
 
 funQ2tableRearrange=Function[{namesHorizontal,namesVertical,dataList,background},
@@ -631,8 +573,9 @@ namesHorizontal(* prepend names aligned in horizontal, should +1, for vertical n
 
 
 assocLoopGeGm=Table[(*\:5236\:4f5c\:4e00\:4e2a\:91cd\:5b50\:4ecb\:5b50\:5bf9\:5e94\:6570\:503c\:7684\:5173\:8054*)
-Values[fumassStr[[seva,io,if]]][[coe]]->indLoopGegm[[gegm,seva,io,if,coe]]
+Values[fumassStr[[seva,io,if]]][[coe]]->indLoopGegm[[ren,gegm,seva,io,if,coe]]
 
+,{ren,2}
 ,{gegm,1,2,1}
 ,{seva,1,13,1}
 ,{io,1,8,1}
@@ -643,9 +586,11 @@ Values[fumassStr[[seva,io,if]]][[coe]]->indLoopGegm[[gegm,seva,io,if,coe]]
 bgdColor=Table[
 
 {if+1,coe+1}->Lighter[ColorData[{"SunsetColors","Reverse"}][
-Abs[indLoopGegm[[gegm,seva,io,if,coe]]]/Total[Abs[indLoopGegm[[gegm,seva,io]]],2](*\:8ba1\:7b97\:67d0\:4e00\:9879\:5360\:6574\:4f53\:8d21\:732e\:7684\:6bd4\:503c*)
+Abs[indLoopGegm[[ren,gegm,seva,io,if,coe]]]/Total[Abs[indLoopGegm[[ren,gegm,seva,io]]],2](*\:8ba1\:7b97\:67d0\:4e00\:9879\:5360\:6574\:4f53\:8d21\:732e\:7684\:6bd4\:503c*)
 ]
 ]
+
+,{ren,2}
 ,{gegm,1,2,1}
 ,{seva,1,13,1}
 ,{io,1,8,1}
@@ -661,23 +606,23 @@ namesHorizontal2={
 (*8:*)"valence,u",(*9:*)"valence,d",(*10:*)"valence,s",
 (*11:*)"sea,u",(*12:*)"sea,d",(*13:*)"sea,s"
 };
-namesHorizontal[io_,seva_]:={namesHorizontal1[[io]],namesHorizontal2[[seva]]};
+namesHorizontal[ren_,gegm_,io_,seva_]:={namesHorizontal1[[io]],namesHorizontal2[[seva]],loopGegm[[ren,gegm,seva,io]]};
 
 
-gegm=2;seva=13;io=5;
+ren=1;gegm=2;seva=13;io=4;
 Style[
 Multicolumn[
 {(* paras of column need an {} *)
 (*+++++++++++++++++++++++++sea-valence part  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*)
 funQ2tableRearrange[(*legend name*)
-namesHorizontal[io,seva],(*column name*)
+namesHorizontal[ren,gegm,io,seva],(*column name*)
 namesVertical,(*row name*)
 (*****************************data list start********************************)
-assocLoopGeGm[[gegm,seva,io]],
+assocLoopGeGm[[ren,gegm,seva,io]],
 (********************************start background*******************************************)
 {
 None,None,
-Flatten[bgdColor[[gegm,seva,io]]]
+Flatten[bgdColor[[ren,gegm,seva,io]]]
 }
 ]
 (*+++++++++++++++++++++++++sea-valence part  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*)

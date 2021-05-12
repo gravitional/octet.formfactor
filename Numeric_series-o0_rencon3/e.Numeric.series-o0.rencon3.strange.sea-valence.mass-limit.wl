@@ -76,10 +76,10 @@ echo["c1,c2 configuration"]
 If[errorbarQStr==="notbar",
 (*\:5982\:679c\:4e0d\:662f\:4e3a\:4e86\:8ba1\:7b97Error\:ff0c\:5c31\:4f7f\:7528\:5339\:914d\:7684c1c2\:8fdb\:884c\:8ba1\:7b97*)
 Print[cFittingDir=FileNameJoin[{gitLocalName,"expression-mfiles","c1c2_magfit_L_"<>parLambda0Str<>"_ci_"<>parciStr<>".m"}]];
-Print[configc1c2=Get[cFittingDir][cFitting]//Last];,
+Print[configc1c2=Get[cFittingDir][cFitting][[2,2]]];,(*\:4f7f\:7528\:7b2c\:4e8c\:79cd\:91cd\:6574\:5316\:65b9\:6848,Z*tree+loop*)
 (*\:5982\:679c\:662f\:4e3a\:4e86\:8ba1\:7b97Error\:ff0c\:5c31\:4f7f\:7528\:6307\:5b9a \[CapitalLambda],ci \:5bf9\:5e94\:7684c1c2\:8fdb\:884c\:8ba1\:7b97*)
 Print[cFittingDir=FileNameJoin[{gitLocalName,"expression-mfiles","c1c2_magfit_"<>errorbarQStr<>".m"}]];
-Print[configc1c2=Get[cFittingDir][cFitting]//Last];
+Print[configc1c2=Get[cFittingDir][cFitting][[2,2]]];
 ]
 
 
