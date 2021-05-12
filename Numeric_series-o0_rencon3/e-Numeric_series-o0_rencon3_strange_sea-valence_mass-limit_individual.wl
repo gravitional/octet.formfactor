@@ -158,9 +158,7 @@ fucoepresign*Values[fucoeandmrrl[[seva]]]
 (*\:5b58\:50a8\:7cfb\:6570\:548c\:8d28\:91cf\:8bb0\:5f55*)
 fumass=Keys[fucoeandmrrl];
 (*\:5728\:7ed9\:8d28\:91cf\:8d4b\:503c\:4e4b\:524d\:ff0c\:5148\:5b58\:50a8\:7cfb\:6570\:7684\:8bb0\:5f55*)
-fumassStr=Transpose[Map[ToString,Keys[fucoeandmrrl],{-1}],
-{1,3,2}
-];
+Once[fumassStr=Transpose[Map[ToString,Keys[fucoeandmrrl],{-1}],{1,3,2}]];
 (*fucoe//Dimensions
 fumass//Dimensions*)
 
@@ -666,7 +664,7 @@ namesHorizontal2={
 namesHorizontal[io_,seva_]:={namesHorizontal1[[io]],namesHorizontal2[[seva]]};
 
 
-gegm=1;seva=13;io=4;
+gegm=2;seva=13;io=5;
 Style[
 Multicolumn[
 {(* paras of column need an {} *)
