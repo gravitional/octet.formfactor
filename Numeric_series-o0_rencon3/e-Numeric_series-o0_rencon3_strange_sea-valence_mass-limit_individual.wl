@@ -39,7 +39,7 @@ gitLocalName=FileNameJoin[Append[TakeWhile[FileNameSplit[ExpandFileName[fileName
 
 inputSim={
 "/home/tom/octet.formfactor/Numeric.series-o0.rencon3/e.Numeric.series-o0.rencon3.strange.sea-valence.mass-limit.wl",
-"o0","0.90","1.00","Baryons","notbar"};
+"o0","0.90","1.50","Baryons","notbar"};
 If[cmdQ,
 inputCml=$ScriptCommandLine,(*\:5982\:679c\:5728\:547d\:4ee4\:884c\:6267\:884c\:ff0c\:5c31\:91c7\:7528\:547d\:4ee4\:884c\:53c2\:6570*)
 inputCml=inputSim(*\:5982\:679c\:5728\:7b14\:8bb0\:672c\:6267\:884c\:ff0c\:5c31\:91c7\:7528\:6a21\:62df\:53c2\:6570*)
@@ -267,38 +267,6 @@ FileNameJoin[{analyticDir,"f2."<>"analytic."<>ToString[if]<>".m"}]
 
 (* ::Section:: *)
 (*form-factor f1, f2*)
-
-
-(* ::Text:: *)
-(****************************************)
-
-
-(* ::DisplayFormula:: *)
-(*fucoe=11[diagram]*8[octet]*n(a coefficients lists of n elements)*)
-
-
-(* ::DisplayFormula:: *)
-(*fumass=11[diagram]*8[octet]*n(n ==above n,n mass rule lists)*)
-
-
-(* ::DisplayFormula:: *)
-(*diagff=11[diagram]*2[ff1,ff2]*many(contri terms)*)
-
-
-(* ::Section:: *)
-(*combine coefficients and f1, f2*)
-
-
-(* ::DisplayFormula:: *)
-(*fucoe=11[diagram]*8[octet]*n(coefficients)*)
-
-
-(* ::DisplayFormula:: *)
-(*fumass=11[diagram]*8[octet]*n(n =above n,mass rule lists)*)
-
-
-(* ::DisplayFormula:: *)
-(*diagff=11[diagram]*2[ff1,ff2]*many(contri terms)*)
 
 
 echo["start numeric, separateNuff1 separate`nuff2 "];
