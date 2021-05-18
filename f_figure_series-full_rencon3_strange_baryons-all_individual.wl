@@ -45,10 +45,10 @@ gitLocalName=FileNameJoin[Append[TakeWhile[FileNameSplit[ExpandFileName[fileName
 
 (*\:6a21\:62df\:547d\:4ee4\:884c\:8f93\:5165,\:8c03\:8bd5\:4f7f\:7528*)
 (*parMarker:"Bars","Fences","Points", "Ellipses","Bands"*)
-inputSim={(*fileName=*)"/home/tom/octet.formfactor/f.figure.series-full.rencon3.strange.baryons-all.band.nb",
-(*parOrder=*)"full",(*parLambda0=*)0.90`20,(*parci=*)1.50`20,
+inputSim={(*fileName=*)"/home/tom/octet.formfactor/f_figure_series-full_rencon3_strange_baryons-all_individual.wl",
+(*parOrder=*)"full",(*parLambda0=*)0.90`20,(*parci=*)1.00`20,
 (*calcPointOpacity=*)"{1,1,1,1,1,1,1,1,1,1,1,1}",(*exprOpacity=*)1,
-(*cFitting=*)"Baryons",(*errorbarQ=*)"L_0.90_ci_1.50"};
+(*cFitting=*)"Baryons",(*errorbarQ=*)"notbar"};
 If[cmdQ,
 inputCml=$ScriptCommandLine,(*\:5982\:679c\:5728\:547d\:4ee4\:884c\:6267\:884c\:ff0c\:5c31\:91c7\:7528\:547d\:4ee4\:884c\:53c2\:6570*)
 inputCml=inputSim(*\:5982\:679c\:5728\:7b14\:8bb0\:672c\:6267\:884c\:ff0c\:5c31\:91c7\:7528\:6a21\:62df\:53c2\:6570*)
@@ -534,7 +534,7 @@ figAssoc["FrameLabel"]=frameLabel[[gegm]];
 figAssoc["LegendStyle"]=lineStyleTable[[conf=2,seva,io]]//figOrder;(*\:6307\:5b9a\:56fe\:4f8b\:989c\:8272\:ff0c\:6837\:5f0f*)
 figAssoc["LegendText"]=dataVtitle[[seva,io]]//figOrder;(*\:6307\:5b9a\:56fe\:4f8b\:6587\:5b57*)
 figAssoc["LegendMarkerSize"]={40,2};(*\:6307\:5b9a\:56fe\:4f8b\:4e2d\:7b26\:53f7\:7684\:5927\:5c0f.w,h*)
-figAssoc["LegendPositon"]={{0.70,0.72},(*\:951a\:70b9\:4f4d\:7f6e*){0,0}(*\:56fe\:7684\:951a\:70b9*)};(*\:6307\:5b9a\:56fe\:4f8b\:4f4d\:7f6e*)
+figAssoc["LegendPositon"]={{0.70,0.75},(*\:951a\:70b9\:4f4d\:7f6e*){0,0}(*\:56fe\:7684\:951a\:70b9*)};(*\:6307\:5b9a\:56fe\:4f8b\:4f4d\:7f6e*)
 seriesFig[{"norm_"<>ToString[norm],"gegm_"<>ToString[gegm],"seva_"<>ToString[seva],"io_"<>ToString[io]}]=figGroup[figAssoc];
 If[!cmdQ,echo[seriesFig[{"norm_"<>ToString[norm],"gegm_"<>ToString[gegm],"seva_"<>ToString[seva],"io_"<>ToString[io]}]]]
 
@@ -602,7 +602,7 @@ figAssoc["FrameLabel"]=frameLabel[[gegm]];
 figAssoc["LegendStyle"]=lineStyleTable[[conf=2,seva,io]]//figOrder;(*\:6307\:5b9a\:56fe\:4f8b\:989c\:8272\:ff0c\:6837\:5f0f*)
 figAssoc["LegendText"]=dataVtitle[[seva,io]]//figOrder;(*\:6307\:5b9a\:56fe\:4f8b\:6587\:5b57*)
 figAssoc["LegendMarkerSize"]={40,2};(*\:6307\:5b9a\:56fe\:4f8b\:4e2d\:7b26\:53f7\:7684\:5927\:5c0f.w,h*)
-figAssoc["LegendPositon"]={{0.6,0.1},(*\:951a\:70b9\:4f4d\:7f6e*){0,0}(*\:56fe\:7684\:951a\:70b9*)};(*\:6307\:5b9a\:56fe\:4f8b\:4f4d\:7f6e*)
+figAssoc["LegendPositon"]={{0.6,0.15},(*\:951a\:70b9\:4f4d\:7f6e*){0,0}(*\:56fe\:7684\:951a\:70b9*)};(*\:6307\:5b9a\:56fe\:4f8b\:4f4d\:7f6e*)
 seriesFig[{"norm_"<>ToString[norm],"gegm_"<>ToString[gegm],"seva_"<>ToString[seva],"io_"<>ToString[io]}]=figGroup[figAssoc];
 If[!cmdQ,echo[seriesFig[{"norm_"<>ToString[norm],"gegm_"<>ToString[gegm],"seva_"<>ToString[seva],"io_"<>ToString[io]}]]]
 
@@ -697,5 +697,3 @@ KeyValueMap[Export,outputAssoc]
 Run[FileNameJoin[{gitLocalName,"totex.sh"}]]
 Run["rm "<>FileNameJoin[{gitLocalName,"expression-results/sigma_Fig*.pdf"}]]
 *)
-Run[FileNameJoin[{gitLocalName,"totex.sh"}]]
-Run["rm "<>FileNameJoin[{gitLocalName,"expression-results/sigma_Fig*.pdf"}]]
