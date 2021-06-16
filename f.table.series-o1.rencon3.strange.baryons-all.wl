@@ -250,19 +250,16 @@ dataSeriesRaw[[All,All,All,21]](*37,paper*)
 \:5728\:8fd9\:91cc\:6307\:5b9a\:4f5c\:56fe\:9009\:7528\:7684\:6570\:636e\:96c6\:ff0cci=1.0\:ff0cor\:ff0cci=1.5
 \:6307\:5b9a\:4e2d\:5fc3\:6570\:636e\:70b9\:ff0c\:7136\:540e\:7ed9\:5b83\:52a0\:4e0a\:4e0b errorbar
 \:4e2d\:5fc3\:6570\:636e\:70b9\:7684\:6307\:6807\:4e3a2*)
-dataCenter=2;
-dataSeries=reSevaGegm[[dataCenter]];
 (*dataSeries//Dimensions
 {2,8,37},{gegm,io,seva}*)
-
-
 Module[{teData},(*\:5bf9\:4e8e\:603b\:8d21\:732e\:7684seva\:ff0c\:6539\:5199\:6210\:6709\:8bef\:5dee\:5e26\:7684\:5f62\:5f0f*)
 gegm=2;io=1;seva=18;(*seva 18 \:662f\:603b\:8d21\:732e\:7684\:4f4d\:7f6e*)
-dataSeries[[All,All,seva]]=Table[
-teData=dataSeriesRaw[[All,gegm,io,seva]];
-PlusMinus[teData[[2]],Mean[Abs[teData[[{1,3}]]-teData[[2]]]]]
-,{gegm,1,2,1}
-,{io,1,8,1}
+dataSeries=Table[
+teData=reSevaGegm[[All,gegm,io,seva]];
+teData[[2]]\[PlusMinus]Mean[Abs[teData[[{1,3}]]-teData[[2]]]]
+,{gegm,1,2}
+,{io,1,8}
+,{seva,1,37}
 ];
 ]
 choplimit=10^-8;(*\:5bf9\:6570\:636e\:663e\:793a\:683c\:5f0f\:5316\:7684\:7cbe\:786e\:5ea6\:63a7\:5236*)
