@@ -263,7 +263,7 @@ teData[[2]]\[PlusMinus]Mean[Abs[teData[[{1,3}]]-teData[[2]]]]
 ];
 ]
 choplimit=10^-8;(*\:5bf9\:6570\:636e\:663e\:793a\:683c\:5f0f\:5316\:7684\:7cbe\:786e\:5ea6\:63a7\:5236*)
-dataSeriesTrim=Map[NumberForm[Chop[#1,choplimit],{6,3}]&,dataSeries,{-1}];
+dataSeriesTrim=Map[NumberForm[Chop[#1,choplimit],{7,6}]&,dataSeries,{-1}];
 (*dataSeriesTrim//Dimensions
 {2,8,37},{gegm,io,seva}*)
 
