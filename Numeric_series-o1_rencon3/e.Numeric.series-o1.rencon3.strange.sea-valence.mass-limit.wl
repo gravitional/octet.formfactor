@@ -30,7 +30,7 @@ gitLocalName=FileNameJoin[Append[TakeWhile[FileNameSplit[ExpandFileName[fileName
 
 
 inputSim={"/home/tom/octet.formfactor/Numeric.series-o1.rencon3/e.Numeric.series-o1.rencon3.strange.sea-valence.mass-limit.wl",
-"o1","0.80`20","1.00`20","Sigma1","L_0.90_ci_1.00"};
+"o1","0.90`20","1.00`20","Sigma1","L_0.90_ci_1.00"};
 (*\:5982\:679c\:5728\:547d\:4ee4\:884c\:6267\:884c\:ff0c\:5c31\:91c7\:7528\:547d\:4ee4\:884c\:53c2\:6570*)
 If[cmdQ,
 inputCml=$ScriptCommandLine,
@@ -536,7 +536,7 @@ StringRiffle[rencon]
 
 
 (* ::Section::Closed:: *)
-(*non-zero and zero formula*)
+(*formula*)
 
 
 (* ::Text:: *)
@@ -561,10 +561,6 @@ StringRiffle[rencon]
 
 (* ::DisplayFormula:: *)
 (*\[LeftAngleBracket]r^2\[RightAngleBracket]=(-6)*(D[G[Q2],{Q2,1}]@0),G=Ge,or Gm*)
-
-
-(* ::Section::Closed:: *)
-(*zero terms*)
 
 
 (* ::Subsection:: *)
@@ -764,14 +760,16 @@ sevaTotal=18;
 
 Table[
 (*************************************start determine the value******************************)
-reRadius2GegmSeva[[gegm,seva,io]]=unitTransGev2*If[
+reRadius2GegmSeva[[gegm,seva,io]]=unitTransGev2*(-6)*reSevaGegm[[gegm,2,seva,io]]
+(*\:8fd9\:91cc\:4e0d\:9664\:4ee5\:78c1\:77e9*)
+(*If[
 
 Abs[(reSevaGegm[[gegm,1,sevaTotal,io]]-0)]<=equallimit(*condition,derivative\[TildeTilde]0*)
 
 ,(-6)*reSevaGegm[[gegm,2,seva,io]](*true*)
 
 ,((-6)*reSevaGegm[[gegm,2,seva,io]])/reSevaGegm[[gegm,1,sevaTotal,io]](*false*)
-]
+]*)
 
 ,{gegm,1,2,1}
 ,{seva,1,18,1}
