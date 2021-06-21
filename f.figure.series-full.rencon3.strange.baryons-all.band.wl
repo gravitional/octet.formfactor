@@ -1,7 +1,7 @@
 (* ::Package:: *)
 
 (* ::Title:: *)
-(*f.figure.series-full.rencon3.strange.baryons-all.band.nb*)
+(*f.figure.series-full.rencon3.strange.baryons-all.band.wl*)
 
 
 (* ::Chapter:: *)
