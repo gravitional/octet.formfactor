@@ -133,8 +133,8 @@ dataSeriesO0=dataSeriesO0Raw[[conf=All,gegm=2,io=All,seva=18]];
 {3,8}*)
 (*++++++++++++++\:8fd9\:91cc\:7ed9\:51fagegm\:7684\:5e45\:503c\:ff0c\:540e\:9762\:662f\:5426\:5bf9\:56fe\:7684\:6570\:636e\:8fdb\:884c\:5f52\:4e00\:5316\:4f1a\:7528\:5230+++++++++++++++++++++++++++*)
 ampGegmCalc={
-{ConstantArray[1,{3,8}],ConstantArray[1,{3,8}]},(*\:4e0d\:5f52\:4e00\:5316\:7684\:96f6\:70b9\:503c*)
-{ConstantArray[1,{3,8}],dataSeriesO0}(*\:5f52\:4e00\:5316\:7684\:96f6\:70b9\:503c*)
+{ConstantArray[1,{3,8}],ConstantArray[1,{3,8}]},(*norm=1,\:96f6\:70b9\:503c\:4e0d\:5f52\:4e00\:5316*)
+{ConstantArray[1,{3,8}],dataSeriesO0}(*norm=2,\:96f6\:70b9\:503c\:5f52\:4e00\:5316*)
 };
 (*ampGegmCalc//Dimensions
 {2,2,3,8}*)
@@ -292,6 +292,13 @@ treeGegmRencon3[[All,All,All,All,4]]+loopGegm[[All,All,All,All,7]]+loopGegm[[All
 reSevaGegm=Transpose[reSevaGegm1,{5,1,2,3,4}];
 (*reSevaGegm//Dimensions
 {norm,conf,gegm,io,seva},{2,3,2,8,34}*)
+
+
+(*\:8ba1\:7b97\:67d0\:4e00\:4e2aQ2\:70b9\:ff0c\:8bef\:5dee\:5e26\:7684\:534a\:5bbd\:5ea6*)
+norm=1;gegm=1;seva=16;io=2;
+reSevaGegm[[norm,conf=2,gegm,io,seva]]\[PlusMinus]Mean[Abs[
+reSevaGegm[[norm,conf=2,gegm,io,seva]]-reSevaGegm[[norm,conf={1,3},gegm,io,seva]]
+]]/.Q2->0.3
 
 
 (* ::Chapter:: *)
