@@ -1,3 +1,11 @@
+# update
+
+commit f3b69ad70ab3344e61fb
+
+ sigma0 图片 legend 中的 u 改成 l
+新建的画图的脚本为, f_figure_series-full_rencon3_strange_baryons-all_individual.wl, 执行对 sigma 三重子的画图任务。
+也可以对别的粒子进行定制画图.
+
 ## Question
 
 1. 图中的tree和loop乘以了Z，但表格中的tree和loop没有乘以Z。所以要乘以Z。 **solved**
