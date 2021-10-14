@@ -732,4 +732,5 @@ KeyValueMap[Export,outputAssoc]
 Run[FileNameJoin[{gitLocalName,"totex.sh"}]]
 
 
+(* ::Input:: *)
 (*Run["rm "<>FileNameJoin[{gitLocalName,"expression-results/sigma_Fig*.pdf"}]]*)
