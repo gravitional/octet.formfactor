@@ -528,7 +528,7 @@ FontFamily->"Times New Roman",FontSize->frameText],None},
 seriesFig=<||>;(*\:521d\:59cb\:5316,\:7528\:6765\:5b58\:50a8\:56fe\:50cf*)
 
 
-(* ::Subsection:: *)
+(* ::Subsection::Closed:: *)
 (*\[CapitalSigma]p*)
 
 
@@ -626,7 +626,8 @@ figAssoc["PlotRangePadding"]={{0,0},{Scaled[0.04],Scaled[0.14]}};(*\:6307\:5b9a\
 figAssoc["FrameLabel"]=frameLabel[[gegm,io]];
 
 figAssoc["LegendStyle"]=lineStyleTable[[conf=2,seva,io]]//figOrder;(*\:6307\:5b9a\:56fe\:4f8b\:989c\:8272\:ff0c\:6837\:5f0f*)
-figAssoc["LegendText"]=dataVtitle[[conf=2,seva,io]]//figOrder;(*\:6307\:5b9a\:56fe\:4f8b\:6587\:5b57*)
+(*figAssoc["LegendText"]=dataVtitle[[conf=2,seva,io]]//figOrder;*)(*\:6307\:5b9a\:56fe\:4f8b\:6587\:5b57, \:901a\:7528\:7684\:5f62\:5f0f*)
+figAssoc["LegendText"]={" sea,l"," sea,s"}//figOrder;(*\:8fd0\:884c\:65f6\:4fee\:6539*)
 figAssoc["LegendLayout"]=Automatic;
 figAssoc["LegendFunction"]=None;
 
@@ -645,7 +646,8 @@ figAssoc["PlotRangePadding"]={{0,0},{Scaled[0],Scaled[0.04]}};(*\:6307\:5b9a\:56
 figAssoc["FrameLabel"]=frameLabel[[gegm,io]];
 
 figAssoc["LegendStyle"]=lineStyleTable[[conf=2,seva,io]]//figOrder;(*\:6307\:5b9a\:56fe\:4f8b\:989c\:8272\:ff0c\:6837\:5f0f*)
-figAssoc["LegendText"]=dataVtitle[[conf=2,seva,io]]//figOrder;(*\:6307\:5b9a\:56fe\:4f8b\:6587\:5b57*)
+(*figAssoc["LegendText"]=dataVtitle[[conf=2,seva,io]]//figOrder;*)(*\:6307\:5b9a\:56fe\:4f8b\:6587\:5b57, \:901a\:7528\:7684\:5f62\:5f0f*)
+figAssoc["LegendText"]={" valence,l"," valence,s"}//figOrder;(*\:8fd0\:884c\:65f6\:4fee\:6539*)
 figAssoc["LegendLayout"]=Automatic;
 figAssoc["LegendFunction"]=None;
 
@@ -664,7 +666,8 @@ figAssoc["PlotRangePadding"]={{0,0},{Scaled[0.04],Scaled[0.05]}};(*\:6307\:5b9a\
 figAssoc["FrameLabel"]=frameLabel[[gegm,io]];
 
 figAssoc["LegendStyle"]=lineStyleTable[[conf=2,seva,io]]//figOrder;(*\:6307\:5b9a\:56fe\:4f8b\:989c\:8272\:ff0c\:6837\:5f0f*)
-figAssoc["LegendText"]=dataVtitle[[conf=2,seva,io]]//figOrder;(*\:6307\:5b9a\:56fe\:4f8b\:6587\:5b57*)
+(*figAssoc["LegendText"]=dataVtitle[[conf=2,seva,io]]//figOrder;*)(*\:6307\:5b9a\:56fe\:4f8b\:6587\:5b57, \:901a\:7528\:7684\:5f62\:5f0f*)
+figAssoc["LegendText"]={" sea,l"," sea,s"}//figOrder;(*\:8fd0\:884c\:65f6\:4fee\:6539*)
 figAssoc["LegendLayout"]=Automatic;
 figAssoc["LegendFunction"]=None;
 
@@ -682,7 +685,8 @@ figAssoc["PlotRangePadding"]={{0,0},{Scaled[0.04],Scaled[0.04]}};(*\:6307\:5b9a\
 figAssoc["FrameLabel"]=frameLabel[[gegm,io]];
 
 figAssoc["LegendStyle"]=lineStyleTable[[conf=2,seva,io]]//figOrder;(*\:6307\:5b9a\:56fe\:4f8b\:989c\:8272\:ff0c\:6837\:5f0f*)
-figAssoc["LegendText"]=dataVtitle[[conf=2,seva,io]]//figOrder;(*\:6307\:5b9a\:56fe\:4f8b\:6587\:5b57*)
+(*figAssoc["LegendText"]=dataVtitle[[conf=2,seva,io]]//figOrder;*)(*\:6307\:5b9a\:56fe\:4f8b\:6587\:5b57, \:901a\:7528\:7684\:5f62\:5f0f*)
+figAssoc["LegendText"]={" valence,l"," valence,s"}//figOrder;(*\:8fd0\:884c\:65f6\:4fee\:6539*)
 figAssoc["LegendLayout"]=Automatic;
 figAssoc["LegendFunction"]=None;
 
