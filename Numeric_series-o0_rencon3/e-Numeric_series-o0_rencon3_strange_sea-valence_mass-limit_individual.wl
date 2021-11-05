@@ -541,15 +541,16 @@ namesHorizontal(* prepend names aligned in horizontal, should +1, for vertical n
 
 
 assocLoopGeGm=Table[(*\:5236\:4f5c\:4e00\:4e2a\:91cd\:5b50\:4ecb\:5b50\:5bf9\:5e94\:6570\:503c\:7684\:5173\:8054*)
-Values[fumassStr[[seva,io,if]]][[coe]]->indLoopGegm[[ren,gegm,seva,io,if,coe]]
-
+Table[
+Values[fumassStr[[seva,io,if]]][[coe]]->indLoopGegm[[ren,gegm,seva,io,if,coe]],
+{coe,1,Length[fumassStr[[seva,io,if]]],1}]~Join~
+{"Tot."->Total[indLoopGegm[[ren,gegm,seva,io,if]]]}
 ,{ren,2}
 ,{gegm,1,2,1}
 ,{seva,1,13,1}
 ,{io,1,8,1}
 ,{if,1,11,1}
-,{coe,1,Length[fumassStr[[seva,io,if]]],1}
-];(*end block*)
+];
 (*++++++++++++++++++++++\:8ba1\:7b97\:5bf9\:5e94\:7684\:80cc\:666f\:989c\:8272+++++++++++++++++++++++++++++++\:ff0c\:5728\:4e00\:4e2a\:68af\:5ea6\:7684\:8272\:5f69\:65b9\:6848\:4e2d\:ff0c\:6309\:7167\:8d21\:732e\:7684\:5927\:5c0f\:9009\:53d6\:989c\:8272*)
 bgdColor=Table[
 
@@ -577,7 +578,7 @@ namesHorizontal2={
 namesHorizontal[ren_,gegm_,io_,seva_]:={namesHorizontal1[[io]],namesHorizontal2[[seva]],loopGegm[[ren,gegm,seva,io]]};
 
 
-ren=1;gegm=2;seva=13;io=4;
+ren=1;gegm=2;seva=1;io=4;
 Style[
 Multicolumn[
 {(* paras of column need an {} *)
