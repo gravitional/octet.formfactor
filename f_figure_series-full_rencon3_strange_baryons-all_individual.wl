@@ -39,6 +39,12 @@ echo["the gitLocalName is"]
 gitLocalName=FileNameJoin[Append[TakeWhile[FileNameSplit[ExpandFileName[fileName]],UnsameQ[#1,gitRemoteName]&],gitRemoteName]]
 
 
+(*\:5bfc\:5165 latex \:6807\:7b7e\:7684\:5305 *)
+Once[<<MaTeX`]
+(* latex \:57fa\:672c\:6837\:5f0f,\:5b57\:4f53\:5927\:5c0f*)
+texStyle={FontFamily->"Latin Modern Roman",FontSize->12};
+
+
 (* ::Section:: *)
 (*initial parameters*)
 
@@ -315,7 +321,7 @@ mmacolorDefault=RGBColor[0.368417, 0.506779, 0.709798];
 
 
 (*\:8bbe\:5b9a\:516b\:91cd\:6001\:66f2\:7ebfstyle*)
-dataVtitle1={
+dataVtitle1=Identity[StringJoin["\\mathrm{",#,"}"]&/@{
 (*1:*)"tree,uds",(*2:*)"tree,u",(*3:*)"tree,d",(*4:*)"tree,s",
 (*5:*)"loop,uds",(*6:*)"loop,u",(*7:*)"loop,d",(*8:*)"loop,s",
 (*9:*)"quench,u",(*10:*)"quench d",(*11:*)"quench,s",
@@ -327,7 +333,7 @@ dataVtitle1={
 (*29:*)"Z*tree+quench+valence,u",(*30:*)"Z*tree+quench+valence,d",(*31:*)"Z*tree+quench+valence,s",
 (*32:*)"(Z-1)tree+quench+valence,u",(*33:*)"(Z-1)tree+quench+valence,d",(*34:*)"(Z-1)tree+quench+valence,s",
 (*35:*)"exprmt.",(*36:*)"lattice",(*37:*)"paper"
-};
+}];
 (*\:7ebf\:578b\:548c\:989c\:8272\:7ec4\:5408\:ff0c\:7ed9\:5b9a\:4e00\:7ec4\:914d\:8272\:65b9\:6848*)
 (*\:6307\:5b9a\:66f2\:7ebf\:7684\:7c97\:7ec6\:ff0c\:53ef\:4ee5\:7528\:6765\:533a\:5206 0.80\:ff0c0.90\:ff0c1.00*)
 lineThick={AbsoluteThickness[2],AbsoluteThickness[2],AbsoluteThickness[2]};
@@ -432,7 +438,10 @@ AxesOrigin->{0,0},Axes->True,
 PlotRangePadding->figAssoc["PlotRangePadding"],
 Frame->True,
 FrameLabel->figAssoc["FrameLabel"],
-FrameStyle->figAssoc["FrameStyle"](*\:8fb9\:6846\:7684\:6837\:5f0f\:ff0c\:5728\:4e0b\:9762\:8be6\:7ec6\:6307\:5b9a*)
+(*\:8fb9\:6846\:7684\:6837\:5f0f\:ff0c\:5728\:4e0b\:9762\:8be6\:7ec6\:6307\:5b9a*)
+FrameStyle->figAssoc["FrameStyle"],
+(*latex \:7ebf\:578b*)
+BaseStyle->texStyle
 ],
 Placed[(*+++\:56fe\:4f8b\:90e8\:5206++++++++*)
 Style[
@@ -483,14 +492,12 @@ Directive[frameTick,FontSize->frameText,Black](*\:9876\:90e8*)
 };
 
 
-octNameTeX={"\(\*SuperscriptBox[\(\[CapitalSigma]\), \(-\)]\)","\(\*SuperscriptBox[\(\[CapitalSigma]\), \(0\)]\)","\(\*SuperscriptBox[\(\[CapitalSigma]\), \(+\)]\)",
-"p","n","\(\*SuperscriptBox[\(\[CapitalXi]\), \(-\)]\)","\(\*SuperscriptBox[\(\[CapitalXi]\), \(0\)]\)",
-"\[CapitalLambda]"};
+octNameTeX={"\\Sigma^-","\\Sigma^0","\\Sigma^+","p","n","\\Xi^-","\\Xi^0","\\Lambda"};
 octNameTeX2=ConstantArray["",8];
 lamdaConf={"L-0.8,","L-0.9,","L-1.0,"};
 lamdaConf2={"","",""};
 (*+++++++++++++++++++++++*)
-sevaTitle=StringJoin[" ",#1]&/@{
+sevaTitleStr=StringJoin["\\mathrm{",#,"}"]&/@{
 (*1:*)"tree,uds",(*2:*)"tree,u",(*3:*)"tree,d",(*4:*)"tree,s",
 (*5:*)"loop,uds",(*6:*)"loop,u",(*7:*)"loop,d",(*8:*)"loop,s",
 (*9:*)"quench,u",(*10:*)"quench d",(*11:*)"quench,s",
@@ -503,22 +510,22 @@ sevaTitle=StringJoin[" ",#1]&/@{
 (*32:*)"(Z-1)tree+quench+valence,u",(*33:*)"(Z-1)tree+quench+valence,d",(*34:*)"(Z-1)tree+quench+valence,s",
 (*35:*)"exprmt.",(*36:*)"lattice",(*37:*)"paper"
 };
-dataVtitle=Table[
-StringJoin[lamdaConf2[[conf]],sevaTitle[[seva]],octNameTeX2[[io]]]
+sevaTitle=MaTeX@sevaTitleStr;
+dataVtitle=ArrayReshape[MaTeX@Flatten[Table[
+StringJoin[lamdaConf2[[conf]],sevaTitleStr[[seva]],octNameTeX2[[io]]]
 ,{conf,1,3}
 ,{seva,1,37}
 ,{io,1,8}
-];
-(*+++++++++++++++++++++++*)
-frameLabel=Table[
+]],{3,37,8}];
+(* plot's Frame labels*)
+frameLabel=ArrayReshape[MaTeX@Flatten[Table[
 {
-{Style["\!\(\*SubsuperscriptBox[\(G\), \("<>{"E","M"}[[gegm]]<>"\), \("<>octNameTeX[[io]]<>"\)]\)(\!\(\*SuperscriptBox[\(Q\), \(2\)]\))",
-FontFamily->"Times New Roman",FontSize->frameText],None},
-{Style["\!\(\*SuperscriptBox[\(Q\), \(2\)]\)(\!\(\*SuperscriptBox[\(GeV\), \(2\)]\))",FontFamily->"Times New Roman",FontSize->frameText],None}
+"Q^2(\\mathrm{GeV}^2)",
+{"G_E^{","G_M^{"}[[gegm]]<>octNameTeX[[io]]<>"}(Q_2)"
 }
 ,{gegm,1,2}
 ,{io,1,8}
-];(*\:5750\:6807Frame\:7684\:6807\:7b7e*)
+]],{2,8,2}];
 
 
 (* ::Section:: *)
@@ -528,7 +535,7 @@ FontFamily->"Times New Roman",FontSize->frameText],None},
 seriesFig=<||>;(*\:521d\:59cb\:5316,\:7528\:6765\:5b58\:50a8\:56fe\:50cf*)
 
 
-(* ::Subsection::Closed:: *)
+(* ::Subsection:: *)
 (*\[CapitalSigma]p*)
 
 
@@ -733,7 +740,8 @@ echo["output status"];
 KeyValueMap[Export,outputAssoc]
 
 
-Run[FileNameJoin[{gitLocalName,"totex.sh"}]]
+(* ::Input:: *)
+(*Run[FileNameJoin[{gitLocalName,"totex.sh"}]]*)
 
 
 (* ::Input:: *)
