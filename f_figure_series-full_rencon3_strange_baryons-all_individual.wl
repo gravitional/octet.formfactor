@@ -42,7 +42,7 @@ gitLocalName=FileNameJoin[Append[TakeWhile[FileNameSplit[ExpandFileName[fileName
 (*\:5bfc\:5165 latex \:6807\:7b7e\:7684\:5305 *)
 Once[<<MaTeX`]
 (* latex \:57fa\:672c\:6837\:5f0f,\:5b57\:4f53\:5927\:5c0f*)
-texStyle={FontFamily->"Latin Modern Roman",FontSize->12};
+texStyle={FontFamily->"Latin Modern Roman",FontSize->14};
 
 
 (* ::Section:: *)
@@ -311,7 +311,7 @@ reSevaGegm[[norm,conf=2,gegm,io,seva]]-reSevaGegm[[norm,conf={1,3},gegm,io,seva]
 (*Draw*)
 
 
-(* ::Section:: *)
+(* ::Section::Closed:: *)
 (*\:8ba1\:7b97\:6570\:636e\:5355\:4e2a\:4f5c\:56fe*)
 
 
@@ -415,8 +415,8 @@ lineStyleTable[[conf=3,seva,io]]
 {2,2,28,8},{norm,gegm,seva,io}*)
 
 
-(* ::Section:: *)
-(*\:66f2\:7ebfGroup*)
+(* ::Section::Closed:: *)
+(*\:66f2\:7ebf Gather*)
 
 
 (*figGroup\:7528\:4e00\:4e2a\:5173\:8054Assoc \:4f20\:5165\:53c2\:6570\:ff0c\:4e0b\:9762\:662f\:9700\:8981\:4f20\:5165\:7684\:53c2\:6570\:540d\:79f0.
@@ -432,7 +432,7 @@ Assoc["LegendMarkerSize"],\:56fe\:4f8b\:8bb0\:53f7\:5927\:5c0f*)
 figGroup[figAssoc_]:=Legended[(*\:8bbe\:7f6e\:8ba1\:7b97\:66f2\:7ebf\:7684\:56fe\:4f8b*)
 Show[
 figAssoc["Data"],(*Show\:7684\:53c2\:6570\:662f\:5e8f\:5217*) 
-ImageSize->Large,
+ImageSize->figAssoc["ImageSize"],
 PlotRange->figAssoc["PlotRange"],
 AxesOrigin->{0,0},Axes->True,
 PlotRangePadding->figAssoc["PlotRangePadding"],
@@ -459,15 +459,49 @@ figAssoc["LegendPositon"]
 
 
 (* ::Section:: *)
-(*\:683c\:5f0f\:7684\:516c\:5171\:90e8\:5206*)
+(*format public*)
 
 
-figArrayInit=0;(*\:7528\:6765\:4f5c\:56fe\:7684\:5404\:9879\:6570\:636e\:7684\:5360\:4f4d\:7b26*)
+frameTick=AbsoluteThickness[1.5];(*\:8fb9\:6846\:523b\:5ea6\:7ebf\:7684\:7c97\:7ec6*)
+frameFontSize["big"]=15;(*\:8fb9\:6846\:6587\:5b57\:5927\:5c0f*)(*<|"normalized"\[Rule]18,"unormalized"\[Rule]12|>*)
+frameFontSize["small"]=12;
+legendFontSize["big"]=13;
+legendFontSize["small"]=12;
+imageSize["big"]={GoldenRatio 350,350};
+imageSize["small"]={GoldenRatio 150,150};
+
+
+(*\:8bbe\:7f6eFrame \:7684\:6837\:5f0f,\:56db\:4e2a\:8fb9\:53ef\:4ee5\:5206\:522b\:6307\:5b9a*)
+frameStyle["big"]={
+{
+Directive[frameTick,FontSize->#,Black],(*\:5de6\:8fb9*)
+Directive[frameTick,FontSize->#,Black](*\:53f3\:8fb9*)
+},
+{
+Directive[frameTick,FontSize->#,Black],(*\:5e95\:90e8*)
+Directive[frameTick,FontSize->#,Black](*\:9876\:90e8*)
+}
+}&@frameFontSize["big"];
+(* \:63d2\:56fe\:7684\:6837\:5f0f, small*)
+frameStyle["small"]={
+{
+Directive[frameTick,FontSize->#,Black],(*\:5de6\:8fb9*)
+Directive[frameTick,FontSize->#,Black](*\:53f3\:8fb9*)
+},
+{
+Directive[frameTick,FontSize->#,Black],(*\:5e95\:90e8*)
+Directive[frameTick,FontSize->#,Black](*\:9876\:90e8*)
+}
+}&@frameFontSize["small"];
+
+
+figArrayInit=0;(*\:7528\:6765\:4f5c\:56fe\:7684\:5404\:9879\:6570\:636e\:7684\:521d\:59cb\:5316*)
 figAssoc=<|
+"ImageSize"->imageSize["big"],
 "PlotRange"->figArrayInit,(*\:4f5c\:56fe\:8303\:56f4*)
 "PlotRangePadding"->figArrayInit,(*\:4f5c\:56fe\:7a7a\:767d\:586b\:5145*)
 "FrameLabel"->figArrayInit,(*\:5750\:6807\:8f74\:6807\:8bb0*)
-"FrameStyle"->figArrayInit,(*\:5750\:6807\:8f74\:98ce\:683c*)
+"FrameStyle"->frameStyle["big"],(*\:5750\:6807\:8f74\:98ce\:683c*)
 "LegendPositon"->figArrayInit,(*\:6574\:5757\:56fe\:4f8b\:7684\:4f4d\:7f6e*)
 (*\:4e0a\:9762\:7684\:662f\:516c\:6709\:90e8\:5206\:ff0c\:4e0b\:9762\:7684\:9700\:8981\:548c\:6570\:636e\:4e00\:4e00\:5bf9\:5e94*)
 "Data"->figArrayInit,(*\:4f5c\:56fe\:6570\:636e*)
@@ -475,21 +509,6 @@ figAssoc=<|
 "LegendStyle"->figArrayInit,(*\:56fe\:4f8b\:98ce\:683c*)
 "LegendMarkerSize"->figArrayInit (*\:56fe\:4f8b\:8bb0\:53f7*)
 |>;(*\:7528\:6765\:753b\:56fe\:7684\:5173\:8054*)
-
-
-frameTick=AbsoluteThickness[1.5];(*\:8fb9\:6846\:523b\:5ea6\:7ebf\:7684\:7c97\:7ec6*)
-frameText=18;(*\:8fb9\:6846\:6587\:5b57\:5927\:5c0f*)(*<|"normalized"\[Rule]18,"unormalized"\[Rule]12|>*)
-(*\:8bbe\:7f6eFrame \:7684\:6837\:5f0f,\:56db\:4e2a\:8fb9\:53ef\:4ee5\:5206\:522b\:6307\:5b9a*)
-figAssoc["FrameStyle"]={
-{
-Directive[frameTick,FontSize->frameText,Black],(*\:5de6\:8fb9*)
-Directive[frameTick,FontSize->frameText,Black](*\:53f3\:8fb9*)
-},
-{
-Directive[frameTick,FontSize->frameText,Black],(*\:5e95\:90e8*)
-Directive[frameTick,FontSize->frameText,Black](*\:9876\:90e8*)
-}
-};
 
 
 octNameTeX={"\\Sigma^-","\\Sigma^0","\\Sigma^+","p","n","\\Xi^-","\\Xi^0","\\Lambda"};
@@ -511,21 +530,24 @@ sevaTitleStr=StringJoin["\\mathrm{",#,"}"]&/@{
 (*35:*)"exprmt.",(*36:*)"lattice",(*37:*)"paper"
 };
 sevaTitle=MaTeX@sevaTitleStr;
-dataVtitle=ArrayReshape[MaTeX@Flatten[Table[
+dataVtitle=ArrayReshape[MaTeX[Flatten[Table[
 StringJoin[lamdaConf2[[conf]],sevaTitleStr[[seva]],octNameTeX2[[io]]]
 ,{conf,1,3}
 ,{seva,1,37}
 ,{io,1,8}
-]],{3,37,8}];
+]],
+FontSize->legendFontSize["big"]
+],{3,37,8}];
 (* plot's Frame labels*)
-frameLabel=ArrayReshape[MaTeX@Flatten[Table[
+frameLabel=ArrayReshape[MaTeX[Flatten[Table[
 {
 "Q^2(\\mathrm{GeV}^2)",
 {"G_E^{","G_M^{"}[[gegm]]<>octNameTeX[[io]]<>"}(Q_2)"
 }
 ,{gegm,1,2}
 ,{io,1,8}
-]],{2,8,2}];
+]],FontSize->frameFontSize["big"]
+],{2,8,2}];
 
 
 (* ::Section:: *)
@@ -535,70 +557,190 @@ frameLabel=ArrayReshape[MaTeX@Flatten[Table[
 seriesFig=<||>;(*\:521d\:59cb\:5316,\:7528\:6765\:5b58\:50a8\:56fe\:50cf*)
 
 
-(* ::Subsection:: *)
-(*\[CapitalSigma]p*)
-
-
 (*\:591a\:7ebf\:6bb5\:56fe\:4f8b\:6392\:7248\:51fd\:6570\:ff1a
 figAssoc["LegendLayout"]=Function[pairs,Column[Row/@Join[Partition[pairs\[LeftDoubleBracket]All,1\[RightDoubleBracket],3],pairs[[;;;;3,{2}]],2]]];
 figAssoc["LegendFunction"]=None;
 *)
 figOrder=Flatten[Transpose[#]]&;(*\:7528\:6765\:7ed9\:56fe\:50cf\:6392\:5e8f\:7684\:51fd\:6570,\:4f5c\:8f6c\:7f6e\:4e4b\:540e\:ff0c\:5c31\:5148\:6309io\:6392\:5e8f\:ff0c\:518d\:6309seva\:6392\:5e8f\:4e86*)
+figTag[{norm_,gegm_,seva_,io_}]:={"norm_"<>ToString[norm],"gegm_"<>ToString[gegm],"seva_"<>ToString[seva],"io_"<>ToString[io]}
+figTag[layer_,{norm_,gegm_,seva_,io_}]:={layer,"norm_"<>ToString[norm],"gegm_"<>ToString[gegm],"seva_"<>ToString[seva],"io_"<>ToString[io]}
+
+
+(* ::Subsection:: *)
+(*\[CapitalSigma]+,sea,ge*)
+
+
+(*+++++++++++++++++++++++++++++++++++++++++++++++++ \:5236\:4f5c\:56fe\:5c42 1 ++++++++++++++++++++++++++++++++++++++++++++++++++*)
 (*\:8981\:4f5c\:56fe\:7684\:6570\:636e*)
 norm=1;gegm=1;seva=15;;17;io=3;
 figAssoc["Data"]=figCalc[[norm,gegm,seva,io]]//figOrder;
-
-figAssoc["PlotRange"]={{0,1},All};(*\:6307\:5b9a\:7eb5\:8f74\:8303\:56f4*)
-figAssoc["PlotRangePadding"]={{0,0},{Scaled[0.09],Scaled[0.18]}};(*\:6307\:5b9a\:56fe\:50cf\:7a7a\:767d\:586b\:5145\:8303\:56f4\:ff0ccalc and expr \:90fd\:751f\:6548*)
+(*\:56fe\:50cf\:5c3a\:5bf8*)
+figAssoc["ImageSize"]=imageSize["big"];
+(*\:6307\:5b9a\:56fe\:50cf\:7a7a\:767d\:586b\:5145\:8303\:56f4\:ff0ccalc and expr \:90fd\:751f\:6548*)
+figAssoc["PlotRangePadding"]={{0,0},{Scaled[0.09],Scaled[0.5]}};
+(*\:6307\:5b9a\:7eb5\:8f74\:8303\:56f4*)
+figAssoc["PlotRange"]={{0,1},All};
+(* Frame label \:5185\:5bb9*)
 figAssoc["FrameLabel"]=frameLabel[[gegm,io]];
-
-figAssoc["LegendStyle"]=lineStyleTable[[conf=2,seva,io]]//figOrder;(*\:6307\:5b9a\:56fe\:4f8b\:989c\:8272\:ff0c\:6837\:5f0f*)
-figAssoc["LegendText"]=dataVtitle[[conf=2,seva,io]]//figOrder;(*\:6307\:5b9a\:56fe\:4f8b\:6587\:5b57*)
+(*\:6307\:5b9a\:56fe\:4f8b\:989c\:8272\:ff0c\:6837\:5f0f*)
+figAssoc["LegendStyle"]=lineStyleTable[[conf=2,seva,io]]//figOrder;
+(*\:6307\:5b9a\:56fe\:4f8b\:6587\:5b57*)
+figAssoc["LegendText"]=dataVtitle[[conf=2,seva,io]]//figOrder;
 figAssoc["LegendLayout"]=Automatic;
 figAssoc["LegendFunction"]=None;
+(*\:6307\:5b9a\:56fe\:4f8b\:4e2d\:7b26\:53f7\:7684\:5927\:5c0f.w,h*)
+figAssoc["LegendMarkerSize"]={40,2};
+(*\:6307\:5b9a\:56fe\:4f8b\:4f4d\:7f6e*)
+figAssoc["LegendPositon"]={{0.10,0.70},(*\:951a\:70b9\:4f4d\:7f6e*){0,0}(*\:56fe\:7684\:951a\:70b9*)};
+(*\:753b\:51fa\:56fe\:5c421*)
+seriesFig@figTag["layer1",{norm,gegm,seva,io}]=figGroup[figAssoc];
+(*+++++++++++++++++++++++++++++++++++++++++++++++++ \:5236\:4f5c\:56fe\:5c42 2 ++++++++++++++++++++++++++++++++++++++++++++++++++*)
+Module[{norm=1,gegm=1,seva={18},io=3(*\:8981\:4f5c\:56fe\:7684\:6570\:636e*)},
+figAssoc["Data"]=figCalc[[norm,gegm,seva,io]]//figOrder;
+(*\:56fe\:50cf\:5c3a\:5bf8*)
+figAssoc["ImageSize"]=imageSize["small"];
+(*\:6307\:5b9a\:56fe\:50cf\:7a7a\:767d\:586b\:5145\:8303\:56f4\:ff0ccalc and expr \:90fd\:751f\:6548*)
+figAssoc["PlotRangePadding"]={{0,0},{Scaled[0.09],Scaled[0.09]}};
+(*\:8bbe\:7f6eFrame \:5185\:5bb9*)
+figAssoc["FrameLabel"]=None;
+(*\:8bbe\:7f6eFrame \:7684\:6837\:5f0f,\:56db\:4e2a\:8fb9\:53ef\:4ee5\:5206\:522b\:6307\:5b9a*)
+figAssoc["FrameStyle"]=frameStyle["small"];
+(*\:6307\:5b9a\:56fe\:4f8b\:989c\:8272\:ff0c\:6837\:5f0f*)
+figAssoc["LegendStyle"]=lineStyleTable[[conf=2,seva,io]]//figOrder;
+(*\:6307\:5b9a\:56fe\:4f8b\:6587\:5b57*)
+figAssoc["LegendText"]=MaTeX[{"\\mathrm{total}"}//figOrder,FontSize->13];
+(*\:6307\:5b9a\:56fe\:4f8b\:4e2d\:7b26\:53f7\:7684\:5927\:5c0f.w,h*)
+figAssoc["LegendMarkerSize"]={40,2};
+(*\:6307\:5b9a\:56fe\:4f8b\:4f4d\:7f6e*)
+figAssoc["LegendPositon"]={{0.65,0.70},(*\:951a\:70b9\:4f4d\:7f6e*){0,0}(*\:56fe\:7684\:951a\:70b9*)};
+]
+(*\:753b\:51fa\:56fe\:5c422*)
+seriesFig@figTag["layer2",{norm,gegm,seva,io}]=figGroup[figAssoc];
+(*+++++++++++++++++++++++++++++++++++++++++++++++++ \:53e0\:52a0\:56fe\:5c42 ++++++++++++++++++++++++++++++++++++++++++++++++++*)
+seriesFig@figTag[{norm,gegm,seva,io}]=Overlay[{
+seriesFig@figTag["layer1",{norm,gegm,seva,io}],
+seriesFig@figTag["layer2",{norm,gegm,seva,io}]
+},
+Alignment->{0.90,0.92}];
+(*\:5c55\:793a\:5408\:6210\:56fe*)
+If[!cmdQ,echo[seriesFig@figTag[{norm,gegm,seva,io}]]]
 
-figAssoc["LegendMarkerSize"]={40,2};(*\:6307\:5b9a\:56fe\:4f8b\:4e2d\:7b26\:53f7\:7684\:5927\:5c0f.w,h*)
-figAssoc["LegendPositon"]={{0.70,0.70},(*\:951a\:70b9\:4f4d\:7f6e*){0,0}(*\:56fe\:7684\:951a\:70b9*)};(*\:6307\:5b9a\:56fe\:4f8b\:4f4d\:7f6e*)
-seriesFig[{"norm_"<>ToString[norm],"gegm_"<>ToString[gegm],"seva_"<>ToString[seva],"io_"<>ToString[io]}]=figGroup[figAssoc];
-If[!cmdQ,echo[seriesFig[{"norm_"<>ToString[norm],"gegm_"<>ToString[gegm],"seva_"<>ToString[seva],"io_"<>ToString[io]}]]]
+
+(* ::Subsection:: *)
+(*\[CapitalSigma]+,valence,ge*)
 
 
-figOrder=Flatten[Transpose[#]]&;(*\:7528\:6765\:7ed9\:56fe\:50cf\:6392\:5e8f\:7684\:51fd\:6570*)
+(*+++++++++++++++++++++++++++++++++++++++++++++++++ \:5236\:4f5c\:56fe\:5c42 1 ++++++++++++++++++++++++++++++++++++++++++++++++++*)
 norm=1;gegm=1;seva=26;;28;io=3;(*\:8981\:4f5c\:56fe\:7684\:6570\:636e*)
 figAssoc["Data"]=figCalc[[norm,gegm,seva,io]]//figOrder;
-
-figAssoc["PlotRange"]={{0,1},All};(*\:6307\:5b9a\:7eb5\:8f74\:8303\:56f4*)
-figAssoc["PlotRangePadding"]={{0,0},{Scaled[0.09],Scaled[0.12]}};(*\:6307\:5b9a\:56fe\:50cf\:7a7a\:767d\:586b\:5145\:8303\:56f4\:ff0ccalc and expr \:90fd\:751f\:6548*)
+(*\:56fe\:50cf\:5c3a\:5bf8*)
+figAssoc["ImageSize"]=imageSize["big"];
+(*\:6307\:5b9a\:56fe\:50cf\:7a7a\:767d\:586b\:5145\:8303\:56f4\:ff0ccalc and expr \:90fd\:751f\:6548*)
+figAssoc["PlotRangePadding"]={{0,0},{Scaled[0.09],Scaled[0.5]}};
+(*\:6307\:5b9a\:7eb5\:8f74\:8303\:56f4*)
+figAssoc["PlotRange"]={{0,1},All};
+(* Frame label \:5185\:5bb9*)
 figAssoc["FrameLabel"]=frameLabel[[gegm,io]];
-
-figAssoc["LegendStyle"]=lineStyleTable[[conf=2,seva,io]]//figOrder;(*\:6307\:5b9a\:56fe\:4f8b\:989c\:8272\:ff0c\:6837\:5f0f*)
+(*\:6307\:5b9a\:56fe\:4f8b\:989c\:8272\:ff0c\:6837\:5f0f*)
+figAssoc["LegendStyle"]=lineStyleTable[[conf=2,seva,io]]//figOrder;
 figAssoc["LegendText"]=dataVtitle[[conf=2,seva,io]]//figOrder;(*\:6307\:5b9a\:56fe\:4f8b\:6587\:5b57*)
 figAssoc["LegendLayout"]=Automatic;
 figAssoc["LegendFunction"]=None;
 
 figAssoc["LegendMarkerSize"]={40,2};(*\:6307\:5b9a\:56fe\:4f8b\:4e2d\:7b26\:53f7\:7684\:5927\:5c0f.w,h*)
-figAssoc["LegendPositon"]={{0.70,0.70},(*\:951a\:70b9\:4f4d\:7f6e*){0,0}(*\:56fe\:7684\:951a\:70b9*)};(*\:6307\:5b9a\:56fe\:4f8b\:4f4d\:7f6e*)
-seriesFig[{"norm_"<>ToString[norm],"gegm_"<>ToString[gegm],"seva_"<>ToString[seva],"io_"<>ToString[io]}]=figGroup[figAssoc];
-If[!cmdQ,echo[seriesFig[{"norm_"<>ToString[norm],"gegm_"<>ToString[gegm],"seva_"<>ToString[seva],"io_"<>ToString[io]}]]]
+(*\:6307\:5b9a\:56fe\:4f8b\:4f4d\:7f6e*)
+figAssoc["LegendPositon"]={(*\:951a\:70b9\:4f4d\:7f6e*){0.20,0.70},(*legend\:7684\:951a\:70b9*){0,0}};
+(*\:753b\:51fa\:56fe\:5c421*)
+seriesFig@figTag["layer1",{norm,gegm,seva,io}]=figGroup[figAssoc];
+(*+++++++++++++++++++++++++++++++++++++++++++++++++ \:5236\:4f5c\:56fe\:5c42 2 ++++++++++++++++++++++++++++++++++++++++++++++++++*)
+Module[{norm=1,gegm=1,seva={18},io=3(*\:8981\:4f5c\:56fe\:7684\:6570\:636e*)},
+figAssoc["Data"]=figCalc[[norm,gegm,seva,io]]//figOrder;
+(*\:56fe\:50cf\:5c3a\:5bf8*)
+figAssoc["ImageSize"]=imageSize["small"];
+(*\:6307\:5b9a\:56fe\:50cf\:7a7a\:767d\:586b\:5145\:8303\:56f4\:ff0ccalc and expr \:90fd\:751f\:6548*)
+figAssoc["PlotRangePadding"]={{0,0},{Scaled[0.09],Scaled[0.09]}};
+(*\:8bbe\:7f6eFrame \:5185\:5bb9*)
+figAssoc["FrameLabel"]=None;
+(*\:8bbe\:7f6eFrame \:7684\:6837\:5f0f,\:56db\:4e2a\:8fb9\:53ef\:4ee5\:5206\:522b\:6307\:5b9a*)
+figAssoc["FrameStyle"]=frameStyle["small"];
+(*\:6307\:5b9a\:56fe\:4f8b\:989c\:8272\:ff0c\:6837\:5f0f*)
+figAssoc["LegendStyle"]=lineStyleTable[[conf=2,seva,io]]//figOrder;
+(*\:6307\:5b9a\:56fe\:4f8b\:6587\:5b57*)
+figAssoc["LegendText"]=MaTeX[{"\\mathrm{total}"}//figOrder,FontSize->13];
+(*\:6307\:5b9a\:56fe\:4f8b\:4e2d\:7b26\:53f7\:7684\:5927\:5c0f.w,h*)
+figAssoc["LegendMarkerSize"]={40,2};
+(*\:6307\:5b9a\:56fe\:4f8b\:4f4d\:7f6e*)
+figAssoc["LegendPositon"]={{0.65,0.70},(*\:951a\:70b9\:4f4d\:7f6e*){0,0}(*\:56fe\:7684\:951a\:70b9*)};
+]
+(*\:753b\:51fa\:56fe\:5c422*)
+seriesFig@figTag["layer2",{norm,gegm,seva,io}]=figGroup[figAssoc];
+(*+++++++++++++++++++++++++++++++++++++++++++++++++ \:53e0\:52a0\:56fe\:5c42 ++++++++++++++++++++++++++++++++++++++++++++++++++*)
+seriesFig@figTag[{norm,gegm,seva,io}]=Overlay[{
+seriesFig@figTag["layer1",{norm,gegm,seva,io}],
+seriesFig@figTag["layer2",{norm,gegm,seva,io}]
+},
+Alignment->{0.90,0.92}];
+(*\:5c55\:793a\:5408\:6210\:56fe*)
+If[!cmdQ,echo[seriesFig@figTag[{norm,gegm,seva,io}]]]
 
 
-figOrder=Flatten[Transpose[#]]&;(*\:7528\:6765\:7ed9\:56fe\:50cf\:6392\:5e8f\:7684\:51fd\:6570*)
+(* ::Subsection:: *)
+(*\[CapitalSigma]+,sea,gm*)
+
+
+(*+++++++++++++++++++++++++++++++++++++++++++++++++ \:5236\:4f5c\:56fe\:5c42 1 ++++++++++++++++++++++++++++++++++++++++++++++++++*)
 norm=1;gegm=2;seva=15;;17;io=3;(*\:8981\:4f5c\:56fe\:7684\:6570\:636e*)
 figAssoc["Data"]=figCalc[[norm,gegm,seva,io]]//figOrder;
-
-figAssoc["PlotRange"]={{0,1},All};(*\:6307\:5b9a\:7eb5\:8f74\:8303\:56f4*)
-figAssoc["PlotRangePadding"]={{0,0},{Scaled[0.03],Scaled[0.05]}};(*\:6307\:5b9a\:56fe\:50cf\:7a7a\:767d\:586b\:5145\:8303\:56f4\:ff0ccalc and expr \:90fd\:751f\:6548*)
+(*\:56fe\:50cf\:5c3a\:5bf8*)
+figAssoc["ImageSize"]=imageSize["big"];
+(*\:6307\:5b9a\:56fe\:50cf\:7a7a\:767d\:586b\:5145\:8303\:56f4\:ff0ccalc and expr \:90fd\:751f\:6548*)
+figAssoc["PlotRangePadding"]={{0,0},{Scaled[0.03],Scaled[0.05]}};
+(*\:6307\:5b9a\:7eb5\:8f74\:8303\:56f4*)
+figAssoc["PlotRange"]={{0,1},All};
+(* Frame label \:5185\:5bb9*)
 figAssoc["FrameLabel"]=frameLabel[[gegm,io]];
-
-figAssoc["LegendStyle"]=lineStyleTable[[conf=2,seva,io]]//figOrder;(*\:6307\:5b9a\:56fe\:4f8b\:989c\:8272\:ff0c\:6837\:5f0f*)
-figAssoc["LegendText"]=dataVtitle[[conf=2,seva,io]]//figOrder;(*\:6307\:5b9a\:56fe\:4f8b\:6587\:5b57*)
+(*\:6307\:5b9a\:56fe\:4f8b\:989c\:8272\:ff0c\:6837\:5f0f*)
+figAssoc["LegendStyle"]=lineStyleTable[[conf=2,seva,io]]//figOrder;
+(*\:6307\:5b9a\:56fe\:4f8b\:6587\:5b57*)
+figAssoc["LegendText"]=dataVtitle[[conf=2,seva,io]]//figOrder;
 figAssoc["LegendLayout"]=Automatic;
 figAssoc["LegendFunction"]=None;
-
-figAssoc["LegendMarkerSize"]={40,2};(*\:6307\:5b9a\:56fe\:4f8b\:4e2d\:7b26\:53f7\:7684\:5927\:5c0f.w,h*)
-figAssoc["LegendPositon"]={{0.70,0.15},(*\:951a\:70b9\:4f4d\:7f6e*){0,0}(*\:56fe\:7684\:951a\:70b9*)};(*\:6307\:5b9a\:56fe\:4f8b\:4f4d\:7f6e*)
-seriesFig[{"norm_"<>ToString[norm],"gegm_"<>ToString[gegm],"seva_"<>ToString[seva],"io_"<>ToString[io]}]=figGroup[figAssoc];
-If[!cmdQ,echo[seriesFig[{"norm_"<>ToString[norm],"gegm_"<>ToString[gegm],"seva_"<>ToString[seva],"io_"<>ToString[io]}]]]
+(*\:6307\:5b9a\:56fe\:4f8b\:4e2d\:7b26\:53f7\:7684\:5927\:5c0f.w,h*)
+figAssoc["LegendMarkerSize"]={40,2};
+(*\:6307\:5b9a\:56fe\:4f8b\:4f4d\:7f6e*)
+figAssoc["LegendPositon"]={(*\:951a\:70b9\:4f4d\:7f6e*){0.30,0.15},(*\:56fe\:7684\:951a\:70b9*){0,0}};
+(*\:753b\:51fa\:56fe\:5c421*)
+seriesFig@figTag["layer1",{norm,gegm,seva,io}]=figGroup[figAssoc];
+(*+++++++++++++++++++++++++++++++++++++++++++++++++ \:5236\:4f5c\:56fe\:5c42 2 ++++++++++++++++++++++++++++++++++++++++++++++++++*)
+Module[{norm=1,gegm=2,seva={18},io=3(*\:8981\:4f5c\:56fe\:7684\:6570\:636e*)},
+figAssoc["Data"]=figCalc[[norm,gegm,seva,io]]//figOrder;
+(*\:56fe\:50cf\:5c3a\:5bf8*)
+figAssoc["ImageSize"]=imageSize["small"];
+(*\:6307\:5b9a\:56fe\:50cf\:7a7a\:767d\:586b\:5145\:8303\:56f4\:ff0ccalc and expr \:90fd\:751f\:6548*)
+figAssoc["PlotRangePadding"]={{0,0},{Scaled[0.09],Scaled[0.09]}};
+(*\:8bbe\:7f6eFrame \:5185\:5bb9*)
+figAssoc["FrameLabel"]=None;
+(*\:8bbe\:7f6eFrame \:7684\:6837\:5f0f,\:56db\:4e2a\:8fb9\:53ef\:4ee5\:5206\:522b\:6307\:5b9a*)
+figAssoc["FrameStyle"]=frameStyle["small"];
+(*\:6307\:5b9a\:56fe\:4f8b\:989c\:8272\:ff0c\:6837\:5f0f*)
+figAssoc["LegendStyle"]=lineStyleTable[[conf=2,seva,io]]//figOrder;
+(*\:6307\:5b9a\:56fe\:4f8b\:6587\:5b57*)
+figAssoc["LegendText"]=MaTeX[{"\\mathrm{total}"}//figOrder,FontSize->13];
+(*\:6307\:5b9a\:56fe\:4f8b\:4e2d\:7b26\:53f7\:7684\:5927\:5c0f.w,h*)
+figAssoc["LegendMarkerSize"]={40,2};
+(*\:6307\:5b9a\:56fe\:4f8b\:4f4d\:7f6e*)
+figAssoc["LegendPositon"]={{0.65,0.70},(*\:951a\:70b9\:4f4d\:7f6e*){0,0}(*\:56fe\:7684\:951a\:70b9*)};
+]
+(*\:753b\:51fa\:56fe\:5c422*)
+seriesFig@figTag["layer2",{norm,gegm,seva,io}]=figGroup[figAssoc];
+(*+++++++++++++++++++++++++++++++++++++++++++++++++ \:53e0\:52a0\:56fe\:5c42 ++++++++++++++++++++++++++++++++++++++++++++++++++*)
+seriesFig@figTag[{norm,gegm,seva,io}]=Overlay[{
+seriesFig@figTag["layer1",{norm,gegm,seva,io}],
+seriesFig@figTag["layer2",{norm,gegm,seva,io}]
+},
+Alignment->{0.92,-0.550}];
+(*\:5c55\:793a\:5408\:6210\:56fe*)
+If[!cmdQ,echo[seriesFig@figTag[{norm,gegm,seva,io}]]]
 
 
 figOrder=Flatten[Transpose[#]]&;(*\:7528\:6765\:7ed9\:56fe\:50cf\:6392\:5e8f\:7684\:51fd\:6570*)
@@ -615,7 +757,7 @@ figAssoc["LegendLayout"]=Automatic;
 figAssoc["LegendFunction"]=None;
 
 figAssoc["LegendMarkerSize"]={40,2};(*\:6307\:5b9a\:56fe\:4f8b\:4e2d\:7b26\:53f7\:7684\:5927\:5c0f.w,h*)
-figAssoc["LegendPositon"]={{0.70,0.70},(*\:951a\:70b9\:4f4d\:7f6e*){0,0}(*\:56fe\:7684\:951a\:70b9*)};(*\:6307\:5b9a\:56fe\:4f8b\:4f4d\:7f6e*)
+figAssoc["LegendPositon"]={{0.65,0.70},(*\:951a\:70b9\:4f4d\:7f6e*){0,0}(*\:56fe\:7684\:951a\:70b9*)};(*\:6307\:5b9a\:56fe\:4f8b\:4f4d\:7f6e*)
 seriesFig[{"norm_"<>ToString[norm],"gegm_"<>ToString[gegm],"seva_"<>ToString[seva],"io_"<>ToString[io]}]=figGroup[figAssoc];
 If[!cmdQ,echo[seriesFig[{"norm_"<>ToString[norm],"gegm_"<>ToString[gegm],"seva_"<>ToString[seva],"io_"<>ToString[io]}]]]
 
@@ -628,18 +770,22 @@ figOrder=Flatten[Transpose[#]]&;(*\:7528\:6765\:7ed9\:56fe\:50cf\:6392\:5e8f\:76
 norm=1;gegm=1;seva={15,17};io=2;(*\:8981\:4f5c\:56fe\:7684\:6570\:636e*)
 figAssoc["Data"]=figCalc[[norm,gegm,seva,io]]//figOrder;
 
-figAssoc["PlotRange"]={{0,1},All};(*\:6307\:5b9a\:7eb5\:8f74\:8303\:56f4*)
-figAssoc["PlotRangePadding"]={{0,0},{Scaled[0.04],Scaled[0.14]}};(*\:6307\:5b9a\:56fe\:50cf\:7a7a\:767d\:586b\:5145\:8303\:56f4\:ff0ccalc and expr \:90fd\:751f\:6548*)
-figAssoc["FrameLabel"]=frameLabel[[gegm,io]];
+(*\:56fe\:50cf\:5c3a\:5bf8*)
+figAssoc["ImageSize"]={GoldenRatio 350,350};
+(*\:6307\:5b9a\:7eb5\:8f74\:8303\:56f4*)
+figAssoc["PlotRange"]={{0,1},All};
+(*\:6307\:5b9a\:56fe\:50cf\:7a7a\:767d\:586b\:5145\:8303\:56f4\:ff0ccalc and expr \:90fd\:751f\:6548*)
+figAssoc["PlotRangePadding"]={{0,0},{Scaled[0.04],Scaled[0.5]}};
 
+figAssoc["FrameLabel"]=frameLabel[[gegm,io]];
 figAssoc["LegendStyle"]=lineStyleTable[[conf=2,seva,io]]//figOrder;(*\:6307\:5b9a\:56fe\:4f8b\:989c\:8272\:ff0c\:6837\:5f0f*)
 (*figAssoc["LegendText"]=dataVtitle[[conf=2,seva,io]]//figOrder;*)(*\:6307\:5b9a\:56fe\:4f8b\:6587\:5b57, \:901a\:7528\:7684\:5f62\:5f0f*)
-figAssoc["LegendText"]={" sea,l"," sea,s"}//figOrder;(*\:8fd0\:884c\:65f6\:4fee\:6539*)
+figAssoc["LegendText"]=MaTeX[{"\\mathrm{sea,l}","\\mathrm{sea,s}"}//figOrder,FontSize->legendFontSize];(*\:8fd0\:884c\:65f6\:4fee\:6539*)
 figAssoc["LegendLayout"]=Automatic;
 figAssoc["LegendFunction"]=None;
 
 figAssoc["LegendMarkerSize"]={40,2};(*\:6307\:5b9a\:56fe\:4f8b\:4e2d\:7b26\:53f7\:7684\:5927\:5c0f.w,h*)
-figAssoc["LegendPositon"]={{0.70,0.72},(*\:951a\:70b9\:4f4d\:7f6e*){0,0}(*\:56fe\:7684\:951a\:70b9*)};(*\:6307\:5b9a\:56fe\:4f8b\:4f4d\:7f6e*)
+figAssoc["LegendPositon"]={{0.10,0.70},(*\:951a\:70b9\:4f4d\:7f6e*){0,0}(*\:56fe\:7684\:951a\:70b9*)};(*\:6307\:5b9a\:56fe\:4f8b\:4f4d\:7f6e*)
 seriesFig[{"norm_"<>ToString[norm],"gegm_"<>ToString[gegm],"seva_"<>ToString[seva],"io_"<>ToString[io]}]=figGroup[figAssoc];
 If[!cmdQ,echo[seriesFig[{"norm_"<>ToString[norm],"gegm_"<>ToString[gegm],"seva_"<>ToString[seva],"io_"<>ToString[io]}]]]
 
@@ -654,12 +800,12 @@ figAssoc["FrameLabel"]=frameLabel[[gegm,io]];
 
 figAssoc["LegendStyle"]=lineStyleTable[[conf=2,seva,io]]//figOrder;(*\:6307\:5b9a\:56fe\:4f8b\:989c\:8272\:ff0c\:6837\:5f0f*)
 (*figAssoc["LegendText"]=dataVtitle[[conf=2,seva,io]]//figOrder;*)(*\:6307\:5b9a\:56fe\:4f8b\:6587\:5b57, \:901a\:7528\:7684\:5f62\:5f0f*)
-figAssoc["LegendText"]={" valence,l"," valence,s"}//figOrder;(*\:8fd0\:884c\:65f6\:4fee\:6539*)
+figAssoc["LegendText"]=MaTeX[{"\\mathrm{valence,l}","\\mathrm{valence,s}"}//figOrder,FontSize->legendFontSize];(*\:8fd0\:884c\:65f6\:4fee\:6539*)
 figAssoc["LegendLayout"]=Automatic;
 figAssoc["LegendFunction"]=None;
 
 figAssoc["LegendMarkerSize"]={40,2};(*\:6307\:5b9a\:56fe\:4f8b\:4e2d\:7b26\:53f7\:7684\:5927\:5c0f.w,h*)
-figAssoc["LegendPositon"]={{0.70,0.70},(*\:951a\:70b9\:4f4d\:7f6e*){0,0}(*\:56fe\:7684\:951a\:70b9*)};(*\:6307\:5b9a\:56fe\:4f8b\:4f4d\:7f6e*)
+figAssoc["LegendPositon"]={{0.65,0.70},(*\:951a\:70b9\:4f4d\:7f6e*){0,0}(*\:56fe\:7684\:951a\:70b9*)};(*\:6307\:5b9a\:56fe\:4f8b\:4f4d\:7f6e*)
 seriesFig[{"norm_"<>ToString[norm],"gegm_"<>ToString[gegm],"seva_"<>ToString[seva],"io_"<>ToString[io]}]=figGroup[figAssoc];
 If[!cmdQ,echo[seriesFig[{"norm_"<>ToString[norm],"gegm_"<>ToString[gegm],"seva_"<>ToString[seva],"io_"<>ToString[io]}]]]
 
@@ -674,7 +820,7 @@ figAssoc["FrameLabel"]=frameLabel[[gegm,io]];
 
 figAssoc["LegendStyle"]=lineStyleTable[[conf=2,seva,io]]//figOrder;(*\:6307\:5b9a\:56fe\:4f8b\:989c\:8272\:ff0c\:6837\:5f0f*)
 (*figAssoc["LegendText"]=dataVtitle[[conf=2,seva,io]]//figOrder;*)(*\:6307\:5b9a\:56fe\:4f8b\:6587\:5b57, \:901a\:7528\:7684\:5f62\:5f0f*)
-figAssoc["LegendText"]={" sea,l"," sea,s"}//figOrder;(*\:8fd0\:884c\:65f6\:4fee\:6539*)
+figAssoc["LegendText"]=MaTeX[{"\\mathrm{sea,l}","\\mathrm{sea,s}"}//figOrder,FontSize->legendFontSize];(*\:8fd0\:884c\:65f6\:4fee\:6539*)
 figAssoc["LegendLayout"]=Automatic;
 figAssoc["LegendFunction"]=None;
 
@@ -693,11 +839,11 @@ figAssoc["FrameLabel"]=frameLabel[[gegm,io]];
 
 figAssoc["LegendStyle"]=lineStyleTable[[conf=2,seva,io]]//figOrder;(*\:6307\:5b9a\:56fe\:4f8b\:989c\:8272\:ff0c\:6837\:5f0f*)
 (*figAssoc["LegendText"]=dataVtitle[[conf=2,seva,io]]//figOrder;*)(*\:6307\:5b9a\:56fe\:4f8b\:6587\:5b57, \:901a\:7528\:7684\:5f62\:5f0f*)
-figAssoc["LegendText"]={" valence,l"," valence,s"}//figOrder;(*\:8fd0\:884c\:65f6\:4fee\:6539*)
+figAssoc["LegendText"]=MaTeX[{"\\mathrm{valence,l}","\\mathrm{valence,s}"}//figOrder,FontSize->legendFontSize];(*\:8fd0\:884c\:65f6\:4fee\:6539*)
 figAssoc["LegendLayout"]=Automatic;
 figAssoc["LegendFunction"]=None;
 
-figAssoc["LegendPositon"]={{0.70,0.70},(*\:951a\:70b9\:4f4d\:7f6e*){0,0}(*\:56fe\:7684\:951a\:70b9*)};(*\:6307\:5b9a\:56fe\:4f8b\:4f4d\:7f6e*)
+figAssoc["LegendPositon"]={{0.65,0.70},(*\:951a\:70b9\:4f4d\:7f6e*){0,0}(*\:56fe\:7684\:951a\:70b9*)};(*\:6307\:5b9a\:56fe\:4f8b\:4f4d\:7f6e*)
 seriesFig[{"norm_"<>ToString[norm],"gegm_"<>ToString[gegm],"seva_"<>ToString[seva],"io_"<>ToString[io]}]=figGroup[figAssoc];
 If[!cmdQ,echo[seriesFig[{"norm_"<>ToString[norm],"gegm_"<>ToString[gegm],"seva_"<>ToString[seva],"io_"<>ToString[io]}]]]
 
