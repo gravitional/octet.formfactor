@@ -60,7 +60,7 @@ texStyle={FontFamily->"Latin Modern Roman",FontSize->14};
 inputSim={(*fileName=*)"/home/tom/octet.formfactor/f_figure_series-full_rencon3_strange_baryons-all_individual.wl",
 (*parOrder=*)"full",(*parLambda0=*)0.90`20,(*parci=*)1.00`20,
 (*calcPointOpacity=*)"{1,1,1,1,1,1,1,1,1,1,1,1}",(*exprOpacity=*)1,
-(*cFitting=*)"Baryons",(*errorbarQ=*)"notbar"};
+(*cFitting=*)"Baryons",(*errorbarQ=*)"L_0.90_ci_1.00"};
 If[cmdQ,
 inputCml=$ScriptCommandLine,(*\:5982\:679c\:5728\:547d\:4ee4\:884c\:6267\:884c\:ff0c\:5c31\:91c7\:7528\:547d\:4ee4\:884c\:53c2\:6570*)
 inputCml=inputSim(*\:5982\:679c\:5728\:7b14\:8bb0\:672c\:6267\:884c\:ff0c\:5c31\:91c7\:7528\:6a21\:62df\:53c2\:6570*)
@@ -1056,28 +1056,28 @@ outputAssoc=<|
 (*++++++++++++++++*)
 norm=1;gegm=1;seva=15;;17;io=3;
 (*StringJoin[{"norm_"<>ToString[norm],"_gegm_"<>ToString[gegm],"_seva_"<>ToString[seva],"_io_"<>ToString[io],"_fit_",cFittingStr,"_rela_",errorbarQStr,"_series_",parOrderStr,"_L_",parLambda0Str,"_ci_",parciStr,".pdf"}]*)
-FileNameJoin[{outputDir,"sigma_Fig3.pdf"}]->seriesFig@figTag[{norm,gegm,seva,io}],
+FileNameJoin[{outputDir,"fig.sigma+.ge.sea.pdf"}]->seriesFig@figTag[{norm,gegm,seva,io}],
 (*+++++*)
 norm=1;gegm=1;seva=26;;28;io=3;
-FileNameJoin[{outputDir,"sigma_Fig4.pdf"}]->seriesFig@figTag[{norm,gegm,seva,io}],
+FileNameJoin[{outputDir,"fig.sigma+.ge.valence.pdf"}]->seriesFig@figTag[{norm,gegm,seva,io}],
 (*+++++*)
 norm=1;gegm=2;seva=15;;17;io=3;
-FileNameJoin[{outputDir,"sigma_Fig5.pdf"}]->seriesFig@figTag[{norm,gegm,seva,io}],
+FileNameJoin[{outputDir,"fig.sigma+.gm.sea.pdf"}]->seriesFig@figTag[{norm,gegm,seva,io}],
 (*+++++*)
 norm=1;gegm=2;seva=26;;28;io=3;
-FileNameJoin[{outputDir,"sigma_Fig6.pdf"}]->seriesFig@figTag[{norm,gegm,seva,io}],
+FileNameJoin[{outputDir,"fig.sigma+.gm.valence.pdf"}]->seriesFig@figTag[{norm,gegm,seva,io}],
 (*+++++*)
 norm=1;gegm=1;seva={15,17}; io=2;
-FileNameJoin[{outputDir,"sigma_Fig7.pdf"}]->seriesFig@figTag[{norm,gegm,seva,io}],
+FileNameJoin[{outputDir,"fig.sigma0.ge.sea.pdf"}]->seriesFig@figTag[{norm,gegm,seva,io}],
 (*+++++*)
 norm=1;gegm=1;seva={26,28}; io=2;
-FileNameJoin[{outputDir,"sigma_Fig8.pdf"}]->seriesFig@figTag[{norm,gegm,seva,io}],
+FileNameJoin[{outputDir,"fig.sigma0.ge.valence.pdf"}]->seriesFig@figTag[{norm,gegm,seva,io}],
 (*+++++*)
 norm=1;gegm=2;seva={15,17}; io=2;
-FileNameJoin[{outputDir,"sigma_Fig9.pdf"}]->seriesFig@figTag[{norm,gegm,seva,io}],
+FileNameJoin[{outputDir,"fig.sigma0.gm.sea.pdf"}]->seriesFig@figTag[{norm,gegm,seva,io}],
 (*+++++*)
 norm=1;gegm=2;seva={26,28}; io=2;
-FileNameJoin[{outputDir,"sigma_Fig10.pdf"}]->seriesFig@figTag[{norm,gegm,seva,io}]
+FileNameJoin[{outputDir,"fig.sigma0.gm.valence.pdf"}]->seriesFig@figTag[{norm,gegm,seva,io}]
 (*++++++++++++++++*)
 |>;
 echo["output status"];
@@ -1093,4 +1093,4 @@ KeyValueMap[Export,outputAssoc]
 
 
 (* ::Input:: *)
-(*Run["rm "<>FileNameJoin[{gitLocalName,"expression-results/sigma_Fig*.pdf"}]]*)
+(*Run["rm "<>FileNameJoin[{gitLocalName,"expression-results/fig.sigma*.pdf"}]]*)

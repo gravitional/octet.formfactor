@@ -8,14 +8,15 @@ originPath=$(pwd)                                                 # 脚本执行
 paperPath="/home/${user_name}/private/my_papers/sigma/"           # 论文 tex 文件目录
 archPath="/home/${user_name}/Documents/sigma1/"                   # 论文压缩文件存放目录
 # 复制计算结果到论文目录
-cp ${rstPath}'sigma_Fig3.pdf' ${paperPath}"fig3.pdf"
-cp ${rstPath}'sigma_Fig4.pdf' ${paperPath}"fig4.pdf"
-cp ${rstPath}'sigma_Fig5.pdf' ${paperPath}"fig5.pdf"
-cp ${rstPath}'sigma_Fig6.pdf' ${paperPath}"fig6.pdf"
-cp ${rstPath}'sigma_Fig7.pdf' ${paperPath}"fig7.pdf"
-cp ${rstPath}'sigma_Fig8.pdf' ${paperPath}"fig8.pdf"
-cp ${rstPath}'sigma_Fig9.pdf' ${paperPath}"fig9.pdf"
-cp ${rstPath}'sigma_Fig10.pdf' ${paperPath}"fig10.pdf"
+cp ${rstPath}'fig.sigma+.gm.sea.pdf' ${paperPath}"fig3.pdf"
+cp ${rstPath}'fig.sigma+.ge.sea.pdf' ${paperPath}"fig4.pdf"
+cp ${rstPath}'fig.sigma0.gm.sea.pdf' ${paperPath}"fig5.pdf"
+cp ${rstPath}'fig.sigma0.ge.sea.pdf' ${paperPath}"fig6.pdf"
+
+# cp ${rstPath}'fig.sigma+.ge.valence.pdf' ${paperPath}"sigma+.ge.val.pdf"
+# cp ${rstPath}'fig.sigma+.gm.valence.pdf' ${paperPath}"sigma+.gm.val.pdf"
+# cp ${rstPath}'fig.sigma0.ge.valence.pdf' ${paperPath}"sigma0.ge.val.pdf"
+# cp ${rstPath}'fig.sigma0.gm.valence.pdf' ${paperPath}"sigma0.gm.val.pdf"
 # 复制表格
 #cp ${rstPath}'Ge_Baryons_rela_L_0.90_ci_1.00_series_o0_L_0.90_ci_1.00.pdf' ${paperPath}"fig21.pdf"
 #cp ${rstPath}'Gm_Baryons_rela_L_0.90_ci_1.00_series_o0_L_0.90_ci_1.00.pdf' ${paperPath}"fig22.pdf"
